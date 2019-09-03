@@ -31,6 +31,27 @@ image_correct = love.graphics.newImage("res/check_ok.png")
 image_wrong = love.graphics.newImage("res/check_wrong.png")
 image_shopping_basket = love.graphics.newImage("res/shopping_basket.png")
 image_progress_bar = love.graphics.newImage("res/progress_bar.png")
+image_logo_main_menu = love.graphics.newImage("res/logo_main_menu.png")
+image_copyright = love.graphics.newImage("res/copyright.png")
+image_menu_blue_button = love.graphics.newImage("res/menu_blue_button.png")
+
+images_logo_subtitle = {}
+images_logo_subtitle["english"] = love.graphics.newImage("res/subtitles/en.png")
+images_logo_subtitle["catalan"] = love.graphics.newImage("res/subtitles/ca.png")
+images_logo_subtitle["german"] = love.graphics.newImage("res/subtitles/de.png")
+images_logo_subtitle["greek"] = love.graphics.newImage("res/subtitles/el.png")
+images_logo_subtitle["english_gb"] = love.graphics.newImage("res/subtitles/en.png")
+images_logo_subtitle["spanish"] = love.graphics.newImage("res/subtitles/es.png")
+images_logo_subtitle["finnish"] = love.graphics.newImage("res/subtitles/fi.png")
+images_logo_subtitle["french"] = love.graphics.newImage("res/subtitles/fr.png")
+images_logo_subtitle["hebrew"] = love.graphics.newImage("res/subtitles/he.png")
+images_logo_subtitle["italian"] = love.graphics.newImage("res/subtitles/it.png")
+images_logo_subtitle["lakota"] = love.graphics.newImage("res/subtitles/lkt.png")
+images_logo_subtitle["polish"] = love.graphics.newImage("res/subtitles/pl.png")
+images_logo_subtitle["portuguese"] = love.graphics.newImage("res/subtitles/pt.png")
+images_logo_subtitle["russian"] = love.graphics.newImage("res/subtitles/rs_sr.png")
+images_logo_subtitle["serbian"] = love.graphics.newImage("res/subtitles/rs_sr.png")
+images_logo_subtitle["ukrainian"] = love.graphics.newImage("res/subtitles/uk.png")
 
 animals_names = {}
 animals_images = {}

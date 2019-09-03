@@ -2,3 +2,5 @@ font_interface = love.graphics.newFont("res/fonts/LinBiolinum_R_merged_with_Kacs
 font_interface_bold = love.graphics.newFont("res/fonts/LinBiolinum_RB_merged_with_Kacst.ttf", 30)
 font_large_title = love.graphics.newFont("res/fonts/LinBiolinum_RB_merged_with_Kacst.ttf", 70)
 font_small_title = love.graphics.newFont("res/fonts/LinBiolinum_RB_merged_with_Kacst.ttf", 48)
+font_handwritten_small = love.graphics.newFont("res/fonts/eduactiv8LatinPrint.ttf", 90)
+font_button_text = love.graphics.newFont("res/fonts/LinBiolinum_RB_merged_with_Kacst.ttf", 40)

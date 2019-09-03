@@ -1,0 +1,42 @@
+list of all windows indexes
+
+1 - splash screen
+2 - login
+3 - main menu
+4 - change language
+5 - copyright
+6 - translators
+7 - manage users
+18 - select level
+
+
+
+menus:
+8 - LANGUAGE SECTION
+  9 - word builders
+
+10 - MATH SECTION
+  11 - positive numbers
+    14 - positive numbers games
+  16 - addition games
+
+
+
+new (test) menus:
+19 - main menu
+  20 - basic numbers
+  21 - patterns
+  22 - arithmetic
+  23 - shapes
+  24 - time
+
+
+sub-games:
+12 - word builders - animals
+13 - numbers spelling
+15 - shopping list
+17 - find missing number
+
+
+
+25

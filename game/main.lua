@@ -7,6 +7,8 @@ utf8 = require("utf8")
 require 'i18n'
 require 'fonts'
 require 'tables'
+require 'colors'
+require 'decoration'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -22,9 +24,9 @@ end
 function show_message(message_text)
     love.graphics.draw(image_dialog_bg, 800 - (image_dialog_bg:getWidth() * 1) / 2, 450 - (image_dialog_bg:getHeight() * 1) / 2, 0, 1, 1)
     love.graphics.setFont(font_interface)
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     love.graphics.printf(message_text, 800 - 500 / 2, 450 - 50, 500, 'center')
-    love.graphics.setColor(1, 1, 1)
+    love.graphics.setColor(color["white"])
 end
 
 function verify_login() --encryption needs to be added
@@ -103,7 +105,7 @@ function love.load()
   text[1] = ""
   message = ""
   buttons = {}
-  build_form(3) --splash screen
+  build_form(19) --splash screen
   usernames = {}
   passwords = {}
   username = ""
@@ -141,6 +143,7 @@ function love.load()
   max_scores =    { 5,  6,  8,  8}
   score =         { 0,  0,  0,  0}
   score_system = false
+  initialize_decoration_elements()
 end
 
 function get_score_for_game(g_index)
@@ -248,8 +251,8 @@ function love.update(dt)
   local x, y = love.mouse.getPosition()
   x = x * game_screen_width/screen_width
   y = y * game_screen_height/screen_height
-  local mouse_x = x
-  local mouse_y = y
+  mouse_x = x
+  mouse_y = y
   if love.mouse.isDown(1) and mouse_released then --mouse click
     mouse_released = false
     if current_window == 2 then -- login
@@ -263,7 +266,7 @@ function love.update(dt)
         love.keyboard.setTextInput(false, 10, love.graphics.getHeight() / 2 + 10, love.graphics.getWidth() - 20, 50 )
         verify_login()
       end
-    elseif current_window == 3 then --main menu
+    elseif current_window == 3 or current_window == 19 then --main menu
       if mouse_on_button(1) then
         build_form(8)
       elseif mouse_on_button(2) then
@@ -461,7 +464,7 @@ function love.update(dt)
 
 
     if mouse_on_button(400) then --back to main menu
-      build_form(3)
+      build_form(19) -- old menu : 3
     elseif mouse_on_button(401) then --log out
       username = ""
       build_form(2)
@@ -477,6 +480,10 @@ function love.update(dt)
       end
     end
   end
+
+  if current_window >= 19 and current_window <=24 then
+    move_decoration_elements()
+  end
 end
 
 function love.draw()
@@ -486,11 +493,11 @@ function love.draw()
     love.graphics.draw(image_splash, 800 - image_splash:getWidth() / 2, 450 - image_splash:getHeight() / 2)
     sleep = 1
   elseif current_window == 2 then --login form
-    love.graphics.setColor(1, 1, 1)
+    love.graphics.setColor(color["white"])
     love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
     love.graphics.draw(image_icon, 800 - (image_icon:getWidth() * 0.6) / 2, 450 - 410 + (image_icon:getHeight() * 0.6) / 2, 0, 0.6, 0.6)
     love.graphics.setFont(font_interface_bold)
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     love.graphics.printf(s_username, 800 - 500 / 2, 450, 500, 'center')
     love.graphics.printf(s_password, 800 - 500 / 2, 550, 500, 'center')
 
@@ -498,41 +505,35 @@ function love.draw()
     love.graphics.printf(text[1], 800 - 500 / 2, 490, 500, 'center')
     love.graphics.printf(password_characters(text[2]), 800 - 500 / 2, 590, 500, 'center')
 
-    love.graphics.setColor(0.7, 0.85, 0.95)
+    love.graphics.setColor(color["light_blue"])
     love.graphics.rectangle('line', 800 - 500 / 2, 497, 500, 40)
     love.graphics.rectangle('line', 800 - 500 / 2, 597, 500, 40)
 
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     if selected_textbox == 1 then
       love.graphics.rectangle('line', 800 - 500 / 2, 497, 500, 40)
     else
       love.graphics.rectangle('line', 800 - 500 / 2, 597, 500, 40)
     end
-    love.graphics.setColor(1, 1, 1)
+    love.graphics.setColor(color["white"])
   elseif current_window == 3 then --main menu
-    love.graphics.setColor(1, 1, 1)
+    love.graphics.setColor(color["white"])
     love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
     love.graphics.draw(image_icon, 800 - (image_icon:getWidth() * 0.6) / 2, 450 - 410 + (image_icon:getHeight() * 0.6) / 2, 0, 0.6, 0.6)
     love.graphics.setFont(font_interface_bold)
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     love.graphics.printf(s_copyright_text, 790 - 1200 / 2, 750, 1200, 'center')
   elseif current_window == 4 then --change language
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_change_language, 180, 60, 1200, 'left')
+    draw_header(s_change_language)
   elseif current_window == 5 then --Copyright
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_copyright, 180, 60, 1200, 'left')
+    draw_header(s_copyright)
     love.graphics.setFont(font_interface_bold)
     love.graphics.printf(s_copyright_text_big, 790 - 1200 / 2, 300, 1200, 'center')
   elseif current_window == 7 then -- manage users
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_manage_users, 180, 60, 1200, 'left')
+    draw_header(s_manage_users)
     love.graphics.setFont(font_interface_bold)
 
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     love.graphics.printf(s_username, 1100 - 500 / 2, 450, 500, 'center')
     love.graphics.printf(s_password, 1100 - 500 / 2, 550, 500, 'center')
 
@@ -540,40 +541,28 @@ function love.draw()
     love.graphics.printf(text[1], 1100 - 500 / 2, 490, 500, 'center')
     love.graphics.printf(password_characters(text[2]), 1100 - 500 / 2, 590, 500, 'center')
 
-    love.graphics.setColor(0.7, 0.85, 0.95)
+    love.graphics.setColor(color["light_blue"])
     love.graphics.rectangle('line', 1100 - 500 / 2, 497, 500, 40)
     love.graphics.rectangle('line', 1100 - 500 / 2, 597, 500, 40)
 
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     if selected_textbox == 1 then
       love.graphics.rectangle('line', 1100 - 500 / 2, 497, 500, 40)
     else
       love.graphics.rectangle('line', 1100 - 500 / 2, 597, 500, 40)
     end
-    love.graphics.setColor(1, 1, 1)
+    love.graphics.setColor(color["white"])
   elseif current_window == 8 then -- language section
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_language, 180, 60, 1200, 'left')
+    draw_header(s_language)
   elseif current_window == 9 then -- word builders
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_word_builders, 180, 60, 1200, 'left')
-  elseif current_window == 10 then -- word builders
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_math, 180, 60, 1200, 'left')
-  elseif current_window == 11 then -- word builders
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_positive_numbers, 180, 60, 1200, 'left')
+    draw_header(s_language, s_word_builders)
+  elseif current_window == 10 then -- math
+    draw_header(s_math)
+  elseif current_window == 11 then -- math-positive numbers
+    draw_header(s_math, s_positive_numbers)
   elseif current_window == 12 then --game Animals
-    love.graphics.setFont(font_small_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_animals, 180, 60, 1200, 'left')
-    love.graphics.setFont(font_interface)
-    love.graphics.printf(s_complete_the_word, 180, 110, 1200, 'left')
-    love.graphics.setColor(1, 1, 1, 1)
+    draw_header(s_animals, s_complete_the_word)
+    love.graphics.setColor(color["white"])
     love.graphics.draw(animal_image, 800 - animal_image:getWidth() * 2 / 2, 380 - animal_image:getHeight() * 2 / 2, 0, 2, 2)
     --draw tiles+
     love.graphics.setFont(font_large_title)
@@ -584,17 +573,17 @@ function love.draw()
         local byteoffset_b = utf8.offset(tiles[y], x+1)
         --if get_char(tiles[y], x) ~= ' ' then
         if y == 7 and get_char(fixed_tiles, x) == '@' then --and (string.sub(tiles[y], byteoffset, byteoffset_b - 1) == ' ' or string.sub(tiles[y], byteoffset, byteoffset_b - 1) == '@') then
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+          love.graphics.setColor(color["light_blue_50"])
           love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / 10), (game_screen_width/t_x)-2, (game_screen_height / 10)-2, 15, 15)
-          love.graphics.setColor(1, 1, 1, 1)
+          love.graphics.setColor(color["white"])
           love.graphics.rectangle('fill', x * (game_screen_width/t_x)+5, y * (game_screen_height / 10)+5, (game_screen_width/t_x)-2-10, (game_screen_height / 10)-2-10, 10, 10)
-          --love.graphics.setColor(172/255, 216/255, 251/255, 0.2)
+          --love.graphics.setColor(color["light_blue"], 0.2)
           --love.graphics.rectangle('fill', x * (game_screen_width/21)+5, y * (game_screen_height / 10)+5, (game_screen_width/21)-2-10, (game_screen_height / 10)-2-10, 10, 10)
         end
         if tiles[y] ~= nil and get_char(tiles[y], x) ~= ' ' and get_char(tiles[y], x) ~= '@' then
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+          love.graphics.setColor(color["light_blue_50"])
           love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / 10), (game_screen_width/t_x)-2, (game_screen_height / 10)-2, 15, 15)
-          love.graphics.setColor(51/255, 117/255, 187/255)
+          love.graphics.setColor(color["blue"])
           if string.sub(tiles[y], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y] ,byteoffset,byteoffset_b - 1) ~= '_' then
             love.graphics.printf(string.sub(tiles[y] ,byteoffset,byteoffset_b - 1), (x) * (game_screen_width/t_x) + (game_screen_width/ (t_x * 2)) - 250 * 1, y * (game_screen_height / 10) - 13, 500, 'center', 0, 1, 1) --(x - 2) * (game_screen_width/t_x) + (game_screen_width/42) - 100, y * (game_screen_height / 10) - 17, 500, 'center')
           end
@@ -602,9 +591,9 @@ function love.draw()
       end
     end
     if selected_tile ~= "" then
-      love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+      love.graphics.setColor(color["light_blue_50"])
       love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset, (game_screen_width/t_x)-2, (game_screen_height / 10)-2, 15, 15)
-      love.graphics.setColor(51/255, 117/255, 187/255)
+      love.graphics.setColor(color["blue"])
       love.graphics.printf(selected_tile, mouse_x + selected_tile_x_offset + (game_screen_width/(t_x * 2)) - 250 * 1, mouse_y  + selected_tile_y_offset  - 13, 500, 'center', 0, 1, 1) --mouse_x +  selected_tile_x_offset + (- 2) * (game_screen_width/t_x) + (game_screen_width/42) - 100, mouse_y  + selected_tile_y_offset  - 17, 500, 'center')
     end
     flag = true
@@ -614,7 +603,7 @@ function love.draw()
       end
     end
     if flag == true then
-      love.graphics.setColor(1, 1, 1, 1)
+      love.graphics.setColor(color["white"])
       for i = 1, t_x do
         if get_char(correct_row, i) ~= ' ' then
           if get_char(correct_row, i) == get_char(tiles[7], i) then
@@ -626,46 +615,42 @@ function love.draw()
       end
     end
   elseif current_window == 13 then -- numbers spelling game
-    love.graphics.setFont(font_small_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_positive_numbers, 180, 60, 1200, 'left')
-    love.graphics.setFont(font_interface)
-    love.graphics.printf(s_numbers_spelling, 180, 110, 1200, 'left')
-    love.graphics.setColor(1, 1, 1, 1)
+    draw_header(s_positive_numbers, s_numbers_spelling)
+    love.graphics.setColor(color["white"])
     love.graphics.setFont(font_large_title)
     local y_offset = 0
     local x_scale = 1
     for y = 1, game_table_rows do
       for x = 1, 2 do
         if game_table[y][x].selected == true then
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.8)
+          love.graphics.setColor(color["light_blue_80"])
         else
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+          love.graphics.setColor(color["light_blue_50"])
         end
         if game_table[y][x].completed == true then
-          love.graphics.setColor(132/255, 220/255, 150/255, 1)
+          love.graphics.setColor(color["light_green"])
         end
         love.graphics.rectangle('fill', x * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)-2, (game_screen_height / 6)-2, 15, 15)
-        love.graphics.setColor(51/255, 117/255, 187/255)
+        love.graphics.setColor(color["blue"])
         ---
         love.graphics.setFont(font_large_title)
         y_offset = 0
         x_scale = 1
         love.graphics.printf(game_table[y][x].content,  (x) * (game_screen_width/12) + (game_screen_width/24) - 450 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 900, 'center', 0, x_scale, 1)
         if game_table[y][x+2].selected == true then
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.8)
+          love.graphics.setColor(color["light_blue_80"])
         else
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+          love.graphics.setColor(color["light_blue_50"])
         end
         if game_table[y][x+2].completed == true then
-          love.graphics.setColor(132/255, 220/255, 150/255, 1)
+          love.graphics.setColor(color["light_green"])
         end
         if x == 1 then
           love.graphics.rectangle('fill', (x+2) * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)*4-2, (game_screen_height / 6)-2, 15, 15)
         else
           love.graphics.rectangle('fill', (x+5) * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)*4-2, (game_screen_height / 6)-2, 15, 15)
         end
-        love.graphics.setColor(51/255, 117/255, 187/255)
+        love.graphics.setColor(color["blue"])
         if utf8.len(game_table[y][x+2].content) >= 14 then
           love.graphics.setFont(font_small_title)
           y_offset = 20
@@ -687,35 +672,31 @@ function love.draw()
       end
     end
   elseif current_window == 15 then -- Shopping List
-    love.graphics.setFont(font_small_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_positive_numbers, 180, 60, 1200, 'left')
-    love.graphics.setFont(font_interface)
-    love.graphics.printf(s_shopping_list, 180, 110, 1200, 'left')
-    love.graphics.setColor(1, 1, 1, 1)
+    draw_header(s_positive_numbers, s_shopping_list)
+    love.graphics.setColor(color["white"])
     love.graphics.draw(image_shopping_basket, game_screen_width - 195, game_screen_height - 172)
     --
     love.graphics.setFont(font_small_title)
-    love.graphics.setColor(0, 0.15, 0.25)
+    love.graphics.setColor(color["interface_text"])
     love.graphics.printf(s_shopping_list, 800, (game_screen_height / 15) * 3, 1200, 'left')
-    love.graphics.setColor(1, 1, 1, 1)
+    love.graphics.setColor(color["white"])
     local y_position = (game_screen_height / 15) * 4
     for k, v in pairs(items_needed) do
       if selected_level < 3 then
         love.graphics.draw(fruits_vegs_images[items_needed[k].item], 900, y_position, 0.75, 0.75)
       end
-      love.graphics.setColor(0, 0.15, 0.25)
+      love.graphics.setColor(color["interface_text"])
       if selected_level < 3 then
         love.graphics.printf(items_needed[k].quantity .. "       " .. items_needed[k].name, 840, y_position + 4, 1200, 'left', 0, 0.9)
       else
         love.graphics.printf(items_needed[k].quantity .. " " .. items_needed[k].name, 840, y_position + 4, 1200, 'left', 0, 0.9)
       end
-      love.graphics.setColor(1, 1, 1, 1)
+      love.graphics.setColor(color["white"])
       y_position = y_position + (game_screen_height / 15)
     end
-    love.graphics.setColor(0.7, 0.05, 0.09, 1)
+    love.graphics.setColor(color["red"])
     love.graphics.rectangle('line', (game_screen_width/t_x) * 9, (game_screen_height / 10) * 7, (game_screen_width/t_x) * 12 - 4, (game_screen_height / 10) * 3 - 4)
-    love.graphics.setColor(1, 1, 1, 1)
+    love.graphics.setColor(color["white"])
     for x = 1, t_x do
       for y = 1, 9 do
         if get_char(tiles[y], x) ~= ' ' then
@@ -727,16 +708,10 @@ function love.draw()
       love.graphics.draw(fruits_vegs_images[ord(selected_tile)], mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset)
     end
   elseif current_window == 16 then -- Addition gameS
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_addition, 180, 60, 1200, 'left')
+    draw_header(s_positive_numbers, s_addition)
   elseif current_window == 17 then -- Find missing number
-    love.graphics.setFont(font_small_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_addition, 180, 60, 1200, 'left')
-    love.graphics.setFont(font_interface)
-    love.graphics.printf(s_find_missing_number, 180, 110, 1200, 'left')
-    love.graphics.setColor(1, 1, 1, 1)
+    draw_header(s_addition, s_find_missing_number)
+    love.graphics.setColor(color["white"])
     love.graphics.setFont(font_large_title)
     local x_scale = 1
     for x = 1, 15 do
@@ -744,15 +719,15 @@ function love.draw()
         local byteoffset = utf8.offset(tiles[y], x)
         local byteoffset_b = utf8.offset(tiles[y], x+1)
         if get_char(fixed_tiles[y], x) == '@' then --and (string.sub(tiles[y], byteoffset, byteoffset_b - 1) == ' ' or string.sub(tiles[y], byteoffset, byteoffset_b - 1) == '@') then
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+          love.graphics.setColor(color["light_blue_50"])
           love.graphics.rectangle('fill', x * (game_screen_width/15), y * (game_screen_height / 10), (game_screen_width/15)-2, (game_screen_height / 10)-2, 15, 15)
-          love.graphics.setColor(1, 1, 1, 1)
+          love.graphics.setColor(color["white"])
           love.graphics.rectangle('fill', x * (game_screen_width/15)+5, y * (game_screen_height / 10)+5, (game_screen_width/15)-2-10, (game_screen_height / 10)-2-10, 10, 10)
         end
         if get_char(tiles[y], x) ~= ' ' and get_char(tiles[y], x) ~= '@' then
-          love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+          love.graphics.setColor(color["light_blue_50"])
           love.graphics.rectangle('fill', x * (game_screen_width/15), y * (game_screen_height / 10), (game_screen_width/15)-2, (game_screen_height / 10)-2, 15, 15)
-          love.graphics.setColor(51/255, 117/255, 187/255)
+          love.graphics.setColor(color["blue"])
           --if string.sub(tiles[y], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y] ,byteoffset,byteoffset_b - 1) ~= '_' then
           if x ~= 6 and x ~= 8 then
             if tile_numbers[get_char(tiles[y], x)] < 99 then
@@ -769,9 +744,9 @@ function love.draw()
       end
     end
     if selected_tile ~= "" then
-      love.graphics.setColor(172/255, 216/255, 251/255, 0.5)
+      love.graphics.setColor(color["light_blue_50"])
       love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset, (game_screen_width/15)-2, (game_screen_height / 10)-2, 15, 15)
-      love.graphics.setColor(51/255, 117/255, 187/255)
+      love.graphics.setColor(color["blue"])
       if x ~= 6 and x ~= 8 then
         if tile_numbers[selected_tile] < 99 then
           x_scale = 1
@@ -784,7 +759,7 @@ function love.draw()
       love.graphics.printf(tile_numbers[selected_tile],  mouse_x + selected_tile_x_offset + (game_screen_width/30) - 250 * x_scale, mouse_y  + selected_tile_y_offset  - 13, 500, 'center', 0, x_scale, 1)
       x_scale = 1
     end
-    love.graphics.setColor(1, 1, 1, 1)
+    love.graphics.setColor(color["white"])
     if get_char(tiles[3], 7) ~= " " and
        get_char(tiles[4], 7) ~= " " and
        get_char(tiles[5], 7) ~= " " and
@@ -806,15 +781,36 @@ function love.draw()
          message = "congrats"
     end
   elseif current_window == 18 then -- Level select
-    love.graphics.setFont(font_large_title)
-    love.graphics.setColor(0, 0.15, 0.25)
-    love.graphics.printf(s_level .. ": " .. selected_level, 180, 60, 1920, 'left')
+    draw_header(s_level .. ": " .. selected_level)
+  elseif current_window == 19 then -- main menu (new)
+    --grid 47 x 47:
+    love.graphics.setLineWidth(3)
+    love.graphics.setColor(color["light_gray"])
+    for i = 0, game_screen_width / 47 do
+      love.graphics.line(i * 47, 0, i * 47, game_screen_height)
+    end
+    for i = 0, game_screen_height / 47 do
+      love.graphics.line(0, i * 47, game_screen_width, i * 47)
+    end
+    love.graphics.setLineWidth(1)
+    love.graphics.setFont(font_handwritten_small)
+    love.graphics.setColor(color["gray_60"])
+    for k, v in pairs(decoration_elements) do
+      love.graphics.printf(decoration_elements[k].content, decoration_elements[k].x, decoration_elements[k].y, 500)
+    end
+    love.graphics.setColor(color["white"])
+    love.graphics.draw(image_logo_main_menu, 84, 50, 0, 0.83, 0.83)
+    love.graphics.draw(images_logo_subtitle[global_language], 89, 430, 0, 0.83, 0.83)
+    love.graphics.draw(image_copyright, 33, 514)
+  elseif current_window == 20 then
+    draw_header(s_positive_numbers)
   end------------------------------
 
   if current_window >= 3 then
-    love.graphics.setColor(62/255, 120/255, 146/255)
+    --main header
+    love.graphics.setColor(color["dark_cyan"])
     love.graphics.rectangle('fill', 0, 0, game_screen_width, 40)
-    love.graphics.setColor(1, 1, 1)
+    love.graphics.setColor(color["white"])
     love.graphics.setFont(font_interface_bold)
     love.graphics.print("eduActiv8", 10, -3)
     love.graphics.setFont(font_interface)
@@ -823,15 +819,15 @@ function love.draw()
 
     if get_score_for_game(current_window) ~= nil then
       love.graphics.setFont(font_small_title)
-      love.graphics.setColor(0, 0.15, 0.25)
+      love.graphics.setColor(color["interface_text"])
       love.graphics.printf(get_score_for_game(current_window) .. "/" .. get_max_score_for_game(current_window), -40, 60, game_screen_width, 'right')
-      love.graphics.setColor(172/255, 216/255, 251/255)
+      love.graphics.setColor(color["light_blue"])
       love.graphics.rectangle('fill', 1270, 87, 385/2, 26)
       if get_score_for_game(current_window) > 0 then
-        love.graphics.setColor(51/255, 116/255, 171/255, 1)
+        love.graphics.setColor(color["blue"])
         love.graphics.rectangle('fill', 1270, 87, get_score_for_game(current_window) * ((385/2) / get_max_score_for_game(current_window)), 26)
       end
-      love.graphics.setColor(1, 1, 1, 1)
+      love.graphics.setColor(color["white"])
       love.graphics.draw(image_progress_bar, 1270, 87, 0, 0.5, 0.5)
     end
   end
@@ -840,26 +836,26 @@ function love.draw()
 
 
   for k, v in pairs(buttons) do
-    if mouse_on_button(k) then
-      love.graphics.setColor(1, 1, 1, 0.3)
+    if mouse_on_button(k) and false then ---------
+      love.graphics.setColor(color["white_30"])
       if v.button_r == nil then
         love.graphics.rectangle('fill', v.button_x - 20 - v.button_width / 2, v.button_y - 20, v.button_width + 40, 40)
       else
         --love.graphics.rectangle('fill', v.button_x - v.button_r, v.button_y - v.button_r, v.button_r * 2, v.button_r * 2)
         love.graphics.circle('fill', v.button_x, v.button_y, v.button_r )
-        love.graphics.setColor(241/255, 91/255, 2/255, 1)
+        love.graphics.setColor(color["orange"])
         love.graphics.setFont(font_small_title)
         love.graphics.printf(v.button_caption, 0, game_screen_height - 100, game_screen_width, 'center')
       end
     end
   end
-  love.graphics.setColor(1, 1, 1, 1)
+  love.graphics.setColor(color["white"])
 
   if message ~= "" then
     if message == "congrats" then
-      love.graphics.setColor(1, 1, 1, 0.7)
+      love.graphics.setColor(color["white_70"])
       love.graphics.rectangle('fill', 0, 0, game_screen_width, game_screen_height)
-      love.graphics.setColor(1, 1, 1, 1)
+      love.graphics.setColor(color["white"])
       love.graphics.draw(image_congrats, 800 - image_congrats:getWidth() / 2, 450 - image_congrats:getHeight() / 2)
       sleep = 1.5
       build_form(current_window)

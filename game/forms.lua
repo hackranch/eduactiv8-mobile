@@ -167,7 +167,7 @@ function build_form(index)
     selected_tile_y_offset = 0
   elseif index == 13 then -- numbers spelling game
     score_system = true
-    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 14)
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
     game_table = {}
     selected_a = ""
     selected_b = ""
@@ -236,7 +236,7 @@ function build_form(index)
     add_big_button(2, icon_m1_1_1_3, 800 + 200, 310, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
   elseif index == 15 then -- Shopping List
     score_system = true
-    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 14)
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
     t_x = 21
     t_y = 10
     tiles = {}
@@ -310,7 +310,7 @@ function build_form(index)
     --add_big_button(2, icon_m1_1_1_3, 800 + 200, 310, 90, 1, false, 8, 0, 15) --
   elseif index == 17 then -- Find missing number
     score_system = true
-    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 16)
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
     t_x = 15
     t_y = 10
     tiles = {}
@@ -403,6 +403,25 @@ function build_form(index)
     add_button(3, s_level .. " 3", 800, 500, 370)
     add_button(4, s_level .. " 4", 800, 600, 370)
     add_button(5, s_level .. " 5", 800, 700, 370)
+  elseif index == 19 then -- main menu
+    if username == "admin" then
+      add_button(6, s_manage_users, 1350, 780, 495)
+    else
+      add_button(7, s_level .. "...", 350, 660, 485)
+      add_button(4, s_change_language, 350, 745, 485)
+      add_button(5, s_copyright, 350, 830, 485)
+    end
+
+    add_big_button(8, icon_m1, 760, 145, 57, 0.5, false, 0, 0, 20, s_positive_numbers, true)
+    add_big_button(9, icon_m2, 800, 295, 57, 0.5, false, 0, 0, nil, s_shapes_and_solids, true)
+    add_big_button(10,icon_m3, 840, 445, 57, 0.5, false, 0, 0, nil, s_symmetry, true)
+    add_big_button(11,icon_m4, 880, 595, 57, 0.5, false, 0, 0, nil, s_patterns, true)
+    add_big_button(12,icon_m5, 920, 745, 57, 0.5, false, 0, 0, nil, s_time, true)
+  elseif index == 20 then -- positive numbers
+    add_big_button(400, icon_back, 80, 110, 45, 0.3)
+    add_big_button(1, icon_m1_1_1_8, 800 - 300, 450, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
+    add_big_button(2, icon_m1_1_1_3, 800      , 450, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
+    add_big_button(3, icon_m1_1_2_3, 800 + 300, 450, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
   end--------------------------------------------------------
 
   if index >= 3 then
