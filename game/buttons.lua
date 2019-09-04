@@ -112,7 +112,9 @@ function mouse_on_button(index)
         return false
       end
     else
-      if x > buttons[index].button_x - buttons[index].button_r and x < buttons[index].button_x + buttons[index].button_r + 538
+      if x > buttons[index].button_x - buttons[index].button_r and
+        ((x < buttons[index].button_x + buttons[index].button_r + 538 and buttons[index].button_blue == true)
+          or x < buttons[index].button_x + buttons[index].button_r)
       and y > buttons[index].button_y - buttons[index].button_r and y < buttons[index].button_y + buttons[index].button_r then
         return true
       else
