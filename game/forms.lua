@@ -555,7 +555,7 @@ function build_form(index)
     pattern_y_pos = math.ceil(t_y / 2) - 1
     tiles[pattern_y_pos] = patterns[current_pattern]
     tiles[pattern_y_pos + 2] = patterns[current_pattern]
-    tuka
+    --tuka
     --for i = 1, utf8len(patterns[current_pattern]) do
     --  local rn = math.random(1, utf8len(patterns[current_pattern]))
     --  while get_char(tiles[pattern_y_pos], rn) ~= " " do
