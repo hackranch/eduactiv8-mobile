@@ -6,6 +6,7 @@ icon_math_section = love.graphics.newImage("res/ico_tn_01.png")
 icon_games_section = love.graphics.newImage("res/ico_tn_02.png")
 icon_back = love.graphics.newImage("res/ico_back.png")
 icon_logout = love.graphics.newImage("res/logout_icon.png")
+
 icon_l1 = love.graphics.newImage("res/menu icons/l1.png")
 icon_l2 = love.graphics.newImage("res/menu icons/l2.png")
 icon_l3 = love.graphics.newImage("res/menu icons/l3.png")
@@ -25,6 +26,13 @@ icon_m1_1_1 = love.graphics.newImage("res/menu icons/m1_1_1.png")
 icon_m1_1_1_3 = love.graphics.newImage("res/menu icons/m1_1_1_3.png")
 icon_m1_1_1_8 = love.graphics.newImage("res/menu icons/m1_1_1_8.png")
 icon_m1_1_2_3 = love.graphics.newImage("res/menu icons/m1_1_2_3.png")
+icon_ico_g_0300 = love.graphics.newImage("res/menu icons/ico_g_0300.png")
+icon_ico_g_0325 = love.graphics.newImage("res/menu icons/ico_g_0325.png")
+icon_ico_g_0303 = love.graphics.newImage("res/menu icons/ico_g_0303.png")
+icon_ico_g_0309 = love.graphics.newImage("res/menu icons/ico_g_0309.png")
+icon_ico_g_0310 = love.graphics.newImage("res/menu icons/ico_g_0310.png")
+icon_ico_g_2200 = love.graphics.newImage("res/menu icons/ico_g_2200.png")
+
 image_button_ring = love.graphics.newImage("res/menu icons/menu_ring_03.png")
 image_congrats = love.graphics.newImage("res/congrats.png")
 image_correct = love.graphics.newImage("res/check_ok.png")
@@ -34,6 +42,8 @@ image_progress_bar = love.graphics.newImage("res/progress_bar.png")
 image_logo_main_menu = love.graphics.newImage("res/logo_main_menu.png")
 image_copyright = love.graphics.newImage("res/copyright.png")
 image_menu_blue_button = love.graphics.newImage("res/menu_blue_button.png")
+image_menu_ring_demo_n = love.graphics.newImage("res/menu icons/menu_ring_demo_n.png")
+image_menu_ring_demo_decor = love.graphics.newImage("res/menu icons/menu_ring_demo_decor.png")
 
 images_logo_subtitle = {}
 images_logo_subtitle["english"] = love.graphics.newImage("res/subtitles/en.png")
@@ -56,6 +66,14 @@ images_logo_subtitle["ukrainian"] = love.graphics.newImage("res/subtitles/uk.png
 animals_names = {}
 animals_images = {}
 animals_names = love.filesystem.getDirectoryItems("res/animals")
+
+images_fish = {}
+images_numbers = {}
+images_numbers[0] = love.graphics.newImage("res/numbers/n_img1a.png" )
+for i = 1, 20 do
+  images_fish[i] = love.graphics.newImage("res/fish/n" .. i .. ".png")
+  images_numbers[i] = love.graphics.newImage("res/numbers/n_img" .. (i + 1) .. "a.png" )
+end
 
 for k, v in pairs(animals_names) do
   animals_images[k] = love.graphics.newImage("res/animals/" .. v)

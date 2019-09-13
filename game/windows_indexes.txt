@@ -8,6 +8,8 @@ list of all windows indexes
 6 - translators
 7 - manage users
 18 - select level
+25 - translators copyright
+26 - user score
 
 
 
@@ -24,9 +26,9 @@ menus:
 
 new (test) menus:
 19 - main menu
-  20 - basic numbers
+  20 - numbers
   21 - patterns
-  22 - arithmetic
+  22 - basic operations
   23 - shapes
   24 - time
 
@@ -36,7 +38,12 @@ sub-games:
 13 - numbers spelling
 15 - shopping list
 17 - find missing number
+27 - learn numbers with flashcards
+28 - number spelling
+29 - find solution - addition
+30 - find solution - subtraction
+31 - image patterns
 
 
 
-25
+32

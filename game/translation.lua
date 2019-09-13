@@ -616,12 +616,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "remember me" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "A collection of educational activities for kids" end
@@ -682,7 +682,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Educational Activities for Kids" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/    "
+    then result[0] = "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Decimals" end
@@ -904,6 +904,8 @@ function translate_i18n(word, index)
       then result[0] = "Subtract fractions with unlike denominators" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that." end
+    if word == "Funding: "
+      then result[0] = "Funding: " end
 
   end
   if global_language == "catalan" then
@@ -1625,7 +1627,7 @@ function translate_i18n(word, index)
     if word == "yellow is spot on"
       then result[0] = "el groc està bé" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 per Mehdi Cherti (mehdidc) \n Sons per diversos autors qui van contribuir les seves obres a freesound.org. \n Imatges per diversos autors qui van contribuir les seves obres a openclipart.org (domini públic) i http://www.art4apps.org/ - Art4Apps by Smart4Kids - sota una llicència Creative Commons (CC BY-SA). \n Vegeu credits.txt per obtenir-ne més informació sobre els autors dels fitxers multimèdia emprats a aquest projecte    "
+    then result[0] = "Laby, 2010 per Mehdi Cherti (mehdidc) \n Sons per diversos autors qui van contribuir les seves obres a freesound.org. \n Imatges per diversos autors qui van contribuir les seves obres a openclipart.org (domini públic) i http://www.art4apps.org/ - Art4Apps by Smart4Kids - sota una llicència Creative Commons (CC BY-SA). \n Vegeu credits.txt per obtenir-ne més informació sobre els autors dels fitxers multimèdia emprats a aquest projecte    "
     end
     if word == "Licence"
       then result[0] = "Llicència" end
@@ -1915,6 +1917,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Fons: " end
 
   end
   if global_language == "german" then
@@ -2643,12 +2647,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "Erinnere mich" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Lizenz" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Eine kleine Auswahl an Lernprogrammen für Kinder" end
@@ -2928,6 +2932,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Finanzierung: " end
 
   end
   if global_language == "greek" then
@@ -3659,12 +3665,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "θυμήσου με" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 από Mehdi Cherti (mehdidc) \n Ήχοι από διάφορους καλλιτέχνες που συνεισέφεραν τη δουλειά τους στο freesound.org. \n Εικόνες από διάφορους δημιουργούς που συνεισέφεραν τη δουλειά τους στο openclipart.org (Public Domain) και στο http://www.art4apps.org/ - Art4Apps από Smart4Kids -διανομή με άδεια Creative Commons (CC BY-SA). \nΠαρακαλώ διαβάστε το αρχείο credits.txt για περισσότερες πληροφορίες σχετικά με τους δημιουργούς των αρχείων πολυμέσων που χρησιμοποιήθηκαν σε αυτό το έργο.    "
+    then result[0] = "Laby, 2010 από Mehdi Cherti (mehdidc) \n Ήχοι από διάφορους καλλιτέχνες που συνεισέφεραν τη δουλειά τους στο freesound.org. \n Εικόνες από διάφορους δημιουργούς που συνεισέφεραν τη δουλειά τους στο openclipart.org (Public Domain) και στο http://www.art4apps.org/ - Art4Apps από Smart4Kids -διανομή με άδεια Creative Commons (CC BY-SA). \nΠαρακαλώ διαβάστε το αρχείο credits.txt για περισσότερες πληροφορίες σχετικά με τους δημιουργούς των αρχείων πολυμέσων που χρησιμοποιήθηκαν σε αυτό το έργο.    "
     end
     if word == "Licence"
       then result[0] = "Άδεια" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "Το παρόν έργο είναι Ελεύθερο Λογισμικό: επιτρέπεται η διανομή του καθώς και η τροποποίηση του με βάση τους όρους του διέπουν τις άδειες τύπου GNU General Public License οι οποίες έχουν δημοσιευτεί από το Free Software Foundation (είτε η έκδοση 3 της άδειας είτε κάποια μεταγενέστερη έκδοση). Θα πρέπει να έχετε λάβει και ένα αντίγραφο άδειας GNU General Public License μαζί με αυτή την εφαρμογή. Αν δεν την έχετε λάβει επισκεφθείτε το <http://www.gnu.org/licenses/>.    "
+    then result[0] = "Το παρόν έργο είναι Ελεύθερο Λογισμικό: επιτρέπεται η διανομή του καθώς και η τροποποίηση του με βάση τους όρους του διέπουν τις άδειες τύπου GNU General Public License οι οποίες έχουν δημοσιευτεί από το Free Software Foundation (είτε η έκδοση 3 της άδειας είτε κάποια μεταγενέστερη έκδοση). Θα πρέπει να έχετε λάβει και ένα αντίγραφο άδειας GNU General Public License μαζί με αυτή την εφαρμογή. Αν δεν την έχετε λάβει επισκεφθείτε το <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Ένα μικρό σετ εκπαιδευτικών εφαρμογών για παιδιά" end
@@ -3723,7 +3729,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Εκπαιδευτικό πακέτο δραστηριοτήτων για παιδιά" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "Μπορείτε να εγκαταστήσετε το espeak ώστε να χρησιμοποιήσετε τις δυνατότητες μετατροπής κειμένου σε ομιλία που παρέχει, αυτό όμως δεν είναι απαραίτητο για τη χρήση του παιχνιδιού: \n http://espeak.sourceforge.net/    "
+    then result[0] = "Μπορείτε να εγκαταστήσετε το espeak ώστε να χρησιμοποιήσετε τις δυνατότητες μετατροπής κειμένου σε ομιλία που παρέχει, αυτό όμως δεν είναι απαραίτητο για τη χρήση του παιχνιδιού: \n http://espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Δεκαδικοί" end
@@ -3945,6 +3951,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Χρηματοδότηση: " end
 
   end
   if global_language == "english_gb" then
@@ -4674,12 +4682,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "remember me" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "A collection of educational activities for kids" end
@@ -4730,7 +4738,7 @@ function translate_i18n(word, index)
     if word == "Do you want to log out of the game?"
       then result[0] = "Do you want to log out of the game?" end
     if word == "Ready to go to the next level?"
-      then result = "Well done!\nLevel completed!\nAre you ready for the next one?    " end
+      then result[0] = "Well done!\nLevel completed!\nAre you ready for the next one?    " end
     if word == "Language arts"
       then result[0] = "English" end
     if word == "Other"
@@ -4738,7 +4746,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Educational Activities for Kids" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/    "
+    then result[0] = "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Decimals" end
@@ -4960,6 +4968,8 @@ function translate_i18n(word, index)
       then result[0] = "Subtract fractions with unlike denominators" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that." end
+    if word == "Funding: "
+      then result[0] = "Funding: " end
 
   end
 
@@ -5692,12 +5702,12 @@ function translate_i18n(word, index)
     if word == "yellow is spot on"
       then result[0] = "el amarillo está bien" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Un conjunto de aplicaciones educativas para niños" end
@@ -5977,6 +5987,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Fondos: " end
 
   end
   if global_language == "finnish" then
@@ -6708,12 +6720,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "muista minut" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Äänet, monia tekijöitä, jotka ovat osallistuneet: freesound.org. \n Kuvat, monia tekijöitä, jotka ovat osallistuneet: openclipart.org (Public Domain) ja http://www.art4apps.org/ - Art4Apps by Smart4Kids - Lisenssi: Creative Commons (CC BY-SA). \n Tiedostosta credits.txt löydät lisää tietoa tämän projektin käyttämistä mediatiedostoista.    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Äänet, monia tekijöitä, jotka ovat osallistuneet: freesound.org. \n Kuvat, monia tekijöitä, jotka ovat osallistuneet: openclipart.org (Public Domain) ja http://www.art4apps.org/ - Art4Apps by Smart4Kids - Lisenssi: Creative Commons (CC BY-SA). \n Tiedostosta credits.txt löydät lisää tietoa tämän projektin käyttämistä mediatiedostoista.    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "Tämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa Free Software Foundationin julkaiseman GNU General Public Licensen (GPL-lisenssi) version 3 tai (valinnan mukaan) myöhemmän version ehtojen mukaisestiTämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin ei ole, katso <http://www.gnu.org/licenses/>. (Epävirallinen suomennos: <http://www.turre.com/licenses/gpl_fi.html>).    "
+    then result[0] = "Tämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa Free Software Foundationin julkaiseman GNU General Public Licensen (GPL-lisenssi) version 3 tai (valinnan mukaan) myöhemmän version ehtojen mukaisestiTämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin ei ole, katso <http://www.gnu.org/licenses/>. (Epävirallinen suomennos: <http://www.turre.com/licenses/gpl_fi.html>).    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Pieni kokoelmia opettavaisia sovelluksia lapsille" end
@@ -6993,6 +7005,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Rahoitus: " end
 
   end
   if global_language == "french" then
@@ -7722,12 +7736,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "se souvenir de moi" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Un petit ensemble d'applications éducatives pour les enfants" end
@@ -8007,6 +8021,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Financement: " end
 
   end
   if global_language == "hebrew" then
@@ -8742,7 +8758,7 @@ function translate_i18n(word, index)
     if word == "Licence"
       then result[0] = "רשיון שימוש" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "יישומים לימודיים לילדים" end
@@ -9022,6 +9038,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = " :מימון" end
 
   end
   if global_language == "italian" then
@@ -9753,12 +9771,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "ricordati di me" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Una piccola raccolta di applicazioni educative per ragazzi" end
@@ -10038,6 +10056,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Finanziamento: " end
 
   end
   if global_language == "lakota" then
@@ -11050,6 +11070,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Funding: " end
 
   end
   if global_language == "polish" then
@@ -11798,7 +11820,7 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "zapamiętaj mnie" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licencja" end
@@ -11885,7 +11907,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Zbiór edukacyjnych zadań" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "Prosze zainstalować program espeak by używać funkcji syntezatora mowy, nie jest to jednak konieczne by skutecznie korzystać z programu: \nhttp: //espeak.sourceforge.net/    "
+    then result[0] = "Prosze zainstalować program espeak by używać funkcji syntezatora mowy, nie jest to jednak konieczne by skutecznie korzystać z programu: \nhttp: //espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Ułamki dziesiętne" end
@@ -12109,6 +12131,8 @@ function translate_i18n(word, index)
       then result[0] = "Odejmowanie ułamków o różnych mianownikach" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "Aby dodać lub odjąć dwa ułamki o różnch mianownikach należy najpierw znaleźć dwa równoważne ułamki które mają wspólny mianownik i dodać liczebniki do siebie, pozostawiając mianownik bez zmian. Znalezienie najmniejszej wspólnej wielokrotności mianowników ułatwi to zadanie." end
+    if word == "Funding: "
+      then result[0] = "Finansowanie: " end
 
   end
   if global_language == "portuguese" then
@@ -12840,12 +12864,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "lembrar-me" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Um pequeno conjunto de aplicativos educacionais para crianças" end
@@ -13125,6 +13149,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Financiamento: " end
 
   end
   if global_language == "russian" then
@@ -13869,12 +13895,12 @@ function translate_i18n(word, index)
     if word == "yellow is spot on"
       then result[0] = "жёлтого нормально" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 год, автор Mehdi Cherti (mehdidc) \n Звуки от различных авторов, опубликовавших свои работы на freesound.org. \n Изображения от различных авторов, опубликовавших свои работы на openclipart.org (публичный домен) и на http://www.art4apps.org/ - Art4Apps от Smart4Kids - под лицензией Creative Commons License (CC BY-SA). \n Пожалуйста, посмотрите credits.txt для более подробной информации об авторах медиафайлов, использованных в этом проекте    "
+    then result[0] = "Laby, 2010 год, автор Mehdi Cherti (mehdidc) \n Звуки от различных авторов, опубликовавших свои работы на freesound.org. \n Изображения от различных авторов, опубликовавших свои работы на openclipart.org (публичный домен) и на http://www.art4apps.org/ - Art4Apps от Smart4Kids - под лицензией Creative Commons License (CC BY-SA). \n Пожалуйста, посмотрите credits.txt для более подробной информации об авторах медиафайлов, использованных в этом проекте    "
     end
     if word == "Licence"
       then result[0] = "Лицензия" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "Эта программа является свободной: Вы можете распространять её и/или изменять в соответствии с лицензией GNU General Public License, опубликованной Free Software Foundation, или версией 3 лицензии, или (по Вашему желанию) любой более поздней. Вы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, то смотрите <http://www.gnu.org/licenses/>.    "
+    then result[0] = "Эта программа является свободной: Вы можете распространять её и/или изменять в соответствии с лицензией GNU General Public License, опубликованной Free Software Foundation, или версией 3 лицензии, или (по Вашему желанию) любой более поздней. Вы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, то смотрите <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Небольшой набор образовательных программ для детей" end
@@ -14160,6 +14186,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Финансирование: " end
 
   end
   if global_language == "serbian" then
@@ -14902,12 +14930,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "упамти ме" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Лаби, 2010 Меди Кери (mehdidc) \n Разни аутори су допринели звуку својим радовима на „freesound.org“. \n Разни аутори су допринели сликама својим радовима на „openclipart.org“-у (Јавни домен) и „http://www.art4apps.org/“-у — „Art4Apps“ од „Smart4Kids“ — под дозволом Заједничког стваралаштва (CC BY-SA). \n Погледајте датотеку „credits.txt“ за више података о ауторима медијских датотека коришћеним у овом пројекту    "
+    then result[0] = "Лаби, 2010 Меди Кери (mehdidc) \n Разни аутори су допринели звуку својим радовима на „freesound.org“. \n Разни аутори су допринели сликама својим радовима на „openclipart.org“-у (Јавни домен) и „http://www.art4apps.org/“-у — „Art4Apps“ од „Smart4Kids“ — под дозволом Заједничког стваралаштва (CC BY-SA). \n Погледајте датотеку „credits.txt“ за више података о ауторима медијских датотека коришћеним у овом пројекту    "
     end
     if word == "Licence"
       then result[0] = "Дозвола" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "Овај програм је слободан софтвер; можете га расподељивати\nи/или мењати под условима Гнуове опште јавне лиценце коју је\nобјавила Задужбина слободног софтвера; издања 3 лиценце или\n(по вашем избору) било којег новијег издања. Требали сте да\nпримите примерак Гнуове Опште јавне лиценце уз овај програм.\nАко нисте, погледајте „http://www.gnu.org/licenses/“.    "
+    then result[0] = "Овај програм је слободан софтвер; можете га расподељивати\nи/или мењати под условима Гнуове опште јавне лиценце коју је\nобјавила Задужбина слободног софтвера; издања 3 лиценце или\n(по вашем избору) било којег новијег издања. Требали сте да\nпримите примерак Гнуове Опште јавне лиценце уз овај програм.\nАко нисте, погледајте „http://www.gnu.org/licenses/“.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Малени скуп образовних програма за дечицу" end
@@ -14970,7 +14998,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Комплет образовних активности за дечицу" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "Можеш да инсталираш е-говорника да би користио његову могућност изговарања текста, али није толико ни неопходно за успешно коришћење игре: \nhttp://espeak.sourceforge.net/    "
+    then result[0] = "Можеш да инсталираш е-говорника да би користио његову могућност изговарања текста, али није толико ни неопходно за успешно коришћење игре: \nhttp://espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Децимални бројеви" end
@@ -15194,6 +15222,8 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Финансирање: " end
 
   end
   if global_language == "telugu" then
@@ -15923,12 +15953,12 @@ function translate_i18n(word, index)
     if word == "yellow is spot on"
       then result[0] = "yellow is spot on" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "A collection of educational activities for kids" end
@@ -16208,6 +16238,8 @@ function translate_i18n(word, index)
       then result[0] = "Subtract fractions with unlike denominators" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that." end
+    if word == "Funding: "
+      then result[0] = "Funding: " end
 
   end
   if global_language == "ukrainian" then
@@ -16965,12 +16997,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "запам’ятати мене" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Звукові дані надіслано різними авторами, які працювали на freesound.org. \n Зображення створено різними авторами, які розміщували їх на openclipart.org (громадське використання) та http://www.art4apps.org/ - Art4Apps від Smart4Kids - за умов дотримання Creative Commons License (CC BY-SA). \n Будь ласка, ознайомтеся із вмістом файла credits.txt, щоб дізнатися більше про авторів мультимедійних файлів, використаних у межах цього проекту.    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Звукові дані надіслано різними авторами, які працювали на freesound.org. \n Зображення створено різними авторами, які розміщували їх на openclipart.org (громадське використання) та http://www.art4apps.org/ - Art4Apps від Smart4Kids - за умов дотримання Creative Commons License (CC BY-SA). \n Будь ласка, ознайомтеся із вмістом файла credits.txt, щоб дізнатися більше про авторів мультимедійних файлів, використаних у межах цього проекту.    "
     end
     if word == "Licence"
       then result[0] = "Умови ліцензування" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Невеличкий набір освітніх програм для малят" end
@@ -17254,6 +17286,9 @@ function translate_i18n(word, index)
       then result[0] = "" end
     if word == "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
       then result[0] = "" end
+    if word == "Funding: "
+      then result[0] = "Фінансування: " end
+
   end
   if result[index] ~= nil then
     return result[index]

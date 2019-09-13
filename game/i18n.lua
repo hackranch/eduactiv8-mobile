@@ -14,6 +14,9 @@ function set_language(language)
     s_manage_users = "User Management"
     s_copyright = "Copyright & Credits"
     s_copyright_text = "www.eduactiv8.org  |  info@eduactiv8.org \n Copyright (C) 2012 - 2019 Ireneusz Imiolek"
+    s_copyright_content = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
+    s_licence_title = "Licence"
+    s_licence_content = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
     s_copyright_text_big = "Copyright(C) 2012 - 2019 Ireneusz Imiolek \n \n Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributet their works to freesound.org. \n Images by various authors who contributet their works to openclipart.org (Public Domain) and http://art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
     s_incorrect_login = "This username and password combination doesn't exist."
     s_username = "user name: "
@@ -35,6 +38,12 @@ function set_language(language)
     s_addition = "Addition"
     s_find_missing_number = "Find missing number"
     s_level = "Level"
+    s_translators = "Translators"
+    s_funding = "Funding: "
+    s_score = "Score: "
+    s_numbers_and_basic_operations = "Numbers & Basic Operations"
+    s_numbers = "Numbers"
+    s_basic_operations = "Basic Operations"
 
     s_discover_letters = "Discover Letters"
     s_word_matchers = "Word Matchers"
@@ -44,6 +53,10 @@ function set_language(language)
     s_time = "Time"
     s_basics = "Basics"
     s_subtraction = "Subtraction"
+    s_learn_numbers_with_flashcard = "Learn Numbers with Flashcards"
+    s_demonstration = "Demonstration"
+    s_find_solution = "Find Solution"
+    s_image_patterns = "Image Patterns"
 
 
 
@@ -90,6 +103,21 @@ function set_language(language)
     s_time = translate_i18n(s_time)
     s_basics = translate_i18n(s_basics)
     s_subtraction = translate_i18n(s_subtraction)
+    s_copyright_content = translate_i18n(s_copyright_content)
+    s_licence_title = translate_i18n(s_licence_title)
+    s_licence_content = translate_i18n(s_licence_content)
+    s_translators = translate_i18n(s_translators)
+    s_funding = translate_i18n(s_funding)
+    s_score = translate_i18n(s_score)
+    s_learn_numbers_with_flashcard = translate_i18n(s_learn_numbers_with_flashcard)
+    s_demonstration = translate_i18n(s_demonstration)
+    s_numbers_and_basic_operations = translate_i18n(s_numbers_and_basic_operations)
+    s_numbers = translate_i18n(s_numbers)
+    s_basic_operations = translate_i18n(s_basic_operations)
+    s_find_solution = translate_i18n(s_find_solution)
+    s_image_patterns = translate_i18n(s_image_patterns)
+
+
 
   end
 end

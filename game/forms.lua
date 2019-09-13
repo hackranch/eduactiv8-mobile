@@ -17,7 +17,7 @@ function build_form(index)
   elseif index == 2 then --login
     text[1] = ""
     text[2] = ""
-    add_button(1, s_login, 800, 730, 170)
+    add_button(1, s_login, 800, 730, 230)
   elseif index == 4 then --change language
     add_button(1, "English", 800 - 380, 200, 370)
     add_button(2, "American English", 800 - 380, 280 , 370)
@@ -41,15 +41,17 @@ function build_form(index)
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
   elseif index == 5 then -- Copyright
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
+    add_button(1, s_translators, 1400, 863, 320)
   elseif index == 7 then -- manage users
     text[1] = ""
     text[2] = ""
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
-    add_button(1, s_remove, 1100, 720, 220)
-    add_button(2, s_save, 1100, 770, 220)
+    add_button(1, s_remove, 1100, 545, 320)
+    add_button(2, s_save, 1100, 630, 320)
+    add_button(3, utf8sub(s_score, 1, utf8len(s_score) - 2) .. "...", 1100, 715, 320)
     row = 1
     for k, v in pairs(usernames) do
-      add_button(row + 2, v, 300, 150 + row * 60, 300, true, 'left')
+      add_button(row + 3, v, 300, 150 + row * 60, 300, true, 'left')
       row = row + 1
     end
   elseif index == 8 then --language section
@@ -308,23 +310,43 @@ function build_form(index)
     add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 11)
     add_big_button(1, icon_m1_1_2_3, 800 + 300, 310, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
     --add_big_button(2, icon_m1_1_1_3, 800 + 200, 310, 90, 1, false, 8, 0, 15) --
-  elseif index == 17 then -- Find missing number
+  elseif index == 17 or index == 29 or index == 30 then -- Find missing number
     score_system = true
-    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
+    if index == 17 then
+      add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
+    elseif index == 29 or index == 30 then
+      add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 22)
+    end
     t_x = 15
     t_y = 10
     tiles = {}
     tiles[0] = "                     "
     tiles[1] = "                     "
     tiles[2] = "                     "
-    tiles[3] = "    a+ =c b          "
-    tiles[4] = "    d+ =f e          "
-    tiles[5] = "    g+ =i h          "
-    tiles[6] = "    j+ =l k          "
-    tiles[7] = "    m+ =o n          "
+    if index == 17 then
+      tiles[3] = "    a+ =c b          "
+      tiles[4] = "    d+ =f e          "
+      tiles[5] = "    g+ =i h          "
+      tiles[6] = "    j+ =l k          "
+      tiles[7] = "    m+ =o n          "
+    end
     tiles[8] = "                     "
     tiles[9] = "                     "
     tiles[10]= "                     "
+    if index == 29 then
+      tiles[3] = "    a+b=  c          "
+      tiles[4] = "    d+e=  f          "
+      tiles[5] = "    g+h=  i          "
+      tiles[6] = "    j+k=  l          "
+      tiles[7] = "    m+n=  o          "
+    end
+    if index == 30 then
+      tiles[3] = "    c-b=  a          "
+      tiles[4] = "    f-e=  d          "
+      tiles[5] = "    i-h=  g          "
+      tiles[6] = "    l-k=  j          "
+      tiles[7] = "    o-n=  m          "
+    end
 
     fixed_tiles = {}
     for k in pairs (fixed_tiles) do
@@ -333,14 +355,23 @@ function build_form(index)
     fixed_tiles[0] = "                     "
     fixed_tiles[1] = "                     "
     fixed_tiles[2] = "                     "
-    fixed_tiles[3] = "    XX@XX            "
-    fixed_tiles[4] = "    XX@XX            "
-    fixed_tiles[5] = "    XX@XX            "
-    fixed_tiles[6] = "    XX@XX            "
-    fixed_tiles[7] = "    XX@XX            "
+    if index == 17 then
+      fixed_tiles[3] = "    XX@XX            "
+      fixed_tiles[4] = "    XX@XX            "
+      fixed_tiles[5] = "    XX@XX            "
+      fixed_tiles[6] = "    XX@XX            "
+      fixed_tiles[7] = "    XX@XX            "
+    end
     fixed_tiles[8] = "                     "
     fixed_tiles[9] = "                     "
     fixed_tiles[10]= "                     "
+    if index == 29 or index == 30 then
+      fixed_tiles[3] = "    XXXX@            "
+      fixed_tiles[4] = "    XXXX@            "
+      fixed_tiles[5] = "    XXXX@            "
+      fixed_tiles[6] = "    XXXX@            "
+      fixed_tiles[7] = "    XXXX@            "
+    end
 
     tile_numbers = {}
     local min_num = 1
@@ -381,6 +412,7 @@ function build_form(index)
 
     tile_numbers["="] = "="
     tile_numbers["+"] = "+"
+    tile_numbers["-"] = "-"
     tile_numbers[" "] = 999999
 
     for i = 3, 7 do
@@ -403,26 +435,143 @@ function build_form(index)
     add_button(3, s_level .. " 3", 800, 500, 370)
     add_button(4, s_level .. " 4", 800, 600, 370)
     add_button(5, s_level .. " 5", 800, 700, 370)
-  elseif index == 19 then -- main menu
+  elseif index == 19 then -- main menu (new)
     if username == "admin" then
-      add_button(6, s_manage_users, 1350, 780, 495)
-    else
       add_button(7, s_level .. "...", 350, 660, 485)
       add_button(4, s_change_language, 350, 745, 485)
       add_button(5, s_copyright, 350, 830, 485)
+      add_button(6, s_manage_users, 350, 575, 485)
+    else
+      add_button(7, s_level .. "...", 350, 660 - 40, 485)
+      add_button(4, s_change_language, 350, 745 - 40, 485)
+      add_button(5, s_copyright, 350, 830 - 40, 485)
     end
 
-    add_big_button(8, icon_m1, 760, 145, 57, 0.5, false, 0, 0, 20, s_positive_numbers, true)
-    add_big_button(9, icon_m2, 800, 295, 57, 0.5, false, 0, 0, nil, s_shapes_and_solids, true)
-    add_big_button(10,icon_m3, 840, 445, 57, 0.5, false, 0, 0, nil, s_symmetry, true)
-    add_big_button(11,icon_m4, 880, 595, 57, 0.5, false, 0, 0, nil, s_patterns, true)
-    add_big_button(12,icon_m5, 920, 745, 57, 0.5, false, 0, 0, nil, s_time, true)
-  elseif index == 20 then -- positive numbers
+    add_big_button(8, icon_m1,          760, 145, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
+    add_big_button(9, icon_m4,          800, 295, 57, 0.5, false, 0, 0, 21, s_patterns, true)
+    add_big_button(10,icon_ico_g_0303,  840, 445, 57, 0.5, false, 0, 0, 22,  s_basic_operations, true)
+    add_big_button(11,icon_m2,          880, 595, 57, 0.5, false, 0, 0, nil, s_shapes_and_solids, true)
+    add_big_button(12,icon_m5,          920, 745, 57, 0.5, false, 0, 0, nil, s_time, true)
+  elseif index == 20 then -- numbers
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
-    add_big_button(1, icon_m1_1_1_8, 800 - 300, 450, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
-    add_big_button(2, icon_m1_1_1_3, 800      , 450, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
-    add_big_button(3, icon_m1_1_2_3, 800 + 300, 450, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
+    if selected_level <= 2 then
+      add_big_button(1, icon_ico_g_0300, 800 - 300, 450, 90, 1, false, get_max_score_for_game(27), get_score_for_game(27), 27, s_learn_numbers_with_flashcard) --learn numbers with flashcards 1 part
+    else
+      add_big_button(1, icon_ico_g_0325, 800 - 300, 450, 90, 1, false, get_max_score_for_game(28), get_score_for_game(28), 28, s_numbers_spelling .. " (" .. s_demonstration .. ")") --learn numbers with flashcards 1 part
+    end
+    add_big_button(2, icon_m1_1_1_8,   800      , 450, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
+    add_big_button(3, icon_m1_1_1_3,   800 + 300, 450, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
+    --add_big_button(3, icon_m1_1_2_3, 800 + 300, 450, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
+  elseif index == 21 then -- patterns
+    add_big_button(400, icon_back, 80, 110, 45, 0.3)
+    add_big_button(1, icon_ico_g_2200, 800 - 200, 450, 90, 1, false, get_max_score_for_game(31), get_score_for_game(31), 31, s_image_patterns) --image patterns
+    --add_big_button(2, icon_ico_g_0310, 800 + 200, 450, 90, 1, false, get_max_score_for_game(30), get_score_for_game(30), 30, s_find_solution .. " - " .. s_subtraction) --find solution - subtraction
+  elseif index == 22 then -- basic operations
+    add_big_button(400, icon_back, 80, 110, 45, 0.3)
+    add_big_button(1, icon_ico_g_0309, 800 - 200, 450, 90, 1, false, get_max_score_for_game(29), get_score_for_game(29), 29, s_find_solution .. " - " .. s_addition) --find solution - addition
+    add_big_button(2, icon_ico_g_0310, 800 + 200, 450, 90, 1, false, get_max_score_for_game(30), get_score_for_game(30), 30, s_find_solution .. " - " .. s_subtraction) --find solution - subtraction
+  elseif index == 25 then -- Translators credits
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 5)
+  elseif index == 26 then --user score
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 7)
+  elseif index == 27 then --learn numbers with flashcards game
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
+    --add_big_button(1, nil, 200, 200, 40, 1, true, 0, 0, nil, "1")
+    for i = 1, 10 do
+      add_big_button(i, nil, 40 + game_screen_width / 2 - 80 * 5 + (i - 1) * 80, 200, 38, 1, true, 0, 0, nil, i)
+    end
+    for i = 1, 10 do
+      add_big_button(i + 10, nil, 40 + game_screen_width / 2 - 80 * 5 + (i - 1) * 80, 820, 38, 1, true, 0, 0, nil, i + 10)
+    end
+    add_big_button(21, nil, 180, 510, 38, 1, true, 0, 0, nil, "⟨")
+    add_big_button(22, nil, game_screen_width - 180, 510, 38, 1, true, 0, 0, nil, "⟩")
+    flashcards_number = 1
+    flashcards_opened = {}
+    flashcards_opened[1] = true
+    for i = 2, 20 do
+      flashcards_opened[i] = false
+    end
+  elseif index == 28 then --numbers spelling (table) (1 - 100)
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
+    number_start = 0
+    add_big_button(1, nil, 180, 510, 38, 1, true, 0, 0, nil, "⟨")
+    add_big_button(2, nil, game_screen_width - 180, 510, 38, 1, true, 0, 0, nil, "⟩")
+    numbers_opened = {}
+    numbers_opened[0] = true
+    for i = 1, 9 do
+      numbers_opened[i*10] = false
+    end
+  --elseif index == 29 then --find solution - addition
+    --add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 22)
+  elseif index == 31 then -- image patterns
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 21)
+    patterns = {}
+    patterns[1] = "abababab"
+    patterns[2] = "abababab"
+    patterns[3] = "ababababab"
+    patterns[4] = "ababababab"
+    patterns[5] = "ababababab"
+    patterns[6] = "ababababab"
+    patterns[7] = "ababababab"
+    patterns[8] = "ababababab"
+    patterns[9] = "abaabaabaaba"
+    patterns[10]= "abaabaabaaba"
+    patterns[11]= "aabaabaabaab"
+    patterns[12]= "abcabcabcabc"
+    patterns[13]= "abcabcabcabc"
+    patterns[14]= "aabaabaabaab"
+    patterns[15]= "abbabbabbabbabb"
+    patterns[16]= "abbabbabbabbabb"
+    patterns[17]= "abccabccabccabcc"
+    patterns[18]= "abcbabcbabcbabcb"
+    patterns[19]= "aabbaabbaabbaabb"
+    patterns[20]= "abcbabcbabcbabcb"
+    patterns[21]= "abcdabcdabcdabcd"
+    patterns[22]= "abbbabbbabbbabbb"
+    patterns_missing_fields = {2, 2, 4, 4, 6, 6, 7, 7, 3, 3, 3, 3, 5, 6, 10, 11, 4, 4, 4, 8, 8, 6, 6}
+    if selected_level == 1 then
+      current_pattern = 1
+    elseif selected_level == 2 then
+      current_pattern = 4
+    elseif selected_level == 3 then
+      current_pattern = 9
+    elseif selected_level == 4 then
+      current_pattern = 12
+    elseif selected_level == 5 then
+      current_pattern = 15
+    end
+    current_pattern = current_pattern + get_score_for_game(31)
+    t_x = utf8len(patterns[current_pattern])
+    t_y = math.ceil(t_x * 0.5625)
+    tiles = {}
+    selected_tile = ""
+    selected_tile_x = 0
+    selected_tile_y = 0
+    selected_tile_x_offset = 0
+    selected_tile_y_offset = 0
+    for i = 1, t_y do
+      tiles[i] = "                "
+    end
+    pattern_y_pos = math.ceil(t_y / 2) - 1
+    tiles[pattern_y_pos] = patterns[current_pattern]
+    tiles[pattern_y_pos + 2] = patterns[current_pattern]
+    tuka
+    --for i = 1, utf8len(patterns[current_pattern]) do
+    --  local rn = math.random(1, utf8len(patterns[current_pattern]))
+    --  while get_char(tiles[pattern_y_pos], rn) ~= " " do
+    --    rn = math.random(1, utf8len(patterns[current_pattern]))
+    --  end
+    --  replace_char(rn, tiles[pattern_y_pos + 2], get_char(tiles[pattern_y_pos], i))
+    --end
+    if current_pattern == 1 then
+      fixed_tiles = "XXXXXX@@"
+    elseif current_pattern == 9 then
+      fixed_tiles = "XXXXXXXXX@@@"
+    else
+      fixed_tiles = "XXXXXXXXXXXXXXXX"
+    end
   end--------------------------------------------------------
+
 
   if index >= 3 then
     add_big_button(401, icon_logout, 1600 - 22, 20, 25, 1, true)

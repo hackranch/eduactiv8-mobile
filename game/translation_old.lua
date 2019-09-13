@@ -729,12 +729,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "remember me" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
+    then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project    "
     end
     if word == "Licence"
       then result[0] = "Licence" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
+    then result[0] = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "A collection of educational activities for kids" end
@@ -795,7 +795,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Educational Activities for Kids" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/    "
+    then result[0] = "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Decimals" end
@@ -1758,12 +1758,12 @@ function translate_i18n(word, index)
     if word == "remember me"
       then result[0] = "упамти ме" end
     if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    then result = "Лаби, 2010 Меди Кери (mehdidc) \n Разни аутори су допринели звуку својим радовима на „freesound.org“. \n Разни аутори су допринели сликама својим радовима на „openclipart.org“-у (Јавни домен) и „http://www.art4apps.org/“-у — „Art4Apps“ од „Smart4Kids“ — под дозволом Заједничког стваралаштва (CC BY-SA). \n Погледајте датотеку „credits.txt“ за више података о ауторима медијских датотека коришћеним у овом пројекту    "
+    then result[0] = "Лаби, 2010 Меди Кери (mehdidc) \n Разни аутори су допринели звуку својим радовима на „freesound.org“. \n Разни аутори су допринели сликама својим радовима на „openclipart.org“-у (Јавни домен) и „http://www.art4apps.org/“-у — „Art4Apps“ од „Smart4Kids“ — под дозволом Заједничког стваралаштва (CC BY-SA). \n Погледајте датотеку „credits.txt“ за више података о ауторима медијских датотека коришћеним у овом пројекту    "
     end
     if word == "Licence"
       then result[0] = "Дозвола" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    then result = "Овај програм је слободан софтвер; можете га расподељивати\nи/или мењати под условима Гнуове опште јавне лиценце коју је\nобјавила Задужбина слободног софтвера; издања 3 лиценце или\n(по вашем избору) било којег новијег издања. Требали сте да\nпримите примерак Гнуове Опште јавне лиценце уз овај програм.\nАко нисте, погледајте „http://www.gnu.org/licenses/“.    "
+    then result[0] = "Овај програм је слободан софтвер; можете га расподељивати\nи/или мењати под условима Гнуове опште јавне лиценце коју је\nобјавила Задужбина слободног софтвера; издања 3 лиценце или\n(по вашем избору) било којег новијег издања. Требали сте да\nпримите примерак Гнуове Опште јавне лиценце уз овај програм.\nАко нисте, погледајте „http://www.gnu.org/licenses/“.    "
     end
     if word == "A collection of educational activities for kids"
       then result[0] = "Малени скуп образовних програма за дечицу" end
@@ -1826,7 +1826,7 @@ function translate_i18n(word, index)
     if word == "Educational Activities for Kids"
       then result[0] = "Комплет образовних активности за дечицу" end
     if word == "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \nhttp://espeak.sourceforge.net/"
-    then result = "Можеш да инсталираш е-говорника да би користио његову могућност изговарања текста, али није толико ни неопходно за успешно коришћење игре: \nhttp://espeak.sourceforge.net/    "
+    then result[0] = "Можеш да инсталираш е-говорника да би користио његову могућност изговарања текста, али није толико ни неопходно за успешно коришћење игре: \nhttp://espeak.sourceforge.net/    "
     end
     if word == "Decimals (Category)"
       then result[0] = "Децимални бројеви" end
@@ -2053,7 +2053,7 @@ function translate_i18n(word, index)
   end
   if global_language == "lakota" then
     if word == ""
-    then result = "Project-Id-Version: 0.70.807\nReport-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\nPOT-Creation-Date: 2013-11-01 15:33+0000\nPO-Revision-Date: 2018-12-12 14:37+0000\nLast-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\nLanguage-Team: Ireneusz Imiolek <imiolek.i@gmail.com>\nLanguage: lkt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Poedit 1.8.7.1\n    "
+    then result[0] = "Project-Id-Version: 0.70.807\nReport-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\nPOT-Creation-Date: 2013-11-01 15:33+0000\nPO-Revision-Date: 2018-12-12 14:37+0000\nLast-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\nLanguage-Team: Ireneusz Imiolek <imiolek.i@gmail.com>\nLanguage: lkt\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=n != 1;\nX-Generator: Poedit 1.8.7.1\n    "
     end
     if word == "green apple"
     or word == "green apples"
@@ -2780,8 +2780,8 @@ function translate_i18n(word, index)
       then result[0] = "Zí kiŋ eyáš heháŋyaŋ" end
     if word == "remember me"
       then result[0] = "míksuya yo/ye" end
-    if word == "\"Laby, 2010 by Mehdi Cherti (mehdidc"
-      then result[0] = "\"Laby, 2010 by Mehdi Cherti (mehdidc" end
+    if word == "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
+      then result[0] = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project" end
     if word == "Licence"
       then result[0] = "Wóiyowiŋkhiye" end
     if word == "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
