@@ -41,7 +41,8 @@ function build_form(index)
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
   elseif index == 5 then -- Copyright
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
-    add_button(1, s_translators, 1400, 863, 320)
+    --add_button(1, s_translators, 1400, 863, 320)
+    add_button(1, "", 1200, 358, 450, true)
   elseif index == 7 then -- manage users
     text[1] = ""
     text[2] = ""
@@ -119,17 +120,17 @@ function build_form(index)
         tiles[y] = "                     " .. "               "
     end
     starting_field = (t_x - utf8.len(animal_name)) / 2
-    starting_field = math.floor(starting_field)
-    tiles[7] = ""
+    starting_field = math.floor(starting_field) + 1
+    tiles[8] = ""
 
     for i = 1, starting_field - 1 do
-      tiles[7] = tiles[7] .. " "
+      tiles[8] = tiles[8] .. " "
     end
-    tiles[7] = tiles[7] .. animal_name
+    tiles[8] = tiles[8] .. animal_name
     for i = starting_field - 1 + utf8.len(animal_name) + 1, t_x + 1 do
-      tiles[7] = tiles[7] .. " "
+      tiles[8] = tiles[8] .. " "
     end
-    correct_row = tiles[7]
+    correct_row = tiles[8]
     random_n = selected_level + 1--love.math.random(2, utf8.len(animal_name))
     if random_n > utf8.len(animal_name) then
       random_n = utf8.len(animal_name)
@@ -145,9 +146,9 @@ function build_form(index)
       local try_counter = 0
       while flag == false do
         random_nn = love.math.random(1, utf8.len(animal_name))
-        if get_char(tiles[7], random_nn + starting_field - 1) ~= "@" and get_char(tiles[7], random_nn + starting_field - 1) ~= " " then
-          available_letters = available_letters .. get_char(tiles[7], random_nn + starting_field - 1)
-          tiles[7] = replace_char(random_nn + starting_field - 1, tiles[7], '@')
+        if get_char(tiles[8], random_nn + starting_field - 1) ~= "@" and get_char(tiles[8], random_nn + starting_field - 1) ~= " " then
+          available_letters = available_letters .. get_char(tiles[8], random_nn + starting_field - 1)
+          tiles[8] = replace_char(random_nn + starting_field - 1, tiles[8], '@')
           flag = true
         end
         try_counter = try_counter + 1
@@ -159,17 +160,21 @@ function build_form(index)
     for i = utf8.len(available_letters) + 1, t_x do
       available_letters = available_letters .. " "
     end
-    tiles[9] = available_letters
-    fixed_tiles = tiles[7]
+    tiles[10] = available_letters
+    fixed_tiles = tiles[8]
     --tiles[7] = "слкахфасиоалсхфасхфлахслфхлсч"
     selected_tile = ""
     selected_tile_x = 1
     selected_tile_y = 1
     selected_tile_x_offset = 0
     selected_tile_y_offset = 0
-  elseif index == 13 then -- numbers spelling game
+  elseif index == 13 or index == 33 then -- numbers spelling game   or   shape matching
     score_system = true
-    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
+    if index == 13 then
+      add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
+    elseif index == 33 then
+      add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 23)
+    end
     game_table = {}
     selected_a = ""
     selected_b = ""
@@ -196,19 +201,28 @@ function build_form(index)
     end
     for y = 1, game_table_rows do
       for x = 1, 2 do
-        flag = false
-        while flag == false do
+        local flag = false
+        local second_flag = false
+        while flag == false and second_flag == false do
           flag = true
-          if selected_level == 1 then
-            game_table[y][x].content = math.random(1, 7)
-          elseif selected_level == 2 then
-            game_table[y][x].content = math.random(0, 10)
-          elseif selected_level == 3 then
-            game_table[y][x].content = math.random(0, 20)
-          elseif selected_level == 4 then
-            game_table[y][x].content = math.random(10, 50)
-          elseif selected_level == 5 then
-            game_table[y][x].content = math.random(10, 100)
+          if index == 13 then
+            if selected_level == 1 then
+              game_table[y][x].content = math.random(1, 7)
+            elseif selected_level == 2 then
+              game_table[y][x].content = math.random(0, 10)
+            elseif selected_level == 3 then
+              game_table[y][x].content = math.random(0, 20)
+            elseif selected_level == 4 then
+              game_table[y][x].content = math.random(10, 50)
+            elseif selected_level == 5 then
+              game_table[y][x].content = math.random(10, 100)
+            end
+          elseif index == 33 then
+            game_table[y][x].content = math.random(1, 13)
+            while s_shape_matching_names[game_table[y][x].content] == "" do
+              game_table[y][x].content = math.random(1, 13)
+              second_flag = true
+            end
           end
           game_table[y][x].completed = false
           game_table[y][x].selected = false
@@ -220,7 +234,11 @@ function build_form(index)
             end
           end
         end
-        game_table[y][x + 2].content = number_to_string(game_table[y][x].content)
+        if index == 13 then
+          game_table[y][x + 2].content = number_to_string(game_table[y][x].content)
+        elseif index == 33 then
+          game_table[y][x + 2].content = s_shape_matching_names[game_table[y][x].content]
+        end
         game_table[y][x + 2].completed = false
         game_table[y][x + 2].selected = false
       end
@@ -232,6 +250,7 @@ function build_form(index)
       game_table[num_a][1] = game_table[num_b][2]
       game_table[num_b][2] = temp_n
     end
+    generate_random_colors()
   elseif index == 14 then -- Positive numbers games
     add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 11)
     add_big_button(1, icon_m1_1_1_8, 800 + 300, 710, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
@@ -243,9 +262,9 @@ function build_form(index)
     t_y = 10
     tiles = {}
     for y = 0, 10 do
-      if y < 2 or y == 10 then
+      if y < 3 then
         tiles[y] = "                     "
-      elseif y < 10 then
+      else
         local rf = math.random(1, 13) --random fruit
         local flag = false
 
@@ -269,7 +288,7 @@ function build_form(index)
     end
     for i = 1, selected_level + 1 do------ difficulty
       items_needed[i] = {}
-      local rf = ord(get_char(tiles[math.random(2, 9)], 1)) --random fruit from tiles
+      local rf = ord(get_char(tiles[math.random(3, 10)], 1)) --random fruit from tiles
       if i > 1 then
         local flag = false
         while flag == false do
@@ -300,7 +319,13 @@ function build_form(index)
       if items_needed[i].quantity > 1 then
         quant = 1
       end
-      items_needed[i].name = translate_i18n(fruits_vegs_names[rf]:sub(1, utf8.len(fruits_vegs_names[rf]) - 4), quant)
+      items_needed[i].name = ""
+      if fruits_vegs_names[rf] ~= nil then
+        items_needed[i].name = translate_i18n(fruits_vegs_names[rf]:sub(1, utf8.len(fruits_vegs_names[rf]) - 4), quant)
+      end
+      if items_needed[i].name == "" then
+        items_needed[i].name = "?"
+      end
       --table.insert(item_names, translate_i18n(fruits_vegs_names[rf]:sub(1, utf8.len(fruits_vegs_names[rf]) - 4)))
     end
     selected_tile_x_offset = 0
@@ -310,7 +335,7 @@ function build_form(index)
     add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 11)
     add_big_button(1, icon_m1_1_2_3, 800 + 300, 310, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
     --add_big_button(2, icon_m1_1_1_3, 800 + 200, 310, 90, 1, false, 8, 0, 15) --
-  elseif index == 17 or index == 29 or index == 30 then -- Find missing number
+  elseif index == 17 or index == 29 or index == 30 then -- Find missing number  - find solution
     score_system = true
     if index == 17 then
       add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 20)
@@ -323,29 +348,29 @@ function build_form(index)
     tiles[0] = "                     "
     tiles[1] = "                     "
     tiles[2] = "                     "
+    tiles[3] = "                     "
     if index == 17 then
-      tiles[3] = "    a+ =c b          "
-      tiles[4] = "    d+ =f e          "
-      tiles[5] = "    g+ =i h          "
-      tiles[6] = "    j+ =l k          "
-      tiles[7] = "    m+ =o n          "
+      tiles[4] = "    a+ =c b          "
+      tiles[5] = "    d+ =f e          "
+      tiles[6] = "    g+ =i h          "
+      tiles[7] = "    j+ =l k          "
+      tiles[8] = "    m+ =o n          "
     end
-    tiles[8] = "                     "
     tiles[9] = "                     "
-    tiles[10]= "                     "
+    tiles[10] = "                     "
     if index == 29 then
-      tiles[3] = "    a+b=  c          "
-      tiles[4] = "    d+e=  f          "
-      tiles[5] = "    g+h=  i          "
-      tiles[6] = "    j+k=  l          "
-      tiles[7] = "    m+n=  o          "
+      tiles[4] = "    a+b=  c          "
+      tiles[5] = "    d+e=  f          "
+      tiles[6] = "    g+h=  i          "
+      tiles[7] = "    j+k=  l          "
+      tiles[8] = "    m+n=  o          "
     end
     if index == 30 then
-      tiles[3] = "    c-b=  a          "
-      tiles[4] = "    f-e=  d          "
-      tiles[5] = "    i-h=  g          "
-      tiles[6] = "    l-k=  j          "
-      tiles[7] = "    o-n=  m          "
+      tiles[4] = "    c-b=  a          "
+      tiles[5] = "    f-e=  d          "
+      tiles[6] = "    i-h=  g          "
+      tiles[7] = "    l-k=  j          "
+      tiles[8] = "    o-n=  m          "
     end
 
     fixed_tiles = {}
@@ -355,22 +380,22 @@ function build_form(index)
     fixed_tiles[0] = "                     "
     fixed_tiles[1] = "                     "
     fixed_tiles[2] = "                     "
+    fixed_tiles[3] = "                     "
     if index == 17 then
-      fixed_tiles[3] = "    XX@XX            "
       fixed_tiles[4] = "    XX@XX            "
       fixed_tiles[5] = "    XX@XX            "
       fixed_tiles[6] = "    XX@XX            "
       fixed_tiles[7] = "    XX@XX            "
+      fixed_tiles[8] = "    XX@XX            "
     end
-    fixed_tiles[8] = "                     "
     fixed_tiles[9] = "                     "
-    fixed_tiles[10]= "                     "
+    fixed_tiles[10] = "                     "
     if index == 29 or index == 30 then
-      fixed_tiles[3] = "    XXXX@            "
       fixed_tiles[4] = "    XXXX@            "
       fixed_tiles[5] = "    XXXX@            "
       fixed_tiles[6] = "    XXXX@            "
       fixed_tiles[7] = "    XXXX@            "
+      fixed_tiles[8] = "    XXXX@            "
     end
 
     tile_numbers = {}
@@ -415,10 +440,10 @@ function build_form(index)
     tile_numbers["-"] = "-"
     tile_numbers[" "] = 999999
 
-    for i = 3, 7 do
+    for i = 4, 8 do
       j = i
       while j == i do
-        j = math.random(3, 7)
+        j = math.random(4, 8)
       end
       local char_a = get_char(tiles[i], 11)
       local char_b = get_char(tiles[j], 11)
@@ -450,8 +475,8 @@ function build_form(index)
     add_big_button(8, icon_m1,          760, 145, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
     add_big_button(9, icon_m4,          800, 295, 57, 0.5, false, 0, 0, 21, s_patterns, true)
     add_big_button(10,icon_ico_g_0303,  840, 445, 57, 0.5, false, 0, 0, 22,  s_basic_operations, true)
-    add_big_button(11,icon_m2,          880, 595, 57, 0.5, false, 0, 0, nil, s_shapes_and_solids, true)
-    add_big_button(12,icon_m5,          920, 745, 57, 0.5, false, 0, 0, nil, s_time, true)
+    add_big_button(11,icon_m2,          880, 595, 57, 0.5, false, 0, 0, 23, s_shapes_and_solids, true)
+    add_big_button(12,icon_m5,          920, 745, 57, 0.5, false, 0, 0, 24, s_time, true)
   elseif index == 20 then -- numbers
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
     if selected_level <= 2 then
@@ -470,6 +495,16 @@ function build_form(index)
     add_big_button(400, icon_back, 80, 110, 45, 0.3)
     add_big_button(1, icon_ico_g_0309, 800 - 200, 450, 90, 1, false, get_max_score_for_game(29), get_score_for_game(29), 29, s_find_solution .. " - " .. s_addition) --find solution - addition
     add_big_button(2, icon_ico_g_0310, 800 + 200, 450, 90, 1, false, get_max_score_for_game(30), get_score_for_game(30), 30, s_find_solution .. " - " .. s_subtraction) --find solution - subtraction
+  elseif index == 23 then -- shapes
+    add_big_button(400, icon_back, 80, 110, 45, 0.3)
+    add_big_button(1, icon_ico_g_0500, 800 - 300, 450, 90, 1, false, get_max_score_for_game(32), get_score_for_game(32), 32, s_learn_shapes_with_flashcards) --learn shapes with flashcards
+    add_big_button(2, icon_ico_g_0504, 800      , 450, 90, 1, false, get_max_score_for_game(33), get_score_for_game(33), 33, s_shape_matching) --shape matching
+    add_big_button(3, icon_ico_g_0502, 800 + 300, 450, 90, 1, false, get_max_score_for_game(34), get_score_for_game(34), 34, s_shape_maker) --shape maker
+  elseif index == 24 then -- time
+    add_big_button(400, icon_back, 80, 110, 45, 0.3)
+    add_big_button(1, icon_m5, 800 - 300,       450, 90, 1, false, get_max_score_for_game(35), get_score_for_game(35), 35, s_how_clock_works) --how clock works
+    add_big_button(2, icon_ico_g_1004, 800    , 450, 90, 1, false, get_max_score_for_game(36), get_score_for_game(36), 36, s_learn_to_set_the_clock) --learn to set the clock
+    add_big_button(3, icon_ico_g_1006, 800 + 300, 450, 90, 1, false, get_max_score_for_game(37), get_score_for_game(37), 37, s_time_matching) --time_matching
   elseif index == 25 then -- Translators credits
     add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 5)
   elseif index == 26 then --user score
@@ -505,6 +540,7 @@ function build_form(index)
     --add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 22)
   elseif index == 31 then -- image patterns
     add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 21)
+    score_system = true
     patterns = {}
     patterns[1] = "abababab"
     patterns[2] = "abababab"
@@ -544,6 +580,7 @@ function build_form(index)
     t_x = utf8len(patterns[current_pattern])
     t_y = math.ceil(t_x * 0.5625)
     tiles = {}
+    fixed_tiles = {}
     selected_tile = ""
     selected_tile_x = 0
     selected_tile_y = 0
@@ -551,24 +588,134 @@ function build_form(index)
     selected_tile_y_offset = 0
     for i = 1, t_y do
       tiles[i] = "                "
+      fixed_tiles[i] = "                "
     end
     pattern_y_pos = math.ceil(t_y / 2) - 1
     tiles[pattern_y_pos] = patterns[current_pattern]
+    correct_row = patterns[current_pattern]
     tiles[pattern_y_pos + 2] = patterns[current_pattern]
-    --tuka
-    --for i = 1, utf8len(patterns[current_pattern]) do
-    --  local rn = math.random(1, utf8len(patterns[current_pattern]))
-    --  while get_char(tiles[pattern_y_pos], rn) ~= " " do
-    --    rn = math.random(1, utf8len(patterns[current_pattern]))
-    --  end
-    --  replace_char(rn, tiles[pattern_y_pos + 2], get_char(tiles[pattern_y_pos], i))
-    --end
+    for i = 1, utf8len(patterns[current_pattern]) do
+      local rn = math.random(1, utf8len(patterns[current_pattern]))
+      local rnn = math.random(1, utf8len(patterns[current_pattern]))
+      local tmpc = get_char(tiles[pattern_y_pos + 2], rn)
+      tiles[pattern_y_pos + 2] = replace_char(rn, tiles[pattern_y_pos + 2], get_char(tiles[pattern_y_pos + 2], rnn))
+      tiles[pattern_y_pos + 2] = replace_char(rnn,tiles[pattern_y_pos + 2], tmpc)
+    end
     if current_pattern == 1 then
-      fixed_tiles = "XXXXXX@@"
+      fixed_tiles[pattern_y_pos] = "XXXXXX@@"
+      tiles[pattern_y_pos] = "ababab  "
     elseif current_pattern == 9 then
-      fixed_tiles = "XXXXXXXXX@@@"
+      fixed_tiles[pattern_y_pos] = "XXXXXXXXX@@@"
+      tiles[pattern_y_pos] = "abaabaaba   "
     else
-      fixed_tiles = "XXXXXXXXXXXXXXXX"
+      fixed_tiles[pattern_y_pos] = ""
+      for i = 1, utf8len(patterns[current_pattern]) do
+        fixed_tiles[pattern_y_pos] = fixed_tiles[pattern_y_pos] .. "X"
+      end
+      for i = 1, patterns_missing_fields[current_pattern] do
+        local rn = math.random(1, utf8len(fixed_tiles[pattern_y_pos]))
+        fixed_tiles[pattern_y_pos] = replace_char(rn, fixed_tiles[pattern_y_pos], "@")
+        tiles[pattern_y_pos] = replace_char(rn, tiles[pattern_y_pos], " ")
+      end
+    end
+    local rn = math.random(1, 3)
+    local image_array = {}
+    if rn == 1 then
+      image_array = sport_images
+    elseif rn == 2 then
+      image_array = animals_images
+    else
+      image_array = clothes_images
+    end
+    rn = math.random(1, table_length(image_array) - 3)
+    pattern_images = {}
+    pattern_images["a"] = image_array[rn]
+    pattern_images["b"] = image_array[rn + 1]
+    pattern_images["c"] = image_array[rn + 2]
+    pattern_images["d"] = image_array[rn + 3]
+  elseif index == 32 then -- learn shapes with flashcards
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 23)
+    for i = 1, 15 do
+      add_big_button(i, icon_shapes[i], 800 - (100 * 7.5) + (i - 1) * 100 + 50, 250, 50, 1, true)
+    end
+    selected_shape = 1
+    shapes_opened = {}
+    for i = 1, 15 do
+      shapes_opened[i] = false
+    end
+    add_big_button(16, nil, 180, 510, 38, 1, true, 0, 0, nil, "⟨")
+    add_big_button(17, nil, game_screen_width - 180, 510, 38, 1, true, 0, 0, nil, "⟩")
+  elseif index == 33 then -- shape matching
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 23)
+  elseif index == 34 then --  shape maker
+    score_system = true
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 23)
+    add_big_button(1, icon_quads, 100, 300, 50, 1, true)
+    add_big_button(2, icon_triangles, 100, 450, 50, 1, true)
+    add_big_button(3, icon_circles, 100, 600, 50, 1, true)
+    selected_shape_icon = 1
+    coordinates_quads = {}
+    coordinates_triangles = {}
+    coordinates_circles = {}
+    coordinates_shape_names = {}
+    generate_random_colors()
+  elseif index == 35 or index == 36 then -- how clock works, learn to set the clock
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 24)
+    if index == 36 then
+      score_system = true
+    end
+    clock_hour = 3
+    clock_min = 0
+    if index == 36 then
+      clock_hour = 6
+    end
+    selected_hand = 0
+    clock_changes = 0
+    if index == 36 then
+      goal_hour = math.random(1, 12)
+      goal_min = math.random(0, 59)
+    end
+    add_big_button(4, nil, 1064, 455 - 70, 38, 1, true, 0, 0, nil, "▲")
+    add_big_button(5, nil, 1064, 455 + 70, 38, 1, true, 0, 0, nil, "▼")
+    add_big_button(6, nil, 1227, 455 - 70, 38, 1, true, 0, 0, nil, "▲")
+    add_big_button(7, nil, 1227, 455 + 70, 38, 1, true, 0, 0, nil, "▼")
+  elseif index == 37 then --time matching
+    add_big_button(402, icon_back, 80, 110, 45, 0.3, false, 0, 0, 24)
+    score_system = true
+    time_clocks = {}
+    time_words = {}
+    selected_clock = {}
+    selected_words = {}
+    selected_clock.hour = -1
+    selected_clock.min = 0
+    selected_clock.index = 0
+    selected_words.content = ""
+    selected_words.index = 0
+    for i = 1, 6 do
+      local rh = math.random(1, 12)
+      local rm = math.random(0, 59)
+      time_clocks[i] = {}
+      time_clocks[i].hour = rh
+      time_clocks[i].min = rm
+      time_words[i] = time_to_string_short(rh, rm)
+    end
+    for i = 1, 6 do
+      local rn = math.random(1, 6)
+      local temp_time = time_words[i]
+      time_words[i] = time_words[rn]
+      time_words[rn] = temp_time
+    end
+    for i = 1, 6 do
+      local y = 0
+      local x = 0
+      if i > 3 then
+        y = 288
+        x = -(288 * 3)
+      end
+      --add_big_button(i, nil, 196 + (i - 1) * 288 + x, 376 + y, 288 / 2 - 2, 1, true, 0, 0, nil, "")
+      --add_button(b_index, button_text, button_x, button_y, button_width, white, alignment, height, button_form, button_color)
+      add_button(i, " ", 196 + (i - 1) * 288 + x, 376 + y, 288 - 4, false, 'center', 288 - 4, 2, color["light_blue_50"])
+      add_button(i + 16, time_words[i], 1245, 282 + (i - 1) * 96, 627, false, 'center', 96 - 4, 2, color["light_blue_50"])
     end
   end--------------------------------------------------------
 

@@ -10,6 +10,8 @@ require 'tables'
 require 'colors'
 require 'decoration'
 require 'score_processing'
+require 'geometry'
+require 'clock_graphics'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -111,7 +113,7 @@ function love.load()
   text[1] = ""
   message = ""
   buttons = {}
-  build_form(19) --splash screen
+  build_form(1) --1 = splash screen,  19 = main menu
   usernames = {}
   passwords = {}
   username = "admin"
@@ -146,9 +148,8 @@ function love.load()
   selected_level = 1
   love.math.setRandomSeed(love.timer.getTime())
 
-  score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31}
-  max_scores =    { 5,  6,  8,  8,  1,  1,  8,  8,  8}
-  --score =         { 0,  0,  0,  0}
+  score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37}
+  max_scores =    { 5,  6,  8,  8,  1,  1,  8,  8,  8,  1,  3,  1,  1,  8, 16}
 
   --score[user name][level][game index]
   initialize_score()
@@ -168,33 +169,47 @@ function initialize_activity_titles()
   activity_titles[29] = s_find_solution .. " - " .. s_addition
   activity_titles[30] = s_find_solution .. " - " .. s_subtraction
   activity_titles[31] = s_image_patterns
+  activity_titles[32] = s_learn_shapes_with_flashcards
+  activity_titles[33] = s_shape_matching
+  activity_titles[34] = s_shape_maker
+  activity_titles[35] = s_how_clock_works
+  activity_titles[36] = s_learn_to_set_the_clock
+  activity_titles[37] = s_time_matching
 end
 
 function love.mousereleased(x, y, button)
   if x < 1 then x = 1 end
   if y < 1 then y = 1 end
-  x = x * game_screen_width/screen_width
-  y = y * game_screen_height/screen_height
+  x = x * game_screen_width/screen_width - 1
+  y = y * game_screen_height/screen_height - 1
    mouse_released = true
-   if (current_window == 12 or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30) and selected_tile ~= "" then --word builders animals    or   Shopping List    or......
+   if (current_window == 12 or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and selected_tile ~= "" then --word builders animals    or   Shopping List    or......
      x = x + selected_tile_x_offset + game_screen_width / (t_x * 2)
-     y = y + selected_tile_y_offset + game_screen_height / 20
+     y = y + selected_tile_y_offset + game_screen_height / (t_y * 2)
      if math.ceil(x / (game_screen_width / t_x)) - 1 > t_x - 1 then
-       x = x - (game_screen_width / t_x) - 1
+       x = (t_x + 1) * (game_screen_width / t_x)
      end
-     if math.ceil(y / (game_screen_height / 10)) - 1 > 9 then
-       y = y - (game_screen_height / 10) - 1
+     if math.ceil(y / (game_screen_height / t_y)) - 1 > t_y - 1 then
+       y = (t_y + 1) * (game_screen_height / t_y)
      end
-     if get_char(tiles[math.ceil(y / (game_screen_height / 10))-1], math.ceil(x / (game_screen_width / t_x))-1) == " " or
-     get_char(tiles[math.ceil(y / (game_screen_height / 10))-1], math.ceil(x / (game_screen_width / t_x))-1) == "@" then
-       tiles[math.ceil(y / (game_screen_height / 10))-1] = replace_char(math.ceil(x / (game_screen_width / t_x)) - 1, tiles[math.ceil(y / (game_screen_height / 10))-1], selected_tile)
+     if math.ceil(x / (game_screen_width / t_x)) - 1 <= 1 then
+       x = 2 * (game_screen_width / t_x)
+     end
+     if math.ceil(y / (game_screen_height / t_y)) - 1 <= 1 then
+       y = 2 * (game_screen_height / t_y)
+     end
+     if get_char(tiles[math.ceil(y / (game_screen_height / t_y))-1], math.ceil(x / (game_screen_width / t_x))-1) == " " or
+     get_char(tiles[math.ceil(y / (game_screen_height / t_y))-1], math.ceil(x / (game_screen_width / t_x))-1) == "@" then
+       tiles[math.ceil(y / (game_screen_height / t_y))-1] = replace_char(math.ceil(x / (game_screen_width / t_x)) - 1, tiles[math.ceil(y / (game_screen_height / t_y))-1], selected_tile)
      else
        tiles[selected_tile_y] = replace_char(selected_tile_x, tiles[selected_tile_y], selected_tile)
      end
      selected_tile = ""
-     if current_window == 12 and tiles[7] == correct_row then
+     if (current_window == 12 and tiles[8] == correct_row) or
+        (current_window == 31 and tiles[pattern_y_pos] == correct_row) then
        message = "congrats"
      end
+
      if current_window == 15 then
        basket_content = {}
        total_items = 0
@@ -203,8 +218,8 @@ function love.mousereleased(x, y, button)
          basket_content[k].item = k
          basket_content[k].quantity = 0
        end
-       for x = 9, t_x do
-         for y = 7, 9 do
+       for x = 10, t_x do
+         for y = 8, t_y do
            if get_char(tiles[y], x) ~= ' ' then
              basket_content[ord(get_char(tiles[y], x))].quantity = basket_content[ord(get_char(tiles[y], x))].quantity + 1
              total_items = total_items + 1
@@ -223,7 +238,22 @@ function love.mousereleased(x, y, button)
          message = "congrats"
        end
      end
-   end
+   elseif current_window == 35 or current_window == 36 then
+     local old_clock_min = clock_min
+     clock_min = math.floor(clock_min + 0.5)
+     if clock_min == 60 then
+       clock_min = 0
+     end
+     if old_clock_min >= 59.5 then
+       clock_hour = clock_hour + 1
+     end
+     if clock_hour > 12 then
+       clock_hour = 1
+     end
+     if current_window == 36 and goal_min == clock_min and goal_hour == clock_hour then
+       message = "congrats"
+     end
+   end -- mouse released event
 --   if current_window == 17 then
 --     if (tile_numbers[get_char(tiles[3], 7)] == tile_numbers["b"]) and
 --        (tile_numbers[get_char(tiles[4], 7)] == tile_numbers["e"]) and
@@ -233,26 +263,41 @@ function love.mousereleased(x, y, button)
 --          message = "congrats"
 --     end
 --   end
-end
+end -- mouse released function
 
 function love.update(dt)
   if sleep > 0 then
     love.timer.sleep(sleep)
     sleep = 0
-    if current_window == 13 then
+    if current_window == 13 or current_window == 33 then
       game_table[selected_ay][selected_ax].selected = false
       game_table[selected_by][selected_bx].selected = false
       selected_a = ""
       selected_b = ""
     elseif current_window == 1 then
       build_form(2)
-    end
+    elseif current_window == 37 then
+      for i = 1, 6 do
+        if buttons[i].button_state == 2 then
+          buttons[i].button_state = 1
+          buttons[i].button_color = color["light_blue_50"]
+          selected_clock.index = 0
+        end
+        if buttons[i + 16].button_state == 2 then
+          buttons[i + 16].button_state = 1
+          buttons[i + 16].button_color = color["light_blue_50"]
+          selected_words.index = 0
+        end
+      end
+    end---------- after sleep
   end
   local x, y = love.mouse.getPosition()
-  x = x * game_screen_width/screen_width
-  y = y * game_screen_height/screen_height
+  x = x * game_screen_width/screen_width - 1
+  y = y * game_screen_height/screen_height - 1
   mouse_x = x
   mouse_y = y
+  --  x = x - 1
+  --  y = y - 1
   if love.mouse.isDown(1) and mouse_released then --mouse click
     mouse_released = false
     if current_window == 2 then -- login
@@ -389,22 +434,22 @@ function love.update(dt)
       if mouse_on_button(2) == true then
         build_form(9)
       end
-    elseif current_window == 12 or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 then --word builders game animals or .....
-      selected_tile_x = math.ceil(x / (game_screen_width / t_x)) - 1
-      selected_tile_y = math.ceil(y / (game_screen_height / 10))-1
+    elseif current_window == 12 or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31 then --word builders game animals or .....
+      selected_tile_x = math.ceil(x / (game_screen_width / t_x)) -- 1
+      selected_tile_y = math.ceil(y / (game_screen_height / t_y)) -- 1
       if current_window == 15 or
-         ((current_window == 17 or current_window == 29 or current_window == 30) and get_char(fixed_tiles[selected_tile_y], selected_tile_x) ~= "X") or
+         ((current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and get_char(fixed_tiles[selected_tile_y], selected_tile_x) ~= "X") or
          (current_window == 12 and (selected_tile_y ~= 7 or
                 (selected_tile_y == 7 and (get_char(fixed_tiles, selected_tile_x) == ' ' or get_char(fixed_tiles, selected_tile_x) == '@')) and
                 get_char(tiles[selected_tile_y], selected_tile_x) ~= '@')) then
         selected_tile = get_char(tiles[selected_tile_y], selected_tile_x)
         selected_tile_x_offset = selected_tile_x * (game_screen_width / t_x) - x
-        selected_tile_y_offset = selected_tile_y * (game_screen_height / 10) - y
+        selected_tile_y_offset = selected_tile_y * (game_screen_height / t_y) - y
         tiles[selected_tile_y] = replace_char(selected_tile_x, tiles[selected_tile_y], ' ')
         --love.window.setTitle(selected_tile)
       end
       if selected_tile == ' ' then selected_tile = "" end
-    elseif current_window == 13 then -- numbers spelling game
+    elseif current_window == 13 or current_window == 33 then -- numbers spelling game    or    shape matching
       y = y - (game_screen_height / 6)  - game_table_y_offset
       selected_x = 0
       if x > 1 * (game_screen_width / 12) and x < 2 * (game_screen_width / 12)  then
@@ -423,7 +468,11 @@ function love.update(dt)
         game_table[selected_y][selected_x].selected = true
         if selected_a == "" then
           if selected_x <= 2 then
-            selected_a = number_to_string(game_table[selected_y][selected_x].content)
+            if current_window == 13 then
+              selected_a = number_to_string(game_table[selected_y][selected_x].content)
+            elseif current_window == 33 then
+              selected_a = s_shape_matching_names[game_table[selected_y][selected_x].content]
+            end
           else
             selected_a = game_table[selected_y][selected_x].content
           end
@@ -431,7 +480,11 @@ function love.update(dt)
           selected_ay = selected_y
         elseif selected_b == "" then
           if selected_x <= 2 then
-            selected_b = number_to_string(game_table[selected_y][selected_x].content)
+            if current_window == 13 then
+              selected_b = number_to_string(game_table[selected_y][selected_x].content)
+            elseif current_window == 33 then
+              selected_b = s_shape_matching_names[game_table[selected_y][selected_x].content]
+            end
           else
             selected_b = game_table[selected_y][selected_x].content
           end
@@ -467,7 +520,7 @@ function love.update(dt)
           selected_level = i
         end
       end
-    elseif current_window == 27 then
+    elseif current_window == 27 then -- learn numbers with flashcards
       for i = 1, 20 do
         if mouse_on_button(i) then
           flashcards_number = i
@@ -505,11 +558,254 @@ function love.update(dt)
       if flag == true and get_score_for_game(28) < 1 then
         add_score_for_game(28)
       end
+    elseif current_window == 32 then -- learn shapes with flashcards
+      for i = 1, 15 do
+        if mouse_on_button(i) then
+          selected_shape = i
+        end
+      end
+      if mouse_on_button(16) and selected_shape > 1 then
+        selected_shape = selected_shape - 1
+      elseif mouse_on_button(17) and selected_shape < 15 then
+        selected_shape = selected_shape + 1
+      end
+      shapes_opened[selected_shape] = true
+      local flag = true
+      for i = 1, 15 do
+        if shapes_opened[i] == false then
+          flag = false
+        end
+      end
+      if flag == true and get_score_for_game(32) < 1 then
+        add_score_for_game(32)
+      end
+    elseif current_window == 34 then -- shape maker
+      if mouse_on_button(1) then selected_shape_icon = 1
+      elseif mouse_on_button(2) then selected_shape_icon = 2
+      elseif mouse_on_button(3) then selected_shape_icon = 3 end
+      if x > 4 * 47 and y > 4 * 47 then
+        if selected_shape_icon == 1 and
+           (table_length(coordinates_quads) == 0 or (coordinates_quads[table_length(coordinates_quads)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_quads[table_length(coordinates_quads)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
+          table.insert(coordinates_quads, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+          if math.fmod(table_length(coordinates_quads), 4) == 0 then
+            local s_name = ""
+            local xa = coordinates_quads[table_length(coordinates_quads)    ][1]
+            local xb = coordinates_quads[table_length(coordinates_quads) - 1][1]
+            local xc = coordinates_quads[table_length(coordinates_quads) - 2][1]
+            local xd = coordinates_quads[table_length(coordinates_quads) - 3][1]
+            local ya = coordinates_quads[table_length(coordinates_quads)    ][2]
+            local yb = coordinates_quads[table_length(coordinates_quads) - 1][2]
+            local yc = coordinates_quads[table_length(coordinates_quads) - 2][2]
+            local yd = coordinates_quads[table_length(coordinates_quads) - 3][2]
+            -- <intersected shape>
+            if do_intersect(xa, ya, xb, yb,   xc, yc, xd, yd) == false and
+               do_intersect(xb, yb, xc, yc,   xd, yd, xa, ya) == false then
+              --Square
+              if distance(xa, ya, xb, yb) == distance(xb, yb, xc, yc) and
+              distance(xa, ya, xb, yb) == distance(xc, yc, xd, yd) and
+              distance(xa, ya, xb, yb) == distance(xd, yd, xa, ya) and
+              distance(xa, ya, xc, yc) == distance(xb, yb, xd, yd) then
+                s_name = s_shape_names[6]
+              --Rectangle
+              elseif distance(xa, ya, xb, yb) == distance(xc, yc, xd, yd) and
+              distance(xb, yb, xc, yc) == distance(xd, yd, xa, ya) and
+              distance(xa, ya, xc, yc) == distance(xb, yb, xd, yd) then
+                s_name = s_shape_names[7]
+              --Rhombus
+              elseif distance(xa, ya, xb, yb) == distance(xc, yc, xd, yd) and
+              distance(xb, yb, xc, yc) == distance(xd, yd, xa, ya) and
+              distance(xa, ya, xb, yb) == distance(xb, yb, xc, yc) then
+                s_name = s_shape_names[10]
+              --Parallelogram
+              elseif distance(xa, ya, xb, yb) == distance(xc, yc, xd, yd) and
+              distance(xb, yb, xc, yc) == distance(xd, yd, xa, ya) then
+                s_name = s_shape_names[11]
+              --Isosceles Trapezium
+              elseif (distance(xa, ya, xb, yb) == distance(xc, yc, xd, yd) and distance(xa, ya, xc, yc) == distance(xb, yb, xd, yd)) or
+              (distance(xb, yb, xc, yc) == distance(xd, yd, xa, ya) and distance(xa, ya, xc, yc) == distance(xb, yb, xd, yd)) then
+                s_name = s_shape_names[9]
+              --Right Trapezium
+              elseif ((angle(xa, ya, xb, yb, xc, yc) == 90 or angle(xa, ya, xb, yb, xc, yc) == 270) and (angle(xb, yb, xc, yc, xd, yd) == 90 or angle(xb, yb, xc, yc, xd, yd) == 270))
+                or ((angle(xb, yb, xc, yc, xd, yd) == 90 or angle(xb, yb, xc, yc, xd, yd) == 270) and (angle(xc, yc, xd, yd, xa, ya) == 90 or angle(xc, yc, xd, yd, xa, ya) == 270))
+                or ((angle(xc, yc, xd, yd, xa, ya) == 90 or angle(xc, yc, xd, yd, xa, ya) == 270) and (angle(xd, yd, xa, ya, xb, yb) == 90 or angle(xd, yd, xa, ya, xb, yb) == 270))
+                or ((angle(xd, yd, xa, ya, xb, yb) == 90 or angle(xd, yd, xa, ya, xb, yb) == 270) and (angle(xa, ya, xb, yb, xc, yc) == 90 or angle(xa, ya, xb, yb, xc, yc) == 270)) then
+                s_name = s_shape_names[8]
+              --Trapezium
+            elseif are_parallel(xa, ya, xb, yb,   xd, yd, xc, yc) == true
+              or are_parallel(xb, yb, xc, yc,   xa, ya, xd, yd) == true then
+                s_name = s_trapezium
+              end
+            end
+            table.insert(coordinates_shape_names, {
+              s_name,
+              (xa + xb + xc + xd) / 4,
+              --(ya + yb + yc + yd) / 4,
+              math.max(ya, yb, yc, yd) + 20,
+              random_colors[math.floor(table_length(coordinates_quads) / 4)]
+            })
+          end
+        elseif selected_shape_icon == 2 and
+               (table_length(coordinates_triangles) == 0 or (coordinates_triangles[table_length(coordinates_triangles)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_triangles[table_length(coordinates_triangles)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
+          table.insert(coordinates_triangles, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+          if math.fmod(table_length(coordinates_triangles), 3) == 0 then
+            local s_name = ""
+            local x_a = coordinates_triangles[table_length(coordinates_triangles)    ][1]
+            local x_b = coordinates_triangles[table_length(coordinates_triangles) - 1][1]
+            local x_c = coordinates_triangles[table_length(coordinates_triangles) - 2][1]
+            local y_a = coordinates_triangles[table_length(coordinates_triangles)    ][2]
+            local y_b = coordinates_triangles[table_length(coordinates_triangles) - 1][2]
+            local y_c = coordinates_triangles[table_length(coordinates_triangles) - 2][2]
+            --Equilateral Triangle:
+            if distance(x_a, y_a, x_b, y_b) == distance(x_a, y_a, x_c, y_c) and distance(x_a, y_a, x_b, y_b) == distance(x_b, y_b, x_c, y_c) then
+              s_name = s_shape_names[1]
+            --Isosceles Triangle:
+            elseif distance(x_a, y_a, x_b, y_b) == distance(x_a, y_a, x_c, y_c) or distance(x_a, y_a, x_b, y_b) == distance(x_b, y_b, x_c, y_c) or distance(x_c, y_c, x_b, y_b) == distance(x_a, y_a, x_c, y_c) then
+              s_name = s_shape_names[2]
+            --Right Triangle
+          elseif angle(x_a, y_a, x_b, y_b, x_c, y_c) == 90 or angle(x_a, y_a, x_b, y_b, x_c, y_c) == 270
+            or angle(x_b, y_b, x_a, y_a, x_c, y_c) == 90 or angle(x_b, y_b, x_a, y_a, x_c, y_c) == 270
+            or angle(x_a, y_a, x_c, y_c, x_b, y_b) == 90 or angle(x_a, y_a, x_c, y_c, x_b, y_b) == 270 then
+              s_name = s_shape_names[4]
+            --Obtuse Triangle
+            elseif ((angle(x_a, y_a, x_b, y_b, x_c, y_c) > 90 and angle(x_c, y_c, x_b, y_b, x_a, y_a) > 90)
+            or (angle(x_b, y_b, x_a, y_a, x_c, y_c) > 90 and angle(x_c, y_c, x_a, y_a, x_b, y_b) > 90)
+            or (angle(x_a, y_a, x_c, y_c, x_b, y_b) > 90 and angle(x_b, y_b, x_c, y_c, x_a, y_a) > 90)) then
+              s_name = s_shape_names[3]
+              love.window.setTitle(angle(x_a, y_a, x_b, y_b, x_c, y_c) .. ", " .. angle(x_b, y_b, x_a, y_a, x_c, y_c) .. ", " .. angle(x_a, y_a, x_c, y_c, x_b, y_b))
+            --Acute Triangle
+            else
+              s_name = s_shape_names[5]
+              love.window.setTitle(angle(x_a, y_a, x_b, y_b, x_c, y_c) .. ", " .. angle(x_b, y_b, x_a, y_a, x_c, y_c) .. ", " .. angle(x_a, y_a, x_c, y_c, x_b, y_b))
+            end
+            table.insert(coordinates_shape_names, {
+              s_name,
+              (x_a + x_b + x_c) / 3,
+              --(y_a + y_b + y_c) / 3,
+              math.max(y_a, y_b, y_c) + 20,
+              {random_colors[math.floor(table_length(coordinates_triangles) / 3)][2], random_colors[math.floor(table_length(coordinates_triangles) / 3)][1], random_colors[math.floor(table_length(coordinates_triangles) / 3)][3]}
+            })
+          end
+        elseif selected_shape_icon == 3 and
+               (table_length(coordinates_circles) == 0 or (coordinates_circles[table_length(coordinates_circles)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_circles[table_length(coordinates_circles)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
+          table.insert(coordinates_circles, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+          if math.fmod(table_length(coordinates_circles), 2) == 0 then
+            table.insert(coordinates_shape_names, {
+              s_shape_names[14],
+              coordinates_circles[table_length(coordinates_circles) - 1][1],
+              coordinates_circles[table_length(coordinates_circles) - 1][2]
+                + distance(coordinates_circles[table_length(coordinates_circles) - 1][1], coordinates_circles[table_length(coordinates_circles) - 1][2],
+                           coordinates_circles[table_length(coordinates_circles)    ][1], coordinates_circles[table_length(coordinates_circles)    ][2]) + 20,
+              {random_colors[math.floor(table_length(coordinates_circles) / 2)][3], random_colors[math.floor(table_length(coordinates_circles) / 2)][2], random_colors[math.floor(table_length(coordinates_circles) / 2)][1]}
+            })
+          end
+        end
+        if table_length(coordinates_quads) / 4 + table_length(coordinates_triangles) / 3 + table_length(coordinates_circles) / 2 >= 10 then
+          message = "congrats"
+        end
+      end
+    elseif current_window == 35 or current_window == 36 then -- how clock works, learn to set the clock
+      if x < 800 then
+        if angle_difference(angle_clock(400, 0, 400, 525, x, y), clock_min * (360 / 60)) <
+           angle_difference(angle_clock(400, 0, 400, 525, x, y), (clock_hour + clock_min / 60) * (360 / 12)) then
+          selected_hand = 2
+        else
+          selected_hand = 1
+        end
+      else
+        selected_hand = 0
+      end
+      love.window.setTitle(selected_hand)
+      if mouse_on_button(6) then
+        clock_min = clock_min + 1
+        if clock_min > 59 then
+          clock_min = 0
+          clock_hour = clock_hour + 1
+          if clock_hour > 12 then
+            clock_hour = 1
+          end
+        end
+      elseif mouse_on_button(7) then
+        clock_min = clock_min - 1
+        if clock_min < 0 then
+          clock_min = 59
+          clock_hour = clock_hour - 1
+          if clock_hour < 1 then
+            clock_hour = 12
+          end
+        end
+      elseif mouse_on_button(4) then
+        clock_hour = clock_hour + 1
+        if clock_hour > 12 then
+          clock_hour = 1
+        end
+      elseif mouse_on_button(5) then
+        clock_hour = clock_hour - 1
+        if clock_hour < 1 then
+          clock_hour = 12
+        end
+      end
+    elseif current_window == 37 then -- time matching
+      for i = 1, 6 do
+        if mouse_on_button(i) == true and buttons[i].button_state == 1 then
+          buttons[i].button_color = color["light_blue_80"]
+          buttons[i].button_state = 2
+          if selected_clock.index == 0 then
+            selected_clock.index = i
+            selected_clock.hour = time_clocks[i].hour
+            selected_clock.min = time_clocks[i].min
+            if selected_words.index ~= 0 then
+              if time_to_string_short(selected_clock.hour, selected_clock.min) == selected_words.content then
+                buttons[i].button_state = 3
+                buttons[i].button_color = color["light_green"]
+                buttons[selected_words.index].button_state = 3
+                buttons[selected_words.index].button_color = color["light_green"]
+                selected_words.index = 0
+                selected_clock.index = 0
+              else
+                sleep = 1
+              end
+            end
+          else
+            sleep = 1
+          end
+        elseif mouse_on_button(i + 16) == true then
+          buttons[i + 16].button_color = color["light_blue_80"]
+          buttons[i + 16].button_state = 2
+          if selected_words.index == 0 then
+            selected_words.index = i + 16
+            selected_words.content = time_words[i]
+            if selected_clock.index ~= 0 then
+              if time_to_string_short(selected_clock.hour, selected_clock.min) == selected_words.content then
+                buttons[i + 16].button_state = 3
+                buttons[i + 16].button_color = color["light_green"]
+                buttons[selected_clock.index].button_state = 3
+                buttons[selected_clock.index].button_color = color["light_green"]
+                selected_words.index = 0
+                selected_clock.index = 0
+              else
+                sleep = 1
+              end
+            end
+          else
+            sleep = 1
+          end
+        end
+      end
+      local flag = true
+      for i = 1, 6 do
+        if buttons[i].button_state ~= 3 or buttons[i + 16].button_state ~= 3 then
+          flag = false
+        end
+      end
+      if flag == true then
+        message = "congrats"
+      end
     end--mouse click
 
     --if love.mouse.isDown(1) then --mouse down
 
-    --end
+
+    --end --mouse down
 
 
     if mouse_on_button(400) then --back to main menu
@@ -576,12 +872,28 @@ function love.draw()
     draw_header(s_change_language)
   elseif current_window == 5 then --Copyright
     draw_header(s_copyright)
-    love.graphics.setFont(font_interface_bold)
-    love.graphics.printf("Copyright(c) 2012 - 2019 Ireneusz Imiolek", 50, 170, 1500, 'center')
-    love.graphics.printf(s_licence_title, 50, 560, 1500, 'center')
-    love.graphics.setFont(font_interface)
-    love.graphics.printf(s_copyright_content, 50, 240, 1500, 'center')
-    love.graphics.printf(s_licence_content, 50, 630, 1500, 'center')
+    --love.graphics.setFont(font_interface_bold)
+    --love.graphics.printf("Copyright(c) 2012 - 2019 Ireneusz Imiolek", 50, 170, 1500, 'center')
+    --love.graphics.printf(s_licence_title, 50, 560, 1500, 'center')
+    --love.graphics.setFont(font_interface)
+    --love.graphics.printf(s_copyright_content, 50, 240, 1500, 'center')
+    --love.graphics.printf(s_licence_content, 50, 630, 1500, 'center')
+    local y = 220
+    local x = 0
+    for k = 1, 36 do
+      if k == 19 then x = 800 y = 220 end
+      if k == 1 or k == 4 or k == 7 or k == 15 or k == 19 or k == 23 or k == 25 or k == 30 then
+        love.graphics.setFont(font_interface_bold)
+      else
+        love.graphics.setFont(font_interface)
+      end
+      love.graphics.printf(s_credits[k], x, y, 800, 'center', 0, 1, 1)
+      if s_credits[k] ~= "" then
+        y = y + 30
+      else
+        y = y + 25
+      end
+    end
   elseif current_window == 7 then -- manage users
     draw_header(s_manage_users)
     love.graphics.setFont(font_interface_bold)
@@ -613,45 +925,41 @@ function love.draw()
     draw_header(s_math)
   elseif current_window == 11 then -- numbers
     draw_header(s_math, s_numbers)
-  elseif current_window == 12 then --game Animals
+  elseif current_window == 12 then -- word builders - animals game
     draw_header(s_animals, s_complete_the_word)
     love.graphics.setColor(color["white"])
     love.graphics.draw(animal_image, 800 - animal_image:getWidth() * 2 / 2, 380 - animal_image:getHeight() * 2 / 2, 0, 2, 2)
     --draw tiles+
     love.graphics.setFont(font_large_title)
-    for x = 1, t_x do
-      for y = 1, 10 do
-        --tiles[7] = "ѕуџиѕузџѕузџѕуџцѕиуѕизџѕиуѕциуџз"
-        local byteoffset = utf8.offset(tiles[y], x)
-        local byteoffset_b = utf8.offset(tiles[y], x+1)
-        --if get_char(tiles[y], x) ~= ' ' then
-        if y == 7 and get_char(fixed_tiles, x) == '@' then --and (string.sub(tiles[y], byteoffset, byteoffset_b - 1) == ' ' or string.sub(tiles[y], byteoffset, byteoffset_b - 1) == '@') then
+    for x = 0, t_x - 1 do
+      for y = 0, t_y - 1 do
+        local byteoffset = utf8.offset(tiles[y + 1], x + 1)
+        local byteoffset_b = utf8.offset(tiles[y + 1], x + 1 + 1)
+        if y == 7 and get_char(fixed_tiles, x + 1) == '@' then
           love.graphics.setColor(color["light_blue_50"])
-          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / 10), (game_screen_width/t_x)-2, (game_screen_height / 10)-2, 15, 15)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y) - 2, 15, 15)
           love.graphics.setColor(color["white"])
-          love.graphics.rectangle('fill', x * (game_screen_width/t_x)+5, y * (game_screen_height / 10)+5, (game_screen_width/t_x)-2-10, (game_screen_height / 10)-2-10, 10, 10)
-          --love.graphics.setColor(color["light_blue"], 0.2)
-          --love.graphics.rectangle('fill', x * (game_screen_width/21)+5, y * (game_screen_height / 10)+5, (game_screen_width/21)-2-10, (game_screen_height / 10)-2-10, 10, 10)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x) + 5, y * (game_screen_height / t_y)+5, (game_screen_width/t_x) - 2 - 10, (game_screen_height / t_y) - 2 - 10, 10, 10)
         end
-        if tiles[y] ~= nil and get_char(tiles[y], x) ~= ' ' and get_char(tiles[y], x) ~= '@' then
+        if tiles[y + 1] ~= nil and get_char(tiles[y + 1], x + 1) ~= ' ' and get_char(tiles[y + 1], x + 1) ~= '@' then
           love.graphics.setColor(color["light_blue_50"])
-          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / 10), (game_screen_width/t_x)-2, (game_screen_height / 10)-2, 15, 15)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y) - 2, 15, 15)
           love.graphics.setColor(color["blue"])
-          if string.sub(tiles[y], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y] ,byteoffset,byteoffset_b - 1) ~= '_' then
-            love.graphics.printf(string.sub(tiles[y] ,byteoffset,byteoffset_b - 1), (x) * (game_screen_width/t_x) + (game_screen_width/ (t_x * 2)) - 250 * 1, y * (game_screen_height / 10) - 13, 500, 'center', 0, 1, 1) --(x - 2) * (game_screen_width/t_x) + (game_screen_width/42) - 100, y * (game_screen_height / 10) - 17, 500, 'center')
+          if string.sub(tiles[y + 1], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y + 1] ,byteoffset,byteoffset_b - 1) ~= '_' then
+            love.graphics.printf(string.sub(tiles[y + 1] ,byteoffset,byteoffset_b - 1), (x) * (game_screen_width/t_x) + (game_screen_width/ (t_x * 2)) - 250 * 1, y * (game_screen_height / t_y) - 13, 500, 'center', 0, 1, 1)
           end
         end
       end
     end
     if selected_tile ~= "" then
       love.graphics.setColor(color["light_blue_50"])
-      love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset, (game_screen_width/t_x)-2, (game_screen_height / 10)-2, 15, 15)
+      love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset - game_screen_width / t_x, mouse_y + selected_tile_y_offset - game_screen_height / t_y, (game_screen_width/t_x) - 2, (game_screen_height / t_y) - 2, 15, 15)
       love.graphics.setColor(color["blue"])
-      love.graphics.printf(selected_tile, mouse_x + selected_tile_x_offset + (game_screen_width/(t_x * 2)) - 250 * 1, mouse_y  + selected_tile_y_offset  - 13, 500, 'center', 0, 1, 1) --mouse_x +  selected_tile_x_offset + (- 2) * (game_screen_width/t_x) + (game_screen_width/42) - 100, mouse_y  + selected_tile_y_offset  - 17, 500, 'center')
+      love.graphics.printf(selected_tile, mouse_x + selected_tile_x_offset - game_screen_width / t_x + (game_screen_width/(t_x * 2)) - 250 * 1, mouse_y  + selected_tile_y_offset - game_screen_height / t_y - 13, 500, 'center', 0, 1, 1) --mouse_x +  selected_tile_x_offset + (- 2) * (game_screen_width/t_x) + (game_screen_width/42) - 100, mouse_y  + selected_tile_y_offset  - 17, 500, 'center')
     end
     flag = true
     for i = 1, t_x do
-      if get_char(fixed_tiles, i) == '@' and (get_char(tiles[7], i) == '@' or get_char(tiles[7], i) == ' ') then
+      if get_char(fixed_tiles, i) == '@' and (get_char(tiles[8], i) == '@' or get_char(tiles[8], i) == ' ') then
         flag = false
       end
     end
@@ -659,16 +967,20 @@ function love.draw()
       love.graphics.setColor(color["white"])
       for i = 1, t_x do
         if get_char(correct_row, i) ~= ' ' then
-          if get_char(correct_row, i) == get_char(tiles[7], i) then
-            love.graphics.draw(image_correct, i * (game_screen_width / t_x), 7 * (game_screen_height / 10))
+          if get_char(correct_row, i) == get_char(tiles[8], i) then
+            love.graphics.draw(image_correct, (i - 1) * (game_screen_width / t_x), 7 * (game_screen_height / t_y))
           else
-            love.graphics.draw(image_wrong, i * (game_screen_width / t_x), 7 * (game_screen_height / 10))
+            love.graphics.draw(image_wrong, (i - 1) * (game_screen_width / t_x), 7 * (game_screen_height / t_y))
           end
         end
       end
     end
-  elseif current_window == 13 then -- numbers spelling game
-    draw_header(s_numbers, s_numbers_spelling)
+  elseif current_window == 13 or current_window == 33 then -- numbers spelling game   or   shape matching
+    if current_window == 13 then
+      draw_header(s_numbers, s_numbers_spelling)
+    elseif current_window == 33 then
+      draw_header(s_shapes_and_solids, s_shape_matching)
+    end
     love.graphics.setColor(color["white"])
     love.graphics.setFont(font_large_title)
     local y_offset = 0
@@ -684,12 +996,18 @@ function love.draw()
           love.graphics.setColor(color["light_green"])
         end
         love.graphics.rectangle('fill', x * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)-2, (game_screen_height / 6)-2, 15, 15)
-        love.graphics.setColor(color["blue"])
-        ---
-        love.graphics.setFont(font_large_title)
         y_offset = 0
         x_scale = 1
-        love.graphics.printf(game_table[y][x].content,  (x) * (game_screen_width/12) + (game_screen_width/24) - 450 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 900, 'center', 0, x_scale, 1)
+        if current_window == 13 then
+          love.graphics.setColor(color["blue"])
+          love.graphics.setFont(font_large_title)
+          love.graphics.printf(game_table[y][x].content,  (x) * (game_screen_width/12) + (game_screen_width/24) - 450 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 900, 'center', 0, x_scale, 1)
+        elseif current_window == 33 then
+          love.graphics.setColor(color["white"])
+          love.graphics.draw(icon_shapes_outline[game_table[y][x].content], (x) * (game_screen_width/12) + 13, (y+1) * (game_screen_height / 6) + 21 + y_offset + game_table_y_offset)
+          love.graphics.setColor(random_colors[x + y * 2])
+          love.graphics.draw(icon_shapes_fill[game_table[y][x].content], (x) * (game_screen_width/12) + 13, (y+1) * (game_screen_height / 6) + 21 + y_offset + game_table_y_offset)
+        end
         if game_table[y][x+2].selected == true then
           love.graphics.setColor(color["light_blue_80"])
         else
@@ -704,23 +1022,30 @@ function love.draw()
           love.graphics.rectangle('fill', (x+5) * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)*4-2, (game_screen_height / 6)-2, 15, 15)
         end
         love.graphics.setColor(color["blue"])
-        if utf8.len(game_table[y][x+2].content) >= 14 then
-          love.graphics.setFont(font_small_title)
-          y_offset = 20
-          if utf8.len(game_table[y][x+2].content) >= 22 then
-            x_scale = 0.7
-          else
-            x_scale = 1
-          end
-        else
-          love.graphics.setFont(font_large_title)
-          y_offset = 0
-          x_scale = 1
+        --if utf8.len(game_table[y][x+2].content) >= 14 then
+        --  love.graphics.setFont(font_small_title)
+        --  y_offset = 20
+        --  if utf8.len(game_table[y][x+2].content) >= 22 then
+        --    x_scale = 0.7
+        --  else
+        --    x_scale = 1
+        --  end
+        --else
+        --  love.graphics.setFont(font_large_title)
+        --  y_offset = 0
+        --  x_scale = 1
+        --end
+        love.graphics.setFont(font_large_title)
+        y_offset = 0
+        x_scale = 1
+        if utf8.len(game_table[y][x+2].content) >= 13 then
+          x_scale = 13 / utf8.len(game_table[y][x+2].content)
         end
+
         if x == 1 then
-          love.graphics.printf(game_table[y][x+2].content,  (5) * (game_screen_width/12) - 450 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 900, 'center', 0, x_scale, 1)
+          love.graphics.printf(game_table[y][x+2].content,  (5) * (game_screen_width/12) - 800 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, x_scale, 1)
         else
-          love.graphics.printf(game_table[y][x+2].content,  (9) * (game_screen_width/12) - 450 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 900, 'center', 0, x_scale, 1)
+          love.graphics.printf(game_table[y][x+2].content,  (9) * (game_screen_width/12) - 800 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, x_scale, 1)
         end
       end
     end
@@ -750,19 +1075,19 @@ function love.draw()
     love.graphics.setColor(color["red"])
     love.graphics.rectangle('line', (game_screen_width/t_x) * 9, (game_screen_height / 10) * 7, (game_screen_width/t_x) * 12 - 4, (game_screen_height / 10) * 3 - 4)
     love.graphics.setColor(color["white"])
-    for x = 1, t_x do
-      for y = 1, 9 do
-        if get_char(tiles[y], x) ~= ' ' then
-          love.graphics.draw(fruits_vegs_images[ord(get_char(tiles[y], x))], x * (game_screen_width/t_x), y* (game_screen_height / 10), 0, 1, 1)
+    for x = 0, t_x - 1 do
+      for y = 0, t_y - 1 do
+        if get_char(tiles[y + 1], x + 1) ~= ' ' then
+          love.graphics.draw(fruits_vegs_images[ord(get_char(tiles[y + 1], x + 1))], x * (game_screen_width/t_x), y* (game_screen_height / t_y), 0, 1, 1)
         end
       end
     end
     if selected_tile ~= "" then
-      love.graphics.draw(fruits_vegs_images[ord(selected_tile)], mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset)
+      love.graphics.draw(fruits_vegs_images[ord(selected_tile)], mouse_x + selected_tile_x_offset - (game_screen_width / t_x), mouse_y + selected_tile_y_offset - (game_screen_height / t_y))
     end
   elseif current_window == 16 then -- Addition gameS
     draw_header(s_numbers, s_addition)
-  elseif current_window == 17 or current_window == 29 or current_window == 30  then -- Find missing number
+  elseif current_window == 17 or current_window == 29 or current_window == 30  then -- Find missing number  - find solution
     if current_window == 17 then
       draw_header(s_addition, s_find_missing_number)
     elseif current_window == 29 then
@@ -773,108 +1098,107 @@ function love.draw()
     love.graphics.setColor(color["white"])
     love.graphics.setFont(font_large_title)
     local x_scale = 1
-    for x = 1, 15 do
-      for y = 1, 10 do
-        local byteoffset = utf8.offset(tiles[y], x)
-        local byteoffset_b = utf8.offset(tiles[y], x+1)
-        if get_char(fixed_tiles[y], x) == '@' then --and (string.sub(tiles[y], byteoffset, byteoffset_b - 1) == ' ' or string.sub(tiles[y], byteoffset, byteoffset_b - 1) == '@') then
+    for x = 0, t_x - 1 do
+      for y = 0, t_y - 1 do
+        local byteoffset = utf8.offset(tiles[y + 1], x + 1)
+        local byteoffset_b = utf8.offset(tiles[y + 1], x + 1 + 1)
+        if get_char(fixed_tiles[y + 1], x + 1) == '@' then
           love.graphics.setColor(color["light_blue_50"])
-          love.graphics.rectangle('fill', x * (game_screen_width/15), y * (game_screen_height / 10), (game_screen_width/15)-2, (game_screen_height / 10)-2, 15, 15)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y) - 2, 15, 15)
           love.graphics.setColor(color["white"])
-          love.graphics.rectangle('fill', x * (game_screen_width/15)+5, y * (game_screen_height / 10)+5, (game_screen_width/15)-2-10, (game_screen_height / 10)-2-10, 10, 10)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x)+5, y * (game_screen_height / t_y) + 5, (game_screen_width/t_x) - 2 - 10, (game_screen_height / t_y) - 2 - 10, 10, 10)
         end
-        if get_char(tiles[y], x) ~= ' ' and get_char(tiles[y], x) ~= '@' then
+        if get_char(tiles[y + 1], x + 1) ~= ' ' and get_char(tiles[y + 1], x + 1) ~= '@' then
           love.graphics.setColor(color["light_blue_50"])
-          love.graphics.rectangle('fill', x * (game_screen_width/15), y * (game_screen_height / 10), (game_screen_width/15)-2, (game_screen_height / 10)-2, 15, 15)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x) - 2, (game_screen_height / t_y) - 2, 15, 15)
           love.graphics.setColor(color["blue"])
-          --if string.sub(tiles[y], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y] ,byteoffset,byteoffset_b - 1) ~= '_' then
-          if x ~= 6 and x ~= 8 then
-            if tile_numbers[get_char(tiles[y], x)] < 99 then
+          if x + 1 ~= 6 and x + 1 ~= 8 then
+            if tile_numbers[get_char(tiles[y + 1], x + 1)] < 99 then
               x_scale = 1
-            elseif tile_numbers[get_char(tiles[y], x)] < 999 then
+            elseif tile_numbers[get_char(tiles[y + 1], x + 1)] < 999 then
               x_scale = 0.875
-            elseif tile_numbers[get_char(tiles[y], x)] < 9999 then
-              x_scale = 0.75
+            elseif tile_numbers[get_char(tiles[y + 1], x + 1)] < 9999 then
+              x_scale = 0.7
             end
           end
-            love.graphics.printf(tile_numbers[get_char(tiles[y], x)],  (x) * (game_screen_width/15) + (game_screen_width/30) - 250 * x_scale, y * (game_screen_height / 10) - 13, 500, 'center', 0, x_scale, 1)
+            love.graphics.printf(tile_numbers[get_char(tiles[y + 1], x + 1)], x * (game_screen_width/t_x), y * (game_screen_height / t_y) - 13, (game_screen_width/t_x) / x_scale, 'center', 0, x_scale, 1)
           x_scale = 1
         end
       end
     end
     if selected_tile ~= "" then
       love.graphics.setColor(color["light_blue_50"])
-      love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset, (game_screen_width/15)-2, (game_screen_height / 10)-2, 15, 15)
+      love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset - (game_screen_width/t_x), mouse_y + selected_tile_y_offset - (game_screen_height/t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y)-2, 15, 15)
       love.graphics.setColor(color["blue"])
-      if x ~= 6 and x ~= 8 then
+      if x + 1 ~= 6 and x + 1 ~= 8 then
         if tile_numbers[selected_tile] < 99 then
           x_scale = 1
         elseif tile_numbers[selected_tile] < 999 then
           x_scale = 0.875
         elseif tile_numbers[selected_tile] < 9999 then
-          x_scale = 0.75
+          x_scale = 0.7
         end
       end
-      love.graphics.printf(tile_numbers[selected_tile],  mouse_x + selected_tile_x_offset + (game_screen_width/30) - 250 * x_scale, mouse_y  + selected_tile_y_offset  - 13, 500, 'center', 0, x_scale, 1)
+      love.graphics.printf(tile_numbers[selected_tile],  mouse_x + selected_tile_x_offset - (game_screen_width/t_x), mouse_y + selected_tile_y_offset - 13 - (game_screen_height/t_y), (game_screen_width/t_x) / x_scale, 'center', 0, x_scale, 1)
       x_scale = 1
     end
     love.graphics.setColor(color["white"])
     if(current_window == 17 and
-       get_char(tiles[3], 7) ~= " " and
        get_char(tiles[4], 7) ~= " " and
        get_char(tiles[5], 7) ~= " " and
        get_char(tiles[6], 7) ~= " " and
-       get_char(tiles[7], 7) ~= " ") or
+       get_char(tiles[7], 7) ~= " " and
+       get_char(tiles[8], 7) ~= " ") or
        ((current_window == 29 or current_window == 30) and
-       get_char(tiles[3], 9) ~= " " and
        get_char(tiles[4], 9) ~= " " and
        get_char(tiles[5], 9) ~= " " and
        get_char(tiles[6], 9) ~= " " and
-       get_char(tiles[7], 9) ~= " ") then
-      for i = 3, 7 do
+       get_char(tiles[7], 9) ~= " " and
+       get_char(tiles[8], 9) ~= " ") then
+      for i = 4, 8 do
         if current_window == 17 then
-          if tile_numbers[get_char(tiles[i], 7)] == tile_numbers[char(ord("b") + ((i-3) * 3))] then
-            love.graphics.draw(image_correct, (game_screen_width / t_x) * 7 + 20, (game_screen_height / 10) * i)
+          if tile_numbers[get_char(tiles[i], 7)] == tile_numbers[char(ord("b") + ((i-4) * 3))] then
+            love.graphics.draw(image_correct, (game_screen_width / t_x) * 6 + 20, (game_screen_height / 10) * (i - 1))
           else
-            love.graphics.draw(image_wrong, (game_screen_width / t_x) * 7 + 20, (game_screen_height / 10) * i)
+            love.graphics.draw(image_wrong, (game_screen_width / t_x) * 6 + 20, (game_screen_height / 10) * (i - 1))
           end
         elseif current_window == 29 then
-          if tile_numbers[get_char(tiles[i], 9)] == tile_numbers[char(ord("c") + ((i-3) * 3))] then
-            love.graphics.draw(image_correct, (game_screen_width / t_x) * 9 + 20, (game_screen_height / 10) * i)
+          if tile_numbers[get_char(tiles[i], 9)] == tile_numbers[char(ord("c") + ((i-4) * 3))] then
+            love.graphics.draw(image_correct, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
           else
-            love.graphics.draw(image_wrong, (game_screen_width / t_x) * 9 + 20, (game_screen_height / 10) * i)
+            love.graphics.draw(image_wrong, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
           end
         elseif current_window == 30 then
-          if tile_numbers[get_char(tiles[i], 9)] == tile_numbers[char(ord("a") + ((i-3) * 3))] then
-            love.graphics.draw(image_correct, (game_screen_width / t_x) * 9 + 20, (game_screen_height / 10) * i)
+          if tile_numbers[get_char(tiles[i], 9)] == tile_numbers[char(ord("a") + ((i-4) * 3))] then
+            love.graphics.draw(image_correct, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
           else
-            love.graphics.draw(image_wrong, (game_screen_width / t_x) * 9 + 20, (game_screen_height / 10) * i)
+            love.graphics.draw(image_wrong, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
           end
         end
       end
     end
     if current_window == 17 then
-      if (tile_numbers[get_char(tiles[3], 7)] == tile_numbers["b"]) and
-         (tile_numbers[get_char(tiles[4], 7)] == tile_numbers["e"]) and
-         (tile_numbers[get_char(tiles[5], 7)] == tile_numbers["h"]) and
-         (tile_numbers[get_char(tiles[6], 7)] == tile_numbers["k"]) and
-         (tile_numbers[get_char(tiles[7], 7)] == tile_numbers["n"]) then
+      if (tile_numbers[get_char(tiles[4], 7)] == tile_numbers["b"]) and
+         (tile_numbers[get_char(tiles[5], 7)] == tile_numbers["e"]) and
+         (tile_numbers[get_char(tiles[6], 7)] == tile_numbers["h"]) and
+         (tile_numbers[get_char(tiles[7], 7)] == tile_numbers["k"]) and
+         (tile_numbers[get_char(tiles[8], 7)] == tile_numbers["n"]) then
            message = "congrats"
       end
     elseif current_window == 29 then
-      if (tile_numbers[get_char(tiles[3], 9)] == tile_numbers["c"]) and
-         (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["f"]) and
-         (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["i"]) and
-         (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["l"]) and
-         (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["o"]) then
+      if (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["c"]) and
+         (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["f"]) and
+         (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["i"]) and
+         (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["l"]) and
+         (tile_numbers[get_char(tiles[8], 9)] == tile_numbers["o"]) then
            message = "congrats"
       end
     elseif current_window == 30 then
-      if (tile_numbers[get_char(tiles[3], 9)] == tile_numbers["a"]) and
-         (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["d"]) and
-         (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["g"]) and
-         (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["j"]) and
-         (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["m"]) then
+      if (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["a"]) and
+         (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["d"]) and
+         (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["g"]) and
+         (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["j"]) and
+         (tile_numbers[get_char(tiles[8], 9)] == tile_numbers["m"]) then
            message = "congrats"
       end
     end
@@ -922,43 +1246,59 @@ function love.draw()
     draw_header(s_time)
   elseif current_window == 25 then
     draw_header(s_translators)
-    love.graphics.setFont(font_interface)
-    love.graphics.printf("-Catalan / Català - Guillem Jover (www.hadrons.org/~guillem/), updated by Jordi Mallach\n"..
-      "-English / English - Kamila Roszak-Imiolek, Ireneusz Imiolek\n"..
-      "-Finnish / Suomalainen - Aapo Rantalainen\n"..
-      "-French / Français - Gino Ingras, updated by Johnny Jazeix\n"..
-      "-German / Deutsch - Oliver van der Bürie\n"..
-      "-Hebrew / תירבע - Ori Hoch\n"..
-      "-Italian / Italiano - Giuliano\n"..
-      "-Lakota / Lakȟótiyapi - Peter Hill, Derek Lackaff \nand Matthew Rama\n"..
-      "-Polish / Polski - Kamila Roszak-Imiolek, Ireneusz Imiolek\n",
-    10, 200, 780, 'left')
-    love.graphics.printf("-Portuguese / Português - Américo Monteiro\n"..
-      "-Russian / Русский - Anton Kayukov (Антон Каюков), \nAlexey Loginov (Алексей Логинов)\n"..
-      "-Serbian / Српски - Miroslav Nikolić (Мирослав Николић)\n"..
-      "-Spanish / Español - Miriam Ruiz (www.miriamruiz.es), updated by Mario Izquierdo\n"..
-      "-Ukrainian / Українська - Yuri Chornoivan (Юрій Чорноіван)\n"..
-      "-Greek / Ελληνικά - Στέλιος, versys650gr, sdim, lucinos and other members of The Official Greek Community of Linux Mint, updated by Alexandros Moskofidis (Αλέξανδρος Μοσκοφίδης)\n",
-    810, 200, 780, 'left')
-
-    love.graphics.setFont(font_interface)
-    love.graphics.printf("-Catalan / Català\n\n"..
-      "-English / English\n"..
-      "-Finnish / Suomalainen\n"..
-      "-French / Français\n"..
-      "-German / Deutsch\n"..
-      "-Hebrew / תירבע\n"..
-      "-Italian / Italiano\n"..
-      "-Lakota / Lakȟótiyapi\n\n"..
-      "-Polish / Polski\n",
-    11, 200, 780, 'left')
-    love.graphics.printf("-Portuguese / Português\n"..
-      "-Russian / Русский\n\n"..
-      "-Serbian / Српски\n"..
-      "-Spanish / Español\n\n"..
-      "-Ukrainian / Українська\n"..
-      "-Greek / Ελληνικά\n",
-    811, 200, 780, 'left')
+    --love.graphics.setFont(font_interface)
+    --love.graphics.printf("-Catalan / Català - Guillem Jover (www.hadrons.org/~guillem/), updated by Jordi Mallach\n"..
+    --  "-English / English - Kamila Roszak-Imiolek, Ireneusz Imiolek\n"..
+    --  "-Finnish / Suomalainen - Aapo Rantalainen\n"..
+    --  "-French / Français - Gino Ingras, updated by Johnny Jazeix\n"..
+    --  "-German / Deutsch - Oliver van der Bürie\n"..
+    --  "-Hebrew / תירבע - Ori Hoch\n"..
+    --  "-Italian / Italiano - Giuliano\n"..
+    --  "-Lakota / Lakȟótiyapi - Peter Hill, Derek Lackaff \nand Matthew Rama\n"..
+    --  "-Polish / Polski - Kamila Roszak-Imiolek, Ireneusz Imiolek\n",
+    --10, 200, 780, 'left')
+    --love.graphics.printf("-Portuguese / Português - Américo Monteiro\n"..
+    --  "-Russian / Русский - Anton Kayukov (Антон Каюков), \nAlexey Loginov (Алексей Логинов)\n"..
+    --  "-Serbian / Српски - Miroslav Nikolić (Мирослав Николић)\n"..
+    --  "-Spanish / Español - Miriam Ruiz (www.miriamruiz.es), updated by Mario Izquierdo\n"..
+    --  "-Ukrainian / Українська - Yuri Chornoivan (Юрій Чорноіван)\n"..
+    --  "-Greek / Ελληνικά - Στέλιος, versys650gr, sdim, lucinos and other members of The Official Greek Community of Linux Mint, updated by Alexandros Moskofidis (Αλέξανδρος Μοσκοφίδης)\n",
+    --810, 200, 780, 'left')
+--
+    --love.graphics.setFont(font_interface)
+    --love.graphics.printf("-Catalan / Català\n\n"..
+    --  "-English / English\n"..
+    --  "-Finnish / Suomalainen\n"..
+    --  "-French / Français\n"..
+    --  "-German / Deutsch\n"..
+    --  "-Hebrew / תירבע\n"..
+    --  "-Italian / Italiano\n"..
+    --  "-Lakota / Lakȟótiyapi\n\n"..
+    --  "-Polish / Polski\n",
+    --11, 200, 780, 'left')
+    --love.graphics.printf("-Portuguese / Português\n"..
+    --  "-Russian / Русский\n\n"..
+    --  "-Serbian / Српски\n"..
+    --  "-Spanish / Español\n\n"..
+    --  "-Ukrainian / Українська\n\n"..
+    --  "-Greek / Ελληνικά\n",
+    --811, 200, 780, 'left')
+    local x = 1600 / 6
+    local y = 180
+    love.graphics.setFont(font_interface_bold)
+    for k, v in pairs(s_translators_c) do
+      if k == 21 or k == 44 then
+        x = x + 1600 / 3
+        y = 180
+      end
+      love.graphics.printf(v, x - 800, y, 1600, 'center')
+      y = y + 30
+      if v == "" then
+        love.graphics.setFont(font_interface_bold)
+      else
+        love.graphics.setFont(font_interface)
+      end
+    end
   elseif current_window == 26 then --user scores
     draw_header(s_score, text[1])
     --tuka
@@ -1027,54 +1367,260 @@ function love.draw()
   --elseif current_window == 29 then
   --  draw_header(s_basic_operations, s_find_solution .. " - " .. s_addition)
   -- ^ defined above
-  elseif current_window == 31 then
+  elseif current_window == 31 then -- image patterns
     draw_header(s_patterns, s_image_patterns)
-    love.graphics.setColor(color["white"])
     love.graphics.setFont(font_large_title)
-    for x = 1, t_x do
-      for y = 1, t_y do
-        local byteoffset = utf8.offset(tiles[y], x)
-        local byteoffset_b = utf8.offset(tiles[y], x+1)
-        if get_char(fixed_tiles, x) == '@' then
+    for x = 0, t_x - 1 do
+      for y = 0, t_y - 1 do
+        local byteoffset = utf8.offset(tiles[y + 1], x + 1)
+        local byteoffset_b = utf8.offset(tiles[y + 1], x + 1 + 1)
+        if get_char(fixed_tiles[y + 1], x + 1) == '@' then
           love.graphics.setColor(color["light_blue_50"])
-          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y)-2, 15, 15)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-4, (game_screen_height / t_y) - 4, 15, 15)
           love.graphics.setColor(color["white"])
-          love.graphics.rectangle('fill', x * (game_screen_width/t_x)+5, y * (game_screen_height / t_y)+5, (game_screen_width/t_x)-2-t_y, (game_screen_height / t_y)-2-t_y, 10, 10)
+          love.graphics.rectangle('fill', x * (game_screen_width/t_x) + 5, y * (game_screen_height / t_y)+5, (game_screen_width/t_x) - 4 - 10, (game_screen_height / t_y) - 4 - 10, 10, 10)
         end
-        if tiles[y] ~= nil and get_char(tiles[y], x) ~= ' ' and get_char(tiles[y], x) ~= '@' then
-          love.graphics.setColor(color["light_blue_50"])
-          love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y)-2, 15, 15)
-          love.graphics.setColor(color["blue"])
-          if string.sub(tiles[y], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y] ,byteoffset,byteoffset_b - 1) ~= '_' then
-            love.graphics.printf(string.sub(tiles[y] ,byteoffset,byteoffset_b - 1), (x) * (game_screen_width/t_x) + (game_screen_width/ (t_x * 2)) - 250 * 1, y * (game_screen_height / t_y) - 13, 500, 'center', 0, 1, 1)
-          end
+        love.graphics.setColor(color["white"])
+        if tiles[y + 1] ~= nil and get_char(tiles[y + 1], x + 1) ~= ' ' and get_char(tiles[y + 1], x + 1) ~= '@' then
+          --love.graphics.setColor(color["light_blue_50"])
+          --love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y) - 2, 15, 15)
+          --love.graphics.setColor(color["blue"])
+          --if string.sub(tiles[y + 1], byteoffset, byteoffset_b - 1) ~= '@' and string.sub(tiles[y + 1] ,byteoffset,byteoffset_b - 1) ~= '_' then
+          --  love.graphics.printf(string.sub(tiles[y + 1] ,byteoffset,byteoffset_b - 1), (x) * (game_screen_width/t_x) + (game_screen_width/ (t_x * 2)) - 250 * 1, y * (game_screen_height / t_y) - 13, 500, 'center', 0, 1, 1)
+          --end
+          love.graphics.draw(pattern_images[get_char(tiles[y + 1], x + 1)], x * (game_screen_width/t_x), y * (game_screen_height / t_y), 0, ((game_screen_width/t_x) - 4) / pattern_images[get_char(tiles[y + 1], x + 1)]:getWidth(), ((game_screen_height / t_y) - 4) / pattern_images[get_char(tiles[y + 1], x + 1)]:getHeight())
         end
       end
     end
     if selected_tile ~= "" then
-      love.graphics.setColor(color["light_blue_50"])
-      love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset, mouse_y + selected_tile_y_offset, (game_screen_width/t_x)-2, (game_screen_height / t_y)-2, 15, 15)
-      love.graphics.setColor(color["blue"])
-      love.graphics.printf(selected_tile, mouse_x + selected_tile_x_offset + (game_screen_width/(t_x * 2)) - 250 * 1, mouse_y  + selected_tile_y_offset  - 13, 500, 'center', 0, 1, 1)
+      --love.graphics.setColor(color["light_blue_50"])
+      --love.graphics.rectangle('fill', mouse_x + selected_tile_x_offset - game_screen_width / t_x, mouse_y + selected_tile_y_offset - game_screen_height / t_y, (game_screen_width/t_x) - 2, (game_screen_height / t_y) - 2, 15, 15)
+      --love.graphics.setColor(color["blue"])
+      --love.graphics.printf(selected_tile, mouse_x + selected_tile_x_offset - game_screen_width / t_x + (game_screen_width/(t_x * 2)) - 250 * 1, mouse_y  + selected_tile_y_offset - game_screen_height / t_y - 13, 500, 'center', 0, 1, 1)
+      love.graphics.draw(pattern_images[selected_tile], mouse_x + selected_tile_x_offset - game_screen_width / t_x, mouse_y + selected_tile_y_offset - game_screen_height / t_y, 0, ((game_screen_width/t_x) - 4) / pattern_images[selected_tile]:getWidth(), ((game_screen_height / t_y) - 4) / pattern_images[selected_tile]:getHeight())
     end
     flag = true
-    for i = 1, t_x do
-      if get_char(fixed_tiles, i) == '@' and (get_char(tiles[pattern_y_pos], i) == '@' or get_char(tiles[pattern_y_pos], i) == ' ') then
-        flag = false
+      for i = 1, t_x do
+        if get_char(fixed_tiles[pattern_y_pos], i) == '@' and (get_char(tiles[pattern_y_pos], i) == '@' or get_char(tiles[pattern_y_pos], i) == ' ') then
+          flag = false
+        end
+      end
+    if flag == true then
+      love.graphics.setColor(color["white"])
+      for i = 1, t_x do
+        if get_char(fixed_tiles[pattern_y_pos], i) ~= 'X' then
+          if get_char(correct_row, i) == get_char(tiles[pattern_y_pos], i) then
+            love.graphics.draw(image_correct, (i) * (game_screen_width / t_x) - image_correct:getWidth(), (pattern_y_pos) * (game_screen_height / t_y) - image_correct:getHeight())
+          else
+            love.graphics.draw(image_wrong, (i) * (game_screen_width / t_x) - image_wrong:getWidth(), (pattern_y_pos) * (game_screen_height / t_y) - image_wrong:getHeight())
+          end
+        end
       end
     end
-    --if flag == true then
-    --  love.graphics.setColor(color["white"])
-    --  for i = 1, t_x do
-    --    if get_char(correct_row, i) ~= ' ' then
-    --      if get_char(correct_row, i) == get_char(tiles[7], i) then
-    --        love.graphics.draw(image_correct, i * (game_screen_width / t_x), 7 * (game_screen_height / 10))
-    --      else
-    --        love.graphics.draw(image_wrong, i * (game_screen_width / t_x), 7 * (game_screen_height / 10))
-    --      end
-    --    end
-    --  end
-    --end
+  elseif current_window == 32 then -- learn shapes with flashcards
+    draw_header(s_shapes_and_solids, s_learn_shapes_with_flashcards)
+    love.graphics.setColor(color['white'])
+    love.graphics.draw(flashcards_shapes[selected_shape], 800 - 144 * 3, 650 - 144)
+    --love.graphics.setColor(color["light_blue"])
+    --love.graphics.setLineWidth(5)
+    --love.graphics.rectangle('fill', 200, 650 - 144 - 60, 400, 288 + 60, 15, 15)
+    --love.graphics.setLineWidth(1)
+    love.graphics.setColor(color['interface_text'])
+    love.graphics.setFont(font_small_title)
+    love.graphics.printf(s_shape_names[selected_shape], 0, 340, 1600, 'center', 0, 1)
+    love.graphics.printf(s_area, 800, 440, 800, 'left', 0, 0.75)
+    love.graphics.printf(s_shape_areas[selected_shape], 800, 500, 800, 'left', 0, 1)
+    if selected_shape >= 14 then
+      love.graphics.printf(s_circumference, 800, 640, 800, 'left', 0, 0.75)
+    else
+      love.graphics.printf(s_perimeter, 800, 640, 800, 'left', 0, 0.75)
+    end
+    love.graphics.printf(s_shape_circ[selected_shape], 800, 700, 800, 'left', 0, 1)
+  elseif current_window == 34 then -- shape maker
+    draw_header(s_shapes_and_solids, s_shape_maker)
+    -- grid
+    love.graphics.setLineWidth(3)
+    love.graphics.setColor(color["light_gray"])
+    for i = 4, game_screen_width / 47 do
+      love.graphics.line(i * 47, 4 * 47, i * 47, game_screen_height)
+    end
+    for i = 4, game_screen_height / 47 do
+      love.graphics.line(4 * 47, i * 47, game_screen_width, i * 47)
+    end
+    love.graphics.setLineWidth(2)
+    love.graphics.setLineJoin('none')
+    -----
+    local shape_counter = 1
+    local c_counter = 1
+    love.graphics.setColor(random_colors[shape_counter])
+    while coordinates_quads[c_counter + 3] ~= nil do
+      local fill_style = {'line', 'fill'}
+      for k, v in pairs(fill_style) do
+        if v == 'fill' then
+          love.graphics.setColor(random_colors[shape_counter][1], random_colors[shape_counter][2], random_colors[shape_counter][3], opacity_50)
+        end
+        love.graphics.polygon(v, coordinates_quads[c_counter][1], coordinates_quads[c_counter][2],
+                                    coordinates_quads[c_counter + 1][1],  coordinates_quads[c_counter + 1][2],
+                                    coordinates_quads[c_counter + 2][1],  coordinates_quads[c_counter + 2][2],
+                                    coordinates_quads[c_counter + 3][1],  coordinates_quads[c_counter + 3][2],
+                                    coordinates_quads[c_counter][1], coordinates_quads[c_counter][2])
+      end
+      c_counter = c_counter + 4
+      shape_counter = shape_counter + 1
+      love.graphics.setColor(random_colors[shape_counter])
+    end
+    if coordinates_quads[c_counter + 2] ~= nil then
+      love.graphics.polygon('line', coordinates_quads[c_counter][1], coordinates_quads[c_counter][2],
+                                    coordinates_quads[c_counter + 1][1],  coordinates_quads[c_counter + 1][2],
+                                    coordinates_quads[c_counter + 2][1],  coordinates_quads[c_counter + 2][2],
+                                    math.floor((x / 47) + 0.5) * 47 + 0.1, math.floor((y / 47) + 0.5) * 47 + 0.1)
+    elseif coordinates_quads[c_counter + 1] ~= nil then
+      love.graphics.polygon('line', coordinates_quads[c_counter][1], coordinates_quads[c_counter][2],
+                                    coordinates_quads[c_counter + 1][1],  coordinates_quads[c_counter + 1][2],
+                                    math.floor((x / 47) + 0.5) * 47 + 0.1, math.floor((y / 47) + 0.5) * 47 + 0.1)
+    elseif coordinates_quads[c_counter] ~= nil then
+      love.graphics.line(coordinates_quads[c_counter][1], coordinates_quads[c_counter][2],
+                                    math.floor((x / 47) + 0.5) * 47 + 0.1, math.floor((y / 47) + 0.5) * 47 + 0.1)
+    end
+    ------
+    local c_counter = 1
+    shape_counter = 1
+    love.graphics.setColor(random_colors[shape_counter][2], random_colors[shape_counter][1], random_colors[shape_counter][3])
+    while coordinates_triangles[c_counter + 2] ~= nil do
+      local fill_style = {'line', 'fill'}
+      for k, v in pairs(fill_style) do
+        if v == 'fill' then
+          love.graphics.setColor(random_colors[shape_counter][2], random_colors[shape_counter][1], random_colors[shape_counter][3], opacity_50)
+        end
+        love.graphics.polygon(v, coordinates_triangles[c_counter][1], coordinates_triangles[c_counter][2],
+                                    coordinates_triangles[c_counter + 1][1],  coordinates_triangles[c_counter + 1][2],
+                                    coordinates_triangles[c_counter + 2][1],  coordinates_triangles[c_counter + 2][2])
+      end
+      c_counter = c_counter + 3
+      shape_counter = shape_counter + 1
+      love.graphics.setColor(random_colors[shape_counter][2], random_colors[shape_counter][1], random_colors[shape_counter][3])
+    end
+    if coordinates_triangles[c_counter + 1] ~= nil then
+      love.graphics.polygon('line', coordinates_triangles[c_counter][1], coordinates_triangles[c_counter][2],
+                                    coordinates_triangles[c_counter + 1][1],  coordinates_triangles[c_counter + 1][2],
+                                    math.floor((x / 47) + 0.5) * 47 + 0.1, math.floor((y / 47) + 0.5) * 47 + 0.1)
+    elseif coordinates_triangles[c_counter] ~= nil then
+      love.graphics.line(coordinates_triangles[c_counter][1], coordinates_triangles[c_counter][2],
+                                    math.floor((x / 47) + 0.5) * 47 + 0.1, math.floor((y / 47) + 0.5) * 47 + 0.1)
+    end
+    ----
+    local c_counter = 1
+    shape_counter = 1
+    love.graphics.setColor(random_colors[shape_counter][3], random_colors[shape_counter][2], random_colors[shape_counter][1])
+    while coordinates_circles[c_counter + 1] ~= nil do
+      local fill_style = {'line', 'fill'}
+      for k, v in pairs(fill_style) do
+        if v == 'fill' then
+          love.graphics.setColor(random_colors[shape_counter][3], random_colors[shape_counter][2], random_colors[shape_counter][1], opacity_50)
+        end
+        love.graphics.circle(v, coordinates_circles[c_counter][1], coordinates_circles[c_counter][2],
+                                   distance(coordinates_circles[c_counter][1],  coordinates_circles[c_counter][2],
+                                   coordinates_circles[c_counter + 1][1],  coordinates_circles[c_counter + 1][2]))
+      end
+      c_counter = c_counter + 2
+      shape_counter = shape_counter + 1
+      love.graphics.setColor(random_colors[shape_counter][3], random_colors[shape_counter][2], random_colors[shape_counter][1])
+    end
+    if coordinates_circles[c_counter] ~= nil then
+      love.graphics.circle('line', coordinates_circles[c_counter][1], coordinates_circles[c_counter][2],
+                                   distance(coordinates_circles[c_counter][1], coordinates_circles[c_counter][2],
+                                   math.floor((x / 47) + 0.5) * 47 + 0.1, math.floor((y / 47) + 0.5) * 47 + 0.1))
+    end
+    for k, v in pairs(coordinates_shape_names) do
+      love.graphics.setColor(v[4])
+      love.graphics.printf(v[1], v[2] - 500, v[3] - 30, 1000, 'center')
+    end
+  elseif current_window == 35 or current_window == 36 then -- how clock works, learn to set the clock
+    if current_window == 35 then
+      draw_header(s_time, s_how_clock_works)
+    elseif current_window == 36 then
+      draw_header(s_time, s_learn_to_set_the_clock)
+    end
+
+    draw_analog_clock(400, 525, 290, clock_hour, clock_min, 'arabic_digits', selected_level)
+    love.graphics.setFont(font_button_text)
+    love.graphics.setColor(color["interface_text"])
+    if current_window == 35 then
+      love.graphics.printf(s_drag_clock_hands, 1155 - 400, 210, 800, 'center')
+    elseif current_window == 36 then
+      love.graphics.printf(s_set_the_clock_to, 1155 - 400, 250, 800, 'center')
+    end
+    love.graphics.setFont(font_large_title)
+    love.graphics.setColor(color["red"])
+    local show_h = 0
+    local show_m = 0
+
+    if current_window == 36 then
+      show_h = goal_hour
+    elseif math.floor(clock_min + 0.5) < 60 then
+      show_h = clock_hour
+    elseif clock_hour == 12 then
+      show_h = 1
+    else
+      show_h = clock_hour + 1
+    end
+    love.graphics.printf(show_h, 1100 - 300, 400, 300, 'right')
+
+    love.graphics.setColor(color["interface_text"])
+    if current_window == 36 then
+      show_m = goal_min
+    elseif math.floor(clock_min + 0.5) < 60 then
+      show_m = math.floor(clock_min + 0.5)
+    else
+      show_m = 0
+    end
+    love.graphics.printf(":  " .. show_m, 1100 +  40, 400, 300, 'left')
+
+    if global_language ~= "lakota" then
+      love.graphics.setFont(font_large_title)
+    else
+      love.graphics.setFont(font_small_title)
+    end
+    love.graphics.printf(time_to_string_short(show_h, show_m), 1155 - 400, 550, 800, 'center')
+    if not mouse_released then
+      if selected_hand == 2 then
+        local old_clock_min = clock_min
+        clock_min = angle_clock(400, 0, 400, 525, x, y) / (360 / 60)
+        if (old_clock_min > 45 and clock_min < 59.5) and (clock_min < 15 or clock_min >= 59.5) then
+          clock_hour = clock_hour + 1
+          if clock_hour > 12 then
+            clock_hour = 1
+          end
+          clock_changes = clock_changes + 1
+        elseif old_clock_min < 15 and clock_min > 45 then
+          clock_hour = clock_hour - 1
+          if clock_hour < 1 then
+            clock_hour = 12
+          end
+          clock_changes = clock_changes + 1
+        end
+      elseif selected_hand == 1 then
+        clock_hour = math.floor(angle_clock(400, 0, 400, 525, x, y) / (360 / 12) + 0.5 - clock_min / 60)
+        if clock_hour == 0 then clock_hour = 12
+        elseif clock_hour == -1 then clock_hour = 11
+        end
+      end
+      if current_window == 35 and clock_changes >= 5 and get_score_for_game(35) < 1 then
+        add_score_for_game(35)
+      end
+    end
+  elseif current_window == 37 then
+    draw_header(s_time, s_time_matching)
+    draw_all_buttons()
+    for i = 1, 6 do
+      local y = 0
+      local x = 0
+      if i > 3 then
+        y = 288
+        x = -(288 * 3)
+      end
+      draw_analog_clock(196 + (i - 1) * 288 + x, 376 + y, 100, time_clocks[i].hour, time_clocks[i].min, 'arabic_digits', selected_level)
+    end
   end------------------------------
 
   if current_window >= 3 then
@@ -1103,7 +1649,9 @@ function love.draw()
     end
   end
 
-  draw_all_buttons()
+  if current_window ~= 37 then
+    draw_all_buttons()
+  end
 
 
   for k, v in pairs(buttons) do

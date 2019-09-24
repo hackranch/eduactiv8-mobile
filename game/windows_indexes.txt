@@ -43,7 +43,13 @@ sub-games:
 29 - find solution - addition
 30 - find solution - subtraction
 31 - image patterns
+32 - learn shapes with flashcards
+33 - shape matcher
+34 - shape maker
+35 - how clock works
+36 - learn to set the clock
+37 - time matching
 
 
 
-32
+38

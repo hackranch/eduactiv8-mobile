@@ -1,24 +1,37 @@
-function draw_button(button_text, button_x, button_y, button_width, white, alignment)
+function draw_button(button_text, button_x, button_y, button_width, white, alignment, height, button_form, button_color)
   white = white or false
   alignment = alignment or 'center'
   ccr, ccg, ccb, cca = love.graphics.getColor()
   if white == false then
-    love.graphics.setColor(color["orange"])
-    love.graphics.rectangle('fill', button_x - button_width / 2, button_y - 30, button_width, 60)
-    love.graphics.circle('fill', button_x - button_width / 2, button_y, 30)
-    love.graphics.circle('fill', button_x + button_width / 2, button_y, 30)
+    love.graphics.setColor(button_color)
+    if button_form == 1 then
+      love.graphics.rectangle('fill', button_x - button_width / 2, button_y - (height / 2), button_width, height)
+      love.graphics.circle('fill', button_x - button_width / 2, button_y, height / 2)
+      love.graphics.circle('fill', button_x + button_width / 2, button_y, height / 2)
+    elseif button_form == 2 then
+      love.graphics.rectangle('fill', button_x - button_width / 2, button_y - (height / 2), button_width, height, 15, 15)
+    end
   end
-  if white == false then
+  if white == false and button_color == color["orange"] then
     love.graphics.setColor(color["white"])
     love.graphics.setFont(font_button_text)
   else
     love.graphics.setColor(color["interface_text"])
-    love.graphics.setFont(font_interface)
+    love.graphics.setFont(font_button_text)
   end
-  if (utf8len(button_text) * 20 <= button_width) then
+  if (utf8len(button_text) * 21 <= button_width) then
     love.graphics.printf(button_text, button_x - 500, button_y - 33, 1000, alignment)
   else
-    love.graphics.printf(button_text, button_x - 1000 * (button_width / ((utf8len(button_text) * 20))), button_y - 33, 2000, alignment, 0, button_width / ((utf8len(button_text) * 20)), 1)
+    if button_form == 1 then
+      love.graphics.printf(button_text, button_x - 1000 * (button_width / ((utf8len(button_text) * 21))), button_y - 33, 2000, alignment, 0, button_width / ((utf8len(button_text) * 21)), 1)
+    elseif button_form == 2 then
+      if (utf8len(button_text) * 20 > button_width / 0.7) then
+        love.graphics.printf(button_text, button_x - (button_width / 2), button_y - 46, button_width / 0.7, alignment, 0, 0.7, 0.7)
+      else
+        local sf = button_width / (utf8len(button_text) * 21)
+        love.graphics.printf(button_text, button_x - 1000 * sf, button_y - 33, 2000, alignment, 0, sf, 1)
+      end
+    end
   end
   love.graphics.setColor(ccr, ccg, ccb, cca)
 end
@@ -110,9 +123,13 @@ function add_big_button(bb_index, button_icon, button_x, button_y, button_r, i_s
   table.insert(buttons, bb_index, new_button)
 end
 
-function add_button(b_index, button_text, button_x, button_y, button_width, white, alignment)
+function add_button(b_index, button_text, button_x, button_y, button_width, white, alignment, height, button_form, button_color, button_state)
   white = white or false
   alignment = alignment or 'center'
+  height = height or 60
+  button_form = button_form or 1
+  button_color = button_color or color["orange"]
+  button_state = button_state or 1
   new_button = {}
   new_button.button_text = button_text
   new_button.button_x = button_x
@@ -120,6 +137,10 @@ function add_button(b_index, button_text, button_x, button_y, button_width, whit
   new_button.button_width = button_width
   new_button.button_is_white = white
   new_button.button_alignment = alignment
+  new_button.button_height = height
+  new_button.button_form = button_form
+  new_button.button_color = button_color
+  new_button.button_state = button_state
   table.insert(buttons, b_index, new_button)
 end
 
@@ -129,8 +150,10 @@ function mouse_on_button(index)
     x = x * game_screen_width/screen_width
     y = y * game_screen_height/screen_height
     if buttons[index].button_width ~= nil then
-      if x > buttons[index].button_x - (buttons[index].button_width + 20) / 2 and x < buttons[index].button_x + (buttons[index].button_width + 20) / 2
-      and y > buttons[index].button_y - 20 and y < buttons[index].button_y + 20 then
+      local b_height = buttons[index].button_height
+      --if x > buttons[index].button_x - (buttons[index].button_width + (b_height / 2)) / 2 and x < buttons[index].button_x + (buttons[index].button_width + (b_height / 2)) / 2
+      if x > buttons[index].button_x - (buttons[index].button_width) / 2 and x < buttons[index].button_x + (buttons[index].button_width) / 2
+      and y > buttons[index].button_y - (b_height / 2) and y < buttons[index].button_y + (b_height / 2) then
         return true
       else
         return false
@@ -154,7 +177,7 @@ function draw_all_buttons()
       if v.button_text == nil then
         draw_big_button(v.button_icon, v.button_x, v.button_y, v.button_r, v.i_scale, v.button_transparent, v.button_sections, v.button_completed_sections, v.button_caption, v.button_blue)
       else
-        draw_button(v.button_text, v.button_x, v.button_y, v.button_width, v.button_is_white, v.button_is_left_text)
+        draw_button(v.button_text, v.button_x, v.button_y, v.button_width, v.button_is_white, v.button_is_left_text, v.button_height, v.button_form, v.button_color)
       end
     end
   end

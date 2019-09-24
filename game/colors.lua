@@ -13,3 +13,16 @@ color["dark_cyan"] = {0.24, 0.47, 0.57, 1}
 color["orange"] = {0.95, 0.36, 0.01, 1}
 color["light_gray"] = {0.93, 0.93, 0.93, 1}
 color["gray_60"] = {0.65, 0.65, 0.65, 0.60}
+color["shadow"] = {0, 0, 0, 0.13}
+--color["clock_backgr_1"] = {}
+
+function generate_random_colors()
+  random_colors = {}
+  for i = 1, 20 do
+    random_colors[i] = {math.random(38, 186) / 256, math.random(38, 186) / 256, math.random(38, 186) / 256, 1}
+    local rn = math.random(1, 3)
+    random_colors[i][rn] = 186 / 256
+  end
+end
+
+opacity_50 = 0.5

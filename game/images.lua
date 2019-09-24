@@ -6,6 +6,9 @@ icon_math_section = love.graphics.newImage("res/ico_tn_01.png")
 icon_games_section = love.graphics.newImage("res/ico_tn_02.png")
 icon_back = love.graphics.newImage("res/ico_back.png")
 icon_logout = love.graphics.newImage("res/logout_icon.png")
+icon_quads = love.graphics.newImage("res/icon_shapes/icon_quads.png")
+icon_triangles = love.graphics.newImage("res/icon_shapes/icon_triangles.png")
+icon_circles = love.graphics.newImage("res/icon_shapes/icon_circles.png")
 
 icon_l1 = love.graphics.newImage("res/menu icons/l1.png")
 icon_l2 = love.graphics.newImage("res/menu icons/l2.png")
@@ -32,6 +35,28 @@ icon_ico_g_0303 = love.graphics.newImage("res/menu icons/ico_g_0303.png")
 icon_ico_g_0309 = love.graphics.newImage("res/menu icons/ico_g_0309.png")
 icon_ico_g_0310 = love.graphics.newImage("res/menu icons/ico_g_0310.png")
 icon_ico_g_2200 = love.graphics.newImage("res/menu icons/ico_g_2200.png")
+icon_ico_g_0500 = love.graphics.newImage("res/menu icons/ico_g_0500.png")
+icon_ico_g_0504 = love.graphics.newImage("res/menu icons/ico_g_0504.png")
+icon_ico_g_0502 = love.graphics.newImage("res/menu icons/ico_g_0502.png")
+icon_ico_g_1004 = love.graphics.newImage("res/menu icons/ico_g_1004.png")
+icon_ico_g_1006 = love.graphics.newImage("res/menu icons/ico_g_1006.png")
+
+icon_shapes = {}
+for i = 1, 15 do
+  icon_shapes[i] = love.graphics.newImage("res/icon_shapes/icon_shapes_" .. i .. ".png")
+end
+
+icon_shapes_outline = {}
+icon_shapes_fill = {}
+for i = 1, 13 do
+  icon_shapes_outline[i] = love.graphics.newImage("res/icon_shapes/outlines/s" .. i .. ".png")
+  icon_shapes_fill[i] = love.graphics.newImage("res/icon_shapes/fill/s" .. i .. ".png")
+end
+
+flashcards_shapes = {}
+for i = 1, 15 do
+  flashcards_shapes[i] = love.graphics.newImage("res/fc_shapes/fc_shapes_" .. i .. ".png")
+end
 
 image_button_ring = love.graphics.newImage("res/menu icons/menu_ring_03.png")
 image_congrats = love.graphics.newImage("res/congrats.png")
@@ -67,16 +92,43 @@ animals_names = {}
 animals_images = {}
 animals_names = love.filesystem.getDirectoryItems("res/animals")
 
+for k, v in pairs(animals_names) do
+  animals_images[k] = love.graphics.newImage("res/animals/" .. v)
+end
+
+people_names = {}
+people_images = {}
+people_names = love.filesystem.getDirectoryItems("res/people")
+
+for k, v in pairs(people_names) do
+  people_images[k] = love.graphics.newImage("res/people/" .. v)
+end
+
+clothes_names = {}
+clothes_images = {}
+clothes_names = love.filesystem.getDirectoryItems("res/clothes")
+
+for k, v in pairs(clothes_names) do
+  clothes_images[k] = love.graphics.newImage("res/clothes/" .. v)
+end
+
+sport_names = {}
+sport_images = {}
+sport_names = love.filesystem.getDirectoryItems("res/sport")
+
+for k, v in pairs(sport_names) do
+  sport_images[k] = love.graphics.newImage("res/sport/" .. v)
+end
+
+
+
+
 images_fish = {}
 images_numbers = {}
 images_numbers[0] = love.graphics.newImage("res/numbers/n_img1a.png" )
 for i = 1, 20 do
   images_fish[i] = love.graphics.newImage("res/fish/n" .. i .. ".png")
   images_numbers[i] = love.graphics.newImage("res/numbers/n_img" .. (i + 1) .. "a.png" )
-end
-
-for k, v in pairs(animals_names) do
-  animals_images[k] = love.graphics.newImage("res/animals/" .. v)
 end
 
 

@@ -18,6 +18,108 @@ function set_language(language)
     s_licence_title = "Licence"
     s_licence_content = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
     s_copyright_text_big = "Copyright(C) 2012 - 2019 Ireneusz Imiolek \n \n Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributet their works to freesound.org. \n Images by various authors who contributet their works to openclipart.org (Public Domain) and http://art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
+
+    s_credits = {}
+    s_credits[1] = "eduActiv8 Concept and Design:"
+    s_credits[2] = "Ireneusz Imiolek"
+    s_credits[3] = ""
+    s_credits[4] = "Programming:"
+    s_credits[5] = "Ilija Mihajlov"
+    s_credits[6] = ""
+    s_credits[7] = "Graphics and Design:"
+    s_credits[8] = "Ireneusz Imiolek"
+    s_credits[9] = "Ilija Mihajlov"
+    s_credits[10] = "Art4Apps"
+    s_credits[11] = "OpenClipArt"
+    s_credits[12] = "Tango Project"
+    s_credits[13] = "Wikimedia Commons"
+    s_credits[14] = ""
+    s_credits[15] = "Sounds:"
+    s_credits[16] = "Ireneusz Imiolek"
+    s_credits[17] = "FreeSound"
+    s_credits[18] = ""
+    s_credits[19] = "Fonts:"
+    s_credits[20] = "Ireneusz Imiolek"
+    s_credits[21] = "KACST"
+    s_credits[22] = ""
+    s_credits[23] = "Translations (click here)"
+    s_credits[24] = ""
+    s_credits[25] = "Special Thanks:"
+    s_credits[26] = "Thunder Valley Community Development Corporation"
+    s_credits[27] = "Elon University"
+    s_credits[28] = "Kamila Roszak-Imiolek"
+    s_credits[29] = ""
+    s_credits[30] = "Produced by:"
+    s_credits[31] = "Derek Lackaff"
+    s_credits[32] = ""
+    s_credits[33] = "eduActiv8 character and logo (c) Ireneusz Imiolek"
+    s_credits[34] = "eduActiv8: Math and Science (c) Hackranch, LLC"
+    s_credits[35] = "Some assets used under license and are (c) various authors."
+    s_credits[36] = "See CREDITS for details."
+
+    s_translators_c = {}
+
+    s_translators_c[1] = "Catalan"
+    s_translators_c[2] = "Guillem Jover"
+    s_translators_c[3] = "Jordi Mallach"
+    s_translators_c[4] = ""
+    s_translators_c[5] = "English UK"
+    s_translators_c[6] = "Ireneusz Imiolek"
+    s_translators_c[7] = ""
+    s_translators_c[8] = "English US"
+    s_translators_c[9] = "Ireneusz Imiolek"
+    s_translators_c[10] = ""
+    s_translators_c[11] = "Finnish"
+    s_translators_c[12] = "Aapo Rantalainen"
+    s_translators_c[13] = ""
+    s_translators_c[14] = "French"
+    s_translators_c[15] = "Gino Ingras"
+    s_translators_c[16] = "Johnny Jazeix"
+    s_translators_c[17] = ""
+    s_translators_c[18] = "German"
+    s_translators_c[19] = "Oliver van der Bürie"
+    s_translators_c[20] = ""
+    s_translators_c[21] = "Greek"
+    s_translators_c[22] = "Στέλιος, versys650gr, sdim, lucinos and"
+    s_translators_c[23] = "the Official Greek Community of Linux Mint"
+    s_translators_c[24] = "Alexandros Moskofidis (Αλέξανδρος Μοσκοφίδης)"
+    s_translators_c[25] = "Yannis Kaskamanidis (Γιάννης Κασκαμανίδης)"
+    s_translators_c[26] = ""
+    s_translators_c[27] = "Hebrew"
+    s_translators_c[28] = "Ori Hoch"
+    s_translators_c[29] = ""
+    s_translators_c[30] = "Italian"
+    s_translators_c[31] = "Giuliano"
+    s_translators_c[32] = ""
+    s_translators_c[33] = "Lakota"
+    s_translators_c[34] = "Peter Hill"
+    s_translators_c[35] = "Matthew Rama"
+    s_translators_c[36] = ""
+    s_translators_c[37] = "Macedonian"
+    s_translators_c[38] = "Ilija Mihajlov"
+    s_translators_c[39] = ""
+    s_translators_c[40] = "Polish"
+    s_translators_c[41] = "Kamila Roszak-Imiolek"
+    s_translators_c[42] = "Ireneusz Imiolek"
+    s_translators_c[43] = ""
+    s_translators_c[44] = "Portuguese"
+    s_translators_c[45] = "Américo Monteiro"
+    s_translators_c[46] = ""
+    s_translators_c[47] = "Russian"
+    s_translators_c[48] = "Anton Kayukov (Антон Каюков)"
+    s_translators_c[49] = "Alexey Loginov (Алексей Логинов)"
+    s_translators_c[50] = ""
+    s_translators_c[51] = "Serbian"
+    s_translators_c[52] = "Miroslav Nikolić (Мирослав Николић)"
+    s_translators_c[53] = ""
+    s_translators_c[54] = "Spanish"
+    s_translators_c[55] = "Miriam Ruiz"
+    s_translators_c[56] = "Mario Izquierdo"
+    s_translators_c[57] = ""
+    s_translators_c[58] = "Ukrainian"
+    s_translators_c[59] = "Yuri Chornoivan (Юрій Чорноіван)"
+
+
     s_incorrect_login = "This username and password combination doesn't exist."
     s_username = "user name: "
     s_password = "password: "
@@ -44,6 +146,11 @@ function set_language(language)
     s_numbers_and_basic_operations = "Numbers & Basic Operations"
     s_numbers = "Numbers"
     s_basic_operations = "Basic Operations"
+    s_area = "area:"
+    s_perimeter = "perimeter:"
+    s_circumference = "circumference:"
+    s_trapezium = "Trapezium"
+    s_drag_clock_hands = "Drag the clock hands to set the time"
 
     s_discover_letters = "Discover Letters"
     s_word_matchers = "Word Matchers"
@@ -57,8 +164,28 @@ function set_language(language)
     s_demonstration = "Demonstration"
     s_find_solution = "Find Solution"
     s_image_patterns = "Image Patterns"
+    s_learn_shapes_with_flashcards = "Learn Shapes with Flashcards"
+    s_shape_matching = "Shape Matching"
+    s_shape_maker = "Shape Maker"
+    s_how_clock_works = "How clock works?"
+    s_learn_to_set_the_clock = "learn to set the clock"
+    s_set_the_clock_to = "Set the clock to:"
+    s_time_matching = "Time Matching"
 
+    s_shape_names = {"Equilateral Triangle", "Isosceles Triangle", "Obtuse Triangle",
+                            "Right Triangle", "Acute Triangle", "Square", "Rectangle", "Right Trapezium",
+                            "Isosceles Trapezium", "Rhombus", "Parallelogram", "Pentagon", "Hexagon",
+                            "Circle", "Ellipse"}
+    s_shape_areas = {"½ah", "½ah", "½ah", "½ab", "½ah", "a²", "ab", "½(a+b)h", "½(a+b)h", "ah", "ah",
+                        "------",
+                        "------", "πr²", "πab"}
+    s_shape_circ = {"3a", "a + 2b", "a + b + c", "a + b + c", "a + b + c", "4a", "2a + 2b", "a + b + c + d",
+                       "a + b + 2c", "4a", "2a + 2b", "5a", "6a", "2πr", "------"}
 
+    s_shape_matching_names = {"Parallelogram", "Heptagon", "Rectangle",
+                    "Rhombus", "Square", "Pentagon", "Octagon",
+                    "Hexagon", "Equilateral Triangle", "Circle",
+                    "Isosceles Triangle", "trapezium", "Ellipse"}
 
   else
 
@@ -116,11 +243,41 @@ function set_language(language)
     s_basic_operations = translate_i18n(s_basic_operations)
     s_find_solution = translate_i18n(s_find_solution)
     s_image_patterns = translate_i18n(s_image_patterns)
+    s_learn_shapes_with_flashcards = translate_i18n(s_learn_shapes_with_flashcards)
+    s_area = translate_i18n(s_area)
+    s_perimeter = translate_i18n(s_perimeter)
+    s_circumference = translate_i18n(s_circumference)
+    s_shape_matching = translate_i18n(s_shape_matching)
+    s_shape_maker = translate_i18n(s_shape_maker)
+    s_trapezium = translate_i18n(s_trapezium)
+    s_how_clock_works = translate_i18n(s_how_clock_works)
+    s_drag_clock_hands = translate_i18n(s_drag_clock_hands)
+    s_learn_to_set_the_clock = translate_i18n(s_learn_to_set_the_clock)
+    s_set_the_clock_to = translate_i18n(s_set_the_clock_to)
+    s_time_matching = translate_i18n(s_time_matching)
+
+    for i = 1, 15 do
+      s_shape_names[i] = translate_i18n(s_shape_names[i])
+    end
+
+    for i = 1, 13 do
+      s_shape_matching_names[i] = translate_i18n(s_shape_matching_names[i])
+    end
 
 
 
   end
 end
+
+
+function reverse(s)
+  local result = ""
+  for i = 1, utf8len(s) do
+    result = get_char(s, utf8len(s) - i + 1) .. result
+  end
+  return result
+end
+
 
 numbers = {}
 numbers["english"] = {}
@@ -189,7 +346,6 @@ numbers["ukrainian"] = {"один", "два", "три", "чотири", "п’я
            "дванадцять", "тринадцять", "чотирнадцять", "п’ятнадцять", "шістнадцять", "сімнадцять", "вісімнадцять",
            "дев'ятнадцять", "двадцять", "двадцять один", "двадцять два", "двадцять три", "двадцять чотири",
            "двадцять п’ять", "двадцять шість", "двадцять сім", "двадцять вісім", "двадцять дев’ять"}
-
 
 big_numbers = {}
 big_numbers["english"] = {}
@@ -458,7 +614,8 @@ function translate_animal(word)
   end
 end
 
-function number_to_string(number)
+function number_to_string(number, time2txt)
+  time2txt = time2txt or false
   if global_language == "english" then
     if number > 0 and number <= 29 then
       return numbers[global_language][number]
@@ -582,15 +739,28 @@ function number_to_string(number)
     end
 
   elseif global_language == "french" then
+    local hrs = {'une', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix', 'onze', 'douze', 'treize',
+       'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf', 'vingt', 'vingt-et-une', 'vingt-deux',
+       'vingt-trois', 'vingt-quatre', 'vingt-cinq', 'vingt-six', 'vingt-sept', 'vingt-huit', 'vingt-neuf'}
     if number > 0 and number <= 29 then
-      return numbers[global_language][number]
+      if time2txt == true then
+        return hrs[number]
+      else
+        return numbers[global_language][number]
+      end
     elseif number >= 30 and number <= 99 then
       local m = number % 10
       local tens = big_numbers[global_language][math.floor(number / 10) - 1]
       if m == 0 then
         return tens
       elseif m > 0 then
-        return tens .. "-" .. numbers[global_language][m]
+        local ones = 0
+        if time2txt == true then
+          ones = hrs[m]
+        else
+          ones = numbers[global_language][m]
+        end
+        return tens .. "-" .. ones
       end
     elseif number == 0 then
       return "zero"
@@ -743,4 +913,515 @@ function number_to_string(number)
     end
 
   end
+end
+
+
+function time_to_string_short(h, m)
+  --local ha = {}
+  --local ma = {}
+
+  if global_language == "serbian" then
+    local ha = {"сат", "сата", "сата", "сата", "сати", "сати", "сати", "сати", "сати", "сати", "сати", "сати"}
+    local ma = {"минут", "минута"}
+    if m > 29 then
+      if h == 12 then
+        h = 1
+      else
+        h =  h + 1
+      end
+    end
+    if m == 0 then
+      return number_to_string(h) .. " " .. ha[h]
+    elseif m == 1 then
+      return number_to_string(h) .. " и минут"
+    elseif m == 30 then
+      return "пола " .. number_to_string(h)
+    elseif m == 59 then
+      return "минут до " .. number_to_string(h)
+    elseif m < 30 then
+      return number_to_string(h) .. " и " .. number_to_string(m)
+    elseif m > 30 then
+      return number_to_string(60 - m) .. " до " .. number_to_string(h)
+    else
+      return ""
+    end
+
+  elseif global_language == "catalan" then
+    local hores = {'una', 'dues', 'tres', 'quatre', 'cinc', 'sis', 'set', 'vuit', 'nou', 'deu', 'onze', 'dotze', 'una'}
+    if m > 7 then
+      if h == 12 then
+        h = 1
+      else
+        h = h + 1
+      end
+    end
+
+    if h == 1 then
+        if m == 0 then
+            return "la una en punt"
+        elseif m == 1 then
+            return "la una i un minut"
+        elseif 0 < m and m < 8 then
+            return "la una i " .. number_to_string(m)
+        elseif 7 < m and m < 15 then
+            return "un quart menys " .. number_to_string(15 - m) .. " d'una"
+        elseif m == 15 then
+            return "un quart d'una"
+        elseif 15 < m and m < 23 then
+            return "un quart i " .. number_to_string(m - 15) .. " d'una"
+        elseif 22 < m and m < 30 then
+            return "dos quarts menys " .. number_to_string(30 - m) .. " d'una"
+        elseif m == 30 then
+            return "dos quarts d'una"
+        elseif 30 < m and m < 38 then
+            return "dos quarts i " .. number_to_string(m - 30) .. " d'una"
+        elseif 37 < m and m < 45 then
+            return "tres quarts menys " .. number_to_string(45 - m) .. " d'una"
+        elseif m == 45 then
+            return "tres quarts d'una"
+        elseif 45 < m and m < 53 then
+            return "tres quarts i " .. number_to_string(m - 45) .. " d'una"
+        elseif 52 < m and m < 59 then
+            return "la una menys " .. number_to_string(60 - m)
+        elseif m == 59 then
+            return "la una menys un minut"
+        end
+    else
+        if m == 0 then
+            return "les " .. hores[h] .. " en punt"
+        elseif m == 1 then
+            return "les " .. hores[h] .. " i un minut"
+        elseif 0 < m and m < 8 then
+            return "les " .. hores[h] .. " i " .. number_to_string(m)
+        elseif 7 < m and m < 15 then
+            return "un quart menys " .. number_to_string(15 - m) .. " de " .. hores[h]
+        elseif m == 15 then
+            return "un quart de " .. hores[h]
+        elseif 15 < m and m < 23 then
+            return "un quart i " .. number_to_string(m - 15) .. " de " .. hores[h]
+        elseif 22 < m and m < 30 then
+            return "dos quarts menys " .. number_to_string(30 - m) .. " de " .. hores[h]
+        elseif m == 30 then
+            return "dos quarts de " .. hores[h]
+        elseif 30 < m and m < 38 then
+            return "dos quarts i " .. number_to_string(m - 30) .. " de " .. hores[h]
+        elseif 37 < m and m < 45 then
+            return "tres quarts menys " .. number_to_string(45 - m) .. " de " .. hores[h]
+        elseif m == 45 then
+            return "tres quarts de " .. hores[h]
+        elseif 45 < m and m < 53 then
+            return "tres quarts i " .. number_to_string(m - 45) .. " de " .. hores[h]
+        elseif 52 < m and m < 59 then
+            return "les " .. hores[h] .. " menys " .. number_to_string(60 - m)
+        elseif m == 59 then
+            return "les " .. hores[h - 1] .. " menys un minut"
+        end
+    end
+
+  elseif global_language == "german" then
+    if m > 30 then
+      if h == 12 then
+          h = 1
+      else
+          h = h + 1
+      end
+    end
+    if m == 0 then
+        return number_to_string(h) .. " Uhr"
+    elseif m == 1 then
+        return "Eine Minute nach " .. number_to_string(h)
+    elseif m == 15 then
+        return "Viertel nach " .. number_to_string(h)
+    elseif m == 30 then
+        if h == 12 then
+            return "Halb " .. number_to_string(1)
+        else
+            return "Halb " .. number_to_string(h + 1)
+        end
+    elseif m == 45 then
+        return "Viertel vor " .. number_to_string(h)
+    elseif m == 59 then
+        return "Eine Minute vor " .. number_to_string(h)
+    elseif m < 30 then
+        return number_to_string(m) .. " nach " .. number_to_string(h)
+    elseif m > 30 then
+        return number_to_string(60 - m) .. " vor " .. number_to_string(h)
+    else return ""
+    end
+  elseif global_language == "greek" then
+    local hrs = {'μία', 'δύο', 'τρεις', 'τέσσερις', 'πέντε', 'έξι', 'επτά', 'οκτώ', 'εννέα', 'δέκα', 'έντεκα', 'δώδεκα'}
+    if m > 30 then
+        if h == 12 then
+            h = 1
+        else
+            h = h + 1
+        end
+    end
+    if m == 0 then
+        return hrs[h] .. " ακριβώς"
+    elseif m == 1 then
+        return hrs[h] .. " και ένα λεπτό"
+    elseif m == 15 then
+        return hrs[h] .. " και τέταρτο"
+    elseif m == 30 then
+        return hrs[h] .. " και μισή"
+    elseif m == 45 then
+        return hrs[h] .. " παρά τέταρτο"
+    elseif m == 59 then
+        return hrs[h] .. " παρά ένα λεπτό"
+    elseif m < 30 then
+        return hrs[h] .. " και " .. number_to_string(m)
+    elseif m > 30 then
+        return hrs[h] .. " παρά " .. number_to_string(60 - m)
+    else return ""
+    end
+
+  elseif global_language == "english_gb" or global_language == "english" then
+    if m > 30 then
+      if h == 12 then
+          h = 1
+      else
+          h = h + 1
+      end
+    end
+    if m == 0 then
+        return number_to_string(h) .. " o'clock"
+    elseif m == 1 then
+        return "one minute past " .. number_to_string(h)
+    elseif m == 15 then
+        return "quarter past " .. number_to_string(h)
+    elseif m == 30 then
+        return "half past " .. number_to_string(h)
+    elseif m == 45 then
+        return "quarter to " .. number_to_string(h)
+    elseif m == 59 then
+        return "one minute to " .. number_to_string(h)
+    elseif m < 30 then
+        return number_to_string(m) .. " past " .. number_to_string(h)
+    elseif m > 30 then
+        return number_to_string(60 - m) .. " to " .. number_to_string(h)
+    else return ""
+    end
+
+  elseif global_language == "spanish" then
+    local h1 = {'La una', 'Las dos', 'Las tres', 'Las cuatro', 'Las cinco', 'Las seis', 'Las siete', 'Las ocho', 'Las nueve',
+      'Las diez', 'Las once', 'Las doce'}
+    if m > 30 then
+      if h == 12 then
+        h = 1
+      else
+        h = h + 1
+      end
+    end
+    if m == 0 then
+        return h1[h] .. " en punto"
+    elseif m == 1 then
+        return h1[h] .. " y un minuto"
+    elseif m == 15 then
+        return h1[h] .. " y cuarto"
+    elseif m == 30 then
+        return h1[h] .. " y media"
+    elseif m == 45 then
+        return h1[h] .. " menos cuarto"
+    elseif m == 59 then
+        return h1[h] .. " menos un minuto"
+    elseif m < 30 then
+        return h1[h] .. " y " .. number_to_string(m)
+    elseif m > 30 then
+        return h1[h] .. " menos " .. number_to_string(60 - m)
+    else return ""
+    end
+
+  elseif global_language == "finnish" then
+    if m > 30 then
+      if h == 12 then
+        h = 1
+      else
+        h = h + 1
+      end
+    end
+    if m == 0 then
+        return "tasan " .. number_to_string(h)
+    elseif m == 1 then
+        return "minuutin yli " .. number_to_string(h)
+    elseif m == 15 then
+        return "vartin yli " .. number_to_string(h)
+    elseif m == 30 then
+        return "puoli "  .. number_to_string(h + 1)
+    elseif m == 45 then
+        return "varttia vaille " .. number_to_string(h)
+    elseif m == 59 then
+        return "minuutin vaille "  .. number_to_string(h)
+    elseif m < 30 then
+        return number_to_string(m) .. " yli " .. number_to_string(h)
+    elseif m > 30 then
+        return number_to_string(60 - m) .. " vaille " .. number_to_string(h)
+    else return ""
+    end
+
+  elseif global_language == "french" then
+    local hrs = {'une', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix', 'onze', 'douze', 'treize',
+       'quatorze', 'quinze', 'seize', 'dix-sept', 'dix-huit', 'dix-neuf', 'vingt', 'vingt-et-une', 'vingt-deux',
+       'vingt-trois', 'vingt-quatre', 'vingt-cinq', 'vingt-six', 'vingt-sept', 'vingt-huit', 'vingt-neuf'}
+     if m > 30 then
+         if h == 12 then
+             h = 1
+         else
+             h = h + 1
+         end
+     end
+     if m == 0 then
+         if h == 1 then
+             return hrs[h] .. " heure"
+         else
+             return hrs[h] .. " heures"
+         end
+     elseif m == 1 then
+         if h == 1 then
+             return hrs[h] .. " heure et une minute"
+         else
+             return hrs[h] .. " heures et une minute"
+         end
+     elseif m == 15 then
+         if h == 1 then
+             return hrs[h] .. " heure et quart"
+         else
+             return hrs[h] .. " heures et quart"
+         end
+     elseif m == 30 then
+         if h == 1 then
+             return hrs[h] .. " heure et demie"
+         else
+             return hrs[h] .. " heures et demie"
+         end
+     elseif m == 45 then
+         if h == 1 then
+             return hrs[h] .. " heure moins le quart"
+         else
+             return hrs[h] .. " heures moins le quart"
+         end
+     elseif m == 59 then
+         if h == 1 then
+             return hrs[h] .. " heure moins une minute"
+         else
+             return hrs[h] .. " heures moins une minute"
+         end
+     elseif m < 30 then
+         if h == 1 then
+             return hrs[h] .. " heure et " .. number_to_string(m, true) .. " minutes"
+         else
+             return hrs[h] .. " heures et " .. number_to_string(m, true) .. " minutes"
+         end
+     elseif m > 30 then
+         if h == 1 then
+             return hrs[h] .. " heure moins " .. number_to_string(60 - m, true) .. " minutes"
+         else
+             return hrs[h] .. " heures moins " .. number_to_string(60 - m, true) .. " minutes"
+         end
+     else return ""
+     end
+  elseif global_language == "hebrew" then
+    if m > 30 then
+      if h == 12 then
+          h = 1
+      else
+          h = h + 1
+      end
+    end
+    if m == 0 then
+        return number_to_string(h)
+    elseif m == 1 then
+        return reverse("דקה אחרי") .. ' ' .. number_to_string(h)
+    elseif m == 15 then
+        return reverse("רבע אחרי") .. ' ' .. number_to_string(h)
+    elseif m == 30 then
+        return ' ' .. reverse("חצי אחרי") .. number_to_string(h)
+    elseif m == 45 then
+        return ' ' .. reverse("רבע ל") .. number_to_string(h)
+    elseif m == 59 then
+        return ' ' .. reverse("דקה ל") .. number_to_string(h)
+    elseif m < 30 then
+        return number_to_string(m) .. reverse(" אחרי ") .. number_to_string(h)
+    elseif m > 30 then
+        return number_to_string(60 - m) .. reverse(" ל ") .. number_to_string(h)
+    else return ""
+    end
+  elseif global_language == "italian" then
+    local hrs = {"l'una", 'le due', 'le tre', 'le quattro', 'le cinque', 'le sei', 'le sette', 'le otto', 'le nove', 'le dieci',
+       'le undici', 'le dodici'}
+     if m == 0 then
+         return hrs[h] .. " in punto"
+     elseif m == 1 then
+         return hrs[h] .. " e un minuto"
+     else
+         return hrs[h] .. " e " .. number_to_string(m)
+     end
+  elseif global_language == "lakota" then
+    if m > 30 and not m == 45 then
+      if h == 12 then
+          h = 1
+      else
+          h = h + 1
+      end
+    end
+    if m == 0 then
+        return "mázaškaŋškaŋ " .. number_to_string(h)
+    elseif m == 15 then
+        return "mázaškaŋškaŋ " .. number_to_string(h) .. " sáŋm šókela"
+    elseif m == 30 then
+        return "mázaškaŋškaŋ " .. number_to_string(h) .. " sáŋm okhíse"
+    elseif m == 45 then
+        return "mázaškaŋškaŋ " .. number_to_string(h) .. " sáŋm šókela yámni"
+    elseif m < 30 then
+        return "mázaškaŋškaŋ " .. number_to_string(h) .. " sáŋm oápȟe čík’ala " .. number_to_string(m)
+    elseif m > 30 then
+        return "mázaškaŋškaŋ " .. number_to_string(h) .. " itȟókab oápȟe čík’ala "  .. number_to_string(60 - m)
+    else return ""
+    end
+  elseif global_language == "polish" then
+    local ha = {"pierwsza", "druga", "trzecia", "czwarta", "piąta", "szósta", "siódma", "ósma", "dziewiąta", "dziesiąta",
+      "jedenasta", "dwunasta"}
+    local hb = {"pierwszej", "drugiej", "trzeciej", "czwartej", "piątej", "szóstej", "siódmej", "ósmej", "dziewiątej",
+      "dziesiątej", "jedenastej", "dwunastej"}
+    if m > 29 then
+      if h == 12 then
+          h = 1
+      else
+          h = h + 1
+      end
+    end
+    if m == 0 then
+        return ha[h] .. " godzina"
+    elseif m == 1 then
+        return "minuta po " .. hb[h]
+    elseif m == 2 then
+        return "dwie po " .. hb[h]
+    elseif m == 15 then
+        return "kwadrans po " .. hb[h]
+    elseif m == 22 then
+        return "dwadzieścia dwie po " .. hb[h]
+    elseif m == 30 then
+        return "wpół do " .. hb[h]
+    elseif m == 38 then
+        return "za dwadzieścia dwie " .. ha[h]
+    elseif m == 45 then
+        return "za kwadrans " .. ha[h]
+    elseif m == 58 then
+        return "za dwie " .. ha[h]
+    elseif m == 59 then
+        return "za minute " .. ha[h]
+    elseif m < 30 then
+        return number_to_string(m) .. " po " .. hb[h]
+    elseif m > 30 then
+        return "za " .. number_to_string(60 - m) .. " " .. ha[h]
+    else return ""
+    end
+  elseif global_language == "portuguese" then
+    local horas = {'uma hora', 'duas horas', 'três horas', 'quatro horas', 'cinco horas', 'seis horas', 'sete horas',
+         'oito horas', 'nove horas', 'dez horas', 'onze horas', 'doze horas'}
+     if m > 30 then
+       if h == 12 then
+           h = 1
+       else
+           h = h + 1
+       end
+     end
+     if m == 0 then
+         return horas[h] .. " em ponto"
+     elseif m == 1 then
+         return horas[h] .. " e um minuto"
+     elseif m == 15 then
+         return horas[h] .. " e um quarto"
+     elseif m == 30 then
+         return horas[h] .. " e meia"
+     elseif m == 45 then
+         return "um quarto para " .. horas[h]
+     elseif m == 59 then
+         return "um minuto para " .. horas[h]
+     elseif m < 30 then
+         return horas[h] .. " e " .. number_to_string(m) .. " minutos"
+     elseif m > 30 then
+         return number_to_string(60 - m) .. " minutos para " .. horas[h]
+     else return ""
+     end
+  elseif global_language == "russian" then
+    local sf = ""
+    if h == 1 then
+        sf = "час"
+    elseif h < 5 then
+        sf = "часа"
+    else
+        sf = "часов"
+    end
+
+    if m == 0 then
+        return numbers[global_language][h] .. " " .. sf
+    elseif m == 1 then
+        return numbers[global_language][h] .. " " .. sf .. " одна минута"
+    elseif m == 21 or m == 31 or m == 41 or m == 51 then
+        return numbers[global_language][h] .. " " .. sf .. " " .. number_to_string(m - 1) .. " одна минута"
+    elseif m == 2 then
+        return numbers[global_language][h] .. " " .. sf .. " две минуты"
+    elseif m == 22 or m == 32 or m == 42 or m == 52 then
+        return numbers[global_language][h] .. " " .. sf .. " " .. number_to_string(m - 2) .. " две минуты"
+    elseif m == 3 or m == 4 or m == 23 or m == 24 or m == 33 or m == 34 or m == 43 or m == 44 or m == 53 or m == 54 then
+        return numbers[global_language][h] .. " " .. sf .. " " .. number_to_string(m) .. " минуты"
+    else
+        return numbers[global_language][h] .. " " .. sf .. " " .. number_to_string(m) .. " минут"
+    end
+  elseif global_language == "ukrainian" then
+    local mt1 = {"одна", "дві", "три", "чотири", "п’ять", "шість", "сім", "вісім", "дев’ять", "десять", "одинадцять",
+       "дванадцять", "тринадцять", "чотирнадцять", "п’ятнадцять", "шістнадцять", "сімнадцять", "вісімнадцять",
+       "дев’ятнадцять", "двадцять", "двадцять одна", "двадцять две", "двадцять три", "двадцять чотири",
+       "двадцять п’ять", "двадцять шість", "двадцять сім", "двадцять вісім", "двадцять дев’ять", "тридцять",
+       "тридцять одна", "тридцять дві", "тридцять три", "тридцять чотири", "тридцять п’ять", "тридцять шість",
+       "тридцять сім", "тридцять вісім", "тридцять дев’ять"}
+    local mt2 = {"одну", "дві", "три", "чотири", "п’ять", "шість", "сім", "вісім", "дев’ять", "десять", "одинадцять",
+       "дванадцять", "тринадцять", "чотирнадцять", "п’ятнадцять", "шістнадцять", "сімнадцять", "вісімнадцять",
+       "дев’ятнадцять", "двадцять", "двадцять одну", "двадцять дві", "двадцять три", "двадцять чотири",
+       "двадцять п’ять", "двадцять шість", "двядцать сім", "двадцять вісім", "двадцять дев’ять"}
+    local ht1 = {"перша", "друга", "третя", "четверта", "п’ята", "шоста", "сьома", "восьма", "дев’ята", "десята", "одинадцята",
+       "дванадцята"}
+    local ht2 = {"на першу", "на другу", "на третю", "на четверту", "на п’яту", "на шосту", "на сьому", "на восьму", "на дев’яту",
+       "на десяту", "на одинадцяту", "на дванадцяту"}
+    if m > 0 then
+         if h == 12 then
+             h = 1
+         else
+             h = h + 1
+         end
+     end
+     if m == 0 then
+         if h == 1 then
+             return "перша година"
+         elseif h < 5 then
+             return ht1[h] .. " години"
+         else
+             return ht1[h] .. " годин"
+         end
+     elseif m == 15 then
+         return "чверть " .. ht2[h]
+     elseif m == 20 then
+         return mt1[m] .. " хвилин " .. ht2[h]
+     elseif m == 1 or m == 21 then
+         return mt1[m] .. " хвилина " .. ht2[h]
+     elseif m == 2 or m == 3 or m == 4 or m == 22 or m == 23 or m == 24 then
+         return mt1[m] .. " хвилини " .. ht2[h]
+     elseif m < 30 then
+         return mt1[m] .. " хвилин " .. ht2[h]
+     elseif m == 30 then
+         return "о пів " .. ht2[h]
+     elseif m == 39 then
+         return "за двадцять одну хвилину " .. ht1[h]
+     elseif m == 40 then
+         return "за " .. mt2[60 - m] .. " хвилин " .. ht1[h]
+     elseif m == 45 then
+         return "за чверть " .. ht1[h]
+     elseif m == 59 then
+         return "за одну хвилину " .. ht1[h]
+     elseif m > 30 then
+         return "за " .. mt2[60 - m] .. " хвилин " .. ht1[h]
+     else return ""
+     end
+  end------------------
 end
