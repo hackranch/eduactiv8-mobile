@@ -9,6 +9,7 @@ icon_logout = love.graphics.newImage("res/logout_icon.png")
 icon_quads = love.graphics.newImage("res/icon_shapes/icon_quads.png")
 icon_triangles = love.graphics.newImage("res/icon_shapes/icon_triangles.png")
 icon_circles = love.graphics.newImage("res/icon_shapes/icon_circles.png")
+image_credits_url = love.graphics.newImage("res/credits_url_text.png")
 
 icon_l1 = love.graphics.newImage("res/menu icons/l1.png")
 icon_l2 = love.graphics.newImage("res/menu icons/l2.png")

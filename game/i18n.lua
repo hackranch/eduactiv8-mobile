@@ -55,7 +55,7 @@ function set_language(language)
     s_credits[33] = "eduActiv8 character and logo (c) Ireneusz Imiolek"
     s_credits[34] = "eduActiv8: Math and Science (c) Hackranch, LLC"
     s_credits[35] = "Some assets used under license and are (c) various authors."
-    s_credits[36] = "See CREDITS for details."
+    s_credits[36] = "" --"See CREDITS for details. www.eduactiv8.org"
 
     s_translators_c = {}
 

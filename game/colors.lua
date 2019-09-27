@@ -15,14 +15,29 @@ color["light_gray"] = {0.93, 0.93, 0.93, 1}
 color["gray_60"] = {0.65, 0.65, 0.65, 0.60}
 color["shadow"] = {0, 0, 0, 0.13}
 --color["clock_backgr_1"] = {}
+opacity_50 = 0.5
 
 function generate_random_colors()
   random_colors = {}
+  local div_factor = 255
+  if old_color_mode == true then
+    div_factor = 1
+  end
   for i = 1, 20 do
-    random_colors[i] = {math.random(38, 186) / 256, math.random(38, 186) / 256, math.random(38, 186) / 256, 1}
+    random_colors[i] = {math.random(38, 186) / div_factor, math.random(38, 186) / div_factor, math.random(38, 186) / div_factor, 255 / div_factor}
     local rn = math.random(1, 3)
-    random_colors[i][rn] = 186 / 256
+    random_colors[i][rn] = 186 / div_factor
   end
 end
 
-opacity_50 = 0.5
+function init_old_color_mode()
+  for k, v in pairs(color) do
+    color[k][1] = color[k][1] * 255
+    color[k][2] = color[k][2] * 255
+    color[k][3] = color[k][3] * 255
+    if color[k][4] ~= nil then
+      color[k][4] = color[k][4] * 255
+    end
+  end
+  opacity_50 = opacity_50 * 255
+end

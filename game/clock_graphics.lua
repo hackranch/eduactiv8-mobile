@@ -34,9 +34,9 @@ function draw_analog_clock(x, y, r, hour, min, type, markings)
       if i == math.floor(min + 0.5) or (math.floor(min + 0.5) == 60 and i == 0) then
         love.graphics.setColor(color["interface_text"])
       else
-        love.graphics.setColor(color["interface_text"][1], color["interface_text"][2], color["interface_text"][3], 0.4)
+        love.graphics.setColor(color["interface_text"][1], color["interface_text"][2], color["interface_text"][3], opacity_50)
       end
-      love.graphics.printf(i, xxx - (r / 2) * scale_f, yyy - scale_f * 28, r, 'center', 0, scale_f, scale_f)
+      print_text(i, xxx - (r / 2) * scale_f, yyy - scale_f * 28, r, 'center', 0, scale_f, scale_f)
     end
   end
   love.graphics.setColor(color["white"])
@@ -66,9 +66,9 @@ function draw_analog_clock(x, y, r, hour, min, type, markings)
       if (i == hour and min < 59.5) or (min >= 59.5 and i == hour + 1) or (i == 1 and hour == 13) then
         love.graphics.setColor(color["red"])
       else
-        love.graphics.setColor(color["red"][1], color["red"][2], color["red"][3], 0.4)
+        love.graphics.setColor(color["red"][1], color["red"][2], color["red"][3], opacity_50)
       end
-      love.graphics.printf(i, xxx - (r / 2) * scale_f, yyy - scale_f * 28, r, 'center', 0, scale_f, scale_f)
+      print_text(i, xxx - (r / 2) * scale_f, yyy - scale_f * 28, r, 'center', 0, scale_f, scale_f)
     end
   end
 

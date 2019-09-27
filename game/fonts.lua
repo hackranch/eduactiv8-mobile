@@ -20,3 +20,12 @@ function initialize_fonts()
   font_handwritten = love.graphics.newFont("res/fonts/eduactiv8Hand.ttf", 190)
   --font_handwritten:setFilter("linear", "nearest", 2)
 end
+
+function print_text(s, tx, ty, tw, al, r, sx, sy)
+  local ascent = 0
+  if old_color_mode then
+    ascent = love.graphics.getFont():getAscent()
+  end
+  love.graphics.printf(s, tx, ty - ascent / 5, tw, al, r, sx, sy)
+  --love.graphics.translate(0, 10)
+end

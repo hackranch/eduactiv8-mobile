@@ -20,16 +20,16 @@ function draw_button(button_text, button_x, button_y, button_width, white, align
     love.graphics.setFont(font_button_text)
   end
   if (utf8len(button_text) * 21 <= button_width) then
-    love.graphics.printf(button_text, button_x - 500, button_y - 33, 1000, alignment)
+    print_text(button_text, button_x - 500, button_y - 33, 1000, alignment)
   else
     if button_form == 1 then
-      love.graphics.printf(button_text, button_x - 1000 * (button_width / ((utf8len(button_text) * 21))), button_y - 33, 2000, alignment, 0, button_width / ((utf8len(button_text) * 21)), 1)
+      print_text(button_text, button_x - 1000 * (button_width / ((utf8len(button_text) * 21))), button_y - 33, 2000, alignment, 0, button_width / ((utf8len(button_text) * 21)), 1)
     elseif button_form == 2 then
       if (utf8len(button_text) * 20 > button_width / 0.7) then
-        love.graphics.printf(button_text, button_x - (button_width / 2), button_y - 46, button_width / 0.7, alignment, 0, 0.7, 0.7)
+        print_text(button_text, button_x - (button_width / 2), button_y - 46, button_width / 0.7, alignment, 0, 0.7, 0.7)
       else
         local sf = button_width / (utf8len(button_text) * 21)
-        love.graphics.printf(button_text, button_x - 1000 * sf, button_y - 33, 2000, alignment, 0, sf, 1)
+        print_text(button_text, button_x - 1000 * sf, button_y - 33, 2000, alignment, 0, sf, 1)
       end
     end
   end
@@ -66,7 +66,7 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
   end
   love.graphics.setFont(font_interface_bold)
   if b_caption ~= nil and button_icon ~= nil and b_blue == false then
-    love.graphics.printf(b_caption, button_x - button_r * 1.5, button_y + button_r * 1.5, button_r * 3, 'center')
+    print_text(b_caption, button_x - button_r * 1.5, button_y + button_r * 1.5, button_r * 3, 'center')
   end
   if button_icon ~= nil then
     love.graphics.setColor(color["white"])
@@ -76,9 +76,9 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
     love.graphics.draw(image_menu_blue_button, button_x + 52, button_y - 33)
     love.graphics.setFont(font_button_text)
     if utf8len(b_caption) <= 27 then
-      love.graphics.printf(b_caption, button_x + 75, button_y - 34, 600)
+      print_text(b_caption, button_x + 75, button_y - 34, 600)
     else
-      love.graphics.printf(b_caption, button_x + 75, button_y - 34, 600, 'left', 0, 27 / utf8len(b_caption), 1)
+      print_text(b_caption, button_x + 75, button_y - 34, 600, 'left', 0, 27 / utf8len(b_caption), 1)
     end
   end
   if b_sections == 1 then
@@ -96,7 +96,7 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
     love.graphics.rectangle('fill', button_x - button_r, button_y - button_r, button_r * 2, button_r * 2, 15, 15)
     love.graphics.setFont(font_small_title)
     love.graphics.setColor(color["blue"])
-    love.graphics.printf(b_caption, button_x - button_r, button_y - button_r, button_r * 2, 'center', 0, 1, 1)
+    print_text(b_caption, button_x - button_r, button_y - button_r, button_r * 2, 'center', 0, 1, 1)
   end
   love.graphics.setColor(ccr, ccg, ccb, cca)
 end
@@ -147,8 +147,13 @@ end
 function mouse_on_button(index)
   if buttons[index] ~= nil then
     x, y = love.mouse.getPosition()
-    x = x * game_screen_width/screen_width
-    y = y * game_screen_height/screen_height
+    --x = x * game_screen_width/screen_width
+    --y = y * game_screen_height/screen_height
+    x = x - translate_h
+    y = y - translate_v
+    x = x / scale_factor_h
+    y = y / scale_factor_v
+
     if buttons[index].button_width ~= nil then
       local b_height = buttons[index].button_height
       --if x > buttons[index].button_x - (buttons[index].button_width + (b_height / 2)) / 2 and x < buttons[index].button_x + (buttons[index].button_width + (b_height / 2)) / 2
@@ -173,6 +178,18 @@ end
 
 function draw_all_buttons()
   if buttons ~= nil then
+    if buttons[401] ~= nil then --logout button
+      buttons[401].button_x = screen_left + screen_total_width - 22
+      buttons[401].button_y = screen_top + 20
+    end
+    if buttons[402] ~= nil then --back
+      buttons[402].button_x = screen_left + 80
+      buttons[402].button_y = screen_top + 110
+    end
+    if buttons[400] ~= nil then --back to main menu
+      buttons[400].button_x = screen_left + 80
+      buttons[400].button_y = screen_top + 110
+    end
     for k, v in pairs(buttons) do
       if v.button_text == nil then
         draw_big_button(v.button_icon, v.button_x, v.button_y, v.button_r, v.i_scale, v.button_transparent, v.button_sections, v.button_completed_sections, v.button_caption, v.button_blue)
@@ -187,12 +204,13 @@ function draw_header(title, subtitle)
   if subtitle == nil then
     love.graphics.setFont(font_large_title)
     love.graphics.setColor(color["interface_text"])
-    love.graphics.printf(title, 180, 60, 1580, 'left')
+    print_text(title, screen_left + 180, screen_top + 60, 1580 + math.abs(translate_h), 'left')
   else
+
     love.graphics.setFont(font_small_title)
     love.graphics.setColor(color["interface_text"])
-    love.graphics.printf(title, 180, 57, 1080, 'left')
+    print_text(title, screen_left + 180, screen_top + 57, 1080 + math.abs(translate_h), 'left')
     love.graphics.setFont(font_interface)
-    love.graphics.printf(subtitle, 180, 114, 1080, 'left')
+    print_text(subtitle, screen_left + 180, screen_top + 114, 1080 + math.abs(translate_h), 'left')
   end
 end
