@@ -193,6 +193,34 @@ function set_language(language)
     set_language("english")
     global_language = language
 
+    language_filename = "en_US.po"
+
+    if language == "catalan" then language_filename = "ca.po"
+    elseif language == "german" then language_filename = "de.po"
+    elseif language == "greek" then language_filename = "el.po"
+    elseif language == "english_gb" then language_filename = "en_GB.po"
+    -- english default (en_US.po)
+    elseif language == "spanish" then language_filename = "es_ES.po"
+    elseif language == "finnish" then language_filename = "fi.po"
+    elseif language == "french" then language_filename = "fr.po"
+    elseif language == "hebrew" then language_filename = "he.po"
+    elseif language == "italian" then language_filename = "it.po"
+    elseif language == "lakota" then language_filename = "lkt.po"
+    elseif language == "polish" then language_filename = "pl.po"
+    elseif language == "portuguese" then language_filename = "pt_PT.po"
+    elseif language == "russian" then language_filename = "ru.po"
+    elseif language == "serbian" then language_filename = "sr.po"
+    elseif language == "ukrainian" then language_filename = "uk.po"
+    end
+
+    language_file_lines = {}
+    for k in pairs(language_file_lines) do
+      language_file_lines[k] = nil
+    end
+    for line in love.filesystem.lines("res/i18n/" .. language_filename) do
+      table.insert(language_file_lines, line)
+    end
+
     s_english = translate_i18n(s_english)
     s_lakota = translate_i18n(s_lakota)
     s_macedonian = translate_i18n(s_macedonian)

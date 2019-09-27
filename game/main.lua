@@ -571,7 +571,7 @@ function love.update(dt)
         set_language("hebrew")
         build_form(4)
       end
-      love.window.setTitle(s_title)
+      love.window.setTitle(language_filename)
       initialize_activity_titles()
     elseif current_window == 5 then
       if mouse_on_button(1) then -- translation credits
@@ -636,7 +636,7 @@ function love.update(dt)
       selected_tile_x = math.ceil(x / (game_screen_width / t_x)) -- 1
       selected_tile_y = math.ceil(y / (game_screen_height / t_y)) -- 1
       if current_window == 15 or
-         ((current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and get_char(fixed_tiles[selected_tile_y], selected_tile_x) ~= "X") or
+         ((current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and (fixed_tiles[selected_tile_y] ~= nul and get_char(fixed_tiles[selected_tile_y], selected_tile_x) ~= "X")) or
          (current_window == 12 and (selected_tile_y ~= 7 or
                 (selected_tile_y == 7 and (get_char(fixed_tiles, selected_tile_x) == ' ' or get_char(fixed_tiles, selected_tile_x) == '@')) and
                 get_char(tiles[selected_tile_y], selected_tile_x) ~= '@')) then
