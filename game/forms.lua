@@ -2,6 +2,9 @@
 
 function build_form(index)
   score_system = false
+  scrollable = false
+  maxscroll = 0
+  scroll = 0
   for k in pairs(buttons) do buttons[k] = nil end
   current_window = index
   if index == 3 then --main menu
@@ -15,8 +18,8 @@ function build_form(index)
     end
     add_button(7, s_level .. "...", 1350, 850, 400)
   elseif index == 2 then --login
-    text[1] = "guest"
-    text[2] = "guest"
+    text[1] = ""
+    text[2] = ""
     add_button(1, s_login, 800, 730, 230)
   elseif index == 4 then --change language
     add_button(1, "English", 800 - 380, 200, 370)
@@ -78,40 +81,52 @@ function build_form(index)
     add_big_button(2, icon_m1_2, 800 - 200, 600, 120, 1, false, 0, 0, 16, s_addition)
     add_big_button(3, icon_m1_3, 800 + 200, 600, 120, 1, false, 0, 0, nil, s_subtraction)
     ---------
-  elseif index == 12 then --game word builders Animals
+  elseif index == 12 or (index >= 43 and index <= 53) then --game word builders Animals
     score_system = true
     --add_big_button(1, icon_l2_1, game_screen_width - screen_left + 80, screen_top + 110, 45, 0.3, false, get_max_score_for_game(12), get_score_for_game(12), 12)
-    add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 9)
+    add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 40)
     t_x = 21
     t_y = 10
     flag_a = false
     try_counter = 1
-    --while flag_a == false do
-    --  flag_a = false
       animal_name = ""
-
       local a_names_sorted = {}
       local counter_a = 1
-      for k, v in pairs(animals_names) do
-        a_names_sorted[counter_a] = {}
-        a_names_sorted[counter_a].name = animals_names[k]
-        a_names_sorted[counter_a].image = animals_images[k]
-        counter_a = counter_a + 1
+      group_name = "a4a_animals"
+      current_game_title = s_animals
+      if index == 43 then group_name = "a4a_people" current_game_title = s_people
+      elseif index == 44 then group_name = "a4a_jobs" current_game_title = s_jobs
+      elseif index == 45 then group_name = "a4a_body" current_game_title = s_body
+      elseif index == 46 then group_name = "a4a_clothes_n_accessories" current_game_title = s_clothes_and_accessories
+      elseif index == 47 then group_name = "a4a_sport" current_game_title = s_sports
+      elseif index == 48 then group_name = "a4a_actions" current_game_title = s_actions
+      elseif index == 49 then group_name = "a4a_nature" current_game_title = s_nature
+      elseif index == 50 then group_name = "a4a_fruit_n_veg" current_game_title = s_fruits_and_vegetables
+      elseif index == 51 then group_name = "a4a_food" current_game_title = s_food
+      elseif index == 52 then group_name = "a4a_transport" current_game_title = s_transport
+      elseif index == 53 then group_name = "a4a_construction" current_game_title = s_constructions
       end
-      for k, v in pairs(a_names_sorted) do
-        a_names_sorted[k].name = a_names_sorted[k].name:sub(1, utf8.len(a_names_sorted[k].name) - 4)
-        a_names_sorted[k].name = translate_animal(a_names_sorted[k].name)
+      for k, v in pairs(english_word_set[group_name]) do
+        a_names_sorted[counter_a] = {}
+        a_names_sorted[counter_a].name = word_set[group_name][k]
+        a_names_sorted[counter_a].english_name = english_word_set[group_name][k]
+        a_names_sorted[counter_a].image = word_images[group_name][v .. ".jpg"]
+        counter_a = counter_a + 1
       end
       table.sort(a_names_sorted, function(a,b) return #a.name<#b.name end)
 
-      while(animal_name == "" or animal_name == nil) do
-        random_n = math.random(math.ceil((table_length(a_names_sorted) / 5) * (selected_level - 1)), math.ceil((table_length(a_names_sorted) / 5) * (selected_level)))
+      local random_n = 1
+      previous_random_n = previous_random_n or -1
+      while(animal_name == "" or animal_name == nil or random_n == previous_random_n) do
+        local upper_limit = math.ceil((table_length(a_names_sorted) / 5) * (selected_level - 1))
+        local lower_limit = math.ceil((table_length(a_names_sorted) / 5) * (selected_level))
+        random_n = math.random(upper_limit, lower_limit)
         if a_names_sorted[random_n] ~= nil then
           animal_name = a_names_sorted[random_n].name
           animal_image = a_names_sorted[random_n].image
         end
-
       end
+      previous_random_n = random_n
 
     if utf8.len(animal_name) > 20 then
       t_x = utf8.len(animal_name) + 2
@@ -170,12 +185,14 @@ function build_form(index)
     selected_tile_y = 1
     selected_tile_x_offset = 0
     selected_tile_y_offset = 0
-  elseif index == 13 or index == 33 then -- numbers spelling game   or   shape matching
+  elseif index == 13 or index == 33 or (index >= 54 and index <= 65) then -- numbers spelling game   or   shape matching   or   word matchers games
     score_system = true
     if index == 13 then
       add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 20)
     elseif index == 33 then
       add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 23)
+    elseif index >= 54 and index <= 65 then
+      add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 39)
     end
     game_table = {}
     selected_a = ""
@@ -184,6 +201,20 @@ function build_form(index)
     selected_ay = 1
     selected_bx = 1
     selected_by = 1
+    group_name = "a4a_animals"
+    current_game_title = s_animals
+    if index == 55 then group_name = "a4a_people" current_game_title = s_people
+    elseif index == 56 then group_name = "a4a_jobs" current_game_title = s_jobs
+    elseif index == 57 then group_name = "a4a_body" current_game_title = s_body
+    elseif index == 58 then group_name = "a4a_clothes_n_accessories" current_game_title = s_clothes_and_accessories
+    elseif index == 59 then group_name = "a4a_sport" current_game_title = s_sports
+    elseif index == 60 then group_name = "a4a_actions" current_game_title = s_actions
+    elseif index == 61 then group_name = "a4a_nature" current_game_title = s_nature
+    elseif index == 62 then group_name = "a4a_fruit_n_veg" current_game_title = s_fruits_and_vegetables
+    elseif index == 63 then group_name = "a4a_food" current_game_title = s_food
+    elseif index == 64 then group_name = "a4a_transport" current_game_title = s_transport
+    elseif index == 65 then group_name = "a4a_construction" current_game_title = s_constructions
+    end
     if selected_level == 1 or selected_level == 2 then
       game_table_rows = 3
       game_table_y_offset = 0
@@ -225,11 +256,16 @@ function build_form(index)
               game_table[y][x].content = math.random(1, 13)
               second_flag = true
             end
+          elseif index >= 54 and index <= 65 then
+            game_table[y][x].content = math.random(1, table_length(word_set[group_name]))
           end
           game_table[y][x].completed = false
           game_table[y][x].selected = false
           for yy = 1, game_table_rows do
             for xx = 1, 2 do
+              if game_table[yy][xx].content ~= nil and word_images[group_name][english_word_set[group_name][game_table[yy][xx].content] .. ".jpg"] == nil then
+                flag = false
+              end
               if (not (xx == x and yy == y)) and game_table[yy][xx] ~= nil and game_table[y][x].content == game_table[yy][xx].content then
                 flag = false
               end
@@ -240,6 +276,8 @@ function build_form(index)
           game_table[y][x + 2].content = number_to_string(game_table[y][x].content)
         elseif index == 33 then
           game_table[y][x + 2].content = s_shape_matching_names[game_table[y][x].content]
+        elseif index >= 54 and index <= 65 then
+          game_table[y][x + 2].content = word_set[group_name][game_table[y][x].content]
         end
         game_table[y][x + 2].completed = false
         game_table[y][x + 2].selected = false
@@ -248,7 +286,7 @@ function build_form(index)
     for i = 1, 20 do
       num_a = math.random(1, game_table_rows)
       num_b = math.random(1, game_table_rows)
-      temp_n =  game_table[num_a][1]
+      temp_n = game_table[num_a][1]
       game_table[num_a][1] = game_table[num_b][2]
       game_table[num_b][2] = temp_n
     end
@@ -463,6 +501,7 @@ function build_form(index)
     add_button(4, s_level .. " 4", 800, 600, 370)
     add_button(5, s_level .. " 5", 800, 700, 370)
   elseif index == 19 then -- main menu (new)
+    initialize_decoration_elements()
     if username == "admin" then
       add_button(7, s_level .. "...", 350, 660, 485)
       add_button(4, s_change_language, 350, 745, 485)
@@ -474,11 +513,17 @@ function build_form(index)
       add_button(5, s_copyright, 350, 830 - 40, 485)
     end
 
-    add_big_button(8, icon_m1,          760, 145, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
-    add_big_button(9, icon_m4,          800, 295, 57, 0.5, false, 0, 0, 21, s_patterns, true)
-    add_big_button(10,icon_ico_g_0303,  840, 445, 57, 0.5, false, 0, 0, 22,  s_basic_operations, true)
-    add_big_button(11,icon_m2,          880, 595, 57, 0.5, false, 0, 0, 23, s_shapes_and_solids, true)
-    add_big_button(12,icon_m5,          920, 745, 57, 0.5, false, 0, 0, 24, s_time, true)
+    if game == "math" then
+      add_big_button(8, icon_m1,          760, 145, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
+      add_big_button(9, icon_m4,          800, 295, 57, 0.5, false, 0, 0, 21, s_patterns, true)
+      add_big_button(10,icon_ico_g_0303,  840, 445, 57, 0.5, false, 0, 0, 22,  s_basic_operations, true)
+      add_big_button(11,icon_m2,          880, 595, 57, 0.5, false, 0, 0, 23, s_shapes_and_solids, true)
+      add_big_button(12,icon_m5,          920, 745, 57, 0.5, false, 0, 0, 24, s_time, true)
+    elseif game == "language" then
+      add_big_button(13, icon_l1, 780, 220, 57, 0.5, false, 0, 0, 38,  s_discover_letters, true)
+      add_big_button(14, icon_l3, 840, 445, 57, 0.5, false, 0, 0, 39,  s_word_matchers, true)
+      add_big_button(15, icon_l2, 900, 670, 57, 0.5, false, 0, 0, 40,  s_word_builders, true)
+    end
   elseif index == 20 then -- numbers
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
     if selected_level <= 2 then
@@ -511,6 +556,8 @@ function build_form(index)
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 5)
   elseif index == 26 then --user score
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 7)
+    scrollable = true
+    max_scroll = 1500
   elseif index == 27 then --learn numbers with flashcards game
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 20)
     --add_big_button(1, nil, 200, 200, 40, 1, true, 0, 0, nil, "1")
@@ -719,6 +766,129 @@ function build_form(index)
       add_button(i, " ", 196 + (i - 1) * 288 + x, 376 + y, 288 - 4, false, 'center', 288 - 4, 2, color["light_blue_50"])
       add_button(i + 16, time_words[i], 1245, 282 + (i - 1) * 96, 627, false, 'center', 96 - 4, 2, color["light_blue_50"])
     end
+  elseif index == 38 then -- discover letters
+    add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
+    add_big_button(1, icon_ico_g_0300_2, 800 - 300, 450, 90, 1, false, get_max_score_for_game(41), get_score_for_game(41), 41, s_your_alphabet) -- ___ alphabet   your alphabet
+    add_big_button(2, icon_ico_g_0109,   800 + 300, 450, 90, 1, false, get_max_score_for_game(42), get_score_for_game(42), 42, s_trace_letters_and_numbers) --trace letters and numbers
+    --add_big_button(3, icon_ico_g_1006, 800 + 300, 450, 90, 1, false, get_max_score_for_game(37), get_score_for_game(37), 37, s_time_matching) --time_matching
+  elseif index == 39 then -- word matchers
+    add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
+    add_big_button(1, icon_ico_g_0203, 800 - 300, 260, 54, 0.6, false, get_max_score_for_game(54), get_score_for_game(54), 54, s_animals) -- animals
+    add_big_button(2, icon_ico_g_0206, 800      , 260, 54, 0.6, false, get_max_score_for_game(55), get_score_for_game(55), 55, s_people) -- people
+    add_big_button(3, icon_ico_g_0212, 800 + 300, 260, 54, 0.6, false, get_max_score_for_game(56), get_score_for_game(56), 56, s_jobs) -- jobs
+
+    add_big_button(4, icon_ico_g_0205, 800 - 450, 480, 54, 0.6, false, get_max_score_for_game(57), get_score_for_game(57), 57, s_body) -- body
+    add_big_button(5, icon_ico_g_0208, 800 - 150, 480, 54, 0.6, false, get_max_score_for_game(58), get_score_for_game(58), 58, s_clothes_and_accessories) -- clothes and accessories
+    add_big_button(6, icon_ico_g_0204, 800 + 150, 480, 54, 0.6, false, get_max_score_for_game(59), get_score_for_game(59), 59, s_sports) -- sports
+    add_big_button(7, icon_ico_g_0209, 800 + 450, 480, 54, 0.6, false, get_max_score_for_game(60), get_score_for_game(60), 60, s_actions) -- actions
+
+    add_big_button(8,  icon_ico_g_0211, 800 - 600, 700, 54, 0.6, false, get_max_score_for_game(61), get_score_for_game(61), 61, s_nature) --nature
+    add_big_button(9,  icon_ico_g_0213, 800 - 300, 700, 54, 0.6, false, get_max_score_for_game(62), get_score_for_game(62), 62, s_fruits_and_vegetables) --fruits and vegetales
+    add_big_button(10, icon_ico_g_0207, 800      , 700, 54, 0.6, false, get_max_score_for_game(63), get_score_for_game(63), 63, s_food) -- food
+    add_big_button(11, icon_ico_g_0214, 800 + 300, 700, 54, 0.6, false, get_max_score_for_game(64), get_score_for_game(64), 64, s_transport) -- transport
+    add_big_button(12, icon_ico_g_0210, 800 + 600, 700, 54, 0.6, false, get_max_score_for_game(65), get_score_for_game(65), 65, s_constructions) -- constructions
+  elseif index == 40 then -- word builders
+    add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
+    add_big_button(1, icon_ico_g_0203, 800 - 300, 260, 54, 0.6, false, get_max_score_for_game(12), get_score_for_game(12), 12, s_animals) -- animals
+    add_big_button(2, icon_ico_g_0206, 800      , 260, 54, 0.6, false, get_max_score_for_game(43), get_score_for_game(43), 43, s_people) -- people
+    add_big_button(3, icon_ico_g_0212, 800 + 300, 260, 54, 0.6, false, get_max_score_for_game(44), get_score_for_game(44), 44, s_jobs) -- jobs
+
+    add_big_button(4, icon_ico_g_0205, 800 - 450, 480, 54, 0.6, false, get_max_score_for_game(45), get_score_for_game(45), 45, s_body) -- body
+    add_big_button(5, icon_ico_g_0208, 800 - 150, 480, 54, 0.6, false, get_max_score_for_game(46), get_score_for_game(46), 46, s_clothes_and_accessories) -- clothes and accessories
+    add_big_button(6, icon_ico_g_0204, 800 + 150, 480, 54, 0.6, false, get_max_score_for_game(47), get_score_for_game(47), 47, s_sports) -- sports
+    add_big_button(7, icon_ico_g_0209, 800 + 450, 480, 54, 0.6, false, get_max_score_for_game(48), get_score_for_game(48), 48, s_actions) -- actions
+
+    add_big_button(8,  icon_ico_g_0211, 800 - 600, 700, 54, 0.6, false, get_max_score_for_game(49), get_score_for_game(49), 49, s_nature) --nature
+    add_big_button(9,  icon_ico_g_0213, 800 - 300, 700, 54, 0.6, false, get_max_score_for_game(50), get_score_for_game(50), 50, s_fruits_and_vegetables) --fruits and vegetales
+    add_big_button(10, icon_ico_g_0207, 800      , 700, 54, 0.6, false, get_max_score_for_game(51), get_score_for_game(51), 51, s_food) -- food
+    add_big_button(11, icon_ico_g_0214, 800 + 300, 700, 54, 0.6, false, get_max_score_for_game(52), get_score_for_game(52), 52, s_transport) -- transport
+    add_big_button(12, icon_ico_g_0210, 800 + 600, 700, 54, 0.6, false, get_max_score_for_game(53), get_score_for_game(53), 53, s_constructions) -- constructions
+  elseif index == 41 then -- ___ alphabet   your alphabet
+    add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 38)
+    local row = 0
+    local column = 0
+    for i = 1, table_length(alphabet_lc) do
+      --add_button(b_index, button_text, button_x, button_y, button_width, white, alignment, height, button_form, button_color, button_state)
+      if global_language ~= "hebrew" then
+        add_button(i, alphabet_uc[i] .. " " .. alphabet_lc[i], (column + 0.5) * game_screen_width / 13, 700 + row * 70, game_screen_width / 13 - 4, false, 'center', 70 - 4, 2, color["light_blue_50"], 1)
+      else
+        add_button(i, alphabet_uc[i], ((12 - column) + 0.5) * game_screen_width / 13, 700 + row * 70, game_screen_width / 13 - 4, false, 'center', 70 - 4, 2, color["light_blue_50"], 1)
+      end
+      column = column + 1
+      if column == 13 then
+        row = row + 1
+        column = (13 - math.min(13, table_length(alphabet_lc) - i)) / 2
+      end
+    end
+    selected_letter_index = 1
+    current_image = images_flashcards_abc[abc_flashcards_frame_sequence[selected_letter_index]]
+    buttons[1].button_color = color["light_green"]
+    if global_language ~= "hebrew" then
+      add_big_button(100, nil, 180, 510, 38, 1, true, 0, 0, nil, "⟨")
+      add_big_button(101, nil, game_screen_width - 180, 510, 38, 1, true, 0, 0, nil, "⟩")
+    else
+      add_big_button(100, nil, game_screen_width - 180, 510, 38, 1, true, 0, 0, nil, "⟩")
+      add_big_button(101, nil, 180, 510, 38, 1, true, 0, 0, nil, "⟨")
+    end
+    opened_fields = {}
+    opened_fields[1] = true
+    for i = 2, table_length(alphabet_lc) do
+      opened_fields[i] = false
+    end
+  elseif index == 42 then -- trace letters and numbers
+    add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 38)
+    local row = 0
+    local column = 0
+    numbers_table = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+    local total = table_length(alphabet_lc) + table_length(numbers_table)
+    if global_language ~= "hebrew" then
+      total = total + table_length(alphabet_lc)
+    end
+    for i = 1, total do
+      local content = ""
+      if alphabet_uc[i] ~= nil then
+        content = alphabet_uc[i]
+      elseif alphabet_lc[i - table_length(alphabet_uc)] ~= nil and global_language ~= "hebrew" then
+        content = alphabet_lc[i - table_length(alphabet_uc)]
+      else
+        if global_language ~= "hebrew" then
+          content = numbers_table[i - table_length(alphabet_uc) - table_length(alphabet_lc)]
+        else
+          content = numbers_table[i - table_length(alphabet_lc)]
+        end
+      end
+      if global_language ~= "hebrew" then
+        add_button(i, content, (column + 0.5) * 70, 200 + row * 70, 70 - 4, false, 'center', 70 - 4, 2, color["light_blue_50"], 1)
+      else
+        add_button(i, content, ((7-column) + 0.5) * 70, 200 + row * 70, 70 - 4, false, 'center', 70 - 4, 2, color["light_blue_50"], 1)
+      end
+      column = column + 1
+      if column == 8 then
+        row = row + 1
+        column = (8 - math.min(8, (table_length(alphabet_lc) + table_length(alphabet_uc) + table_length(numbers_table)) - i)) / 2
+      end
+    end
+    selected_letter_index = 1
+    buttons[1].button_color = color["light_green"]
+    opened_fields = {}
+    opened_fields[1] = true
+    for i = 2, table_length(alphabet_lc) do
+      opened_fields[i] = false
+    end
+    drawing_line = false
+    line_coordinates = {}
+    line_colors = {}
+    for i = 1, 6 do
+      local transparency = 0.4
+      if i == 1 then transparency = 1 else transparency = 0.4 end
+      add_button(200 + i, "", 1550, 100 + i * 100, 96, false, 'center', 96, 2,
+      {color["s_" .. i][1],
+       color["s_" .. i][2],
+       color["s_" .. i][3],
+       transparency},
+      1)
+    end
+    selected_color = 1
   end--------------------------------------------------------
 
 

@@ -1,3 +1,5 @@
+require 'utf8_functions'
+
 image_splash = love.graphics.newImage("res/home_logo.png")
 image_icon = love.graphics.newImage("res/ico256.png")
 image_dialog_bg = love.graphics.newImage("res/dialog_bg.png")
@@ -41,6 +43,20 @@ icon_ico_g_0504 = love.graphics.newImage("res/menu icons/ico_g_0504.png")
 icon_ico_g_0502 = love.graphics.newImage("res/menu icons/ico_g_0502.png")
 icon_ico_g_1004 = love.graphics.newImage("res/menu icons/ico_g_1004.png")
 icon_ico_g_1006 = love.graphics.newImage("res/menu icons/ico_g_1006.png")
+icon_ico_g_0300_2 = love.graphics.newImage("res/menu icons/ico_g_0300_2.png")
+icon_ico_g_0109 = love.graphics.newImage("res/menu icons/ico_g_0109.png")
+icon_ico_g_0203 = love.graphics.newImage("res/menu icons/ico_g_0203.png")
+icon_ico_g_0204 = love.graphics.newImage("res/menu icons/ico_g_0204.png")
+icon_ico_g_0205 = love.graphics.newImage("res/menu icons/ico_g_0205.png")
+icon_ico_g_0206 = love.graphics.newImage("res/menu icons/ico_g_0206.png")
+icon_ico_g_0207 = love.graphics.newImage("res/menu icons/ico_g_0207.png")
+icon_ico_g_0208 = love.graphics.newImage("res/menu icons/ico_g_0208.png")
+icon_ico_g_0209 = love.graphics.newImage("res/menu icons/ico_g_0209.png")
+icon_ico_g_0210 = love.graphics.newImage("res/menu icons/ico_g_0210.png")
+icon_ico_g_0211 = love.graphics.newImage("res/menu icons/ico_g_0211.png")
+icon_ico_g_0212 = love.graphics.newImage("res/menu icons/ico_g_0212.png")
+icon_ico_g_0213 = love.graphics.newImage("res/menu icons/ico_g_0213.png")
+icon_ico_g_0214 = love.graphics.newImage("res/menu icons/ico_g_0214.png")
 
 icon_shapes = {}
 for i = 1, 15 do
@@ -89,12 +105,44 @@ images_logo_subtitle["russian"] = love.graphics.newImage("res/subtitles/rs_sr.pn
 images_logo_subtitle["serbian"] = love.graphics.newImage("res/subtitles/rs_sr.png")
 images_logo_subtitle["ukrainian"] = love.graphics.newImage("res/subtitles/uk.png")
 
-animals_names = {}
-animals_images = {}
-animals_names = love.filesystem.getDirectoryItems("res/animals")
+images_logo_subtitle_2 = {}
+images_logo_subtitle_2["english"] = love.graphics.newImage("res/subtitles2/en.png")
+images_logo_subtitle_2["catalan"] = love.graphics.newImage("res/subtitles2/ca.png")
+images_logo_subtitle_2["german"] = love.graphics.newImage("res/subtitles2/de.png")
+images_logo_subtitle_2["greek"] = love.graphics.newImage("res/subtitles2/el.png")
+images_logo_subtitle_2["english_gb"] = love.graphics.newImage("res/subtitles2/en.png")
+images_logo_subtitle_2["spanish"] = love.graphics.newImage("res/subtitles2/es.png")
+images_logo_subtitle_2["finnish"] = love.graphics.newImage("res/subtitles2/fi.png")
+images_logo_subtitle_2["french"] = love.graphics.newImage("res/subtitles2/fr.png")
+images_logo_subtitle_2["hebrew"] = love.graphics.newImage("res/subtitles2/he.png")
+images_logo_subtitle_2["italian"] = love.graphics.newImage("res/subtitles2/it.png")
+images_logo_subtitle_2["lakota"] = love.graphics.newImage("res/subtitles2/lkt.png")
+images_logo_subtitle_2["polish"] = love.graphics.newImage("res/subtitles2/pl.png")
+images_logo_subtitle_2["portuguese"] = love.graphics.newImage("res/subtitles2/pt.png")
+images_logo_subtitle_2["russian"] = love.graphics.newImage("res/subtitles2/ru.png")
+images_logo_subtitle_2["serbian"] = love.graphics.newImage("res/subtitles2/sr.png")
+images_logo_subtitle_2["ukrainian"] = love.graphics.newImage("res/subtitles2/uk.png")
 
-for k, v in pairs(animals_names) do
-  animals_images[k] = love.graphics.newImage("res/animals/" .. v)
+word_names = {}
+word_images = {}
+word_names["a4a_animals"] = love.filesystem.getDirectoryItems("res/a4a_animals")
+word_names["a4a_people"] = love.filesystem.getDirectoryItems("res/a4a_people")
+word_names["a4a_jobs"] = love.filesystem.getDirectoryItems("res/a4a_jobs")
+word_names["a4a_body"] = love.filesystem.getDirectoryItems("res/a4a_body")
+word_names["a4a_clothes_n_accessories"] = love.filesystem.getDirectoryItems("res/a4a_clothes_n_accessories")
+word_names["a4a_sport"] = love.filesystem.getDirectoryItems("res/a4a_sport")
+word_names["a4a_actions"] = love.filesystem.getDirectoryItems("res/a4a_actions")
+word_names["a4a_nature"] = love.filesystem.getDirectoryItems("res/a4a_nature")
+word_names["a4a_fruit_n_veg"] = love.filesystem.getDirectoryItems("res/a4a_fruit_n_veg")
+word_names["a4a_food"] = love.filesystem.getDirectoryItems("res/a4a_food")
+word_names["a4a_transport"] = love.filesystem.getDirectoryItems("res/a4a_transport")
+word_names["a4a_construction"] = love.filesystem.getDirectoryItems("res/a4a_construction")
+
+for k, v in pairs(word_names) do
+  word_images[k] = {}
+  for kk, vv in pairs(v) do
+    word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+  end
 end
 
 people_names = {}
@@ -139,4 +187,16 @@ fruits_vegs_names = love.filesystem.getDirectoryItems("res/fruits_vegs_13")
 
 for k, v in pairs(fruits_vegs_names) do
   fruits_vegs_images[k] = love.graphics.newImage("res/fruits_vegs_13/" .. v)
+end
+
+
+images_flashcards_abc = {}
+for i = 0, 101 do
+  if i < 10 then
+    images_flashcards_abc[i] = love.graphics.newImage("res/fc/fc00" .. i .. ".jpg")
+  elseif i < 100 then
+    images_flashcards_abc[i] = love.graphics.newImage("res/fc/fc0" .. i .. ".jpg")
+  elseif i < 1000 then
+    images_flashcards_abc[i] = love.graphics.newImage("res/fc/fc" .. i .. ".jpg")
+  end
 end

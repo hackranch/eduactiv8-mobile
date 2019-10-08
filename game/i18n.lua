@@ -18,6 +18,7 @@ function set_language(language)
     s_licence_title = "Licence"
     s_licence_content = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
     s_copyright_text_big = "Copyright(C) 2012 - 2019 Ireneusz Imiolek \n \n Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributet their works to freesound.org. \n Images by various authors who contributet their works to openclipart.org (Public Domain) and http://art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
+    s_language_arts = "Language arts"
 
     s_credits = {}
     s_credits[1] = "eduActiv8 Concept and Design:"
@@ -171,6 +172,19 @@ function set_language(language)
     s_learn_to_set_the_clock = "learn to set the clock"
     s_set_the_clock_to = "Set the clock to:"
     s_time_matching = "Time Matching"
+    s_your_alphabet = "Your Alphabet"
+    s_trace_letters_and_numbers = "Trace Letters and Numbers"
+    s_people = "People"
+    s_jobs = "Jobs"
+    s_body = "Body"
+    s_clothes_and_accessories = "Clothes and Accessories"
+    s_sports = "Sports"
+    s_actions = "Actions"
+    s_nature = "Nature"
+    s_fruits_and_vegetables = "Fruits and Vegetables"
+    s_food = "Food"
+    s_transport = "Transport"
+    s_constructions = "Constructions"
 
     s_shape_names = {"Equilateral Triangle", "Isosceles Triangle", "Obtuse Triangle",
                             "Right Triangle", "Acute Triangle", "Square", "Rectangle", "Right Trapezium",
@@ -186,7 +200,6 @@ function set_language(language)
                     "Rhombus", "Square", "Pentagon", "Octagon",
                     "Hexagon", "Equilateral Triangle", "Circle",
                     "Isosceles Triangle", "trapezium", "Ellipse"}
-
   else
 
 
@@ -233,7 +246,7 @@ function set_language(language)
     s_incorrect_login = translate_i18n(s_incorrect_login)
     s_username = translate_i18n(s_username)
     s_password = translate_i18n(s_password)
-    s_title = translate_i18n(s_title)
+    --s_title = translate_i18n(s_title)
     s_save = translate_i18n(s_save)
     s_remove = translate_i18n(s_remove)
     s_saved_successfully = translate_i18n(s_saved_successfully)
@@ -283,6 +296,19 @@ function set_language(language)
     s_learn_to_set_the_clock = translate_i18n(s_learn_to_set_the_clock)
     s_set_the_clock_to = translate_i18n(s_set_the_clock_to)
     s_time_matching = translate_i18n(s_time_matching)
+    s_your_alphabet = translate_i18n(s_your_alphabet)
+    s_trace_letters_and_numbers = translate_i18n(s_trace_letters_and_numbers)
+    s_people = translate_i18n(s_people)
+    s_jobs = translate_i18n(s_jobs)
+    s_body = translate_i18n(s_body)
+    s_clothes_and_accessories = translate_i18n(s_clothes_and_accessories)
+    s_sports = translate_i18n(s_sports)
+    s_actions = translate_i18n(s_actions)
+    s_nature = translate_i18n(s_nature)
+    s_fruits_and_vegetables = translate_i18n(s_fruits_and_vegetables)
+    s_food = translate_i18n(s_food)
+    s_transport = translate_i18n(s_transport)
+    s_constructions = translate_i18n(s_constructions)
 
     for i = 1, 15 do
       s_shape_names[i] = translate_i18n(s_shape_names[i])
@@ -291,10 +317,9 @@ function set_language(language)
     for i = 1, 13 do
       s_shape_matching_names[i] = translate_i18n(s_shape_matching_names[i])
     end
-
-
-
   end
+  init_alphabet()
+  init_word_sets()
 end
 
 
@@ -628,8 +653,1390 @@ animals["ukrainian"] = {"корова", "індичка", "креветка", "�
                     "бик", "кіт", "щур", "слимак", "бізон", "чорний дрізд", "лебідь", "омар", "собака",
                     "москіт", "змія", "круча", "мурахоїд"}
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---- prevod tuka
+
+function init_word_sets()
+  word_set = {}
+  english_word_set = {}
+
+  english_word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                  "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                  "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                  "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                  "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                  "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                  "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                  "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                  "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                  "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                  "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                  "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                  "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                  "anteater"}
+  english_word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "run", "run", "swim", "hop",
+                "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+  english_word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+               "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+               "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+               "back", "chin", "bottom", "thigh", "belly"}
+  english_word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                 "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                 "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+  english_word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+               "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+               "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+               "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+               "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+               "bread", "walnut", "egg", "hot dog", "ham"}
+  english_word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                "shoe sole", "robe", "pants", "kimono", "overalls"}
+  english_word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                  "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                  "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                  "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                  "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                  "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                  "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+  english_word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                       "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                       "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                       "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+  english_word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                 "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+  english_word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "policeman",
+               "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+               "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+               "pirate", "cowboy", "electrician", "nurse", "king", "president", "office worker", "carpenter", "jockey",
+               "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+               "sailor", "boxer", "ballet dancer", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+  english_word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                      "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                      "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                      "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                      "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                      "artichokes", "plums", "leek", "bananas", "papaya"}
+  english_word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                    "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+
+  if global_language == "catalan" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "german" then
+    word_set["a4a_animals"] = {"Kuh", "Truthahn", "Schrimps", "Wolf", "Panther", "Panda", "Elster", "Muschel", "Pony", "Maus",
+                    "Mops", "Koala", "Frosch", "Marienkäfer", "Gorilla", "Lama", "Geier", "Hamster", "Vogel",
+                    "Seestern", "Krähe", "Sittich", "Raupe", "Tiger", "Kolibri", "Piranha", "Schwein", "Skorpion",
+                    "Fuchs", "Leopard", "Leguan", "Delfin", "Fledermaus", "Huhn", "Krabbe", "Henne", "Wespe",
+                    "Chameleon", "Wal", "Igel", "Rehkitz", "Elch", "Biene", "Viper", "Würger", "Esel", "Guinea Schwein",
+                    "Faultier", "Pferd", "Pinguin", "Otter", "Bär", "Zebra", "Strauß", "Kamel", "Antilope", "Lemur",
+                    "Taube", "Lama", "Maulwurf", "Rochen", "Widder", "Stinktier", "Qualle", "Schaf", "Hai", "Kätzchen",
+                    "Hirsch", "Schnecke", "Flamingo", "Hase", "Muschel", "Biber", "Spatz", "Taube", "Adler", "Käfer",
+                    "Nilpferd", "Eule", "Kobra", "Salamander", "Gans", "Kängeruh", "Libelle", "Kröte", "Pelikan",
+                    "Tintenfisch", "Löwenbaby", "Jaguar", "Ente", "Eidechse", "Rhinozeros", "Hyäne", "Ochse", "Pfau",
+                    "Papagei", "Elch", "Alligator", "Ameise", "Ziege", "Baby Hase", "Löwe", "Eichhörnchen", "Opossum",
+                    "Schimpanse", "Reh", "Erdhörnchen", "Elefant", "Giraffe", "Spinne", "Hundewelpe", "Tölpel",
+                    "Seelöwe", "Hahn", "Schildkröte", "Bulle", "Katze", "Ratte", "Schnecke", "Büffel", "Amsel",
+                    "Schwan", "Hummer", "Hund", "Moskito", "Schlange", "Hühnchen", "Ameisenbär"}
+    word_set["a4a_sport"] = {"Judo", "Billard", "Reiten", "Dehnen", "Helm", "Schlittschuh Laufen", "Gehen", "Rennen", "Laufen",
+                  "Schwimmen", "Springen", "Wandern", "Boxen", "Hockey", "Rennen", "Werfen", "Skaten", "Gewinnen",
+                  "Kniebeuge", "Skifahren", "Golf", "Pfeife", "Fackel", "Segeln", "Stehen", "Tennis", "Hochsprung",
+                  "Rudern", "Joggen", "Seilspringen"}
+    word_set["a4a_body"] = {"Zähne", "Backe", "Knöchel", "Knie", "Zeh", "Muskel", "Mund", "Fuß", "Hand", "Ellbogen", "Haar",
+                 "Wimper", "Bart", "Bauchnabel", "Daumen", "Brust", "Nasenloch", "Nase", "Hüfte", "Arm", "Augenbraue",
+                 "Faust", "Nacken", "Handgelenk", "Hals", "Auge", "Bein", "Wirbelsäule", "Ohr", "Finger", "Fuß", "Zopf",
+                 "Gesicht", "Rücken", "Kinn", "Po", "Oberschenkel", "Bauch"}
+    word_set["a4a_people"] = {"Mädchen", "männlich", "Sohn", "Kumpel", "Freunde", "Baby", "Kind", "Vater", "Mutter", "Zwillinge",
+                   "Brüder", "Mann", "Mutter", "Großvater", "Familie", "weiblich", "Ehefrau", "Ehemann", "Braut",
+                   "Madame", "Großmutter", "Zusammen", "Kerl", "Zwillinge", "Stamm", "Junge", "Schwestern", "Frau",
+                   "Lady"}
+    word_set["a4a_food"] = {"Süßigkeiten", "Wurst", "Hamburger", "Steak", "Fondant", "Doughnut", "Kokosnuss", "Reis", "Eiscreme",
+                 "Gelee", "Joghurt", "Nachtisch", "Brezel", "Erdnuss", "Marmelade", "Festmahl", "Keks", "Speck",
+                 "Gewürz", "Kaffee", "Torte", "Limonade", "Schokolade", "Wasserflasche", "Mittagessen", "Eis", "Zucker",
+                 "Soße", "Suppe", "Saft", "Fritten", "Kuchen", "Stampfkartoffeln", "Tee", "Brötchen", "Käse",
+                 "Rindfleisch", "Sandwich", "Brotscheibe", "Spritzgebäck", "Pizza", "Mehl", "Kaugummi", "Spaghetti",
+                 "Braten", "Getränk", "Eintopf", "Aufstrich", "Fleisch", "Milch", "Mahlzeit", "Mais", "Brot", "Walnuss",
+                 "Ei", "Hot Dog", "Schinken"}
+    word_set["a4a_clothes_n_accessories"] = {"Schmuck", "Socken", "Jacket", "Hacke", "Kittel", "Shorts", "Tasche", "Halskette",
+                                  "Sweatshirt", "Uniform", "Regenjacke", "Hose", "Sonnenbrille", "Jacke", "Pullover",
+                                  "Shirt", "Sandalen", "Anzug", "Pyjama", "Rock", "Reißverschluss", "Schuhe", "Juwel",
+                                  "Krawatte", "Pantoffel", "Handschuhe", "Hut", "Ärmel", "Kappe", "Badeanzug",
+                                  "Trainingsanzug", "Weste", "Brille", "Schnürsenkel", "Flicken", "Halstuch", "Schuh",
+                                  "Knopf", "Dress", "Schärpe", "Schuhsohle", "Robe", "Hose", "Kimono", "Overall"}
+    word_set["a4a_actions"] = {"lecken", "zuschlagen", "betteln", "fallen", "kratzen", "berühren", "schnüffeln", "sehen",
+                    "klettern", "graben", "heulen", "schlafen", "erkunden", "zeichnen", "umarmen", "lehren", "ausruhen",
+                    "kneten", "fangen", "klatschen", "weinen", "singen", "treffen", "verkaufen", "picken", "schlagen",
+                    "knien", "finden", "tanzen", "husten", "schneiden", "denken", "bellen", "sprechen", "applaudieren",
+                    "backen", "schreiben", "hauen", "klimpern", "studieren", "pflügen", "träumen", "abschicken",
+                    "tauchen", "flüstern", "schluchzen", "schütteln", "füttern", "kriechen", "zelten", "kleckern",
+                    "reinigen", "schreien", "reißen", "fließen", "ziehen", "aß", "küssen", "sitzen", "ausbrüten",
+                    "blinken", "hören", "schmusen", "spielen", "waschen", "plaudern", "fahren", "trinken", "fliegen",
+                    "jonglieren", "beißen", "fegen", "schauen", "stricken", "heben", "fangen", "lesen", "krächzen",
+                    "starren", "essen"}
+    word_set["a4a_construction"] = {"Leuchtturm", "Tür", "Zirkus", "Kirche", "kennel", "Tempel", "Rauch", "Schornstein", "Ziegel",
+                         "Brunnen", "Straße", "Burg", "Speicher", "Treppenhaus", "Schule", "Farm", "Brücke", "Damm",
+                         "Pyramide", "Scheune", "Windmühle", "Fenster", "Hütte", "Stufe", "Laden", "Schuppen", "Dach",
+                         "Turm", "Garage", "Moschee", "Hospital", "Zelt", "Haus", "Wand", "Bank", "Schutt", "Hütte"}
+    word_set["a4a_nature"] = {"Land", "Klippe", "Hügel", "Schlucht", "Felsen", "Meer", "See", "Küste", "Land", "Berg", "Teich",
+                   "Gipfel", "Lava", "Höhle", "Düne", "Insel", "Wald", "Wüste", "Eisberg"}
+    word_set["a4a_jobs"] = {"Clown", "Ingenieur", "Priester", "Veterinär", "Richter", "Koch", "Athlet", "Bibliothekar", "juggler",
+                 "Polizei", "Klempner", "Dienstmarke", "Königin", "Farmer", "Magier", "Ritter", "Arzt", "Maurer",
+                 "Reiniger", "Lehrer", "Jäger", "Soldat", "Musiker", "Anwalt", "Fischer", "Prinzessin", "Feuerwehrmann",
+                 "Nonne", "Pirat", "Cowboy", "Elektriker", "Krankenschwester", "König", "Präsident", "Sekretär",
+                 "Zimmermann", "Jockey", "Arbeiter", "Mechaniker", "Pilot", "Schauspieler", "Koch", "Student",
+                 "Schlachter", "Verkäufer", "Prinz", "Papst", "Matrose", "Boxer", "Tänzer", "Trainer", "Astronaut",
+                 "Maler", "Anestesist", "Wissenschaftler"}
+    word_set["a4a_fruit_n_veg"] = {"Karotte", "Brombeeren", "Sellerie", "Rübe", "Kakao", "Pfirsisch", "Melone", "Grapefruit",
+                        "Broccoli", "Weintrauben", "Spinat", "Feige", "Kern", "Rettich", "Tomate", "Kiwi", "Spargel",
+                        "Oliven", "Gurken", "Bohnen", "Erdbeere", "Pfeffer", "raspberry", "Aprikose", "Kartoffel",
+                        "Erbse", "Kohl", "Kirsche", "squash", "Blaubeeren", "Birne", "Orange", "Kürbis", "Avocado",
+                        "Knoblauch", "Zwiebel", "Apfel", "Limette", "Blumenkohl", "Mango", "Kopfsalat", "Zitrone",
+                        "Aubergine", "Artischocke", "Pflaumen", "Lauch", "Banane", "Papaya"}
+    word_set["a4a_transport"] = {"Segel", "Taxi", "Auto", "Rad", "Floß", "Pedal", "Bus", "Lenker", "Boot", "Truck", "Schlitten",
+                      "Teppich", "Motorrad", "Zug", "Schiff", "Van", "Kanu", "Rakete", "Mast", "Schlitten", "Fahrrad"}
+  elseif global_language == "greek" then
+    word_set["a4a_animals"] = {"αγελάδα", "γαλοπούλα", "γαρίδα", "λύκος", "πάνθηρας", "πάντα", "καρακάξα", "στρείδι", "πόνυ",
+                    "ποντίκι", "παγκ", "κοάλα", "βάτραχος", "πασχαλίτσα", "γορίλας", "λάμα", "όρνιο", "χάμστερ",
+                    "πουλί", "αστερίας", "κοράκι", "παπαγάλος", "κάμπια", "τίγρης", "κολίμπρι", "πιράνχα", "γουρούνι",
+                    "σκορπιός", "αλεπού", "λεοπάρδαλη", "ιγκουάνα", "δελφίνι", "νυχτερίδα", "νεοσσός", "καβούρι",
+                    "κότα", "σφήκα", "χαμαιλέοντας", "φάλαινα", "σκαντζόχοιρος", "ελαφάκι", "τάρανδος", "μέλισσα",
+                    "οχιά", "κεφαλάς", "γάιδαρος", "ινδικό χοιρίδιο", "βραδύποδας", "άλογο", "πιγκουίνος", "βίδρα",
+                    "αρκούδα", "ζέβρα", "στρουθοκάμηλος", "καμήλα", "αντιλόπη", "λεμούριος", "περιστέρι", "λάμα",
+                    "τυφλοπόντικας", "σαλάχι", "κριάρι", "κουνάβι", "μέδουσα", "πρόβατο", "καρχαρίας", "γατάκι",
+                    "ελάφι", "σαλιγκάρι", "φλαμίνγκο", "κουνέλι", "μύδι", "κάστορας", "σπουργίτι", "περιστέρι", "αετός",
+                    "σκαθάρι", "ιπποπόταμος", "κουκουβάγια", "κόμπρα", "σαλαμάνδρα", "χήνα", "κανγκουρό", "λιβελούλα",
+                    "φρύνος", "πελεκάνος", "καλαμάρι", "λιονταράκι", "τζάγκουαρ", "πάπια", "σαύρα", "ρινόκερος",
+                    "ύαινα", "βόδι", "παγώνι", "παπαγάλος", "ελάφι", "αλιγάτορας", "μυρμήγκι", "γίδα", "κουνελάκι",
+                    "λιοντάρι", "σκίουρος", "οπόσσουμ", "χιμπατζής", "ελαφίνα", "σκίουρος", "ελέφαντας",
+                    "καμηλοπάρδαλη", "αράχνη", "σκυλάκι", "κίσσα", "φώκια", "πετεινός", "χελώνα", "ταύρος", "γάτα",
+                    "αρουραίος", "γυμνοσάλιαγκας", "βουβάλι", "κότσυφας", "κύκνος", "αστακός", "σκύλος",
+                    "κουνούπι", "φίδι", "κοτόπουλο", "μυρμηγκοφάγος"}
+    word_set["a4a_sport"] = {"τζούντο", "πισίνα", "ποδηλατάδα", "εκτάσεις", "κράνος", "πατινάζ", "περπάτημα", "τρέξιμο", "τρεχάλα",
+                  "κολύμπι", "τραμπολίνο", "περίπατος", "μποξ", "χόκεϋ", "αγώνας", "ρίψη", "πατίνι", "νίκη", "κάθισμα",
+                  "σκι", "γκολ", "σφυρίχτρα", "δάδα", "ιστιοπλοΐα", "έκταση", "τένις", "αναπήδηση", "κωπηλασία",
+                  "τρέξιμο", "σχοινάκι"}
+    word_set["a4a_body"] = {"δόντια", "μάγουλα", "αστράγαλος", "γόνατο", "δάκτυλο", "μυς", "στόμα", "πόδια", "χέρι", "αγκώνας",
+                 "μαλλιά", "βλεφαρίδα", "γένια", "αφαλός", "αντίχειρας", "στήθος", "ρουθούνι", "μύτη", "ισχίο", "χέρι",
+                 "φρύδι", "γροθιά", "λαιμός", "καρπός", "λαιμός", "μάτι", "πόδι", "σπονδυλική στήλη", "αυτί", "δάκτυλο",
+                 "πόδι", "κοτσίδα", "πρόσωπο", "πλάτη", "πηγούνι", "πισινός", "μηρός", "κοιλιά"}
+    word_set["a4a_people"] = {"κορίτσι", "αρσενικό", "γιός", "κολλητοί", "φίλοι", "μωρό", "παιδί", "μπαμπάς", "μαμά",
+                   "δίδυμα αγόρια", "αδέρφια", "άντρας", "μαμά", "παππούς", "οικογένεια", "θηλυκό", "η σύζυγος",
+                   "ο σύζυγος", "νύφη", "κυρία", "γιαγιά", "ζευγάρι", "τύπος", "δίδυμα κορίτσια", "φυλή", "αγόρι",
+                   "αδερφές", "γυναίκα", "κυρία"}
+    word_set["a4a_food"] = {"καραμέλα", "λουκάνικο", "χάμπουργκερ", "μπριζόλα", "μπισκοτάκι", "λουκουμάς", "καρύδα", "ρύζι",
+                 "παγωτό", "ζελέ", "γιαούρτι", "επιδόρπιο", "πρέτζελ", "φυστίκι", "μαρμελάδα", "συμπόσιο", "μπισκότο",
+                 "μπέηκον", "καρύκευμα", "καφές", "πίτα", "λεμονάδα", "σοκολάτα", "μπουκάλι νερού", "μεσημεριανό",
+                 "πάγος", "ζάχαρη", "σάλτσα", "σούπα", "χυμός", "τηγανιτές πατάτες", "κέηκ", "πουρές", "τσάι", "ψωμάκι",
+                 "τυρί", "βοδινό", "σάντουιτς", "κομμάτι", "πασπάλισμα", "πίτσα", "αλεύρι", "τσίχλα", "σπαγγέτι",
+                 "ψητό", "ρόφημα", "βραστό", "αλοιφή", "κρέας", "γάλα", "γεύμα", "καλαμπόκι", "ψωμί", "καρύδι", "αυγό",
+                 "χοτ ντογκ", "ζαμπόν"}
+    word_set["a4a_clothes_n_accessories"] = {"κοσμήματα", "κάλτσα", "μπουφάν", "τακούνι", "φόρμα", "βερμούδα", "τσέπη",
+                                  "μενταγιόν", "αθλητική φόρμα", "στολή", "αδιάβροχο", "παντελόνι", "γυαλιά ηλίου",
+                                  "παλτό", "πουλόβερ", "πουκάμισο", "σανδάλια", "κουστούμι", "πυτζάμες", "φούστα",
+                                  "φερμουάρ", "παπούτσια", "κόσμημα", "γραβάτα", "παντόφλες", "γάντια", "καπέλο",
+                                  "μανίκι", "καπέλο", "μαγιό", "φόρμα", "γιλέκο", "γυαλιά", "κορδόνι", "μπάλωμα",
+                                  "κασκόλ", "παπούτσι", "κουμπί", "φόρεμα", "ζώνη", "σόλα", "ρόμπα", "εσώρουχα",
+                                  "κιμονό", "φόρμα"}
+    word_set["a4a_actions"] = {"γλύφω", "καρφώνω", "παρακαλώ", "πέφτω", "γρατζουνώ", "αγγίζω", "μυρίζω", "βλέπω", "σκαρφαλώνω",
+                    "σκάβω", "ουρλιάζω", "κοιμάμαι", "εξερευνώ", "ζωγραφίζω", "αγκαλιάζω", "διδάσκω", "ύπνος", "πηλός",
+                    "πιάνω", "χειροκροτώ", "κλαίω", "τραγουδώ", "συναντώ", "πουλάω", "τσιμπώ", "χτυπώ", "γονατίζω",
+                    "βρίσκω", "χορεύω", "βήχω", "κόβω", "σκέφτομαι", "γαβγίζω", "μιλώ", "επευφημώ", "ψήνω", "γράφω",
+                    "γρονθοκοπώ", "γρατζουνώ", "μελετώ", "οργώνω", "ονειρεύομαι", "ταχυδρομώ", "βουτώ", "ψιθυρίζω",
+                    "σιγοκλαίω", "κουνώ", "ταίζω", "σέρνομαι", "κατασκηνώνω", "ρίχνω", "καθαρίζω", "φωνάζω", "κλαίω",
+                    "επιπλέω", "τραβώ", "τρώω", "φιλώ", "κάθομαι", "εκκολάπτω", "βλεφαρίζω", "ακούω", "φιλώ", "παίζω",
+                    "πλένω", "συζητώ", "οδηγώ", "πίνω", "πετώ", "ταχυδακτυλουργώ", "δαγκώνω", "σκουπίζω", "βλέπω",
+                    "πλέκω", "σηκώνω", "φέρνω", "διαβάζω", "κρώζω", "κοιτώ επίμονα", "τρώω"}
+    word_set["a4a_construction"] = {"φάρος", "πόρτα", "τσίρκο", "εκκλησία", "κυνοτροφείο", "ναός", "καπνός", "καμινάδα", "τούβλο",
+                         "πηγάδι", "δρόμος", "κάστρο", "κατάστημα", "σκάλα", "σχολείο", "φάρμα", "γέφυρα", "φράγμα",
+                         "πυραμίδα", "αχυρώνας", "μύλος", "παράθυρο", "καλύβα", "σκαλί", "μαγαζί", "παράγκα", "στέγη",
+                         "καμπαναριό", "γκαράζ", "τζαμί", "νοσοκομείο", "σκηνή", "σπίτι", "τοίχος", "τράπεζα",
+                         "παντζούρια", "καλύβα"}
+    word_set["a4a_nature"] = {"γη", "γκρεμός", "λόφος", "φαράγγι", "βράχος", "θάλασσα", "λίμνη", "όχθη", "ακτή", "βουνό",
+                   "λιμνούλα", "κορυφή", "λάβα", "σπηλιά", "αμμόλοφος", "νησί", "δάσος", "έρημος", "παγόβουνο"}
+    word_set["a4a_jobs"] = {"κλόουν", "μηχανικός", "ιερέας", "κτηνίατρος", "δικαστής", "μάγειρας", "αθλητής", "βιβλιοθηκάριος",
+                 "ζογκλέρ", "αστυνόμος", "υδραυλικός", "σήμα", "βασίλισσα", "αγρότης", "μάγος", "ιππότης", "γιατρός",
+                 "χτίστης", "καθαριστής", "δασκάλα", "κυνητός", "στρατιώτης", "μουσικός", "δικηγόρος", "ψαράς",
+                 "πριγκήπισσα", "πυροσβέστης", "καλόγρια", "πειρατής", "αγελαδάρης", "ηλεκτρολόγος",
+                 "νοσοκόμα", "βασιλιάς", "πρόεδρος", "γραφείο", "ξυλουργός", "καβαλάρης", "εργάτης", "μηχανικός",
+                 "πιλότος", "ηθοποιός", "μάγειρας", "μαθητής", "χασάπης", "λογιστής", "πρίγκηπας", "ιερέας", "ναύτης",
+                 "μποξέρ", "μπαλαρίνα", "προπονητής", "αστροναύτης", "ζωγράφος", "αναισθησιολόγος", "επιστήμονας"}
+    word_set["a4a_fruit_n_veg"] = {"καρότο", "μαύρα μούρα", "σέλινο", "γογγύλι", "κακάο", "ροδάκινο", "πεπόνι", "γκρέιπφρουτ",
+                        "μπρόκολο", "σταφύλια", "σπανάκι", "σύκο", "κουκούτσι", "ραπανάκι", "ντομάτα", "ακτινίδιο",
+                        "σπαράγγι", "ελιές", "αγγούρια", "φασόλια", "φράουλα", "πιπεριές", "μούρο", "βερύκοκκο",
+                        "πατάτες", "μπιζέλια", "λάχανο", "κεράσια", "κολοκύθα", "μπλε μούρα", "αχλάδι", "πορτοκάλι",
+                        "κολοκύθι", "αβοκάντο", "σκόρδο", "κρεμμύδι", "μήλο", "λάιμ", "κουνουπίδι", "μάνγκο", "μαρούλι",
+                        "λεμόνι", "μελιτζάνα", "αγκινάρα", "δαμάσκηνα", "πράσο", "μπανάνες", "παπάγια"}
+    word_set["a4a_transport"] = {"πανί", "ταξί", "αυτοκίνητο", "ποδήλατο", "σχεδία", "πηδάλι", "λεωφορείο", "τιμόνι", "βάρκα",
+                      "φορτηγό", "έλκυθρο", "χαλί", "μοτοσυκλέτα", "τρένο", "πλοίο", "βαν", "κανό", "πύραυλος",
+                      "κατάρτι", "έλκυθρο", "ποδήλατο"}
+  elseif global_language == "english_gb" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "run", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "policeman",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office worker", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet dancer", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "english" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "run", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "policeman",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office worker", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet dancer", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "spanish" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "finnish" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "french" then
+    word_set["a4a_animals"] = {"vache", "dinde", "crevettes", "loup", "panthère", "panda", "pie", "palourde", "poney", "souris",
+                    "carlin", "koala", "grenouille", "coccinelle", "gorille", "lama", "vautour", "hamster", "oiseau",
+                    "étoile de mer", "corbeau", "perruche", "chenille", "tigre", "colibri", "piranha", "cochon",
+                    "scorpion", "renard", "léopard", "iguane", "dauphin", "chauve-souris", "poussin", "crabe", "poule",
+                    "guêpe", "caméléon", "baleine", "hérisson", "fauve", "élan", "abeille", "vipère", "passereaux",
+                    "âne", "cochon d'inde", "paresseux", "cheval", "pingouin", "loutre", "ours", "zèbre", "autruche",
+                    "chameau", "antilope", "lémurien", "pigeon", "lama", "taupe", "raie", "bélier", "putois", "méduse",
+                    "mouton", "requin", "chaton", "cerf", "escargot", "flamant rose", "lapin", "huître", "castor",
+                    "moineau", "colombe", "aigle", "coléoptère", "hippopotame", "hibou", "cobra", "salamandre", "oie",
+                    "kangourou", "libellule", "crapaud", "pélican", "calamar", "lionceau", "jaguar", "canard", "lézard",
+                    "rhinocéros", "hyène", "boeuf", "paon", "perroquet", "wapiti", "alligator", "fourmi", "chèvre",
+                    "petit lapin", "lion", "écureuil", "marsupial", "chimpanzé", "daim", "gaufre", "éléphant", "girafe",
+                    "araignée", "chiot", "geai", "phoque", "coq", "tortue", "taureau", "chat", "rat",
+                    "limace", "buffle", "merle", "cygne", "homard", "chien", "moustique", "serpent", "poulet",
+                    "tamanoir"}
+    word_set["a4a_sport"] = {"judo", "piscine", "vélo", "étirements", "casque", "patinage", "marche", "courrir", "course", "nager",
+                  "sauter", "randonnée", "boxe", "hockey", "course", "javelot", "skate", "gagner", "squat", "ski",
+                  "golf", "sifflet", "torche", "voile", "stand", "tennis", "saut", "aviron", "jogging", "corde"}
+    word_set["a4a_body"] = {"dents", "joues", "cheville", "genou", "orteil", "muscle", "bouche", "pieds", "main", "coude",
+                 "cheveux", "cils", "barbe", "nombril", "pouce", "poitrine", "narine", "nez", "hanche", "bras",
+                 "sourcils", "poing", "cou", "poignet", "gorge", "oeil", "jambe", "colonne vertébrale", "oreille",
+                 "doigt", "pied", "tresse", "visage", "dos", "menton", "bas", "cuisse", "ventre"}
+    word_set["a4a_people"] = {"fille", "male", "fils", "écoliers", "amis", "bébé", "enfant", "papa", "maman", "jumeaux", "frères",
+                   "homme", "mère", "grand-père", "famille", "femelle", "femme", "mari", "mariée", "madame",
+                   "grand-mère", "couple", "garçon", "jumelles", "tribu", "garçon", "soeurs", "femme", "dame"}
+    word_set["a4a_food"] = {"bonbons", "saucisse", "hamburger", "steak", "fondant", "beignet", "noix de coco", "riz",
+                 "crème glacée", "gelée", "yaourt", "dessert", "bretzel", "cacahuète", "confiture", "fête", "cookie",
+                 "bacon", "épice", "café", "tarte", "limonade", "chocolat", "bouteille d'eau", "déjeuner", "glace",
+                 "sucre", "sauce", "soupe", "jus", "frites", "gâteau", "purée de pomme de terre", "thé", "bon",
+                 "fromage", "boeuf", "sandwich", "tranche", "saupoudrer", "pizza", "farine", "gomme", "spaghetti",
+                 "rôti", "boire", "ragoût", "tartiner", "viande", "lait", "repas", "maïs", "pain", "noix", "oeuf",
+                 "hot dog", "jambon"}
+    word_set["a4a_clothes_n_accessories"] = {"bijoux", "chaussette", "veste", "talon", "blouse", "short", "poche", "collier",
+                                  "sweat", "uniforme", "imperméable", "pantalon", "lunettes de soleil", "manteau",
+                                  "pull", "chemise", "sandales", "costume", "pyjama", "jupe", "braguette", "chaussures",
+                                  "bijou", "cravate", "chaussons", "gants", "chapeau", "manche", "cap",
+                                  "maillot de bain", "survêtement", "gilet", "lunettes", "lacet", "retouche", "foulard",
+                                  "chaussure", "bouton", " robe", "ceinture", "chaussure a semelle", "robe", "pantalon",
+                                  "kimono", "salopette"}
+    word_set["a4a_actions"] = {"lécher", "viser", "mendier", "tomber", "griffer", "toucher", "sentir", "voir", "grimper",
+                    "creuser", "hurler", "dormir", "explorer", "dessiner", "serrer", "enseigner", "dormir", "façonner",
+                    "capturer", "taper", "pleurer", "chanter", "rencontrer", "vendre", "picorer", "heurter",
+                    "s'agenouiller", "trouver", "danser", "tousser", "couper", "penser", "aboyer", "parler",
+                    "encourager", "cuisiner", "écrire", "frapper", "jouer", "étudier", "labourer", "rêver", "poster",
+                    "plonger", "chuchoter", "souffrir", "secouer", "nourrir", "ramper", "camper", "renverser",
+                    "nettoyer", "crier", "déchirer", "flotter", "tirer", "manger", "embrasser", "s'asseoir", "éclore",
+                    " clignoter", "entendre", "embrasser", "jouer", "laver", "discuter", "conduire", "boire", "voler",
+                    "jongler", "ronger", "balayer", "regarder", "tricoter", "soulever", "rapporter", "lire", "croasser",
+                    "impressioner", "manger"}
+    word_set["a4a_construction"] = {"phare", "porte", "cirque", "église", "chenil", "temple", "fumée", "cheminée", "brique",
+                         "puits", "rue", "château", "magasin", "escalier", "école", "ferme", "pont", "barrage",
+                         "pyramide", "grange", "moulin", "fenêtre", "cabine", "étape", "boutique", "hangar", "toit",
+                         "clocher", "garage", "mosquée", "hôpital", "tente", "maison", "mur", "banque", "volet",
+                         "cabane"}
+    word_set["a4a_nature"] = {"terre", "falaise", "colline", "canyon", "rocher", "mer", "lac", "côte", "rivage", "montagne",
+                   "étang", "pic", "lave", "grotte", "dune", "île", "forêt", "désert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "ingénieur", "prêtre", "vétérinaire", "juge", "chef", "athlète", "libraire", "jongleur",
+                 "police", "plombier", "insigne", "reine", "agriculteur", "magicien", "chevalier", "docteur", "maçon",
+                 "nettoyeur", "enseignant", "chasseur", "soldat", "musicien", "avocat", "pêcheur", "princesse",
+                 "pompier", "nounou", "pirate", "cowboy", "électricien", "infirmière", "roi", "président",
+                 "bureau", "charpentier", "jockey", "travailleur", "mécanicien", "pilote", "acteur", "cuisinier",
+                 "étudiant", "boucher", "comptable", "prince", "pape", "marin", "boxeur", "ballet", "coach",
+                 "astronaute", "peintre", "anesthésiste", "scientifique"}
+    word_set["a4a_fruit_n_veg"] = {"carotte", "mûres", "céleri", "navet", "cacao", "pêche", "melon", "pamplemousse", "brocoli",
+                        "raisin", "épinards", "figue", "noyau", "radis", "tomate", "kiwi", "asperges", "olives",
+                        "concombres", "haricots", "fraise", "poivrons", "framboise", "abricot", "pommes de terre",
+                        "pois", "chou", "cerises", "courge", "myrtille", "poire", "orange", "citrouille", "avocat",
+                        "ail", "oignon", "pomme", "citon vert", "chou-fleur", "mangue", "laitue", "citron", "aubergine",
+                        "artichauts", "prunes", "poireau", "bananes", "papaye"}
+    word_set["a4a_transport"] = {"voile", "taxi", "voiture", "vélo", "radeau", "pédale", "bus", "guidon", "bateau", "camion",
+                      "traîneau", "tapis", "moto", "train", "navire", "fourgonette", "canot", "fusée", "mât", "luge",
+                      "bicyclette"}
+  elseif global_language == "hebrew" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "italian" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "lakota" then
+    word_set["a4a_animals"] = {"ptegléška", "waglékšuŋ", "hokáš’iŋla", "šuŋgmánitu tȟáŋka", "igmútȟaŋka sápa", "matȟówičhá", "halháta", "thukí", "šuŋkčík’ala", "itȟúŋkala", "šuŋkíteblaska",
+                        "matȟó itókaǧa", "gnašká", "wíŋyaŋ wablúška", "makhúakipȟela", "lamá", "hečá", "itȟúŋkčhepa", "ziŋtkála", "wičháȟpi hoǧáŋ", "kȟaŋǧí",
+                        "ziŋtkála waúŋčhala", "waglúla", "igmúgleǧa", "tȟanáǧila", "hoǧáŋ wóhitika", "khukhúše", "siŋtíčhapȟe", "šuŋǧíla", "igmúgleška",
+                        "agléškapȟéyohaŋ", "hoškéhaŋ", "ȟupákiglake", "uŋžíŋčala", "mniwáŋča matúgna", "kȟokȟóyaȟ’aŋla bloká", "wičháyažipa", "iglútȟokčala", "mniwátu", "wapȟáhiŋka",
+                        "thíŋgleška", "héblaska", "wičháyažipa tȟáŋka", "peháŋhaŋla", "čhetáŋ watȟápȟela", "šúŋšuŋla", "itȟúŋggleška", "waȟ’áŋhikela", "šúŋkawakȟaŋ", "čháǧa ziŋtkála",
+                        "ptáŋ", "matȟó", "šuŋglézela", "waȟúpakoza tȟáŋka", "čhuwínuŋǧa", "niǧésaŋla", "siŋté glegléǧa", "thiwákiŋyela", "lamá", "wahíŋheya", "mniókiŋyela",
+                        "hečhíŋškayapi", "maká", "hoštáka", "tȟáȟčašuŋkala", "hoápepȟestola", "igmúla", "tȟáȟča", "waháčhaŋka kič’íŋ", "pȟeháŋ šásaŋ", "maštíŋčala",
+                        "thukíhasaŋ", "čhápa", "ziŋtkísčila", "wakíŋyela", "waŋblí", "wablúška", "mnikhúkhuše", "hiŋháŋ", "zuzéča pȟabláska",
+                        "asápazila", "maǧá", "tȟáȟčapsiča", "thuswéčha", "matȟápeȟ’a", "blóza", "istó šaglóǧaŋ", "igmú tȟáŋka čhiŋčála", "igmú itókaǧa",
+                        "maǧáksiča", "agléška", "phuté hetȟúŋ", "šúŋka iȟáȟa", "ptewák'iŋ", "ziŋtkála siŋtúpi háŋska", "ziŋtkála waúŋčha", "heȟáka", "agléška tȟáŋka", "tȟažúška",
+                        "tȟatȟókala", "maštíŋčala čhiŋčála", "igmú tȟáŋka", "zičá", "siŋtéšla", "iȟála", "tȟáȟča wíŋyela", "ithígnila", "phuté wókič’u",
+                        "tȟahú háŋska", "iktómi", "šuŋȟpála", "ziŋtkátȟoglegleǧa", "mniwáŋča šúŋka", "kȟokȟóyaȟ’aŋla wíŋyela", "khéya", "tȟablóka", "igmú", "itȟúŋktȟaŋka",
+                        "zugzúkela", "tȟatȟáŋka", "wábloša", "maǧáska", "matúgna tȟáŋka", "šúŋka", "čhapȟúŋka", "zuzéča", "kȟokȟóyaȟ’aŋla",
+                        "tȟažúška yúta"}
+    word_set["a4a_sport"] = {"ksabyá kichízapi", "nuŋwÁŋ", "hunáhomni akáŋyaŋkA", "iglúzičA", "wapȟóštaŋ sutá", "čhaȟ’íčazo", "máni", "íkačhaŋ", "napȟÁ", "oyúso úŋ", "psípsičA",
+                      "imáǧaǧaya máni", "napé uŋ kičhízapi", "čháǧa tȟabkápsičapi", "khiíŋyaŋkapi", "kaȟ’ól iyéyA", "čhaŋbláska kič’úŋ", "ohíyA", "pustág nážiŋ", "waákaŋ čhaŋwóslohaŋ kič’úŋ", "tȟab’ákozA", "wayázopi",
+                      "pȟetížaŋžaŋye", "tȟatéwata", "hóšnašna kič’úŋ", "tȟabhíŋšma škátapi", "waŋkáyeič’iyA", "watópȟA", "íŋyaŋkA", "wíkȟaŋ uŋ psípsičA"}
+    word_set["a4a_body"] = {"hí", "tȟapȟúŋ", "iškáhu", "čhaŋkpé", "sipȟá", "kȟaŋíyuwi", "í", "sí", "napé", "išpá", "pȟehíŋ",
+                     "úŋštiŋmapihíŋ", "phuthíŋhiŋ", "čhekpá", "napȟáhuŋka", "makhú", "pȟóǧe", "pȟasú", "niséhu", "istó", "ištáȟehiŋ",
+                     "napógmus glúza", "tȟahú", "napókaške", "loté", "ištá", "hú", "čhaŋkȟáhu", "núŋǧe", "napsú", "sí", "osúŋ", "ité",
+                     "čhuwí", "ikhú", "uŋzé", "čhečá", "thezí"}
+    word_set["a4a_people"] = {"wičhíŋčala", "šič’éšitku", "čhiŋkšítku", "wayáwa", "wakȟáŋyeža", "hokšíčala", "čhiŋkší", "até", "húŋku", "čhekpápi (hokšíla)", "čhiyékičhiyapi",
+                       "wičháša", "iná", "kaká", "thiwáhe", "haŋkášitku", "tȟawíču", "hignáku", "hiŋgnátȟuŋ", "wíŋyaŋ",
+                       "uŋčí", "akíčhisčupi", "kȟoškéku", "čhekpápi (wičhíŋčala)", "eháŋk’ehaŋ", "hokšíla", "čhuwékičhiyapi", "tȟa-wíčhiŋčala", "wikȟóškalaka"}
+    word_set["a4a_food"] = {"čhaŋmháŋska", "tȟašúptȟaŋka", "tȟaló yukpáŋpi", "tȟaló", "čhaŋmháŋska ǧíȟča", "aǧúyabskuya gmigmá", "asáŋpi yaȟúǧapi", "psíŋ", "čhaȟsníyaŋ", "waštágyapi skúyeyapi",
+                     "asáŋpi niníyaŋpi", "waskúyeča", "aǧúyapi opémnila", "yaȟúǧapi", "waštágyapi", "waglékšuŋ špaŋyáŋpi", "aǧúyapi ǧiǧíla", "wašíŋ", "pȟáza", "wakȟályapi", "tȟaspáŋ opémnipi",
+                     "tȟaspáŋpȟa haŋpí", "čhaŋmháŋska ǧí", "mní", "wíčhokaŋ wótapi", "čháǧa", "čhaŋháŋpi", "iyúltȟuŋ", "waháŋpi", "tȟaspáŋzi haŋpí", "bločhéuŋpap waksáksapi",
+                     "aǧúyapi skúyela", "blopátȟaŋpi", "čheyáka", "aǧúyapi pagmúpi", "asáŋpi sutá", "tȟaló špaŋyáŋpi", "čhoǧíŋkhiyapi", "owáslesleče", "akálapila", "aǧúyapi zigzíča",
+                     "aǧúyapiblu", "čhaŋšíŋ", "spakéli", "khukhúše čhosyápi", "waȟpékȟalyapi", "čhéǧa", "apášluta", "khukhúše čhečá", "asáŋpi", "wóyute", "wagmíza",
+                     "aǧúyapi", "gmá", "wítka", "tȟašúpa", "khukhúše tȟaló"}
+    word_set["a4a_clothes_n_accessories"] = {"íŋyaŋ othéȟika úŋpi", "huŋyákȟuŋ", "ógle šóka", "siyéte háŋska", "wawíyuŋpi ógle", "uŋzóǧe ptéčela", "sičháŋophiye", "wanáp’iŋ",
+                                      "ógle wapȟóštaŋ yukȟé", "wówaši hayápi", "maǧážu ógle", "uŋzóǧe", "ištámaza sápa", "ógle hiŋšmá", "ógle zigzíča",
+                                      "ógle", "maštéhaŋpa", "wówaši hayápi čhó", "ištíŋma hayápi", "nitéhepi", "hayápi hí", "maǧážu haŋpa", "íŋyaŋ othéȟika", "tȟahú ičáške",
+                                      "haŋpónašloke", "napíŋkpa", "wapȟóštaŋ", "´ógle aȟčó", "wapȟóštaŋla", "nuŋwáŋ hayápi", "háŋpa", "ógle čhuwíyuksa",
+                                      "ištámaza", "haŋpkȟáŋ", "ayáskabtȟúŋpi", "tȟahú ičhósye", "akáŋhaŋpa", "čheškíkȟaŋ", "čhuwígnaka", "iphíyaka",
+                                      "akíglake", "šiná hiŋšmá", "mahél úŋpi", "Kisúŋla šiná", "čheškíyutaŋ"}
+    word_set["a4a_actions"] = {"slípA", "oíȟpeyA", "wóla", "gliȟpáyA", "yuȟlátA", "épatȟaŋ", "ómna", "waŋyáŋkA", "alí", "ok’Á", "hó", "ištíŋmA",
+                        "waátuŋwAŋ", "wičhítowa", "pȟóskil yúzA", "waúŋspewičhákhiyA", "asníkiyA", "wakáǧA", "yukȟápA", "napéglaskápA", "čhéyA", "lowáŋ", "atáyA", "wawíyopȟeyA",
+                        "yakpí", "iyápȟa", "čhaŋkpéška makȟágle", "iyéyA", "wačhí", "hoȟpÁ", "yuksÁ", "wíyukčaŋ", "wapȟápȟa", "wóglakA", "waáš’a", "lol’´íȟ’aŋ",
+                        "wówa", "apȟÁ", "čhaŋkáhotȟuŋ", "ablézA", "makȟáyublu", "wíhaŋblA", "iyáyeyA", "nuŋwÁŋ", "ožíži", "čhaókit’A", "yuȟláȟla",
+                        "wók’u", "slohÁŋ", "éthi", "papsúŋ", "pȟehíŋ glužáža", "šičáhowayA", "yuȟléčA", "ókaǧA", "yutítaŋ", "ločhíŋ", "íputȟakA", "yaŋkÁ",
+                        "ikpákpi", "ištákakpaŋ", "naȟ’úŋ", "theȟíla", "škátA", "iglúžaža", "wóglakA", "kaȟápA", "yatkÁŋ", "kiŋyÁŋ", "tȟápa oštéšteya waŋkáyeyA",
+                        "yašpÁ", "wakáhiŋtA", "aígluta", "knit", "waš’ág’ič’iyA", "ičú", "wayáwa", "hotȟúŋ", "ayúta", "wótA"}
+    word_set["a4a_construction"] = {"thiyóžaŋžaŋ", "thiyópa", "wópazo oštéšteka", "owáčhekiye", "šúŋka othí", "eháŋni thihúȟaka", "šótA", "ošóta inápȟA", "makȟá špáŋpi",
+                             "mnič’ápi", "čhaŋkú", "íŋyaŋ thípi", "aǧúyapi okáǧe", "oíyahe", "owáyawa", "wóžuthi", "čheyáktȟuŋpi", "mninátȟakapi", "íŋyaŋ thipȟéstola",
+                             "waníyaŋpi othí", "tȟaté ičáhomni", "ožáŋžaŋglepi", "čháŋthipi", "oáli", "mas’óphiye", "thikáitepa", "thičhé", "owákaȟla", "iyéčhiŋkíŋyaŋka onážiŋ",
+                             "wiyóhiyaŋpata thípi wakȟáŋ", "okhúže thípi", "wakhéya", "thípi", "thitȟáhepiya", "mázaska thípi", "ožáŋžaŋglepi thiyópa", "thigmígma"}
+    word_set["a4a_nature"] = {"makȟóčhe", "mayá", "pahá", "ósmaka", "íŋyaŋ", "mniwáŋča", "blé", "óhuta", "mniwáŋča óhuta", "ȟé", "bléla",
+                       "ipȟá", "íŋyaŋšlo", "iǧúǧa oȟlóka", "čhasmú pahá", "wíta", "čhúŋšoke", "čhasmú makȟóčhe", "čháǧa wíta"}
+    word_set["a4a_jobs"] = {"heyókȟa", "thikáǧA", "wačhékiye wičháša", "wamákȟaškaŋ aphíyA", "wayásu", "wóhela", "khiíŋyaŋke s’a", "wówapi awáŋyaŋkA", "tȟápa oštéšteya waŋkáyeyA", "čhaŋksáyuha",
+                     "mní oíŋyaŋka aphíyA", "čhešká máza", "wíŋyaŋyatápi", "wóžu wičháša", "wakȟáŋȟ’aŋ wičháša", "mas’ákičhita", "waákisniyA", "makȟá špáŋpi awáŋyaŋkA", "thiyúžaža wíŋyaŋ", "waúŋspewičhákhiyA",
+                     "wakhúwa", "akíčhita", "olówaŋ káǧA", "waákhiya wičháša", "hokhúwa s’a", "wíŋyaŋyatápila", "pȟelkásni wičháša", "witȟáŋšna úŋ",
+                     "mniwáŋča wamánuŋ s’a", "pteóle", "wakȟáŋgli awáŋyaŋkA", "wayázaŋ awáŋyaŋkA", "wičhášayatápi", "tȟuŋkášilayapi", "wówaši oyáŋke", "čhaŋkážipA", "šuŋk’ákaŋyaŋkA",
+                     "wówaši", "iyéčhiŋkíŋyaŋka aphíyA", "kiŋyékhiyapi kaȟápA", "škáte s’a", "lol’íȟ’aŋ wičháša", "wayáwa", "wapȟáte s’a", "oíčazo owá", "wičhášayatápila", "pope",
+                     "mniwáŋča akíčhita", "napé uŋ kičhízapi", "wačhí wíŋyaŋ", "škalwíčhakhiyA", "wičháȟpi ománi", "itówapi káǧA", "ištíŋmat’ewíčhayA", "wapásikA"}
+    word_set["a4a_fruit_n_veg"] = {"pȟaŋǧízizi", "wažúštečasapa", "hútȟotȟo", "thíŋpsiŋla skaská", "čhaŋmháŋskaǧi sú", "tȟaspáŋ hiŋšmá", "suótala", "tȟaspáŋzi tȟáŋka",
+                            "waȟčáȟča watȟótȟo", "čhuŋwíyapahe", "waȟpé šokšóka", "tȟamníoȟpi", "čhoǧíŋ", "pȟaŋǧípȟepȟe", "uŋžíŋžiŋtka", "khiwí", "hustóla yútapi",
+                            "slála", "kuŋkúŋ", "omníča", "wažúšteča", "pȟayá yútapi", "tȟakȟáŋheča", "tȟaspáŋhiŋšma čík’ala", "bló",
+                            "omníča gmigmí", "waȟpéyutapi", "čhaŋpȟá skúyeyapi", "wagmú", "watȟókča tȟóla", "tȟaspáŋ pȟéstola", "tȟaspáŋzi", "wagmúzi", "tȟaspáŋtȟo slá",
+                            "pšíŋkčeka", "pšíŋ", "tȟaspáŋ", "tȟaspáŋtȟo pȟá", "waȟčálaska yútapi", "subláska", "maštíŋčatȟawóte", "tȟaspáŋpȟa", "wagmúšatȟo",
+                            "tȟókahu yútapi", "kȟáŋta", "pšiŋskúya", "zíškopela", "wagmúčhaŋ"}
+    word_set["a4a_transport"] = {"walšína", "wíši iwátȟokšu", "iyéčhiŋkíŋyaŋkA", "hunáhomni", "čhaŋyúwipi káǧapi", "ináhomni", "oyáte itȟókšu", "hunáhomni iyúhomni", "watópȟapila", "iwátȟokšu", "čhaŋwóslohaŋ tȟáŋka",
+                          "čhúŋwiŋža akáȟpe", "napȟópȟopela", "mázačhaŋku", "tȟatéwata", "thiwáhe itȟókšu", "čháŋwata", "wičháȟpi wáta", "wápaha", "čhaŋwóslohaŋ", "hunáhomnipi"}
+  elseif global_language == "polish" then
+    word_set["a4a_animals"] = {'krowa', 'indyk', 'krewetka', 'wilk', 'pantera', 'panda', 'sroka', 'małż', 'kucyk', 'mysz', 'pies',
+                    'koala', 'żaba', 'biedronka', 'goryl', 'lama', 'sęp', 'chomik', 'ptak', 'rozgwiazda', 'kruk',
+                    'papuga', 'gąsienica', 'tygrysek', 'koliber', 'pirania', 'świnia', 'skorpion', 'lis', 'lampart',
+                    'iguana', 'delfin', 'nietoperz', 'kurczątko', 'krab', 'kura', 'osa', 'kameleon', 'wieloryb', 'jeż',
+                    'jelonek', 'łoś', 'pszczoła', 'żmija', 'dzierzba', 'osioł', 'świnka morska', 'leniwiec', 'koń',
+                    'pingwin', 'wydra', 'niedźwiedź', 'zebra', 'struś', 'wielbłąd', 'antylopa', 'lemur', 'gołąb',
+                    'lama', 'kret', 'płaszczka', 'baran', 'skunks', 'meduza', 'owca', 'rekin', 'kot', 'jeleń', 'ślimak',
+                    'fleming', 'królik', 'ostryga', 'bóbr', 'wróbel', 'gołąb', 'orzeł', 'chrząszcz', 'hipopotam',
+                    'sowa', 'kobra', 'salamandra', 'gęś', 'kangur', 'ważka', 'ropucha', 'pelikan', 'kalmar', 'lwiątko',
+                    'jaguar', 'kaczka', 'jaszczurka', 'nosorożec', 'hiena', 'wół', 'paw', 'papuga', 'łoś', 'aligator',
+                    'mrówka', 'koza', 'króliczek', 'lew', 'wiewiórka', 'opos', 'szympans', 'sarenka', 'gopher', 'słoń',
+                    'żyrafa', 'pająk', 'szczeniak', 'sójka', 'foka', 'kogut', 'żółw', 'byk', 'kot', 'szczur',
+                    'ślimak', 'bawół', 'kos', 'łabędź', 'homar', 'pies', 'komar', 'wąż', 'kurczak', 'mrówkojad'}
+    word_set["a4a_sport"] = {"judo", "basen", "jazda na rowerze", "rozciąganie", "kask", "łyżwy", "spacer", "bieg", "bieg",
+                  "pływanie", "skakanie na trampolinie", "wędrówka", "boks", "hokej", "wyścig", "rzucać",
+                  "jazda na deskorolce", "wygrywać", "przysiady", "narciarstwo", "golf", "gwizdek", "pochodnia",
+                  "żeglarstwo", "stanie", "tenis", "skok", "wioślarstwo", "bieg", "skakanka"}
+    word_set["a4a_body"] = {"zęby", "policzek", "kostka", "kolano", "palec u nogi", "mięsień", "usta", "stopy", "dłoń", "łokieć",
+                 "włosy", "rzęsy", "broda", "pępek", "kciuk", "piersi", "dziórka w nosie", "nos", "biodro", "ręka",
+                 "brwi", "pięść", "szyja", "nadgarstek", "gardło ", "oko", "noga", "kręgosłup", "ucho", "palec",
+                 "stopa", "warkocz", "twarz", "plecy", "podbródek", "tyłek", "udo", "brzuch"}
+    word_set["a4a_people"] = {"dziewczyna", "chłopiec", "syn", "koledzy", "przyjaciele", "niemowle", "dziecko", "tata", "mama",
+                   "bliźnięta", "bracia", "mężczyzna", "matka", "dziadek", "rodzina", "dziewczyna", "żona", "mąż",
+                   "panna młoda", "pani", "babcia", "para", "chłopak", "bliźniaczki", "plemię", "chłopak", "siostry",
+                   "kobieta", "pani"}
+    word_set["a4a_food"] = {"słodycze", "kiełbasa", "hamburger", "stek", "krówka", "pączek", "kokos", "ryż", "lód", "galaretka",
+                 "jogurt", "deser", "precel", "orzeszek ziemny", "dżem", "uczta", "ciasteczko", "boczek", "przyprawy",
+                 "kawa", "ciasto", "lemoniada", "czekolada", "butelka wody", "lunch", "lód", "cukier", "sos", "zupa",
+                 "soki", "frytki", "ciasto", "ziemniaki puree", "herbata", "drożdżówka", "ser", "wołowina", "kanapka",
+                 "plasterki", "posypka", "pizza", "mąka", "guma do żucia", "spaghetti", "pieczeń", "napój", "gulasz",
+                 "smarować", "mięso ", "mleko", "objad", "kukurydza", "chleb", "orzech włoski", "jajko", "hot dog",
+                 "szynka"}
+    word_set["a4a_clothes_n_accessories"] = {"biżuteria", "skarpetka", "kurtka", "obcas", "kitel", "spodenki", "kieszeń",
+                                  "naszyjnik", "bluza", "mundur", "płaszcz przeciwdeszczowy", "spodnie",
+                                  "okulary przeciwsłoneczne", "płaszcz", "sweter", "koszula", "sandały", "garnitur",
+                                  "piżama", "spódnica", "zamek błyskawiczny", "buty", "klejnot", "krawat", "pantofle",
+                                  "rękawiczki", "kapelusz", "rękaw", "czapka", "kostium pływacki", "but sportowy",
+                                  "kamizelka", "okulary", "sznurówki", "łata", "szalik", "buty", "guzik", "sukienka",
+                                  "szarfa", "podeszwa buta", "szata", "spodnie", "kimono", "kombinezon"}
+    word_set["a4a_actions"] = {"lizać", "rzucać", "żebrać", "spadać", "drapać", "dotykać", "wąchać", "patrzeć", "wspinać się",
+                    "kopać", "wyć", "spać", "zwiedzać", "rysować", "przytulić", "uczyć się", "drzemać", "lepić z gliny",
+                    "złowić", "klepnąć", "płakać", "śpiewać", "spotkać", "sprzedać", "dziobać", "oberwać", "uklęknąć",
+                    "znaleźć", "tańczyć", "kaszleć", "uciąć", "myśleć", "szczekać", "mówić", "dopingować", "piec",
+                    "pisać", "uderzyć", "brzdąkać", "uczyć się", "orać", "marzyć", "wysyłać", "nurkować", "szeptać",
+                    "szlochać", "potrząsnąć", "nakarmić", "raczkować", "biwakować", "rozlać", "myć się", "krzyczeć",
+                    "rozerwać", "unosić się", "ciągnąć", "zjeść", "pocałować", "siedzieć", "wykluwać się",
+                    "puścić oczko", "słyszeć", "pocałować", "bawić się", "kąpać się", "rozmawiać", "jeździć", "pić",
+                    "latać", "żonglować", "ugryźć", "zamiatać", "patrzeć", "robić na drutach", "podnieść", "przynieść",
+                    "czytać", "rechotać", "gapić się", "jeść"}
+    word_set["a4a_construction"] = {"latarnia morska", "drzwi", "cyrk", "kościół", "buda", "świątynia", "dym", "komin", "cegła",
+                         "studnia", "ulica", "zamek", "sklep", "schody", "szkoła", "gospodarstwo", "most", "tama",
+                         "piramida", "stodoła", "młyn", "okno", "szopa", "schód", "sklep", "szopa", "dach", "wieża",
+                         "garaż", "meczet", "szpital", "namiot", "dom", "ściana", "bank", "okiennica", "szałas"}
+    word_set["a4a_nature"] = {"ziemia", "klif", "wzgórze", "kanion", "skała", "morze", "jezioro", "wybrzeże", "plaża", "góra",
+                   "staw", "szczyt", "lawa", "jaskinia", "wydma", "wyspa", "las", "pustynia", "góra lodowa"}
+    word_set["a4a_jobs"] = {'klaun', 'inżynier', 'ksiądz', 'weterynarz', 'sędzia', 'szef kuchni', 'sportowiec', 'bibliotekarz',
+                 'żongler', 'policjant', 'hydraulik', 'medal', 'królowa', 'rolnik', 'magik', 'rycerz', 'lekarz',
+                 'murarz', 'sprzątaczka', 'nauczyciel', 'myśliwy', 'żołnierz', 'muzyk', 'prawnik', 'wędkarz',
+                 'księżniczka', 'strażak', 'zakonnica', 'pirat', 'kowboj', 'elektryk', 'pielęgniarka', 'król',
+                 'prezydent', 'pracownik biurowy', 'stolarz', 'dżokej', 'pracownik', 'mechanik', 'pilot', 'aktor', 'kucharz',
+                 'student', 'rzeźnik', 'księgowy', 'książę', 'papież', 'marynarz', 'bokser', 'baletnica', 'trener',
+                 'astronauta', 'malarz', 'anestezjolog', 'naukowiec'}
+    word_set["a4a_fruit_n_veg"] = {"marchew", "jeżyny", "seler", "rzepa", "kakao", "brzoskwinia", "melon", "grejpfrut", "brokuła",
+                        "winogrona", "szpinak", "figa", "pestka", "rzodkiewka", "pomidor", "kiwi", "szparagi", "oliwki",
+                        "ogórki", "fasola", "truskawka", "papryka", "malina", "morela", "ziemniaki", "groszek",
+                        "kapusta", "wiśnie", "dynia", "jagody", "gruszka", "pomarańcza", "dynia", "awokado", "czosnek",
+                        "cebula", "jabłko", "limonka", "kalafior", "mango", "sałata", "cytryna", "bakłażan",
+                        "karczochy", "śliwki", "pora", "banany", "papaja"}
+    word_set["a4a_transport"] = {"żagiel", "taksówka", "samochód", "rower", "tratwa", "pedał", "autobus", "kierownica", "łódź",
+                      "ciężarówka", "sanie", "latający dywan", "motocykl", "pociąg", "statek", "van", "kajak",
+                      "rakieta", "maszt", "sanki", "rower"}
+  elseif global_language == "portuguese" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "russian" then
+    word_set["a4a_animals"] = {"корова", "индейка", "креветка", "волк", "пантера", "панда", "сорока", "моллюск", "пони", "мышь",
+                    "мопс", "коала", "лягушка", "божья коровка", "горилла", "лама", "стервятник", "хомяк", "птица",
+                    "морская звезда", "ворона", "длиннохвостый попугай", "гусеница", "тигр", "колибри", "пиранья",
+                    "свинья", "скорпион", "лиса", "леопард", "игуана", "дельфин", "летучая мышь", "цыплёнок", "краб",
+                    "курица", "оса", "хамелион", "кит", "ёжик", "олень", "лось", "пчела", "змея", "сорокопут", "осёл",
+                    "морская свинка", "ленивец", "конь", "пингвин", "выдра", "медведь", "зебра", "страус", "верблюд",
+                    "антилопа", "лемур", "голубь", "лама", "крот", "скат", "баран", "скунс", "медуза", "овца", "акула",
+                    "котёнок", "олень", "улитка", "фламинго", "кролик", "устрица", "бобр", "воробей", "голубь", "орёл",
+                    "жук", "бегемот", "сова", "кобра", "саламандра", "гусь", "кенгуру", "стрекоза", "лягушка",
+                    "пеликан", "кальмар", "львёнок", "ягуар", "утка", "ящерица", "носорог", "гиена", "бык", "павлин",
+                    "попугай", "лось", "крокодил", "муравей", "козёл", "крольчонок", "лев", "белка", "опоссум",
+                    "шимпанзе", "оленёнок", "суслик", "слон", "жираф", "паук", "щенок", "сойка", "тюлень", "петух",
+                    "черепаха", "бык", "кошка", "крыса", "улитка", "бизон", "чёрный дрозд", "лебедь", "омар",
+                    "собака", "комар", "змея", "цыплёнок", "муравьед"}
+    word_set["a4a_sport"] = {"дзюдо", "плавание", "велогонка", "растяжка", "шлем", "коньки", "ходьба", "бег", "бег", "ныряние",
+                  "батут", "пеший туризм", "бокс", "хоккей", "забег", "бросок", "скейт", "победа", "приседания", "лыжи",
+                  "гольф", "свисток", "факел", "яхта", "стойка", "теннис", "скачок", "гребля", "бег трусцой",
+                  "скакалка"}
+    word_set["a4a_body"] = {"зуб", "щека", "косточка", "колено", "пята", "мускул", "рот", "ступня", "рука", "локоть", "волосы",
+                 "ресничка", "борода", "пупок", "большой палец", "грудь", "ноздря", "нос", "поясница", "рука", "бровь",
+                 "кулак", "шея", "запястье", "горло", "глаз", "нога", "спина", "ухо", "палец", "ступня", "борода",
+                 "лицо", "спина", "подбородок", "ягодицы", "бедро", "живот"}
+    word_set["a4a_people"] = {"девушка", "парень", "сын", "одноклассники", "друзья", "малыш", "ребёнок", "папа", "мама",
+                   "близнецы", "братья", "мужчина", "мать", "дедушка", "семья", "женщина", "жена", "муж", "невеста",
+                   "тётя", "бабушка", "влюблённые", "мальчик", "двойняшки", "дикари", "мальчик", "сёстры", "женщина",
+                   "леди"}
+    word_set["a4a_food"] = {"конфета", "сосиска", "гамбургер", "бифштекс", "помадка", "пончик", "кокос", "рис", "мороженое",
+                 "желе", "йогурт", "десерт", "десерт", "крендель", "арахис", "варенье", "курица", "бекон", "специи",
+                 "кофе", "пирог", "лимонад", "шоколад", "бутылка с водой", "обед", "лёд", "сахар", "соус", "суп", "сок",
+                 "чипсы", "торт", "пюре", "чай", "булка", "сыр", "отбивная", "бутерброд", "ломтик", "посыпка", "пицца",
+                 "мука", "жевательная резинка", "спагетти", "жаркое", "напиток", "тушёное мясо", "намазанное", "мясо",
+                 "молоко", "пища", "кукуруза", "хлеб", "орех", "яйцо", "хот-дог", "ветчина"}
+    word_set["a4a_clothes_n_accessories"] = {"украшение", "носок", "пиджак", "шпилька", "пятно", "шорты", "карман", "ожерелье",
+                                  "свитер", "униформа", "плащ", "штаны", "солнечные очки", "куртка", "пулловер",
+                                  ",блузка", "сандалии", "костюм", "пижама", "юбка", "молния", "туфли", "камень",
+                                  "галстук", "шлёпанцы", "перчатки", "шляпа", "рукав", "кепка", "купальник",
+                                  "кроссовки", "жилет", "перчатки", "шнурок", "заплатка", "шарф", "ботинок", "пуговица",
+                                  "платье", "пояс", "подошва", "мантия", "трусы", "кимоно", "комбинезон"}
+    word_set["a4a_actions"] = {"лизать", "забрасывать", "молиться", "падать", "царапать", "трогать", "нюхать", "смотреть",
+                    "карабкаться", "копать", "выть", "спать", "исследовать", "рисовать", "обнимать", "учить", "дремать",
+                    "лепить", "ловить", "хлопать", "плакать", "петь", "встречаться", "продавать", "клевать", "ударить",
+                    "становиться на колени", "искать", "танцевать", "кашлять", "резать", "думать", "лаять", "говорить",
+                    "веселить", "стряпать", "писать", "бить", "бренчать", "учиться", "пахать", "мечтать", "отправлять",
+                    "нырять", "шептать", "рыдать", "трясти", "кормить", "ползти", "обосноваться", "разливать", "мыть",
+                    "кричать", "рвать", "плавать", "тянуть", "поесть", "целовать", "сидеть", "вылупляться", "мигать",
+                    "слушать", "целоваться", "играть", "мыть", "говорить", "вести", "пить", "летать", "жонглировать",
+                    "кусать", "мести", "смотреть", "вязать", "поднимать", "держать", "читать", "квакать", "оставаться",
+                    "есть"}
+    word_set["a4a_construction"] = {"маяк", "дверь", "цирк", "церковь", "конура", "храм", "дым", "дымоход", "кирпич", "колодец",
+                         "улица", "замок", "магазин", "лестница", "школа", "ферма", "мост", "плотина", "пирамида",
+                         "кладовая", "мельница", "окно", "домик", "ступенька", "магазин", "сарай", "крыша",
+                         "колокольня", "гараж", "мечеть", "госпиталь", "палатка", "дом", "стена", "банк", "ставень",
+                         "хижина"}
+    word_set["a4a_nature"] = {"земля", "утёс", "холм", "каньон", "камень", "море", "озеро", "пляж", "побережье", "гора", "пруд",
+                   "вершина", "лава", "пещера", "дюна", "остров", "лес", "пустыня", "айсберг"}
+    word_set["a4a_jobs"] = {"клоун", "инженер", "священник", "ветеринар", "судья", "повар", "атлет", "библиотекарь", "жонглёр",
+                 "полицейский", "водопроводчик", "жетонщик", "королева", "фермер", "фокусник", "рыцарь", "доктор",
+                 "каменщик", "уборщица", "учитель", "охотник", "солдат", "музыкант", "юрист", "рыбак", "принцесса",
+                 "пожарник", "монахиня", "пират", "ковбой", "электрик", "няня", "король", "президент", "клерк",
+                 "плотник", "жокей", "рабочий", "механик", "пилот", "актёр", "повар", "студент", "мясник", "бухгалтер",
+                 "принц", "поп", "моряк", "боксёр", "балерина", "тренер", "астронавт", "художник", "анестезиолог",
+                 "учёный"}
+    word_set["a4a_fruit_n_veg"] = {"морковь", "смородина", "сельдерей", "редька", "какао", "персик", "дыня", "грейпфрут",
+                        "брокколи", "виноград", "шпинат", "инжир", "косточка", "редис", "помидор", "киви", "спаржа",
+                        "оливки", "огурцы", "бобы", "клубника", "перцы", "малина", "абрикос", "картофель", "горох",
+                        "капуста", "вишни", "тыква", "ежевика", "груша", "апельсин", "тыква", "авокадо", "чеснок",
+                        "лук", "яблоко", "лайм", "цветная капуста", "манго", "салат", "лимон", "баклажан", "артишоки",
+                        "сливы", "лук", "бананы", "папайа"}
+    word_set["a4a_transport"] = {"яхта", "такси", "автомобиль", "велосипед", "плот", "педаль", "автобус", "руль", "лодка", "пикап",
+                      "сани", "ковёр", "мотоцикл", "поезд", "корабль", "фургон", "каноэ", "ракета", "мачта", "санки",
+                      "велосипед"}
+  elseif global_language == "serbian" then
+    word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
+                    "koala", "frog", "ladybug", "gorilla", "llama", "vulture", "hamster", "bird", "starfish", "crow",
+                    "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
+                    "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
+                    "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
+                    "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                    "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
+                    "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
+                    "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
+                    "duck", "lizard", "rhinoceros", "hyena", "ox", "peacock", "parrot", "elk", "alligator", "ant",
+                    "goat", "baby rabbit", "lion", "squirrel", "opossum", "chimp", "doe", "gopher", "elephant",
+                    "giraffe", "spider", "puppy", "jay", "seal", "rooster", "turtle", "bull", "cat", "rat",
+                    "slug", "buffalo", "blackbird", "swan", "lobster", "dog", "mosquito", "snake", "chicken",
+                    "anteater"}
+    word_set["a4a_sport"] = {"judo", "pool", "ride", "stretch", "helmet", "ice skating", "walk", "ran", "run", "swim", "hop",
+                  "hike", "boxing", "hockey", "race", "throw", "skate", "win", "squat", "ski", "golf", "whistle",
+                  "torch", "sailing", "stand", "tennis", "jump", "rowing", "jog", "rope"}
+    word_set["a4a_body"] = {"teeth", "cheek", "ankle", "knee", "toe", "muscle", "mouth", "feet", "hand", "elbow", "hair",
+                 "eyelash", "beard", "belly button", "thumb", "breast", "nostril", "nose", "hip", "arm", "eyebrow",
+                 "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
+                 "back", "chin", "bottom", "thigh", "belly"}
+    word_set["a4a_people"] = {"girl", "male", "son", "mates", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
+                   "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                   "grandmother", "couple", "lad", "twin girls", "tribe", "boy", "sisters", "woman", "lady"}
+    word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
+                 "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
+                 "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
+                 "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
+                 "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+                 "bread", "walnut", "egg", "hot dog", "ham"}
+    word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
+                                  "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
+                                  "shirt", "sandals", "suit", "pyjamas", "skirt", "zip", "shoes", "jewel", "tie",
+                                  "slippers", "gloves", "hat", "sleeve", "cap", "swimming suit", "trainer", "vest",
+                                  "glasses", "shoelace", "patch", "scarf", "shoe", "button", "dress", "sash",
+                                  "shoe sole", "robe", "pants", "kimono", "overalls"}
+    word_set["a4a_actions"] = {"lick", "slam", "beg", "fell", "scratch", "touch", "sniff", "see", "climb", "dig", "howl", "sleep",
+                    "explore", "draw", "hug", "teach", "nap", "clay", "catch", "clap", "cry", "sing", "meet", "sell",
+                    "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
+                    "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
+                    "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
+                    "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                    "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
+    word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
+                         "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",
+                         "barn", "mill", "window", "cabin", "step", "shop", "shed", "roof", "steeple", "garage",
+                         "mosque", "hospital", "tent", "house", "wall", "bank", "shutter", "hut"}
+    word_set["a4a_nature"] = {"land", "cliff", "hill", "canyon", "rock", "sea", "lake", "coast", "shore", "mountain", "pond",
+                   "peak", "lava", "cave", "dune", "island", "forest", "desert", "iceberg"}
+    word_set["a4a_jobs"] = {"clown", "engineer", "priest", "vet", "judge", "chef", "athlete", "librarian", "juggler", "police",
+                 "plumber", "badge", "queen", "farmer", "magician", "knight", "doctor", "bricklayer", "cleaner", "teacher",
+                 "hunter", "soldier", "musician", "lawyer", "fisherman", "princess", "fireman", "nun",
+                 "pirate", "cowboy", "electrician", "nurse", "king", "president", "office", "carpenter", "jockey",
+                 "worker", "mechanic", "pilot", "actor", "cook", "student", "butcher", "accountant", "prince", "pope",
+                 "sailor", "boxer", "ballet", "coach", "astronaut", "painter", "anaesthesiologist", "scientist"}
+    word_set["a4a_fruit_n_veg"] = {"carrot", "blackberries", "celery", "turnip", "cacao", "peach", "melon", "grapefruit",
+                        "broccoli", "grapes", "spinach", "fig", "kernel", "radish", "tomato", "kiwi", "asparagus",
+                        "olives", "cucumbers", "beans", "strawberry", "peppers", "raspberry", "apricot", "potatoes",
+                        "peas", "cabbage", "cherries", "squash", "blueberries", "pear", "orange", "pumpkin", "avocado",
+                        "garlic", "onion", "apple", "lime", "cauliflower", "mango", "lettuce", "lemon", "aubergine",
+                        "artichokes", "plums", "leek", "bananas", "papaya"}
+    word_set["a4a_transport"] = {"sail", "taxi", "car", "bike", "raft", "pedal", "bus", "handlebar", "boat", "truck", "sleigh",
+                      "carpet", "motorcycle", "train", "ship", "van", "canoe", "rocket", "mast", "sledge", "bicycle"}
+  elseif global_language == "ukrainian" then
+    word_set["a4a_animals"] = {"корова", "індичка", "креветка", "вовк", "пантера", "панда", "сорока", "молюск", "поні", "миша",
+                    "мопс", "коала", "жаба", "сонечко", "горила", "лама", "стерв’ятник", "хом’як", "пташка",
+                    "морська зірка", "ворона", "довгохвостий папуга", "гусінь", "тигр", "колібрі", "піранья", "свиня",
+                    "скорпіон", "лисиця", "леопард", "ігуана", "дельфін", "летюча миша", "курча", "краб", "курка",
+                    "оса", "хамелеон", "кит", "їжак", "оленятко", "лось", "бджола", "гадюка", "сорокопуд", "віслюк",
+                    "морська свинка", "лінивець", "кінь", "пінгвін", "видра", "ведмідь", "зебра", "страус", "верблюд",
+                    "антилопа", "лемур", "голуб", "лама", "кріт", "скат", "баран", "скунс", "медуза", "вівця", "акула",
+                    "кошеня", "олень", "равлик", "фламінго", "кролик", "устриця", "бобер", "горобець", "голубка",
+                    "орел", "жук", "бегемот", "сова", "кобра", "саламандра", "гусак", "кенгуру", "бабка", "жабка",
+                    "пелікан", "кальмар", "левеня", "ягуар", "качка", "ящірка", "носоріг", "гієна", "бик", "павич",
+                    "папуга", "лось", "крокодил", "мураха", "козел", "кроленя", "лев", "білка", "опосум", "шимпанзе",
+                    "оленя", "ховрах", "слон", "жирафа", "павук", "щеня", "сойка", "тюлень", "півень", "черепаха",
+                    "бик", "кіт", "щур", "слимак", "бізон", "чорний дрізд", "лебідь", "омар", "собака",
+                    "москіт", "змія", "круча", "мурахоїд"}
+    word_set["a4a_sport"] = {"дзюдо", "плавання", "велогонка", "розтяжка", "шолом", "ковзани", "ходьба", "біг", "біг", "пірнання",
+                  "батут", "піший туризм", "бокс", "хокей", "забіг", "кидок", "скейт", "перемога", "присідання", "лижі",
+                  "гольф", "свисток", "факел", "яхта", "стійка", "теніс", "стрибок", "веслування", "біг підтюпцем",
+                  "скакалка"}
+    word_set["a4a_body"] = {"зуб", "щока", "кісточка", "коліно", "п’ята", "мускул", "рот", "ступня", "рука", "лікоть", "волосся",
+                 "вія", "борода", "пупок", "великий палець", "груди", "ніздря", "ніс", "поперек", "рука", "брова",
+                 "кулак", "шия", "зап’ясток", "горло", "око", "нога", "спина", "вухо", "палець", "ступня", "борода",
+                 "лице", "спина", "підборіддя", "сідниці", "стегно", "живіт"}
+    word_set["a4a_people"] = {"дівчина", "хлопець", "син", "однокласники", "друзі", "немовля", "дитя", "татусь", "матуся",
+                   "двійнята", "брати", "чоловік", "мати", "дідусь", "сім’я", "дівчина", "жінка", "чоловік",
+                   "нареченна", "тітонька", "бабуся", "закохані", "хлопчина", "двійнята", "дикуни", "хлопчик", "сестри",
+                   "жінка", "леді"}
+    word_set["a4a_food"] = {"цукерка", "сосиска", "гамбургер", "стейк", "помадка", "пончик", "кокос", "рис", "морозиво", "желе",
+                 "йогурт", "десерт", "крендель", "арахіс", "варення", "курка", "крекер", "бекон", "спеції", "кава",
+                 "пиріг", "лимонад", "шоколад", "пляшка з водою", "обід", "лід", "цукор", "кетчуп", "суп", "сік",
+                 "чіпси", "торт", "пюре", "чай", "булка", "сир", "відбивна", "бутерброд", "шматочки", "присипка",
+                 "піца", "борошно", "жувальна різинка", "спагеті", "печеня", "напій", "тушковане м’ясо", "намащування",
+                 "м’ясо", "молоко", "страва", "кукурудза", "хліб", "горіх", "яйце", "гот-доґ", "шинка"}
+    word_set["a4a_clothes_n_accessories"] = {"прикраси", "шкарпетка", "піджак", "шпилька", "пляма", "шорти", "кишеня", "намисто",
+                                  "спортивний светр", "уніформа", "плащ", "штани", "сонячні окуляри", "куртка", "светр",
+                                  "блузка", "сандалі", "костюм", "піжама", "спідниця", "блискавка", "туфлі", "камінь",
+                                  "краватка", "шльопанці", "рукавички", "капелюх", "рукав", "кепка", "купальний костюм",
+                                  "кросівок", "жилет", "окуляри", "шнурок", "латка", "шарф", "черевик", "ґудзик",
+                                  "плаття", "пояс", "підошви", "мантія", "труси", "кімоно", "комбінезон"}
+    word_set["a4a_actions"] = {"лизати", "закидати", "молити", "падати", "дряпати", "торкати", "нюхати", "дивитися", "дертися",
+                    "копати", "вити", "спати", "досліджувати", "малювати", "обнімати", "навчати", "куняти", "ліпити",
+                    "ловити", "плескати", "плакати", "співати", "зустрічатися", "продавати", "дзьобати", "вдарити",
+                    "ставати на коліна", "знайти", "танцювати", "кахикати", "різати", "думати", "гавкати", "говорити",
+                    "веселити", "куховарити", "писати", "бити", "бренькати", "навчатися", "орати", "мріяти",
+                    "надсилати", "пірнати", "шепотіти", "ридати", "трясти", "годувати", "повзти", "отаборитися",
+                    "розливати", "митися", "кричати", "рвати", "плавати", "тягти", "поїсти", "цілувати", "сидіти",
+                    "вилуплюватися", "блимати", "слухати", "цілуватися", "грати", "мити", "балакати", "вести", "пити",
+                    "літати", "жонглювати", "кусати", "мести", "роздивлятися", "в’язати", "піднімати", "тримати",
+                    "читати", "квакати", "витріщитися", "їсти"}
+    word_set["a4a_construction"] = {"маяк", "двері", "цирк", "церква", "буда", "храм", "дим", "димар", "цегла", "колодязь",
+                         "вулиця", "замок", "крамниця", "сходи", "школа", "ферма", "місток", "гребля", "піраміда",
+                         "комора", "млин", "вікно", "хатка", "сходинка", "магазин", "сарай", "дах", "дзвіниця", "гараж",
+                         "мечеть", "шпиталь", "намет", "будинок", "стіна", "банк", "віконниця", "хижа"}
+    word_set["a4a_nature"] = {"суходіл", "круча", "пагорб", "каньйон", "камінь", "море", "озеро", "пляж", "узбережжя", "гора",
+                   "ставок", "вершина", "лава", "печера", "дюна", "острів", "ліс", "пустеля", "айсберг"}
+    word_set["a4a_jobs"] = {"клоун", "інженер", "священник", "ветеринар", "суддя", "повар", "атлет", "бібліотекарка", "жонглер",
+                 "поліцейський", "водопровідник", "нагорода", "королева", "фермер", "фокусник", "рицар", "доктор",
+                 "муляр", "прибиральниця", "вчителька", "мисливець", "солдат", "музикант", "юрист", "рибалка",
+                 "принцеса", "пожежник", "черниця", "пірат", "ковбой", "електрик", "нянька", "король",
+                 "президент", "клерк", "тесляр", "жокей", "робітник", "механік", "пілот", "актор", "кухар", "студент",
+                 "м’ясник", "бухгалтер", "принц", "папа", "моряк", "боксер", "балерина", "тренер", "астронавт",
+                 "художник", "анестезіолог", "учений"}
+    word_set["a4a_fruit_n_veg"] = {"морква", "ведмежина", "селера", "редька", "какао", "персик", "диня", "грейпфрут", "броколі",
+                        "виноград", "шпинат", "фіга", "кісточка", "редиска", "помідор", "ківі", "спаржа", "оливки",
+                        "огірки", "боби", "полуниця", "перці", "малина", "абрикос", "картопля", "горох", "капуста",
+                        "вишня", "гарбузи", "ожина", "груша", "апельсин", "гарбуз", "авокадо", "часник", "цибуля",
+                        "яблуко", "лайм", "цвітна капуста", "манго", "салат", "лимон", "баклажан", "артишоки", "сливи",
+                        "цибуля", "банани", "папая"}
+    word_set["a4a_transport"] = {"яхта", "таксі", "автомобіль", "велосипед", "пліт", "педаль", "автобус", "кермо", "човен",
+                      "пікап", "сани", "килим", "потоцикл", "потяг", "корабель", "фургон", "каное", "ракета", "мачта",
+                      "санчата", "велосипед"}
+  end
+end
+
+
+function init_alphabet()
+  alphabet_lc = {}
+  alphabet_uc = {}
+  erase_table(alphabet_lc)
+  erase_table(alphabet_uc)
+  if global_language == "catalan" then
+    alphabet_lc = {'a', 'b', 'c', 'ç', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+                   'u', 'v', 'w', 'x', 'y', 'z'}
+    alphabet_uc = {'A', 'B', 'C', 'Ç', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+                   'U', 'V', 'W', 'X', 'Y', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'à', 'é', 'è', 'í', 'ò', 'ó', 'ú', '-'}
+    accents_uc = {'À', 'É', 'È', 'Í', 'Ò', 'Ó', 'Ú'}
+    abc_flashcards_word_sequence = {'Ànec', 'Barca', 'Coala', 'Calçat', 'Dofí', 'Elefant', 'Formiga', 'Gat',
+                                      'Hipopòtam', 'Iglú', 'Joguina', 'Kiwi', 'Lleó', 'Mussol', 'Nit', 'Oceà', 'Poma',
+                                      'Quadern', 'Ratolí', 'Síndria', 'Tomàquet', 'Ull', 'Violí', 'Windsurf', 'Xilòfon',
+                                      'Yoga', 'Zebra'}
+    abc_flashcards_frame_sequence = {3, 1, 72, 60, 59, 4, 0, 2, 47, 8, 58, 74, 11, 14, 54, 52, 42, 13, 12, 26, 33, 75,
+    21, 66, 23, 32, 25}
+  elseif global_language == "german" then
+    alphabet_lc = {'a', 'ä', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'ö', 'p', 'q', 'r', 's',
+                   'ß', 't', 'u', 'ü', 'v', 'w', 'x', 'y', 'z'}
+    alphabet_uc = {'A', 'Ä', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'Ö', 'P', 'Q', 'R', 'S',
+                   'ß', 'T', 'U', 'Ü', 'V', 'W', 'X', 'Y', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {'Apfel', 'Hängematte', 'Blumen', 'Chinese', 'Ducken', 'Eule', 'Fisch', 'Giraffe',
+                                      'Haus', 'Iglu', 'Joghurt', 'Kaninchen', 'Löwe', 'Maus', 'Notizbuch', 'Ozean',
+                                      'Königin', 'Papagei', 'Qualle', 'Regenschirm', 'Sonne', 'Straße', 'Tomate',
+                                      'Umgehen', 'Schlüssel', 'Violine', 'Wassermelone', 'Xylophon', 'Yoga', 'Zebra'}
+    abc_flashcards_frame_sequence = {42, 56, 36, 43, 3, 14, 5, 30, 7, 8, 73, 17, 11, 12, 13, 52, 16, 15, 43, 20, 18,
+                                          53, 33, 41, 10, 21, 26, 23, 32, 25}
+  elseif global_language == "greek" then
+    alphabet_lc = {'α', 'β', 'γ', 'δ', 'ε', 'ζ', 'η', 'θ', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ρ', 'σ', 'τ', 'υ', 'φ',
+                   'χ', 'ψ', 'ω'}
+    alphabet_uc = {'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ζ', 'Η', 'Θ', 'Ι', 'Κ', 'Λ', 'Μ', 'Ν', 'Ξ', 'Ο', 'Π', 'Ρ', 'Σ', 'Τ', 'Υ', 'Φ',
+                   'Χ', 'Ψ', 'Ω'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-', 'ς', 'ά', 'έ', 'ή', 'ί', 'ϊ', 'ό', 'ύ', 'ώ'}
+    accents_uc = {'Ά', 'Έ', 'Ή', 'Ί', 'Ϊ', 'Ό', 'Ύ', 'Ώ'}
+    abc_flashcards_word_sequence = {'Άλογο', 'Βάρκα', 'Γάτα', 'Δέντρο', 'Ελέφαντας', 'Ζέβρα', 'Ήλιος', 'Θάμνος',
+                                      'Ιπποπόταμος', 'Καμηλοπάρδαλη', 'Λουλούδια', 'Μήλο', 'Ντομάτα', 'Ξυλόφωνο',
+                                      'Ομπρέλα', 'Πάπια', 'Ρούχα', 'Σπίτι', 'Τσαγιέρα', 'Ύπνος', 'Φορτηγό', 'Χιμπατζής',
+                                      'Ψάρι', 'Ώρα'}
+    abc_flashcards_frame_sequence = {45, 1, 2, 31, 4, 25, 18, 46, 47, 30, 36, 42, 33, 23, 20, 3, 48, 7, 19, 49, 50, 37,
+    5, 51}
+  elseif global_language == "english" or global_language == "english_gb" then
+    alphabet_lc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+                   'v', 'w', 'x', 'y', 'z'}
+    alphabet_uc = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                   'V', 'W', 'X', 'Y', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {'Apple', 'Butterfly', 'Cat', 'Dolphin', 'Elephant', 'Fortepiano', 'Guitar',
+                                      'Hedgehog', 'Igloo', 'Jar', 'Koala', 'Lion', 'Monitor', 'Notebook', 'Ocean',
+                                      'Parrot', 'Queen', 'Rabbit', 'Street', 'Tomato', 'Umbrella', 'Violin',
+                                      'Watermelon', 'Xylophone', 'Yarn', 'Zebra'}
+    abc_flashcards_frame_sequence = {42, 27, 2, 59, 4, 34, 28, 29, 8, 9, 72, 11, 40, 13, 52, 15, 16, 17, 53, 33, 20,
+                                      21, 26, 23, 24, 25}
+  elseif global_language == "spanish" then
+    alphabet_lc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't',
+                   'u', 'v', 'w', 'x', 'y', 'z'}
+    alphabet_uc = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T',
+                   'U', 'V', 'W', 'X', 'Y', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'á', 'é', 'í', 'ó', 'ú', 'ü', '-'}
+    accents_uc = {'Á', 'É', 'Í', 'Ó', 'Ú', 'Ü'}
+    abc_flashcards_word_sequence = {'Abeto', 'Búho', 'Casa', 'Dormir', 'Elefante', 'Fortepiano', 'Gato', 'Hormiga',
+                                      'Iglú', 'Jirafa', 'Koala', 'Loro', 'Manzana', 'Narciso', 'Ñu', 'Océano',
+                                      'Pescado', 'Queso', 'Ratón', 'Sol', 'Tomate', 'Uvas', 'Violín', 'Wagon',
+                                      'Xilófono', 'Yoga', 'Zapatos'}
+    abc_flashcards_frame_sequence = {31, 14, 7, 49, 4, 34, 2, 0, 8, 30, 72, 15, 42, 69, 70, 52, 5, 57, 12, 18, 33, 6,
+                                      21, 58, 23, 32, 60}
+  elseif global_language == "finnish" then
+    alphabet_lc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+                   'v', 'w', 'x', 'y', 'z', 'å', 'ä', 'ö'}
+    alphabet_uc = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                   'V', 'W', 'X', 'Y', 'Z', 'Å', 'Ä', 'Ö'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    --letters that may exist in words but are not part of the officail alphabet
+    accents_lc = {'š', 'ž', '-'}
+    accents_uc = {'Š', 'Ž'}
+    abc_flashcards_word_sequence = {'Avain', 'Banaani', 'Cheddar', 'Delfiini', 'Elefantti', 'Flyygeli', 'Gnuu',
+                                      'Hiiri', 'Ikkuna', 'Jooga', 'Kirahvi', 'Leipä', 'Muurahainen', 'Näyttö', 'Omena',
+                                      'Papukaija', 'Q', 'Riippumatto', 'Seepra', 'Talo', 'Uuni', 'Vene', 'Watti',
+                                      'Xylofoni', 'Yö', 'Z', 'Å', 'Ämpäri', 'Öinen'}
+    abc_flashcards_frame_sequence = {10, 71, 57, 59, 4, 34, 70, 12, 22, 32, 30, 35, 0, 40, 42, 15, 43, 56, 25, 7, 67,
+                                      1, 18, 23, 54, 43, 43, 73, 54}
+  elseif global_language == "french" then
+    alphabet_lc = {'a', 'à', 'â', 'æ', 'b', 'c', 'ç', 'd', 'e', 'é', 'è', 'ê', 'ë', 'f', 'g', 'h', 'i', 'î', 'ï', 'j', 'k',
+                   'l', 'm', 'n', 'o', 'ô', 'œ', 'p', 'q', 'r', 's', 't', 'u', 'ù', 'û', 'ü', 'v', 'w', 'x', 'y', 'ÿ', 'z'}
+    alphabet_uc = {'A', 'À', 'Â', 'Æ', 'B', 'C', 'Ç', 'D', 'E', 'É', 'È', 'Ê', 'Ë', 'F', 'G', 'H', 'I', 'Î', 'Ï', 'J', 'K',
+                   'L', 'M', 'N', 'O', 'Ô', 'Œ', 'P', 'Q', 'R', 'S', 'T', 'U', 'Ù', 'Û', 'Ü', 'V', 'W', 'X', 'Y', 'Ÿ', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {'Arbre', 'Bateau', 'Canard', 'Dormir', 'Éléphant', 'Fleurs', 'Girafe', 'Hibou',
+                                      'Iglou', 'Jonquille', 'Koala', 'Lion', 'Maison', 'Nuitée', 'Océan', 'Pomme',
+                                      'Quille', 'Raisin', 'Soleil', 'Tomate', 'Univers', 'Violon', 'Wagon', 'Xylophone',
+                                      'Yoga', 'Zèbre'}
+    abc_flashcards_frame_sequence = {31, 1, 3, 49, 4, 36, 30, 14, 8, 69, 72, 11, 7, 54, 52, 42, 64, 6, 18, 33, 55, 21,
+                                      58, 23, 32, 25}
+  elseif global_language == "hebrew" then
+    alphabet_lc = {'ת' ,'א' ,'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש'}
+    alphabet_uc = {'ת' ,'א' ,'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט', 'י', 'כ', 'ל', 'מ', 'נ', 'ס', 'ע', 'פ', 'צ', 'ק', 'ר', 'ש'}
+    --Please correct the following letter names - I got them wrong
+    letter_names = {"aalEf", "bEit", "gimEl", "daled", "he", "vav", "za'yin", "khet", "tet",
+                    "iud", "khaf", "lamed", "mem", "nun", "samekh}", "ain", "pe", "tsadik}",
+                    "kuf", "reish", "Cin", "taf"}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {"אבטיח", "בננה", "גיטרה", "דולפין", "היפופוטם", "ורד", "זברה", "חלזון", "טלפון",
+                                     "ינשוף", "כינור", "לחם", "מסך", "נעליים", "סירה", "עין", "פרח", "צליל", "קוף",
+                                     "רכבת", "שעון", "תפוח"}
+    abc_flashcards_frame_sequence = {26, 71, 28, 59, 47, 78, 25, 61, 79, 14, 21, 35, 40, 60, 1, 75, 69, 83, 37, 63, 51,
+                                         42}
+  elseif global_language == "italian" then
+    alphabet_lc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
+                   'x', 'y', 'z'}
+    alphabet_uc = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+                   'X', 'Y', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'à', 'è', 'é', 'ì', 'í', 'î', 'ò', 'ó', 'ù', 'ú', '-'}
+    accents_uc = {'À', 'È', 'É', 'Ì', 'Í', 'Î', 'Ò', 'Ó', 'Ù', 'Ú'}
+    abc_flashcards_word_sequence = {'Anguria', 'Barca', 'Casa', 'Dormire', 'Elefante', 'Fiori', 'Giraffa', 'Hockey',
+                                      'Iglù', 'Koala', 'Leone', 'Mela', 'Narciso', 'Ombrello', 'Pomodoro', 'Quaderno',
+                                      'Riccio', 'Sole', 'Teiera', 'Uva', 'Violino', 'Xilofono', 'Yoga', 'Zebra'}
+    abc_flashcards_frame_sequence = {26, 1, 7, 49, 4, 36, 30, 68, 8, 72, 11, 42, 69, 20, 33, 13, 29, 18, 19, 6, 21, 23,
+                                      32, 25}
+  elseif global_language == "lakota" then
+    alphabet_lc = {'a', 'aŋ', 'b', 'č', 'e', 'g', 'ǧ', 'h', 'ȟ', 'i', 'iŋ', 'k', 'l', 'm', 'n', 'o', 'p', 's', 'š', 't', 'u',
+                   'uŋ', 'w', 'y', 'z', 'ž'}
+    alphabet_uc = {'A', 'Aŋ', 'B', 'Č', 'E', 'G', 'Ǧ', 'H', 'Ȟ', 'I', 'Iŋ', 'K', 'L', 'M', 'N', 'O', 'P', 'S', 'Š', 'T', 'U',
+                   'Uŋ', 'W', 'Y', 'Z', 'Ž'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-', 'á', 'é', 'í', 'ó', 'ú'}
+    accents_uc = {'Á'}
+    abc_flashcards_word_sequence = {'Aǧúyapi', 'Aŋpáwi', 'Blé', 'Čísčila', 'Épazo', 'Gmigméla', 'Ǧí', 'Háŋpa', 'Ȟé',
+									  'Igmú', 'Íŋyaŋ', 'Kimímela', 'Ločhíŋ', 'Maštíŋčala', 'Nitéhepi', 'Omás’apȟe', 'Pté', 'Skiská',
+									  'Šúŋkawakȟaŋ', 'Tópa', 'Úta', 'Uŋžíŋžiŋtka', 'Wówapi', 'Yámni', 'Zíškopela', 'Žaŋžáŋ'}
+    abc_flashcards_frame_sequence = {35, 18, 82, 12, 94, 24, 95, 60, 96, 2, 97, 27, 88, 17, 41, 79, 70, 3, 45, 98, 99,
+                                      33, 13, 100, 71, 101}
+  elseif global_language == "polish" then
+    alphabet_lc = {'a', 'ą', 'b', 'c', 'ć', 'd', 'e', 'ę', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'ł', 'm', 'n', 'ń', 'o', 'ó',
+                   'p', 'r', 's', 'ś', 't', 'u', 'w', 'y', 'z', 'ź', 'ż'}
+    alphabet_uc = {'A', 'Ą', 'B', 'C', 'Ć', 'D', 'E', 'Ę', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'Ł', 'M', 'N', 'Ń', 'O', 'Ó',
+                   'P', 'R', 'S', 'Ś', 'T', 'U', 'W', 'Y', 'Z', 'Ź', 'Ż'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {'a', 'ą', 'be', 'ce', 'će', 'de', 'e', 'ę', 'ef', 'gje', 'ha', 'i', 'jot', 'ka', 'el', 'eł', 'em', 'en',
+                    'eń', 'o', 'u kreskowane', 'pe', 'er', 'es', 'eś', 'te', 'u', 'wu', 'igrek', 'zet', 'ziet', 'żet'}
+    accents_lc = {'-', 'q', 'v', 'x'}
+    accents_uc = {'Q', 'V', 'X'}
+    abc_flashcards_word_sequence = {'Arbuz', 'Pociąg', 'Buty', 'Cymbałki', 'Ćma', 'Dom', 'Ekran', 'Ciężarówka',
+                                      'Fortepian', 'Gitara', 'Hamak', 'Iglo', 'Jabłko', 'Kwiatki', 'Lew', 'Łódka',
+                                      'Mrówka', 'Noc', 'Koń', 'Okno', 'Królik', 'Pomidor', 'Ryba', 'Sowa', 'Ślimak',
+                                      'Tygrys', 'Ulica', 'Winogron', 'Mysz', 'Zebra', 'Źrebak', 'Żyrafa'}
+    abc_flashcards_frame_sequence = {26, 63, 60, 23, 44, 7, 40, 50, 34, 28, 56, 8, 42, 36, 11, 1, 0, 54, 45, 22, 17,
+                                      33, 5, 14, 61, 65, 53, 6, 12, 25, 62, 30}
+  elseif global_language == "portuguese" then
+    alphabet_lc = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+                   'v', 'w', 'x', 'y', 'z'}
+    alphabet_uc = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                   'V', 'W', 'X', 'Y', 'Z'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'á', 'â', 'ã', 'à', 'ç', 'é', 'ê', 'í', 'ó', 'ô', 'õ', 'ú', '-'}
+    accents_uc = {'Á', 'Â', 'Ã', 'À', 'Ç', 'É', 'Ê', 'Í', 'Ó', 'Ô', 'Õ', 'Ú'}
+    abc_flashcards_word_sequence = {'Abeto', 'Barco', 'Casa', 'Dormir', 'Elefante', 'Formiga', 'Girafa', 'Hipopótamo',
+                                      'Iglu', 'Janela', 'Koala', 'Leão', 'Maçã', 'Narciso-amarelo', 'Ouriço', 'Peixe',
+                                      'Queijo', 'Rainha', 'Sol', 'Tomate', 'Uvas', 'Violino', 'Windsurf', 'Xilofone',
+                                      'Y', 'Zebra'}
+    abc_flashcards_frame_sequence = {31, 1, 7, 49, 4, 0, 30, 47, 8, 22, 72, 11, 42, 69, 29, 5, 57, 16, 18, 33, 6, 21,
+                                      66, 23, 43, 25}
+  elseif global_language == "russian" then
+    alphabet_lc = {'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у',
+                   'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'}
+    alphabet_uc = {'А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У',
+                   'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я'}
+    -- correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {'Автобус', 'Банка', 'Виноград','Гитара','Дом','Ель', 'Ёж', 'Жеребец', 'Зебра',
+                                          'Иглу', 'Йога','Кошка','Лев', 'Муравей', 'Ночь', 'Обувь', 'Попугай', 'Рыба', 'Слон',
+                                          'Томат','Утка','Филин', 'Хлеб', 'Цветок', 'Чайник', 'Шлюпка', 'Щука','Съёмка',
+                                          'Мышь', 'Нить', 'Электричка', 'Юбка', 'Яхта'}
+    abc_flashcards_frame_sequence = {77, 9, 6, 28, 7, 31, 29, 45, 25, 8, 32, 2, 11, 0, 54, 60, 15, 5, 4, 33, 3, 14, 35,
+                                      69, 19, 1, 38, 39, 12, 24, 63, 41, 66}
+  elseif global_language == "serbian" then
+    alphabet_lc = {'а', 'б', 'в', 'г', 'д', 'ђ', 'е', 'ж', 'з', 'и', 'ј', 'к', 'л', 'љ', 'м', 'н', 'њ', 'о', 'п', 'р', 'с',
+                   'т', 'ћ', 'у', 'ф', 'х', 'ц', 'ч', 'џ', 'ш'}
+    alphabet_uc = {'А', 'Б', 'В', 'Г', 'Д', 'Ђ', 'Е', 'Ж', 'З', 'И', 'Ј', 'К', 'Л', 'Љ', 'М', 'Н', 'Њ', 'О', 'П', 'Р', 'С',
+                   'Т', 'Ћ', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Џ', 'Ш'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {'Аутобус', 'Банана', 'Виолина', 'Гитара', 'Делфин', 'Ђак', 'Ексер', 'Жирафа',
+                                          'Зебра', 'Игло', 'Јелка', 'Коала', 'Лав', 'Љуљашка', 'Мед', 'Ноћ', 'Њушка',
+                                          'Оклагија', 'Патике', 'Риба', 'Сир', 'Телефон', 'Ћуран', 'Улица', 'Фотограф',
+                                          'Хлеб', 'Цуцла', 'Чамац', 'Џак', 'Шпорет'}
+    abc_flashcards_frame_sequence = {77, 71, 21, 28, 59, 94, 92, 30, 25, 8, 31, 72, 11, 89, 9, 54, 88, 80, 60, 5, 57,
+                                    79, 90, 53, 39, 35, 93, 1, 91, 67}
+  elseif global_language == "ukrainian" then
+    alphabet_uc = {'А', 'Б', 'В', 'Г', 'Ґ', 'Д', 'Е', 'Є', 'Ж', 'З', 'И', 'І', 'Ї', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р',
+                   'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ь', 'Ю', 'Я'}
+    alphabet_lc = {'а', 'б', 'в', 'г', 'ґ', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р',
+                   'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я'}
+    --correction of eSpeak pronounciation of single letters if needed
+    letter_names = {}
+    accents_lc = {'-'}
+    accents_uc = {}
+    abc_flashcards_word_sequence = {'Автобус', 'Банан', 'Виноград', 'Гітара', 'Ґудзик',
+                                     'Дельфін', 'Екран', 'Єнот', 'Жираф', 'Зебра',
+                                     'Миша', 'Іглу', 'Їжак', 'Йогурт', 'Качка',
+                                     'Лев', 'Мураха', 'Нотатки', 'Очі', 'Парасолька',
+                                     'Риба', 'Сонце', 'Телефон', 'Узбережжя',
+                                     'Фортепіано', 'Хліб', 'Цап', 'Чайник', 'Шимпанзе',
+                                     'Щука', 'Кінь', 'Юрист', 'Яблуко'}
+    abc_flashcards_frame_sequence = {77, 71, 6, 28, 86, 59, 40, 87, 30, 25, 12, 8, 29, 73, 3, 11, 0, 13, 75, 20, 5, 18,
+                                          79, 82, 34, 35, 70, 19, 37, 38, 45, 85, 42}
+  end
+end
+
 function translate_animal(word)
   if global_language == "english" then return word
   else

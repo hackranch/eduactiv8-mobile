@@ -4,12 +4,12 @@ function initialize_score()
     for k, v in pairs(usernames) do
       score[usernames[k]] = {}
       for i = 1, 5 do
-        score[usernames[k]][i] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+        score[usernames[k]][i] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
       end
     end
     score["admin"] = {}
     for i = 1, 5 do
-      score["admin"][i] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+      score["admin"][i] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
     end
     love.filesystem.write("score.lua", table.show(score, "score"))
   end

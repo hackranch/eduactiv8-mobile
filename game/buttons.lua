@@ -19,20 +19,37 @@ function draw_button(button_text, button_x, button_y, button_width, white, align
     love.graphics.setColor(color["interface_text"])
     love.graphics.setFont(font_button_text)
   end
-  if (utf8len(button_text) * 21 <= button_width) then
+
+  --if (utf8len(button_text) * 21 <= button_width) then
+  --  print_text(button_text, button_x - 500, button_y - 33, 1000, alignment)
+  --else
+  --  if button_form == 1 then
+  --    print_text(button_text, button_x - 1000 * (button_width / ((utf8len(button_text) * 21))), button_y - 33, 2000, alignment, 0, button_width / ((utf8len(button_text) * 21)), 1)
+  --  elseif button_form == 2 then
+  --    if (utf8len(button_text) * 20 > button_width / 0.7) then
+  --      print_text(button_text, button_x - (button_width / 2), button_y - 46, button_width / 0.7, alignment, 0, 0.7, 0.7)
+  --    else
+  --      local sf = button_width / (utf8len(button_text) * 21)
+  --      print_text(button_text, button_x - 1000 * sf, button_y - 33, 2000, alignment, 0, sf, 1)
+  --    end
+  --  end
+  --end
+  local button_text_type = love.graphics.newText(font_button_text, button_text)
+  if (button_text_type:getWidth() <= button_width) then
     print_text(button_text, button_x - 500, button_y - 33, 1000, alignment)
   else
     if button_form == 1 then
-      print_text(button_text, button_x - 1000 * (button_width / ((utf8len(button_text) * 21))), button_y - 33, 2000, alignment, 0, button_width / ((utf8len(button_text) * 21)), 1)
+      print_text(button_text, button_x - 1000 * (button_width / button_text_type:getWidth()), button_y - 33, 2000, alignment, 0, button_width / (button_text_type:getWidth()), 1)
     elseif button_form == 2 then
-      if (utf8len(button_text) * 20 > button_width / 0.7) then
+      if (button_text_type:getWidth() > button_width / 0.7) then
         print_text(button_text, button_x - (button_width / 2), button_y - 46, button_width / 0.7, alignment, 0, 0.7, 0.7)
       else
-        local sf = button_width / (utf8len(button_text) * 21)
+        local sf = button_width / (button_text_type:getWidth())
         print_text(button_text, button_x - 1000 * sf, button_y - 33, 2000, alignment, 0, sf, 1)
       end
     end
   end
+
   love.graphics.setColor(ccr, ccg, ccb, cca)
 end
 
@@ -47,6 +64,7 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
   b_completed_sections = b_completed_sections or 0
   b_blue = b_blue or false
   ccr, ccg, ccb, cca = love.graphics.getColor()
+  local sf = button_r / 90
   if b_sections >= 2 then
     love.graphics.setColor(color["blue"])
     for i = 1, b_sections do
@@ -54,11 +72,11 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
         --love.graphics.setColor(172/255, 216/255, 251/255)
         love.graphics.setColor(color["light_blue"])
       end
-      love.graphics.arc('fill', button_x, button_y, button_r + 37, to_radians(((360 / b_sections) * (i - 1)) + 2), to_radians(((360 / b_sections) * i) -2))
+      love.graphics.arc('fill', button_x, button_y, button_r + 37 * sf, to_radians(((360 / b_sections) * (i - 1)) + 2), to_radians(((360 / b_sections) * i) -2))
     end
     love.graphics.setColor(color["white"])
-    love.graphics.circle('fill', button_x, button_y, button_r + 7)
-    love.graphics.draw(image_button_ring, button_x - button_r - 34, button_y - button_r - 34, 0, 0.97, 0.95)
+    love.graphics.circle('fill', button_x, button_y, button_r + 7 * sf)
+    love.graphics.draw(image_button_ring, button_x - button_r - 34 * sf, button_y - button_r - 34 * sf, 0, 0.97 * sf, 0.95 * sf)
   end
   if b_transparent == false then
     love.graphics.setColor(color["orange"])
@@ -66,7 +84,7 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
   end
   love.graphics.setFont(font_interface_bold)
   if b_caption ~= nil and button_icon ~= nil and b_blue == false then
-    print_text(b_caption, button_x - button_r * 1.5, button_y + button_r * 1.5, button_r * 3, 'center')
+    print_text(b_caption, button_x - button_r * 2.5, button_y + button_r * 1.5, button_r * 5, 'center')
   end
   if button_icon ~= nil then
     love.graphics.setColor(color["white"])
@@ -75,11 +93,12 @@ function draw_big_button(button_icon, button_x, button_y, button_r, i_scale, b_t
   if b_blue == true then
     love.graphics.draw(image_menu_blue_button, button_x + 52, button_y - 33)
     love.graphics.setFont(font_button_text)
-    if utf8len(b_caption) <= 27 then
-      print_text(b_caption, button_x + 75, button_y - 34, 600)
-    else
-      print_text(b_caption, button_x + 75, button_y - 34, 600, 'left', 0, 27 / utf8len(b_caption), 1)
-    end
+    --if utf8len(b_caption) <= 27 then
+    --  print_text(b_caption, button_x + 75, button_y - 34, 600)
+    --else
+    --  print_text(b_caption, button_x + 75, button_y - 34, 600, 'left', 0, 27 / utf8len(b_caption), 1)
+    --end
+    print_text(b_caption, button_x + 75, button_y - 34, 1200, 'left', 0, 1, 1, 500)
   end
   if b_sections == 1 then
     if b_completed_sections == 1 then

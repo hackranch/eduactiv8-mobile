@@ -24,17 +24,23 @@ menus:
 
 
 
-new (test) menus:
+new menu:
 19 - main menu
+  math
   20 - numbers
   21 - patterns
   22 - basic operations
   23 - shapes
   24 - time
+  -----------------
+  language
+  38 - discover letters
+  39 - word matchers
+  40 - word builders
 
 
-sub-games:
-12 - word builders - animals
+
+sub-games: (math)
 13 - numbers spelling
 15 - shopping list
 17 - find missing number
@@ -52,4 +58,35 @@ sub-games:
 
 
 
-38
+sub-games: (language)
+41 - ___ alphabet   your alphabet
+42 - trace letters and numbers
+word builders:
+  12 - animals
+  43 - people
+  44 - jobs
+  45 - body
+  46 - clothes and accessories
+  47 - sports
+  48 - actions
+  49 - nature
+  50 - fruits and vegetables
+  51 - food
+  52 - transport
+  53 - constructions
+word matchers:
+  54 - animals
+  55 - people
+  56 - jobs
+  57 - body
+  58 - clothes and accessories
+  59 - sports
+  60 - actions
+  61 - nature
+  62 - fruits and vegetables
+  63 - food
+  64 - transport
+  65 - constructions
+
+
+66

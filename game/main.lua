@@ -125,7 +125,9 @@ function password_characters(p)
 end
 
 function love.load()
-  --love.window.setFullscreen(true, "desktop")
+  --game = "math"
+  game = "language"
+
   local major, minor, revision, codename = love.getVersion()
   if major < 11 then
     old_color_mode = true
@@ -143,6 +145,10 @@ function love.load()
   love.graphics.setDefaultFilter("linear", "linear", 1)
   initialize_fonts()
   sleep = 0
+  scrollable = false
+  max_scroll = 0
+  scroll = 0
+  scroll_reference = 0
   love.graphics.setBackgroundColor(color["white"])
   text = {}
   selected_textbox = 1
@@ -152,7 +158,7 @@ function love.load()
   build_form(1) --1 = splash screen,  19 = main menu
   usernames = {}
   passwords = {}
-  username = "admin"
+  username = "guest"
   if not love.filesystem.exists("usn.lua") then
     usernames[1] = "guest"
     usernames[2] = "userA"
@@ -184,8 +190,8 @@ function love.load()
   selected_level = 1
   love.math.setRandomSeed(love.timer.getTime())
 
-  score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37}
-  max_scores =    { 5,  6,  8,  8,  1,  1,  8,  8,  8,  1,  3,  1,  1,  8, 16}
+  score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65}
+  max_scores =    { 5,  6,  8,  8,  1,  1,  8,  8,  8,  1,  3,  1,  1,  8, 16,  1,  1,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6}
 
   --score[user name][level][game index]
   initialize_score()
@@ -211,6 +217,32 @@ function initialize_activity_titles()
   activity_titles[35] = s_how_clock_works
   activity_titles[36] = s_learn_to_set_the_clock
   activity_titles[37] = s_time_matching
+  activity_titles[41] = s_your_alphabet
+  activity_titles[42] = s_trace_letters_and_numbers
+  activity_titles[43] = s_word_builders .. " - " .. s_people
+  activity_titles[44] = s_word_builders .. " - " .. s_jobs
+  activity_titles[45] = s_word_builders .. " - " .. s_body
+  activity_titles[46] = s_word_builders .. " - " .. s_clothes_and_accessories
+  activity_titles[47] = s_word_builders .. " - " .. s_sports
+  activity_titles[48] = s_word_builders .. " - " .. s_actions
+  activity_titles[49] = s_word_builders .. " - " .. s_nature
+  activity_titles[50] = s_word_builders .. " - " .. s_fruits_and_vegetables
+  activity_titles[51] = s_word_builders .. " - " .. s_food
+  activity_titles[52] = s_word_builders .. " - " .. s_transport
+  activity_titles[53] = s_word_builders .. " - " .. s_constructions
+
+  activity_titles[54] = s_word_matchers .. " - " .. s_animals
+  activity_titles[55] = s_word_matchers .. " - " .. s_people
+  activity_titles[56] = s_word_matchers .. " - " .. s_jobs
+  activity_titles[57] = s_word_matchers .. " - " .. s_body
+  activity_titles[58] = s_word_matchers .. " - " .. s_clothes_and_accessories
+  activity_titles[59] = s_word_matchers .. " - " .. s_sports
+  activity_titles[60] = s_word_matchers .. " - " .. s_actions
+  activity_titles[61] = s_word_matchers .. " - " .. s_nature
+  activity_titles[62] = s_word_matchers .. " - " .. s_fruits_and_vegetables
+  activity_titles[63] = s_word_matchers .. " - " .. s_food
+  activity_titles[64] = s_word_matchers .. " - " .. s_transport
+  activity_titles[65] = s_word_matchers .. " - " .. s_constructions
 end
 
 function love.mousereleased(x, y, button)
@@ -224,7 +256,7 @@ function love.mousereleased(x, y, button)
   y = y / scale_factor_v
 
    mouse_released = true
-   if (current_window == 12 or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and selected_tile ~= "" then --word builders animals    or   Shopping List    or......
+   if (current_window == 12 or (current_window >= 43 and current_window <= 53) or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and selected_tile ~= "" then --word builders animals    or   Shopping List    or......
      x = x + selected_tile_x_offset + game_screen_width / (t_x * 2)
      y = y + selected_tile_y_offset + game_screen_height / (t_y * 2)
      if math.ceil(x / (game_screen_width / t_x)) - 1 > t_x - 1 then
@@ -246,7 +278,7 @@ function love.mousereleased(x, y, button)
        tiles[selected_tile_y] = replace_char(selected_tile_x, tiles[selected_tile_y], selected_tile)
      end
      selected_tile = ""
-     if (current_window == 12 and tiles[8] == correct_row) or
+     if ((current_window == 12 or (current_window >= 43 and current_window <= 53)) and tiles[8] == correct_row) or
         (current_window == 31 and tiles[pattern_y_pos] == correct_row) then
        message = "congrats"
      end
@@ -415,29 +447,28 @@ function love.mousereleased(x, y, button)
      if current_window == 36 and goal_min == clock_min and goal_hour == clock_hour then
        message = "congrats"
      end
-   end -- mouse released event
---   if current_window == 17 then
---     if (tile_numbers[get_char(tiles[3], 7)] == tile_numbers["b"]) and
---        (tile_numbers[get_char(tiles[4], 7)] == tile_numbers["e"]) and
---        (tile_numbers[get_char(tiles[5], 7)] == tile_numbers["h"]) and
---        (tile_numbers[get_char(tiles[6], 7)] == tile_numbers["k"]) and
---        (tile_numbers[get_char(tiles[7], 7)] == tile_numbers["n"]) then
---          message = "congrats"
---     end
---   end
+   elseif current_window == 42 then
+     if mouse_x > 350 and mouse_x < 1500 then
+       table.insert(line_coordinates, {mouse_x, mouse_y})
+       table.insert(line_colors, color["s_" .. selected_color])
+     end
+     table.insert(line_coordinates, {0, 0})
+     table.insert(line_colors, color["s_" .. selected_color])
+   end -- mouse released even
 end -- mouse released function
 
 function love.update(dt)
   if sleep > 0 then
     love.timer.sleep(sleep)
     sleep = 0
-    if current_window == 13 or current_window == 33 then
+    if current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65) then
       game_table[selected_ay][selected_ax].selected = false
       game_table[selected_by][selected_bx].selected = false
       selected_a = ""
       selected_b = ""
     elseif current_window == 1 then
-      build_form(2)
+      --build_form(2) -- login
+      build_form(19) -- main menu
     elseif current_window == 37 then
       for i = 1, 6 do
         if buttons[i].button_state == 2 then
@@ -470,6 +501,7 @@ function love.update(dt)
   if love.mouse.isDown(1) and mouse_released then --mouse click
     mouse_released = false
     local registered_click = false
+    scroll_reference = mouse_y - scroll
     if mouse_on_button(400) then --back to main menu
       build_form(19) -- old menu : 3
       registered_click = true
@@ -571,7 +603,7 @@ function love.update(dt)
         set_language("hebrew")
         build_form(4)
       end
-      love.window.setTitle(language_filename)
+      --love.window.setTitle(language_filename)
       initialize_activity_titles()
     elseif current_window == 5 then
       if mouse_on_button(1) then -- translation credits
@@ -632,12 +664,12 @@ function love.update(dt)
       if mouse_on_button(2) == true then
         build_form(9)
       end
-    elseif current_window == 12 or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31 then --word builders game animals or .....
+    elseif current_window == 12 or (current_window >= 43 and current_window <= 53) or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31 then --word builders game animals or .....
       selected_tile_x = math.ceil(x / (game_screen_width / t_x)) -- 1
       selected_tile_y = math.ceil(y / (game_screen_height / t_y)) -- 1
       if current_window == 15 or
          ((current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and (fixed_tiles[selected_tile_y] ~= nul and get_char(fixed_tiles[selected_tile_y], selected_tile_x) ~= "X")) or
-         (current_window == 12 and (selected_tile_y ~= 7 or
+         ((current_window == 12 or (current_window >= 43 and current_window <= 53)) and (selected_tile_y ~= 7 or
                 (selected_tile_y == 7 and (get_char(fixed_tiles, selected_tile_x) == ' ' or get_char(fixed_tiles, selected_tile_x) == '@')) and
                 get_char(tiles[selected_tile_y], selected_tile_x) ~= '@')) then
         selected_tile = get_char(tiles[selected_tile_y], selected_tile_x)
@@ -647,7 +679,7 @@ function love.update(dt)
         --love.window.setTitle(selected_tile)
       end
       if selected_tile == ' ' then selected_tile = "" end
-    elseif current_window == 13 or current_window == 33 then -- numbers spelling game    or    shape matching
+    elseif current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65) then -- numbers spelling game    or    shape matching
       y = y - (game_screen_height / 6)  - game_table_y_offset
       selected_x = 0
       if x > 1 * (game_screen_width / 12) and x < 2 * (game_screen_width / 12)  then
@@ -670,6 +702,8 @@ function love.update(dt)
               selected_a = number_to_string(game_table[selected_y][selected_x].content)
             elseif current_window == 33 then
               selected_a = s_shape_matching_names[game_table[selected_y][selected_x].content]
+            elseif current_window >= 54 and current_window <= 65 then
+              selected_a = word_set[group_name][game_table[selected_y][selected_x].content]
             end
           else
             selected_a = game_table[selected_y][selected_x].content
@@ -682,6 +716,8 @@ function love.update(dt)
               selected_b = number_to_string(game_table[selected_y][selected_x].content)
             elseif current_window == 33 then
               selected_b = s_shape_matching_names[game_table[selected_y][selected_x].content]
+            elseif current_window >= 54 and current_window <= 65 then
+              selected_b = word_set[group_name][game_table[selected_y][selected_x].content]
             end
           else
             selected_b = game_table[selected_y][selected_x].content
@@ -890,14 +926,87 @@ function love.update(dt)
       if flag == true then
         message = "congrats"
       end
+    elseif current_window == 41 then -- ___ aplhabet
+      buttons[selected_letter_index].button_color = color["light_blue_50"]
+      for i = 1, table_length(alphabet_lc) do
+        if mouse_on_button(i) then
+          selected_letter_index = i
+        end
+      end
+      if mouse_on_button(100) then
+        if selected_letter_index > 1 then
+          selected_letter_index = selected_letter_index - 1
+        end
+      elseif mouse_on_button (101) then
+        if selected_letter_index < table_length(alphabet_lc) then
+          selected_letter_index = selected_letter_index + 1
+        end
+      end
+      current_image = images_flashcards_abc[abc_flashcards_frame_sequence[selected_letter_index]]
+      buttons[selected_letter_index].button_color = color["light_green"]
+      opened_fields[selected_letter_index] = true
+      local flag = true
+      for i = 1, table_length(alphabet_lc) do
+        if opened_fields[i] == false then
+          flag = false
+        end
+      end
+      if flag == true and get_score_for_game(41) < get_max_score_for_game(41) then
+        add_score_for_game(41)
+      end
+    elseif current_window == 42 then -- trace letters and numbers
+      buttons[selected_letter_index].button_color = color["light_blue_80"]
+      local total = table_length(alphabet_lc) + table_length(numbers_table)
+      if global_language ~= "hebrew" then
+        total = total + table_length(alphabet_lc)
+      end
+      for i = 1, total do
+        if mouse_on_button(i) then
+          selected_letter_index = i
+          erase_table(line_coordinates)
+          erase_table(line_colors)
+          table.insert(line_coordinates, {0, 0})
+          table.insert(line_colors, color["s_" .. selected_color])
+        end
+      end
+      buttons[selected_letter_index].button_color = color["light_green"]
+      opened_fields[selected_letter_index] = true
+      local flag = true
+      for i = 1, total do
+        if opened_fields[i] == false then
+          flag = false
+        end
+      end
+      if flag == true and get_score_for_game(42) < get_max_score_for_game(42) then
+        add_score_for_game(42)
+      end
+      --table.insert(line_coordinates, {mouse_x, mouse_y})
+      for i = 1, 6 do
+        if mouse_on_button(200 + i) then
+          buttons[200 + selected_color].button_color[4] = 0.4
+          selected_color = i
+          buttons[200 + selected_color].button_color[4] = 1
+        end
+      end
     end--mouse click
-
-    --if love.mouse.isDown(1) then --mouse down
-
-
-    --end --mouse down
-
   end
+
+  if love.mouse.isDown(1) then --mouse down
+    if scrollable == true then
+      if mouse_y - scroll_reference <= 0 then
+        scroll = math.max(-max_scroll, mouse_y - scroll_reference)
+      end
+    end
+    if current_window == 42 then
+      if mouse_x > 350 and mouse_x < 1500 and table_length(line_coordinates) > 1 and table_length(line_coordinates) < 400 and
+         distance(line_coordinates[table_length(line_coordinates)][1],
+                  line_coordinates[table_length(line_coordinates)][2],
+                  mouse_x, mouse_y) > 10 then
+        table.insert(line_coordinates, {mouse_x, mouse_y})
+        table.insert(line_colors, color["s_" .. selected_color])
+      end
+    end
+  end --mouse down
 
   if current_window >= 19 then --and current_window <=24 then
     move_decoration_elements()
@@ -1001,8 +1110,8 @@ function love.draw()
     draw_header(s_math)
   elseif current_window == 11 then -- numbers
     draw_header(s_math, s_numbers)
-  elseif current_window == 12 then -- word builders - animals game
-    draw_header(s_animals, s_complete_the_word)
+  elseif current_window == 12 or (current_window >= 43 and current_window <= 53) then -- word builders - animals game, all other categories
+    draw_header(s_word_builders, current_game_title)
     love.graphics.setColor(color["white"])
     love.graphics.draw(animal_image, 800 - animal_image:getWidth() * 2 / 2, 380 - animal_image:getHeight() * 2 / 2, 0, 2, 2)
     --draw tiles+
@@ -1051,11 +1160,13 @@ function love.draw()
         end
       end
     end
-  elseif current_window == 13 or current_window == 33 then -- numbers spelling game   or   shape matching
+  elseif current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65) then -- numbers spelling game   or   shape matching   or   word matchers games
     if current_window == 13 then
       draw_header(s_numbers, s_numbers_spelling)
     elseif current_window == 33 then
       draw_header(s_shapes_and_solids, s_shape_matching)
+    elseif current_window >= 53 and current_window <= 65 then
+      draw_header(s_word_matchers, current_game_title)
     end
     love.graphics.setColor(color["white"])
     love.graphics.setFont(font_large_title)
@@ -1071,7 +1182,12 @@ function love.draw()
         if game_table[y][x].completed == true then
           love.graphics.setColor(color["light_green"])
         end
-        love.graphics.rectangle('fill', x * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)-2, (game_screen_height / 6)-2, 15, 15)
+        if current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65 and game_table[y][x].completed == true)  then
+          love.graphics.rectangle('fill', x * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)-2, (game_screen_height / 6)-2, 15, 15)
+        elseif current_window >= 54 and current_window <= 65 then
+          love.graphics.setLineWidth(4)
+          love.graphics.rectangle('line', x * (game_screen_width/12) + 2, (y+1) * (game_screen_height / 6) + game_table_y_offset + 2, (game_screen_width/12)-6, (game_screen_height / 6)-6, 15, 15)
+        end
         y_offset = 0
         x_scale = 1
         if current_window == 13 then
@@ -1083,6 +1199,13 @@ function love.draw()
           love.graphics.draw(icon_shapes_outline[game_table[y][x].content], (x) * (game_screen_width/12) + 13, (y+1) * (game_screen_height / 6) + 21 + y_offset + game_table_y_offset)
           love.graphics.setColor(random_colors[x + y * 2])
           love.graphics.draw(icon_shapes_fill[game_table[y][x].content], (x) * (game_screen_width/12) + 13, (y+1) * (game_screen_height / 6) + 21 + y_offset + game_table_y_offset)
+        elseif current_window >= 54 and current_window <= 65 then
+          if game_table[y][x].completed == false then
+            love.graphics.setColor(color["white"])
+          else
+            love.graphics.setColor(color["light_green"])
+          end
+          love.graphics.draw(word_images[group_name][english_word_set[group_name][game_table[y][x].content] .. ".jpg"] or image_wrong, (x) * (game_screen_width/12) + 5, (y+1) * (game_screen_height / 6) + 13 + y_offset + game_table_y_offset, 0, 0.61, 0.61)
         end
         if game_table[y][x+2].selected == true then
           love.graphics.setColor(color["light_blue_80"])
@@ -1113,15 +1236,15 @@ function love.draw()
         --end
         love.graphics.setFont(font_large_title)
         y_offset = 0
-        x_scale = 1
-        if utf8.len(game_table[y][x+2].content) >= 13 then
-          x_scale = 13 / utf8.len(game_table[y][x+2].content)
-        end
+        --x_scale = 1
+        --if utf8.len(game_table[y][x+2].content) >= 13 then
+        --  x_scale = 13 / utf8.len(game_table[y][x+2].content)
+        --end
 
         if x == 1 then
-          print_text(game_table[y][x+2].content,  (5) * (game_screen_width/12) - 800 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, x_scale, 1)
+          print_text(game_table[y][x+2].content,  (5) * (game_screen_width/12) - 800, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, 1, 1, 500)
         else
-          print_text(game_table[y][x+2].content,  (9) * (game_screen_width/12) - 800 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, x_scale, 1)
+          print_text(game_table[y][x+2].content,  (9) * (game_screen_width/12) - 800, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, 1, 1, 500)
         end
       end
     end
@@ -1284,17 +1407,35 @@ function love.draw()
     --grid 47 x 47:
     love.graphics.setLineWidth(3)
     love.graphics.setColor(color["light_gray"])
-    for i = screen_left, screen_total_width / 47 do
-      love.graphics.line(i * 47, screen_top, i * 47, screen_total_height)
+    if game == "math" then
+      for i = screen_left, screen_total_width / 47 do
+        love.graphics.line(i * 47, screen_top, i * 47, screen_total_height)
+      end
     end
-    for i = screen_top, screen_total_height / 47 do
-      love.graphics.line(screen_left, i * 47, screen_total_width, i * 47)
+    for i = screen_top, screen_total_height / 67 do
+      love.graphics.line(screen_left, i * 67, screen_total_width, i * 67)
     end
     love.graphics.setLineWidth(1)
-    love.graphics.setFont(font_handwritten_small)
+    if game == "math" then
+      love.graphics.setFont(font_handwritten_small)
+    elseif game == "language" then
+      love.graphics.setFont(font_handwritten)
+      if global_language == "hebrew" then
+        love.graphics.setFont(font_large_title)
+      end
+    end
     love.graphics.setColor(color["gray_60"])
     for k, v in pairs(decoration_elements) do
-      print_text(decoration_elements[k].content, decoration_elements[k].x, decoration_elements[k].y, 500)
+      love.graphics.setLineWidth(1)
+      if game == "math" then
+        print_text(decoration_elements[k].content, decoration_elements[k].x, decoration_elements[k].y, 500)
+      elseif game == "language" then
+        if global_language ~= "hebrew" then
+          print_text(decoration_elements[k].content, decoration_elements[k].x, decoration_elements[k].y, 500, 'left', 0, 0.6, 0.6)
+        else
+          print_text(decoration_elements[k].content, decoration_elements[k].x, decoration_elements[k].y, 500, 'left', 0, 1, 1)
+        end
+      end
     end
     love.graphics.setFont(font_interface_bold)
     love.graphics.setColor(color["interface_text"])
@@ -1310,7 +1451,11 @@ function love.draw()
     --love.graphics.draw(images_logo_subtitle[global_language], 89, 430, 0, 0.83, 0.83)
     --love.graphics.draw(image_copyright, 33, 514)
     love.graphics.draw(image_logo_main_menu, 84, 90, 0, 0.83, 0.83)
-    love.graphics.draw(images_logo_subtitle[global_language], 89, 470, 0, 0.83, 0.83)
+    if game == "math" then
+      love.graphics.draw(images_logo_subtitle[global_language], 89, 470, 0, 0.83, 0.83)
+    elseif game == "language" then
+      love.graphics.draw(images_logo_subtitle_2[global_language], 89, 470, 0, 0.83, 0.83)
+    end
   elseif current_window == 20 then
     draw_header(s_numbers)
   elseif current_window == 21 then
@@ -1378,42 +1523,41 @@ function love.draw()
     end
   elseif current_window == 26 then --user scores
     draw_header(s_score, text[1])
-    --tuka
-    love.graphics.setFont(font_interface_bold)
-    print_text(s_level, 1600 / 3, 160, 1600 / 6, 'center')
-    for i = 0, 4 do
-      print_text(i + 1, 1600 / 3 + ((1600 / 6) / 5) * i, 200, (1600 / 6) / 5, 'center')
-    end
     local row = 0
-    local column = 0
+    local column = 300
     local total = {0, 0, 0, 0, 0}
+    love.graphics.setFont(font_interface_bold)
+    print_text(s_level, column + 1600 / 3, scroll + 160, 1600 / 6, 'center')
+    for i = 0, 4 do
+      print_text(i + 1, column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
+    end
     for k, v in pairs(score_indexes) do
-      if row == 11 then
-        row = 0
-        column = 800
-        love.graphics.setFont(font_interface_bold)
-        print_text(s_level, column + 1600 / 3, 160, 1600 / 6, 'center')
-        for i = 0, 4 do
-          print_text(i + 1,  column + 1600 / 3 + ((1600 / 6) / 5) * i, 200, (1600 / 6) / 5, 'center')
-        end
-        love.graphics.setFont(font_interface)
-      end
+      --if row == 11 then
+      --  --row = 0
+      --  --column = 800
+      --  love.graphics.setFont(font_interface_bold)
+      --  print_text(s_level, column + 1600 / 3, scroll + 160, 1600 / 6, 'center')
+      --  for i = 0, 4 do
+      --    print_text(i + 1,  column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
+      --  end
+      --  love.graphics.setFont(font_interface)
+      --end
       love.graphics.setFont(font_interface_bold)
-      if (utf8len(activity_titles[v]) <= 29) then
-        print_text(activity_titles[v], column, 250 + (row * 40), 1600 / 3 - 5, 'right')
+      if (utf8len(activity_titles[v] or "x") <= 29) then
+        print_text(activity_titles[v] or "x", column, scroll + 250 + (row * 40), 1600 / 3 - 5, 'right')
       else
-        print_text(activity_titles[v], column + (1600 / 3) - ((1600 / 3) * 2 * (29 / utf8len(activity_titles[v]))), 250 + (row * 40), (1600 / 3) * 2 - 5, 'right', 0, 29 / utf8len(activity_titles[v]), 1)
+        print_text(activity_titles[v] or "x", column + (1600 / 3) - ((1600 / 3) * 2 * (29 / utf8len(activity_titles[v] or "x"))), scroll + 250 + (row * 40), (1600 / 3) * 2 - 5, 'right', 0, 29 / utf8len(activity_titles[v] or "x"), 1)
       end
       love.graphics.setFont(font_interface)
       for i = 0, 4 do
-        print_text(score[text[1]][i + 1][k], column + 1600 / 3 + ((1600 / 6) / 5) * i, 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
-        total[i+1] = total[i+1] + score[text[1]][i + 1][k]
+        print_text(score[text[1]][i + 1][k] or "x", column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
+        total[i+1] = total[i+1] + (score[text[1]][i + 1][k] or 0)
       end
       row = row + 1
     end
-    love.graphics.line(column + 1600 / 3, 250 + (row * 40) + 2, column + 1600 / 2, 250 + (row * 40) + 2)
+    love.graphics.line(column + 1600 / 3, scroll + 250 + (row * 40) + 2, column + 1600 / 2, scroll + 250 + (row * 40) + 2)
     for i = 0, 4 do
-      print_text(total[i+1], column + 1600 / 3 + ((1600 / 6) / 5) * i, 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
+      print_text(total[i+1], column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
     end
   elseif current_window == 27 then --learn numbers with flashcards
     draw_header(s_numbers, s_learn_numbers_with_flashcard)
@@ -1445,12 +1589,13 @@ function love.draw()
     print_text(number_start .. " - " .. number_start + 10, 800 - 350, 177, 700, 'center')
     for i = 0, 10 do
       local n_s = number_to_string(number_start + i)
-      print_text(number_start + i, 800 - 350, 180 + 50 * (i + 2) - 8, 120 / 0.8, 'center', 0, 0.8)
-      if utf8len(n_s) <= 26 then
-        print_text(n_s, 800 - 350 + 120, 180 + 50 * (i + 2) - 8, (700 - 120) / 0.8, 'center', 0, 0.8)
-      else
-        print_text(n_s, 800 - 350 + 120, 180 + 50 * (i + 2) - 8, (700 - 120) / (0.8 * (26 / utf8len(n_s))), 'center', 0, 0.8 * (26 / utf8len(n_s)), 0.8)
-      end
+      print_text(number_start + i, 800 - 350, 180 + 50 * (i + 2) - 8, 120 / 0.8, 'center', 0, 0.8, 0.8)
+      --if utf8len(n_s) <= 26 then
+      --  print_text(n_s, 800 - 350 + 120, 180 + 50 * (i + 2) - 8, (700 - 120) / 0.8, 'center', 0, 0.8, 0.8)
+      --else
+      --  print_text(n_s, 800 - 350 + 120, 180 + 50 * (i + 2) - 8, (700 - 120) / (0.8 * (26 / utf8len(n_s))), 'center', 0, 0.8 * (26 / utf8len(n_s)), 0.8)
+      --end
+      print_text(n_s, 860 - 580 * 0.8, 180 + 50 * (i + 2) - 8, 1160, 'center', 0, 0.8, 0.8, (700 - 120) / 0.8)
     end
   --elseif current_window == 29 then
   --  draw_header(s_basic_operations, s_find_solution .. " - " .. s_addition)
@@ -1699,7 +1844,7 @@ function love.draw()
         add_score_for_game(35)
       end
     end
-  elseif current_window == 37 then
+  elseif current_window == 37 then -- time matching
     draw_header(s_time, s_time_matching)
     draw_all_buttons()
     for i = 1, 6 do
@@ -1710,6 +1855,91 @@ function love.draw()
         x = -(288 * 3)
       end
       draw_analog_clock(196 + (i - 1) * 288 + x, 376 + y, 100, time_clocks[i].hour, time_clocks[i].min, 'arabic_digits', selected_level)
+    end
+  elseif current_window == 38 then -- discover letters menu
+    draw_header(s_discover_letters)
+    draw_all_buttons()
+    love.graphics.setColor(color["white_70"])
+    love.graphics.setFont(font_large_title)
+    print_text(alphabet_uc[1] .. alphabet_lc[2] .. alphabet_lc[3], 200, 360, 600, 'center', 0, 1, 1, 128)
+    if global_language ~= "hebrew" then
+      love.graphics.setFont(font_handwritten)
+      print_text(alphabet_uc[1] .. alphabet_uc[2] .. alphabet_uc[3], 1083,     380, 600, 'left', 0, 0.4, 0.4, 470)
+    else
+      print_text(alphabet_lc[1] .. alphabet_lc[2] .. alphabet_lc[3], 1083,     370, 600, 'left', 0, 0.7, 0.7, 370)
+    end
+  elseif current_window == 39 then -- word matchers menu
+    draw_header(s_word_matchers)
+  elseif current_window == 40 then -- word builders menu
+    draw_header(s_word_builders)
+  elseif current_window == 41 then -- ___ alphabet   your alphabet
+    draw_header(s_discover_letters, s_your_alphabet)
+
+    love.graphics.setColor(color["white"])
+    love.graphics.draw(current_image, 800 - current_image:getWidth() / 2, 270)
+
+    love.graphics.setLineWidth(2)
+    love.graphics.setColor(color["light_gray"])
+    love.graphics.line(800 - 300, 180, 800 + 300, 178)
+    love.graphics.line(800 - 300, 252, 800 + 300, 256)
+
+    love.graphics.setColor(color["interface_text"])
+    love.graphics.setFont(font_free_sans_100)
+    local y_offset = 0
+    if old_color_mode == true then
+      y_offset = 9
+    end
+    if global_language ~= "hebrew" then
+      print_text(alphabet_uc[selected_letter_index] .. "     " .. alphabet_lc[selected_letter_index], 800 - 400, 153 + y_offset, 800, 'center', 0, 1, 1, 500)
+    else
+      print_text(alphabet_uc[selected_letter_index], 800 - 400, 153 + y_offset, 800, 'center', 0, 1, 1, 500)
+    end
+    love.graphics.setFont(font_small_title)
+    print_text(abc_flashcards_word_sequence[selected_letter_index], 800 - 500, 490, 1000, 'center', 0, 1, 1, 700)
+    love.graphics.setFont(font_handwritten)
+    if global_language ~= "hebrew" then
+      print_text(alphabet_uc[selected_letter_index] .. "          " .. alphabet_lc[selected_letter_index], 800 - 400, 300, 800, 'center', 0, 1, 1, 800)
+      print_text(abc_flashcards_word_sequence[selected_letter_index], 400, 545, 1600, 'center', 0, 0.5, 0.5)
+    end
+  elseif current_window == 42 then -- trace letters and numbers
+    draw_header(s_discover_letters, s_trace_letters_and_numbers)
+    local y_offset = 0
+    if old_color_mode == true then
+      y_offset = 70
+    end
+    if global_language == "hebrew" then
+      love.graphics.setFont(font_extra_large)
+      y_offset = y_offset - 300
+    else
+      love.graphics.setFont(font_handwritten_extra_large)
+    end
+    love.graphics.setColor(color["light_gray"])
+    if global_language == "greek" and selected_letter_index <= 24 then
+      print_text(buttons[selected_letter_index].button_text, 345, 50 + y_offset, 1253 / 0.8, "center", 0, 0.8)
+    else
+      print_text(buttons[selected_letter_index].button_text, 345, -30 + y_offset, 1253, "center")
+    end
+    love.graphics.setLineWidth(5)
+    love.graphics.setLineJoin('bevel')
+    --love.graphics.setColor(color["blue"])
+    local single_curve_coordinates = {}
+    for k, v in pairs(line_coordinates) do
+      if line_coordinates[k][1] ~= 0 and line_coordinates[k][2] ~= 0 then
+        --love.graphics.line(line_coordinates[k][1], line_coordinates[k][2], line_coordinates[k + 1][1], line_coordinates[k + 1][2])
+        table.insert(single_curve_coordinates, line_coordinates[k][1])
+        table.insert(single_curve_coordinates, line_coordinates[k][2])
+      else
+        for k, v in pairs(single_curve_coordinates) do
+          single_curve_coordinates[k] = nil
+        end
+      end
+      if table_length(single_curve_coordinates) >= 4 then
+        love.graphics.setColor(line_colors[k])
+        love.graphics.line(single_curve_coordinates)
+      end
+    end
+    if love.mouse.isDown(1) and mouse_x > 350 and mouse_x < 1500 and table_length(line_coordinates) > 1 and table_length(line_coordinates) < 400 then
+      love.graphics.line(line_coordinates[table_length(line_coordinates)][1], line_coordinates[table_length(line_coordinates)][2], mouse_x, mouse_y)
     end
   end------------------------------
 
@@ -1739,7 +1969,7 @@ function love.draw()
     end
   end
 
-  if current_window ~= 37 then
+  if current_window ~= 37 and current_window ~= 38 then
     draw_all_buttons()
   end
 
@@ -1762,7 +1992,7 @@ function love.draw()
   if message ~= "" then
     if message == "congrats" then
       love.graphics.setColor(color["white_70"])
-      love.graphics.rectangle('fill', 0, 0, game_screen_width, game_screen_height)
+      love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, screen_total_height)
       love.graphics.setColor(color["white"])
       love.graphics.draw(image_congrats, 800 - image_congrats:getWidth() / 2, 450 - image_congrats:getHeight() / 2)
       sleep = 1.5

@@ -107,3 +107,9 @@ end
 function char(num)
   return string.char(string.byte("a")+num-1)
 end
+
+function erase_table(T)
+  for k, v in pairs(T) do
+    T[k] = nil
+  end
+end

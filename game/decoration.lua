@@ -4,13 +4,16 @@ function initialize_decoration_elements()
     decoration_elements[i] = {}
     decoration_elements[i].x = love.math.random(screen_left, screen_total_width)
     decoration_elements[i].y = love.math.random(screen_top, screen_total_height)
-    decoration_elements[i].content = love.math.random(0, 9)
+    if game == "math" then
+      decoration_elements[i].content = math.random(0, 9)
+    elseif game == "language" then
+      decoration_elements[i].content = alphabet_uc[math.random(1, table_length(alphabet_uc))]
+    end
     set_d_element_random_speed(i)
   end
 end
 
 function move_decoration_elements()
-  love.window.setTitle("tuka")
   for k, v in pairs(decoration_elements) do
     decoration_elements[k].x = decoration_elements[k].x + decoration_elements[k].x_speed
     decoration_elements[k].y = decoration_elements[k].y + decoration_elements[k].y_speed
