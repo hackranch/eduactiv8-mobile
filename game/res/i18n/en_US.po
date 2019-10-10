@@ -1,22 +1,22 @@
-# eduActiv8 - Educational Activity Pack - translation file.
-# Copyright (C) 2012 - 2018 Ireneusz Imiolek
-# This file is distributed under the same license as the eduactiv8 package.
-# Ireneusz Imiolek <imiolek.i@googlemail.com>, 2018.
+# eduActiv8 Mobile - translation file.
+# Copyright (C) 2019 Hackranch
+# This file is distributed under the same license as eduActiv8 Mobile.
+# Derek Lackaff <lackaff@hackranch.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.31.105\n"
+"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
 "Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
 "POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2018-12-12 14:37+0000\n"
-"Last-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\n"
-"Language-Team: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"PO-Revision-Date: 2019-10-10 12:53-0400\n"
+"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
+"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
 "Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
 msgid "green apple"
 msgid_plural "green apples"
@@ -560,7 +560,7 @@ msgid "Drag one of the lesser, greater or equal to the red square."
 msgstr "Drag one of the lesser, greater or equal to the red square."
 
 msgid "Rearrange the numbers so they are in the right order"
-msgstr "Rearrange the numbers so they are in the right order."
+msgstr "Rearrange the numbers so they are in the right order"
 
 msgid "Complete the abc using the letters above."
 msgstr "Complete the abc using the letters above."
@@ -910,7 +910,7 @@ msgid "Trapezium"
 msgstr "Trapezoid"
 
 msgid "Trapezium "
-msgstr "Trapezoid"
+msgstr "Trapezoid "
 
 msgid "Triangle"
 msgstr "Triangle"
@@ -1153,7 +1153,7 @@ msgid "show activities for:"
 msgstr "show activities for:"
 
 msgid "preschool"
-msgstr "Kindergarten"
+msgstr "preschool"
 
 msgid "Year 1"
 msgstr "Grade 1"
@@ -1174,7 +1174,7 @@ msgid "Year 6"
 msgstr "Grade 6"
 
 msgid "show all"
-msgstr "Show all"
+msgstr "show all"
 
 msgid "Do you want to exit the game?"
 msgstr "Do you want to exit the game?"
