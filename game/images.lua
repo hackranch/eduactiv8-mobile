@@ -123,51 +123,53 @@ images_logo_subtitle_2["russian"] = love.graphics.newImage("res/subtitles2/ru.pn
 images_logo_subtitle_2["serbian"] = love.graphics.newImage("res/subtitles2/sr.png")
 images_logo_subtitle_2["ukrainian"] = love.graphics.newImage("res/subtitles2/uk.png")
 
-word_names = {}
-word_images = {}
-word_names["a4a_animals"] = love.filesystem.getDirectoryItems("res/a4a_animals")
-word_names["a4a_people"] = love.filesystem.getDirectoryItems("res/a4a_people")
-word_names["a4a_jobs"] = love.filesystem.getDirectoryItems("res/a4a_jobs")
-word_names["a4a_body"] = love.filesystem.getDirectoryItems("res/a4a_body")
-word_names["a4a_clothes_n_accessories"] = love.filesystem.getDirectoryItems("res/a4a_clothes_n_accessories")
-word_names["a4a_sport"] = love.filesystem.getDirectoryItems("res/a4a_sport")
-word_names["a4a_actions"] = love.filesystem.getDirectoryItems("res/a4a_actions")
-word_names["a4a_nature"] = love.filesystem.getDirectoryItems("res/a4a_nature")
-word_names["a4a_fruit_n_veg"] = love.filesystem.getDirectoryItems("res/a4a_fruit_n_veg")
-word_names["a4a_food"] = love.filesystem.getDirectoryItems("res/a4a_food")
-word_names["a4a_transport"] = love.filesystem.getDirectoryItems("res/a4a_transport")
-word_names["a4a_construction"] = love.filesystem.getDirectoryItems("res/a4a_construction")
+function init_images()
+  word_names = {}
+  word_images = {}
+  word_names["a4a_animals"] = love.filesystem.getDirectoryItems("res/a4a_animals")
+  word_names["a4a_people"] = love.filesystem.getDirectoryItems("res/a4a_people")
+  word_names["a4a_jobs"] = love.filesystem.getDirectoryItems("res/a4a_jobs")
+  word_names["a4a_body"] = love.filesystem.getDirectoryItems("res/a4a_body")
+  word_names["a4a_clothes_n_accessories"] = love.filesystem.getDirectoryItems("res/a4a_clothes_n_accessories")
+  word_names["a4a_sport"] = love.filesystem.getDirectoryItems("res/a4a_sport")
+  word_names["a4a_actions"] = love.filesystem.getDirectoryItems("res/a4a_actions")
+  word_names["a4a_nature"] = love.filesystem.getDirectoryItems("res/a4a_nature")
+  word_names["a4a_fruit_n_veg"] = love.filesystem.getDirectoryItems("res/a4a_fruit_n_veg")
+  word_names["a4a_food"] = love.filesystem.getDirectoryItems("res/a4a_food")
+  word_names["a4a_transport"] = love.filesystem.getDirectoryItems("res/a4a_transport")
+  word_names["a4a_construction"] = love.filesystem.getDirectoryItems("res/a4a_construction")
 
-for k, v in pairs(word_names) do
-  word_images[k] = {}
-  for kk, vv in pairs(v) do
-    word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+  for k, v in pairs(word_names) do
+    word_images[k] = {}
+    for kk, vv in pairs(v) do
+      word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+    end
   end
 end
 
-people_names = {}
-people_images = {}
-people_names = love.filesystem.getDirectoryItems("res/people")
+--people_names = {}
+--people_images = {}
+--people_names = love.filesystem.getDirectoryItems("res/people")
 
-for k, v in pairs(people_names) do
-  people_images[k] = love.graphics.newImage("res/people/" .. v)
-end
-
-clothes_names = {}
-clothes_images = {}
-clothes_names = love.filesystem.getDirectoryItems("res/clothes")
-
-for k, v in pairs(clothes_names) do
-  clothes_images[k] = love.graphics.newImage("res/clothes/" .. v)
-end
-
-sport_names = {}
-sport_images = {}
-sport_names = love.filesystem.getDirectoryItems("res/sport")
-
-for k, v in pairs(sport_names) do
-  sport_images[k] = love.graphics.newImage("res/sport/" .. v)
-end
+--for k, v in pairs(people_names) do
+--  people_images[k] = love.graphics.newImage("res/people/" .. v)
+--end
+--
+--clothes_names = {}
+--clothes_images = {}
+--clothes_names = love.filesystem.getDirectoryItems("res/clothes")
+--
+--for k, v in pairs(clothes_names) do
+--  clothes_images[k] = love.graphics.newImage("res/clothes/" .. v)
+--end
+--
+--sport_names = {}
+--sport_images = {}
+--sport_names = love.filesystem.getDirectoryItems("res/sport")
+--
+--for k, v in pairs(sport_names) do
+--  sport_images[k] = love.graphics.newImage("res/sport/" .. v)
+--end
 
 
 

@@ -527,12 +527,12 @@ function build_form(index)
   elseif index == 20 then -- numbers
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
     if selected_level <= 2 then
-      add_big_button(1, icon_ico_g_0300, 800 - 300, 450, 90, 1, false, get_max_score_for_game(27), get_score_for_game(27), 27, s_learn_numbers_with_flashcard) --learn numbers with flashcards 1 part
+      add_big_button(1, icon_ico_g_0300, 800 - 500, 450, 90, 1, false, get_max_score_for_game(27), get_score_for_game(27), 27, s_learn_numbers_with_flashcard) --learn numbers with flashcards 1 part
     else
-      add_big_button(1, icon_ico_g_0325, 800 - 300, 450, 90, 1, false, get_max_score_for_game(28), get_score_for_game(28), 28, s_numbers_spelling .. " (" .. s_demonstration .. ")") --learn numbers with flashcards 1 part
+      add_big_button(1, icon_ico_g_0325, 800 - 500, 450, 90, 1, false, get_max_score_for_game(28), get_score_for_game(28), 28, s_numbers_spelling .. " (" .. s_demonstration .. ")") --learn numbers with flashcards 1 part
     end
     add_big_button(2, icon_m1_1_1_8,   800      , 450, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
-    add_big_button(3, icon_m1_1_1_3,   800 + 300, 450, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
+    add_big_button(3, icon_m1_1_1_3,   800 + 500, 450, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
     --add_big_button(3, icon_m1_1_2_3, 800 + 300, 450, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
   elseif index == 21 then -- patterns
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
@@ -639,7 +639,7 @@ function build_form(index)
       tiles[i] = "                "
       fixed_tiles[i] = "                "
     end
-    pattern_y_pos = math.ceil(t_y / 2) - 1
+    pattern_y_pos = math.ceil(t_y / 2 + 0.5) - 1
     tiles[pattern_y_pos] = patterns[current_pattern]
     correct_row = patterns[current_pattern]
     tiles[pattern_y_pos + 2] = patterns[current_pattern]
@@ -667,21 +667,28 @@ function build_form(index)
         tiles[pattern_y_pos] = replace_char(rn, tiles[pattern_y_pos], " ")
       end
     end
-    local rn = math.random(1, 3)
-    local image_array = {}
-    if rn == 1 then
-      image_array = sport_images
-    elseif rn == 2 then
-      image_array = animals_images
-    else
-      image_array = clothes_images
+    local flag = false
+    while flag == false do
+      flag = true
+      local rn = math.random(1, 3)
+      local image_array = {}
+      local random_group = "a4a_sport"
+      if rn == 2 then
+        random_group = "a4a_animals"
+      else
+        random_group = "a4a_clothes_n_accessories"
+      end
+      image_array = word_images[random_group]
+      rn = math.random(1, table_length(image_array) - 3)
+      pattern_images = {}
+      pattern_images["a"] = image_array[word_names[random_group][rn]]
+      pattern_images["b"] = image_array[word_names[random_group][rn + 1]]
+      pattern_images["c"] = image_array[word_names[random_group][rn + 2]]
+      pattern_images["d"] = image_array[word_names[random_group][rn + 3]]
+      if pattern_images["a"] == nil or pattern_images["b"] == nil or pattern_images["c"] == nil or pattern_images["d"] == nil then
+        flag = false
+      end
     end
-    rn = math.random(1, table_length(image_array) - 3)
-    pattern_images = {}
-    pattern_images["a"] = image_array[rn]
-    pattern_images["b"] = image_array[rn + 1]
-    pattern_images["c"] = image_array[rn + 2]
-    pattern_images["d"] = image_array[rn + 3]
   elseif index == 32 then -- learn shapes with flashcards
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 23)
     for i = 1, 15 do

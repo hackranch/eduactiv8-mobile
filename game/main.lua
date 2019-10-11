@@ -468,6 +468,7 @@ function love.update(dt)
       selected_b = ""
     elseif current_window == 1 then
       --build_form(2) -- login
+      init_images()
       build_form(19) -- main menu
     elseif current_window == 37 then
       for i = 1, 6 do
@@ -894,7 +895,7 @@ function love.update(dt)
           else
             sleep = 1
           end
-        elseif mouse_on_button(i + 16) == true then
+        elseif mouse_on_button(i + 16) == true and buttons[i + 16].button_state == 1 then
           buttons[i + 16].button_color = color["light_blue_80"]
           buttons[i + 16].button_state = 2
           if selected_words.index == 0 then
@@ -999,7 +1000,7 @@ function love.update(dt)
     end
     if current_window == 42 then
       if mouse_x > 350 and mouse_x < 1500 and table_length(line_coordinates) > 1 and table_length(line_coordinates) < 400 and
-         distance(line_coordinates[table_length(line_coordinates)][1],
+        distance(line_coordinates[table_length(line_coordinates)][1],
                   line_coordinates[table_length(line_coordinates)][2],
                   mouse_x, mouse_y) > 10 then
         table.insert(line_coordinates, {mouse_x, mouse_y})
@@ -1820,7 +1821,7 @@ function love.draw()
     if not mouse_released then
       if selected_hand == 2 then
         local old_clock_min = clock_min
-        clock_min = angle_clock(400, 0, 400, 525, x, y) / (360 / 60)
+        clock_min = angle_clock(400, 0, 400, 525, mouse_x, mouse_y) / (360 / 60)
         if (old_clock_min > 45 and clock_min < 59.5) and (clock_min < 15 or clock_min >= 59.5) then
           clock_hour = clock_hour + 1
           if clock_hour > 12 then
@@ -1991,8 +1992,8 @@ function love.draw()
 
   if message ~= "" then
     if message == "congrats" then
-      love.graphics.setColor(color["white_70"])
-      love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, screen_total_height)
+      --love.graphics.setColor(color["white_70"])
+      --love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, screen_total_height)
       love.graphics.setColor(color["white"])
       love.graphics.draw(image_congrats, 800 - image_congrats:getWidth() / 2, 450 - image_congrats:getHeight() / 2)
       sleep = 1.5
@@ -2014,4 +2015,5 @@ function love.draw()
 
     message = ""
   end
+  --love.window.setTitle('Memory actually used (in kB): ' .. collectgarbage('count'))
 end

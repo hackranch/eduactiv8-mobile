@@ -26,7 +26,7 @@ end
 function get_score_for_game(g_index)
   for k, v in pairs(score_indexes) do
     if v == g_index then
-      if score[username][selected_level][k] ~= nil then
+      if score[username or "guest"][selected_level or 1][k or 1] ~= nil then
         return score[username][selected_level][k]
       else
         return 0
