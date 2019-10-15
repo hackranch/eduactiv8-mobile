@@ -8,81 +8,229 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.70.807\n"
 "Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
-"POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2018-12-12 14:37+0000\n"
-"Last-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2019-10-15 11:43-0400\n"
+"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
 "Language-Team: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
 "Language: lkt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
-msgid "green apple"
-msgid_plural "green apples"
-msgstr[0] "tȟaspáŋ tȟó"
-msgstr[1] "tȟaspáŋ tȟotȟó"
+msgid "English"
+msgstr "Wašíčuiyapi"
 
-msgid "red apple"
-msgid_plural "red apples"
-msgstr[0] "tȟaspáŋ šá"
-msgstr[1] "tȟaspáŋ šašá"
+msgid "Login"
+msgstr "Čhaž’óigwapi"
 
-msgid "strawberry"
-msgid_plural "strawberries"
-msgstr[0] "wažúšteča"
-msgstr[1] "wažúšteča"
+msgid "Default Language:"
+msgstr "Iyápi Ikčéka:"
 
-msgid "pear"
-msgid_plural "pears"
-msgstr[0] "tȟaspáŋpȟestola"
-msgstr[1] "tȟaspáŋpȟestola"
+msgid "User Management"
+msgstr "Waíŋyaŋgkhiyápi"
 
-msgid "orange [fruit]"
-msgid_plural "oranges"
-msgstr[0] "tȟaspáŋzi"
-msgstr[1] "tȟaspáŋzi"
+msgid "Copyright & Credits"
+msgstr "Tuwáwa káǧe kiŋ hená"
 
-msgid "onion"
-msgid_plural "onions"
-msgstr[0] "pšíŋ"
-msgstr[1] "pšíŋ"
+msgid "Licence"
+msgstr "Wóiyowiŋkhiye"
 
-msgid "tomato"
-msgid_plural "tomatoes"
-msgstr[0] "uŋžíŋžiŋtka"
-msgstr[1] "uŋžíŋžiŋtka"
+msgid "Language arts"
+msgstr "Iyápi wóuŋspe"
 
-msgid "lemon"
-msgid_plural "lemons"
-msgstr[0] "tȟaspáŋpȟa"
-msgstr[1] "tȟaspáŋpȟa"
+msgid "This username and password combination doesn't exist."
+msgstr "Ipáyeȟ oyáwa itéke."
 
-msgid "cherry"
-msgid_plural "cherries"
-msgstr[0] "čhaŋpȟá"
-msgstr[1] "čhaŋpȟá"
+#| msgid "user name:"
+msgid "user name: "
+msgstr ""
 
-msgid "pepper"
-msgid_plural "peppers"
-msgstr[0] "ȟláȟla yútapi"
-msgstr[1] "ȟláȟla yútapi"
+#| msgid "password:"
+msgid "password: "
+msgstr ""
 
-msgid "carrot"
-msgid_plural "carrots"
-msgstr[0] "pȟaŋǧí zizí"
-msgstr[1] "pȟaŋǧí zizí"
+msgid "eduActiv8 Test Version"
+msgstr ""
 
-msgid "banana"
-msgid_plural "bananas"
-msgstr[0] "zíškopela"
-msgstr[1] "zíškopela"
+msgid "Save"
+msgstr "Patáŋ yo/ye"
 
-msgid "watermelon"
-msgid_plural "watermelons"
-msgstr[0] "wagmúšpaŋšni"
-msgstr[1] "wagmúšpaŋšni"
+msgid "Delete user"
+msgstr "Tuwá iȟpéya yo/ye"
+
+msgid "Preferences saved..."
+msgstr "Tȟokáhekhiyapi kiŋ patáŋpi..."
+
+msgid "Logged in as: "
+msgstr "Ničháže kiŋ: "
+
+msgid "Language"
+msgstr "Iyápi"
+
+msgid "Mathematics"
+msgstr "Wíyawapi"
+
+msgid "Games & Mazes"
+msgstr "Wóškate na Onúni"
+
+msgid "Word Builders"
+msgstr "Wičhóiye Káǧapi"
+
+msgid "Animals"
+msgstr "Wamákȟaškaŋ"
+
+msgid "Complete the word"
+msgstr "Wičhóiye kiŋ yuštáŋ yo/ye"
+
+msgid "Positive numbers"
+msgstr ""
+
+msgid "Number Spelling"
+msgstr "Wóiyawa Čhažé Owápi"
+
+msgid "Shopping List"
+msgstr "Wópȟetȟuŋpi"
+
+msgid "Addition"
+msgstr "Wayúpȟaǧapi"
+
+msgid "Find missing number"
+msgstr "Wóiyawa waŋ tókȟaȟ’aŋ kiŋ iyéya yo/ye"
+
+msgid "Level"
+msgstr "Wóali"
+
+msgid "Translators"
+msgstr "Wayúiyeskapi"
+
+msgid "Funding: "
+msgstr ""
+
+msgid "Score: "
+msgstr "Wóiglamna: "
+
+msgid "Numbers & Basic Operations"
+msgstr "Wóiyawa na Wíyawapi Ikčéka"
+
+msgid "Numbers"
+msgstr "Wóiyawa"
+
+msgid "Basic Operations"
+msgstr "Wóečhuŋ Ikčéka"
+
+msgid "area:"
+msgstr "otíŋskoya:"
+
+msgid "perimeter:"
+msgstr "opápuŋ:"
+
+msgid "circumference:"
+msgstr "miméla opápuŋ:"
+
+msgid "Trapezium"
+msgstr "Oblótȟuŋ Oštéka"
+
+msgid "Drag the clock hands to set the time"
+msgstr "Mázaškaŋškaŋ kiŋ yuéčhel égle kta uŋ istó kiŋ yuslóhaŋ áya yo/ye"
+
+msgid "Discover Letters"
+msgstr "Oówa Oyúȟlokapi"
+
+msgid "Word Matchers"
+msgstr "Wičhóiye Káǧapi 2"
+
+msgid "Shapes and Solids"
+msgstr "Oúŋčhaǧe na Wasúta"
+
+msgid "Symmetry"
+msgstr ""
+
+msgid "Patterns"
+msgstr ""
+
+msgid "Time"
+msgstr "Mázaškaŋškaŋ"
+
+msgid "Basics"
+msgstr ""
+
+msgid "Subtraction"
+msgstr "Wayúčonalapi"
+
+msgid "Learn Numbers with Flashcards"
+msgstr "Itówapi uŋ Wóiyawa Uŋspéič’ičhiyapi"
+
+msgid "Demonstration"
+msgstr "Wópazo"
+
+#| msgid "Find solution"
+msgid "Find Solution"
+msgstr ""
+
+msgid "Image Patterns"
+msgstr ""
+
+msgid "Learn Shapes with Flashcards"
+msgstr "Itówapi uŋ Oúŋčhaǧe Uŋspéič’ičhiyapi"
+
+msgid "Shape Matching"
+msgstr "Oúŋčhaǧe Núŋmnuŋpa Égnakapi"
+
+msgid "Shape Maker"
+msgstr "Oúŋčhaǧe Okáǧe"
+
+msgid "How clock works?"
+msgstr "Mázaškaŋškaŋ kiŋ lé tóškhe yutȟókča-phiča he?"
+
+msgid "learn to set the clock"
+msgstr "Mázaškaŋškaŋ kiŋ yuéčhel églepi uŋspéič’ičhiya yo/ye"
+
+msgid "Set the clock to:"
+msgstr "Mázaškaŋškaŋ kiŋ léčheȟčiŋ égle yo/ye: "
+
+msgid "Time Matching"
+msgstr "Mázaškaŋškaŋ Istó Ečhékčhel Églepi"
+
+msgid "Your Alphabet"
+msgstr "Lakȟótiyapi Oówaptaya"
+
+msgid "Trace Letters and Numbers"
+msgstr "Oówa na Wóiyawa Taŋyéla Owápi"
+
+msgid "People"
+msgstr "Oyáte"
+
+msgid "Jobs"
+msgstr "Wówaši"
+
+msgid "Body"
+msgstr "Wičhátȟaŋčhaŋ"
+
+msgid "Clothes and Accessories"
+msgstr "Hayápi"
+
+msgid "Sports"
+msgstr "Škal’ákičhiyapi"
+
+msgid "Actions"
+msgstr "Wóečhuŋ"
+
+msgid "Nature"
+msgstr "Uŋčí Makȟá"
+
+msgid "Fruits and Vegetables"
+msgstr "Waskúyeča na Watȟótȟo"
+
+msgid "Food"
+msgstr "Wóyute"
+
+msgid "Transport"
+msgstr "Watȟókšupi"
+
+msgid "Constructions"
+msgstr "Wakáǧapi"
 
 msgid "Equilateral Triangle"
 msgstr "Oíseyamni Ótkuŋza"
@@ -123,1374 +271,2698 @@ msgstr "Obló Záptaŋ"
 msgid "Hexagon"
 msgstr "Obló Šákpe"
 
-msgid "Heptagon"
-msgstr ""
-
-msgid "Octagon"
-msgstr ""
-
 msgid "Circle"
 msgstr "Miméla"
 
 msgid "Ellipse"
 msgstr "Miméla Haŋska Ótkuŋza"
 
-msgid "Cube"
-msgstr "Oblótȟuŋ Okȟáŋ"
+msgid "Heptagon"
+msgstr ""
 
-msgid "Square Prism"
-msgstr "Žaŋžáŋla Oblótȟuŋ"
+msgid "Octagon"
+msgstr ""
 
-msgid "Triangular Prism"
-msgstr "Žaŋžáŋla Oíseyamni"
+#| msgid "Trapezium"
+msgid "trapezium"
+msgstr ""
 
-msgid "Square Pyramid"
-msgstr "Íŋyaŋ Thipȟéstola Húte Oblótȟuŋ"
+# animals
+msgid "cow"
+msgstr ""
 
-msgid "Triangular Pyramid"
-msgstr "Íŋyaŋ Thipȟéstola Húte Oíseyamni"
+msgid "turkey"
+msgstr ""
 
-msgid "Sphere"
-msgstr "Gmigméla"
+msgid "shrimp"
+msgstr ""
 
-msgid "Cylinder"
-msgstr "Wótoza"
+msgid "wolf"
+msgstr ""
 
-msgid "Cone"
-msgstr "Mimépȟesto"
+#| msgid "Other"
+msgid "panther"
+msgstr ""
 
-msgid "Torus"
-msgstr "Čhaŋgléška Okȟáŋ"
+msgid "panda"
+msgstr ""
 
-msgid "Default Language:"
-msgstr "Iyápi Ikčéka:"
+msgid "magpie"
+msgstr ""
 
-msgid "Guest"
-msgstr "Thiléhaŋyaŋg Wahí"
+msgid "clam"
+msgstr ""
 
-msgid "Log in:"
-msgstr "Čhaž’óigwa yo/ye:"
+msgid "pony"
+msgstr ""
 
-msgid "user name:"
-msgstr "čhažé:"
+msgid "mouse"
+msgstr ""
 
-msgid "password:"
-msgstr "wičhóiye-wóanaȟma:"
+msgid "pug"
+msgstr ""
 
-msgid "Login"
-msgstr "Čhaž’óigwapi"
+msgid "koala"
+msgstr ""
 
-msgid "Add new user:"
-msgstr "Tuwá tȟéča aégnaka yo/ye:"
+msgid "frog"
+msgstr ""
 
-msgid "confirm password:"
-msgstr "phiyá owá yo/ye:"
+msgid "ladybug"
+msgstr ""
 
-msgid "Register new user"
-msgstr "Tuwá tȟéča čhažé owá yo/ye"
+msgid "gorilla"
+msgstr ""
 
-msgid "Administrator Login:"
-msgstr "Itȟáŋčhaŋ Čhaž’óigwapi"
+msgid "llama"
+msgstr ""
 
-msgid "User Management"
-msgstr "Waíŋyaŋgkhiyápi"
+#| msgid "Nature"
+msgid "vulture"
+msgstr ""
 
-msgid "Please select a user from the list."
-msgstr "Tuwé waŋží kaȟníǧa yo/ye."
+msgid "hamster"
+msgstr ""
 
-msgid "Delete user"
-msgstr "Tuwá iȟpéya yo/ye"
+msgid "bird"
+msgstr ""
 
-msgid "Delete"
-msgstr "Iȟpéya yo/ye"
+msgid "starfish"
+msgstr ""
 
-msgid "Cancel"
-msgstr "Hé yužúžu wo/we"
+msgid "crow"
+msgstr ""
 
-msgid "%s deleted from database."
-msgstr "%s átaya iȟpéyapi."
+msgid "parakeet"
+msgstr ""
 
-msgid "Failed to delete the user."
-msgstr "Iȟpéya okíhi šni."
+msgid "caterpillar"
+msgstr ""
 
-msgid "Preferences"
-msgstr "Tȟokáhekhiyapi"
+msgid "tiger"
+msgstr ""
 
-msgid "switch to full screen after login"
-msgstr "čhaž’óigwapi óhakab naówaŋčaya tȟaŋíŋ kte"
+msgid "hummingbird"
+msgstr ""
 
-msgid "allow adding new users on login screen"
-msgstr "čhaž’óigwapi ektá tuwá tȟéča kiŋ aégnag-phičápi kte"
+msgid "piranha"
+msgstr ""
 
-msgid "display languages with uncompleted translations"
-msgstr "iyápi waŋží él naháŋȟči átaya wayúiyeskapi šni éyaš tȟaŋíŋ kte"
+msgid "pig"
+msgstr ""
 
-msgid "require password to log in"
-msgstr "tuwá čhaž’óigwa háŋtaŋš wičhóiye-wóanaȟma okíwa kte héčha"
+msgid "scorpion"
+msgstr ""
 
-msgid "require password to access admin area"
-msgstr "waíŋyaŋgkhiye kiŋ íŋš-eyá wičhóiye-wóinaȟma okíwapi kte héčha"
+msgid "fo"
+msgstr ""
 
-msgid "Update admin's password:"
-msgstr "Waíŋyaŋgkhiya waŋ wičhóiye-wóanaȟma glutȟókča čhíŋ:"
+msgid "leopard"
+msgstr ""
 
-msgid "previous password:"
-msgstr "hékta wičhóiye-wóanaȟma kiŋ:"
+msgid "iguana"
+msgstr ""
 
-msgid "new password:"
-msgstr "wičhóiye-wóanaȟma lečhála kiŋ:"
+msgid "dolphin"
+msgstr ""
 
-msgid "confirm new password:"
-msgstr "phiyá owá yo/ye:"
+msgid "bat"
+msgstr ""
 
-msgid "Create admin's account:"
-msgstr "waíŋyaŋgkhiya waŋží tȟoká čhaž’óigwa čhíŋ:"
+msgid "chick"
+msgstr ""
 
-msgid "admin's user name:"
-msgstr "waíŋyaŋgkhiye kiŋ čhažé kiŋ:"
+msgid "crab"
+msgstr ""
 
-msgid "admin's password:"
-msgstr "waíŋyaŋgkhiye kiŋ wičhóiye-wóinaȟma tȟáwa kiŋ:"
+msgid "hen"
+msgstr ""
 
-msgid "confirm admin's password:"
-msgstr "wičhóiye-wóanaȟma kiŋ phiyá owá yo/ye:"
+msgid "wasp"
+msgstr ""
 
-msgid "Save"
-msgstr "Patáŋ yo/ye"
+msgid "chameleon"
+msgstr ""
 
-msgid "Please enter user name (at least 3 characters long)"
-msgstr "Čhaž´óigwa yo/ye (oówa 3 naíŋš hé isáŋmya)"
+msgid "whale"
+msgstr ""
 
-msgid "Please enter password (at least 4 characters long)"
-msgstr "Wičhóiye-wóanaȟma kiŋ okíwa yo/ye (oówa 4 naíŋš hé isáŋmya)"
+msgid "hedgehog"
+msgstr ""
 
-msgid "This username and password combination doesn't exist."
-msgstr "Ipáyeȟ oyáwa itéke."
+msgid "fawn"
+msgstr ""
 
-msgid "This username doesn't exist."
-msgstr "Tuwéni čhažé k’uŋ hé yukȟé šni."
+msgid "moose"
+msgstr ""
 
-msgid "Passwords don't match"
-msgstr "Wičhóiye-wóanaȟma k’uŋ taŋyáŋ oyáwa šni."
+msgid "bee"
+msgstr ""
 
-msgid "%s added"
-msgstr "%s aégnakapi"
+msgid "viper"
+msgstr ""
 
-msgid "This user name already exists, please choose a different one"
-msgstr "Eháŋni tuwá héčhel čhaš’íč’itȟuŋ. Čhažé tȟókča waŋží kaȟníǧa yo/ye"
+msgid "shrike"
+msgstr ""
 
-msgid "Admin's password has been updated"
-msgstr "Wičhóiye-wóanaȟma kiŋ yaglútȟokeča"
+msgid "donkey"
+msgstr ""
 
-msgid "ERROR: This operation is not allowed at this point"
-msgstr "WÓGLUŠNA: Hé ečhúŋ-phičá šni"
+msgid "guinea pig"
+msgstr ""
 
-msgid "Please enter previous password (at least 4 characters long)"
-msgstr "Hékta wičhóiye-wóanaȟma kiŋ okíwa yo/ye (oówa 4+)"
+msgid "sloth"
+msgstr ""
 
-msgid "Please enter new password (at least 4 characters long)"
-msgstr "Wičhóiye-wóanaȟma tȟéča kiŋ owá yo/ye (oówa 4+)"
+msgid "horse"
+msgstr ""
 
-msgid "Previous password doesn't seem to be in the database"
-msgstr "Hékta wičhóiye-wóinaȟma k’uŋ hé iyéuŋkiyapi šni"
+msgid "penguin"
+msgstr ""
 
-msgid "Registered:"
-msgstr "Tȟoká čhaž’óigwa uŋ héhaŋ:"
+#| msgid "Letters"
+msgid "otter"
+msgstr ""
 
-msgid "Last login:"
-msgstr "Hékta čhaž’óigwa uŋ héhaŋ:"
+msgid "bear"
+msgstr ""
 
-msgid "Preferences saved..."
-msgstr "Tȟokáhekhiyapi kiŋ patáŋpi..."
+msgid "zebra"
+msgstr ""
 
-msgid "Score: "
-msgstr "Wóiglamna: "
+msgid "ostrich"
+msgstr ""
 
-msgid "Logged in as: "
-msgstr "Ničháže kiŋ: "
+msgid "camel"
+msgstr ""
 
-msgid "(Log out)"
-msgstr "(Iyáya yo/ye)"
+msgid "antelope"
+msgstr ""
 
-msgid "Addition Table"
-msgstr "Wayúpȟaǧapi Akáŋwowapi"
+msgid "lemur"
+msgstr ""
 
-msgid "Hello"
-msgstr "Háu"
+msgid "pigeon"
+msgstr ""
 
-msgid "Welcome back in the game."
-msgstr "Taŋyáŋ yaglí."
+msgid "lama"
+msgstr ""
 
-msgid "Language"
-msgstr "Iyápi"
+msgid "mole"
+msgstr ""
 
-msgid "Translations"
-msgstr "Yuíyeskapi"
+msgid "ray"
+msgstr ""
 
-msgid "Info & Settings"
-msgstr "Wónaȟ’uŋ na Wayútȟokčapi"
+msgid "ram"
+msgstr ""
 
-msgid "Keyboard & Mouse"
-msgstr "Wínaȟtagye na Itȟúŋkala"
+msgid "skunk"
+msgstr ""
 
-msgid "Discover Letters"
-msgstr "Oówa Oyúȟlokapi"
+msgid "jellyfish"
+msgstr ""
 
-msgid "Learn New Words"
-msgstr "Wičhóiye Lečhála Uŋspéič’ičhiyapi"
+msgid "sheep"
+msgstr ""
 
-msgid "Mathematics"
-msgstr "Wíyawapi"
+msgid "shark"
+msgstr ""
 
-msgid "Numbers & Basic Operations"
-msgstr "Wóiyawa na Wíyawapi Ikčéka"
+msgid "kitten"
+msgstr ""
 
-msgid "Basic Operations - Exercises"
-msgstr "Wíyawapi Ikčéka - Iíglutȟapi"
+msgid "deer"
+msgstr ""
 
-msgid "Sorting and Comparing"
-msgstr "Ptáptaya Waégnakapi na Waíčhiwaŋyaŋkapi"
+msgid "snail"
+msgstr ""
 
-msgid "Geometry and Shape Recognition"
-msgstr "Oíse Wóuŋspe na Oúŋčhaǧe Iyékiyapi"
+msgid "flamingo"
+msgstr ""
 
-msgid "Art and Colour"
-msgstr "Wičhítowapi na Oówa"
+msgid "rabbit"
+msgstr ""
 
-msgid "Memory"
-msgstr "Wókiksuye"
+msgid "oyster"
+msgstr ""
 
-msgid "Games & Mazes"
-msgstr "Wóškate na Onúni"
+msgid "beaver"
+msgstr ""
 
-msgid "Multiplayer Games"
-msgstr "Tuwé Óta Wóškate"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "sparrow"
+msgstr ""
 
-msgid "About."
-msgstr "Ečhíyataŋhaŋ."
+msgid "dove"
+msgstr ""
 
-msgid "Game info..."
-msgstr "Wóškate wóopȟe kiŋ..."
+msgid "eagle"
+msgstr ""
 
-msgid "Copyright & Credits"
-msgstr "Tuwáwa káǧe kiŋ hená"
+msgid "beetle"
+msgstr ""
 
-msgid "Hit the Mole"
-msgstr "Wahíŋheya kiŋ Apȟá yo/ye"
+msgid "hippopotamus"
+msgstr ""
 
-msgid "Letters"
-msgstr "Oówa"
+msgid "owl"
+msgstr ""
 
-msgid "Learn Letters with Flashcards"
-msgstr "Itówapi uŋ Oówa Uŋspéič’ičhiyapi"
+msgid "cobra"
+msgstr ""
 
-msgid "Learn to Write"
-msgstr "Wówapi Uŋspéič’ičhiyapi"
+#| msgid "remainder"
+msgid "salamander"
+msgstr ""
 
-msgid "Trace Letters and Numbers"
-msgstr "Oówa na Wóiyawa Taŋyéla Owápi"
+msgid "goose"
+msgstr ""
 
-msgid "Complete the ABC"
-msgstr "Oówaptaya kiŋ Yuštáŋ yo/ye"
+msgid "kangaroo"
+msgstr ""
 
-msgid "English"
-msgstr "Wašíčuiyapi"
+msgid "dragonfly"
+msgstr ""
 
-msgid "Your language"
-msgstr "Lakȟótiyapi"
+msgid "toad"
+msgstr ""
 
-msgid "Sorting Letters"
-msgstr "Oówa Ečhékčhe Égnakapi"
+msgid "pelican"
+msgstr ""
 
-msgid "Lowercase Letters"
-msgstr "Oówa Čik’čík’ala"
+msgid "squid"
+msgstr ""
 
-msgid "Uppercase Letters"
-msgstr "Oówa Tȟaŋkíŋkiŋyaŋ"
+msgid "lion cub"
+msgstr ""
 
-msgid "Word Builder"
-msgstr "Wičhóiye Káǧapi"
+msgid "jaguar"
+msgstr ""
 
-msgid "Word Maze"
-msgstr "Wičhóiye Onúni"
+msgid "duck"
+msgstr ""
 
-msgid "Collect all letters in the right order"
-msgstr "Oówa kiŋ ówečhiŋhaŋ ičú wo/we"
+msgid "lizard"
+msgstr ""
 
-msgid "Word Maze + 4"
-msgstr "Wičhóiye Onúni +4"
+msgid "rhinoceros"
+msgstr ""
 
-msgid "Numbers"
-msgstr "Wóiyawa"
+msgid "hyena"
+msgstr ""
 
-msgid "Learn Numbers with Flashcards"
-msgstr "Itówapi uŋ Wóiyawa Uŋspéič’ičhiyapi"
+msgid "o"
+msgstr ""
 
-msgid "Learn to Count"
-msgstr "Wíyawapi Uŋspéič’ičhiyapi"
+msgid "peacock"
+msgstr ""
 
-msgid "Basic Addition"
-msgstr "Wayúpȟaǧapi Ikčéka"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "parrot"
+msgstr ""
 
-msgid "Basic Subtraction"
-msgstr "Wayúčonalapi Ikčéka"
+msgid "elk"
+msgstr ""
 
-msgid "Shopping List"
-msgstr "Wópȟetȟuŋpi"
+#| msgid "Translators"
+msgid "alligator"
+msgstr ""
 
-msgid "Plus or Minus"
-msgstr "Wayúpȟaǧapi naíŋš Wayúčonalapi"
+#| msgid "Paint"
+msgid "ant"
+msgstr ""
 
-msgid "Basic Operations"
-msgstr "Wóečhuŋ Ikčéka"
+msgid "goat"
+msgstr ""
 
-msgid "Multiplication Table"
-msgstr "Wayúotapi"
+msgid "baby rabbit"
+msgstr ""
 
-msgid "Find the product"
-msgstr "Wóayupte kiŋ iyéya yo/ye"
+msgid "lion"
+msgstr ""
 
-msgid "Find the multiplier"
-msgstr "Wóiyawa tókȟaȟ’aŋ kiŋ iyéya yo/ye"
+msgid "squirrel"
+msgstr ""
 
-msgid "Division"
-msgstr "Khiwáyušpapi"
+msgid "opossum"
+msgstr ""
 
-msgid "Sorting Numbers"
-msgstr "Wóiyawa Ečhékčhe Égnakapi"
+msgid "chimp"
+msgstr ""
 
-msgid "Number Comparison"
-msgstr "Wóiyawa Íčhiwaŋyaŋkapi"
+msgid "doe"
+msgstr ""
 
-msgid "Addition & Subtraction"
-msgstr "Wayúpȟaǧapi naíŋš Wayúčonalapi"
+#| msgid "Sphere"
+msgid "gopher"
+msgstr ""
 
-msgid "Comparison"
-msgstr "Waíčhiwaŋyáŋkapi"
+msgid "elephant"
+msgstr ""
 
-msgid "Fractions"
-msgstr "Wóiyawa Owákse"
+msgid "giraffe"
+msgstr ""
 
-msgid "Decimal Fractions"
-msgstr "Wóiyawa Haŋké"
+msgid "spider"
+msgstr ""
 
-msgid "Even or Odd"
-msgstr "Wíotkuŋza na Wíyušna"
+msgid "puppy"
+msgstr ""
 
-msgid "Shapes"
-msgstr "Oúŋčhaǧe"
+msgid "jay"
+msgstr ""
 
-msgid "Learn Shapes with Flashcards"
-msgstr "Itówapi uŋ Oúŋčhaǧe Uŋspéič’ičhiyapi"
+msgid "seal"
+msgstr ""
 
-msgid "Solids"
-msgstr "Wasúta"
+msgid "rooster"
+msgstr ""
 
-msgid "Solid Geometry with Flashcards"
-msgstr "Itówapi uŋ Wasúta Uŋspéič’ičhiyapi"
+msgid "turtle"
+msgstr ""
 
-msgid "Shape Matching"
-msgstr "Oúŋčhaǧe Núŋmnuŋpa Égnakapi"
+msgid "bull"
+msgstr ""
 
-msgid "help me find my shadow"
-msgstr "mináǧi iyékiya ómakiya yo/ye"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "cat"
+msgstr ""
 
-msgid "Paint"
-msgstr "Wawíyuŋpi"
+msgid "rat"
+msgstr ""
 
-msgid "Colour Matching"
-msgstr "Oówa Ečhékčhe Égnakapi"
+msgid "slug"
+msgstr ""
 
-msgid "label the colours"
-msgstr "oówa kiŋ čhažéyata yo/ye"
+msgid "buffalo"
+msgstr ""
 
-msgid "Follow the Arrows"
-msgstr "Wahíŋkpe kiŋ Otȟápȟa yo/ye"
+#| msgid "black"
+msgid "blackbird"
+msgstr ""
 
-msgid "remember the directions"
-msgstr "tókhiya níŋ kte kiŋ kiksúya yo/ye"
+msgid "swan"
+msgstr ""
 
-msgid "Photographic Memory"
-msgstr "Yušnášniyaŋ Wakíksuyapi"
+msgid "lobster"
+msgstr ""
 
-msgid "Training"
-msgstr "Wakáuŋspepi"
+msgid "dog"
+msgstr ""
 
-msgid "Automatic Levels"
-msgstr "Wóali Ikčéka"
+msgid "mosquito"
+msgstr ""
 
-msgid "Mouse Maze"
-msgstr "Itȟúŋkala Onúni"
+msgid "snake"
+msgstr ""
 
-msgid "Let's have some cheese"
-msgstr "Asáŋpi etáŋ uŋyútapi kte"
+msgid "chicken"
+msgstr ""
 
-msgid "Sheep Maze"
-msgstr "Tȟáȟčašuŋkala Onúni"
+msgid "anteater"
+msgstr ""
 
-msgid "Find the rest of the herd"
-msgstr "Uŋmá kiŋ iyéwičhaya yo/ye"
+# sport
+msgid "judo"
+msgstr ""
 
-msgid "Connect"
-msgstr "Waíčhikȟoyagyapi"
+msgid "pool"
+msgstr ""
 
-msgid "Balloons with threads"
-msgstr "Waléǧa haȟúŋta aíkȟoyaka"
+msgid "ride"
+msgstr ""
 
-msgid "Fifteen"
-msgstr "Akézaptaŋ"
+msgid "stretch"
+msgstr ""
 
-msgid "With a Twist"
-msgstr "Wayúhomnipi"
+msgid "helmet"
+msgstr ""
 
-msgid "Drag the slider up or down so that the right sign is in the red square."
-msgstr "Wápȟetȟokeča tukté waŋží oblótȟuŋ šá él yaŋkíŋ kta iyéčheča héči hé ektá yuslóhaŋ áya yo/ye."
+msgid "ice skating"
+msgstr ""
 
-msgid "Take your sheep to the rest of the herd."
-msgstr "Tȟáȟčašuŋkala kiŋ optáye ektá gloáya yo/ye."
+msgid "walk"
+msgstr ""
 
-msgid "Check the shopping list and drag all needed items into the basket."
-msgstr "Wówapi kiŋ yawá na takú yačhíŋ kte kiŋ hená wógnake ektá yuslóhaŋ áya yo/ye."
+msgid "run"
+msgstr ""
 
-msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
-msgstr "\"<, >, =\" wápȟetȟokeča kiŋ hená ayúta na tukté waŋží oblótȟuŋ šá él yaŋkíŋ kta iyéčheča héči hé ektá yuslóhaŋ áya yo/ye."
+msgid "swim"
+msgstr ""
 
-msgid "Drag one of the lesser, greater or equal to the red square."
-msgstr "Wápȟetȟokeča kiŋ hená (isáŋm tȟáŋka, isáŋm čík’ala, ákhiyenakča) tukté waŋží oblótȟuŋ šá él yaŋkíŋ kta iyéčheča héči hé ektá yuslóhaŋ áya yo/ye."
+msgid "hop"
+msgstr ""
 
-msgid "Rearrange the numbers so they are in the right order"
-msgstr "Wóiyawa eyá yuíženapi kiŋ lená yuéčhel yuówečhiŋhaŋ égnaka yo/ye."
+msgid "hike"
+msgstr ""
 
-msgid "Complete the abc using the letters above."
-msgstr "Oówa eyá waŋkál hé kiŋ hená uŋ oówaptaya kiŋ yuštáŋ yo/ye."
+msgid "boxing"
+msgstr ""
 
-msgid "Build the following word using the letters below."
-msgstr "Oówa eyá hukhúl hé kiŋ hená uŋ wičhóiye kiŋ yuštáŋ yo/ye."
+msgid "hockey"
+msgstr ""
 
-msgid "Find and separate even numbers from odd numbers."
-msgstr "Wóiyawa kiŋ hená ayúta na wíotkuŋza na wíyušna eyá ópȟa héči hená yukhínuŋkȟaŋ égnaka yo/ye."
+msgid "race"
+msgstr ""
 
-msgid "Rearrange the letters so they are in the alphabetical order."
-msgstr "Oówa eyá yuíženapi kiŋ lená yuéčhel égnakiŋ na ečhél wičhóiye kiŋ owá yo/ye."
+msgid "throw"
+msgstr ""
 
-msgid "Rearrange the numbers so they are in the ascending order."
-msgstr "Wóiyawa kiŋ lená waŋkátakiya sáŋm óta áyiŋ kta čha yuówečhiŋhaŋ égnaka yo/ye."
+msgid "skate"
+msgstr ""
 
-msgid "Please try again."
-msgstr "Akhé iyútȟa yo/ye."
+msgid "win"
+msgstr ""
 
-msgid "Sorry! It is wrong."
-msgstr "Hiyá! Héčhetu šni."
+msgid "squat"
+msgstr ""
 
-msgid "Perfect! Task solved!"
-msgstr "Wašté! Taŋyáŋ ečhánuŋ!"
+msgid "ski"
+msgstr ""
 
-msgid "You need to work a little bit harder next time."
-msgstr "Ičínuŋpa kiŋháŋ ohítiya yaškáŋ kte héčha."
+msgid "golf"
+msgstr ""
 
-msgid "Game Over!"
-msgstr "Héčhegla!"
+msgid "whistle"
+msgstr ""
 
-msgid "Congratulations! You have completed all tasks in this game."
-msgstr "Yuphíya walúštaŋ...Wašté!"
+msgid "torch"
+msgstr ""
 
-msgid "Great job!"
-msgstr "Taŋyáŋ ečhánuŋ!"
+msgid "sailing"
+msgstr ""
 
-msgid "Perfect!!!"
-msgstr "Yuphíyeȟčiŋ!!!"
+msgid "stand"
+msgstr ""
 
-msgid "Awesome!"
-msgstr "Áta nikhíli!"
+msgid "tennis"
+msgstr ""
 
-msgid "Fantastic job!"
-msgstr "Taŋyéȟčiŋ oyáȟ’aŋ!"
+msgid "jump"
+msgstr ""
 
-msgid "Well done!"
-msgstr "Makȟáheyaye!"
+msgid "rowing"
+msgstr ""
 
-msgid "Perfect! Level completed!"
-msgstr "Yušná-šni wóali kiŋ luštáŋ!"
+msgid "jog"
+msgstr ""
 
-msgid "area:"
-msgstr "otíŋskoya:"
+msgid "rope"
+msgstr ""
 
-msgid "perimeter:"
-msgstr "opápuŋ:"
+# body
+msgid "teeth"
+msgstr ""
 
-msgid "circumference:"
-msgstr "miméla opápuŋ:"
+msgid "cheek"
+msgstr ""
 
-msgid "surface area:"
-msgstr "há otíŋskoya:"
+msgid "ankle"
+msgstr ""
 
-msgid "volume:"
-msgstr "wóokȟaŋ:"
+msgid "knee"
+msgstr ""
 
-msgid "Perfect!"
-msgstr "Yuphíyeȟčiŋ!"
+msgid "toe"
+msgstr ""
 
-msgid "divided by"
-msgstr "uŋ khiyúšpapi"
+msgid "muscle"
+msgstr ""
 
-msgid "times"
-msgstr "kičhí yuótapi"
+msgid "mouth"
+msgstr ""
 
-msgid "equals"
-msgstr "ákhiyenakča"
+msgid "feet"
+msgstr ""
 
-msgid "Even"
-msgstr "Ótkuŋza"
+msgid "hand"
+msgstr ""
 
-msgid "Odd"
-msgstr "Iyúšna"
+msgid "elbow"
+msgstr ""
 
-msgid "white"
-msgstr "ská"
+msgid "hair"
+msgstr ""
 
-msgid "black"
-msgstr "sápa"
+msgid "eyelash"
+msgstr ""
 
-msgid "grey"
-msgstr "ȟóta"
+msgid "beard"
+msgstr ""
 
-msgid "red"
-msgstr "šá"
+msgid "belly button"
+msgstr ""
 
-msgid "orange [color]"
-msgstr "zíša"
+msgid "thumb"
+msgstr ""
 
-msgid "yellow"
-msgstr "zí"
+msgid "breast"
+msgstr ""
 
-msgid "olive"
-msgstr "kpasyá tȟózi"
+msgid "nostril"
+msgstr ""
 
-msgid "green"
-msgstr "tȟózi"
+msgid "nose"
+msgstr ""
 
-msgid "sea green"
-msgstr "tȟózisaŋ"
+msgid "hip"
+msgstr ""
 
-msgid "teal"
-msgstr "tȟósaŋ"
+msgid "arm"
+msgstr ""
 
-msgid "blue"
-msgstr "tȟó"
+#| msgid "brown"
+msgid "eyebrow"
+msgstr ""
 
-msgid "navy"
-msgstr "tȟósapa"
+msgid "fist"
+msgstr ""
 
-msgid "purple"
-msgstr "tȟóša"
+msgid "neck"
+msgstr ""
 
-msgid "violet"
-msgstr "tȟóšaȟča"
+msgid "wrist"
+msgstr ""
 
-msgid "magenta"
-msgstr "šástaŋȟča"
+msgid "throat"
+msgstr ""
 
-msgid "indigo"
-msgstr "tȟóȟča"
+msgid "eye"
+msgstr ""
 
-msgid "pink"
-msgstr "šásaŋ"
+msgid "leg"
+msgstr ""
 
-msgid "maroon"
-msgstr "ǧíša"
+msgid "spine"
+msgstr ""
 
-msgid "brown"
-msgstr "ǧí"
+#| msgid "pear"
+#| msgid_plural "pears"
+msgid "ear"
+msgstr ""
 
-msgid "aqua"
-msgstr "tȟósaŋȟča"
+msgid "finger"
+msgstr ""
+
+msgid "foot"
+msgstr ""
+
+msgid "braid"
+msgstr ""
+
+msgid "face"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "chin"
+msgstr ""
+
+msgid "bottom"
+msgstr ""
+
+msgid "thigh"
+msgstr ""
+
+msgid "belly"
+msgstr ""
+
+# people
+msgid "girl"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+#| msgid "Won"
+msgid "son"
+msgstr ""
+
+msgid "mates"
+msgstr ""
+
+msgid "friends"
+msgstr ""
+
+msgid "baby"
+msgstr ""
+
+msgid "child"
+msgstr ""
+
+#| msgid "Odd"
+msgid "dad"
+msgstr ""
+
+msgid "mom"
+msgstr ""
+
+msgid "twin boys"
+msgstr ""
+
+#| msgid "Other"
+msgid "brothers"
+msgstr ""
+
+#| msgid "maroon"
+msgid "man"
+msgstr ""
+
+#| msgid "Other"
+msgid "mother"
+msgstr ""
+
+msgid "grandfather"
+msgstr ""
+
+msgid "family"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "wife"
+msgstr ""
+
+msgid "husband"
+msgstr ""
+
+msgid "bride"
+msgstr ""
+
+msgid "madam"
+msgstr ""
+
+msgid "grandmother"
+msgstr ""
+
+msgid "couple"
+msgstr ""
+
+msgid "lad"
+msgstr ""
+
+msgid "twin girls"
+msgstr ""
+
+msgid "tribe"
+msgstr ""
+
+msgid "boy"
+msgstr ""
+
+msgid "sisters"
+msgstr ""
+
+msgid "woman"
+msgstr ""
+
+msgid "lady"
+msgstr ""
+
+# food
+msgid "candy"
+msgstr ""
+
+msgid "sausage"
+msgstr ""
+
+msgid "hamburger"
+msgstr ""
+
+msgid "steak"
+msgstr ""
+
+msgid "fudge"
+msgstr ""
+
+msgid "doughnut"
+msgstr ""
+
+msgid "coconut"
+msgstr ""
+
+msgid "rice"
+msgstr ""
+
+msgid "ice cream"
+msgstr ""
+
+msgid "jelly"
+msgstr ""
+
+msgid "yoghurt"
+msgstr ""
+
+msgid "dessert"
+msgstr ""
+
+msgid "pretzel"
+msgstr ""
+
+msgid "peanut"
+msgstr ""
+
+msgid "jam"
+msgstr ""
+
+msgid "feast"
+msgstr ""
+
+msgid "cookie"
+msgstr ""
+
+msgid "bacon"
+msgstr ""
+
+msgid "spice"
+msgstr ""
+
+msgid "coffee"
+msgstr ""
+
+msgid "pie"
+msgstr ""
+
+#| msgid "lemon"
+#| msgid_plural "lemons"
+msgid "lemonade"
+msgstr ""
+
+msgid "chocolate"
+msgstr ""
+
+msgid "water bottle"
+msgstr ""
+
+msgid "lunch"
+msgstr ""
+
+#| msgid "Circle"
+msgid "ice"
+msgstr ""
+
+msgid "sugar"
+msgstr ""
+
+msgid "sauce"
+msgstr ""
+
+msgid "soup"
+msgstr ""
+
+msgid "juice"
+msgstr ""
+
+msgid "fries"
+msgstr ""
+
+msgid "cake"
+msgstr ""
+
+msgid "mashed potatoes"
+msgstr ""
+
+#| msgid "teal"
+msgid "tea"
+msgstr ""
+
+msgid "bun"
+msgstr ""
+
+msgid "cheese"
+msgstr ""
+
+msgid "beef"
+msgstr ""
+
+msgid "sandwich"
+msgstr ""
+
+msgid "slice"
+msgstr ""
+
+msgid "sprinkle"
+msgstr ""
+
+msgid "pizza"
+msgstr ""
+
+msgid "flour"
+msgstr ""
+
+msgid "gum"
+msgstr ""
+
+msgid "spaghetti"
+msgstr ""
+
+msgid "roast"
+msgstr ""
+
+msgid "drink"
+msgstr ""
+
+msgid "stew"
+msgstr ""
+
+msgid "spread"
+msgstr ""
+
+msgid "meat"
+msgstr ""
+
+msgid "milk"
+msgstr ""
+
+msgid "meal"
+msgstr ""
+
+msgid "corn"
+msgstr ""
+
+msgid "bread"
+msgstr ""
+
+msgid "walnut"
+msgstr ""
+
+msgid "egg"
+msgstr ""
+
+msgid "hot dog"
+msgstr ""
+
+msgid "ham"
+msgstr ""
+
+# clothes
+msgid "jewellery"
+msgstr ""
+
+msgid "sock"
+msgstr ""
+
+msgid "jacket"
+msgstr ""
+
+msgid "heel"
+msgstr ""
+
+msgid "smock"
+msgstr ""
+
+#| msgid "Sports"
+msgid "shorts"
+msgstr ""
+
+msgid "pocket"
+msgstr ""
+
+msgid "necklace"
+msgstr ""
+
+msgid "sweatshirt"
+msgstr ""
+
+msgid "uniform"
+msgstr ""
+
+msgid "raincoat"
+msgstr ""
+
+msgid "trousers"
+msgstr ""
+
+msgid "sunglasses"
+msgstr ""
+
+msgid "coat"
+msgstr ""
+
+msgid "pullover"
+msgstr ""
+
+msgid "shirt"
+msgstr ""
+
+msgid "sandals"
+msgstr ""
+
+msgid "suit"
+msgstr ""
+
+msgid "pyjamas"
+msgstr ""
+
+msgid "skirt"
+msgstr ""
+
+msgid "zip"
+msgstr ""
+
+msgid "shoes"
+msgstr ""
+
+msgid "jewel"
+msgstr ""
+
+#| msgid "times"
+msgid "tie"
+msgstr ""
+
+msgid "slippers"
+msgstr ""
+
+msgid "gloves"
+msgstr ""
+
+msgid "hat"
+msgstr ""
+
+msgid "sleeve"
+msgstr ""
+
+msgid "cap"
+msgstr ""
+
+msgid "swimming suit"
+msgstr ""
+
+msgid "trainer"
+msgstr ""
+
+msgid "vest"
+msgstr ""
+
+msgid "glasses"
+msgstr ""
+
+msgid "shoelace"
+msgstr ""
+
+msgid "patch"
+msgstr ""
+
+msgid "scarf"
+msgstr ""
+
+msgid "shoe"
+msgstr ""
+
+msgid "button"
+msgstr ""
+
+msgid "dress"
+msgstr ""
+
+msgid "sash"
+msgstr ""
+
+msgid "shoe sole"
+msgstr ""
+
+msgid "robe"
+msgstr ""
+
+msgid "pants"
+msgstr ""
+
+msgid "kimono"
+msgstr ""
+
+msgid "overalls"
+msgstr ""
+
+# actions
+msgid "lick"
+msgstr ""
+
+msgid "slam"
+msgstr ""
+
+msgid "beg"
+msgstr ""
+
+msgid "fell"
+msgstr ""
+
+msgid "scratch"
+msgstr ""
+
+msgid "touch"
+msgstr ""
+
+msgid "sniff"
+msgstr ""
+
+msgid "see"
+msgstr ""
+
+msgid "climb"
+msgstr ""
+
+#| msgid "indigo"
+msgid "dig"
+msgstr ""
+
+msgid "howl"
+msgstr ""
+
+msgid "sleep"
+msgstr ""
+
+msgid "explore"
+msgstr ""
+
+msgid "draw"
+msgstr ""
+
+msgid "hug"
+msgstr ""
+
+msgid "teach"
+msgstr ""
+
+msgid "nap"
+msgstr ""
+
+msgid "clay"
+msgstr ""
+
+msgid "catch"
+msgstr ""
+
+msgid "clap"
+msgstr ""
+
+#| msgid "carry"
+msgid "cry"
+msgstr ""
+
+msgid "sing"
+msgstr ""
+
+msgid "meet"
+msgstr ""
+
+msgid "sell"
+msgstr ""
+
+msgid "peck"
+msgstr ""
+
+msgid "beat"
+msgstr ""
+
+msgid "kneel"
+msgstr ""
+
+msgid "find"
+msgstr ""
+
+#| msgid "Cancel"
+msgid "dance"
+msgstr ""
+
+msgid "cough"
+msgstr ""
+
+msgid "cut"
+msgstr ""
+
+msgid "think"
+msgstr ""
+
+msgid "bark"
+msgstr ""
+
+msgid "speak"
+msgstr ""
+
+msgid "cheer"
+msgstr ""
+
+msgid "bake"
+msgstr ""
+
+#| msgid "write "
+msgid "write"
+msgstr ""
+
+msgid "punch"
+msgstr ""
+
+msgid "strum"
+msgstr ""
+
+msgid "study"
+msgstr ""
+
+msgid "plow"
+msgstr ""
+
+msgid "dream"
+msgstr ""
+
+msgid "post"
+msgstr ""
+
+msgid "dive"
+msgstr ""
+
+msgid "whisper"
+msgstr ""
+
+msgid "sob"
+msgstr ""
+
+msgid "shake"
+msgstr ""
+
+msgid "feed"
+msgstr ""
+
+msgid "crawl"
+msgstr ""
+
+msgid "camp"
+msgstr ""
+
+msgid "spill"
+msgstr ""
+
+msgid "clean"
+msgstr ""
+
+msgid "scream"
+msgstr ""
+
+msgid "tear"
+msgstr ""
+
+msgid "float"
+msgstr ""
+
+msgid "pull"
+msgstr ""
+
+#| msgid "Nature"
+msgid "ate"
+msgstr ""
+
+msgid "kiss"
+msgstr ""
+
+msgid "sit"
+msgstr ""
+
+msgid "hatch"
+msgstr ""
+
+msgid "blink"
+msgstr ""
+
+msgid "hear"
+msgstr ""
+
+msgid "smooch"
+msgstr ""
+
+msgid "play"
+msgstr ""
+
+msgid "wash"
+msgstr ""
+
+msgid "chat"
+msgstr ""
+
+msgid "drive"
+msgstr ""
+
+msgid "fly"
+msgstr ""
+
+msgid "juggle"
+msgstr ""
+
+msgid "bit"
+msgstr ""
+
+msgid "sweep"
+msgstr ""
+
+msgid "look"
+msgstr ""
+
+msgid "knit"
+msgstr ""
+
+msgid "lift"
+msgstr ""
+
+msgid "fetch"
+msgstr ""
+
+msgid "read"
+msgstr ""
+
+msgid "croak"
+msgstr ""
+
+msgid "stare"
+msgstr ""
+
+msgid "eat"
+msgstr ""
+
+# construction
+msgid "lighthouse"
+msgstr ""
+
+msgid "door"
+msgstr ""
+
+msgid "circus"
+msgstr ""
+
+msgid "church"
+msgstr ""
+
+msgid "kennel"
+msgstr ""
+
+msgid "temple"
+msgstr ""
+
+msgid "smoke"
+msgstr ""
+
+msgid "chimney"
+msgstr ""
+
+msgid "brick"
+msgstr ""
+
+msgid "well"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+msgid "castle"
+msgstr ""
+
+msgid "store"
+msgstr ""
+
+msgid "staircase"
+msgstr ""
+
+#| msgid "preschool"
+msgid "school"
+msgstr ""
+
+msgid "farm"
+msgstr ""
+
+msgid "bridge"
+msgstr ""
+
+msgid "dam"
+msgstr ""
+
+msgid "pyramid"
+msgstr ""
+
+msgid "barn"
+msgstr ""
+
+msgid "mill"
+msgstr ""
+
+msgid "window"
+msgstr ""
+
+msgid "cabin"
+msgstr ""
+
+msgid "step"
+msgstr ""
+
+msgid "shop"
+msgstr ""
+
+msgid "shed"
+msgstr ""
+
+msgid "roof"
+msgstr ""
+
+msgid "steeple"
+msgstr ""
+
+msgid "garage"
+msgstr ""
+
+msgid "mosque"
+msgstr ""
+
+msgid "hospital"
+msgstr ""
+
+msgid "tent"
+msgstr ""
+
+msgid "house"
+msgstr ""
+
+msgid "wall"
+msgstr ""
+
+msgid "bank"
+msgstr ""
+
+msgid "shutter"
+msgstr ""
+
+msgid "hut"
+msgstr ""
+
+# nature
+msgid "land"
+msgstr ""
+
+msgid "cliff"
+msgstr ""
+
+msgid "hill"
+msgstr ""
+
+msgid "canyon"
+msgstr ""
+
+msgid "rock"
+msgstr ""
+
+msgid "sea"
+msgstr ""
+
+msgid "lake"
+msgstr ""
+
+msgid "coast"
+msgstr ""
+
+msgid "shore"
+msgstr ""
+
+msgid "mountain"
+msgstr ""
+
+msgid "pond"
+msgstr ""
+
+msgid "peak"
+msgstr ""
+
+msgid "lava"
+msgstr ""
+
+msgid "cave"
+msgstr ""
+
+msgid "dune"
+msgstr ""
+
+msgid "island"
+msgstr ""
+
+msgid "forest"
+msgstr ""
+
+msgid "desert"
+msgstr ""
+
+msgid "iceberg"
+msgstr ""
+
+# jobs
+msgid "clown"
+msgstr ""
+
+msgid "engineer"
+msgstr ""
+
+msgid "priest"
+msgstr ""
+
+#| msgid "violet"
+msgid "vet"
+msgstr ""
+
+msgid "judge"
+msgstr ""
+
+msgid "chef"
+msgstr ""
+
+#| msgid "Delete"
+msgid "athlete"
+msgstr ""
+
+msgid "librarian"
+msgstr ""
+
+msgid "juggler"
+msgstr ""
+
+msgid "policeman"
+msgstr ""
+
+#| msgid "Numbers"
+msgid "plumber"
+msgstr ""
+
+msgid "badge"
+msgstr ""
+
+msgid "queen"
+msgstr ""
+
+msgid "farmer"
+msgstr ""
+
+msgid "magician"
+msgstr ""
+
+msgid "knight"
+msgstr ""
+
+msgid "doctor"
+msgstr ""
+
+#| msgid "Player"
+msgid "bricklayer"
+msgstr ""
+
+msgid "cleaner"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "teacher"
+msgstr ""
+
+msgid "hunter"
+msgstr ""
+
+msgid "soldier"
+msgstr ""
+
+msgid "musician"
+msgstr ""
+
+msgid "lawyer"
+msgstr ""
+
+msgid "fisherman"
+msgstr ""
+
+msgid "princess"
+msgstr ""
+
+#| msgid "remainder"
+msgid "fireman"
+msgstr ""
+
+msgid "nun"
+msgstr ""
+
+msgid "pirate"
+msgstr ""
+
+msgid "cowboy"
+msgstr ""
+
+msgid "electrician"
+msgstr ""
+
+msgid "nurse"
+msgstr ""
+
+msgid "king"
+msgstr ""
+
+msgid "president"
+msgstr ""
+
+msgid "office worker"
+msgstr ""
+
+msgid "carpenter"
+msgstr ""
+
+msgid "jockey"
+msgstr ""
+
+msgid "worker"
+msgstr ""
+
+msgid "mechanic"
+msgstr ""
+
+msgid "pilot"
+msgstr ""
+
+msgid "actor"
+msgstr ""
+
+msgid "cook"
+msgstr ""
+
+msgid "student"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "butcher"
+msgstr ""
+
+msgid "accountant"
+msgstr ""
+
+msgid "prince"
+msgstr ""
+
+msgid "pope"
+msgstr ""
+
+msgid "sailor"
+msgstr ""
+
+msgid "boxer"
+msgstr ""
+
+msgid "ballet dancer"
+msgstr ""
+
+msgid "coach"
+msgstr ""
+
+msgid "astronaut"
+msgstr ""
+
+#| msgid "Paint"
+msgid "painter"
+msgstr ""
+
+msgid "anaesthesiologist"
+msgstr ""
+
+msgid "scientist"
+msgstr ""
+
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "carrot"
+msgstr ""
+
+msgid "blackberries"
+msgstr ""
+
+msgid "celery"
+msgstr ""
+
+msgid "turnip"
+msgstr ""
+
+msgid "cacao"
+msgstr ""
+
+msgid "peach"
+msgstr ""
+
+#| msgid "watermelon"
+#| msgid_plural "watermelons"
+msgid "melon"
+msgstr ""
+
+#| msgid "orange [fruit]"
+#| msgid_plural "oranges"
+msgid "grapefruit"
+msgstr ""
+
+msgid "broccoli"
+msgstr ""
+
+#| msgid "Shapes"
+msgid "grapes"
+msgstr ""
+
+msgid "spinach"
+msgstr ""
+
+msgid "fig"
+msgstr ""
+
+msgid "kernel"
+msgstr ""
+
+msgid "radish"
+msgstr ""
+
+#| msgid "tomato"
+#| msgid_plural "tomatoes"
+msgid "tomato"
+msgstr ""
+
+msgid "kiwi"
+msgstr ""
+
+msgid "asparagus"
+msgstr ""
+
+#| msgid "olive"
+msgid "olives"
+msgstr ""
+
+#| msgid "Numbers"
+msgid "cucumbers"
+msgstr ""
+
+msgid "beans"
+msgstr ""
+
+#| msgid "strawberry"
+#| msgid_plural "strawberries"
+msgid "strawberry"
+msgstr ""
+
+#| msgid "pepper"
+#| msgid_plural "peppers"
+msgid "peppers"
+msgstr ""
+
+#| msgid "strawberry"
+#| msgid_plural "strawberries"
+msgid "raspberry"
+msgstr ""
+
+msgid "apricot"
+msgstr ""
+
+msgid "potatoes"
+msgstr ""
+
+msgid "peas"
+msgstr ""
+
+msgid "cabbage"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "cherries"
+msgstr ""
+
+msgid "squash"
+msgstr ""
+
+msgid "blueberries"
+msgstr ""
+
+#| msgid "pear"
+#| msgid_plural "pears"
+msgid "pear"
+msgstr ""
+
+#| msgid "orange [fruit]"
+#| msgid_plural "oranges"
+msgid "orange"
+msgstr ""
+
+msgid "pumpkin"
+msgstr ""
+
+msgid "avocado"
+msgstr ""
+
+msgid "garlic"
+msgstr ""
+
+#| msgid "onion"
+#| msgid_plural "onions"
+msgid "onion"
+msgstr ""
+
+#| msgid "red apple"
+#| msgid_plural "red apples"
+msgid "apple"
+msgstr ""
 
 msgid "lime"
 msgstr "tȟózisaŋȟča"
 
-msgid "Rainbow Keyboard"
-msgstr "Wígmuŋke Wínaȟtagye"
+msgid "cauliflower"
+msgstr ""
 
-msgid "Touch Typing Tutor"
-msgstr "Wanáȟtagyapi Uŋspéič’ičhiyapi"
+msgid "mango"
+msgstr ""
 
-msgid "Translators"
-msgstr "Wayúiyeskapi"
+msgid "lettuce"
+msgstr ""
 
-msgid "English Alphabet"
-msgstr "Wašíčuiyapi Oówaptaya"
+#| msgid "lemon"
+#| msgid_plural "lemons"
+msgid "lemon"
+msgstr ""
 
-msgid "Your Alphabet"
-msgstr "Lakȟótiyapi Oówaptaya"
+msgid "aubergine"
+msgstr ""
 
-msgid "Mixing Colours for Painting"
-msgstr "Wawíyuŋpi kta čha wílulye ičáhiyapi"
+msgid "artichokes"
+msgstr ""
 
-msgid "Mix red, yellow, blue, black and white paint"
-msgstr "Wíyuŋpi šá na zí na tȟó na ská na sápa íčhičahiya yo/ye."
+msgid "plums"
+msgstr ""
 
-msgid "Additive Colour Mixing - Light"
-msgstr "Oówa Íčhičahiyapi - Ožáŋžaŋ"
+msgid "leek"
+msgstr ""
 
-msgid "Mix red, green and blue light to get other colours"
-msgstr "Ožáŋžaŋ šá na tȟózi na tȟó íčhičahiyiŋ na ečhél oówa lečhákčhala káǧa yo/ye."
+#| msgid "banana"
+#| msgid_plural "bananas"
+msgid "bananas"
+msgstr ""
 
-msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
-msgstr "Oówa Íčhiaglaskil Égnakapi - Wíyuŋpi, Wílulye, Mnisápa Očháže "
+msgid "papaya"
+msgstr ""
 
-msgid "Mix cyan, magenta and yellow paint to get other colours"
-msgstr "Wíyuŋpi tȟósaŋȟča na šástaŋȟča na zí íčhičahiyiŋ na ečhél oówa lečhákčhala káǧa yo/ye."
+# transport
+msgid "sail"
+msgstr ""
 
-msgid "Find the colour of the circle in the middle"
-msgstr "Miméla kiŋ oówa tókheča héči abléza yo/ye."
+msgid "taxi"
+msgstr ""
 
-msgid "Adjust the amount of cyan, magenta and yellow paint"
-msgstr "Wíyuŋpi tȟósaŋȟča na šástaŋȟča na zí kiŋ óčibčib yutȟókča yo/ye."
+#| msgid "carry"
+msgid "car"
+msgstr ""
 
-msgid "Adjust the intensity of red, green and blue light"
-msgstr "Ožáŋžaŋ šá na tȟózi na tȟó kiŋ óčibčib yutȟókča yo/ye."
+msgid "bike"
+msgstr ""
 
-msgid "brush size"
-msgstr "uŋ wíyuŋpi kiŋ tíŋskokeča"
+msgid "raft"
+msgstr ""
 
-msgid "Noughts and Crosses 2"
-msgstr "Miméla na Waíčhipaweǧa 2"
+msgid "pedal"
+msgstr ""
 
-msgid "Noughts and Crosses 3"
-msgstr "Miméla na Waíčhipaweǧa 3"
+#| msgid "Rhombus"
+msgid "bus"
+msgstr ""
 
-msgid "Get as many lines of 3 as possible to win"
-msgstr "Tókhel okíhika yámni ówečhiŋhaŋ égnaka yo/ye"
+msgid "handlebar"
+msgstr ""
 
-msgid "Player"
-msgstr "Škáte kiŋ čhažé kiŋ"
+msgid "boat"
+msgstr ""
 
-msgid "Won"
-msgstr "Ohíye"
+msgid "truck"
+msgstr ""
 
-msgid "Draw"
-msgstr "Ákhilenakča iglámnapi"
+msgid "sleigh"
+msgstr ""
 
-msgid "User Name"
-msgstr "Čhažé "
+msgid "carpet"
+msgstr ""
 
-msgid "Match Animals"
-msgstr "Wamákȟaškaŋ Núŋmnuŋm Éwičhagnakapi"
+msgid "motorcycle"
+msgstr ""
 
-msgid "Match Animals - Memory Game"
-msgstr "Wamákȟaškaŋ Núŋmnuŋm Éwičhagnakapi - Wókiksuye Wóškate"
+#| msgid "Training"
+msgid "train"
+msgstr ""
 
-msgid "Match Fruits - Memory Game"
-msgstr "Waskúyeča Núŋmnuŋm Égnakapi - Wókiksuye Wóškate"
+msgid "ship"
+msgstr ""
 
-msgid "Match Vegetables - Memory Game"
-msgstr "Watȟótȟo Núŋmnuŋm Égnakapi - Wókiksuye Wóškate"
+msgid "van"
+msgstr ""
 
-msgid "Match Numbers - Memory Game"
-msgstr "Wóiyawa Núŋmnuŋm Égnakapi - Wókiksuye Wóškate"
+msgid "canoe"
+msgstr ""
 
-msgid "Find matching pairs of the same image"
-msgstr "Itówapi ákhilečhekčheča núŋmnuŋm égnaka yo/ye"
+msgid "rocket"
+msgstr ""
 
-msgid "Image Slider"
-msgstr "Itówapi Iyúslohe"
+msgid "mast"
+msgstr ""
 
-msgid "Animal Slider"
-msgstr "Wamákȟaškaŋ Iyúslohe"
+msgid "sledge"
+msgstr ""
 
-msgid "Fruit Slider"
-msgstr "Waskúyeča Iyúslohe"
+msgid "bicycle"
+msgstr ""
 
-msgid "Number Slider"
-msgstr "Wóiyawa Iyúslohe"
+#~ msgid "green apple"
+#~ msgid_plural "green apples"
+#~ msgstr[0] "tȟaspáŋ tȟó"
+#~ msgstr[1] "tȟaspáŋ tȟotȟó"
 
-msgid "Fraction Groups"
-msgstr "Wóiyawa Owákse Optáye"
+#~ msgid "Cube"
+#~ msgstr "Oblótȟuŋ Okȟáŋ"
 
-msgid "Percentages"
-msgstr "Opáwiŋǧe Etáŋhaŋ Tónakča"
+#~ msgid "Square Prism"
+#~ msgstr "Žaŋžáŋla Oblótȟuŋ"
 
-msgid "Ratios"
-msgstr "Wóiyawa Wótakuye"
+#~ msgid "Triangular Prism"
+#~ msgstr "Žaŋžáŋla Oíseyamni"
 
-msgid "Match fraction charts on the right to the ones on the left"
-msgstr "Wóiyawa owákse optáye eyá čhatkáyataŋhaŋ na išláyataŋhaŋ yaŋké kiŋ núŋmnuŋm yuéčhel égnaka yo/ye."
+#~ msgid "Square Pyramid"
+#~ msgstr "Íŋyaŋ Thipȟéstola Húte Oblótȟuŋ"
 
-msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
-msgstr "Wóiyawa owákse optáye na wóiyawa waŋžígžila išláyataŋhaŋ yaŋké kiŋ hená čhatkáyataŋhaŋ ečhékčhe égnaka yo/ye."
+#~ msgid "Triangular Pyramid"
+#~ msgstr "Íŋyaŋ Thipȟéstola Húte Oíseyamni"
 
-msgid "Match fraction charts to the fractions on the left"
-msgstr "Wóiyawa owákse optáye eyá yaŋké kiŋ čhatkáyataŋhaŋ ečhékčhe égnaka yo/ye."
+#~ msgid "Cylinder"
+#~ msgstr "Wótoza"
 
-msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
-msgstr "Wóiyawa owákse optáye, na wóiyawa waŋžígžila, na wóiyawa haŋké eyá išláyataŋhaŋ yaŋké kiŋ hená opáwiŋǧe etáŋhaŋ tónagnakča héči hená isákhibkhib ečhékčhe égnaka yo/ye."
+#~ msgid "Cone"
+#~ msgstr "Mimépȟesto"
 
-msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
-msgstr "Wóiyawa optáye kiŋ hená čhatkáyataŋhaŋ wóiyawa wótakuye kiŋ isákhibkhib ečhékčhe égnaka yo/ye. Wóiyawa wótakuye k’uŋ hená oúŋčhaǧe-haŋké sásaŋ oúŋčhaǧe-haŋké skaská uŋ iyáčhiŋpi."
+#~ msgid "Torus"
+#~ msgstr "Čhaŋgléška Okȟáŋ"
 
-msgid "Maths Matching Game"
-msgstr "Wíyawapi Uŋ Núŋmnuŋm Waégnakapi"
+#~ msgid "Guest"
+#~ msgstr "Thiléhaŋyaŋg Wahí"
 
-msgid "Addition"
-msgstr "Wayúpȟaǧapi"
+#~ msgid "Log in:"
+#~ msgstr "Čhaž’óigwa yo/ye:"
 
-msgid "Subtraction"
-msgstr "Wayúčonalapi"
+#~ msgid "Add new user:"
+#~ msgstr "Tuwá tȟéča aégnaka yo/ye:"
 
-msgid "Multiplication"
-msgstr "Wayúotapi"
+#~ msgid "confirm password:"
+#~ msgstr "phiyá owá yo/ye:"
 
-msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
-msgstr "Wóškate kiŋ lé yuwáštepi kiŋ hé él ónipȟa yačhíŋ héči, lél iwóyaglakiŋ naíŋš lawáštenaíŋš lašíčiŋ naíŋš él takúku luíyeska oyákihi (na tȟéča ȟče kiŋ khulwóyakšu oyákíhi):"
+#~ msgid "Register new user"
+#~ msgstr "Tuwá tȟéča čhažé owá yo/ye"
 
-msgid "Match numbers to their spelling"
-msgstr "Wóiyawa kiŋ čhažé isákhibkhib égnaka yo/ye"
+#~ msgid "Administrator Login:"
+#~ msgstr "Itȟáŋčhaŋ Čhaž’óigwapi"
 
-msgid "Number Spelling"
-msgstr "Wóiyawa Čhažé Owápi"
+#~ msgid "Please select a user from the list."
+#~ msgstr "Tuwé waŋží kaȟníǧa yo/ye."
 
-msgid "Find all matching animals"
-msgstr "Wamákȟaškaŋ kiŋ iyúha iyéwičhaya yo/ye."
+#~ msgid "%s deleted from database."
+#~ msgstr "%s átaya iȟpéyapi."
 
-msgid "Match animals to their shadows"
-msgstr "Wamákȟaškaŋ kiŋ iyúha naǧípi kiŋ isákhibkhib ečhékčhe éwičhagnaka yo/ye"
+#~ msgid "Failed to delete the user."
+#~ msgstr "Iȟpéya okíhi šni."
 
-msgid "Shape Maker"
-msgstr "Oúŋčhaǧe Okáǧe"
+#~ msgid "Preferences"
+#~ msgstr "Tȟokáhekhiyapi"
 
-msgid "Shape to draw: %s"
-msgstr "Ouŋčhaǧe waŋ oyáwa kte kiŋ: %s"
+#~ msgid "switch to full screen after login"
+#~ msgstr "čhaž’óigwapi óhakab naówaŋčaya tȟaŋíŋ kte"
 
-msgid "such that lengths of its bases are equal to %d and %d and height to %d"
-msgstr "héčhel húte kiŋ %d na %d íakhilehaŋhaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkeča"
+#~ msgid "allow adding new users on login screen"
+#~ msgstr "čhaž’óigwapi ektá tuwá tȟéča kiŋ aégnag-phičápi kte"
 
-msgid "such that lengths of its sides are equal to %d"
-msgstr "héčhel hepíya kiŋ %d íakhilehaŋhaŋkeča"
+#~ msgid "display languages with uncompleted translations"
+#~ msgstr "iyápi waŋží él naháŋȟči átaya wayúiyeskapi šni éyaš tȟaŋíŋ kte"
 
-msgid "such that lengths of its sides are equal to %d and %d"
-msgstr "héčhel hepíya kiŋ %d na %d íakhilehaŋhaŋkeča"
+#~ msgid "require password to log in"
+#~ msgstr "tuwá čhaž’óigwa háŋtaŋš wičhóiye-wóanaȟma okíwa kte héčha"
 
-msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
-msgstr "héčhel húte ótkuŋze kiŋ henáuŋs %d íakhilehaŋhaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkeča"
+#~ msgid "require password to access admin area"
+#~ msgstr "waíŋyaŋgkhiye kiŋ íŋš-eyá wičhóiye-wóinaȟma okíwapi kte héčha"
 
-msgid "such that length of its base is equal to %d and height to %d"
-msgstr "héčhel húte kiŋ %d íakhilehaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkeča"
+#~ msgid "Update admin's password:"
+#~ msgstr "Waíŋyaŋgkhiya waŋ wičhóiye-wóanaȟma glutȟókča čhíŋ:"
 
-msgid "such that lengths of its catheti are equal to %d and %d"
-msgstr "héčhel hepíya-glakíŋyaŋ kiŋ %d na %d íakhilehaŋhaŋkča"
+#~ msgid "previous password:"
+#~ msgstr "hékta wičhóiye-wóanaȟma kiŋ:"
 
-msgid "such that lengths of both of its catheti are equal to %d"
-msgstr "héčhel hepíya-glakíŋyaŋ kiŋ nuphíŋ %d íakhilehaŋkča"
+#~ msgid "new password:"
+#~ msgstr "wičhóiye-wóanaȟma lečhála kiŋ:"
 
-msgid "such that length of its hypotenuse is equal to %d"
-msgstr "héčhel hepíya-háŋske kiŋ %d íakhilehaŋkča"
+#~ msgid "confirm new password:"
+#~ msgstr "phiyá owá yo/ye:"
 
-msgid "such that length of one of its sides is equal to %d and height to %d"
-msgstr "héčhel hepíya kiŋ waŋží %d íakhilehaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkča"
+#~ msgid "Create admin's account:"
+#~ msgstr "waíŋyaŋgkhiya waŋží tȟoká čhaž’óigwa čhíŋ:"
 
-msgid "such that length of its radius is equal to %d"
-msgstr "héčhel miméla oglákiŋyaŋ okhíse kiŋ %d íakhilehaŋkča"
+#~ msgid "admin's user name:"
+#~ msgstr "waíŋyaŋgkhiye kiŋ čhažé kiŋ:"
 
-msgid "Quadrilateral"
-msgstr "Oblótopa"
+#~ msgid "admin's password:"
+#~ msgstr "waíŋyaŋgkhiye kiŋ wičhóiye-wóinaȟma tȟáwa kiŋ:"
 
-msgid "Trapezium"
-msgstr "Oblótȟuŋ Oštéka"
+#~ msgid "confirm admin's password:"
+#~ msgstr "wičhóiye-wóanaȟma kiŋ phiyá owá yo/ye:"
 
-msgid "Trapezium "
-msgstr "Oblótȟuŋ Oštéka"
+#~ msgid "Please enter user name (at least 3 characters long)"
+#~ msgstr "Čhaž´óigwa yo/ye (oówa 3 naíŋš hé isáŋmya)"
 
-msgid "Triangle"
-msgstr "Oíseyamni"
+#~ msgid "Please enter password (at least 4 characters long)"
+#~ msgstr "Wičhóiye-wóanaȟma kiŋ okíwa yo/ye (oówa 4 naíŋš hé isáŋmya)"
 
-msgid "Ouch... squished quadrilateral"
-msgstr "Híŋ...oblótopa pabláskapi"
+#~ msgid "This username doesn't exist."
+#~ msgstr "Tuwéni čhažé k’uŋ hé yukȟé šni."
 
-msgid "Right isosceles triangle"
-msgstr "Oíseyamni háŋska glakíŋyaŋ"
+#~ msgid "Passwords don't match"
+#~ msgstr "Wičhóiye-wóanaȟma k’uŋ taŋyáŋ oyáwa šni."
 
-msgid "Obtuse isosceles triangle"
-msgstr "Oíseyamni háŋska ičápa"
+#~ msgid "%s added"
+#~ msgstr "%s aégnakapi"
 
-msgid "Acute isosceles triangle"
-msgstr "Oíseyamni háŋska ziŋtkápȟa"
+#~ msgid "This user name already exists, please choose a different one"
+#~ msgstr "Eháŋni tuwá héčhel čhaš’íč’itȟuŋ. Čhažé tȟókča waŋží kaȟníǧa yo/ye"
 
-msgid "Ouch... squished triangle"
-msgstr "Híŋ...oíseyamni pabláskapi"
+#~ msgid "Admin's password has been updated"
+#~ msgstr "Wičhóiye-wóanaȟma kiŋ yaglútȟokeča"
 
-msgid "Triangle? Well, not really..."
-msgstr "Oíseyamni he? Híya, héčha šni..."
+#~ msgid "ERROR: This operation is not allowed at this point"
+#~ msgstr "WÓGLUŠNA: Hé ečhúŋ-phičá šni"
 
-msgid "Test yourself"
-msgstr "Iíglutȟa yo/ye"
+#~ msgid "Please enter previous password (at least 4 characters long)"
+#~ msgstr "Hékta wičhóiye-wóanaȟma kiŋ okíwa yo/ye (oówa 4+)"
 
-msgid "Clock"
-msgstr "Mázaškaŋškaŋ"
+#~ msgid "Please enter new password (at least 4 characters long)"
+#~ msgstr "Wičhóiye-wóanaȟma tȟéča kiŋ owá yo/ye (oówa 4+)"
 
-msgid "learn to read the time"
-msgstr "Mázaškaŋškaŋ yawápi uŋspéič’ičhiya yo/ye"
+#~ msgid "Previous password doesn't seem to be in the database"
+#~ msgstr "Hékta wičhóiye-wóinaȟma k’uŋ hé iyéuŋkiyapi šni"
 
-msgid "learn to set the clock"
-msgstr "Mázaškaŋškaŋ kiŋ yuéčhel églepi uŋspéič’ičhiya yo/ye"
+#~ msgid "Registered:"
+#~ msgstr "Tȟoká čhaž’óigwa uŋ héhaŋ:"
 
-msgid "Set the clock to:"
-msgstr "Mázaškaŋškaŋ kiŋ léčheȟčiŋ égle yo/ye: "
+#~ msgid "Last login:"
+#~ msgstr "Hékta čhaž’óigwa uŋ héhaŋ:"
 
-msgid "Drag the clock hands to set the time"
-msgstr "Mázaškaŋškaŋ kiŋ yuéčhel égle kta uŋ istó kiŋ yuslóhaŋ áya yo/ye"
+#~ msgid "(Log out)"
+#~ msgstr "(Iyáya yo/ye)"
 
-msgid "What time is it?"
-msgstr "Mázaškaŋškaŋ tóna he?"
+#~ msgid "Addition Table"
+#~ msgstr "Wayúpȟaǧapi Akáŋwowapi"
 
-msgid "Click again to exit"
-msgstr "Akhé apákpi na khinápȟa yo/ye"
+#~ msgid "Hello"
+#~ msgstr "Háu"
 
-msgid "Type your answer and hit enter"
-msgstr "Wóayupte okíwa na heháŋl \"enter\" naȟtágya yo/ye"
+#~ msgid "Welcome back in the game."
+#~ msgstr "Taŋyáŋ yaglí."
 
-msgid "Time"
-msgstr "Mázaškaŋškaŋ"
+#~ msgid "Translations"
+#~ msgstr "Yuíyeskapi"
 
-msgid "Turn the clock hands and see what happens."
-msgstr "Istó kiŋ yuhómni na táku tókȟa kiŋ abléza yo/ye."
+#~ msgid "Info & Settings"
+#~ msgstr "Wónaȟ’uŋ na Wayútȟokčapi"
 
-msgid "Let's see what shapes you can draw"
-msgstr "Oúŋčhaǧe takúku itówapi uŋníspe he?"
+#~ msgid "Keyboard & Mouse"
+#~ msgstr "Wínaȟtagye na Itȟúŋkala"
 
-msgid "Time in text version only"
-msgstr "Oápȟe kiŋ wičhóiye ečéla uŋ pazó wo/we"
+#~ msgid "Learn New Words"
+#~ msgstr "Wičhóiye Lečhála Uŋspéič’ičhiyapi"
 
-msgid "How clock works?"
-msgstr "Mázaškaŋškaŋ kiŋ lé tóškhe yutȟókča-phiča he?"
+#~ msgid "Basic Operations - Exercises"
+#~ msgstr "Wíyawapi Ikčéka - Iíglutȟapi"
 
-msgid "Columnar addition"
-msgstr "Wóiyawa akáŋkaŋl wayúpȟaǧapi"
+#~ msgid "Sorting and Comparing"
+#~ msgstr "Ptáptaya Waégnakapi na Waíčhiwaŋyaŋkapi"
 
-msgid "Columnar subtraction"
-msgstr "Wóiyawa akáŋkaŋl wayúčonalapi"
+#~ msgid "Geometry and Shape Recognition"
+#~ msgstr "Oíse Wóuŋspe na Oúŋčhaǧe Iyékiyapi"
 
-msgid "Long multiplication"
-msgstr "Wayúotapi háŋska"
+#~ msgid "Art and Colour"
+#~ msgstr "Wičhítowapi na Oówa"
 
-msgid "Long division"
-msgstr "Khiwáyušpapi háŋska"
+#~ msgid "Memory"
+#~ msgstr "Wókiksuye"
 
-msgid "borrow 10"
-msgstr "10 olóta"
+#~ msgid "Multiplayer Games"
+#~ msgstr "Tuwé Óta Wóškate"
 
-msgid "carry"
-msgstr "tȟokšú"
+#~ msgid "About."
+#~ msgstr "Ečhíyataŋhaŋ."
 
-msgid "Start >>"
-msgstr "Oíyaye >>"
+#~ msgid "Game info..."
+#~ msgstr "Wóškate wóopȟe kiŋ..."
 
-msgid "Next example >>"
-msgstr "Wóiwaŋyaŋke íyokhihe >>"
+#~ msgid "Hit the Mole"
+#~ msgstr "Wahíŋheya kiŋ Apȟá yo/ye"
 
-msgid "Next step >>"
-msgstr "Oéčhuŋ íyokhihe >>"
+#~ msgid "Learn Letters with Flashcards"
+#~ msgstr "Itówapi uŋ Oówa Uŋspéič’ičhiyapi"
 
-msgid "write "
-msgstr "owá "
+#~ msgid "Learn to Write"
+#~ msgstr "Wówapi Uŋspéič’ičhiyapi"
 
-msgid "Demonstration"
-msgstr "Wópazo"
+#~ msgid "Complete the ABC"
+#~ msgstr "Oówaptaya kiŋ Yuštáŋ yo/ye"
 
-msgid "Do it yourself"
-msgstr "Niyéčhiŋka ečhúŋ wo/we"
+#~ msgid "Your language"
+#~ msgstr "Lakȟótiyapi"
 
-msgid "Ratio"
-msgstr "Wóiyawa Wótakuye"
+#~ msgid "Sorting Letters"
+#~ msgstr "Oówa Ečhékčhe Égnakapi"
 
-msgid "Working with large numbers"
-msgstr "Wóiyawa tȟaŋkíŋkiŋyaŋ yuhá škáŋpi"
+#~ msgid "Lowercase Letters"
+#~ msgstr "Oówa Čik’čík’ala"
 
-msgid "rewrite "
-msgstr "phiyá owá "
+#~ msgid "Uppercase Letters"
+#~ msgstr "Oówa Tȟaŋkíŋkiŋyaŋ"
 
-msgid "remainder"
-msgstr "tóna ihé"
+#~ msgid "Word Builder"
+#~ msgstr "Wičhóiye Káǧapi"
 
-msgid "result"
-msgstr "wóayupte"
+#~ msgid "Word Maze"
+#~ msgstr "Wičhóiye Onúni"
 
-msgid "Time Matching"
-msgstr "Mázaškaŋškaŋ Istó Ečhékčhel Églepi"
+#~ msgid "Collect all letters in the right order"
+#~ msgstr "Oówa kiŋ ówečhiŋhaŋ ičú wo/we"
 
-msgid "Add some red"
-msgstr "Šá húŋȟ okáštaŋ yo/ye"
+#~ msgid "Word Maze + 4"
+#~ msgstr "Wičhóiye Onúni +4"
 
-msgid "Add some green"
-msgstr "Tȟózi húŋȟ okáštaŋ yo/ye"
+#~ msgid "Learn to Count"
+#~ msgstr "Wíyawapi Uŋspéič’ičhiyapi"
 
-msgid "Add some blue"
-msgstr "Tȟó húŋȟ okáštaŋ yo/ye"
+#~ msgid "Basic Addition"
+#~ msgstr "Wayúpȟaǧapi Ikčéka"
 
-msgid "Add some cyan"
-msgstr "Tȟósaŋȟča húŋȟ okáštaŋ yo/ye"
+#~ msgid "Basic Subtraction"
+#~ msgstr "Wayúčonalapi Ikčéka"
 
-msgid "Add some magenta"
-msgstr "Šástaŋȟča húŋȟ okáštaŋ yo/ye"
+#~ msgid "Plus or Minus"
+#~ msgstr "Wayúpȟaǧapi naíŋš Wayúčonalapi"
 
-msgid "Add some yellow"
-msgstr "Zí húŋȟ okáštaŋ yo/ye"
+#~ msgid "Multiplication Table"
+#~ msgstr "Wayúotapi"
 
-msgid "Too much red"
-msgstr "Eháš šá óta oyákaštaŋ"
+#~ msgid "Find the product"
+#~ msgstr "Wóayupte kiŋ iyéya yo/ye"
 
-msgid "Too much green"
-msgstr "Eháš tȟózi óta oyákaštaŋ"
+#~ msgid "Find the multiplier"
+#~ msgstr "Wóiyawa tókȟaȟ’aŋ kiŋ iyéya yo/ye"
 
-msgid "Too much blue"
-msgstr "Eháš tȟó óta oyákaštaŋ"
+#~ msgid "Division"
+#~ msgstr "Khiwáyušpapi"
 
-msgid "Too much cyan"
-msgstr "Eháš tȟósaŋȟča óta oyákaštaŋ"
+#~ msgid "Sorting Numbers"
+#~ msgstr "Wóiyawa Ečhékčhe Égnakapi"
 
-msgid "Too much magenta"
-msgstr "Eháš šástaŋȟča óta oyákaštaŋ"
+#~ msgid "Number Comparison"
+#~ msgstr "Wóiyawa Íčhiwaŋyaŋkapi"
 
-msgid "Too much yellow"
-msgstr "Eháš zí óta oyákaštaŋ"
+#~ msgid "Addition & Subtraction"
+#~ msgstr "Wayúpȟaǧapi naíŋš Wayúčonalapi"
 
-msgid "red is spot on"
-msgstr "Šá kiŋ eyáš heháŋyaŋ"
+#~ msgid "Comparison"
+#~ msgstr "Waíčhiwaŋyáŋkapi"
 
-msgid "green is spot on"
-msgstr "Tȟózi kiŋ eyáš heháŋyaŋ"
+#~ msgid "Fractions"
+#~ msgstr "Wóiyawa Owákse"
 
-msgid "blue is spot on"
-msgstr "Tȟó kiŋ eyáš heháŋyaŋ"
+#~ msgid "Decimal Fractions"
+#~ msgstr "Wóiyawa Haŋké"
 
-msgid "cyan is spot on"
-msgstr "Tȟósaŋȟča kiŋ eyáš heháŋyaŋ"
+#~ msgid "Even or Odd"
+#~ msgstr "Wíotkuŋza na Wíyušna"
 
-msgid "magenta is spot on"
-msgstr "Šástaŋȟča kiŋ eyáš heháŋyaŋ"
+#~ msgid "Solids"
+#~ msgstr "Wasúta"
 
-msgid "yellow is spot on"
-msgstr "Zí kiŋ eyáš heháŋyaŋ"
+#~ msgid "Solid Geometry with Flashcards"
+#~ msgstr "Itówapi uŋ Wasúta Uŋspéič’ičhiyapi"
 
-msgid "remember me"
-msgstr "míksuya yo/ye"
+#~ msgid "help me find my shadow"
+#~ msgstr "mináǧi iyékiya ómakiya yo/ye"
 
-msgid "\"Laby, 2010 by Mehdi Cherti (mehdidc"
-msgstr "\"Laby, 2010 by Mehdi Cherti (mehdidc"
+#~ msgid "Colour Matching"
+#~ msgstr "Oówa Ečhékčhe Égnakapi"
 
-msgid "Licence"
-msgstr "Wóiyowiŋkhiye"
+#~ msgid "label the colours"
+#~ msgstr "oówa kiŋ čhažéyata yo/ye"
 
-msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-msgstr "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
+#~ msgid "Follow the Arrows"
+#~ msgstr "Wahíŋkpe kiŋ Otȟápȟa yo/ye"
 
-msgid "A collection of educational activities for kids"
-msgstr "Wakȟáŋyeža wóuŋspe wóečhuŋ omnáye waŋ"
+#~ msgid "remember the directions"
+#~ msgstr "tókhiya níŋ kte kiŋ kiksúya yo/ye"
 
-msgid "Word Builders"
-msgstr "Wičhóiye Káǧapi"
+#~ msgid "Photographic Memory"
+#~ msgstr "Yušnášniyaŋ Wakíksuyapi"
 
-msgid "Word Matchers"
-msgstr "Wičhóiye Káǧapi 2"
+#~ msgid "Automatic Levels"
+#~ msgstr "Wóali Ikčéka"
 
-msgid "Match images to words"
-msgstr " "
+#~ msgid "Mouse Maze"
+#~ msgstr "Itȟúŋkala Onúni"
 
-msgid "Animals"
-msgstr "Wamákȟaškaŋ"
+#~ msgid "Let's have some cheese"
+#~ msgstr "Asáŋpi etáŋ uŋyútapi kte"
 
-msgid "Sports"
-msgstr "Škal’ákičhiyapi"
+#~ msgid "Sheep Maze"
+#~ msgstr "Tȟáȟčašuŋkala Onúni"
 
-msgid "Body"
-msgstr "Wičhátȟaŋčhaŋ"
+#~ msgid "Find the rest of the herd"
+#~ msgstr "Uŋmá kiŋ iyéwičhaya yo/ye"
 
-msgid "People"
-msgstr "Oyáte"
+#~ msgid "Connect"
+#~ msgstr "Waíčhikȟoyagyapi"
 
-msgid "Actions"
-msgstr "Wóečhuŋ"
+#~ msgid "Balloons with threads"
+#~ msgstr "Waléǧa haȟúŋta aíkȟoyaka"
 
-msgid "Constructions"
-msgstr "Wakáǧapi"
+#~ msgid "Fifteen"
+#~ msgstr "Akézaptaŋ"
 
-msgid "Nature"
-msgstr "Uŋčí Makȟá "
+#~ msgid "With a Twist"
+#~ msgstr "Wayúhomnipi"
 
-msgid "Jobs"
-msgstr "Wówaši"
+#~ msgid "Drag the slider up or down so that the right sign is in the red square."
+#~ msgstr "Wápȟetȟokeča tukté waŋží oblótȟuŋ šá él yaŋkíŋ kta iyéčheča héči hé ektá yuslóhaŋ áya yo/ye."
 
-msgid "Clothes and Accessories"
-msgstr "Hayápi"
+#~ msgid "Take your sheep to the rest of the herd."
+#~ msgstr "Tȟáȟčašuŋkala kiŋ optáye ektá gloáya yo/ye."
 
-msgid "Fruits and Vegetables"
-msgstr "Waskúyeča na Watȟótȟo"
+#~ msgid "Check the shopping list and drag all needed items into the basket."
+#~ msgstr "Wówapi kiŋ yawá na takú yačhíŋ kte kiŋ hená wógnake ektá yuslóhaŋ áya yo/ye."
 
-msgid "Transport"
-msgstr "Watȟókšupi"
+#~ msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
+#~ msgstr "\"<, >, =\" wápȟetȟokeča kiŋ hená ayúta na tukté waŋží oblótȟuŋ šá él yaŋkíŋ kta iyéčheča héči hé ektá yuslóhaŋ áya yo/ye."
 
-msgid "Food"
-msgstr "Wóyute"
+#~ msgid "Drag one of the lesser, greater or equal to the red square."
+#~ msgstr "Wápȟetȟokeča kiŋ hená (isáŋm tȟáŋka, isáŋm čík’ala, ákhiyenakča) tukté waŋží oblótȟuŋ šá él yaŋkíŋ kta iyéčheča héči hé ektá yuslóhaŋ áya yo/ye."
 
-msgid "Complete the word"
-msgstr "Wičhóiye kiŋ yuštáŋ yo/ye"
+#~ msgid "Rearrange the numbers so they are in the right order"
+#~ msgstr "Wóiyawa eyá yuíženapi kiŋ lená yuéčhel yuówečhiŋhaŋ égnaka yo/ye."
 
-msgid "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
-msgstr "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
+#~ msgid "Complete the abc using the letters above."
+#~ msgstr "Oówa eyá waŋkál hé kiŋ hená uŋ oówaptaya kiŋ yuštáŋ yo/ye."
 
-msgid "Decimals and Fractions"
-msgstr "Wóiyawa Haŋké na Wóiyawa Owákse"
+#~ msgid "Build the following word using the letters below."
+#~ msgstr "Oówa eyá hukhúl hé kiŋ hená uŋ wičhóiye kiŋ yuštáŋ yo/ye."
 
-msgid "Decimals, fractions and percentages"
-msgstr "Wóiyawa haŋké, wóiyawa owákse, na opáwiŋǧe etáŋhaŋ tónakča"
+#~ msgid "Find and separate even numbers from odd numbers."
+#~ msgstr "Wóiyawa kiŋ hená ayúta na wíotkuŋza na wíyušna eyá ópȟa héči hená yukhínuŋkȟaŋ égnaka yo/ye."
 
-msgid "Decimals, fractions, ratios and percentages"
-msgstr "Wóiyawa haŋké, wóiyawa owákse, wóiyawa wótakuye, na opáwiŋǧe etáŋhaŋ tónakča"
+#~ msgid "Rearrange the letters so they are in the alphabetical order."
+#~ msgstr "Oówa eyá yuíženapi kiŋ lená yuéčhel égnakiŋ na ečhél wičhóiye kiŋ owá yo/ye."
 
-msgid "Shapes and Solids"
-msgstr "Oúŋčhaǧe na Wasúta"
+#~ msgid "Rearrange the numbers so they are in the ascending order."
+#~ msgstr "Wóiyawa kiŋ lená waŋkátakiya sáŋm óta áyiŋ kta čha yuówečhiŋhaŋ égnaka yo/ye."
 
-msgid "Translation Credits"
-msgstr "Wayúiyeska Wóiglamna"
+#~ msgid "Please try again."
+#~ msgstr "Akhé iyútȟa yo/ye."
 
-msgid "Level"
-msgstr "Wóali"
+#~ msgid "Sorry! It is wrong."
+#~ msgstr "Hiyá! Héčhetu šni."
 
-msgid "Find solution"
-msgstr "Wóayupte kiŋ olé yo/ye"
+#~ msgid "Perfect! Task solved!"
+#~ msgstr "Wašté! Taŋyáŋ ečhánuŋ!"
 
-msgid "Find missing number"
-msgstr "Wóiyawa waŋ tókȟaȟ’aŋ kiŋ iyéya yo/ye"
+#~ msgid "You need to work a little bit harder next time."
+#~ msgstr "Ičínuŋpa kiŋháŋ ohítiya yaškáŋ kte héčha."
 
-msgid "Achievements"
-msgstr "Wayúštaŋpi"
+#~ msgid "Game Over!"
+#~ msgstr "Héčhegla!"
 
-msgid "Select age group:"
-msgstr "Waníyetu nitóna he?:"
+#~ msgid "Congratulations! You have completed all tasks in this game."
+#~ msgstr "Yuphíya walúštaŋ...Wašté!"
 
-msgid "show activities for:"
-msgstr "wičhóȟ’aŋ kiŋ lená pazó wo/we:"
+#~ msgid "Great job!"
+#~ msgstr "Taŋyáŋ ečhánuŋ!"
 
-msgid "preschool"
-msgstr "hukhúčiyelaȟča owáyawa"
+#~ msgid "Perfect!!!"
+#~ msgstr "Yuphíyeȟčiŋ!!!"
 
-msgid "Year 1"
-msgstr "Wóali Tȟokáhe"
+#~ msgid "Awesome!"
+#~ msgstr "Áta nikhíli!"
 
-msgid "Year 2"
-msgstr "Wóali Ičínuŋpa"
+#~ msgid "Fantastic job!"
+#~ msgstr "Taŋyéȟčiŋ oyáȟ’aŋ!"
 
-msgid "Year 3"
-msgstr "Wóali Ičíyamni"
+#~ msgid "Well done!"
+#~ msgstr "Makȟáheyaye!"
 
-msgid "Year 4"
-msgstr "Wóali Ičítopa"
+#~ msgid "Perfect! Level completed!"
+#~ msgstr "Yušná-šni wóali kiŋ luštáŋ!"
 
-msgid "Year 5"
-msgstr "Wóali Ičízaptaŋ"
+#~ msgid "surface area:"
+#~ msgstr "há otíŋskoya:"
 
-msgid "Year 6"
-msgstr "Wóali Ičíšakpe"
+#~ msgid "volume:"
+#~ msgstr "wóokȟaŋ:"
 
-msgid "show all"
-msgstr "iyúha yutȟáŋiŋ yo/ye"
+#~ msgid "Perfect!"
+#~ msgstr "Yuphíyeȟčiŋ!"
 
-msgid "Do you want to exit the game?"
-msgstr "Wóškate etáŋhaŋ yakhínapȟa yačhíŋ he?"
+#~ msgid "divided by"
+#~ msgstr "uŋ khiyúšpapi"
 
-msgid "Do you want to log out of the game?"
-msgstr "Wóškate etáŋhaŋ čhažé yaglóelala yačhíŋ he?"
+#~ msgid "equals"
+#~ msgstr "ákhiyenakča"
 
-msgid "Ready to go to the next level?"
-msgstr "Wóali íyokhihe ektá níŋ kta wíŋyeya naŋká he?"
+#~ msgid "Even"
+#~ msgstr "Ótkuŋza"
 
-msgid "Language arts"
-msgstr "Iyápi wóuŋspe"
+#~ msgid "white"
+#~ msgstr "ská"
 
-msgid "Other"
-msgstr "Táku Uŋmá"
+#~ msgid "grey"
+#~ msgstr "ȟóta"
 
-msgid "Educational Activities for Kids"
-msgstr "Wakȟáŋyeža Wóuŋspe Wóečhuŋ"
+#~ msgid "red"
+#~ msgstr "šá"
 
-msgid "\"You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game"
-msgstr "\"You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game"
+#~ msgid "orange [color]"
+#~ msgstr "zíša"
 
-msgid "Decimals (Category)"
-msgstr "Decimals"
+#~ msgid "yellow"
+#~ msgstr "zí"
 
-msgid "Fractions (Category)"
-msgstr "Fractions"
+#~ msgid "green"
+#~ msgstr "tȟózi"
 
-msgid "Ratios (Category)"
-msgstr "Ratios"
+#~ msgid "sea green"
+#~ msgstr "tȟózisaŋ"
 
-msgid "Percentages (Category)"
-msgstr "Percentages"
+#~ msgid "blue"
+#~ msgstr "tȟó"
 
-msgid "Listening Exercises"
-msgstr ""
+#~ msgid "navy"
+#~ msgstr "tȟósapa"
 
-msgid "Match sounds to words"
-msgstr ""
+#~ msgid "purple"
+#~ msgstr "tȟóša"
 
-msgid "Patterns"
-msgstr ""
+#~ msgid "magenta"
+#~ msgstr "šástaŋȟča"
 
-msgid "Number Patterns"
-msgstr ""
+#~ msgid "pink"
+#~ msgstr "šásaŋ"
 
-msgid "Letter Patterns"
-msgstr ""
+#~ msgid "aqua"
+#~ msgstr "tȟósaŋȟča"
 
-msgid "Color Patterns"
-msgstr ""
+#~ msgid "Rainbow Keyboard"
+#~ msgstr "Wígmuŋke Wínaȟtagye"
 
-msgid "Image Patterns"
-msgstr ""
+#~ msgid "Touch Typing Tutor"
+#~ msgstr "Wanáȟtagyapi Uŋspéič’ičhiyapi"
 
-msgid "Fraction Patterns"
-msgstr ""
+#~ msgid "English Alphabet"
+#~ msgstr "Wašíčuiyapi Oówaptaya"
 
-msgid "Shape Patterns"
-msgstr ""
+#~ msgid "Mixing Colours for Painting"
+#~ msgstr "Wawíyuŋpi kta čha wílulye ičáhiyapi"
 
-msgid "Complete the pattern on the top line."
-msgstr ""
+#~ msgid "Mix red, yellow, blue, black and white paint"
+#~ msgstr "Wíyuŋpi šá na zí na tȟó na ská na sápa íčhičahiya yo/ye."
 
-msgid "Match shapes to their names"
-msgstr ""
+#~ msgid "Additive Colour Mixing - Light"
+#~ msgstr "Oówa Íčhičahiyapi - Ožáŋžaŋ"
 
-msgid "Negative numbers"
-msgstr ""
+#~ msgid "Mix red, green and blue light to get other colours"
+#~ msgstr "Ožáŋžaŋ šá na tȟózi na tȟó íčhičahiyiŋ na ečhél oówa lečhákčhala káǧa yo/ye."
 
-msgid "numerator"
-msgstr ""
+#~ msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
+#~ msgstr "Oówa Íčhiaglaskil Égnakapi - Wíyuŋpi, Wílulye, Mnisápa Očháže "
 
-msgid "denominator"
-msgstr ""
+#~ msgid "Mix cyan, magenta and yellow paint to get other colours"
+#~ msgstr "Wíyuŋpi tȟósaŋȟča na šástaŋȟča na zí íčhičahiyiŋ na ečhél oówa lečhákčhala káǧa yo/ye."
 
-msgid "Experiment with fractions"
-msgstr ""
+#~ msgid "Find the colour of the circle in the middle"
+#~ msgstr "Miméla kiŋ oówa tókheča héči abléza yo/ye."
 
-msgid "Experiment with decimal fractions"
-msgstr ""
+#~ msgid "Adjust the amount of cyan, magenta and yellow paint"
+#~ msgstr "Wíyuŋpi tȟósaŋȟča na šástaŋȟča na zí kiŋ óčibčib yutȟókča yo/ye."
 
-msgid "Experiment with ratios"
-msgstr ""
+#~ msgid "Adjust the intensity of red, green and blue light"
+#~ msgstr "Ožáŋžaŋ šá na tȟózi na tȟó kiŋ óčibčib yutȟókča yo/ye."
 
-msgid "Experiment with percentages"
-msgstr ""
+#~ msgid "brush size"
+#~ msgstr "uŋ wíyuŋpi kiŋ tíŋskokeča"
 
-msgid "What fraction is it?"
-msgstr ""
+#~ msgid "Noughts and Crosses 2"
+#~ msgstr "Miméla na Waíčhipaweǧa 2"
 
-msgid "What decimal fraction is it?"
-msgstr ""
+#~ msgid "Noughts and Crosses 3"
+#~ msgstr "Miméla na Waíčhipaweǧa 3"
 
-msgid "Add fractions with the same denominator"
-msgstr ""
+#~ msgid "Get as many lines of 3 as possible to win"
+#~ msgstr "Tókhel okíhika yámni ówečhiŋhaŋ égnaka yo/ye"
 
-msgid "Subtract fractions with the same denominator"
-msgstr ""
+#~ msgid "Draw"
+#~ msgstr "Ákhilenakča iglámnapi"
 
-msgid "Multiply fractions"
-msgstr ""
+#~ msgid "User Name"
+#~ msgstr "Čhažé "
 
-msgid "Divide fractions"
-msgstr ""
+#~ msgid "Match Animals"
+#~ msgstr "Wamákȟaškaŋ Núŋmnuŋm Éwičhagnakapi"
 
-msgid "Exercise 1"
-msgstr ""
+#~ msgid "Match Animals - Memory Game"
+#~ msgstr "Wamákȟaškaŋ Núŋmnuŋm Éwičhagnakapi - Wókiksuye Wóškate"
 
-msgid "Exercise 2"
-msgstr ""
+#~ msgid "Match Fruits - Memory Game"
+#~ msgstr "Waskúyeča Núŋmnuŋm Égnakapi - Wókiksuye Wóškate"
 
-msgid "Exercise 3"
-msgstr ""
+#~ msgid "Match Vegetables - Memory Game"
+#~ msgstr "Watȟótȟo Núŋmnuŋm Égnakapi - Wókiksuye Wóškate"
 
-msgid "Compare decimals and fractions"
-msgstr ""
+#~ msgid "Match Numbers - Memory Game"
+#~ msgstr "Wóiyawa Núŋmnuŋm Égnakapi - Wókiksuye Wóškate"
 
-msgid "Compare fractions"
-msgstr ""
+#~ msgid "Find matching pairs of the same image"
+#~ msgstr "Itówapi ákhilečhekčheča núŋmnuŋm égnaka yo/ye"
 
-msgid "Reduce fractions"
-msgstr ""
+#~ msgid "Image Slider"
+#~ msgstr "Itówapi Iyúslohe"
 
-msgid "Extend fractions"
-msgstr ""
+#~ msgid "Animal Slider"
+#~ msgstr "Wamákȟaškaŋ Iyúslohe"
 
-msgid "To reduce a fraction divide the numerator and the denominator by one of their common factors which are displayed between the two fractions. Select one of them to see what happens. If 1 is the only common factor then the fraction can't be reduced any more - try choosing a different one."
-msgstr ""
+#~ msgid "Fruit Slider"
+#~ msgstr "Waskúyeča Iyúslohe"
 
-msgid "To extend a fraction multiply the numerator and the denominator by the same number. Change the multiplicand to see what happens."
-msgstr ""
+#~ msgid "Number Slider"
+#~ msgstr "Wóiyawa Iyúslohe"
 
-msgid "Use the arrows to change your answer or just type it in."
-msgstr ""
+#~ msgid "Fraction Groups"
+#~ msgstr "Wóiyawa Owákse Optáye"
 
-msgid "Use the arrows to change your answer."
-msgstr ""
+#~ msgid "Percentages"
+#~ msgstr "Opáwiŋǧe Etáŋhaŋ Tónakča"
 
-msgid "To add two fractions with the same denominators add their numerators together and keep the denominator unchanged. Simplify the result if the numerator is greater than the denominator and reduce the fraction if possible."
-msgstr ""
+#~ msgid "Ratios"
+#~ msgstr "Wóiyawa Wótakuye"
 
-msgid "To subtract one fraction from another one with the same denominator subtract numerators and keep the denominator unchanged. Reduce the resulting fraction if possible."
-msgstr ""
+#~ msgid "Match fraction charts on the right to the ones on the left"
+#~ msgstr "Wóiyawa owákse optáye eyá čhatkáyataŋhaŋ na išláyataŋhaŋ yaŋké kiŋ núŋmnuŋm yuéčhel égnaka yo/ye."
 
-msgid "To multiply two fractions multiply the numerators together and then multiply the denominators together. Reduce the resulting fraction if possible."
-msgstr ""
+#~ msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
+#~ msgstr "Wóiyawa owákse optáye na wóiyawa waŋžígžila išláyataŋhaŋ yaŋké kiŋ hená čhatkáyataŋhaŋ ečhékčhe égnaka yo/ye."
 
-msgid "To divide a fraction by another fraction multiply the first fraction by the second fraction flipped up side down. Simplify and reduce the resulting fraction if possible."
-msgstr ""
+#~ msgid "Match fraction charts to the fractions on the left"
+#~ msgstr "Wóiyawa owákse optáye eyá yaŋké kiŋ čhatkáyataŋhaŋ ečhékčhe égnaka yo/ye."
 
-msgid "Group fractions together"
-msgstr ""
+#~ msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
+#~ msgstr "Wóiyawa owákse optáye, na wóiyawa waŋžígžila, na wóiyawa haŋké eyá išláyataŋhaŋ yaŋké kiŋ hená opáwiŋǧe etáŋhaŋ tónagnakča héči hená isákhibkhib ečhékčhe égnaka yo/ye."
 
-msgid "Group percentages together"
-msgstr ""
+#~ msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
+#~ msgstr "Wóiyawa optáye kiŋ hená čhatkáyataŋhaŋ wóiyawa wótakuye kiŋ isákhibkhib ečhékčhe égnaka yo/ye. Wóiyawa wótakuye k’uŋ hená oúŋčhaǧe-haŋké sásaŋ oúŋčhaǧe-haŋké skaská uŋ iyáčhiŋpi."
 
-msgid "Group ratios together"
-msgstr ""
+#~ msgid "Maths Matching Game"
+#~ msgstr "Wíyawapi Uŋ Núŋmnuŋm Waégnakapi"
 
-msgid "eduActiv8 update is available. Current version: %s. New version: %s."
-msgstr ""
+#~ msgid "Multiplication"
+#~ msgstr "Wayúotapi"
 
-msgid "check for updates on start"
-msgstr ""
+#~ msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
+#~ msgstr "Wóškate kiŋ lé yuwáštepi kiŋ hé él ónipȟa yačhíŋ héči, lél iwóyaglakiŋ naíŋš lawáštenaíŋš lašíčiŋ naíŋš él takúku luíyeska oyákihi (na tȟéča ȟče kiŋ khulwóyakšu oyákíhi):"
 
-msgid "Symmetry"
-msgstr ""
+#~ msgid "Match numbers to their spelling"
+#~ msgstr "Wóiyawa kiŋ čhažé isákhibkhib égnaka yo/ye"
 
-msgid "Reflection Symmetry - draw with shapes"
-msgstr ""
+#~ msgid "Find all matching animals"
+#~ msgstr "Wamákȟaškaŋ kiŋ iyúha iyéwičhaya yo/ye."
 
-msgid "Reflect shapes"
-msgstr ""
+#~ msgid "Match animals to their shadows"
+#~ msgstr "Wamákȟaškaŋ kiŋ iyúha naǧípi kiŋ isákhibkhib ečhékčhe éwičhagnaka yo/ye"
 
-msgid "Reflect a shape in a mirror line"
-msgstr ""
+#~ msgid "Shape to draw: %s"
+#~ msgstr "Ouŋčhaǧe waŋ oyáwa kte kiŋ: %s"
 
-msgid "Draw a shape that is a reflection of the one already displayed. The red line is the mirror line."
-msgstr ""
+#~ msgid "such that lengths of its bases are equal to %d and %d and height to %d"
+#~ msgstr "héčhel húte kiŋ %d na %d íakhilehaŋhaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkeča"
 
-msgid "Symmetrical shapes - missing half"
-msgstr ""
+#~ msgid "such that lengths of its sides are equal to %d"
+#~ msgstr "héčhel hepíya kiŋ %d íakhilehaŋhaŋkeča"
 
-msgid "Draw the other half of the shape"
-msgstr ""
+#~ msgid "such that lengths of its sides are equal to %d and %d"
+#~ msgstr "héčhel hepíya kiŋ %d na %d íakhilehaŋhaŋkeča"
 
-msgid "Find lines of symmetry"
-msgstr ""
+#~ msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
+#~ msgstr "héčhel húte ótkuŋze kiŋ henáuŋs %d íakhilehaŋhaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkeča"
 
-msgid "Find and select all lines of symmetry for a displayed shape. Click on the arrows around the drawing area to select them."
-msgstr ""
+#~ msgid "such that length of its base is equal to %d and height to %d"
+#~ msgstr "héčhel húte kiŋ %d íakhilehaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkeča"
 
-msgid "Match equivalent fractions"
-msgstr ""
+#~ msgid "such that lengths of its catheti are equal to %d and %d"
+#~ msgstr "héčhel hepíya-glakíŋyaŋ kiŋ %d na %d íakhilehaŋhaŋkča"
 
-msgid "Match fractions"
-msgstr ""
+#~ msgid "such that lengths of both of its catheti are equal to %d"
+#~ msgstr "héčhel hepíya-glakíŋyaŋ kiŋ nuphíŋ %d íakhilehaŋkča"
 
-msgid "Match decimals"
-msgstr ""
+#~ msgid "such that length of its hypotenuse is equal to %d"
+#~ msgstr "héčhel hepíya-háŋske kiŋ %d íakhilehaŋkča"
 
-msgid "Match percentages"
-msgstr ""
+#~ msgid "such that length of one of its sides is equal to %d and height to %d"
+#~ msgstr "héčhel hepíya kiŋ waŋží %d íakhilehaŋkča na wówaŋkatuya kiŋ %d íakhilehaŋkča"
 
-msgid "Match ratios"
-msgstr ""
+#~ msgid "such that length of its radius is equal to %d"
+#~ msgstr "héčhel miméla oglákiŋyaŋ okhíse kiŋ %d íakhilehaŋkča"
 
-msgid "Percentages in a pie chart"
-msgstr ""
+#~ msgid "Quadrilateral"
+#~ msgstr "Oblótopa"
 
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] ""
-msgstr[1] ""
+#~ msgid "Trapezium "
+#~ msgstr "Oblótȟuŋ Oštéka"
 
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] ""
-msgstr[1] ""
+#~ msgid "Triangle"
+#~ msgstr "Oíseyamni"
 
-msgid "Find equivalent fraction"
-msgstr ""
+#~ msgid "Ouch... squished quadrilateral"
+#~ msgstr "Híŋ...oblótopa pabláskapi"
 
-msgid "Calculating with Time"
-msgstr ""
+#~ msgid "Right isosceles triangle"
+#~ msgstr "Oíseyamni háŋska glakíŋyaŋ"
 
-msgid "start time"
-msgstr ""
+#~ msgid "Obtuse isosceles triangle"
+#~ msgstr "Oíseyamni háŋska ičápa"
 
-msgid "end time"
-msgstr ""
+#~ msgid "Acute isosceles triangle"
+#~ msgstr "Oíseyamni háŋska ziŋtkápȟa"
 
-msgid "elapsed time"
-msgstr ""
+#~ msgid "Ouch... squished triangle"
+#~ msgstr "Híŋ...oíseyamni pabláskapi"
 
-msgid "Temperature - introduction to negative numbers"
-msgstr ""
+#~ msgid "Triangle? Well, not really..."
+#~ msgstr "Oíseyamni he? Híya, héčha šni..."
 
-msgid "Experiment with elapsed time"
-msgstr ""
+#~ msgid "Test yourself"
+#~ msgstr "Iíglutȟa yo/ye"
 
-msgid "Experiment with elapsed time 2"
-msgstr ""
+#~ msgid "Clock"
+#~ msgstr "Mázaškaŋškaŋ"
 
-msgid "Calculate elapsed time"
-msgstr ""
+#~ msgid "learn to read the time"
+#~ msgstr "Mázaškaŋškaŋ yawápi uŋspéič’ičhiya yo/ye"
 
-msgid "Find the start or the end time"
-msgstr ""
+#~ msgid "What time is it?"
+#~ msgstr "Mázaškaŋškaŋ tóna he?"
 
-msgid "Visualized on a clock dial"
-msgstr ""
+#~ msgid "Click again to exit"
+#~ msgstr "Akhé apákpi na khinápȟa yo/ye"
 
-msgid "Visualized on a number line"
-msgstr ""
+#~ msgid "Type your answer and hit enter"
+#~ msgstr "Wóayupte okíwa na heháŋl \"enter\" naȟtágya yo/ye"
 
-msgid "Visualized on two number lines"
-msgstr ""
+#~ msgid "Turn the clock hands and see what happens."
+#~ msgstr "Istó kiŋ yuhómni na táku tókȟa kiŋ abléza yo/ye."
 
-msgid "With no visualizations"
-msgstr ""
+#~ msgid "Let's see what shapes you can draw"
+#~ msgstr "Oúŋčhaǧe takúku itówapi uŋníspe he?"
 
-msgid "with mirrored images"
-msgstr ""
+#~ msgid "Time in text version only"
+#~ msgstr "Oápȟe kiŋ wičhóiye ečéla uŋ pazó wo/we"
 
-msgid "Theme Editor"
-msgstr ""
+#~ msgid "Columnar addition"
+#~ msgstr "Wóiyawa akáŋkaŋl wayúpȟaǧapi"
 
-msgid "Make the game look your way"
-msgstr ""
+#~ msgid "Columnar subtraction"
+#~ msgstr "Wóiyawa akáŋkaŋl wayúčonalapi"
 
-msgid "Reset colors back to the default ones?"
-msgstr ""
+#~ msgid "Long multiplication"
+#~ msgstr "Wayúotapi háŋska"
 
-msgid "Font Preferences"
-msgstr ""
+#~ msgid "Long division"
+#~ msgstr "Khiwáyušpapi háŋska"
 
-msgid "with simplifying"
-msgstr ""
+#~ msgid "borrow 10"
+#~ msgstr "10 olóta"
 
-msgid "Positive numbers"
-msgstr ""
+#~ msgid "Start >>"
+#~ msgstr "Oíyaye >>"
 
-msgid "Basics"
-msgstr ""
+#~ msgid "Next example >>"
+#~ msgstr "Wóiwaŋyaŋke íyokhihe >>"
 
-msgid "Equivalent fractions"
-msgstr ""
+#~ msgid "Next step >>"
+#~ msgstr "Oéčhuŋ íyokhihe >>"
 
-msgid "Expanding and reducing fractions"
-msgstr ""
+#~ msgid "Do it yourself"
+#~ msgstr "Niyéčhiŋka ečhúŋ wo/we"
 
-msgid "Add fractions with unlike denominators"
-msgstr ""
+#~ msgid "Ratio"
+#~ msgstr "Wóiyawa Wótakuye"
 
-msgid "Subtract fractions with unlike denominators"
-msgstr ""
+#~ msgid "Working with large numbers"
+#~ msgstr "Wóiyawa tȟaŋkíŋkiŋyaŋ yuhá škáŋpi"
 
-msgid "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
-msgstr ""
+#~ msgid "rewrite "
+#~ msgstr "phiyá owá "
+
+#~ msgid "result"
+#~ msgstr "wóayupte"
+
+#~ msgid "Add some red"
+#~ msgstr "Šá húŋȟ okáštaŋ yo/ye"
+
+#~ msgid "Add some green"
+#~ msgstr "Tȟózi húŋȟ okáštaŋ yo/ye"
+
+#~ msgid "Add some blue"
+#~ msgstr "Tȟó húŋȟ okáštaŋ yo/ye"
+
+#~ msgid "Add some cyan"
+#~ msgstr "Tȟósaŋȟča húŋȟ okáštaŋ yo/ye"
+
+#~ msgid "Add some magenta"
+#~ msgstr "Šástaŋȟča húŋȟ okáštaŋ yo/ye"
+
+#~ msgid "Add some yellow"
+#~ msgstr "Zí húŋȟ okáštaŋ yo/ye"
+
+#~ msgid "Too much red"
+#~ msgstr "Eháš šá óta oyákaštaŋ"
+
+#~ msgid "Too much green"
+#~ msgstr "Eháš tȟózi óta oyákaštaŋ"
+
+#~ msgid "Too much blue"
+#~ msgstr "Eháš tȟó óta oyákaštaŋ"
+
+#~ msgid "Too much cyan"
+#~ msgstr "Eháš tȟósaŋȟča óta oyákaštaŋ"
+
+#~ msgid "Too much magenta"
+#~ msgstr "Eháš šástaŋȟča óta oyákaštaŋ"
+
+#~ msgid "Too much yellow"
+#~ msgstr "Eháš zí óta oyákaštaŋ"
+
+#~ msgid "red is spot on"
+#~ msgstr "Šá kiŋ eyáš heháŋyaŋ"
+
+#~ msgid "green is spot on"
+#~ msgstr "Tȟózi kiŋ eyáš heháŋyaŋ"
+
+#~ msgid "blue is spot on"
+#~ msgstr "Tȟó kiŋ eyáš heháŋyaŋ"
+
+#~ msgid "cyan is spot on"
+#~ msgstr "Tȟósaŋȟča kiŋ eyáš heháŋyaŋ"
+
+#~ msgid "magenta is spot on"
+#~ msgstr "Šástaŋȟča kiŋ eyáš heháŋyaŋ"
+
+#~ msgid "yellow is spot on"
+#~ msgstr "Zí kiŋ eyáš heháŋyaŋ"
+
+#~ msgid "remember me"
+#~ msgstr "míksuya yo/ye"
+
+#~ msgid "\"Laby, 2010 by Mehdi Cherti (mehdidc"
+#~ msgstr "\"Laby, 2010 by Mehdi Cherti (mehdidc"
+
+#~ msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
+
+#~ msgid "A collection of educational activities for kids"
+#~ msgstr "Wakȟáŋyeža wóuŋspe wóečhuŋ omnáye waŋ"
+
+#~ msgid "Match images to words"
+#~ msgstr " "
+
+#~ msgid "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
+#~ msgstr "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
+
+#~ msgid "Decimals and Fractions"
+#~ msgstr "Wóiyawa Haŋké na Wóiyawa Owákse"
+
+#~ msgid "Decimals, fractions and percentages"
+#~ msgstr "Wóiyawa haŋké, wóiyawa owákse, na opáwiŋǧe etáŋhaŋ tónakča"
+
+#~ msgid "Decimals, fractions, ratios and percentages"
+#~ msgstr "Wóiyawa haŋké, wóiyawa owákse, wóiyawa wótakuye, na opáwiŋǧe etáŋhaŋ tónakča"
+
+#~ msgid "Translation Credits"
+#~ msgstr "Wayúiyeska Wóiglamna"
+
+#~ msgid "Achievements"
+#~ msgstr "Wayúštaŋpi"
+
+#~ msgid "Select age group:"
+#~ msgstr "Waníyetu nitóna he?:"
+
+#~ msgid "show activities for:"
+#~ msgstr "wičhóȟ’aŋ kiŋ lená pazó wo/we:"
+
+#~ msgid "Year 1"
+#~ msgstr "Wóali Tȟokáhe"
+
+#~ msgid "Year 2"
+#~ msgstr "Wóali Ičínuŋpa"
+
+#~ msgid "Year 3"
+#~ msgstr "Wóali Ičíyamni"
+
+#~ msgid "Year 4"
+#~ msgstr "Wóali Ičítopa"
+
+#~ msgid "Year 5"
+#~ msgstr "Wóali Ičízaptaŋ"
+
+#~ msgid "Year 6"
+#~ msgstr "Wóali Ičíšakpe"
+
+#~ msgid "show all"
+#~ msgstr "iyúha yutȟáŋiŋ yo/ye"
+
+#~ msgid "Do you want to exit the game?"
+#~ msgstr "Wóškate etáŋhaŋ yakhínapȟa yačhíŋ he?"
+
+#~ msgid "Do you want to log out of the game?"
+#~ msgstr "Wóškate etáŋhaŋ čhažé yaglóelala yačhíŋ he?"
+
+#~ msgid "Ready to go to the next level?"
+#~ msgstr "Wóali íyokhihe ektá níŋ kta wíŋyeya naŋká he?"
+
+#~ msgid "Educational Activities for Kids"
+#~ msgstr "Wakȟáŋyeža Wóuŋspe Wóečhuŋ"
+
+#~ msgid "\"You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game"
+#~ msgstr "\"You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game"
+
+#~ msgid "Decimals (Category)"
+#~ msgstr "Decimals"
+
+#~ msgid "Fractions (Category)"
+#~ msgstr "Fractions"
+
+#~ msgid "Ratios (Category)"
+#~ msgstr "Ratios"
+
+#~ msgid "Percentages (Category)"
+#~ msgstr "Percentages"
