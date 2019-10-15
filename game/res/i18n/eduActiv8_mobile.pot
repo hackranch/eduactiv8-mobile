@@ -1,3 +1,22 @@
+# eduActiv8 Mobile - translation file.
+# Copyright (C) 2019 Hackranch
+# This file is distributed under the same license as eduActiv8 Mobile.
+# Derek Lackaff <lackaff@hackranch.com>, 2019.
+
+#, fuzzy
+
+msgid ""
+msgstr ""
+"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
+"POT-Creation-Date: 2019-10-15 00:00+0000\n"
+"PO-Revision-Date: 2019-10-15 00:00+0000\n"
+"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
+"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+
 msgid "English"
 msgstr ""
 
@@ -262,8 +281,7 @@ msgstr ""
 msgid "trapezium"
 msgstr ""
 
-#animals
-
+# animals
 msgid "cow"
 msgstr ""
 
@@ -350,7 +368,7 @@ msgstr ""
 
 msgid "fo"
 msgstr ""
-X
+
 msgid "leopard"
 msgstr ""
 
@@ -545,7 +563,7 @@ msgstr ""
 
 msgid "o"
 msgstr ""
-X
+
 msgid "peacock"
 msgstr ""
 
@@ -648,8 +666,7 @@ msgstr ""
 msgid "anteater"
 msgstr ""
 
-#sport
-
+# sport
 msgid "judo"
 msgstr ""
 
@@ -669,9 +686,6 @@ msgid "ice skating"
 msgstr ""
 
 msgid "walk"
-msgstr ""
-
-msgid "run"
 msgstr ""
 
 msgid "run"
@@ -740,8 +754,7 @@ msgstr ""
 msgid "rope"
 msgstr ""
 
-#body
-
+# body
 msgid "teeth"
 msgstr ""
 
@@ -856,8 +869,7 @@ msgstr ""
 msgid "belly"
 msgstr ""
 
-#people
-
+# people
 msgid "girl"
 msgstr ""
 
@@ -945,8 +957,7 @@ msgstr ""
 msgid "lady"
 msgstr ""
 
-#food
-
+# food
 msgid "candy"
 msgstr ""
 
@@ -1118,8 +1129,7 @@ msgstr ""
 msgid "ham"
 msgstr ""
 
-#clothes
-
+# clothes
 msgid "jewellery"
 msgstr ""
 
@@ -1255,8 +1265,7 @@ msgstr ""
 msgid "overalls"
 msgstr ""
 
-#actions
-
+# actions
 msgid "lick"
 msgstr ""
 
@@ -1458,9 +1467,6 @@ msgstr ""
 msgid "drive"
 msgstr ""
 
-msgid "drink"
-msgstr ""
-
 msgid "fly"
 msgstr ""
 
@@ -1497,8 +1503,7 @@ msgstr ""
 msgid "eat"
 msgstr ""
 
-#construction
-
+# construction
 msgid "lighthouse"
 msgstr ""
 
@@ -1610,8 +1615,7 @@ msgstr ""
 msgid "hut"
 msgstr ""
 
-#nature
-
+# nature
 msgid "land"
 msgstr ""
 
@@ -1669,8 +1673,7 @@ msgstr ""
 msgid "iceberg"
 msgstr ""
 
-#jobs
-
+# jobs
 msgid "clown"
 msgstr ""
 
@@ -1836,8 +1839,7 @@ msgstr ""
 msgid "scientist"
 msgstr ""
 
-#fruits and vegetables
-
+# fruits and vegetables
 msgid "carrot"
 msgstr ""
 
@@ -1982,8 +1984,7 @@ msgstr ""
 msgid "papaya"
 msgstr ""
 
-#transport
-
+# transport
 msgid "sail"
 msgstr ""
 

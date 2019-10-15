@@ -1,88 +1,235 @@
-# eduActiv8 - Educational Activity Pack - translation file.
-# Copyright (C) 2012 - 2018 Ireneusz Imiolek
-# This file is distributed under the same license as the eduactiv8 package.
-# Ireneusz Imiolek <imiolek.i@googlemail.com>, 2018.
-#
+# eduActiv8 Mobile - translation file.
+# Copyright (C) 2019 Hackranch
+# This file is distributed under the same license as eduActiv8 Mobile.
+# Derek Lackaff <lackaff@hackranch.com>, 2019.
 # Translated by: Ori Hoch <ori@uumpa.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.31.105\n"
-"Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
-"POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2018-12-12 14:37+0000\n"
-"Last-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\n"
-"Language-Team: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
+"Report-Msgid-Bugs-To: Derek Lackaff <lackaff@hackranch.com>\n"
+"POT-Creation-Date: 2019-10-15 00:00+0000\n"
+"PO-Revision-Date: 2019-10-15 16:02-0400\n"
+"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
+"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
-msgid "green apple"
-msgid_plural "green apples"
-msgstr[0] "תפוח ירוק"
-msgstr[1] "תפוחים ירוקים"
+msgid "English"
+msgstr "אנגלית"
 
-msgid "red apple"
-msgid_plural "red apples"
-msgstr[0] "תפוח אדום"
-msgstr[1] "תפוחים אדומים"
+msgid "Login"
+msgstr "כניסה"
 
-msgid "strawberry"
-msgid_plural "strawberries"
-msgstr[0] "תות"
-msgstr[1] "תותים"
+msgid "Default Language:"
+msgstr "שפה ברירת מחדל"
 
-msgid "pear"
-msgid_plural "pears"
-msgstr[0] "אגס"
-msgstr[1] "אגסים"
+msgid "User Management"
+msgstr "ניהול משתמשים"
 
-msgid "orange [fruit]"
-msgid_plural "oranges"
-msgstr[0] "תפוז"
-msgstr[1] "תפוזים"
+msgid "Copyright & Credits"
+msgstr "זכויות יוצרים וקרדיטים"
 
-msgid "onion"
-msgid_plural "onions"
-msgstr[0] "בצל"
-msgstr[1] "בצלים"
+msgid "Licence"
+msgstr "רשיון שימוש"
 
-msgid "tomato"
-msgid_plural "tomatoes"
-msgstr[0] "עגבניה"
-msgstr[1] "עגבניות"
+msgid "Language arts"
+msgstr "שפה"
 
-msgid "lemon"
-msgid_plural "lemons"
-msgstr[0] "לימון"
-msgstr[1] "לימונים"
+msgid "This username and password combination doesn't exist."
+msgstr "השילוב של שם המשתמש והסיסמה לא קיים"
 
-msgid "cherry"
-msgid_plural "cherries"
-msgstr[0] "דובדבן"
-msgstr[1] "דובדבנים"
+#| msgid "user name:"
+msgid "user name: "
+msgstr ""
 
-msgid "pepper"
-msgid_plural "peppers"
-msgstr[0] "פלפל"
-msgstr[1] "פלפלים"
+#| msgid "password:"
+msgid "password: "
+msgstr ""
 
-msgid "carrot"
-msgid_plural "carrots"
-msgstr[0] "גזר"
-msgstr[1] "גזרים"
+msgid "eduActiv8 Test Version"
+msgstr ""
 
-msgid "banana"
-msgid_plural "bananas"
-msgstr[0] "בננה"
-msgstr[1] "בננות"
+msgid "Save"
+msgstr "שמירה"
 
-msgid "watermelon"
-msgid_plural "watermelons"
-msgstr[0] "מלון"
-msgstr[1] "מלונים"
+msgid "Delete user"
+msgstr "מחיקת משתמש"
+
+msgid "Preferences saved..."
+msgstr "ההגדרות נשמרו"
+
+msgid "Logged in as: "
+msgstr "מחובר כ"
+
+msgid "Language"
+msgstr "שפה"
+
+msgid "Mathematics"
+msgstr "מתימטיקה"
+
+msgid "Games & Mazes"
+msgstr "משחקים ומבוכים"
+
+msgid "Word Builders"
+msgstr "בונה מילה"
+
+msgid "Animals"
+msgstr "בעלי חיים"
+
+msgid "Complete the word"
+msgstr "השלימו את המילה"
+
+msgid "Positive numbers"
+msgstr ""
+
+msgid "Number Spelling"
+msgstr "איות מספר"
+
+msgid "Shopping List"
+msgstr "רשימת קניות"
+
+msgid "Addition"
+msgstr "תוספת"
+
+msgid "Find missing number"
+msgstr "מיצאו את המספר החסר"
+
+msgid "Level"
+msgstr "שלב"
+
+msgid "Translators"
+msgstr "מתרגמים"
+
+msgid "Funding: "
+msgstr ""
+
+msgid "Score: "
+msgstr "ניקוד "
+
+msgid "Numbers & Basic Operations"
+msgstr "מספרים ופעולות בסיסיות"
+
+msgid "Numbers"
+msgstr "מספרים"
+
+msgid "Basic Operations"
+msgstr "פעולות בסיסיות"
+
+msgid "area:"
+msgstr "שטח"
+
+msgid "perimeter:"
+msgstr "היקף"
+
+msgid "circumference:"
+msgstr "היקף"
+
+msgid "Trapezium"
+msgstr "טרפז"
+
+msgid "Drag the clock hands to set the time"
+msgstr "גרור את מחוגי שעון כדי להגדיר את הזמן"
+
+msgid "Discover Letters"
+msgstr "גלו אותיות"
+
+msgid "Word Matchers"
+msgstr "התאמת תמונות למילים"
+
+msgid "Shapes and Solids"
+msgstr "צורות"
+
+msgid "Symmetry"
+msgstr ""
+
+msgid "Patterns"
+msgstr ""
+
+msgid "Time"
+msgstr "זמן"
+
+msgid "Basics"
+msgstr ""
+
+msgid "Subtraction"
+msgstr "חסור"
+
+msgid "Learn Numbers with Flashcards"
+msgstr "לימדו מספרים עם כרטיסיות"
+
+msgid "Demonstration"
+msgstr "תצוגת תכלית"
+
+#| msgid "Find solution"
+msgid "Find Solution"
+msgstr ""
+
+msgid "Image Patterns"
+msgstr ""
+
+msgid "Learn Shapes with Flashcards"
+msgstr "למד צורות עם כרטיסיות"
+
+msgid "Shape Matching"
+msgstr "צורת התאמה"
+
+msgid "Shape Maker"
+msgstr "להכנת צורה"
+
+msgid "How clock works?"
+msgstr "איך שעון עובד"
+
+msgid "learn to set the clock"
+msgstr "ללמוד לכוון את השעון"
+
+msgid "Set the clock to:"
+msgstr "הגדר את השעון כדי"
+
+msgid "Time Matching"
+msgstr "התאמת זמן"
+
+msgid "Your Alphabet"
+msgstr "אלפבית עברי"
+
+msgid "Trace Letters and Numbers"
+msgstr "כתיבת אותיות ומספרים"
+
+msgid "People"
+msgstr "אנשים"
+
+msgid "Jobs"
+msgstr "משרות"
+
+msgid "Body"
+msgstr "גוף"
+
+msgid "Clothes and Accessories"
+msgstr "בגדים ואבזרים"
+
+msgid "Sports"
+msgstr "ספורט"
+
+msgid "Actions"
+msgstr "פעולות"
+
+msgid "Nature"
+msgstr "טבע"
+
+msgid "Fruits and Vegetables"
+msgstr "פירות וירקות"
+
+msgid "Food"
+msgstr "מזון"
+
+msgid "Transport"
+msgstr "תחבורה"
+
+msgid "Constructions"
+msgstr "קונסטרוקציות"
 
 msgid "Equilateral Triangle"
 msgstr "משולש שווה צלעות"
@@ -123,1400 +270,2702 @@ msgstr "פנטגון"
 msgid "Hexagon"
 msgstr "משושה"
 
-msgid "Heptagon"
-msgstr ""
-
-msgid "Octagon"
-msgstr ""
-
 msgid "Circle"
 msgstr "עיגול"
 
 msgid "Ellipse"
 msgstr "אליפסה"
 
-msgid "Cube"
-msgstr "קוביה"
+msgid "Heptagon"
+msgstr ""
 
-msgid "Square Prism"
-msgstr "מנסרה מרובעת"
+msgid "Octagon"
+msgstr ""
 
-msgid "Triangular Prism"
-msgstr "מנסרה משולשת"
+#| msgid "Trapezium"
+msgid "trapezium"
+msgstr ""
 
-msgid "Square Pyramid"
-msgstr "מנסרה פירמידה"
+# animals
+msgid "cow"
+msgstr ""
 
-msgid "Triangular Pyramid"
-msgstr "פירמידה משולשת"
+msgid "turkey"
+msgstr ""
 
-msgid "Sphere"
-msgstr "ספירה"
+msgid "shrimp"
+msgstr ""
 
-msgid "Cylinder"
-msgstr "צילינדר"
+msgid "wolf"
+msgstr ""
 
-msgid "Cone"
-msgstr "קונוס"
+#| msgid "Other"
+msgid "panther"
+msgstr ""
 
-msgid "Torus"
-msgstr "טורוס"
+msgid "panda"
+msgstr ""
 
-msgid "Default Language:"
-msgstr "שפה ברירת מחדל"
+msgid "magpie"
+msgstr ""
 
-msgid "Guest"
-msgstr "אורח"
+msgid "clam"
+msgstr ""
 
-msgid "Log in:"
-msgstr "כניסה"
+msgid "pony"
+msgstr ""
 
-msgid "user name:"
-msgstr "שם משתמש"
+msgid "mouse"
+msgstr ""
 
-msgid "password:"
-msgstr "סיסמה"
+msgid "pug"
+msgstr ""
 
-msgid "Login"
-msgstr "כניסה"
+msgid "koala"
+msgstr ""
 
-msgid "Add new user:"
-msgstr "הוספת משתמש חדש"
+msgid "frog"
+msgstr ""
 
-msgid "confirm password:"
-msgstr "אישור סיסמה"
+msgid "ladybug"
+msgstr ""
 
-msgid "Register new user"
-msgstr "רישום משתמש חדש"
+msgid "gorilla"
+msgstr ""
 
-msgid "Administrator Login:"
-msgstr "כניסת מנהלים"
+msgid "llama"
+msgstr ""
 
-msgid "User Management"
-msgstr "ניהול משתמשים"
+#| msgid "Nature"
+msgid "vulture"
+msgstr ""
 
-msgid "Please select a user from the list."
-msgstr "בחרו משתמש מהרשימה"
+msgid "hamster"
+msgstr ""
 
-msgid "Delete user"
-msgstr "מחיקת משתמש"
+msgid "bird"
+msgstr ""
 
-msgid "Delete"
-msgstr "מחיקה"
+msgid "starfish"
+msgstr ""
 
-msgid "Cancel"
-msgstr "ביטול"
+msgid "crow"
+msgstr ""
 
-#, python-format
-msgid "%s deleted from database."
-msgstr "%s נמחקו ממסד הנתונים"
+msgid "parakeet"
+msgstr ""
 
-msgid "Failed to delete the user."
-msgstr "מחיקת משתמשים נכשלה"
+msgid "caterpillar"
+msgstr ""
 
-msgid "Preferences"
-msgstr "הגדרות"
+msgid "tiger"
+msgstr ""
 
-msgid "switch to full screen after login"
-msgstr "מעבר למסך מלא לאחר כניסה"
+msgid "hummingbird"
+msgstr ""
 
-msgid "allow adding new users on login screen"
-msgstr "איפשור הוספת משתמשים חדש במסך הכניסה"
+msgid "piranha"
+msgstr ""
 
-msgid "display languages with uncompleted translations"
-msgstr "הצגת שפות עם תרגום לא מושלם"
+msgid "pig"
+msgstr ""
 
-msgid "require password to log in"
-msgstr "דרישת סיסמה בכניסה"
+msgid "scorpion"
+msgstr ""
 
-msgid "require password to access admin area"
-msgstr "דרישת סיסמה לאיזור המנהלים"
+msgid "fo"
+msgstr ""
 
-msgid "Update admin's password:"
-msgstr "עדכון סיסמת מנהל"
+msgid "leopard"
+msgstr ""
 
-msgid "previous password:"
-msgstr "סיסמה קודמת"
+msgid "iguana"
+msgstr ""
 
-msgid "new password:"
-msgstr "סיסמה חדשה"
+msgid "dolphin"
+msgstr ""
 
-msgid "confirm new password:"
-msgstr "אישור סיסמה חדשה"
+msgid "bat"
+msgstr ""
 
-msgid "Create admin's account:"
-msgstr "הוספת חשבון מנהלים"
+msgid "chick"
+msgstr ""
 
-msgid "admin's user name:"
-msgstr "שם משתמש מנהל"
+msgid "crab"
+msgstr ""
 
-msgid "admin's password:"
-msgstr "סיסמת מנהל"
+msgid "hen"
+msgstr ""
 
-msgid "confirm admin's password:"
-msgstr "אישור סיסמת מנהל"
+msgid "wasp"
+msgstr ""
 
-msgid "Save"
-msgstr "שמירה"
+msgid "chameleon"
+msgstr ""
 
-msgid "Please enter user name (at least 3 characters long)"
-msgstr "הזינו שם משתמש באורך של לפחות 3 תוים"
+msgid "whale"
+msgstr ""
 
-msgid "Please enter password (at least 4 characters long)"
-msgstr "הזינו סיסמה באורך של לפחות 4 תוים"
+msgid "hedgehog"
+msgstr ""
 
-msgid "This username and password combination doesn't exist."
-msgstr "השילוב של שם המשתמש והסיסמה לא קיים"
+msgid "fawn"
+msgstr ""
 
-msgid "This username doesn't exist."
-msgstr "שם המשתמש לא קיים"
+msgid "moose"
+msgstr ""
 
-msgid "Passwords don't match"
-msgstr "הסיסמאות לא תואמות"
+msgid "bee"
+msgstr ""
 
-#, python-format
-msgid "%s added"
-msgstr "התווספו %s"
+msgid "viper"
+msgstr ""
 
-msgid "This user name already exists, please choose a different one"
-msgstr "שם המשתמש הזה קיים, בחרו שם משתמש אחר"
+msgid "shrike"
+msgstr ""
 
-msgid "Admin's password has been updated"
-msgstr "סיסמת מנהל עודכנה"
+msgid "donkey"
+msgstr ""
 
-msgid "ERROR: This operation is not allowed at this point"
-msgstr "שגיאה: פעולה זו בלתי אפשרית"
+msgid "guinea pig"
+msgstr ""
 
-msgid "Please enter previous password (at least 4 characters long)"
-msgstr "הזינו סיסמה קודמת באורך של לפחות 4 תוים"
+msgid "sloth"
+msgstr ""
 
-msgid "Please enter new password (at least 4 characters long)"
-msgstr "הזינו סיסמה חדשה באורך של לפחות 4 תוים"
+msgid "horse"
+msgstr ""
 
-msgid "Previous password doesn't seem to be in the database"
-msgstr "סיסמה קודמת לא נמצאה במסד הנתונים"
+msgid "penguin"
+msgstr ""
 
-msgid "Registered:"
-msgstr "רשומים"
+#| msgid "Letters"
+msgid "otter"
+msgstr ""
 
-msgid "Last login:"
-msgstr "כניסה אחרונה"
+msgid "bear"
+msgstr ""
 
-msgid "Preferences saved..."
-msgstr "ההגדרות נשמרו"
+msgid "zebra"
+msgstr ""
 
-msgid "Score: "
-msgstr "ניקוד "
+msgid "ostrich"
+msgstr ""
 
-msgid "Logged in as: "
-msgstr "מחובר כ"
+msgid "camel"
+msgstr ""
 
-msgid "(Log out)"
-msgstr "להתנתק"
+msgid "antelope"
+msgstr ""
 
-msgid "Addition Table"
-msgstr "טבלת חיבור"
+msgid "lemur"
+msgstr ""
 
-msgid "Hello"
-msgstr "שלום"
+msgid "pigeon"
+msgstr ""
 
-msgid "Welcome back in the game."
-msgstr "ברוכים השבים למשחק"
+msgid "lama"
+msgstr ""
 
-msgid "Language"
-msgstr "שפה"
+msgid "mole"
+msgstr ""
 
-msgid "Translations"
-msgstr "תרגומים"
+msgid "ray"
+msgstr ""
 
-msgid "Info & Settings"
-msgstr "מידע והגדרות"
+msgid "ram"
+msgstr ""
 
-msgid "Keyboard & Mouse"
-msgstr "מקלדת ועכבר"
+msgid "skunk"
+msgstr ""
 
-msgid "Discover Letters"
-msgstr "גלו אותיות"
+msgid "jellyfish"
+msgstr ""
 
-msgid "Learn New Words"
-msgstr "לימדו מילים חדשות"
+msgid "sheep"
+msgstr ""
 
-msgid "Mathematics"
-msgstr "מתימטיקה"
+msgid "shark"
+msgstr ""
 
-msgid "Numbers & Basic Operations"
-msgstr "מספרים ופעולות בסיסיות"
+msgid "kitten"
+msgstr ""
 
-msgid "Basic Operations - Exercises"
-msgstr "פעולות בסיסיות - תרגילים"
+msgid "deer"
+msgstr ""
 
-msgid "Sorting and Comparing"
-msgstr "מיון והשוואה"
+msgid "snail"
+msgstr ""
 
-msgid "Geometry and Shape Recognition"
-msgstr "גאומטריה וזיהוי צורות"
+msgid "flamingo"
+msgstr ""
 
-msgid "Art and Colour"
-msgstr "אמנות וצבע"
+msgid "rabbit"
+msgstr ""
 
-msgid "Memory"
-msgstr "זכרון"
+msgid "oyster"
+msgstr ""
 
-msgid "Games & Mazes"
-msgstr "משחקים ומבוכים"
+msgid "beaver"
+msgstr ""
 
-msgid "Multiplayer Games"
-msgstr "משחקים מרובי משתתפים"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "sparrow"
+msgstr ""
 
-msgid "About."
-msgstr "אודות"
+msgid "dove"
+msgstr ""
 
-msgid "Game info..."
-msgstr "מידע על המשחק"
+msgid "eagle"
+msgstr ""
 
-msgid "Copyright & Credits"
-msgstr "זכויות יוצרים וקרדיטים"
+msgid "beetle"
+msgstr ""
 
-msgid "Hit the Mole"
-msgstr "הכו בחפרפרת"
+msgid "hippopotamus"
+msgstr ""
 
-msgid "Letters"
-msgstr "אותיות"
+msgid "owl"
+msgstr ""
 
-msgid "Learn Letters with Flashcards"
-msgstr "לימדו אותיות עם כרטיסיות"
+msgid "cobra"
+msgstr ""
 
-msgid "Learn to Write"
-msgstr "לימדו לכתוב"
+#| msgid "remainder"
+msgid "salamander"
+msgstr ""
 
-msgid "Trace Letters and Numbers"
-msgstr "כתיבת אותיות ומספרים"
+msgid "goose"
+msgstr ""
 
-msgid "Complete the ABC"
-msgstr "השלימו את הא-ב"
+msgid "kangaroo"
+msgstr ""
 
-msgid "English"
-msgstr "אנגלית"
+msgid "dragonfly"
+msgstr ""
 
-msgid "Your language"
-msgstr "עברית"
+msgid "toad"
+msgstr ""
 
-msgid "Sorting Letters"
-msgstr "מיון אותיות"
+msgid "pelican"
+msgstr ""
 
-msgid "Lowercase Letters"
-msgstr "אותיות קטנות"
+msgid "squid"
+msgstr ""
 
-msgid "Uppercase Letters"
-msgstr "אותיות רישיות"
+msgid "lion cub"
+msgstr ""
 
-msgid "Word Builder"
-msgstr "בניית מילים"
+msgid "jaguar"
+msgstr ""
 
-msgid "Word Maze"
-msgstr "מבוך מילים"
+msgid "duck"
+msgstr ""
 
-msgid "Collect all letters in the right order"
-msgstr "איספו את כל האותיות בסדר הנכון"
+msgid "lizard"
+msgstr ""
 
-msgid "Word Maze + 4"
-msgstr "מבוך אותיות פלוס ארבע"
+msgid "rhinoceros"
+msgstr ""
 
-msgid "Numbers"
-msgstr "מספרים"
+msgid "hyena"
+msgstr ""
 
-msgid "Learn Numbers with Flashcards"
-msgstr "לימדו מספרים עם כרטיסיות"
+msgid "o"
+msgstr ""
 
-msgid "Learn to Count"
-msgstr "לימדו לספור"
+msgid "peacock"
+msgstr ""
 
-msgid "Basic Addition"
-msgstr "חיבור בסיסי"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "parrot"
+msgstr ""
 
-msgid "Basic Subtraction"
-msgstr "חיסור בסיסי"
+msgid "elk"
+msgstr ""
 
-msgid "Shopping List"
-msgstr "רשימת קניות"
+#| msgid "Translators"
+msgid "alligator"
+msgstr ""
 
-msgid "Plus or Minus"
-msgstr "פלוס או מינוס"
+#| msgid "Paint"
+msgid "ant"
+msgstr ""
 
-msgid "Basic Operations"
-msgstr "פעולות בסיסיות"
+msgid "goat"
+msgstr ""
 
-msgid "Multiplication Table"
-msgstr "לוח כפל"
+msgid "baby rabbit"
+msgstr ""
 
-msgid "Find the product"
-msgstr "מצא את המוצר"
+msgid "lion"
+msgstr ""
 
-msgid "Find the multiplier"
-msgstr "מצא את המכפיל"
+msgid "squirrel"
+msgstr ""
 
-msgid "Division"
-msgstr "חלוקה"
+msgid "opossum"
+msgstr ""
 
-msgid "Sorting Numbers"
-msgstr "מיון מספרים"
+msgid "chimp"
+msgstr ""
 
-msgid "Number Comparison"
-msgstr "מספר השוואה"
+msgid "doe"
+msgstr ""
 
-msgid "Addition & Subtraction"
-msgstr "בנוסף וחיסור"
+#| msgid "Sphere"
+msgid "gopher"
+msgstr ""
 
-msgid "Comparison"
-msgstr "השוואה"
+msgid "elephant"
+msgstr ""
 
-msgid "Fractions"
-msgstr "שברים"
+msgid "giraffe"
+msgstr ""
 
-msgid "Decimal Fractions"
-msgstr "שברים עשרוניים"
+msgid "spider"
+msgstr ""
 
-msgid "Even or Odd"
-msgstr "זוג או פרט"
+msgid "puppy"
+msgstr ""
 
-msgid "Shapes"
-msgstr "צורות"
+msgid "jay"
+msgstr ""
 
-msgid "Learn Shapes with Flashcards"
-msgstr "למד צורות עם כרטיסיות"
+msgid "seal"
+msgstr ""
 
-msgid "Solids"
-msgstr "מוצקים"
+msgid "rooster"
+msgstr ""
 
-msgid "Solid Geometry with Flashcards"
-msgstr "גיאומטריה מוצקה עם כרטיסיות"
+msgid "turtle"
+msgstr ""
 
-msgid "Shape Matching"
-msgstr "צורת התאמה"
+msgid "bull"
+msgstr ""
 
-msgid "help me find my shadow"
-msgstr "תעזרו לי למצוא את הצל שלי"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "cat"
+msgstr ""
 
-msgid "Paint"
-msgstr "צבע"
+msgid "rat"
+msgstr ""
 
-msgid "Colour Matching"
-msgstr "התאמת צבע"
+msgid "slug"
+msgstr ""
 
-msgid "label the colours"
-msgstr "סמנו את הצבעים"
+msgid "buffalo"
+msgstr ""
 
-msgid "Follow the Arrows"
-msgstr "עקבו אחרי החצים"
+#| msgid "black"
+msgid "blackbird"
+msgstr ""
 
-msgid "remember the directions"
-msgstr "זכרו את הכיוונים"
+msgid "swan"
+msgstr ""
 
-msgid "Photographic Memory"
-msgstr "זיכרון צילומי"
+msgid "lobster"
+msgstr ""
 
-msgid "Training"
-msgstr "הדרכה"
+msgid "dog"
+msgstr ""
 
-msgid "Automatic Levels"
-msgstr "שלבים אוטומטיים"
+msgid "mosquito"
+msgstr ""
 
-msgid "Mouse Maze"
-msgstr "עכבר במבוך"
+msgid "snake"
+msgstr ""
 
-msgid "Let's have some cheese"
-msgstr "בואו לקבל קצת גבינה"
+msgid "chicken"
+msgstr ""
 
-msgid "Sheep Maze"
-msgstr "מבוך כבשים"
+msgid "anteater"
+msgstr ""
 
-msgid "Find the rest of the herd"
-msgstr "מצאו את שאר העדר"
+# sport
+msgid "judo"
+msgstr ""
 
-msgid "Connect"
-msgstr "לחבר"
+msgid "pool"
+msgstr ""
 
-msgid "Balloons with threads"
-msgstr "בלונים וחוטים"
+msgid "ride"
+msgstr ""
 
-msgid "Fifteen"
-msgstr "חמש עשרה"
+msgid "stretch"
+msgstr ""
 
-msgid "With a Twist"
-msgstr "עם טוויסט"
+msgid "helmet"
+msgstr ""
 
-msgid "Drag the slider up or down so that the right sign is in the red square."
-msgstr "גררו את המכוון למעלה או למטב כך שהסימן הנכון יהיה בריבוע האדום"
+msgid "ice skating"
+msgstr ""
 
-msgid "Take your sheep to the rest of the herd."
-msgstr "קחו את הכבשה שלכם לעדר שלה"
+msgid "walk"
+msgstr ""
 
-msgid "Check the shopping list and drag all needed items into the basket."
-msgstr "בדקו את רשימת הקניות והתאימו את הפריטים לסל הקניות"
+msgid "run"
+msgstr ""
 
-msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
-msgstr "גררו את הסימן המתאים לריבוע האדום"
+msgid "swim"
+msgstr ""
 
-msgid "Drag one of the lesser, greater or equal to the red square."
-msgstr "גררו את הסימן המתאים לריבוע האדום"
+msgid "hop"
+msgstr ""
 
-msgid "Rearrange the numbers so they are in the right order"
-msgstr "סדרו את המספרים בסדר הנכון"
+msgid "hike"
+msgstr ""
 
-msgid "Complete the abc using the letters above."
-msgstr "השלימו את האותיות"
+msgid "boxing"
+msgstr ""
 
-msgid "Write a word:"
-msgstr "כתיבת מילה"
+msgid "hockey"
+msgstr ""
 
-msgid "Build the following word using the letters below."
-msgstr "צרו את המילה באמצעות האותיות."
+msgid "race"
+msgstr ""
 
-msgid "Find and separate even numbers from odd numbers."
-msgstr "מצאו והפרידו את המספרים השווים מהמספרים הלא שווים"
+msgid "throw"
+msgstr ""
 
-msgid "Rearrange the letters so they are in the alphabetical order."
-msgstr "ארגנו מחדש את האותיות לפי סדר הא-ב"
+msgid "skate"
+msgstr ""
 
-msgid "Rearrange the numbers so they are in the ascending order."
-msgstr "ארגנו מחדש את המספר בסדר עולה"
+msgid "win"
+msgstr ""
 
-msgid "Please try again."
-msgstr "נסו שוב"
+msgid "squat"
+msgstr ""
 
-msgid "Sorry! It is wrong."
-msgstr "צטערת, זו טעות"
+msgid "ski"
+msgstr ""
 
-msgid "Perfect! Task solved!"
-msgstr "מושלם! משימה נפתרה"
+msgid "golf"
+msgstr ""
 
-msgid "You need to work a little bit harder next time."
-msgstr "צריך לעבוד קצת יותר קשה בפעם הבאה"
+msgid "whistle"
+msgstr ""
 
-msgid "Game Over!"
-msgstr "המשחק נגמר"
+msgid "torch"
+msgstr ""
 
-msgid "Congratulations! You have completed all tasks in this game."
-msgstr "מזל טוב! השלמת את כל המשימות במשחק הזה"
+msgid "sailing"
+msgstr ""
 
-msgid "Great job!"
-msgstr "עבודה נהדרת"
+msgid "stand"
+msgstr ""
 
-msgid "Perfect!!!"
-msgstr "מושלם"
+msgid "tennis"
+msgstr ""
 
-msgid "Awesome!"
-msgstr "אדיר"
+msgid "jump"
+msgstr ""
 
-msgid "Fantastic job!"
-msgstr "עבודה פנטסטית"
+msgid "rowing"
+msgstr ""
 
-msgid "Well done!"
-msgstr "כל הכבוד"
+msgid "jog"
+msgstr ""
 
-msgid "Perfect! Level completed!"
-msgstr "מושלם! שלב הושלם"
+msgid "rope"
+msgstr ""
 
-msgid "area:"
-msgstr "שטח"
+# body
+msgid "teeth"
+msgstr ""
 
-msgid "perimeter:"
-msgstr "היקף"
+msgid "cheek"
+msgstr ""
 
-msgid "circumference:"
-msgstr "היקף"
+msgid "ankle"
+msgstr ""
 
-msgid "surface area:"
-msgstr "שטח פנים"
+msgid "knee"
+msgstr ""
 
-msgid "volume:"
-msgstr "עוצמת קול"
+msgid "toe"
+msgstr ""
 
-msgid "Perfect!"
-msgstr "מושלם"
+msgid "muscle"
+msgstr ""
 
-msgid "divided by"
-msgstr "מחולק לפי"
+msgid "mouth"
+msgstr ""
 
-msgid "times"
-msgstr "פעמים"
+msgid "feet"
+msgstr ""
 
-msgid "equals"
-msgstr "שווה"
+msgid "hand"
+msgstr ""
 
-msgid "Even"
-msgstr "זוגי"
+msgid "elbow"
+msgstr ""
 
-msgid "Odd"
-msgstr "אי-זוגי"
+msgid "hair"
+msgstr ""
 
-msgid "white"
-msgstr "לבן"
+msgid "eyelash"
+msgstr ""
 
-msgid "black"
-msgstr "שחור"
+msgid "beard"
+msgstr ""
 
-msgid "grey"
-msgstr "אפור"
+msgid "belly button"
+msgstr ""
 
-msgid "red"
-msgstr "אדום"
+msgid "thumb"
+msgstr ""
 
-msgid "orange [color]"
-msgstr "כָּתוֹם"
+msgid "breast"
+msgstr ""
 
-msgid "yellow"
-msgstr "צהוב"
+msgid "nostril"
+msgstr ""
 
-msgid "olive"
-msgstr "זית"
+msgid "nose"
+msgstr ""
 
-msgid "green"
-msgstr "ירוק"
+msgid "hip"
+msgstr ""
 
-msgid "sea green"
-msgstr "ירוק ים"
+msgid "arm"
+msgstr ""
 
-msgid "teal"
-msgstr "צהבהב"
+#| msgid "brown"
+msgid "eyebrow"
+msgstr ""
 
-msgid "blue"
-msgstr "כחול"
+msgid "fist"
+msgstr ""
 
-msgid "navy"
-msgstr "כחול כהה"
+msgid "neck"
+msgstr ""
 
-msgid "purple"
-msgstr "סגול"
+msgid "wrist"
+msgstr ""
 
-msgid "violet"
-msgstr "סגול"
+msgid "throat"
+msgstr ""
 
-msgid "magenta"
-msgstr "מגנטה"
+msgid "eye"
+msgstr ""
 
-msgid "indigo"
-msgstr "אינדיגו"
+msgid "leg"
+msgstr ""
 
-msgid "pink"
-msgstr "ורוד"
+msgid "spine"
+msgstr ""
 
-msgid "maroon"
-msgstr "חום ערמוני"
+#| msgid "pear"
+#| msgid_plural "pears"
+msgid "ear"
+msgstr ""
 
-msgid "brown"
-msgstr "חום"
+msgid "finger"
+msgstr ""
 
-msgid "aqua"
-msgstr "אקווה"
+msgid "foot"
+msgstr ""
+
+msgid "braid"
+msgstr ""
+
+msgid "face"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "chin"
+msgstr ""
+
+msgid "bottom"
+msgstr ""
+
+msgid "thigh"
+msgstr ""
+
+msgid "belly"
+msgstr ""
+
+# people
+msgid "girl"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+#| msgid "Won"
+msgid "son"
+msgstr ""
+
+msgid "mates"
+msgstr ""
+
+msgid "friends"
+msgstr ""
+
+msgid "baby"
+msgstr ""
+
+msgid "child"
+msgstr ""
+
+#| msgid "Odd"
+msgid "dad"
+msgstr ""
+
+msgid "mom"
+msgstr ""
+
+msgid "twin boys"
+msgstr ""
+
+#| msgid "Other"
+msgid "brothers"
+msgstr ""
+
+#| msgid "maroon"
+msgid "man"
+msgstr ""
+
+#| msgid "Other"
+msgid "mother"
+msgstr ""
+
+msgid "grandfather"
+msgstr ""
+
+msgid "family"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "wife"
+msgstr ""
+
+msgid "husband"
+msgstr ""
+
+msgid "bride"
+msgstr ""
+
+msgid "madam"
+msgstr ""
+
+msgid "grandmother"
+msgstr ""
+
+msgid "couple"
+msgstr ""
+
+msgid "lad"
+msgstr ""
+
+msgid "twin girls"
+msgstr ""
+
+msgid "tribe"
+msgstr ""
+
+msgid "boy"
+msgstr ""
+
+msgid "sisters"
+msgstr ""
+
+msgid "woman"
+msgstr ""
+
+msgid "lady"
+msgstr ""
+
+# food
+msgid "candy"
+msgstr ""
+
+msgid "sausage"
+msgstr ""
+
+msgid "hamburger"
+msgstr ""
+
+msgid "steak"
+msgstr ""
+
+msgid "fudge"
+msgstr ""
+
+msgid "doughnut"
+msgstr ""
+
+msgid "coconut"
+msgstr ""
+
+msgid "rice"
+msgstr ""
+
+msgid "ice cream"
+msgstr ""
+
+msgid "jelly"
+msgstr ""
+
+msgid "yoghurt"
+msgstr ""
+
+msgid "dessert"
+msgstr ""
+
+msgid "pretzel"
+msgstr ""
+
+msgid "peanut"
+msgstr ""
+
+msgid "jam"
+msgstr ""
+
+msgid "feast"
+msgstr ""
+
+msgid "cookie"
+msgstr ""
+
+msgid "bacon"
+msgstr ""
+
+msgid "spice"
+msgstr ""
+
+msgid "coffee"
+msgstr ""
+
+msgid "pie"
+msgstr ""
+
+#| msgid "lemon"
+#| msgid_plural "lemons"
+msgid "lemonade"
+msgstr ""
+
+msgid "chocolate"
+msgstr ""
+
+msgid "water bottle"
+msgstr ""
+
+msgid "lunch"
+msgstr ""
+
+#| msgid "Circle"
+msgid "ice"
+msgstr ""
+
+msgid "sugar"
+msgstr ""
+
+msgid "sauce"
+msgstr ""
+
+msgid "soup"
+msgstr ""
+
+msgid "juice"
+msgstr ""
+
+msgid "fries"
+msgstr ""
+
+msgid "cake"
+msgstr ""
+
+msgid "mashed potatoes"
+msgstr ""
+
+#| msgid "teal"
+msgid "tea"
+msgstr ""
+
+msgid "bun"
+msgstr ""
+
+msgid "cheese"
+msgstr ""
+
+msgid "beef"
+msgstr ""
+
+msgid "sandwich"
+msgstr ""
+
+msgid "slice"
+msgstr ""
+
+msgid "sprinkle"
+msgstr ""
+
+msgid "pizza"
+msgstr ""
+
+msgid "flour"
+msgstr ""
+
+msgid "gum"
+msgstr ""
+
+msgid "spaghetti"
+msgstr ""
+
+msgid "roast"
+msgstr ""
+
+msgid "drink"
+msgstr ""
+
+msgid "stew"
+msgstr ""
+
+msgid "spread"
+msgstr ""
+
+msgid "meat"
+msgstr ""
+
+msgid "milk"
+msgstr ""
+
+msgid "meal"
+msgstr ""
+
+msgid "corn"
+msgstr ""
+
+msgid "bread"
+msgstr ""
+
+msgid "walnut"
+msgstr ""
+
+msgid "egg"
+msgstr ""
+
+msgid "hot dog"
+msgstr ""
+
+msgid "ham"
+msgstr ""
+
+# clothes
+msgid "jewellery"
+msgstr ""
+
+msgid "sock"
+msgstr ""
+
+msgid "jacket"
+msgstr ""
+
+msgid "heel"
+msgstr ""
+
+msgid "smock"
+msgstr ""
+
+#| msgid "Sports"
+msgid "shorts"
+msgstr ""
+
+msgid "pocket"
+msgstr ""
+
+msgid "necklace"
+msgstr ""
+
+msgid "sweatshirt"
+msgstr ""
+
+msgid "uniform"
+msgstr ""
+
+msgid "raincoat"
+msgstr ""
+
+msgid "trousers"
+msgstr ""
+
+msgid "sunglasses"
+msgstr ""
+
+msgid "coat"
+msgstr ""
+
+msgid "pullover"
+msgstr ""
+
+msgid "shirt"
+msgstr ""
+
+msgid "sandals"
+msgstr ""
+
+msgid "suit"
+msgstr ""
+
+msgid "pyjamas"
+msgstr ""
+
+msgid "skirt"
+msgstr ""
+
+msgid "zip"
+msgstr ""
+
+msgid "shoes"
+msgstr ""
+
+msgid "jewel"
+msgstr ""
+
+#| msgid "times"
+msgid "tie"
+msgstr ""
+
+msgid "slippers"
+msgstr ""
+
+msgid "gloves"
+msgstr ""
+
+msgid "hat"
+msgstr ""
+
+msgid "sleeve"
+msgstr ""
+
+msgid "cap"
+msgstr ""
+
+msgid "swimming suit"
+msgstr ""
+
+msgid "trainer"
+msgstr ""
+
+msgid "vest"
+msgstr ""
+
+msgid "glasses"
+msgstr ""
+
+msgid "shoelace"
+msgstr ""
+
+msgid "patch"
+msgstr ""
+
+msgid "scarf"
+msgstr ""
+
+msgid "shoe"
+msgstr ""
+
+msgid "button"
+msgstr ""
+
+msgid "dress"
+msgstr ""
+
+msgid "sash"
+msgstr ""
+
+msgid "shoe sole"
+msgstr ""
+
+msgid "robe"
+msgstr ""
+
+msgid "pants"
+msgstr ""
+
+msgid "kimono"
+msgstr ""
+
+msgid "overalls"
+msgstr ""
+
+# actions
+msgid "lick"
+msgstr ""
+
+msgid "slam"
+msgstr ""
+
+msgid "beg"
+msgstr ""
+
+msgid "fell"
+msgstr ""
+
+msgid "scratch"
+msgstr ""
+
+msgid "touch"
+msgstr ""
+
+msgid "sniff"
+msgstr ""
+
+msgid "see"
+msgstr ""
+
+msgid "climb"
+msgstr ""
+
+#| msgid "indigo"
+msgid "dig"
+msgstr ""
+
+msgid "howl"
+msgstr ""
+
+msgid "sleep"
+msgstr ""
+
+msgid "explore"
+msgstr ""
+
+msgid "draw"
+msgstr ""
+
+msgid "hug"
+msgstr ""
+
+msgid "teach"
+msgstr ""
+
+msgid "nap"
+msgstr ""
+
+msgid "clay"
+msgstr ""
+
+msgid "catch"
+msgstr ""
+
+msgid "clap"
+msgstr ""
+
+#| msgid "carry"
+msgid "cry"
+msgstr ""
+
+msgid "sing"
+msgstr ""
+
+msgid "meet"
+msgstr ""
+
+msgid "sell"
+msgstr ""
+
+msgid "peck"
+msgstr ""
+
+msgid "beat"
+msgstr ""
+
+msgid "kneel"
+msgstr ""
+
+msgid "find"
+msgstr ""
+
+#| msgid "Cancel"
+msgid "dance"
+msgstr ""
+
+msgid "cough"
+msgstr ""
+
+msgid "cut"
+msgstr ""
+
+msgid "think"
+msgstr ""
+
+msgid "bark"
+msgstr ""
+
+msgid "speak"
+msgstr ""
+
+msgid "cheer"
+msgstr ""
+
+msgid "bake"
+msgstr ""
+
+#| msgid "write "
+msgid "write"
+msgstr ""
+
+msgid "punch"
+msgstr ""
+
+msgid "strum"
+msgstr ""
+
+msgid "study"
+msgstr ""
+
+msgid "plow"
+msgstr ""
+
+msgid "dream"
+msgstr ""
+
+msgid "post"
+msgstr ""
+
+msgid "dive"
+msgstr ""
+
+msgid "whisper"
+msgstr ""
+
+msgid "sob"
+msgstr ""
+
+msgid "shake"
+msgstr ""
+
+msgid "feed"
+msgstr ""
+
+msgid "crawl"
+msgstr ""
+
+msgid "camp"
+msgstr ""
+
+msgid "spill"
+msgstr ""
+
+msgid "clean"
+msgstr ""
+
+msgid "scream"
+msgstr ""
+
+msgid "tear"
+msgstr ""
+
+msgid "float"
+msgstr ""
+
+msgid "pull"
+msgstr ""
+
+#| msgid "Nature"
+msgid "ate"
+msgstr ""
+
+msgid "kiss"
+msgstr ""
+
+msgid "sit"
+msgstr ""
+
+msgid "hatch"
+msgstr ""
+
+msgid "blink"
+msgstr ""
+
+msgid "hear"
+msgstr ""
+
+msgid "smooch"
+msgstr ""
+
+msgid "play"
+msgstr ""
+
+msgid "wash"
+msgstr ""
+
+msgid "chat"
+msgstr ""
+
+msgid "drive"
+msgstr ""
+
+msgid "fly"
+msgstr ""
+
+msgid "juggle"
+msgstr ""
+
+msgid "bit"
+msgstr ""
+
+msgid "sweep"
+msgstr ""
+
+msgid "look"
+msgstr ""
+
+msgid "knit"
+msgstr ""
+
+msgid "lift"
+msgstr ""
+
+msgid "fetch"
+msgstr ""
+
+msgid "read"
+msgstr ""
+
+msgid "croak"
+msgstr ""
+
+msgid "stare"
+msgstr ""
+
+msgid "eat"
+msgstr ""
+
+# construction
+msgid "lighthouse"
+msgstr ""
+
+msgid "door"
+msgstr ""
+
+msgid "circus"
+msgstr ""
+
+msgid "church"
+msgstr ""
+
+msgid "kennel"
+msgstr ""
+
+msgid "temple"
+msgstr ""
+
+msgid "smoke"
+msgstr ""
+
+msgid "chimney"
+msgstr ""
+
+msgid "brick"
+msgstr ""
+
+msgid "well"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+msgid "castle"
+msgstr ""
+
+msgid "store"
+msgstr ""
+
+msgid "staircase"
+msgstr ""
+
+#| msgid "preschool"
+msgid "school"
+msgstr ""
+
+msgid "farm"
+msgstr ""
+
+msgid "bridge"
+msgstr ""
+
+msgid "dam"
+msgstr ""
+
+msgid "pyramid"
+msgstr ""
+
+msgid "barn"
+msgstr ""
+
+msgid "mill"
+msgstr ""
+
+msgid "window"
+msgstr ""
+
+msgid "cabin"
+msgstr ""
+
+msgid "step"
+msgstr ""
+
+msgid "shop"
+msgstr ""
+
+msgid "shed"
+msgstr ""
+
+msgid "roof"
+msgstr ""
+
+msgid "steeple"
+msgstr ""
+
+msgid "garage"
+msgstr ""
+
+msgid "mosque"
+msgstr ""
+
+msgid "hospital"
+msgstr ""
+
+msgid "tent"
+msgstr ""
+
+msgid "house"
+msgstr ""
+
+msgid "wall"
+msgstr ""
+
+msgid "bank"
+msgstr ""
+
+msgid "shutter"
+msgstr ""
+
+msgid "hut"
+msgstr ""
+
+# nature
+msgid "land"
+msgstr ""
+
+msgid "cliff"
+msgstr ""
+
+msgid "hill"
+msgstr ""
+
+msgid "canyon"
+msgstr ""
+
+msgid "rock"
+msgstr ""
+
+msgid "sea"
+msgstr ""
+
+msgid "lake"
+msgstr ""
+
+msgid "coast"
+msgstr ""
+
+msgid "shore"
+msgstr ""
+
+msgid "mountain"
+msgstr ""
+
+msgid "pond"
+msgstr ""
+
+msgid "peak"
+msgstr ""
+
+msgid "lava"
+msgstr ""
+
+msgid "cave"
+msgstr ""
+
+msgid "dune"
+msgstr ""
+
+msgid "island"
+msgstr ""
+
+msgid "forest"
+msgstr ""
+
+msgid "desert"
+msgstr ""
+
+msgid "iceberg"
+msgstr ""
+
+# jobs
+msgid "clown"
+msgstr ""
+
+msgid "engineer"
+msgstr ""
+
+msgid "priest"
+msgstr ""
+
+#| msgid "violet"
+msgid "vet"
+msgstr ""
+
+msgid "judge"
+msgstr ""
+
+msgid "chef"
+msgstr ""
+
+#| msgid "Delete"
+msgid "athlete"
+msgstr ""
+
+msgid "librarian"
+msgstr ""
+
+msgid "juggler"
+msgstr ""
+
+msgid "policeman"
+msgstr ""
+
+#| msgid "Numbers"
+msgid "plumber"
+msgstr ""
+
+msgid "badge"
+msgstr ""
+
+msgid "queen"
+msgstr ""
+
+msgid "farmer"
+msgstr ""
+
+msgid "magician"
+msgstr ""
+
+msgid "knight"
+msgstr ""
+
+msgid "doctor"
+msgstr ""
+
+#| msgid "Player"
+msgid "bricklayer"
+msgstr ""
+
+msgid "cleaner"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "teacher"
+msgstr ""
+
+msgid "hunter"
+msgstr ""
+
+msgid "soldier"
+msgstr ""
+
+msgid "musician"
+msgstr ""
+
+msgid "lawyer"
+msgstr ""
+
+msgid "fisherman"
+msgstr ""
+
+msgid "princess"
+msgstr ""
+
+#| msgid "remainder"
+msgid "fireman"
+msgstr ""
+
+msgid "nun"
+msgstr ""
+
+msgid "pirate"
+msgstr ""
+
+msgid "cowboy"
+msgstr ""
+
+msgid "electrician"
+msgstr ""
+
+msgid "nurse"
+msgstr ""
+
+msgid "king"
+msgstr ""
+
+msgid "president"
+msgstr ""
+
+msgid "office worker"
+msgstr ""
+
+msgid "carpenter"
+msgstr ""
+
+msgid "jockey"
+msgstr ""
+
+msgid "worker"
+msgstr ""
+
+msgid "mechanic"
+msgstr ""
+
+msgid "pilot"
+msgstr ""
+
+msgid "actor"
+msgstr ""
+
+msgid "cook"
+msgstr ""
+
+msgid "student"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "butcher"
+msgstr ""
+
+msgid "accountant"
+msgstr ""
+
+msgid "prince"
+msgstr ""
+
+msgid "pope"
+msgstr ""
+
+msgid "sailor"
+msgstr ""
+
+msgid "boxer"
+msgstr ""
+
+msgid "ballet dancer"
+msgstr ""
+
+msgid "coach"
+msgstr ""
+
+msgid "astronaut"
+msgstr ""
+
+#| msgid "Paint"
+msgid "painter"
+msgstr ""
+
+msgid "anaesthesiologist"
+msgstr ""
+
+msgid "scientist"
+msgstr ""
+
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "carrot"
+msgstr ""
+
+msgid "blackberries"
+msgstr ""
+
+msgid "celery"
+msgstr ""
+
+msgid "turnip"
+msgstr ""
+
+msgid "cacao"
+msgstr ""
+
+msgid "peach"
+msgstr ""
+
+#| msgid "watermelon"
+#| msgid_plural "watermelons"
+msgid "melon"
+msgstr ""
+
+#| msgid "orange [fruit]"
+#| msgid_plural "oranges"
+msgid "grapefruit"
+msgstr ""
+
+msgid "broccoli"
+msgstr ""
+
+#| msgid "Shapes"
+msgid "grapes"
+msgstr ""
+
+msgid "spinach"
+msgstr ""
+
+msgid "fig"
+msgstr ""
+
+msgid "kernel"
+msgstr ""
+
+msgid "radish"
+msgstr ""
+
+#| msgid "tomato"
+#| msgid_plural "tomatoes"
+msgid "tomato"
+msgstr ""
+
+msgid "kiwi"
+msgstr ""
+
+msgid "asparagus"
+msgstr ""
+
+#| msgid "olive"
+msgid "olives"
+msgstr ""
+
+#| msgid "Numbers"
+msgid "cucumbers"
+msgstr ""
+
+msgid "beans"
+msgstr ""
+
+#| msgid "strawberry"
+#| msgid_plural "strawberries"
+msgid "strawberry"
+msgstr ""
+
+#| msgid "pepper"
+#| msgid_plural "peppers"
+msgid "peppers"
+msgstr ""
+
+#| msgid "strawberry"
+#| msgid_plural "strawberries"
+msgid "raspberry"
+msgstr ""
+
+msgid "apricot"
+msgstr ""
+
+msgid "potatoes"
+msgstr ""
+
+msgid "peas"
+msgstr ""
+
+msgid "cabbage"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "cherries"
+msgstr ""
+
+msgid "squash"
+msgstr ""
+
+msgid "blueberries"
+msgstr ""
+
+#| msgid "pear"
+#| msgid_plural "pears"
+msgid "pear"
+msgstr ""
+
+#| msgid "orange [fruit]"
+#| msgid_plural "oranges"
+msgid "orange"
+msgstr ""
+
+msgid "pumpkin"
+msgstr ""
+
+msgid "avocado"
+msgstr ""
+
+msgid "garlic"
+msgstr ""
+
+#| msgid "onion"
+#| msgid_plural "onions"
+msgid "onion"
+msgstr ""
+
+#| msgid "red apple"
+#| msgid_plural "red apples"
+msgid "apple"
+msgstr ""
 
 msgid "lime"
 msgstr "סיד"
 
-msgid "Rainbow Keyboard"
-msgstr "מקלדת קשת בענן"
+msgid "cauliflower"
+msgstr ""
 
-msgid "Touch Typing Tutor"
-msgstr "לימוד הקלדה"
+msgid "mango"
+msgstr ""
 
-msgid "Translators"
-msgstr "מתרגמים"
+msgid "lettuce"
+msgstr ""
 
-msgid "English Alphabet"
-msgstr "אלף-בית אנגלי"
+#| msgid "lemon"
+#| msgid_plural "lemons"
+msgid "lemon"
+msgstr ""
 
-msgid "Your Alphabet"
-msgstr "אלפבית עברי"
+msgid "aubergine"
+msgstr ""
 
-msgid "Mixing Colours for Painting"
-msgstr "ערבוב צבעים לציור"
+msgid "artichokes"
+msgstr ""
 
-msgid "Mix red, yellow, blue, black and white paint"
-msgstr "מערבבים את צבע אדום, צהוב, כחול, שחור ולבן"
+msgid "plums"
+msgstr ""
 
-msgid "Additive Colour Mixing - Light"
-msgstr "ערבוב תוסף צבע - אור"
+msgid "leek"
+msgstr ""
 
-msgid "Mix red, green and blue light to get other colours"
-msgstr "מערבבים באור אדום, ירוק וכחול כדי לקבל צבעים אחרים"
+#| msgid "banana"
+#| msgid_plural "bananas"
+msgid "bananas"
+msgstr ""
 
-msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
-msgstr "ערבוב צבע תוסף - צבעים, צבעים, דיו"
+msgid "papaya"
+msgstr ""
 
-msgid "Mix cyan, magenta and yellow paint to get other colours"
-msgstr "מערבבים ציאן, מגנטה וצבע הצהוב כדי לקבל צבעים אחרים"
+# transport
+msgid "sail"
+msgstr ""
 
-msgid "Find the colour of the circle in the middle"
-msgstr "מצאו את הצבע של המעגל"
+msgid "taxi"
+msgstr ""
 
-msgid "Adjust the amount of cyan, magenta and yellow paint"
-msgstr "התאימו את כמות ציאן, מגנטה וצבע הצהוב"
+#| msgid "carry"
+msgid "car"
+msgstr ""
 
-msgid "Adjust the intensity of red, green and blue light"
-msgstr "התאימו את עוצמת אור אדום, ירוק וכחול"
+msgid "bike"
+msgstr ""
 
-msgid "brush size"
-msgstr "גודל מברשת"
+msgid "raft"
+msgstr ""
 
-msgid "Noughts and Crosses 2"
-msgstr "סולמות וחבלים '2"
+msgid "pedal"
+msgstr ""
 
-msgid "Noughts and Crosses 3"
-msgstr "סולמות וחבלים '3"
+#| msgid "Rhombus"
+msgid "bus"
+msgstr ""
 
-msgid "Get as many lines of 3 as possible to win"
-msgstr "קבל כמו קווים רבים של 3 ככל האפשר כדי לנצח"
+msgid "handlebar"
+msgstr ""
 
-msgid "Player"
-msgstr "נגן"
+msgid "boat"
+msgstr ""
 
-msgid "Won"
-msgstr "וון"
+msgid "truck"
+msgstr ""
 
-msgid "Draw"
-msgstr "צייר"
+msgid "sleigh"
+msgstr ""
 
-msgid "User Name"
-msgstr "שם משתמש:"
+msgid "carpet"
+msgstr ""
 
-msgid "Match Animals"
-msgstr "בעלי חיים התאמה"
+msgid "motorcycle"
+msgstr ""
 
-msgid "Match Animals - Memory Game"
-msgstr "בעלי חיים במשחק - משחק הזיכרון"
+#| msgid "Training"
+msgid "train"
+msgstr ""
 
-msgid "Match Fruits - Memory Game"
-msgstr "פירות משחק - משחק זיכרון"
+msgid "ship"
+msgstr ""
 
-msgid "Match Vegetables - Memory Game"
-msgstr "ירקות משחק - משחק זיכרון"
+msgid "van"
+msgstr ""
 
-msgid "Match Numbers - Memory Game"
-msgstr "מספרי משחק - משחק הזיכרון"
+msgid "canoe"
+msgstr ""
 
-msgid "Find matching pairs of the same image"
-msgstr "מצא את התאמת זוגות של אותה תמונה"
+msgid "rocket"
+msgstr ""
 
-msgid "Image Slider"
-msgstr "התמונה Slider"
+msgid "mast"
+msgstr ""
 
-msgid "Animal Slider"
-msgstr "בעלי החיים Slider"
+msgid "sledge"
+msgstr ""
 
-msgid "Fruit Slider"
-msgstr "הפירות Slider"
+msgid "bicycle"
+msgstr ""
 
-msgid "Number Slider"
-msgstr "מספר Slider"
+#~ msgid "green apple"
+#~ msgid_plural "green apples"
+#~ msgstr[0] "תפוח ירוק"
+#~ msgstr[1] "תפוחים ירוקים"
 
-msgid "Fraction Groups"
-msgstr "קבוצות שבריר"
+#~ msgid "Cube"
+#~ msgstr "קוביה"
 
-msgid "Percentages"
-msgstr "אחוזים"
+#~ msgid "Square Prism"
+#~ msgstr "מנסרה מרובעת"
 
-msgid "Ratios"
-msgstr "יחסים"
+#~ msgid "Triangular Prism"
+#~ msgstr "מנסרה משולשת"
 
-msgid "Match fraction charts on the right to the ones on the left"
-msgstr "תרשימי שבריר התאמה מימין לאלה בצד השמאל"
+#~ msgid "Square Pyramid"
+#~ msgstr "מנסרה פירמידה"
 
-msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
-msgstr "תרשימי התאמת שבריר ושברים על הזכות לתרשימי החלק בצד השמאל"
+#~ msgid "Triangular Pyramid"
+#~ msgstr "פירמידה משולשת"
 
-msgid "Match fraction charts to the fractions on the left"
-msgstr "תרשימי שבריר התאמה לשברים בצד השמאל"
+#~ msgid "Cylinder"
+#~ msgstr "צילינדר"
 
-msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
-msgstr "תרשימי שבריר התאמה, שברים ושברים עשרוניים על הזכות לייצוג אחוזם"
+#~ msgid "Cone"
+#~ msgstr "קונוס"
 
-msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
-msgstr "התאם תרשימים ליחסים בצד השמאל. יחסים באים לידי ביטוי כיחס בין חתיכות צבעוניות לחתיכות הלבנות"
+#~ msgid "Torus"
+#~ msgstr "טורוס"
 
-msgid "Maths Matching Game"
-msgstr "משחק התאמה במתמטיקה"
+#~ msgid "Guest"
+#~ msgstr "אורח"
 
-msgid "Addition"
-msgstr "תוספת"
+#~ msgid "Log in:"
+#~ msgstr "כניסה"
 
-msgid "Subtraction"
-msgstr "חסור"
+#~ msgid "Add new user:"
+#~ msgstr "הוספת משתמש חדש"
 
-msgid "Multiplication"
-msgstr "כפל"
+#~ msgid "confirm password:"
+#~ msgstr "אישור סיסמה"
 
-msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
-msgstr "בדקו אם יש גירסה חדשה יותר, דווחו באגים, דונו, תרגמו או תכתבו ביקורת על הפרוייקט פה"
+#~ msgid "Register new user"
+#~ msgstr "רישום משתמש חדש"
 
-msgid "Match numbers to their spelling"
-msgstr "מספרי התאמה לאיות שלהם"
+#~ msgid "Administrator Login:"
+#~ msgstr "כניסת מנהלים"
 
-msgid "Number Spelling"
-msgstr "איות מספר"
-
-msgid "Find all matching animals"
-msgstr "מצא את כל בעלי החיים ההתאמה"
-
-msgid "Match animals to their shadows"
-msgstr "בעלי חיים התאמה לצללים שלהם"
-
-msgid "Shape Maker"
-msgstr "להכנת צורה"
-
-#, python-format
-msgid "Shape to draw: %s"
-msgstr "לעצב %s"
+#~ msgid "Please select a user from the list."
+#~ msgstr "בחרו משתמש מהרשימה"
 
 #, python-format
-msgid "such that lengths of its bases are equal to %d and %d and height to %d"
-msgstr "כזה שאורכי בסיסיו שווים %d %d וגובה %d"
+#~ msgid "%s deleted from database."
+#~ msgstr "%s נמחקו ממסד הנתונים"
+
+#~ msgid "Failed to delete the user."
+#~ msgstr "מחיקת משתמשים נכשלה"
+
+#~ msgid "Preferences"
+#~ msgstr "הגדרות"
+
+#~ msgid "switch to full screen after login"
+#~ msgstr "מעבר למסך מלא לאחר כניסה"
+
+#~ msgid "allow adding new users on login screen"
+#~ msgstr "איפשור הוספת משתמשים חדש במסך הכניסה"
+
+#~ msgid "display languages with uncompleted translations"
+#~ msgstr "הצגת שפות עם תרגום לא מושלם"
+
+#~ msgid "require password to log in"
+#~ msgstr "דרישת סיסמה בכניסה"
+
+#~ msgid "require password to access admin area"
+#~ msgstr "דרישת סיסמה לאיזור המנהלים"
+
+#~ msgid "Update admin's password:"
+#~ msgstr "עדכון סיסמת מנהל"
+
+#~ msgid "previous password:"
+#~ msgstr "סיסמה קודמת"
+
+#~ msgid "new password:"
+#~ msgstr "סיסמה חדשה"
+
+#~ msgid "confirm new password:"
+#~ msgstr "אישור סיסמה חדשה"
+
+#~ msgid "Create admin's account:"
+#~ msgstr "הוספת חשבון מנהלים"
+
+#~ msgid "admin's user name:"
+#~ msgstr "שם משתמש מנהל"
+
+#~ msgid "admin's password:"
+#~ msgstr "סיסמת מנהל"
+
+#~ msgid "confirm admin's password:"
+#~ msgstr "אישור סיסמת מנהל"
+
+#~ msgid "Please enter user name (at least 3 characters long)"
+#~ msgstr "הזינו שם משתמש באורך של לפחות 3 תוים"
+
+#~ msgid "Please enter password (at least 4 characters long)"
+#~ msgstr "הזינו סיסמה באורך של לפחות 4 תוים"
+
+#~ msgid "This username doesn't exist."
+#~ msgstr "שם המשתמש לא קיים"
+
+#~ msgid "Passwords don't match"
+#~ msgstr "הסיסמאות לא תואמות"
 
 #, python-format
-msgid "such that lengths of its sides are equal to %d"
-msgstr "כזה שאורכי צלעותיה שווים %d"
+#~ msgid "%s added"
+#~ msgstr "התווספו %s"
+
+#~ msgid "This user name already exists, please choose a different one"
+#~ msgstr "שם המשתמש הזה קיים, בחרו שם משתמש אחר"
+
+#~ msgid "Admin's password has been updated"
+#~ msgstr "סיסמת מנהל עודכנה"
+
+#~ msgid "ERROR: This operation is not allowed at this point"
+#~ msgstr "שגיאה: פעולה זו בלתי אפשרית"
+
+#~ msgid "Please enter previous password (at least 4 characters long)"
+#~ msgstr "הזינו סיסמה קודמת באורך של לפחות 4 תוים"
+
+#~ msgid "Please enter new password (at least 4 characters long)"
+#~ msgstr "הזינו סיסמה חדשה באורך של לפחות 4 תוים"
+
+#~ msgid "Previous password doesn't seem to be in the database"
+#~ msgstr "סיסמה קודמת לא נמצאה במסד הנתונים"
+
+#~ msgid "Registered:"
+#~ msgstr "רשומים"
+
+#~ msgid "Last login:"
+#~ msgstr "כניסה אחרונה"
+
+#~ msgid "(Log out)"
+#~ msgstr "להתנתק"
+
+#~ msgid "Addition Table"
+#~ msgstr "טבלת חיבור"
+
+#~ msgid "Hello"
+#~ msgstr "שלום"
+
+#~ msgid "Welcome back in the game."
+#~ msgstr "ברוכים השבים למשחק"
+
+#~ msgid "Translations"
+#~ msgstr "תרגומים"
+
+#~ msgid "Info & Settings"
+#~ msgstr "מידע והגדרות"
+
+#~ msgid "Keyboard & Mouse"
+#~ msgstr "מקלדת ועכבר"
+
+#~ msgid "Learn New Words"
+#~ msgstr "לימדו מילים חדשות"
+
+#~ msgid "Basic Operations - Exercises"
+#~ msgstr "פעולות בסיסיות - תרגילים"
+
+#~ msgid "Sorting and Comparing"
+#~ msgstr "מיון והשוואה"
+
+#~ msgid "Geometry and Shape Recognition"
+#~ msgstr "גאומטריה וזיהוי צורות"
+
+#~ msgid "Art and Colour"
+#~ msgstr "אמנות וצבע"
+
+#~ msgid "Memory"
+#~ msgstr "זכרון"
+
+#~ msgid "Multiplayer Games"
+#~ msgstr "משחקים מרובי משתתפים"
+
+#~ msgid "About."
+#~ msgstr "אודות"
+
+#~ msgid "Game info..."
+#~ msgstr "מידע על המשחק"
+
+#~ msgid "Hit the Mole"
+#~ msgstr "הכו בחפרפרת"
+
+#~ msgid "Learn Letters with Flashcards"
+#~ msgstr "לימדו אותיות עם כרטיסיות"
+
+#~ msgid "Learn to Write"
+#~ msgstr "לימדו לכתוב"
+
+#~ msgid "Complete the ABC"
+#~ msgstr "השלימו את הא-ב"
+
+#~ msgid "Your language"
+#~ msgstr "עברית"
+
+#~ msgid "Sorting Letters"
+#~ msgstr "מיון אותיות"
+
+#~ msgid "Lowercase Letters"
+#~ msgstr "אותיות קטנות"
+
+#~ msgid "Uppercase Letters"
+#~ msgstr "אותיות רישיות"
+
+#~ msgid "Word Builder"
+#~ msgstr "בניית מילים"
+
+#~ msgid "Word Maze"
+#~ msgstr "מבוך מילים"
+
+#~ msgid "Collect all letters in the right order"
+#~ msgstr "איספו את כל האותיות בסדר הנכון"
+
+#~ msgid "Word Maze + 4"
+#~ msgstr "מבוך אותיות פלוס ארבע"
+
+#~ msgid "Learn to Count"
+#~ msgstr "לימדו לספור"
+
+#~ msgid "Basic Addition"
+#~ msgstr "חיבור בסיסי"
+
+#~ msgid "Basic Subtraction"
+#~ msgstr "חיסור בסיסי"
+
+#~ msgid "Plus or Minus"
+#~ msgstr "פלוס או מינוס"
+
+#~ msgid "Multiplication Table"
+#~ msgstr "לוח כפל"
+
+#~ msgid "Find the product"
+#~ msgstr "מצא את המוצר"
+
+#~ msgid "Find the multiplier"
+#~ msgstr "מצא את המכפיל"
+
+#~ msgid "Division"
+#~ msgstr "חלוקה"
+
+#~ msgid "Sorting Numbers"
+#~ msgstr "מיון מספרים"
+
+#~ msgid "Number Comparison"
+#~ msgstr "מספר השוואה"
+
+#~ msgid "Addition & Subtraction"
+#~ msgstr "בנוסף וחיסור"
+
+#~ msgid "Comparison"
+#~ msgstr "השוואה"
+
+#~ msgid "Fractions"
+#~ msgstr "שברים"
+
+#~ msgid "Decimal Fractions"
+#~ msgstr "שברים עשרוניים"
+
+#~ msgid "Even or Odd"
+#~ msgstr "זוג או פרט"
+
+#~ msgid "Solids"
+#~ msgstr "מוצקים"
+
+#~ msgid "Solid Geometry with Flashcards"
+#~ msgstr "גיאומטריה מוצקה עם כרטיסיות"
+
+#~ msgid "help me find my shadow"
+#~ msgstr "תעזרו לי למצוא את הצל שלי"
+
+#~ msgid "Colour Matching"
+#~ msgstr "התאמת צבע"
+
+#~ msgid "label the colours"
+#~ msgstr "סמנו את הצבעים"
+
+#~ msgid "Follow the Arrows"
+#~ msgstr "עקבו אחרי החצים"
+
+#~ msgid "remember the directions"
+#~ msgstr "זכרו את הכיוונים"
+
+#~ msgid "Photographic Memory"
+#~ msgstr "זיכרון צילומי"
+
+#~ msgid "Automatic Levels"
+#~ msgstr "שלבים אוטומטיים"
+
+#~ msgid "Mouse Maze"
+#~ msgstr "עכבר במבוך"
+
+#~ msgid "Let's have some cheese"
+#~ msgstr "בואו לקבל קצת גבינה"
+
+#~ msgid "Sheep Maze"
+#~ msgstr "מבוך כבשים"
+
+#~ msgid "Find the rest of the herd"
+#~ msgstr "מצאו את שאר העדר"
+
+#~ msgid "Connect"
+#~ msgstr "לחבר"
+
+#~ msgid "Balloons with threads"
+#~ msgstr "בלונים וחוטים"
+
+#~ msgid "Fifteen"
+#~ msgstr "חמש עשרה"
+
+#~ msgid "With a Twist"
+#~ msgstr "עם טוויסט"
+
+#~ msgid "Drag the slider up or down so that the right sign is in the red square."
+#~ msgstr "גררו את המכוון למעלה או למטב כך שהסימן הנכון יהיה בריבוע האדום"
+
+#~ msgid "Take your sheep to the rest of the herd."
+#~ msgstr "קחו את הכבשה שלכם לעדר שלה"
+
+#~ msgid "Check the shopping list and drag all needed items into the basket."
+#~ msgstr "בדקו את רשימת הקניות והתאימו את הפריטים לסל הקניות"
+
+#~ msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
+#~ msgstr "גררו את הסימן המתאים לריבוע האדום"
+
+#~ msgid "Drag one of the lesser, greater or equal to the red square."
+#~ msgstr "גררו את הסימן המתאים לריבוע האדום"
+
+#~ msgid "Rearrange the numbers so they are in the right order"
+#~ msgstr "סדרו את המספרים בסדר הנכון"
+
+#~ msgid "Complete the abc using the letters above."
+#~ msgstr "השלימו את האותיות"
+
+#~ msgid "Write a word:"
+#~ msgstr "כתיבת מילה"
+
+#~ msgid "Build the following word using the letters below."
+#~ msgstr "צרו את המילה באמצעות האותיות."
+
+#~ msgid "Find and separate even numbers from odd numbers."
+#~ msgstr "מצאו והפרידו את המספרים השווים מהמספרים הלא שווים"
+
+#~ msgid "Rearrange the letters so they are in the alphabetical order."
+#~ msgstr "ארגנו מחדש את האותיות לפי סדר הא-ב"
+
+#~ msgid "Rearrange the numbers so they are in the ascending order."
+#~ msgstr "ארגנו מחדש את המספר בסדר עולה"
+
+#~ msgid "Please try again."
+#~ msgstr "נסו שוב"
+
+#~ msgid "Sorry! It is wrong."
+#~ msgstr "צטערת, זו טעות"
+
+#~ msgid "Perfect! Task solved!"
+#~ msgstr "מושלם! משימה נפתרה"
+
+#~ msgid "You need to work a little bit harder next time."
+#~ msgstr "צריך לעבוד קצת יותר קשה בפעם הבאה"
+
+#~ msgid "Game Over!"
+#~ msgstr "המשחק נגמר"
+
+#~ msgid "Congratulations! You have completed all tasks in this game."
+#~ msgstr "מזל טוב! השלמת את כל המשימות במשחק הזה"
+
+#~ msgid "Great job!"
+#~ msgstr "עבודה נהדרת"
+
+#~ msgid "Perfect!!!"
+#~ msgstr "מושלם"
+
+#~ msgid "Awesome!"
+#~ msgstr "אדיר"
+
+#~ msgid "Fantastic job!"
+#~ msgstr "עבודה פנטסטית"
+
+#~ msgid "Well done!"
+#~ msgstr "כל הכבוד"
+
+#~ msgid "Perfect! Level completed!"
+#~ msgstr "מושלם! שלב הושלם"
+
+#~ msgid "surface area:"
+#~ msgstr "שטח פנים"
+
+#~ msgid "volume:"
+#~ msgstr "עוצמת קול"
+
+#~ msgid "Perfect!"
+#~ msgstr "מושלם"
+
+#~ msgid "divided by"
+#~ msgstr "מחולק לפי"
+
+#~ msgid "equals"
+#~ msgstr "שווה"
+
+#~ msgid "Even"
+#~ msgstr "זוגי"
+
+#~ msgid "white"
+#~ msgstr "לבן"
+
+#~ msgid "grey"
+#~ msgstr "אפור"
+
+#~ msgid "red"
+#~ msgstr "אדום"
+
+#~ msgid "orange [color]"
+#~ msgstr "כָּתוֹם"
+
+#~ msgid "yellow"
+#~ msgstr "צהוב"
+
+#~ msgid "green"
+#~ msgstr "ירוק"
+
+#~ msgid "sea green"
+#~ msgstr "ירוק ים"
+
+#~ msgid "blue"
+#~ msgstr "כחול"
+
+#~ msgid "navy"
+#~ msgstr "כחול כהה"
+
+#~ msgid "purple"
+#~ msgstr "סגול"
+
+#~ msgid "magenta"
+#~ msgstr "מגנטה"
+
+#~ msgid "pink"
+#~ msgstr "ורוד"
+
+#~ msgid "aqua"
+#~ msgstr "אקווה"
+
+#~ msgid "Rainbow Keyboard"
+#~ msgstr "מקלדת קשת בענן"
+
+#~ msgid "Touch Typing Tutor"
+#~ msgstr "לימוד הקלדה"
+
+#~ msgid "English Alphabet"
+#~ msgstr "אלף-בית אנגלי"
+
+#~ msgid "Mixing Colours for Painting"
+#~ msgstr "ערבוב צבעים לציור"
+
+#~ msgid "Mix red, yellow, blue, black and white paint"
+#~ msgstr "מערבבים את צבע אדום, צהוב, כחול, שחור ולבן"
+
+#~ msgid "Additive Colour Mixing - Light"
+#~ msgstr "ערבוב תוסף צבע - אור"
+
+#~ msgid "Mix red, green and blue light to get other colours"
+#~ msgstr "מערבבים באור אדום, ירוק וכחול כדי לקבל צבעים אחרים"
+
+#~ msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
+#~ msgstr "ערבוב צבע תוסף - צבעים, צבעים, דיו"
+
+#~ msgid "Mix cyan, magenta and yellow paint to get other colours"
+#~ msgstr "מערבבים ציאן, מגנטה וצבע הצהוב כדי לקבל צבעים אחרים"
+
+#~ msgid "Find the colour of the circle in the middle"
+#~ msgstr "מצאו את הצבע של המעגל"
+
+#~ msgid "Adjust the amount of cyan, magenta and yellow paint"
+#~ msgstr "התאימו את כמות ציאן, מגנטה וצבע הצהוב"
+
+#~ msgid "Adjust the intensity of red, green and blue light"
+#~ msgstr "התאימו את עוצמת אור אדום, ירוק וכחול"
+
+#~ msgid "brush size"
+#~ msgstr "גודל מברשת"
+
+#~ msgid "Noughts and Crosses 2"
+#~ msgstr "סולמות וחבלים '2"
+
+#~ msgid "Noughts and Crosses 3"
+#~ msgstr "סולמות וחבלים '3"
+
+#~ msgid "Get as many lines of 3 as possible to win"
+#~ msgstr "קבל כמו קווים רבים של 3 ככל האפשר כדי לנצח"
+
+#~ msgid "Draw"
+#~ msgstr "צייר"
+
+#~ msgid "User Name"
+#~ msgstr "שם משתמש:"
+
+#~ msgid "Match Animals"
+#~ msgstr "בעלי חיים התאמה"
+
+#~ msgid "Match Animals - Memory Game"
+#~ msgstr "בעלי חיים במשחק - משחק הזיכרון"
+
+#~ msgid "Match Fruits - Memory Game"
+#~ msgstr "פירות משחק - משחק זיכרון"
+
+#~ msgid "Match Vegetables - Memory Game"
+#~ msgstr "ירקות משחק - משחק זיכרון"
+
+#~ msgid "Match Numbers - Memory Game"
+#~ msgstr "מספרי משחק - משחק הזיכרון"
+
+#~ msgid "Find matching pairs of the same image"
+#~ msgstr "מצא את התאמת זוגות של אותה תמונה"
+
+#~ msgid "Image Slider"
+#~ msgstr "התמונה Slider"
+
+#~ msgid "Animal Slider"
+#~ msgstr "בעלי החיים Slider"
+
+#~ msgid "Fruit Slider"
+#~ msgstr "הפירות Slider"
+
+#~ msgid "Number Slider"
+#~ msgstr "מספר Slider"
+
+#~ msgid "Fraction Groups"
+#~ msgstr "קבוצות שבריר"
+
+#~ msgid "Percentages"
+#~ msgstr "אחוזים"
+
+#~ msgid "Ratios"
+#~ msgstr "יחסים"
+
+#~ msgid "Match fraction charts on the right to the ones on the left"
+#~ msgstr "תרשימי שבריר התאמה מימין לאלה בצד השמאל"
+
+#~ msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
+#~ msgstr "תרשימי התאמת שבריר ושברים על הזכות לתרשימי החלק בצד השמאל"
+
+#~ msgid "Match fraction charts to the fractions on the left"
+#~ msgstr "תרשימי שבריר התאמה לשברים בצד השמאל"
+
+#~ msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
+#~ msgstr "תרשימי שבריר התאמה, שברים ושברים עשרוניים על הזכות לייצוג אחוזם"
+
+#~ msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
+#~ msgstr "התאם תרשימים ליחסים בצד השמאל. יחסים באים לידי ביטוי כיחס בין חתיכות צבעוניות לחתיכות הלבנות"
+
+#~ msgid "Maths Matching Game"
+#~ msgstr "משחק התאמה במתמטיקה"
+
+#~ msgid "Multiplication"
+#~ msgstr "כפל"
+
+#~ msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
+#~ msgstr "בדקו אם יש גירסה חדשה יותר, דווחו באגים, דונו, תרגמו או תכתבו ביקורת על הפרוייקט פה"
+
+#~ msgid "Match numbers to their spelling"
+#~ msgstr "מספרי התאמה לאיות שלהם"
+
+#~ msgid "Find all matching animals"
+#~ msgstr "מצא את כל בעלי החיים ההתאמה"
+
+#~ msgid "Match animals to their shadows"
+#~ msgstr "בעלי חיים התאמה לצללים שלהם"
 
 #, python-format
-msgid "such that lengths of its sides are equal to %d and %d"
-msgstr "כזה שאורכי צלעותיה שווים %d %d"
+#~ msgid "Shape to draw: %s"
+#~ msgstr "לעצב %s"
 
 #, python-format
-msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
-msgstr "כזה שהאורכים של 2 הבסיסים המקבילים שלה שווים %d וגובה %d"
+#~ msgid "such that lengths of its bases are equal to %d and %d and height to %d"
+#~ msgstr "כזה שאורכי בסיסיו שווים %d %d וגובה %d"
 
 #, python-format
-msgid "such that length of its base is equal to %d and height to %d"
-msgstr "אורכו של הבסיס שלה באופן ששווה %d וגובה %d"
+#~ msgid "such that lengths of its sides are equal to %d"
+#~ msgstr "כזה שאורכי צלעותיה שווים %d"
 
 #, python-format
-msgid "such that lengths of its catheti are equal to %d and %d"
-msgstr "כזה שהאורכים של catheti השווים %d %d"
+#~ msgid "such that lengths of its sides are equal to %d and %d"
+#~ msgstr "כזה שאורכי צלעותיה שווים %d %d"
 
 #, python-format
-msgid "such that lengths of both of its catheti are equal to %d"
-msgstr "כזה שהאורכים של שני catheti השווים %d"
+#~ msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
+#~ msgstr "כזה שהאורכים של 2 הבסיסים המקבילים שלה שווים %d וגובה %d"
 
 #, python-format
-msgid "such that length of its hypotenuse is equal to %d"
-msgstr "אורכו של היתר שלו באופן ששווה %d"
+#~ msgid "such that length of its base is equal to %d and height to %d"
+#~ msgstr "אורכו של הבסיס שלה באופן ששווה %d וגובה %d"
 
 #, python-format
-msgid "such that length of one of its sides is equal to %d and height to %d"
-msgstr "אורכו של אחד מהצדדים שלה, כגון שהוא שווה %d וגובה %d"
+#~ msgid "such that lengths of its catheti are equal to %d and %d"
+#~ msgstr "כזה שהאורכים של catheti השווים %d %d"
 
 #, python-format
-msgid "such that length of its radius is equal to %d"
-msgstr "אורך הרדיוס שלו כזה שהוא שווה %d"
+#~ msgid "such that lengths of both of its catheti are equal to %d"
+#~ msgstr "כזה שהאורכים של שני catheti השווים %d"
 
-msgid "Quadrilateral"
-msgstr "מרובע"
+#, python-format
+#~ msgid "such that length of its hypotenuse is equal to %d"
+#~ msgstr "אורכו של היתר שלו באופן ששווה %d"
 
-msgid "Trapezium"
-msgstr "טרפז"
+#, python-format
+#~ msgid "such that length of one of its sides is equal to %d and height to %d"
+#~ msgstr "אורכו של אחד מהצדדים שלה, כגון שהוא שווה %d וגובה %d"
 
-msgid "Trapezium "
-msgstr "טרפז "
+#, python-format
+#~ msgid "such that length of its radius is equal to %d"
+#~ msgstr "אורך הרדיוס שלו כזה שהוא שווה %d"
 
-msgid "Triangle"
-msgstr "משולש"
+#~ msgid "Quadrilateral"
+#~ msgstr "מרובע"
 
-msgid "Ouch... squished quadrilateral"
-msgstr "אאוץ' ... מרובע מעוך"
+#~ msgid "Trapezium "
+#~ msgstr "טרפז "
 
-msgid "Right isosceles triangle"
-msgstr "משולש שווה שוקיים תקין"
+#~ msgid "Triangle"
+#~ msgstr "משולש"
 
-msgid "Obtuse isosceles triangle"
-msgstr "משולש שווה שוקיים קהות"
+#~ msgid "Ouch... squished quadrilateral"
+#~ msgstr "אאוץ' ... מרובע מעוך"
 
-msgid "Acute isosceles triangle"
-msgstr "משולש שווה שוקיים חריפות"
+#~ msgid "Right isosceles triangle"
+#~ msgstr "משולש שווה שוקיים תקין"
 
-msgid "Ouch... squished triangle"
-msgstr "אאוץ' ... משולש בוסס"
+#~ msgid "Obtuse isosceles triangle"
+#~ msgstr "משולש שווה שוקיים קהות"
 
-msgid "Triangle? Well, not really..."
-msgstr "משולש? ובכן, לא ממש ..."
+#~ msgid "Acute isosceles triangle"
+#~ msgstr "משולש שווה שוקיים חריפות"
 
-msgid "Test yourself"
-msgstr "ביחנו את עצמכם"
+#~ msgid "Ouch... squished triangle"
+#~ msgstr "אאוץ' ... משולש בוסס"
 
-msgid "Clock"
-msgstr "שעון "
+#~ msgid "Triangle? Well, not really..."
+#~ msgstr "משולש? ובכן, לא ממש ..."
 
-msgid "learn to read the time"
-msgstr "ללמוד לקרוא את השעה"
+#~ msgid "Test yourself"
+#~ msgstr "ביחנו את עצמכם"
 
-msgid "learn to set the clock"
-msgstr "ללמוד לכוון את השעון"
+#~ msgid "Clock"
+#~ msgstr "שעון "
 
-msgid "Set the clock to:"
-msgstr "הגדר את השעון כדי"
+#~ msgid "learn to read the time"
+#~ msgstr "ללמוד לקרוא את השעה"
 
-msgid "Drag the clock hands to set the time"
-msgstr "גרור את מחוגי שעון כדי להגדיר את הזמן"
+#~ msgid "What time is it?"
+#~ msgstr "מה השעה"
 
-msgid "What time is it?"
-msgstr "מה השעה"
+#~ msgid "Click again to exit"
+#~ msgstr "לחצו שוב ליציאה"
 
-msgid "Click again to exit"
-msgstr "לחצו שוב ליציאה"
+#~ msgid "Type your answer and hit enter"
+#~ msgstr "הקלידו את התשובה שלכם והקלידו אנטר"
 
-msgid "Type your answer and hit enter"
-msgstr "הקלידו את התשובה שלכם והקלידו אנטר"
+#~ msgid "Turn the clock hands and see what happens."
+#~ msgstr "הפעילו את מחוגי השעון וראו מה קורה"
 
-msgid "Time"
-msgstr "זמן"
+#~ msgid "Let's see what shapes you can draw"
+#~ msgstr "בואו נראה איזה צורות אתם יכולים לצייר"
 
-msgid "Turn the clock hands and see what happens."
-msgstr "הפעילו את מחוגי השעון וראו מה קורה"
+#~ msgid "Time in text version only"
+#~ msgstr "זמן בגרסת טקסט בלבד"
 
-msgid "Let's see what shapes you can draw"
-msgstr "בואו נראה איזה צורות אתם יכולים לצייר"
+#~ msgid "Columnar addition"
+#~ msgstr "בנוסף עמודים"
 
-msgid "Time in text version only"
-msgstr "זמן בגרסת טקסט בלבד"
+#~ msgid "Columnar subtraction"
+#~ msgstr "חיסור עמודים"
 
-msgid "How clock works?"
-msgstr "איך שעון עובד"
+#~ msgid "Long multiplication"
+#~ msgstr "כפל ארוך"
 
-msgid "Columnar addition"
-msgstr "בנוסף עמודים"
+#~ msgid "Long division"
+#~ msgstr "חילוק ארוך"
 
-msgid "Columnar subtraction"
-msgstr "חיסור עמודים"
+#~ msgid "borrow 10"
+#~ msgstr "ללוות 10"
 
-msgid "Long multiplication"
-msgstr "כפל ארוך"
+#~ msgid "Start >>"
+#~ msgstr "התחלה"
 
-msgid "Long division"
-msgstr "חילוק ארוך"
+#~ msgid "Next example >>"
+#~ msgstr "הדוגמא הבאה"
 
-msgid "borrow 10"
-msgstr "ללוות 10"
+#~ msgid "Next step >>"
+#~ msgstr "הצעד הבא"
 
-msgid "carry"
-msgstr "לקחת"
+#~ msgid "Do it yourself"
+#~ msgstr "עשו זאת בעצמכם"
 
-msgid "Start >>"
-msgstr "התחלה"
+#~ msgid "Ratio"
+#~ msgstr "יחס"
 
-msgid "Next example >>"
-msgstr "הדוגמא הבאה"
+#~ msgid "Working with large numbers"
+#~ msgstr "עבודה עם מספרים גדולים"
 
-msgid "Next step >>"
-msgstr "הצעד הבא"
+#~ msgid "rewrite "
+#~ msgstr "לשכתב "
 
-msgid "write "
-msgstr "כתיבה "
+#~ msgid "result"
+#~ msgstr "תוצאה"
 
-msgid "Demonstration"
-msgstr "תצוגת תכלית"
+#~ msgid "Add some red"
+#~ msgstr "צריך להוסיף קצת אדום"
 
-msgid "Do it yourself"
-msgstr "עשו זאת בעצמכם"
+#~ msgid "Add some green"
+#~ msgstr "צריך להוסיף קצת ירוק"
 
-msgid "Ratio"
-msgstr "יחס"
+#~ msgid "Add some blue"
+#~ msgstr "צריך להוסיף קצת כחול"
 
-msgid "Working with large numbers"
-msgstr "עבודה עם מספרים גדולים"
+#~ msgid "Add some cyan"
+#~ msgstr "צריך להוסיף קצת ציאן"
 
-msgid "rewrite "
-msgstr "לשכתב "
+#~ msgid "Add some magenta"
+#~ msgstr "צריך להוסיף קצת מגנטה"
 
-msgid "remainder"
-msgstr "היתרה"
+#~ msgid "Add some yellow"
+#~ msgstr "צריך להוסיף קצת צהוב"
 
-msgid "result"
-msgstr "תוצאה"
+#~ msgid "Too much red"
+#~ msgstr "יותר מדי אדום"
 
-msgid "Time Matching"
-msgstr "התאמת זמן"
+#~ msgid "Too much green"
+#~ msgstr "יותר מדי ירוק"
 
-msgid "Add some red"
-msgstr "צריך להוסיף קצת אדום"
+#~ msgid "Too much blue"
+#~ msgstr "יותר מדי כחול"
 
-msgid "Add some green"
-msgstr "צריך להוסיף קצת ירוק"
+#~ msgid "Too much cyan"
+#~ msgstr "יותר מדי ציאן"
 
-msgid "Add some blue"
-msgstr "צריך להוסיף קצת כחול"
+#~ msgid "Too much magenta"
+#~ msgstr "יותר מדי מגנטה"
 
-msgid "Add some cyan"
-msgstr "צריך להוסיף קצת ציאן"
+#~ msgid "Too much yellow"
+#~ msgstr "יותר מדי צהוב"
 
-msgid "Add some magenta"
-msgstr "צריך להוסיף קצת מגנטה"
+#~ msgid "red is spot on"
+#~ msgstr "נכון מאוד"
 
-msgid "Add some yellow"
-msgstr "צריך להוסיף קצת צהוב"
+#~ msgid "green is spot on"
+#~ msgstr "נכון מאוד"
 
-msgid "Too much red"
-msgstr "יותר מדי אדום"
+#~ msgid "blue is spot on"
+#~ msgstr "נכון מאוד"
 
-msgid "Too much green"
-msgstr "יותר מדי ירוק"
+#~ msgid "cyan is spot on"
+#~ msgstr "נכון מאוד"
 
-msgid "Too much blue"
-msgstr "יותר מדי כחול"
+#~ msgid "magenta is spot on"
+#~ msgstr "נכון מאוד"
 
-msgid "Too much cyan"
-msgstr "יותר מדי ציאן"
+#~ msgid "yellow is spot on"
+#~ msgstr "נכון מאוד"
 
-msgid "Too much magenta"
-msgstr "יותר מדי מגנטה"
+#~ msgid "remember me"
+#~ msgstr "זכור אותי"
 
-msgid "Too much yellow"
-msgstr "יותר מדי צהוב"
+#~ msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/"
 
-msgid "red is spot on"
-msgstr "נכון מאוד"
+#~ msgid "A collection of educational activities for kids"
+#~ msgstr "יישומים לימודיים לילדים"
 
-msgid "green is spot on"
-msgstr "נכון מאוד"
+#~ msgid "Decimals and Fractions"
+#~ msgstr "ספרות ושברים"
 
-msgid "blue is spot on"
-msgstr "נכון מאוד"
+#~ msgid "Decimals, fractions and percentages"
+#~ msgstr "ספרות, שברים ואחוזים"
 
-msgid "cyan is spot on"
-msgstr "נכון מאוד"
+#~ msgid "Decimals, fractions, ratios and percentages"
+#~ msgstr "ספרות, שברים, יחסים ואחוזים"
 
-msgid "magenta is spot on"
-msgstr "נכון מאוד"
+#~ msgid "Translation Credits"
+#~ msgstr "קרדיטים (מתרגם)"
 
-msgid "yellow is spot on"
-msgstr "נכון מאוד"
+#~ msgid "Achievements"
+#~ msgstr "הישגים"
 
-msgid "remember me"
-msgstr "זכור אותי"
+#~ msgid "Select age group:"
+#~ msgstr "בחרו קבוצת גיל:"
 
-msgid ""
-"Laby, 2010 by Mehdi Cherti (mehdidc) \n"
-" Sounds by various authors who contributed their works to freesound.org. \n"
-" Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n"
-" Please view credits.txt for more info about authors of media files used in this project"
-msgstr ""
+#~ msgid "show activities for:"
+#~ msgstr "הצגת פעילויות עבור:"
 
-msgid "Licence"
-msgstr "רשיון שימוש"
+#~ msgid "Year 1"
+#~ msgstr "כיתה א'"
 
-msgid ""
-"This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General "
-"Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General "
-"Public License along with this program. If not, see http://www.gnu.org/licenses/"
+#~ msgid "Year 2"
+#~ msgstr "כיתה ב'"
 
-msgid "A collection of educational activities for kids"
-msgstr "יישומים לימודיים לילדים"
+#~ msgid "Year 3"
+#~ msgstr "כיתה ג'"
 
-msgid "Complete the word"
-msgstr "השלימו את המילה"
+#~ msgid "Year 4"
+#~ msgstr "כיתה ד'"
 
-msgid "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
-msgstr ""
+#~ msgid "Year 5"
+#~ msgstr "כיתה ה'"
 
-msgid "Decimals and Fractions"
-msgstr "ספרות ושברים"
+#~ msgid "Year 6"
+#~ msgstr "כיתה ו'"
 
-msgid "Decimals, fractions and percentages"
-msgstr "ספרות, שברים ואחוזים"
+#~ msgid "show all"
+#~ msgstr "הכל"
 
-msgid "Decimals, fractions, ratios and percentages"
-msgstr "ספרות, שברים, יחסים ואחוזים"
+#~ msgid "Do you want to exit the game?"
+#~ msgstr "האם ברצונכם לצאת מהמשחק?"
 
-msgid "Shapes and Solids"
-msgstr "צורות"
+#~ msgid "Do you want to log out of the game?"
+#~ msgstr "האם ברצונכם להתנתק מהמשתמש המחובר למשחק?"
 
-msgid "Translation Credits"
-msgstr "קרדיטים (מתרגם)"
+#~ msgid "Ready to go to the next level?"
+#~ msgstr "מוכנים לשלב הבא?"
 
-msgid "Level"
-msgstr "שלב"
+#~ msgid "Decimals (Category)"
+#~ msgstr "ספרות"
 
-msgid "Find solution"
-msgstr "מיצאו פתרון"
+#~ msgid "Fractions (Category)"
+#~ msgstr "שברים"
 
-msgid "Find missing number"
-msgstr "מיצאו את המספר החסר"
+#~ msgid "Ratios (Category)"
+#~ msgstr "יחסים"
 
-msgid "Achievements"
-msgstr "הישגים"
+#~ msgid "Percentages (Category)"
+#~ msgstr "אחוזים"
 
-msgid "Select age group:"
-msgstr "בחרו קבוצת גיל:"
-
-msgid "show activities for:"
-msgstr "הצגת פעילויות עבור:"
-
-msgid "preschool"
-msgstr "גילאי גן"
-
-msgid "Year 1"
-msgstr "כיתה א'"
-
-msgid "Year 2"
-msgstr "כיתה ב'"
-
-msgid "Year 3"
-msgstr "כיתה ג'"
-
-msgid "Year 4"
-msgstr "כיתה ד'"
-
-msgid "Year 5"
-msgstr "כיתה ה'"
-
-msgid "Year 6"
-msgstr "כיתה ו'"
-
-msgid "show all"
-msgstr "הכל"
-
-msgid "Do you want to exit the game?"
-msgstr "האם ברצונכם לצאת מהמשחק?"
-
-msgid "Do you want to log out of the game?"
-msgstr "האם ברצונכם להתנתק מהמשתמש המחובר למשחק?"
-
-msgid "Ready to go to the next level?"
-msgstr "מוכנים לשלב הבא?"
-
-msgid "Language arts"
-msgstr "שפה"
-
-msgid "Other"
-msgstr "אחר"
-
-msgid "Educational Activities for Kids"
-msgstr ""
-
-msgid ""
-"You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \n"
-"http://espeak.sourceforge.net/"
-msgstr ""
-
-msgid "Decimals (Category)"
-msgstr "ספרות"
-
-msgid "Fractions (Category)"
-msgstr "שברים"
-
-msgid "Ratios (Category)"
-msgstr "יחסים"
-
-msgid "Percentages (Category)"
-msgstr "אחוזים"
-
-msgid "Word Builders"
-msgstr "בונה מילה"
-
-msgid "Word Matchers"
-msgstr "התאמת תמונות למילים"
-
-msgid "Match images to words"
-msgstr "התאמת תמונות למילים"
-
-msgid "Animals"
-msgstr "בעלי חיים"
-
-msgid "Sports"
-msgstr "ספורט"
-
-msgid "Body"
-msgstr "גוף"
-
-msgid "People"
-msgstr "אנשים"
-
-msgid "Actions"
-msgstr "פעולות"
-
-msgid "Constructions"
-msgstr "קונסטרוקציות"
-
-msgid "Nature"
-msgstr "טבע"
-
-msgid "Jobs"
-msgstr "משרות"
-
-msgid "Clothes and Accessories"
-msgstr "בגדים ואבזרים"
-
-msgid "Fruits and Vegetables"
-msgstr "פירות וירקות"
-
-msgid "Transport"
-msgstr "תחבורה"
-
-msgid "Food"
-msgstr "מזון"
-
-msgid "Listening Exercises"
-msgstr ""
-
-msgid "Match sounds to words"
-msgstr ""
-
-msgid "Patterns"
-msgstr ""
-
-msgid "Number Patterns"
-msgstr ""
-
-msgid "Letter Patterns"
-msgstr ""
-
-msgid "Color Patterns"
-msgstr ""
-
-msgid "Image Patterns"
-msgstr ""
-
-msgid "Fraction Patterns"
-msgstr ""
-
-msgid "Shape Patterns"
-msgstr ""
-
-msgid "Complete the pattern on the top line."
-msgstr ""
-
-msgid "Match shapes to their names"
-msgstr ""
-
-msgid "Negative numbers"
-msgstr ""
-
-msgid "numerator"
-msgstr ""
-
-msgid "denominator"
-msgstr ""
-
-msgid "Experiment with fractions"
-msgstr ""
-
-msgid "Experiment with decimal fractions"
-msgstr ""
-
-msgid "Experiment with ratios"
-msgstr ""
-
-msgid "Experiment with percentages"
-msgstr ""
-
-msgid "What fraction is it?"
-msgstr ""
-
-msgid "What decimal fraction is it?"
-msgstr ""
-
-msgid "Add fractions with the same denominator"
-msgstr ""
-
-msgid "Subtract fractions with the same denominator"
-msgstr ""
-
-msgid "Multiply fractions"
-msgstr ""
-
-msgid "Divide fractions"
-msgstr ""
-
-msgid "Exercise 1"
-msgstr ""
-
-msgid "Exercise 2"
-msgstr ""
-
-msgid "Exercise 3"
-msgstr ""
-
-msgid "Compare decimals and fractions"
-msgstr ""
-
-msgid "Compare fractions"
-msgstr ""
-
-msgid "Reduce fractions"
-msgstr ""
-
-msgid "Extend fractions"
-msgstr ""
-
-msgid "To reduce a fraction divide the numerator and the denominator by one of their common factors which are displayed between the two fractions. Select one of them to see what happens. If 1 is the only common factor then the fraction can't be reduced any more - try choosing a different one."
-msgstr ""
-
-msgid "To extend a fraction multiply the numerator and the denominator by the same number. Change the multiplicand to see what happens."
-msgstr ""
-
-msgid "Use the arrows to change your answer or just type it in."
-msgstr ""
-
-msgid "Use the arrows to change your answer."
-msgstr ""
-
-msgid "To add two fractions with the same denominators add their numerators together and keep the denominator unchanged. Simplify the result if the numerator is greater than the denominator and reduce the fraction if possible."
-msgstr ""
-
-msgid "To subtract one fraction from another one with the same denominator subtract numerators and keep the denominator unchanged. Reduce the resulting fraction if possible."
-msgstr ""
-
-msgid "To multiply two fractions multiply the numerators together and then multiply the denominators together. Reduce the resulting fraction if possible."
-msgstr ""
-
-msgid "To divide a fraction by another fraction multiply the first fraction by the second fraction flipped up side down. Simplify and reduce the resulting fraction if possible."
-msgstr ""
-
-msgid "Group fractions together"
-msgstr ""
-
-msgid "Group percentages together"
-msgstr ""
-
-msgid "Group ratios together"
-msgstr ""
-
-msgid "eduActiv8 update is available. Current version: %s. New version: %s."
-msgstr ""
-
-msgid "check for updates on start"
-msgstr ""
-
-msgid "Symmetry"
-msgstr ""
-
-msgid "Reflection Symmetry - draw with shapes"
-msgstr ""
-
-msgid "Reflect shapes"
-msgstr ""
-
-msgid "Reflect a shape in a mirror line"
-msgstr ""
-
-msgid "Draw a shape that is a reflection of the one already displayed. The red line is the mirror line."
-msgstr ""
-
-msgid "Symmetrical shapes - missing half"
-msgstr ""
-
-msgid "Draw the other half of the shape"
-msgstr ""
-
-msgid "Find lines of symmetry"
-msgstr ""
-
-msgid "Find and select all lines of symmetry for a displayed shape. Click on the arrows around the drawing area to select them."
-msgstr ""
-
-msgid "Match equivalent fractions"
-msgstr ""
-
-msgid "Match fractions"
-msgstr ""
-
-msgid "Match decimals"
-msgstr ""
-
-msgid "Match percentages"
-msgstr ""
-
-msgid "Match ratios"
-msgstr ""
-
-msgid "Percentages in a pie chart"
-msgstr ""
-
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "Find equivalent fraction"
-msgstr ""
-
-msgid "Calculating with Time"
-msgstr ""
-
-msgid "start time"
-msgstr ""
-
-msgid "end time"
-msgstr ""
-
-msgid "elapsed time"
-msgstr ""
-
-msgid "Temperature - introduction to negative numbers"
-msgstr ""
-
-msgid "Experiment with elapsed time"
-msgstr ""
-
-msgid "Experiment with elapsed time 2"
-msgstr ""
-
-msgid "Calculate elapsed time"
-msgstr ""
-
-msgid "Find the start or the end time"
-msgstr ""
-
-msgid "Visualized on a clock dial"
-msgstr ""
-
-msgid "Visualized on a number line"
-msgstr ""
-
-msgid "Visualized on two number lines"
-msgstr ""
-
-msgid "With no visualizations"
-msgstr ""
-
-msgid "with mirrored images"
-msgstr ""
-
-msgid "Theme Editor"
-msgstr ""
-
-msgid "Make the game look your way"
-msgstr ""
-
-msgid "Reset colors back to the default ones?"
-msgstr ""
-
-msgid "Font Preferences"
-msgstr ""
-
-msgid "with simplifying"
-msgstr ""
-
-msgid "Positive numbers"
-msgstr ""
-
-msgid "Basics"
-msgstr ""
-
-msgid "Equivalent fractions"
-msgstr ""
-
-msgid "Expanding and reducing fractions"
-msgstr ""
-
-msgid "Add fractions with unlike denominators"
-msgstr ""
-
-msgid "Subtract fractions with unlike denominators"
-msgstr ""
-
-msgid "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
-msgstr ""
+#~ msgid "Match images to words"
+#~ msgstr "התאמת תמונות למילים"

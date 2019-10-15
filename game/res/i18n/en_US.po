@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
-"Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"Report-Msgid-Bugs-To: Derek Lackaff <lackaff@hackranch.com>\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2019-10-15 11:39-0400\n"
 "Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"

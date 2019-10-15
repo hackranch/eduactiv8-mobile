@@ -1,88 +1,236 @@
-# eduActiv8 - Educational Activity Pack - translation file.
-# Copyright (C) 2012 - 2018 Ireneusz Imiolek
-# This file is distributed under the same license as the eduactiv8 package.
+# eduActiv8 Mobile - translation file.
+# Copyright (C) 2019 Hackranch
+# This file is distributed under the same license as eduActiv8 Mobile.
 # Translated by Στέλιος, versys650gr, sdim, lucinos and other members of The Official Greek Community of Linux Mint, 2013
 # Updated by Alexandros Moskofidis
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.31.105\n"
-"Report-Msgid-Bugs-To: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
-"POT-Creation-Date: 2013-11-01 15:33+0000\n"
-"PO-Revision-Date: 2018-12-12 14:37+0000\n"
-"Last-Translator: Ireneusz Imiolek <imiolek.i@googlemail.com>\n"
-"Language-Team: Ireneusz Imiolek <imiolek.i@gmail.com>\n"
+"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
+"Report-Msgid-Bugs-To: Derek Lackaff <lackaff@hackranch.com>\n"
+"POT-Creation-Date: 2019-10-15 00:00+0000\n"
+"PO-Revision-Date: 2019-10-15 16:11-0400\n"
+"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
+"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
-msgid "green apple"
-msgid_plural "green apples"
-msgstr[0] "πράσινο μήλο"
-msgstr[1] "πράσινα μήλα"
+msgid "English"
+msgstr "Αγγλικά"
 
-msgid "red apple"
-msgid_plural "red apples"
-msgstr[0] "κόκκινο μήλο"
-msgstr[1] "κόκκινα μήλα"
+msgid "Login"
+msgstr "Σύνδεση"
 
-msgid "strawberry"
-msgid_plural "strawberries"
-msgstr[0] "φράουλα"
-msgstr[1] "φράουλες"
+msgid "Default Language:"
+msgstr "Προκαθορισμένη γλώσσα:"
 
-msgid "pear"
-msgid_plural "pears"
-msgstr[0] "αχλάδι"
-msgstr[1] "αχλάδια"
+msgid "User Management"
+msgstr "Διαχείριση χρηστών"
 
-msgid "orange [fruit]"
-msgid_plural "oranges"
-msgstr[0] "πορτοκάλι"
-msgstr[1] "πορτοκάλια"
+msgid "Copyright & Credits"
+msgstr "Πνευματικά δικαιώματα & Συντελεστές"
 
-msgid "onion"
-msgid_plural "onions"
-msgstr[0] "κρεμμύδι"
-msgstr[1] "κρεμμύδια"
+msgid "Licence"
+msgstr "Άδεια"
 
-msgid "tomato"
-msgid_plural "tomatoes"
-msgstr[0] "ντομάτα"
-msgstr[1] "ντομάτες"
+msgid "Language arts"
+msgstr "Γλωσσικές τέχνες"
 
-msgid "lemon"
-msgid_plural "lemons"
-msgstr[0] "λεμόνι"
-msgstr[1] "λεμόνια"
+msgid "This username and password combination doesn't exist."
+msgstr "Δεν υπάρχει αυτός ο συνδυασμός ονόματος χρήστη και συνθηματικού."
 
-msgid "cherry"
-msgid_plural "cherries"
-msgstr[0] "κεράσι"
-msgstr[1] "κεράσια"
+#| msgid "user name:"
+msgid "user name: "
+msgstr ""
 
-msgid "pepper"
-msgid_plural "peppers"
-msgstr[0] "πιπεριά"
-msgstr[1] "πιπεριές"
+#| msgid "password:"
+msgid "password: "
+msgstr ""
 
-msgid "carrot"
-msgid_plural "carrots"
-msgstr[0] "καρότο"
-msgstr[1] "καρότα"
+msgid "eduActiv8 Test Version"
+msgstr ""
 
-msgid "banana"
-msgid_plural "bananas"
-msgstr[0] "μπανάνα"
-msgstr[1] "μπανάνες"
+msgid "Save"
+msgstr "Αποθήκευση"
 
-msgid "watermelon"
-msgid_plural "watermelons"
-msgstr[0] "καρπούζι"
-msgstr[1] "καρπούζια"
+msgid "Delete user"
+msgstr "Διαγραφή χρήστη"
+
+msgid "Preferences saved..."
+msgstr "Αποθηκεύτηκαν οι νέες προτιμήσεις..."
+
+msgid "Logged in as: "
+msgstr "Συνδεδεμένος/η ως: "
+
+msgid "Language"
+msgstr "Γλώσσα"
+
+msgid "Mathematics"
+msgstr "Μαθηματικά"
+
+msgid "Games & Mazes"
+msgstr "Παιχνίδια και Λαβύρινθοι"
+
+msgid "Word Builders"
+msgstr "Σχηματισμός λέξεων"
+
+msgid "Animals"
+msgstr "Ζώα"
+
+msgid "Complete the word"
+msgstr "Ολοκλήρωσε τη λέξη"
+
+msgid "Positive numbers"
+msgstr ""
+
+msgid "Number Spelling"
+msgstr "Γραφή αριθμών ως λέξεις"
+
+msgid "Shopping List"
+msgstr "Λίστα για ψώνια"
+
+msgid "Addition"
+msgstr "Πρόσθεση"
+
+msgid "Find missing number"
+msgstr "Βρες τον αριθμό που λείπει"
+
+msgid "Level"
+msgstr "Επίπεδο"
+
+msgid "Translators"
+msgstr "Μεταφραστές"
+
+msgid "Funding: "
+msgstr ""
+
+msgid "Score: "
+msgstr "Σκορ: "
+
+msgid "Numbers & Basic Operations"
+msgstr "Αριθμοί και Βασικές Πράξεις"
+
+msgid "Numbers"
+msgstr "Αριθμοί"
+
+msgid "Basic Operations"
+msgstr "Βασικές πράξεις"
+
+msgid "area:"
+msgstr "περιοχή:"
+
+msgid "perimeter:"
+msgstr "περίμετρος:"
+
+msgid "circumference:"
+msgstr "περιφέρεια:"
+
+msgid "Trapezium"
+msgstr "Τραπέζιο"
+
+msgid "Drag the clock hands to set the time"
+msgstr "Μετακίνησε τους δείκτες του ωρολογιού για να βάλεις την ώρα"
+
+msgid "Discover Letters"
+msgstr "Ανακαλύψτε τα Γράμματα"
+
+msgid "Word Matchers"
+msgstr "Συνδέστε τις λέξεις"
+
+msgid "Shapes and Solids"
+msgstr "Σχήματα και Στερεά"
+
+msgid "Symmetry"
+msgstr ""
+
+msgid "Patterns"
+msgstr ""
+
+msgid "Time"
+msgstr "Ώρα"
+
+msgid "Basics"
+msgstr ""
+
+msgid "Subtraction"
+msgstr "Αφαίρεση"
+
+msgid "Learn Numbers with Flashcards"
+msgstr "Μάθε να μετράς με καρτέλες"
+
+msgid "Demonstration"
+msgstr "Επίδειξη"
+
+#| msgid "Find solution"
+msgid "Find Solution"
+msgstr ""
+
+msgid "Image Patterns"
+msgstr ""
+
+msgid "Learn Shapes with Flashcards"
+msgstr "Μάθε σχήματα με καρτέλες"
+
+msgid "Shape Matching"
+msgstr "Ταίριαξε τα σχήματα"
+
+msgid "Shape Maker"
+msgstr "Δημιουργία Σχημάτων"
+
+msgid "How clock works?"
+msgstr "Πως δουλεύει η ώρα;"
+
+msgid "learn to set the clock"
+msgstr "Μάθε πως να βάζεις την ώρα"
+
+msgid "Set the clock to:"
+msgstr "Ρύθμισε την ώρα σε:"
+
+msgid "Time Matching"
+msgstr "Ταίριαξε τα ωρολόγια"
+
+msgid "Your Alphabet"
+msgstr "Ελληνικό αλφάβητο"
+
+msgid "Trace Letters and Numbers"
+msgstr "Σχεδίασε γράμματα και αριθμούς"
+
+msgid "People"
+msgstr "Άνθρωποι"
+
+msgid "Jobs"
+msgstr "Δουλειές"
+
+msgid "Body"
+msgstr "Σώμα"
+
+msgid "Clothes and Accessories"
+msgstr "Ρούχα και αξεσουάρ"
+
+msgid "Sports"
+msgstr "Αθλήματα"
+
+msgid "Actions"
+msgstr "Ενέργειες"
+
+msgid "Nature"
+msgstr "Φύση"
+
+msgid "Fruits and Vegetables"
+msgstr "Φρούτα και λαχανικά"
+
+msgid "Food"
+msgstr "Φαγητό"
+
+msgid "Transport"
+msgstr "Μεταφορικά μέσα"
+
+msgid "Constructions"
+msgstr "Κατασκευές"
 
 msgid "Equilateral Triangle"
 msgstr "Ισόπλευρο Τρίγωνο"
@@ -123,1406 +271,2726 @@ msgstr "Πεντάγωνο"
 msgid "Hexagon"
 msgstr "Εξάγωνο"
 
-msgid "Heptagon"
-msgstr ""
-
-msgid "Octagon"
-msgstr ""
-
 msgid "Circle"
 msgstr "Κύκλος"
 
 msgid "Ellipse"
 msgstr "Έλλειψη"
 
-msgid "Cube"
-msgstr "Κύβος"
+msgid "Heptagon"
+msgstr ""
 
-msgid "Square Prism"
-msgstr "Παραλληλεπίπεδο"
+msgid "Octagon"
+msgstr ""
 
-msgid "Triangular Prism"
-msgstr "Tριγωνικό Πρίσμα"
+#| msgid "Trapezium"
+msgid "trapezium"
+msgstr ""
 
-msgid "Square Pyramid"
-msgstr "Τετραγωνική Πυραμίδα"
+# animals
+msgid "cow"
+msgstr ""
 
-msgid "Triangular Pyramid"
-msgstr "Τριγωνική Πυραμίδα"
+msgid "turkey"
+msgstr ""
 
-msgid "Sphere"
-msgstr "Σφαίρα"
+msgid "shrimp"
+msgstr ""
 
-msgid "Cylinder"
-msgstr "Κύλινδρος"
+msgid "wolf"
+msgstr ""
 
-msgid "Cone"
-msgstr "Κώνος"
+#| msgid "Other"
+msgid "panther"
+msgstr ""
 
-msgid "Torus"
-msgstr "Τόρος"
+msgid "panda"
+msgstr ""
 
-msgid "Default Language:"
-msgstr "Προκαθορισμένη γλώσσα:"
+msgid "magpie"
+msgstr ""
 
-msgid "Guest"
-msgstr "Επισκέπτης"
+msgid "clam"
+msgstr ""
 
-msgid "Log in:"
-msgstr "Σύνδεση:"
+msgid "pony"
+msgstr ""
 
-msgid "user name:"
-msgstr "όνομα χρήστη:"
+msgid "mouse"
+msgstr ""
 
-msgid "password:"
-msgstr "συνθηματικό:"
+msgid "pug"
+msgstr ""
 
-msgid "Login"
-msgstr "Σύνδεση"
+msgid "koala"
+msgstr ""
 
-msgid "Add new user:"
-msgstr "Προσθήκη νέου χρήστη:"
+msgid "frog"
+msgstr ""
 
-msgid "confirm password:"
-msgstr "Επιβεβαίωση συνθηματικού:"
+msgid "ladybug"
+msgstr ""
 
-msgid "Register new user"
-msgstr "Εγγραφή"
+msgid "gorilla"
+msgstr ""
 
-msgid "Administrator Login:"
-msgstr "Σύνδεση διαχειριστή:"
+msgid "llama"
+msgstr ""
 
-msgid "User Management"
-msgstr "Διαχείριση χρηστών"
+#| msgid "Nature"
+msgid "vulture"
+msgstr ""
 
-msgid "Please select a user from the list."
-msgstr "Παρακαλώ επιλέξτε ένα χρήστη από την λίστα."
+msgid "hamster"
+msgstr ""
 
-msgid "Delete user"
-msgstr "Διαγραφή χρήστη"
+msgid "bird"
+msgstr ""
 
-msgid "Delete"
-msgstr "Διαγραφή"
+msgid "starfish"
+msgstr ""
 
-msgid "Cancel"
-msgstr "Ακύρωση"
+msgid "crow"
+msgstr ""
 
-#, python-format
-msgid "%s deleted from database."
-msgstr "ο/η %s διαγράφηκε από την βάση δεδομένων."
+msgid "parakeet"
+msgstr ""
 
-msgid "Failed to delete the user."
-msgstr "Αποτυχία διαγραφής τού χρήστη."
+msgid "caterpillar"
+msgstr ""
 
-msgid "Preferences"
-msgstr "Προτιμήσεις"
+msgid "tiger"
+msgstr ""
 
-msgid "switch to full screen after login"
-msgstr "μετάβαση σε πλήρη οθόνη μετά την σύνδεση"
+msgid "hummingbird"
+msgstr ""
 
-msgid "allow adding new users on login screen"
-msgstr "να επιτρέπεται η προσθήκη νέων χρηστών από την οθόνη σύνδεσης"
+msgid "piranha"
+msgstr ""
 
-msgid "display languages with uncompleted translations"
-msgstr "εμφάνιση γλωσσών με ημιτελείς μεταφράσεις"
+msgid "pig"
+msgstr ""
 
-msgid "require password to log in"
-msgstr "να απαιτείται συνθηματικό για τη σύνδεση"
+msgid "scorpion"
+msgstr ""
 
-msgid "require password to access admin area"
-msgstr "να απαιτείται συνθηματικό για την πρόσβαση στις λειτουργίες διαχείρισης"
+msgid "fo"
+msgstr ""
 
-msgid "Update admin's password:"
-msgstr "Ενημέρωση συνθηματικού διαχειριστή:"
+msgid "leopard"
+msgstr ""
 
-msgid "previous password:"
-msgstr "παλιό συνθηματικό:"
+msgid "iguana"
+msgstr ""
 
-msgid "new password:"
-msgstr "νέο συνθηματικό:"
+msgid "dolphin"
+msgstr ""
 
-msgid "confirm new password:"
-msgstr "επιβεβαίωση νέου συνθηματικού:"
+msgid "bat"
+msgstr ""
 
-msgid "Create admin's account:"
-msgstr "Δημιουργία λογαριασμού διαχειριστή:"
+msgid "chick"
+msgstr ""
 
-msgid "admin's user name:"
-msgstr "όνομα διαχειριστή:"
+msgid "crab"
+msgstr ""
 
-msgid "admin's password:"
-msgstr "συνθηματικό διαχειριστή:"
+msgid "hen"
+msgstr ""
 
-msgid "confirm admin's password:"
-msgstr "επιβεβαίωση συνθηματικού διαχειριστή:"
+msgid "wasp"
+msgstr ""
 
-msgid "Save"
-msgstr "Αποθήκευση"
+msgid "chameleon"
+msgstr ""
 
-msgid "Please enter user name (at least 3 characters long)"
-msgstr "Παρακαλώ εισάγετε το όνομα χρήστη (ελάχιστο μέγεθος 3 χαρακτήρες)"
+msgid "whale"
+msgstr ""
 
-msgid "Please enter password (at least 4 characters long)"
-msgstr "Παρακαλώ εισάγετε το συνθηματικό σας (ελάχιστο μέγεθος 4 χαρακτήρες)"
+msgid "hedgehog"
+msgstr ""
 
-msgid "This username and password combination doesn't exist."
-msgstr "Δεν υπάρχει αυτός ο συνδυασμός ονόματος χρήστη και συνθηματικού."
+msgid "fawn"
+msgstr ""
 
-msgid "This username doesn't exist."
-msgstr "Δεν υπάρχει αυτό το όνομα χρήστη."
+msgid "moose"
+msgstr ""
 
-msgid "Passwords don't match"
-msgstr "Τα συνθηματικά δεν ταιριάζουν"
+msgid "bee"
+msgstr ""
 
-#, python-format
-msgid "%s added"
-msgstr "προστέθηκε ο/η %s "
+msgid "viper"
+msgstr ""
 
-msgid "This user name already exists, please choose a different one"
-msgstr "Το όνομα χρήστη υπάρχει ήδη, παρακαλώ επιλέξτε άλλο"
+msgid "shrike"
+msgstr ""
 
-msgid "Admin's password has been updated"
-msgstr "Το συνθηματικό τού διαχειριστή ενημερώθηκε"
+msgid "donkey"
+msgstr ""
 
-msgid "ERROR: This operation is not allowed at this point"
-msgstr "ΣΦΑΛΜΑ: Αυτή η λειτουργία δεν επιτρέπεται σε αυτό το σημείο"
+msgid "guinea pig"
+msgstr ""
 
-msgid "Please enter previous password (at least 4 characters long)"
-msgstr "Παρακαλώ εισάγετε το παλιό συνθηματικό (ελάχιστο μέγεθος 4 χαρακτήρες)"
+msgid "sloth"
+msgstr ""
 
-msgid "Please enter new password (at least 4 characters long)"
-msgstr "Παρακαλώ εισάγετε το νέο συνθηματικό (ελάχιστο μέγεθος 4 χαρακτήρες)"
+msgid "horse"
+msgstr ""
 
-msgid "Previous password doesn't seem to be in the database"
-msgstr "Το παλιό συνθηματικό δεν υπάρχει στην βάση δεδομένων"
+msgid "penguin"
+msgstr ""
 
-msgid "Registered:"
-msgstr "Εγγράφηκε:"
+#| msgid "Letters"
+msgid "otter"
+msgstr ""
 
-msgid "Last login:"
-msgstr "Τελευταία σύνδεση:"
+msgid "bear"
+msgstr ""
 
-msgid "Preferences saved..."
-msgstr "Αποθηκεύτηκαν οι νέες προτιμήσεις..."
+msgid "zebra"
+msgstr ""
 
-msgid "Score: "
-msgstr "Σκορ: "
+msgid "ostrich"
+msgstr ""
 
-msgid "Logged in as: "
-msgstr "Συνδεδεμένος/η ως: "
+msgid "camel"
+msgstr ""
 
-msgid "(Log out)"
-msgstr "(Αποσύνδεση)"
+msgid "antelope"
+msgstr ""
 
-msgid "Addition Table"
-msgstr "Πρόσθεση"
+msgid "lemur"
+msgstr ""
 
-msgid "Hello"
-msgstr "Χαίρετε"
+msgid "pigeon"
+msgstr ""
 
-msgid "Welcome back in the game."
-msgstr "Καλωσήλθατε πάλι στο παιχνίδι."
+msgid "lama"
+msgstr ""
 
-msgid "Language"
-msgstr "Γλώσσα"
+msgid "mole"
+msgstr ""
 
-msgid "Translations"
-msgstr "Μεταφράσεις"
+msgid "ray"
+msgstr ""
 
-msgid "Info & Settings"
-msgstr "Πληροφορίες και Ρυθμίσεις"
+msgid "ram"
+msgstr ""
 
-msgid "Keyboard & Mouse"
-msgstr "Πληκτρολόγιο και Ποντίκι"
+msgid "skunk"
+msgstr ""
 
-msgid "Discover Letters"
-msgstr "Ανακαλύψτε τα Γράμματα"
+msgid "jellyfish"
+msgstr ""
 
-msgid "Learn New Words"
-msgstr "Μάθετε νέες λέξεις"
+msgid "sheep"
+msgstr ""
 
-msgid "Mathematics"
-msgstr "Μαθηματικά"
+msgid "shark"
+msgstr ""
 
-msgid "Numbers & Basic Operations"
-msgstr "Αριθμοί και Βασικές Πράξεις"
+msgid "kitten"
+msgstr ""
 
-msgid "Basic Operations - Exercises"
-msgstr "Βασικές Πράξεις"
+msgid "deer"
+msgstr ""
 
-msgid "Sorting and Comparing"
-msgstr "Συλλογή και Σύγκριση"
+msgid "snail"
+msgstr ""
 
-msgid "Geometry and Shape Recognition"
-msgstr "Γεωμετρία και αναγνώριση σχημάτων"
+msgid "flamingo"
+msgstr ""
 
-msgid "Art and Colour"
-msgstr "Καλλιτεχνία και χρώμα"
+msgid "rabbit"
+msgstr ""
 
-msgid "Memory"
-msgstr "Μνήμη"
+msgid "oyster"
+msgstr ""
 
-msgid "Games & Mazes"
-msgstr "Παιχνίδια και Λαβύρινθοι"
+msgid "beaver"
+msgstr ""
 
-msgid "Multiplayer Games"
-msgstr "Παιχνίδια πολλαπλών παικτών"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "sparrow"
+msgstr ""
 
-msgid "About."
-msgstr "Σχετικά με"
+msgid "dove"
+msgstr ""
 
-msgid "Game info..."
-msgstr "Πληροφορίες Παιχνιδιού"
+msgid "eagle"
+msgstr ""
 
-msgid "Copyright & Credits"
-msgstr "Πνευματικά δικαιώματα & Συντελεστές"
+msgid "beetle"
+msgstr ""
 
-msgid "Hit the Mole"
-msgstr "Χτύπα τον τυφλοπόντικα"
+msgid "hippopotamus"
+msgstr ""
 
-msgid "Letters"
-msgstr "Γράμματα"
+msgid "owl"
+msgstr ""
 
-msgid "Learn Letters with Flashcards"
-msgstr "Μάθε γράμματα με καρτέλες"
+msgid "cobra"
+msgstr ""
 
-msgid "Learn to Write"
-msgstr "Μάθε να γράφεις"
+#| msgid "remainder"
+msgid "salamander"
+msgstr ""
 
-msgid "Trace Letters and Numbers"
-msgstr "Σχεδίασε γράμματα και αριθμούς"
+msgid "goose"
+msgstr ""
 
-msgid "Complete the ABC"
-msgstr "Συμπλήρωσε την Αλφαβήτα"
+msgid "kangaroo"
+msgstr ""
 
-msgid "English"
-msgstr "Αγγλικά"
+msgid "dragonfly"
+msgstr ""
 
-msgid "Your language"
-msgstr "Ελληνικά"
+msgid "toad"
+msgstr ""
 
-msgid "Sorting Letters"
-msgstr "Ταξινόμησε τα γράμματα"
+msgid "pelican"
+msgstr ""
 
-msgid "Lowercase Letters"
-msgstr "Πεζά γράμματα"
+msgid "squid"
+msgstr ""
 
-msgid "Uppercase Letters"
-msgstr "Κεφαλαία γράμματα"
+msgid "lion cub"
+msgstr ""
 
-msgid "Word Builder"
-msgstr "Χτίσιμο λέξεων"
+msgid "jaguar"
+msgstr ""
 
-msgid "Word Maze"
-msgstr "Λαβύρινθος με γράμματα"
+msgid "duck"
+msgstr ""
 
-msgid "Collect all letters in the right order"
-msgstr "Βάλε τα γράμματα στη σωστή σειρά"
+msgid "lizard"
+msgstr ""
 
-msgid "Word Maze + 4"
-msgstr "Λαβύρινθος με γράμματα + 4"
+msgid "rhinoceros"
+msgstr ""
 
-msgid "Numbers"
-msgstr "Αριθμοί"
+msgid "hyena"
+msgstr ""
 
-msgid "Learn Numbers with Flashcards"
-msgstr "Μάθε να μετράς με καρτέλες"
+msgid "o"
+msgstr ""
 
-msgid "Learn to Count"
-msgstr "Μάθε να μετράς"
+msgid "peacock"
+msgstr ""
 
-msgid "Basic Addition"
-msgstr "Πρόσθεση"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "parrot"
+msgstr ""
 
-msgid "Basic Subtraction"
-msgstr "Αφαίρεση"
+msgid "elk"
+msgstr ""
 
-msgid "Shopping List"
-msgstr "Λίστα για ψώνια"
+#| msgid "Translators"
+msgid "alligator"
+msgstr ""
 
-msgid "Plus or Minus"
-msgstr "Συν ή Μείον"
+#| msgid "Paint"
+msgid "ant"
+msgstr ""
 
-msgid "Basic Operations"
-msgstr "Βασικές πράξεις"
+msgid "goat"
+msgstr ""
 
-msgid "Multiplication Table"
-msgstr "Προπαίδεια"
+msgid "baby rabbit"
+msgstr ""
 
-msgid "Find the product"
-msgstr "Βρες το αποτέλεσμα"
+msgid "lion"
+msgstr ""
 
-msgid "Find the multiplier"
-msgstr "Βρες τον πολλαπλασιαστή"
+msgid "squirrel"
+msgstr ""
 
-msgid "Division"
-msgstr "Διαίρεση"
+msgid "opossum"
+msgstr ""
 
-msgid "Sorting Numbers"
-msgstr "Ταξινόμησε τους αριθμούς"
+msgid "chimp"
+msgstr ""
 
-msgid "Number Comparison"
-msgstr "Σύγκρινε τους αριθμούς"
+msgid "doe"
+msgstr ""
 
-msgid "Addition & Subtraction"
-msgstr "Πρόσθεση και αφαίρεση"
+#| msgid "Sphere"
+msgid "gopher"
+msgstr ""
 
-msgid "Comparison"
-msgstr "Σύγκριση"
+msgid "elephant"
+msgstr ""
 
-msgid "Fractions"
-msgstr "Κλάσματα"
+msgid "giraffe"
+msgstr ""
 
-msgid "Decimal Fractions"
-msgstr "Δεκαδικά κλάσματα"
+msgid "spider"
+msgstr ""
 
-msgid "Even or Odd"
-msgstr "Ζυγοί ή μονοί αριθμοί"
+msgid "puppy"
+msgstr ""
 
-msgid "Shapes"
-msgstr "Σχήματα"
+msgid "jay"
+msgstr ""
 
-msgid "Learn Shapes with Flashcards"
-msgstr "Μάθε σχήματα με καρτέλες"
+msgid "seal"
+msgstr ""
 
-msgid "Solids"
-msgstr "Σχήματα"
+msgid "rooster"
+msgstr ""
 
-msgid "Solid Geometry with Flashcards"
-msgstr "Γεωμετρικά σχήματα με κάρτες"
+msgid "turtle"
+msgstr ""
 
-msgid "Shape Matching"
-msgstr "Ταίριαξε τα σχήματα"
+msgid "bull"
+msgstr ""
 
-msgid "help me find my shadow"
-msgstr "Βοήθησε με να βρω την σκιά μου"
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "cat"
+msgstr ""
 
-msgid "Paint"
-msgstr "Χρωμάτισε"
+msgid "rat"
+msgstr ""
 
-msgid "Colour Matching"
-msgstr "Ταίριαξε τα χρώματα"
+msgid "slug"
+msgstr ""
 
-msgid "label the colours"
-msgstr "Βάλε ετικέτα στα χρώματα"
+msgid "buffalo"
+msgstr ""
 
-msgid "Follow the Arrows"
-msgstr "Ακολούθησε τα βέλη"
+#| msgid "black"
+msgid "blackbird"
+msgstr ""
 
-msgid "remember the directions"
-msgstr "Να θυμάσαι τις οδηγίες"
+msgid "swan"
+msgstr ""
 
-msgid "Photographic Memory"
-msgstr "Φωτογραφική μνήμη"
+msgid "lobster"
+msgstr ""
 
-msgid "Training"
-msgstr "Προπόνηση"
+msgid "dog"
+msgstr ""
 
-msgid "Automatic Levels"
-msgstr "Αυτόματα επίπεδα"
+msgid "mosquito"
+msgstr ""
 
-msgid "Mouse Maze"
-msgstr "Λαβύρινθος με ποντίκι"
+msgid "snake"
+msgstr ""
 
-msgid "Let's have some cheese"
-msgstr "Ας πάρουμε λίγο τυρί"
+msgid "chicken"
+msgstr ""
 
-msgid "Sheep Maze"
-msgstr "Λαβύρινθος με πρόβατο"
+msgid "anteater"
+msgstr ""
 
-msgid "Find the rest of the herd"
-msgstr "Βρες το υπόλοιπο της αγέλης"
+# sport
+msgid "judo"
+msgstr ""
 
-msgid "Connect"
-msgstr "Σύνδεση"
+msgid "pool"
+msgstr ""
 
-msgid "Balloons with threads"
-msgstr "Μπαλόνια με νήματα"
+msgid "ride"
+msgstr ""
 
-msgid "Fifteen"
-msgstr "Δεκαπέντε"
+msgid "stretch"
+msgstr ""
 
-msgid "With a Twist"
-msgstr "Με μια στροφή"
+msgid "helmet"
+msgstr ""
 
-msgid "Drag the slider up or down so that the right sign is in the red square."
-msgstr "Σύρτε την στήλη πάνω ή κάτω μέχρι το σωστό σύμβολο να βρεθεί στο κόκκινο τετράγωνο"
+msgid "ice skating"
+msgstr ""
 
-msgid "Take your sheep to the rest of the herd."
-msgstr "Οδήγησε το πρόβατό σου πίσω στο κοπάδι."
+msgid "walk"
+msgstr ""
 
-msgid "Check the shopping list and drag all needed items into the basket."
-msgstr "Συμπλήρωσε την λίστα με τα ψώνια και τοποθέτησέ τα μέσα στο καλάθι."
+msgid "run"
+msgstr ""
 
-msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
-msgstr "Σύρε ένα από τα <, > ή = (μικρότερο, μεγαλύτερο ή ίσο) στο κόκκινο τετράγωνο."
+msgid "swim"
+msgstr ""
 
-msgid "Drag one of the lesser, greater or equal to the red square."
-msgstr "Σύρε ένα από τα μικρότερο, μεγαλύτερο ή ίσο στο κόκκινο τετράγωνο."
+msgid "hop"
+msgstr ""
 
-msgid "Rearrange the numbers so they are in the right order"
-msgstr "Βάλε τους παραπάνω αριθμούς στη σωστή σειρά."
+msgid "hike"
+msgstr ""
 
-msgid "Complete the abc using the letters above."
-msgstr "Συμπλήρωσε την αλφάβητο με τα παραπάνω γράμματα."
+msgid "boxing"
+msgstr ""
 
-msgid "Write a word:"
-msgstr "Γράψε μια λέξη:"
+msgid "hockey"
+msgstr ""
 
-msgid "Build the following word using the letters below."
-msgstr "Σχημάτισε την επόμενη λέξη χρησιμοποιώντας τα παρακάτω γράμματα"
+msgid "race"
+msgstr ""
 
-msgid "Find and separate even numbers from odd numbers."
-msgstr "Βρες και χώρισε τους ζυγούς από τους περιττούς αριθμούς στην παραπάνω σειρά."
+msgid "throw"
+msgstr ""
 
-msgid "Rearrange the letters so they are in the alphabetical order."
-msgstr "Βάλε με αλφαβητική σειρά τα παραπάνω γράμματα."
+msgid "skate"
+msgstr ""
 
-msgid "Rearrange the numbers so they are in the ascending order."
-msgstr "Βάλε τους παραπάνω αριθμούς στην σειρά, από τον μικρότερο προς τον μεγαλύτερο."
+msgid "win"
+msgstr ""
 
-msgid "Please try again."
-msgstr "Παρακαλώ ξαναπροσπάθησε."
+msgid "squat"
+msgstr ""
 
-msgid "Sorry! It is wrong."
-msgstr "Λυπάμαι! Είναι Λάθος"
+msgid "ski"
+msgstr ""
 
-msgid "Perfect! Task solved!"
-msgstr "Τέλεια! Το έλυσες!"
+msgid "golf"
+msgstr ""
 
-msgid "You need to work a little bit harder next time."
-msgstr "Χρειάζεται να προσπαθήσεις περισσότερο την επόμενη φορά."
+msgid "whistle"
+msgstr ""
 
-msgid "Game Over!"
-msgstr "Τέλος του Παιχνιδιού!"
+msgid "torch"
+msgstr ""
 
-msgid "Congratulations! You have completed all tasks in this game."
-msgstr "Συγχαρητήρια! Ολοκλήρωσες με επιτυχία το παιχνίδι."
+msgid "sailing"
+msgstr ""
 
-msgid "Great job!"
-msgstr "Πολύ καλα!"
+msgid "stand"
+msgstr ""
 
-msgid "Perfect!!!"
-msgstr "Τέλεια!"
+msgid "tennis"
+msgstr ""
 
-msgid "Awesome!"
-msgstr "Σούπερ!"
+msgid "jump"
+msgstr ""
 
-msgid "Fantastic job!"
-msgstr "Φανταστική δουλειά!"
+msgid "rowing"
+msgstr ""
 
-msgid "Well done!"
-msgstr "Μπράβο!"
+msgid "jog"
+msgstr ""
 
-msgid "Perfect! Level completed!"
-msgstr "Τέλεια! Το στάδιο αυτό ολοκληρώθηκε!"
+msgid "rope"
+msgstr ""
 
-msgid "area:"
-msgstr "περιοχή:"
+# body
+msgid "teeth"
+msgstr ""
 
-msgid "perimeter:"
-msgstr "περίμετρος:"
+msgid "cheek"
+msgstr ""
 
-msgid "circumference:"
-msgstr "περιφέρεια:"
+msgid "ankle"
+msgstr ""
 
-msgid "surface area:"
-msgstr "χώρος περιοχής:"
+msgid "knee"
+msgstr ""
 
-msgid "volume:"
-msgstr "όγκος:"
+msgid "toe"
+msgstr ""
 
-msgid "Perfect!"
-msgstr "Τέλεια!"
+msgid "muscle"
+msgstr ""
 
-msgid "divided by"
-msgstr "διαιρούμενο με"
+msgid "mouth"
+msgstr ""
 
-msgid "times"
-msgstr "φορές"
+msgid "feet"
+msgstr ""
 
-msgid "equals"
-msgstr "ισούται"
+msgid "hand"
+msgstr ""
 
-msgid "Even"
-msgstr "Ζυγά"
+msgid "elbow"
+msgstr ""
 
-msgid "Odd"
-msgstr "Μονά"
+msgid "hair"
+msgstr ""
 
-msgid "white"
-msgstr "λευκό"
+msgid "eyelash"
+msgstr ""
 
-msgid "black"
-msgstr "μαύρο"
+msgid "beard"
+msgstr ""
 
-msgid "grey"
-msgstr "γκρι"
+msgid "belly button"
+msgstr ""
 
-msgid "red"
-msgstr "κόκκινο"
+msgid "thumb"
+msgstr ""
 
-msgid "orange [color]"
-msgstr "πορτοκαλί"
+msgid "breast"
+msgstr ""
 
-msgid "yellow"
-msgstr "κίτρινο"
+msgid "nostril"
+msgstr ""
 
-msgid "olive"
-msgstr "λαδί"
+msgid "nose"
+msgstr ""
 
-msgid "green"
-msgstr "πράσινο"
+msgid "hip"
+msgstr ""
 
-msgid "sea green"
-msgstr "σμαραγδί"
+msgid "arm"
+msgstr ""
 
-msgid "teal"
-msgstr "γαλαζοπράσινο"
+#| msgid "brown"
+msgid "eyebrow"
+msgstr ""
 
-msgid "blue"
-msgstr "μπλε"
+msgid "fist"
+msgstr ""
 
-msgid "navy"
-msgstr "σκούρο μπλε"
+msgid "neck"
+msgstr ""
 
-msgid "purple"
-msgstr "μωβ"
+msgid "wrist"
+msgstr ""
 
-msgid "violet"
-msgstr "βιολετί"
+msgid "throat"
+msgstr ""
 
-msgid "magenta"
-msgstr "πορφυρό"
+msgid "eye"
+msgstr ""
 
-msgid "indigo"
-msgstr "λουλάκι"
+msgid "leg"
+msgstr ""
 
-msgid "pink"
-msgstr "ρόζ"
+msgid "spine"
+msgstr ""
 
-msgid "maroon"
-msgstr "καστανό"
+#| msgid "pear"
+#| msgid_plural "pears"
+msgid "ear"
+msgstr ""
 
-msgid "brown"
-msgstr "καφέ"
+msgid "finger"
+msgstr ""
 
-msgid "aqua"
-msgstr "κυανό"
+msgid "foot"
+msgstr ""
+
+msgid "braid"
+msgstr ""
+
+msgid "face"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid "chin"
+msgstr ""
+
+msgid "bottom"
+msgstr ""
+
+msgid "thigh"
+msgstr ""
+
+msgid "belly"
+msgstr ""
+
+# people
+msgid "girl"
+msgstr ""
+
+msgid "male"
+msgstr ""
+
+#| msgid "Won"
+msgid "son"
+msgstr ""
+
+msgid "mates"
+msgstr ""
+
+msgid "friends"
+msgstr ""
+
+msgid "baby"
+msgstr ""
+
+msgid "child"
+msgstr ""
+
+#| msgid "Odd"
+msgid "dad"
+msgstr ""
+
+msgid "mom"
+msgstr ""
+
+msgid "twin boys"
+msgstr ""
+
+#| msgid "Other"
+msgid "brothers"
+msgstr ""
+
+#| msgid "maroon"
+msgid "man"
+msgstr ""
+
+#| msgid "Other"
+msgid "mother"
+msgstr ""
+
+msgid "grandfather"
+msgstr ""
+
+msgid "family"
+msgstr ""
+
+msgid "female"
+msgstr ""
+
+msgid "wife"
+msgstr ""
+
+msgid "husband"
+msgstr ""
+
+msgid "bride"
+msgstr ""
+
+msgid "madam"
+msgstr ""
+
+msgid "grandmother"
+msgstr ""
+
+msgid "couple"
+msgstr ""
+
+msgid "lad"
+msgstr ""
+
+msgid "twin girls"
+msgstr ""
+
+msgid "tribe"
+msgstr ""
+
+msgid "boy"
+msgstr ""
+
+msgid "sisters"
+msgstr ""
+
+msgid "woman"
+msgstr ""
+
+msgid "lady"
+msgstr ""
+
+# food
+msgid "candy"
+msgstr ""
+
+msgid "sausage"
+msgstr ""
+
+msgid "hamburger"
+msgstr ""
+
+msgid "steak"
+msgstr ""
+
+msgid "fudge"
+msgstr ""
+
+msgid "doughnut"
+msgstr ""
+
+msgid "coconut"
+msgstr ""
+
+msgid "rice"
+msgstr ""
+
+msgid "ice cream"
+msgstr ""
+
+msgid "jelly"
+msgstr ""
+
+msgid "yoghurt"
+msgstr ""
+
+msgid "dessert"
+msgstr ""
+
+msgid "pretzel"
+msgstr ""
+
+msgid "peanut"
+msgstr ""
+
+msgid "jam"
+msgstr ""
+
+msgid "feast"
+msgstr ""
+
+msgid "cookie"
+msgstr ""
+
+msgid "bacon"
+msgstr ""
+
+msgid "spice"
+msgstr ""
+
+msgid "coffee"
+msgstr ""
+
+msgid "pie"
+msgstr ""
+
+#| msgid "lemon"
+#| msgid_plural "lemons"
+msgid "lemonade"
+msgstr ""
+
+msgid "chocolate"
+msgstr ""
+
+msgid "water bottle"
+msgstr ""
+
+msgid "lunch"
+msgstr ""
+
+#| msgid "Circle"
+msgid "ice"
+msgstr ""
+
+msgid "sugar"
+msgstr ""
+
+msgid "sauce"
+msgstr ""
+
+msgid "soup"
+msgstr ""
+
+msgid "juice"
+msgstr ""
+
+msgid "fries"
+msgstr ""
+
+msgid "cake"
+msgstr ""
+
+msgid "mashed potatoes"
+msgstr ""
+
+#| msgid "teal"
+msgid "tea"
+msgstr ""
+
+msgid "bun"
+msgstr ""
+
+msgid "cheese"
+msgstr ""
+
+msgid "beef"
+msgstr ""
+
+msgid "sandwich"
+msgstr ""
+
+msgid "slice"
+msgstr ""
+
+msgid "sprinkle"
+msgstr ""
+
+msgid "pizza"
+msgstr ""
+
+msgid "flour"
+msgstr ""
+
+msgid "gum"
+msgstr ""
+
+msgid "spaghetti"
+msgstr ""
+
+msgid "roast"
+msgstr ""
+
+msgid "drink"
+msgstr ""
+
+msgid "stew"
+msgstr ""
+
+msgid "spread"
+msgstr ""
+
+msgid "meat"
+msgstr ""
+
+msgid "milk"
+msgstr ""
+
+msgid "meal"
+msgstr ""
+
+msgid "corn"
+msgstr ""
+
+msgid "bread"
+msgstr ""
+
+msgid "walnut"
+msgstr ""
+
+msgid "egg"
+msgstr ""
+
+msgid "hot dog"
+msgstr ""
+
+msgid "ham"
+msgstr ""
+
+# clothes
+msgid "jewellery"
+msgstr ""
+
+msgid "sock"
+msgstr ""
+
+msgid "jacket"
+msgstr ""
+
+msgid "heel"
+msgstr ""
+
+msgid "smock"
+msgstr ""
+
+#| msgid "Sports"
+msgid "shorts"
+msgstr ""
+
+msgid "pocket"
+msgstr ""
+
+msgid "necklace"
+msgstr ""
+
+msgid "sweatshirt"
+msgstr ""
+
+msgid "uniform"
+msgstr ""
+
+msgid "raincoat"
+msgstr ""
+
+msgid "trousers"
+msgstr ""
+
+msgid "sunglasses"
+msgstr ""
+
+msgid "coat"
+msgstr ""
+
+msgid "pullover"
+msgstr ""
+
+msgid "shirt"
+msgstr ""
+
+msgid "sandals"
+msgstr ""
+
+msgid "suit"
+msgstr ""
+
+msgid "pyjamas"
+msgstr ""
+
+msgid "skirt"
+msgstr ""
+
+msgid "zip"
+msgstr ""
+
+msgid "shoes"
+msgstr ""
+
+msgid "jewel"
+msgstr ""
+
+#| msgid "times"
+msgid "tie"
+msgstr ""
+
+msgid "slippers"
+msgstr ""
+
+msgid "gloves"
+msgstr ""
+
+msgid "hat"
+msgstr ""
+
+msgid "sleeve"
+msgstr ""
+
+msgid "cap"
+msgstr ""
+
+msgid "swimming suit"
+msgstr ""
+
+msgid "trainer"
+msgstr ""
+
+msgid "vest"
+msgstr ""
+
+msgid "glasses"
+msgstr ""
+
+msgid "shoelace"
+msgstr ""
+
+msgid "patch"
+msgstr ""
+
+msgid "scarf"
+msgstr ""
+
+msgid "shoe"
+msgstr ""
+
+msgid "button"
+msgstr ""
+
+msgid "dress"
+msgstr ""
+
+msgid "sash"
+msgstr ""
+
+msgid "shoe sole"
+msgstr ""
+
+msgid "robe"
+msgstr ""
+
+msgid "pants"
+msgstr ""
+
+msgid "kimono"
+msgstr ""
+
+msgid "overalls"
+msgstr ""
+
+# actions
+msgid "lick"
+msgstr ""
+
+msgid "slam"
+msgstr ""
+
+msgid "beg"
+msgstr ""
+
+msgid "fell"
+msgstr ""
+
+msgid "scratch"
+msgstr ""
+
+msgid "touch"
+msgstr ""
+
+msgid "sniff"
+msgstr ""
+
+msgid "see"
+msgstr ""
+
+msgid "climb"
+msgstr ""
+
+#| msgid "indigo"
+msgid "dig"
+msgstr ""
+
+msgid "howl"
+msgstr ""
+
+msgid "sleep"
+msgstr ""
+
+msgid "explore"
+msgstr ""
+
+msgid "draw"
+msgstr ""
+
+msgid "hug"
+msgstr ""
+
+msgid "teach"
+msgstr ""
+
+msgid "nap"
+msgstr ""
+
+msgid "clay"
+msgstr ""
+
+msgid "catch"
+msgstr ""
+
+msgid "clap"
+msgstr ""
+
+#| msgid "carry"
+msgid "cry"
+msgstr ""
+
+msgid "sing"
+msgstr ""
+
+msgid "meet"
+msgstr ""
+
+msgid "sell"
+msgstr ""
+
+msgid "peck"
+msgstr ""
+
+msgid "beat"
+msgstr ""
+
+msgid "kneel"
+msgstr ""
+
+msgid "find"
+msgstr ""
+
+#| msgid "Cancel"
+msgid "dance"
+msgstr ""
+
+msgid "cough"
+msgstr ""
+
+msgid "cut"
+msgstr ""
+
+msgid "think"
+msgstr ""
+
+msgid "bark"
+msgstr ""
+
+msgid "speak"
+msgstr ""
+
+msgid "cheer"
+msgstr ""
+
+msgid "bake"
+msgstr ""
+
+#| msgid "write "
+msgid "write"
+msgstr ""
+
+msgid "punch"
+msgstr ""
+
+msgid "strum"
+msgstr ""
+
+msgid "study"
+msgstr ""
+
+msgid "plow"
+msgstr ""
+
+msgid "dream"
+msgstr ""
+
+msgid "post"
+msgstr ""
+
+msgid "dive"
+msgstr ""
+
+msgid "whisper"
+msgstr ""
+
+msgid "sob"
+msgstr ""
+
+msgid "shake"
+msgstr ""
+
+msgid "feed"
+msgstr ""
+
+msgid "crawl"
+msgstr ""
+
+msgid "camp"
+msgstr ""
+
+msgid "spill"
+msgstr ""
+
+msgid "clean"
+msgstr ""
+
+msgid "scream"
+msgstr ""
+
+msgid "tear"
+msgstr ""
+
+msgid "float"
+msgstr ""
+
+msgid "pull"
+msgstr ""
+
+#| msgid "Nature"
+msgid "ate"
+msgstr ""
+
+msgid "kiss"
+msgstr ""
+
+msgid "sit"
+msgstr ""
+
+msgid "hatch"
+msgstr ""
+
+msgid "blink"
+msgstr ""
+
+msgid "hear"
+msgstr ""
+
+msgid "smooch"
+msgstr ""
+
+msgid "play"
+msgstr ""
+
+msgid "wash"
+msgstr ""
+
+msgid "chat"
+msgstr ""
+
+msgid "drive"
+msgstr ""
+
+msgid "fly"
+msgstr ""
+
+msgid "juggle"
+msgstr ""
+
+msgid "bit"
+msgstr ""
+
+msgid "sweep"
+msgstr ""
+
+msgid "look"
+msgstr ""
+
+msgid "knit"
+msgstr ""
+
+msgid "lift"
+msgstr ""
+
+msgid "fetch"
+msgstr ""
+
+msgid "read"
+msgstr ""
+
+msgid "croak"
+msgstr ""
+
+msgid "stare"
+msgstr ""
+
+msgid "eat"
+msgstr ""
+
+# construction
+msgid "lighthouse"
+msgstr ""
+
+msgid "door"
+msgstr ""
+
+msgid "circus"
+msgstr ""
+
+msgid "church"
+msgstr ""
+
+msgid "kennel"
+msgstr ""
+
+msgid "temple"
+msgstr ""
+
+msgid "smoke"
+msgstr ""
+
+msgid "chimney"
+msgstr ""
+
+msgid "brick"
+msgstr ""
+
+msgid "well"
+msgstr ""
+
+msgid "street"
+msgstr ""
+
+msgid "castle"
+msgstr ""
+
+msgid "store"
+msgstr ""
+
+msgid "staircase"
+msgstr ""
+
+#| msgid "preschool"
+msgid "school"
+msgstr ""
+
+msgid "farm"
+msgstr ""
+
+msgid "bridge"
+msgstr ""
+
+msgid "dam"
+msgstr ""
+
+msgid "pyramid"
+msgstr ""
+
+msgid "barn"
+msgstr ""
+
+msgid "mill"
+msgstr ""
+
+msgid "window"
+msgstr ""
+
+msgid "cabin"
+msgstr ""
+
+msgid "step"
+msgstr ""
+
+msgid "shop"
+msgstr ""
+
+msgid "shed"
+msgstr ""
+
+msgid "roof"
+msgstr ""
+
+msgid "steeple"
+msgstr ""
+
+msgid "garage"
+msgstr ""
+
+msgid "mosque"
+msgstr ""
+
+msgid "hospital"
+msgstr ""
+
+msgid "tent"
+msgstr ""
+
+msgid "house"
+msgstr ""
+
+msgid "wall"
+msgstr ""
+
+msgid "bank"
+msgstr ""
+
+msgid "shutter"
+msgstr ""
+
+msgid "hut"
+msgstr ""
+
+# nature
+msgid "land"
+msgstr ""
+
+msgid "cliff"
+msgstr ""
+
+msgid "hill"
+msgstr ""
+
+msgid "canyon"
+msgstr ""
+
+msgid "rock"
+msgstr ""
+
+msgid "sea"
+msgstr ""
+
+msgid "lake"
+msgstr ""
+
+msgid "coast"
+msgstr ""
+
+msgid "shore"
+msgstr ""
+
+msgid "mountain"
+msgstr ""
+
+msgid "pond"
+msgstr ""
+
+msgid "peak"
+msgstr ""
+
+msgid "lava"
+msgstr ""
+
+msgid "cave"
+msgstr ""
+
+msgid "dune"
+msgstr ""
+
+msgid "island"
+msgstr ""
+
+msgid "forest"
+msgstr ""
+
+msgid "desert"
+msgstr ""
+
+msgid "iceberg"
+msgstr ""
+
+# jobs
+msgid "clown"
+msgstr ""
+
+msgid "engineer"
+msgstr ""
+
+msgid "priest"
+msgstr ""
+
+#| msgid "violet"
+msgid "vet"
+msgstr ""
+
+msgid "judge"
+msgstr ""
+
+msgid "chef"
+msgstr ""
+
+#| msgid "Delete"
+msgid "athlete"
+msgstr ""
+
+msgid "librarian"
+msgstr ""
+
+msgid "juggler"
+msgstr ""
+
+msgid "policeman"
+msgstr ""
+
+#| msgid "Numbers"
+msgid "plumber"
+msgstr ""
+
+msgid "badge"
+msgstr ""
+
+msgid "queen"
+msgstr ""
+
+msgid "farmer"
+msgstr ""
+
+msgid "magician"
+msgstr ""
+
+msgid "knight"
+msgstr ""
+
+msgid "doctor"
+msgstr ""
+
+#| msgid "Player"
+msgid "bricklayer"
+msgstr ""
+
+msgid "cleaner"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "teacher"
+msgstr ""
+
+msgid "hunter"
+msgstr ""
+
+msgid "soldier"
+msgstr ""
+
+msgid "musician"
+msgstr ""
+
+msgid "lawyer"
+msgstr ""
+
+msgid "fisherman"
+msgstr ""
+
+msgid "princess"
+msgstr ""
+
+#| msgid "remainder"
+msgid "fireman"
+msgstr ""
+
+msgid "nun"
+msgstr ""
+
+msgid "pirate"
+msgstr ""
+
+msgid "cowboy"
+msgstr ""
+
+msgid "electrician"
+msgstr ""
+
+msgid "nurse"
+msgstr ""
+
+msgid "king"
+msgstr ""
+
+msgid "president"
+msgstr ""
+
+msgid "office worker"
+msgstr ""
+
+msgid "carpenter"
+msgstr ""
+
+msgid "jockey"
+msgstr ""
+
+msgid "worker"
+msgstr ""
+
+msgid "mechanic"
+msgstr ""
+
+msgid "pilot"
+msgstr ""
+
+msgid "actor"
+msgstr ""
+
+msgid "cook"
+msgstr ""
+
+msgid "student"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "butcher"
+msgstr ""
+
+msgid "accountant"
+msgstr ""
+
+msgid "prince"
+msgstr ""
+
+msgid "pope"
+msgstr ""
+
+msgid "sailor"
+msgstr ""
+
+msgid "boxer"
+msgstr ""
+
+msgid "ballet dancer"
+msgstr ""
+
+msgid "coach"
+msgstr ""
+
+msgid "astronaut"
+msgstr ""
+
+#| msgid "Paint"
+msgid "painter"
+msgstr ""
+
+msgid "anaesthesiologist"
+msgstr ""
+
+msgid "scientist"
+msgstr ""
+
+#| msgid "carrot"
+#| msgid_plural "carrots"
+msgid "carrot"
+msgstr ""
+
+msgid "blackberries"
+msgstr ""
+
+msgid "celery"
+msgstr ""
+
+msgid "turnip"
+msgstr ""
+
+msgid "cacao"
+msgstr ""
+
+msgid "peach"
+msgstr ""
+
+#| msgid "watermelon"
+#| msgid_plural "watermelons"
+msgid "melon"
+msgstr ""
+
+#| msgid "orange [fruit]"
+#| msgid_plural "oranges"
+msgid "grapefruit"
+msgstr ""
+
+msgid "broccoli"
+msgstr ""
+
+#| msgid "Shapes"
+msgid "grapes"
+msgstr ""
+
+msgid "spinach"
+msgstr ""
+
+msgid "fig"
+msgstr ""
+
+msgid "kernel"
+msgstr ""
+
+msgid "radish"
+msgstr ""
+
+#| msgid "tomato"
+#| msgid_plural "tomatoes"
+msgid "tomato"
+msgstr ""
+
+msgid "kiwi"
+msgstr ""
+
+msgid "asparagus"
+msgstr ""
+
+#| msgid "olive"
+msgid "olives"
+msgstr ""
+
+#| msgid "Numbers"
+msgid "cucumbers"
+msgstr ""
+
+msgid "beans"
+msgstr ""
+
+#| msgid "strawberry"
+#| msgid_plural "strawberries"
+msgid "strawberry"
+msgstr ""
+
+#| msgid "pepper"
+#| msgid_plural "peppers"
+msgid "peppers"
+msgstr ""
+
+#| msgid "strawberry"
+#| msgid_plural "strawberries"
+msgid "raspberry"
+msgstr ""
+
+msgid "apricot"
+msgstr ""
+
+msgid "potatoes"
+msgstr ""
+
+msgid "peas"
+msgstr ""
+
+msgid "cabbage"
+msgstr ""
+
+#| msgid "cherry"
+#| msgid_plural "cherries"
+msgid "cherries"
+msgstr ""
+
+msgid "squash"
+msgstr ""
+
+msgid "blueberries"
+msgstr ""
+
+#| msgid "pear"
+#| msgid_plural "pears"
+msgid "pear"
+msgstr ""
+
+#| msgid "orange [fruit]"
+#| msgid_plural "oranges"
+msgid "orange"
+msgstr ""
+
+msgid "pumpkin"
+msgstr ""
+
+msgid "avocado"
+msgstr ""
+
+msgid "garlic"
+msgstr ""
+
+#| msgid "onion"
+#| msgid_plural "onions"
+msgid "onion"
+msgstr ""
+
+#| msgid "red apple"
+#| msgid_plural "red apples"
+msgid "apple"
+msgstr ""
 
 msgid "lime"
 msgstr "πρασινολέμονο"
 
-msgid "Rainbow Keyboard"
-msgstr "Πλκτρολόγιο Ουράνιο Τόξο"
+msgid "cauliflower"
+msgstr ""
 
-msgid "Touch Typing Tutor"
-msgstr "Εκμάθηση δακτυλογράφησης με τυφλό σύστημα"
+msgid "mango"
+msgstr ""
 
-msgid "Translators"
-msgstr "Μεταφραστές"
+msgid "lettuce"
+msgstr ""
 
-msgid "English Alphabet"
-msgstr "Αγγλικό αλφάβητο"
+#| msgid "lemon"
+#| msgid_plural "lemons"
+msgid "lemon"
+msgstr ""
 
-msgid "Your Alphabet"
-msgstr "Ελληνικό αλφάβητο"
+msgid "aubergine"
+msgstr ""
 
-msgid "Mixing Colours for Painting"
-msgstr "Μίξη χρωμάτων για ζωγραφική"
+msgid "artichokes"
+msgstr ""
 
-msgid "Mix red, yellow, blue, black and white paint"
-msgstr "Μίξη κόκκινης, κίτρινης, μπλε, μαύρης και άσπρης μπογιάς"
+msgid "plums"
+msgstr ""
 
-msgid "Additive Colour Mixing - Light"
-msgstr "Μίξη με ρύθμιση της έντασης των βασικών χρωμάτων"
+msgid "leek"
+msgstr ""
 
-msgid "Mix red, green and blue light to get other colours"
-msgstr "Ρύθμιση έντασης  κόκκινου, πράσινου και μπλε για δημιουργία άλλων χρωμάτων"
+#| msgid "banana"
+#| msgid_plural "bananas"
+msgid "bananas"
+msgstr ""
 
-msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
-msgstr "Μίξη με αφαίρεση χρωμάτων - Μπογιές, βαφές και μελάνια"
+msgid "papaya"
+msgstr ""
 
-msgid "Mix cyan, magenta and yellow paint to get other colours"
-msgstr "Μίξη κυανής, ματζέντα και κίτρινης μπογιάς για δημιουργία άλλων χρωμάτων"
+# transport
+msgid "sail"
+msgstr ""
 
-msgid "Find the colour of the circle in the middle"
-msgstr "Βρες το χρώμα του κύκλου"
+msgid "taxi"
+msgstr ""
 
-msgid "Adjust the amount of cyan, magenta and yellow paint"
-msgstr "Προσαρμογή της ποσότητας της κυανής, ματζέντα και κίτρινης μπογιάς"
+#| msgid "carry"
+msgid "car"
+msgstr ""
 
-msgid "Adjust the intensity of red, green and blue light"
-msgstr "Προσαρμογή της έντασης του κόκκινου, πράσινου και μπλε φωτός"
+msgid "bike"
+msgstr ""
 
-msgid "brush size"
-msgstr "Μέγεθος πινέλου"
+msgid "raft"
+msgstr ""
 
-msgid "Noughts and Crosses 2"
-msgstr "Τρίλιζα 2"
+msgid "pedal"
+msgstr ""
 
-msgid "Noughts and Crosses 3"
-msgstr "Τρίλιζα 3"
+#| msgid "Rhombus"
+msgid "bus"
+msgstr ""
 
-msgid "Get as many lines of 3 as possible to win"
-msgstr "Κάνε όσες πιο πολλές τρίλιζες μπορείς για να κερδίσεις"
+msgid "handlebar"
+msgstr ""
 
-msgid "Player"
-msgstr "Ο παίκτης"
+msgid "boat"
+msgstr ""
 
-msgid "Won"
-msgstr "Κέρδισε"
+msgid "truck"
+msgstr ""
 
-msgid "Draw"
-msgstr "Ισοπαλία"
+msgid "sleigh"
+msgstr ""
 
-msgid "User Name"
-msgstr "Όνομα χρήστη"
+msgid "carpet"
+msgstr ""
 
-msgid "Match Animals"
-msgstr "Ταίριαξε τα ζώα"
+msgid "motorcycle"
+msgstr ""
 
-msgid "Match Animals - Memory Game"
-msgstr "Ταίριαξε τα ζώα"
+#| msgid "Training"
+msgid "train"
+msgstr ""
 
-msgid "Match Fruits - Memory Game"
-msgstr "Ταίριαξε τα φρούτα"
+msgid "ship"
+msgstr ""
 
-msgid "Match Vegetables - Memory Game"
-msgstr "Ταίριαξε τα λαχανικά"
+msgid "van"
+msgstr ""
 
-msgid "Match Numbers - Memory Game"
-msgstr "Ταίριαξε τους αριθμούς"
+msgid "canoe"
+msgstr ""
 
-msgid "Find matching pairs of the same image"
-msgstr "Βρες τα ζευγάρια της ίδιας φωτογραφίας"
+msgid "rocket"
+msgstr ""
 
-msgid "Image Slider"
-msgstr "Κομμένες Εικόνες"
+msgid "mast"
+msgstr ""
 
-msgid "Animal Slider"
-msgstr "Ζώα"
+msgid "sledge"
+msgstr ""
 
-msgid "Fruit Slider"
-msgstr "Φρούτα"
+msgid "bicycle"
+msgstr ""
 
-msgid "Number Slider"
-msgstr "Αριθμοί"
+#~ msgid "green apple"
+#~ msgid_plural "green apples"
+#~ msgstr[0] "πράσινο μήλο"
+#~ msgstr[1] "πράσινα μήλα"
 
-msgid "Fraction Groups"
-msgstr "Ομάδες κλασμάτων"
+#~ msgid "Cube"
+#~ msgstr "Κύβος"
 
-msgid "Percentages"
-msgstr "Ποσοστά"
+#~ msgid "Square Prism"
+#~ msgstr "Παραλληλεπίπεδο"
 
-msgid "Ratios"
-msgstr "Λόγος"
+#~ msgid "Triangular Prism"
+#~ msgstr "Tριγωνικό Πρίσμα"
 
-msgid "Match fraction charts on the right to the ones on the left"
-msgstr "Ταίριαξε τους πίνακες κλασμάτων στα δεξιά με εκείνους στα αριστερά"
+#~ msgid "Square Pyramid"
+#~ msgstr "Τετραγωνική Πυραμίδα"
 
-msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
-msgstr "Ταίριαξε τους πίνακες κλασμάτων και τα κλάσματα στα δεξιά με τους πίνακες κλασμάτων στα αριστερά"
+#~ msgid "Triangular Pyramid"
+#~ msgstr "Τριγωνική Πυραμίδα"
 
-msgid "Match fraction charts to the fractions on the left"
-msgstr "Ταίριαξε τους πίνακες κλασμάτων με τα κλάσματα στα αριστερά"
+#~ msgid "Cylinder"
+#~ msgstr "Κύλινδρος"
 
-msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
-msgstr "Ταίριαξε τους πίνακες κλασμάτων, κλάσματα και δεκαδικά κλάσματα στα δεξιά με την παράστασή τους ως ποσοστά"
+#~ msgid "Cone"
+#~ msgstr "Κώνος"
 
-msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
-msgstr "Ταίριαξε τους χάρτες με τις αναλογίες στα αριστερά Οι αναλογίες παρουσιάζονται ως τα χρωματιστά κομμάτια σε σχέση με τα λευκά"
+#~ msgid "Torus"
+#~ msgstr "Τόρος"
 
-msgid "Maths Matching Game"
-msgstr "Παιχνίδι με μαθηματικές πράξεις"
+#~ msgid "Guest"
+#~ msgstr "Επισκέπτης"
 
-msgid "Addition"
-msgstr "Πρόσθεση"
+#~ msgid "Log in:"
+#~ msgstr "Σύνδεση:"
 
-msgid "Subtraction"
-msgstr "Αφαίρεση"
+#~ msgid "Add new user:"
+#~ msgstr "Προσθήκη νέου χρήστη:"
 
-msgid "Multiplication"
-msgstr "Πολλαπλασιασμός"
+#~ msgid "confirm password:"
+#~ msgstr "Επιβεβαίωση συνθηματικού:"
 
-msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
-msgstr "Έλεγχος για καινούργιες εκδόσεις, αναφορά σφαλμάτων, συζήτηση, μετάφραση και επισκόπηση του προγράμματος στη διεύθυνση:"
+#~ msgid "Register new user"
+#~ msgstr "Εγγραφή"
 
-msgid "Match numbers to their spelling"
-msgstr "Ταίριαξε τους αριθμούς με την γραφή τους σαν λέξεις"
+#~ msgid "Administrator Login:"
+#~ msgstr "Σύνδεση διαχειριστή:"
 
-msgid "Number Spelling"
-msgstr "Γραφή αριθμών ως λέξεις"
-
-msgid "Find all matching animals"
-msgstr "Βρες τα όμοια ζώα"
-
-msgid "Match animals to their shadows"
-msgstr "Ταίριαξε τα ζώα με τις σκιές τους"
-
-msgid "Shape Maker"
-msgstr "Δημιουργία Σχημάτων"
-
-#, python-format
-msgid "Shape to draw: %s"
-msgstr "Σχεδίασε το σχήμα: %s"
+#~ msgid "Please select a user from the list."
+#~ msgstr "Παρακαλώ επιλέξτε ένα χρήστη από την λίστα."
 
 #, python-format
-msgid "such that lengths of its bases are equal to %d and %d and height to %d"
-msgstr "των βάσεων του να είναι ίσο με %d και %d, και το ύψος του %d"
+#~ msgid "%s deleted from database."
+#~ msgstr "ο/η %s διαγράφηκε από την βάση δεδομένων."
+
+#~ msgid "Failed to delete the user."
+#~ msgstr "Αποτυχία διαγραφής τού χρήστη."
+
+#~ msgid "Preferences"
+#~ msgstr "Προτιμήσεις"
+
+#~ msgid "switch to full screen after login"
+#~ msgstr "μετάβαση σε πλήρη οθόνη μετά την σύνδεση"
+
+#~ msgid "allow adding new users on login screen"
+#~ msgstr "να επιτρέπεται η προσθήκη νέων χρηστών από την οθόνη σύνδεσης"
+
+#~ msgid "display languages with uncompleted translations"
+#~ msgstr "εμφάνιση γλωσσών με ημιτελείς μεταφράσεις"
+
+#~ msgid "require password to log in"
+#~ msgstr "να απαιτείται συνθηματικό για τη σύνδεση"
+
+#~ msgid "require password to access admin area"
+#~ msgstr "να απαιτείται συνθηματικό για την πρόσβαση στις λειτουργίες διαχείρισης"
+
+#~ msgid "Update admin's password:"
+#~ msgstr "Ενημέρωση συνθηματικού διαχειριστή:"
+
+#~ msgid "previous password:"
+#~ msgstr "παλιό συνθηματικό:"
+
+#~ msgid "new password:"
+#~ msgstr "νέο συνθηματικό:"
+
+#~ msgid "confirm new password:"
+#~ msgstr "επιβεβαίωση νέου συνθηματικού:"
+
+#~ msgid "Create admin's account:"
+#~ msgstr "Δημιουργία λογαριασμού διαχειριστή:"
+
+#~ msgid "admin's user name:"
+#~ msgstr "όνομα διαχειριστή:"
+
+#~ msgid "admin's password:"
+#~ msgstr "συνθηματικό διαχειριστή:"
+
+#~ msgid "confirm admin's password:"
+#~ msgstr "επιβεβαίωση συνθηματικού διαχειριστή:"
+
+#~ msgid "Please enter user name (at least 3 characters long)"
+#~ msgstr "Παρακαλώ εισάγετε το όνομα χρήστη (ελάχιστο μέγεθος 3 χαρακτήρες)"
+
+#~ msgid "Please enter password (at least 4 characters long)"
+#~ msgstr "Παρακαλώ εισάγετε το συνθηματικό σας (ελάχιστο μέγεθος 4 χαρακτήρες)"
+
+#~ msgid "This username doesn't exist."
+#~ msgstr "Δεν υπάρχει αυτό το όνομα χρήστη."
+
+#~ msgid "Passwords don't match"
+#~ msgstr "Τα συνθηματικά δεν ταιριάζουν"
 
 #, python-format
-msgid "such that lengths of its sides are equal to %d"
-msgstr "των πλευρών του να είναι ίσο με %d"
+#~ msgid "%s added"
+#~ msgstr "προστέθηκε ο/η %s "
+
+#~ msgid "This user name already exists, please choose a different one"
+#~ msgstr "Το όνομα χρήστη υπάρχει ήδη, παρακαλώ επιλέξτε άλλο"
+
+#~ msgid "Admin's password has been updated"
+#~ msgstr "Το συνθηματικό τού διαχειριστή ενημερώθηκε"
+
+#~ msgid "ERROR: This operation is not allowed at this point"
+#~ msgstr "ΣΦΑΛΜΑ: Αυτή η λειτουργία δεν επιτρέπεται σε αυτό το σημείο"
+
+#~ msgid "Please enter previous password (at least 4 characters long)"
+#~ msgstr "Παρακαλώ εισάγετε το παλιό συνθηματικό (ελάχιστο μέγεθος 4 χαρακτήρες)"
+
+#~ msgid "Please enter new password (at least 4 characters long)"
+#~ msgstr "Παρακαλώ εισάγετε το νέο συνθηματικό (ελάχιστο μέγεθος 4 χαρακτήρες)"
+
+#~ msgid "Previous password doesn't seem to be in the database"
+#~ msgstr "Το παλιό συνθηματικό δεν υπάρχει στην βάση δεδομένων"
+
+#~ msgid "Registered:"
+#~ msgstr "Εγγράφηκε:"
+
+#~ msgid "Last login:"
+#~ msgstr "Τελευταία σύνδεση:"
+
+#~ msgid "(Log out)"
+#~ msgstr "(Αποσύνδεση)"
+
+#~ msgid "Addition Table"
+#~ msgstr "Πρόσθεση"
+
+#~ msgid "Hello"
+#~ msgstr "Χαίρετε"
+
+#~ msgid "Welcome back in the game."
+#~ msgstr "Καλωσήλθατε πάλι στο παιχνίδι."
+
+#~ msgid "Translations"
+#~ msgstr "Μεταφράσεις"
+
+#~ msgid "Info & Settings"
+#~ msgstr "Πληροφορίες και Ρυθμίσεις"
+
+#~ msgid "Keyboard & Mouse"
+#~ msgstr "Πληκτρολόγιο και Ποντίκι"
+
+#~ msgid "Learn New Words"
+#~ msgstr "Μάθετε νέες λέξεις"
+
+#~ msgid "Basic Operations - Exercises"
+#~ msgstr "Βασικές Πράξεις"
+
+#~ msgid "Sorting and Comparing"
+#~ msgstr "Συλλογή και Σύγκριση"
+
+#~ msgid "Geometry and Shape Recognition"
+#~ msgstr "Γεωμετρία και αναγνώριση σχημάτων"
+
+#~ msgid "Art and Colour"
+#~ msgstr "Καλλιτεχνία και χρώμα"
+
+#~ msgid "Memory"
+#~ msgstr "Μνήμη"
+
+#~ msgid "Multiplayer Games"
+#~ msgstr "Παιχνίδια πολλαπλών παικτών"
+
+#~ msgid "About."
+#~ msgstr "Σχετικά με"
+
+#~ msgid "Game info..."
+#~ msgstr "Πληροφορίες Παιχνιδιού"
+
+#~ msgid "Hit the Mole"
+#~ msgstr "Χτύπα τον τυφλοπόντικα"
+
+#~ msgid "Learn Letters with Flashcards"
+#~ msgstr "Μάθε γράμματα με καρτέλες"
+
+#~ msgid "Learn to Write"
+#~ msgstr "Μάθε να γράφεις"
+
+#~ msgid "Complete the ABC"
+#~ msgstr "Συμπλήρωσε την Αλφαβήτα"
+
+#~ msgid "Your language"
+#~ msgstr "Ελληνικά"
+
+#~ msgid "Sorting Letters"
+#~ msgstr "Ταξινόμησε τα γράμματα"
+
+#~ msgid "Lowercase Letters"
+#~ msgstr "Πεζά γράμματα"
+
+#~ msgid "Uppercase Letters"
+#~ msgstr "Κεφαλαία γράμματα"
+
+#~ msgid "Word Builder"
+#~ msgstr "Χτίσιμο λέξεων"
+
+#~ msgid "Word Maze"
+#~ msgstr "Λαβύρινθος με γράμματα"
+
+#~ msgid "Collect all letters in the right order"
+#~ msgstr "Βάλε τα γράμματα στη σωστή σειρά"
+
+#~ msgid "Word Maze + 4"
+#~ msgstr "Λαβύρινθος με γράμματα + 4"
+
+#~ msgid "Learn to Count"
+#~ msgstr "Μάθε να μετράς"
+
+#~ msgid "Basic Addition"
+#~ msgstr "Πρόσθεση"
+
+#~ msgid "Basic Subtraction"
+#~ msgstr "Αφαίρεση"
+
+#~ msgid "Plus or Minus"
+#~ msgstr "Συν ή Μείον"
+
+#~ msgid "Multiplication Table"
+#~ msgstr "Προπαίδεια"
+
+#~ msgid "Find the product"
+#~ msgstr "Βρες το αποτέλεσμα"
+
+#~ msgid "Find the multiplier"
+#~ msgstr "Βρες τον πολλαπλασιαστή"
+
+#~ msgid "Division"
+#~ msgstr "Διαίρεση"
+
+#~ msgid "Sorting Numbers"
+#~ msgstr "Ταξινόμησε τους αριθμούς"
+
+#~ msgid "Number Comparison"
+#~ msgstr "Σύγκρινε τους αριθμούς"
+
+#~ msgid "Addition & Subtraction"
+#~ msgstr "Πρόσθεση και αφαίρεση"
+
+#~ msgid "Comparison"
+#~ msgstr "Σύγκριση"
+
+#~ msgid "Fractions"
+#~ msgstr "Κλάσματα"
+
+#~ msgid "Decimal Fractions"
+#~ msgstr "Δεκαδικά κλάσματα"
+
+#~ msgid "Even or Odd"
+#~ msgstr "Ζυγοί ή μονοί αριθμοί"
+
+#~ msgid "Solids"
+#~ msgstr "Σχήματα"
+
+#~ msgid "Solid Geometry with Flashcards"
+#~ msgstr "Γεωμετρικά σχήματα με κάρτες"
+
+#~ msgid "help me find my shadow"
+#~ msgstr "Βοήθησε με να βρω την σκιά μου"
+
+#~ msgid "Colour Matching"
+#~ msgstr "Ταίριαξε τα χρώματα"
+
+#~ msgid "label the colours"
+#~ msgstr "Βάλε ετικέτα στα χρώματα"
+
+#~ msgid "Follow the Arrows"
+#~ msgstr "Ακολούθησε τα βέλη"
+
+#~ msgid "remember the directions"
+#~ msgstr "Να θυμάσαι τις οδηγίες"
+
+#~ msgid "Photographic Memory"
+#~ msgstr "Φωτογραφική μνήμη"
+
+#~ msgid "Automatic Levels"
+#~ msgstr "Αυτόματα επίπεδα"
+
+#~ msgid "Mouse Maze"
+#~ msgstr "Λαβύρινθος με ποντίκι"
+
+#~ msgid "Let's have some cheese"
+#~ msgstr "Ας πάρουμε λίγο τυρί"
+
+#~ msgid "Sheep Maze"
+#~ msgstr "Λαβύρινθος με πρόβατο"
+
+#~ msgid "Find the rest of the herd"
+#~ msgstr "Βρες το υπόλοιπο της αγέλης"
+
+#~ msgid "Connect"
+#~ msgstr "Σύνδεση"
+
+#~ msgid "Balloons with threads"
+#~ msgstr "Μπαλόνια με νήματα"
+
+#~ msgid "Fifteen"
+#~ msgstr "Δεκαπέντε"
+
+#~ msgid "With a Twist"
+#~ msgstr "Με μια στροφή"
+
+#~ msgid "Drag the slider up or down so that the right sign is in the red square."
+#~ msgstr "Σύρτε την στήλη πάνω ή κάτω μέχρι το σωστό σύμβολο να βρεθεί στο κόκκινο τετράγωνο"
+
+#~ msgid "Take your sheep to the rest of the herd."
+#~ msgstr "Οδήγησε το πρόβατό σου πίσω στο κοπάδι."
+
+#~ msgid "Check the shopping list and drag all needed items into the basket."
+#~ msgstr "Συμπλήρωσε την λίστα με τα ψώνια και τοποθέτησέ τα μέσα στο καλάθι."
+
+#~ msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
+#~ msgstr "Σύρε ένα από τα <, > ή = (μικρότερο, μεγαλύτερο ή ίσο) στο κόκκινο τετράγωνο."
+
+#~ msgid "Drag one of the lesser, greater or equal to the red square."
+#~ msgstr "Σύρε ένα από τα μικρότερο, μεγαλύτερο ή ίσο στο κόκκινο τετράγωνο."
+
+#~ msgid "Rearrange the numbers so they are in the right order"
+#~ msgstr "Βάλε τους παραπάνω αριθμούς στη σωστή σειρά."
+
+#~ msgid "Complete the abc using the letters above."
+#~ msgstr "Συμπλήρωσε την αλφάβητο με τα παραπάνω γράμματα."
+
+#~ msgid "Write a word:"
+#~ msgstr "Γράψε μια λέξη:"
+
+#~ msgid "Build the following word using the letters below."
+#~ msgstr "Σχημάτισε την επόμενη λέξη χρησιμοποιώντας τα παρακάτω γράμματα"
+
+#~ msgid "Find and separate even numbers from odd numbers."
+#~ msgstr "Βρες και χώρισε τους ζυγούς από τους περιττούς αριθμούς στην παραπάνω σειρά."
+
+#~ msgid "Rearrange the letters so they are in the alphabetical order."
+#~ msgstr "Βάλε με αλφαβητική σειρά τα παραπάνω γράμματα."
+
+#~ msgid "Rearrange the numbers so they are in the ascending order."
+#~ msgstr "Βάλε τους παραπάνω αριθμούς στην σειρά, από τον μικρότερο προς τον μεγαλύτερο."
+
+#~ msgid "Please try again."
+#~ msgstr "Παρακαλώ ξαναπροσπάθησε."
+
+#~ msgid "Sorry! It is wrong."
+#~ msgstr "Λυπάμαι! Είναι Λάθος"
+
+#~ msgid "Perfect! Task solved!"
+#~ msgstr "Τέλεια! Το έλυσες!"
+
+#~ msgid "You need to work a little bit harder next time."
+#~ msgstr "Χρειάζεται να προσπαθήσεις περισσότερο την επόμενη φορά."
+
+#~ msgid "Game Over!"
+#~ msgstr "Τέλος του Παιχνιδιού!"
+
+#~ msgid "Congratulations! You have completed all tasks in this game."
+#~ msgstr "Συγχαρητήρια! Ολοκλήρωσες με επιτυχία το παιχνίδι."
+
+#~ msgid "Great job!"
+#~ msgstr "Πολύ καλα!"
+
+#~ msgid "Perfect!!!"
+#~ msgstr "Τέλεια!"
+
+#~ msgid "Awesome!"
+#~ msgstr "Σούπερ!"
+
+#~ msgid "Fantastic job!"
+#~ msgstr "Φανταστική δουλειά!"
+
+#~ msgid "Well done!"
+#~ msgstr "Μπράβο!"
+
+#~ msgid "Perfect! Level completed!"
+#~ msgstr "Τέλεια! Το στάδιο αυτό ολοκληρώθηκε!"
+
+#~ msgid "surface area:"
+#~ msgstr "χώρος περιοχής:"
+
+#~ msgid "volume:"
+#~ msgstr "όγκος:"
+
+#~ msgid "Perfect!"
+#~ msgstr "Τέλεια!"
+
+#~ msgid "divided by"
+#~ msgstr "διαιρούμενο με"
+
+#~ msgid "equals"
+#~ msgstr "ισούται"
+
+#~ msgid "Even"
+#~ msgstr "Ζυγά"
+
+#~ msgid "white"
+#~ msgstr "λευκό"
+
+#~ msgid "grey"
+#~ msgstr "γκρι"
+
+#~ msgid "red"
+#~ msgstr "κόκκινο"
+
+#~ msgid "orange [color]"
+#~ msgstr "πορτοκαλί"
+
+#~ msgid "yellow"
+#~ msgstr "κίτρινο"
+
+#~ msgid "green"
+#~ msgstr "πράσινο"
+
+#~ msgid "sea green"
+#~ msgstr "σμαραγδί"
+
+#~ msgid "blue"
+#~ msgstr "μπλε"
+
+#~ msgid "navy"
+#~ msgstr "σκούρο μπλε"
+
+#~ msgid "purple"
+#~ msgstr "μωβ"
+
+#~ msgid "magenta"
+#~ msgstr "πορφυρό"
+
+#~ msgid "pink"
+#~ msgstr "ρόζ"
+
+#~ msgid "aqua"
+#~ msgstr "κυανό"
+
+#~ msgid "Rainbow Keyboard"
+#~ msgstr "Πλκτρολόγιο Ουράνιο Τόξο"
+
+#~ msgid "Touch Typing Tutor"
+#~ msgstr "Εκμάθηση δακτυλογράφησης με τυφλό σύστημα"
+
+#~ msgid "English Alphabet"
+#~ msgstr "Αγγλικό αλφάβητο"
+
+#~ msgid "Mixing Colours for Painting"
+#~ msgstr "Μίξη χρωμάτων για ζωγραφική"
+
+#~ msgid "Mix red, yellow, blue, black and white paint"
+#~ msgstr "Μίξη κόκκινης, κίτρινης, μπλε, μαύρης και άσπρης μπογιάς"
+
+#~ msgid "Additive Colour Mixing - Light"
+#~ msgstr "Μίξη με ρύθμιση της έντασης των βασικών χρωμάτων"
+
+#~ msgid "Mix red, green and blue light to get other colours"
+#~ msgstr "Ρύθμιση έντασης  κόκκινου, πράσινου και μπλε για δημιουργία άλλων χρωμάτων"
+
+#~ msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
+#~ msgstr "Μίξη με αφαίρεση χρωμάτων - Μπογιές, βαφές και μελάνια"
+
+#~ msgid "Mix cyan, magenta and yellow paint to get other colours"
+#~ msgstr "Μίξη κυανής, ματζέντα και κίτρινης μπογιάς για δημιουργία άλλων χρωμάτων"
+
+#~ msgid "Find the colour of the circle in the middle"
+#~ msgstr "Βρες το χρώμα του κύκλου"
+
+#~ msgid "Adjust the amount of cyan, magenta and yellow paint"
+#~ msgstr "Προσαρμογή της ποσότητας της κυανής, ματζέντα και κίτρινης μπογιάς"
+
+#~ msgid "Adjust the intensity of red, green and blue light"
+#~ msgstr "Προσαρμογή της έντασης του κόκκινου, πράσινου και μπλε φωτός"
+
+#~ msgid "brush size"
+#~ msgstr "Μέγεθος πινέλου"
+
+#~ msgid "Noughts and Crosses 2"
+#~ msgstr "Τρίλιζα 2"
+
+#~ msgid "Noughts and Crosses 3"
+#~ msgstr "Τρίλιζα 3"
+
+#~ msgid "Get as many lines of 3 as possible to win"
+#~ msgstr "Κάνε όσες πιο πολλές τρίλιζες μπορείς για να κερδίσεις"
+
+#~ msgid "Draw"
+#~ msgstr "Ισοπαλία"
+
+#~ msgid "User Name"
+#~ msgstr "Όνομα χρήστη"
+
+#~ msgid "Match Animals"
+#~ msgstr "Ταίριαξε τα ζώα"
+
+#~ msgid "Match Animals - Memory Game"
+#~ msgstr "Ταίριαξε τα ζώα"
+
+#~ msgid "Match Fruits - Memory Game"
+#~ msgstr "Ταίριαξε τα φρούτα"
+
+#~ msgid "Match Vegetables - Memory Game"
+#~ msgstr "Ταίριαξε τα λαχανικά"
+
+#~ msgid "Match Numbers - Memory Game"
+#~ msgstr "Ταίριαξε τους αριθμούς"
+
+#~ msgid "Find matching pairs of the same image"
+#~ msgstr "Βρες τα ζευγάρια της ίδιας φωτογραφίας"
+
+#~ msgid "Image Slider"
+#~ msgstr "Κομμένες Εικόνες"
+
+#~ msgid "Animal Slider"
+#~ msgstr "Ζώα"
+
+#~ msgid "Fruit Slider"
+#~ msgstr "Φρούτα"
+
+#~ msgid "Number Slider"
+#~ msgstr "Αριθμοί"
+
+#~ msgid "Fraction Groups"
+#~ msgstr "Ομάδες κλασμάτων"
+
+#~ msgid "Percentages"
+#~ msgstr "Ποσοστά"
+
+#~ msgid "Ratios"
+#~ msgstr "Λόγος"
+
+#~ msgid "Match fraction charts on the right to the ones on the left"
+#~ msgstr "Ταίριαξε τους πίνακες κλασμάτων στα δεξιά με εκείνους στα αριστερά"
+
+#~ msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
+#~ msgstr "Ταίριαξε τους πίνακες κλασμάτων και τα κλάσματα στα δεξιά με τους πίνακες κλασμάτων στα αριστερά"
+
+#~ msgid "Match fraction charts to the fractions on the left"
+#~ msgstr "Ταίριαξε τους πίνακες κλασμάτων με τα κλάσματα στα αριστερά"
+
+#~ msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
+#~ msgstr "Ταίριαξε τους πίνακες κλασμάτων, κλάσματα και δεκαδικά κλάσματα στα δεξιά με την παράστασή τους ως ποσοστά"
+
+#~ msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
+#~ msgstr "Ταίριαξε τους χάρτες με τις αναλογίες στα αριστερά Οι αναλογίες παρουσιάζονται ως τα χρωματιστά κομμάτια σε σχέση με τα λευκά"
+
+#~ msgid "Maths Matching Game"
+#~ msgstr "Παιχνίδι με μαθηματικές πράξεις"
+
+#~ msgid "Multiplication"
+#~ msgstr "Πολλαπλασιασμός"
+
+#~ msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
+#~ msgstr "Έλεγχος για καινούργιες εκδόσεις, αναφορά σφαλμάτων, συζήτηση, μετάφραση και επισκόπηση του προγράμματος στη διεύθυνση:"
+
+#~ msgid "Match numbers to their spelling"
+#~ msgstr "Ταίριαξε τους αριθμούς με την γραφή τους σαν λέξεις"
+
+#~ msgid "Find all matching animals"
+#~ msgstr "Βρες τα όμοια ζώα"
+
+#~ msgid "Match animals to their shadows"
+#~ msgstr "Ταίριαξε τα ζώα με τις σκιές τους"
 
 #, python-format
-msgid "such that lengths of its sides are equal to %d and %d"
-msgstr "των πλευρών του να είναι ίσο με %d και %d"
+#~ msgid "Shape to draw: %s"
+#~ msgstr "Σχεδίασε το σχήμα: %s"
 
 #, python-format
-msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
-msgstr "των 2 παράλληλων πλευρών του να είναι ίσο με %d και το ύψος του με %d"
+#~ msgid "such that lengths of its bases are equal to %d and %d and height to %d"
+#~ msgstr "των βάσεων του να είναι ίσο με %d και %d, και το ύψος του %d"
 
 #, python-format
-msgid "such that length of its base is equal to %d and height to %d"
-msgstr "της βάσης του να είναι ίσο με %d και το ύψος του με %d"
+#~ msgid "such that lengths of its sides are equal to %d"
+#~ msgstr "των πλευρών του να είναι ίσο με %d"
 
 #, python-format
-msgid "such that lengths of its catheti are equal to %d and %d"
-msgstr "των καθέτων πλευρών να είναι ίσο με %d και %d"
+#~ msgid "such that lengths of its sides are equal to %d and %d"
+#~ msgstr "των πλευρών του να είναι ίσο με %d και %d"
 
 #, python-format
-msgid "such that lengths of both of its catheti are equal to %d"
-msgstr "και των δύο καθέτων πλευρών να είναι ίσο με %d"
+#~ msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
+#~ msgstr "των 2 παράλληλων πλευρών του να είναι ίσο με %d και το ύψος του με %d"
 
 #, python-format
-msgid "such that length of its hypotenuse is equal to %d"
-msgstr "της υποτοίνουσας να είναι ίσο με %d"
+#~ msgid "such that length of its base is equal to %d and height to %d"
+#~ msgstr "της βάσης του να είναι ίσο με %d και το ύψος του με %d"
 
 #, python-format
-msgid "such that length of one of its sides is equal to %d and height to %d"
-msgstr "μιας από τις πλευρές του να είναι ισο με %d και το ύψος του με %d"
+#~ msgid "such that lengths of its catheti are equal to %d and %d"
+#~ msgstr "των καθέτων πλευρών να είναι ίσο με %d και %d"
 
 #, python-format
-msgid "such that length of its radius is equal to %d"
-msgstr "της ακτίνας να είναι ίσο με %d"
+#~ msgid "such that lengths of both of its catheti are equal to %d"
+#~ msgstr "και των δύο καθέτων πλευρών να είναι ίσο με %d"
 
-msgid "Quadrilateral"
-msgstr "Τετράπλευρο"
+#, python-format
+#~ msgid "such that length of its hypotenuse is equal to %d"
+#~ msgstr "της υποτοίνουσας να είναι ίσο με %d"
 
-msgid "Trapezium"
-msgstr "Τραπέζιο"
+#, python-format
+#~ msgid "such that length of one of its sides is equal to %d and height to %d"
+#~ msgstr "μιας από τις πλευρές του να είναι ισο με %d και το ύψος του με %d"
 
-msgid "Trapezium "
-msgstr "Τραπέζιο"
+#, python-format
+#~ msgid "such that length of its radius is equal to %d"
+#~ msgstr "της ακτίνας να είναι ίσο με %d"
 
-msgid "Triangle"
-msgstr "Τρίγωνο"
+#~ msgid "Quadrilateral"
+#~ msgstr "Τετράπλευρο"
 
-msgid "Ouch... squished quadrilateral"
-msgstr "Ωχ... ένα στραπατσαρισμένο τετράπλευρο"
+#~ msgid "Trapezium "
+#~ msgstr "Τραπέζιο"
 
-msgid "Right isosceles triangle"
-msgstr "Ορθογώνιο ισοσκελές τρίγωνο"
+#~ msgid "Triangle"
+#~ msgstr "Τρίγωνο"
 
-msgid "Obtuse isosceles triangle"
-msgstr "Αμβλυγώνιο ισοσκελές τρίγωνο"
+#~ msgid "Ouch... squished quadrilateral"
+#~ msgstr "Ωχ... ένα στραπατσαρισμένο τετράπλευρο"
 
-msgid "Acute isosceles triangle"
-msgstr "Οξυγώνιο ισοσκελές τρίγωνο"
+#~ msgid "Right isosceles triangle"
+#~ msgstr "Ορθογώνιο ισοσκελές τρίγωνο"
 
-msgid "Ouch... squished triangle"
-msgstr "Ωχ... ένα στραπατσαρισμένο τρίγωνο"
+#~ msgid "Obtuse isosceles triangle"
+#~ msgstr "Αμβλυγώνιο ισοσκελές τρίγωνο"
 
-msgid "Triangle? Well, not really..."
-msgstr "Τρίγωνο; Λοιπόν, δεν είναι..."
+#~ msgid "Acute isosceles triangle"
+#~ msgstr "Οξυγώνιο ισοσκελές τρίγωνο"
 
-msgid "Test yourself"
-msgstr "Δοκίμασε τον εαυτό σου"
+#~ msgid "Ouch... squished triangle"
+#~ msgstr "Ωχ... ένα στραπατσαρισμένο τρίγωνο"
 
-msgid "Clock"
-msgstr "Ωρολόι"
+#~ msgid "Triangle? Well, not really..."
+#~ msgstr "Τρίγωνο; Λοιπόν, δεν είναι..."
 
-msgid "learn to read the time"
-msgstr "Μάθε να διαβάζεις την ώρα"
+#~ msgid "Test yourself"
+#~ msgstr "Δοκίμασε τον εαυτό σου"
 
-msgid "learn to set the clock"
-msgstr "Μάθε πως να βάζεις την ώρα"
+#~ msgid "Clock"
+#~ msgstr "Ωρολόι"
 
-msgid "Set the clock to:"
-msgstr "Ρύθμισε την ώρα σε:"
+#~ msgid "learn to read the time"
+#~ msgstr "Μάθε να διαβάζεις την ώρα"
 
-msgid "Drag the clock hands to set the time"
-msgstr "Μετακίνησε τους δείκτες του ωρολογιού για να βάλεις την ώρα"
+#~ msgid "What time is it?"
+#~ msgstr "Τι ώρα είναι;"
 
-msgid "What time is it?"
-msgstr "Τι ώρα είναι;"
+#~ msgid "Click again to exit"
+#~ msgstr "Κάνε κλικ ξανά για να βγεις από το παιχνίδι"
 
-msgid "Click again to exit"
-msgstr "Κάνε κλικ ξανά για να βγεις από το παιχνίδι"
+#~ msgid "Type your answer and hit enter"
+#~ msgstr "Πληκτρολόγισε την απάντηση σου και πάτα enter"
 
-msgid "Type your answer and hit enter"
-msgstr "Πληκτρολόγισε την απάντηση σου και πάτα enter"
+#~ msgid "Turn the clock hands and see what happens."
+#~ msgstr "Γύρνα τους δείκτες του ωρολογιού και δες τι θα γίνει."
 
-msgid "Time"
-msgstr "Ώρα"
+#~ msgid "Let's see what shapes you can draw"
+#~ msgstr "Ας δούμε τι σχήματα μπορείς να σχεδιάσεις"
 
-msgid "Turn the clock hands and see what happens."
-msgstr "Γύρνα τους δείκτες του ωρολογιού και δες τι θα γίνει."
+#~ msgid "Time in text version only"
+#~ msgstr "Ώρα σε μορφή κειμένου μόνο"
 
-msgid "Let's see what shapes you can draw"
-msgstr "Ας δούμε τι σχήματα μπορείς να σχεδιάσεις"
+#~ msgid "Columnar addition"
+#~ msgstr "Κάθετη πρόσθεση"
 
-msgid "Time in text version only"
-msgstr "Ώρα σε μορφή κειμένου μόνο"
+#~ msgid "Columnar subtraction"
+#~ msgstr "Κάθετη αφαίρεση"
 
-msgid "How clock works?"
-msgstr "Πως δουλεύει η ώρα;"
+#~ msgid "Long multiplication"
+#~ msgstr "Κάθετος πολλαπλασιασμός"
 
-msgid "Columnar addition"
-msgstr "Κάθετη πρόσθεση"
+#~ msgid "Long division"
+#~ msgstr "Κάθετη διαίρεση"
 
-msgid "Columnar subtraction"
-msgstr "Κάθετη αφαίρεση"
+#~ msgid "borrow 10"
+#~ msgstr "πάρε δανεικό 10 (δανείσου μια δεκάδα)"
 
-msgid "Long multiplication"
-msgstr "Κάθετος πολλαπλασιασμός"
+#~ msgid "Start >>"
+#~ msgstr "Ξεκίνα >>"
 
-msgid "Long division"
-msgstr "Κάθετη διαίρεση"
+#~ msgid "Next example >>"
+#~ msgstr "Επόμενο παράδειγμα >>"
 
-msgid "borrow 10"
-msgstr "πάρε δανεικό 10 (δανείσου μια δεκάδα)"
+#~ msgid "Next step >>"
+#~ msgstr "Επόμενο βήμα >>"
 
-msgid "carry"
-msgstr "κρατούμενο"
+#~ msgid "Do it yourself"
+#~ msgstr "Κάνε το μόνος σου"
 
-msgid "Start >>"
-msgstr "Ξεκίνα >>"
+#~ msgid "Ratio"
+#~ msgstr "Λόγος"
 
-msgid "Next example >>"
-msgstr "Επόμενο παράδειγμα >>"
+#~ msgid "Working with large numbers"
+#~ msgstr "Πράξεις με μεγάλους αριθμούς"
 
-msgid "Next step >>"
-msgstr "Επόμενο βήμα >>"
+#~ msgid "rewrite "
+#~ msgstr "κατέβασε το "
 
-msgid "write "
-msgstr "γράψε "
+#~ msgid "result"
+#~ msgstr "αποτέλεσμα"
 
-msgid "Demonstration"
-msgstr "Επίδειξη"
+#~ msgid "Add some red"
+#~ msgstr "περισσότερο κόκκινο"
 
-msgid "Do it yourself"
-msgstr "Κάνε το μόνος σου"
+#~ msgid "Add some green"
+#~ msgstr "περισσότερο πράσινο"
 
-msgid "Ratio"
-msgstr "Λόγος"
+#~ msgid "Add some blue"
+#~ msgstr "περισσότερο μπλε"
 
-msgid "Working with large numbers"
-msgstr "Πράξεις με μεγάλους αριθμούς"
+#~ msgid "Add some cyan"
+#~ msgstr "περισσότερο κυανό"
 
-msgid "rewrite "
-msgstr "κατέβασε το "
+#~ msgid "Add some magenta"
+#~ msgstr "περισσότερο ματζέντα"
 
-msgid "remainder"
-msgstr "υπόλοιπο"
+#~ msgid "Add some yellow"
+#~ msgstr "περισσότερο κίτρινο"
 
-msgid "result"
-msgstr "αποτέλεσμα"
+#~ msgid "Too much red"
+#~ msgstr "λιγότερο κόκκινο"
 
-msgid "Time Matching"
-msgstr "Ταίριαξε τα ωρολόγια"
+#~ msgid "Too much green"
+#~ msgstr "λιγότερο πράσινο"
 
-msgid "Add some red"
-msgstr "περισσότερο κόκκινο"
+#~ msgid "Too much blue"
+#~ msgstr "λιγότερο μπλε"
 
-msgid "Add some green"
-msgstr "περισσότερο πράσινο"
+#~ msgid "Too much cyan"
+#~ msgstr "λιγότερο κυανό"
 
-msgid "Add some blue"
-msgstr "περισσότερο μπλε"
+#~ msgid "Too much magenta"
+#~ msgstr "λιγότερο ματζέντα"
 
-msgid "Add some cyan"
-msgstr "περισσότερο κυανό"
+#~ msgid "Too much yellow"
+#~ msgstr "λιγότερο κίτρινο"
 
-msgid "Add some magenta"
-msgstr "περισσότερο ματζέντα"
+#~ msgid "red is spot on"
+#~ msgstr "το κόκκινο είναι εντάξει"
 
-msgid "Add some yellow"
-msgstr "περισσότερο κίτρινο"
+#~ msgid "green is spot on"
+#~ msgstr "το πράσινο είναι εντάξει"
 
-msgid "Too much red"
-msgstr "λιγότερο κόκκινο"
+#~ msgid "blue is spot on"
+#~ msgstr "το μπλε είναι εντάξει"
 
-msgid "Too much green"
-msgstr "λιγότερο πράσινο"
+#~ msgid "cyan is spot on"
+#~ msgstr "το κυανό είναι εντάξει"
 
-msgid "Too much blue"
-msgstr "λιγότερο μπλε"
+#~ msgid "magenta is spot on"
+#~ msgstr "το ματζέντα είναι εντάξει"
 
-msgid "Too much cyan"
-msgstr "λιγότερο κυανό"
+#~ msgid "yellow is spot on"
+#~ msgstr "το κίτρινο είναι εντάξει"
 
-msgid "Too much magenta"
-msgstr "λιγότερο ματζέντα"
+#~ msgid "remember me"
+#~ msgstr "θυμήσου με"
 
-msgid "Too much yellow"
-msgstr "λιγότερο κίτρινο"
+#~ msgid ""
+#~ "Laby, 2010 by Mehdi Cherti (mehdidc) \n"
+#~ " Sounds by various authors who contributed their works to freesound.org. \n"
+#~ " Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n"
+#~ " Please view credits.txt for more info about authors of media files used in this project"
+#~ msgstr ""
+#~ "Laby, 2010 από Mehdi Cherti (mehdidc) \n"
+#~ " Ήχοι από διάφορους καλλιτέχνες που συνεισέφεραν τη δουλειά τους στο freesound.org. \n"
+#~ " Εικόνες από διάφορους δημιουργούς που συνεισέφεραν τη δουλειά τους στο openclipart.org (Public Domain) και στο http://www.art4apps.org/ - Art4Apps από Smart4Kids -διανομή με άδεια Creative Commons (CC BY-SA). \n"
+#~ "Παρακαλώ διαβάστε το αρχείο credits.txt για περισσότερες πληροφορίες σχετικά με τους δημιουργούς των αρχείων πολυμέσων που χρησιμοποιήθηκαν σε αυτό το έργο."
 
-msgid "red is spot on"
-msgstr "το κόκκινο είναι εντάξει"
+#~ msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr "Το παρόν έργο είναι Ελεύθερο Λογισμικό: επιτρέπεται η διανομή του καθώς και η τροποποίηση του με βάση τους όρους του διέπουν τις άδειες τύπου GNU General Public License οι οποίες έχουν δημοσιευτεί από το Free Software Foundation (είτε η έκδοση 3 της άδειας είτε κάποια μεταγενέστερη έκδοση). Θα πρέπει να έχετε λάβει και ένα αντίγραφο άδειας GNU General Public License μαζί με αυτή την εφαρμογή. Αν δεν την έχετε λάβει επισκεφθείτε το <http://www.gnu.org/licenses/>."
 
-msgid "green is spot on"
-msgstr "το πράσινο είναι εντάξει"
+#~ msgid "A collection of educational activities for kids"
+#~ msgstr "Ένα μικρό σετ εκπαιδευτικών εφαρμογών για παιδιά"
 
-msgid "blue is spot on"
-msgstr "το μπλε είναι εντάξει"
+#~ msgid "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
+#~ msgstr "Εικόνες από: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
 
-msgid "cyan is spot on"
-msgstr "το κυανό είναι εντάξει"
+#~ msgid "Decimals and Fractions"
+#~ msgstr "Δεκαδικοί και κλάσματα"
 
-msgid "magenta is spot on"
-msgstr "το ματζέντα είναι εντάξει"
+#~ msgid "Decimals, fractions and percentages"
+#~ msgstr "Δεκαδικοί, κλάσματα και ποσοστά"
 
-msgid "yellow is spot on"
-msgstr "το κίτρινο είναι εντάξει"
+#~ msgid "Decimals, fractions, ratios and percentages"
+#~ msgstr "Δεκαδικοί, κλάσματα, λόγοι και ποσοστά"
 
-msgid "remember me"
-msgstr "θυμήσου με"
+#~ msgid "Translation Credits"
+#~ msgstr "Συμβολές μετάφρασης"
 
-msgid ""
-"Laby, 2010 by Mehdi Cherti (mehdidc) \n"
-" Sounds by various authors who contributed their works to freesound.org. \n"
-" Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n"
-" Please view credits.txt for more info about authors of media files used in this project"
-msgstr ""
-"Laby, 2010 από Mehdi Cherti (mehdidc) \n"
-" Ήχοι από διάφορους καλλιτέχνες που συνεισέφεραν τη δουλειά τους στο freesound.org. \n"
-" Εικόνες από διάφορους δημιουργούς που συνεισέφεραν τη δουλειά τους στο openclipart.org (Public Domain) και στο http://www.art4apps.org/ - Art4Apps από Smart4Kids -διανομή με άδεια Creative Commons (CC BY-SA). \n"
-"Παρακαλώ διαβάστε το αρχείο credits.txt για περισσότερες πληροφορίες σχετικά με τους δημιουργούς των αρχείων πολυμέσων που χρησιμοποιήθηκαν σε αυτό το έργο."
+#~ msgid "Achievements"
+#~ msgstr "Επιτεύγματα"
 
-msgid "Licence"
-msgstr "Άδεια"
+#~ msgid "Select age group:"
+#~ msgstr "Διάλεξε ηλικιακή ομάδα"
 
-msgid ""
-"This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General "
-"Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"Το παρόν έργο είναι Ελεύθερο Λογισμικό: επιτρέπεται η διανομή του καθώς και η τροποποίηση του με βάση τους όρους του διέπουν τις άδειες τύπου GNU General Public License οι οποίες έχουν δημοσιευτεί από το Free Software Foundation (είτε η έκδοση 3 της άδειας είτε κάποια μεταγενέστερη έκδοση). "
-"Θα πρέπει να έχετε λάβει και ένα αντίγραφο άδειας GNU General Public License μαζί με αυτή την εφαρμογή. Αν δεν την έχετε λάβει επισκεφθείτε το <http://www.gnu.org/licenses/>."
+#~ msgid "show activities for:"
+#~ msgstr "δείξε δραστηριότητες για:"
 
-msgid "A collection of educational activities for kids"
-msgstr "Ένα μικρό σετ εκπαιδευτικών εφαρμογών για παιδιά"
+#~ msgid "Year 1"
+#~ msgstr "Πρώτη τάξη"
 
-msgid "Complete the word"
-msgstr "Ολοκλήρωσε τη λέξη"
+#~ msgid "Year 2"
+#~ msgstr "Δευτέρα τάξη"
 
-msgid "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
-msgstr "Εικόνες από: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative Commons License (CC BY-SA)"
+#~ msgid "Year 3"
+#~ msgstr "Τρίτη τάξη"
 
-msgid "Decimals and Fractions"
-msgstr "Δεκαδικοί και κλάσματα"
+#~ msgid "Year 4"
+#~ msgstr "Τετάρτη τάξη"
 
-msgid "Decimals, fractions and percentages"
-msgstr "Δεκαδικοί, κλάσματα και ποσοστά"
+#~ msgid "Year 5"
+#~ msgstr "Πέμπτη τάξη"
 
-msgid "Decimals, fractions, ratios and percentages"
-msgstr "Δεκαδικοί, κλάσματα, λόγοι και ποσοστά"
+#~ msgid "Year 6"
+#~ msgstr "Έκτη τάξη"
 
-msgid "Shapes and Solids"
-msgstr "Σχήματα και Στερεά"
+#~ msgid "show all"
+#~ msgstr "δείξε τα όλα"
 
-msgid "Translation Credits"
-msgstr "Συμβολές μετάφρασης"
+#~ msgid "Do you want to exit the game?"
+#~ msgstr "Θέλεις να κλείσεις το παιχνίδι;"
 
-msgid "Level"
-msgstr "Επίπεδο"
+#~ msgid "Do you want to log out of the game?"
+#~ msgstr "Θέλεις να αποσυνδεθείς από το παιχνίδι;"
 
-msgid "Find solution"
-msgstr "Βρες την λύση"
+#~ msgid "Ready to go to the next level?"
+#~ msgstr "Έτοιμος για το επόμενο επίπεδο;"
 
-msgid "Find missing number"
-msgstr "Βρες τον αριθμό που λείπει"
+#~ msgid "Educational Activities for Kids"
+#~ msgstr "Εκπαιδευτικό πακέτο δραστηριοτήτων για παιδιά"
 
-msgid "Achievements"
-msgstr "Επιτεύγματα"
+#~ msgid ""
+#~ "You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \n"
+#~ "http://espeak.sourceforge.net/"
+#~ msgstr ""
+#~ "Μπορείτε να εγκαταστήσετε το espeak ώστε να χρησιμοποιήσετε τις δυνατότητες μετατροπής κειμένου σε ομιλία που παρέχει, αυτό όμως δεν είναι απαραίτητο για τη χρήση του παιχνιδιού: \n"
+#~ " http://espeak.sourceforge.net/"
 
-msgid "Select age group:"
-msgstr "Διάλεξε ηλικιακή ομάδα"
+#~ msgid "Decimals (Category)"
+#~ msgstr "Δεκαδικοί"
 
-msgid "show activities for:"
-msgstr "δείξε δραστηριότητες για:"
+#~ msgid "Fractions (Category)"
+#~ msgstr "Κλάσματα"
 
-msgid "preschool"
-msgstr "προσχολικό"
+#~ msgid "Ratios (Category)"
+#~ msgstr "Λόγοι"
 
-msgid "Year 1"
-msgstr "Πρώτη τάξη"
+#~ msgid "Percentages (Category)"
+#~ msgstr "Ποσοστά"
 
-msgid "Year 2"
-msgstr "Δευτέρα τάξη"
-
-msgid "Year 3"
-msgstr "Τρίτη τάξη"
-
-msgid "Year 4"
-msgstr "Τετάρτη τάξη"
-
-msgid "Year 5"
-msgstr "Πέμπτη τάξη"
-
-msgid "Year 6"
-msgstr "Έκτη τάξη"
-
-msgid "show all"
-msgstr "δείξε τα όλα"
-
-msgid "Do you want to exit the game?"
-msgstr "Θέλεις να κλείσεις το παιχνίδι;"
-
-msgid "Do you want to log out of the game?"
-msgstr "Θέλεις να αποσυνδεθείς από το παιχνίδι;"
-
-msgid "Ready to go to the next level?"
-msgstr "Έτοιμος για το επόμενο επίπεδο;"
-
-msgid "Language arts"
-msgstr "Γλωσσικές τέχνες"
-
-msgid "Other"
-msgstr "Άλλα"
-
-msgid "Educational Activities for Kids"
-msgstr "Εκπαιδευτικό πακέτο δραστηριοτήτων για παιδιά"
-
-msgid ""
-"You may like to install espeak to use its text to speech functionality, however this is not required to successfully use the game: \n"
-"http://espeak.sourceforge.net/"
-msgstr ""
-"Μπορείτε να εγκαταστήσετε το espeak ώστε να χρησιμοποιήσετε τις δυνατότητες μετατροπής κειμένου σε ομιλία που παρέχει, αυτό όμως δεν είναι απαραίτητο για τη χρήση του παιχνιδιού: \n"
-" http://espeak.sourceforge.net/"
-
-msgid "Decimals (Category)"
-msgstr "Δεκαδικοί"
-
-msgid "Fractions (Category)"
-msgstr "Κλάσματα"
-
-msgid "Ratios (Category)"
-msgstr "Λόγοι"
-
-msgid "Percentages (Category)"
-msgstr "Ποσοστά"
-
-msgid "Word Builders"
-msgstr "Σχηματισμός λέξεων"
-
-msgid "Word Matchers"
-msgstr "Συνδέστε τις λέξεις"
-
-msgid "Match images to words"
-msgstr "Ταιριάξτε τις εικόνες σε λέξεις"
-
-msgid "Animals"
-msgstr "Ζώα"
-
-msgid "Sports"
-msgstr "Αθλήματα"
-
-msgid "Body"
-msgstr "Σώμα"
-
-msgid "People"
-msgstr "Άνθρωποι"
-
-msgid "Actions"
-msgstr "Ενέργειες"
-
-msgid "Constructions"
-msgstr "Κατασκευές"
-
-msgid "Nature"
-msgstr "Φύση"
-
-msgid "Jobs"
-msgstr "Δουλειές"
-
-msgid "Clothes and Accessories"
-msgstr "Ρούχα και αξεσουάρ"
-
-msgid "Fruits and Vegetables"
-msgstr "Φρούτα και λαχανικά"
-
-msgid "Transport"
-msgstr "Μεταφορικά μέσα"
-
-msgid "Food"
-msgstr "Φαγητό"
-
-msgid "Listening Exercises"
-msgstr ""
-
-msgid "Match sounds to words"
-msgstr ""
-
-msgid "Patterns"
-msgstr ""
-
-msgid "Number Patterns"
-msgstr ""
-
-msgid "Letter Patterns"
-msgstr ""
-
-msgid "Color Patterns"
-msgstr ""
-
-msgid "Image Patterns"
-msgstr ""
-
-msgid "Fraction Patterns"
-msgstr ""
-
-msgid "Shape Patterns"
-msgstr ""
-
-msgid "Complete the pattern on the top line."
-msgstr ""
-
-msgid "Match shapes to their names"
-msgstr ""
-
-msgid "Negative numbers"
-msgstr ""
-
-msgid "numerator"
-msgstr ""
-
-msgid "denominator"
-msgstr ""
-
-msgid "Experiment with fractions"
-msgstr ""
-
-msgid "Experiment with decimal fractions"
-msgstr ""
-
-msgid "Experiment with ratios"
-msgstr ""
-
-msgid "Experiment with percentages"
-msgstr ""
-
-msgid "What fraction is it?"
-msgstr ""
-
-msgid "What decimal fraction is it?"
-msgstr ""
-
-msgid "Add fractions with the same denominator"
-msgstr ""
-
-msgid "Subtract fractions with the same denominator"
-msgstr ""
-
-msgid "Multiply fractions"
-msgstr ""
-
-msgid "Divide fractions"
-msgstr ""
-
-msgid "Exercise 1"
-msgstr ""
-
-msgid "Exercise 2"
-msgstr ""
-
-msgid "Exercise 3"
-msgstr ""
-
-msgid "Compare decimals and fractions"
-msgstr ""
-
-msgid "Compare fractions"
-msgstr ""
-
-msgid "Reduce fractions"
-msgstr ""
-
-msgid "Extend fractions"
-msgstr ""
-
-msgid "To reduce a fraction divide the numerator and the denominator by one of their common factors which are displayed between the two fractions. Select one of them to see what happens. If 1 is the only common factor then the fraction can't be reduced any more - try choosing a different one."
-msgstr ""
-
-msgid "To extend a fraction multiply the numerator and the denominator by the same number. Change the multiplicand to see what happens."
-msgstr ""
-
-msgid "Use the arrows to change your answer or just type it in."
-msgstr ""
-
-msgid "Use the arrows to change your answer."
-msgstr ""
-
-msgid "To add two fractions with the same denominators add their numerators together and keep the denominator unchanged. Simplify the result if the numerator is greater than the denominator and reduce the fraction if possible."
-msgstr ""
-
-msgid "To subtract one fraction from another one with the same denominator subtract numerators and keep the denominator unchanged. Reduce the resulting fraction if possible."
-msgstr ""
-
-msgid "To multiply two fractions multiply the numerators together and then multiply the denominators together. Reduce the resulting fraction if possible."
-msgstr ""
-
-msgid "To divide a fraction by another fraction multiply the first fraction by the second fraction flipped up side down. Simplify and reduce the resulting fraction if possible."
-msgstr ""
-
-msgid "Group fractions together"
-msgstr ""
-
-msgid "Group percentages together"
-msgstr ""
-
-msgid "Group ratios together"
-msgstr ""
-
-msgid "eduActiv8 update is available. Current version: %s. New version: %s."
-msgstr ""
-
-msgid "check for updates on start"
-msgstr ""
-
-msgid "Symmetry"
-msgstr ""
-
-msgid "Reflection Symmetry - draw with shapes"
-msgstr ""
-
-msgid "Reflect shapes"
-msgstr ""
-
-msgid "Reflect a shape in a mirror line"
-msgstr ""
-
-msgid "Draw a shape that is a reflection of the one already displayed. The red line is the mirror line."
-msgstr ""
-
-msgid "Symmetrical shapes - missing half"
-msgstr ""
-
-msgid "Draw the other half of the shape"
-msgstr ""
-
-msgid "Find lines of symmetry"
-msgstr ""
-
-msgid "Find and select all lines of symmetry for a displayed shape. Click on the arrows around the drawing area to select them."
-msgstr ""
-
-msgid "Match equivalent fractions"
-msgstr ""
-
-msgid "Match fractions"
-msgstr ""
-
-msgid "Match decimals"
-msgstr ""
-
-msgid "Match percentages"
-msgstr ""
-
-msgid "Match ratios"
-msgstr ""
-
-msgid "Percentages in a pie chart"
-msgstr ""
-
-msgid "hour"
-msgid_plural "hours"
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "minute"
-msgid_plural "minutes"
-msgstr[0] ""
-msgstr[1] ""
-
-msgid "Find equivalent fraction"
-msgstr ""
-
-msgid "Calculating with Time"
-msgstr ""
-
-msgid "start time"
-msgstr ""
-
-msgid "end time"
-msgstr ""
-
-msgid "elapsed time"
-msgstr ""
-
-msgid "Temperature - introduction to negative numbers"
-msgstr ""
-
-msgid "Experiment with elapsed time"
-msgstr ""
-
-msgid "Experiment with elapsed time 2"
-msgstr ""
-
-msgid "Calculate elapsed time"
-msgstr ""
-
-msgid "Find the start or the end time"
-msgstr ""
-
-msgid "Visualized on a clock dial"
-msgstr ""
-
-msgid "Visualized on a number line"
-msgstr ""
-
-msgid "Visualized on two number lines"
-msgstr ""
-
-msgid "With no visualizations"
-msgstr ""
-
-msgid "with mirrored images"
-msgstr ""
-
-msgid "Theme Editor"
-msgstr ""
-
-msgid "Make the game look your way"
-msgstr ""
-
-msgid "Reset colors back to the default ones?"
-msgstr ""
-
-msgid "Font Preferences"
-msgstr ""
-
-msgid "with simplifying"
-msgstr ""
-
-msgid "Positive numbers"
-msgstr ""
-
-msgid "Basics"
-msgstr ""
-
-msgid "Equivalent fractions"
-msgstr ""
-
-msgid "Expanding and reducing fractions"
-msgstr ""
-
-msgid "Add fractions with unlike denominators"
-msgstr ""
-
-msgid "Subtract fractions with unlike denominators"
-msgstr ""
-
-msgid "To add or subtract fractions when their denominators are not the same you have to find equivalent fractions which do have a common denominator. Finding the least common multiple of the two denominators will help you with that."
-msgstr ""
+#~ msgid "Match images to words"
+#~ msgstr "Ταιριάξτε τις εικόνες σε λέξεις"
