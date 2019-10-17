@@ -99,10 +99,11 @@ images_logo_subtitle["french"] = love.graphics.newImage("res/subtitles/fr.png")
 images_logo_subtitle["hebrew"] = love.graphics.newImage("res/subtitles/he.png")
 images_logo_subtitle["italian"] = love.graphics.newImage("res/subtitles/it.png")
 images_logo_subtitle["lakota"] = love.graphics.newImage("res/subtitles/lkt.png")
+images_logo_subtitle["macedonian"] = love.graphics.newImage("res/subtitles/rs_sr_mk.png")
 images_logo_subtitle["polish"] = love.graphics.newImage("res/subtitles/pl.png")
 images_logo_subtitle["portuguese"] = love.graphics.newImage("res/subtitles/pt.png")
-images_logo_subtitle["russian"] = love.graphics.newImage("res/subtitles/rs_sr.png")
-images_logo_subtitle["serbian"] = love.graphics.newImage("res/subtitles/rs_sr.png")
+images_logo_subtitle["russian"] = love.graphics.newImage("res/subtitles/rs_sr_mk.png")
+images_logo_subtitle["serbian"] = love.graphics.newImage("res/subtitles/rs_sr_mk.png")
 images_logo_subtitle["ukrainian"] = love.graphics.newImage("res/subtitles/uk.png")
 
 images_logo_subtitle_2 = {}
@@ -117,7 +118,8 @@ images_logo_subtitle_2["french"] = love.graphics.newImage("res/subtitles2/fr.png
 images_logo_subtitle_2["hebrew"] = love.graphics.newImage("res/subtitles2/he.png")
 images_logo_subtitle_2["italian"] = love.graphics.newImage("res/subtitles2/it.png")
 images_logo_subtitle_2["lakota"] = love.graphics.newImage("res/subtitles2/lkt.png")
-images_logo_subtitle_2["polish"] = love.graphics.newImage("res/subtitles2/pl.png")
+images_logo_subtitle_2["lakota"] = love.graphics.newImage("res/subtitles2/lkt.png")
+images_logo_subtitle_2["macedonian"] = love.graphics.newImage("res/subtitles2/mk.png")
 images_logo_subtitle_2["portuguese"] = love.graphics.newImage("res/subtitles2/pt.png")
 images_logo_subtitle_2["russian"] = love.graphics.newImage("res/subtitles2/ru.png")
 images_logo_subtitle_2["serbian"] = love.graphics.newImage("res/subtitles2/sr.png")
@@ -193,7 +195,7 @@ end
 
 
 images_flashcards_abc = {}
-for i = 0, 101 do
+for i = 0, 110 do
   if i < 10 then
     images_flashcards_abc[i] = love.graphics.newImage("res/fc/fc00" .. i .. ".jpg")
   elseif i < 100 then

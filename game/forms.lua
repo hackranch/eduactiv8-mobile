@@ -35,11 +35,12 @@ function build_form(index)
     add_button(10, "Português", 800 + 380, 200, 370)
     add_button(11, "Suomalainen", 800 + 380, 280, 370)
     add_button(12, "Eλληνικά", 800 + 380, 360, 370)
-    add_button(13, "Русский", 800 + 380, 440, 370)
-    add_button(14, "Српски", 800 + 380, 520, 370)
-    add_button(15, "Українська", 800 + 380, 600, 370)
+    add_button(17, "Македонски", 800 + 380, 440, 370)
+    add_button(13, "Русский", 800 + 380, 520, 370)
+    add_button(14, "Српски", 800 + 380, 600, 370)
+    add_button(15, "Українська", 800 + 380, 680, 370)
     add_button(16, "עִבְרִית",
-      800 + 380, 680, 370)
+      800 + 380, 760, 370)
 
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
   elseif index == 5 then -- Copyright
@@ -78,8 +79,8 @@ function build_form(index)
   elseif index == 11 then --positive numbers menu
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 10)
     add_big_button(1, icon_m1_1, 800, 350, 120, 1, false, 0, 0, 14, s_basics)
-    add_big_button(2, icon_m1_2, 800 - 200, 600, 120, 1, false, 0, 0, 16, s_addition)
-    add_big_button(3, icon_m1_3, 800 + 200, 600, 120, 1, false, 0, 0, nil, s_subtraction)
+    add_big_button(2, icon_m1_2, 800 - 300, 600, 120, 1, false, 0, 0, 16, s_addition)
+    add_big_button(3, icon_m1_3, 800 + 300, 600, 120, 1, false, 0, 0, nil, s_subtraction)
     ---------
   elseif index == 12 or (index >= 43 and index <= 53) then --game word builders Animals
     score_system = true
@@ -540,18 +541,18 @@ function build_form(index)
     --add_big_button(2, icon_ico_g_0310, 800 + 200, 450, 90, 1, false, get_max_score_for_game(30), get_score_for_game(30), 30, s_find_solution .. " - " .. s_subtraction) --find solution - subtraction
   elseif index == 22 then -- basic operations
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
-    add_big_button(1, icon_ico_g_0309, 800 - 200, 450, 90, 1, false, get_max_score_for_game(29), get_score_for_game(29), 29, s_find_solution .. " - " .. s_addition) --find solution - addition
-    add_big_button(2, icon_ico_g_0310, 800 + 200, 450, 90, 1, false, get_max_score_for_game(30), get_score_for_game(30), 30, s_find_solution .. " - " .. s_subtraction) --find solution - subtraction
+    add_big_button(1, icon_ico_g_0309, 800 - 300, 450, 90, 1, false, get_max_score_for_game(29), get_score_for_game(29), 29, s_find_solution .. " - " .. s_addition) --find solution - addition
+    add_big_button(2, icon_ico_g_0310, 800 + 300, 450, 90, 1, false, get_max_score_for_game(30), get_score_for_game(30), 30, s_find_solution .. " - " .. s_subtraction) --find solution - subtraction
   elseif index == 23 then -- shapes
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
-    add_big_button(1, icon_ico_g_0500, 800 - 300, 450, 90, 1, false, get_max_score_for_game(32), get_score_for_game(32), 32, s_learn_shapes_with_flashcards) --learn shapes with flashcards
+    add_big_button(1, icon_ico_g_0500, 800 - 500, 450, 90, 1, false, get_max_score_for_game(32), get_score_for_game(32), 32, s_learn_shapes_with_flashcards) --learn shapes with flashcards
     add_big_button(2, icon_ico_g_0504, 800      , 450, 90, 1, false, get_max_score_for_game(33), get_score_for_game(33), 33, s_shape_matching) --shape matching
-    add_big_button(3, icon_ico_g_0502, 800 + 300, 450, 90, 1, false, get_max_score_for_game(34), get_score_for_game(34), 34, s_shape_maker) --shape maker
+    add_big_button(3, icon_ico_g_0502, 800 + 500, 450, 90, 1, false, get_max_score_for_game(34), get_score_for_game(34), 34, s_shape_maker) --shape maker
   elseif index == 24 then -- time
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
-    add_big_button(1, icon_m5, 800 - 300,       450, 90, 1, false, get_max_score_for_game(35), get_score_for_game(35), 35, s_how_clock_works) --how clock works
+    add_big_button(1, icon_m5, 800 - 500,       450, 90, 1, false, get_max_score_for_game(35), get_score_for_game(35), 35, s_how_clock_works) --how clock works
     add_big_button(2, icon_ico_g_1004, 800    , 450, 90, 1, false, get_max_score_for_game(36), get_score_for_game(36), 36, s_learn_to_set_the_clock) --learn to set the clock
-    add_big_button(3, icon_ico_g_1006, 800 + 300, 450, 90, 1, false, get_max_score_for_game(37), get_score_for_game(37), 37, s_time_matching) --time_matching
+    add_big_button(3, icon_ico_g_1006, 800 + 500, 450, 90, 1, false, get_max_score_for_game(37), get_score_for_game(37), 37, s_time_matching) --time_matching
   elseif index == 25 then -- Translators credits
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 5)
   elseif index == 26 then --user score

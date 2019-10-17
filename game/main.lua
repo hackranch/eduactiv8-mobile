@@ -603,6 +603,9 @@ function love.update(dt)
       elseif mouse_on_button(16) then
         set_language("hebrew")
         build_form(4)
+      elseif mouse_on_button(17) then
+        set_language("macedonian")
+        build_form(4)
       end
       --love.window.setTitle(language_filename)
       initialize_activity_titles()
