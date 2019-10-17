@@ -984,9 +984,11 @@ function love.update(dt)
       --table.insert(line_coordinates, {mouse_x, mouse_y})
       for i = 1, 6 do
         if mouse_on_button(200 + i) then
-          buttons[200 + selected_color].button_color[4] = 0.4
+          local transparency = 1
+          if old_color_mode then transparency = 255 end
+          buttons[200 + selected_color].button_color[4] = 0.4 * transparency
           selected_color = i
-          buttons[200 + selected_color].button_color[4] = 1
+          buttons[200 + selected_color].button_color[4] = 1 * transparency
         end
       end
     end--mouse click
@@ -1176,14 +1178,14 @@ function love.draw()
     for y = 1, game_table_rows do
       for x = 1, 2 do
         if game_table[y][x].selected == true then
-          love.graphics.setColor(color["light_blue_80"])
+          love.graphics.setColor(color["light_blue"])
         else
           love.graphics.setColor(color["light_blue_50"])
         end
         if game_table[y][x].completed == true then
           love.graphics.setColor(color["light_green"])
         end
-        if current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65 and game_table[y][x].completed == true)  then
+        if current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65 and (game_table[y][x].completed == true or game_table[y][x].selected == true))  then
           love.graphics.rectangle('fill', x * (game_screen_width/12), (y+1) * (game_screen_height / 6) + game_table_y_offset, (game_screen_width/12)-2, (game_screen_height / 6)-2, 15, 15)
         elseif current_window >= 54 and current_window <= 65 then
           love.graphics.setLineWidth(4)
@@ -1201,7 +1203,9 @@ function love.draw()
           love.graphics.setColor(random_colors[x + y * 2])
           love.graphics.draw(icon_shapes_fill[game_table[y][x].content], (x) * (game_screen_width/12) + 13, (y+1) * (game_screen_height / 6) + 21 + y_offset + game_table_y_offset)
         elseif current_window >= 54 and current_window <= 65 then
-          if game_table[y][x].completed == false then
+          if game_table[y][x].selected == true then
+            love.graphics.setColor(color["light_blue"])
+          elseif game_table[y][x].completed == false then
             love.graphics.setColor(color["white"])
           else
             love.graphics.setColor(color["light_green"])

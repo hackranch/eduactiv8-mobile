@@ -1,7 +1,7 @@
 function translate_i18n(word, index)
   local result = {}
   result[0] = "" --word
-
+  index = index or 0
   local word_found = false
   local word_start = false
 

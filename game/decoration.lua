@@ -1,6 +1,6 @@
 function initialize_decoration_elements()
   decoration_elements = {} --digits appearing in the menus
-  for i = 1, 15 do
+  for i = 1, 11 do
     decoration_elements[i] = {}
     decoration_elements[i].x = love.math.random(screen_left, screen_total_width)
     decoration_elements[i].y = love.math.random(screen_top, screen_total_height)

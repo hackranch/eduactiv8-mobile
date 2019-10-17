@@ -10,6 +10,7 @@ function draw_button(button_text, button_x, button_y, button_width, white, align
       love.graphics.circle('fill', button_x + button_width / 2, button_y, height / 2)
     elseif button_form == 2 then
       love.graphics.rectangle('fill', button_x - button_width / 2, button_y - (height / 2), button_width, height, 15, 15)
+    -- 3 - without rectangle
     end
   end
   if white == false and button_color == color["orange"] then
@@ -40,7 +41,7 @@ function draw_button(button_text, button_x, button_y, button_width, white, align
   else
     if button_form == 1 then
       print_text(button_text, button_x - 1000 * (button_width / button_text_type:getWidth()), button_y - 33, 2000, alignment, 0, button_width / (button_text_type:getWidth()), 1)
-    elseif button_form == 2 then
+    elseif button_form == 2 or button_form == 3 then
       if (button_text_type:getWidth() > button_width / 0.7) then
         print_text(button_text, button_x - (button_width / 2), button_y - 46, button_width / 0.7, alignment, 0, 0.7, 0.7)
       else

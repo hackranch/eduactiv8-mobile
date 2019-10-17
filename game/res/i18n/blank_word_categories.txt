@@ -1,287 +1,5 @@
-# eduActiv8 Mobile - translation file.
-# Copyright (C) 2019 Hackranch
-# This file is distributed under the same license as eduActiv8 Mobile.
-# Derek Lackaff <lackaff@hackranch.com>, 2019.
-
-#, fuzzy
-
-msgid ""
-msgstr ""
-"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
-"POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-15 00:00+0000\n"
-"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
-"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.4\n"
-
-msgid "English"
-msgstr ""
-
-msgid "Login"
-msgstr ""
-
-msgid "Default Language:"
-msgstr ""
-
-msgid "User Management"
-msgstr ""
-
-msgid "Copyright & Credits"
-msgstr ""
-
-msgid "Licence"
-msgstr ""
-
-msgid "Language arts"
-msgstr ""
-
-msgid "This username and password combination doesn't exist."
-msgstr ""
-
-msgid "user name: "
-msgstr ""
-
-msgid "password: "
-msgstr ""
-
-msgid "eduActiv8 Test Version"
-msgstr ""
-
-msgid "Save"
-msgstr ""
-
-msgid "Delete user"
-msgstr ""
-
-msgid "Preferences saved..."
-msgstr ""
-
-msgid "Logged in as: "
-msgstr ""
-
-msgid "Language"
-msgstr ""
-
-msgid "Mathematics"
-msgstr ""
-
-msgid "Games & Mazes"
-msgstr ""
-
-msgid "Word Builders"
-msgstr ""
-
-msgid "Animals"
-msgstr ""
-
-msgid "Complete the word"
-msgstr ""
-
-msgid "Positive numbers"
-msgstr ""
-
-msgid "Number Spelling"
-msgstr ""
-
-msgid "Shopping List"
-msgstr ""
-
-msgid "Addition"
-msgstr ""
-
-msgid "Find missing number"
-msgstr ""
-
-msgid "Level"
-msgstr ""
-
-msgid "Translators"
-msgstr ""
-
-msgid "Funding: "
-msgstr ""
-
-msgid "Score: "
-msgstr ""
-
-msgid "Numbers & Basic Operations"
-msgstr ""
-
-msgid "Numbers"
-msgstr ""
-
-msgid "Basic Operations"
-msgstr ""
-
-msgid "area:"
-msgstr ""
-
-msgid "perimeter:"
-msgstr ""
-
-msgid "circumference:"
-msgstr ""
-
-msgid "Trapezium"
-msgstr ""
-
-msgid "Drag the clock hands to set the time"
-msgstr ""
-
-msgid "Discover Letters"
-msgstr ""
-
-msgid "Word Matchers"
-msgstr ""
-
-msgid "Shapes and Solids"
-msgstr ""
-
-msgid "Symmetry"
-msgstr ""
-
-msgid "Patterns"
-msgstr ""
-
-msgid "Time"
-msgstr ""
-
-msgid "Basics"
-msgstr ""
-
-msgid "Subtraction"
-msgstr ""
-
-msgid "Learn Numbers with Flashcards"
-msgstr ""
-
-msgid "Demonstration"
-msgstr ""
-
-msgid "Find Solution"
-msgstr ""
-
-msgid "Image Patterns"
-msgstr ""
-
-msgid "Learn Shapes with Flashcards"
-msgstr ""
-
-msgid "Shape Matching"
-msgstr ""
-
-msgid "Shape Maker"
-msgstr ""
-
-msgid "How clock works?"
-msgstr ""
-
-msgid "learn to set the clock"
-msgstr ""
-
-msgid "Set the clock to:"
-msgstr ""
-
-msgid "Time Matching"
-msgstr ""
-
-msgid "Your Alphabet"
-msgstr ""
-
-msgid "Trace Letters and Numbers"
-msgstr ""
-
-msgid "People"
-msgstr ""
-
-msgid "Jobs"
-msgstr ""
-
-msgid "Body"
-msgstr ""
-
-msgid "Clothes and Accessories"
-msgstr ""
-
-msgid "Sports"
-msgstr ""
-
-msgid "Actions"
-msgstr ""
-
-msgid "Nature"
-msgstr ""
-
-msgid "Fruits and Vegetables"
-msgstr ""
-
-msgid "Food"
-msgstr ""
-
-msgid "Transport"
-msgstr ""
-
-msgid "Constructions"
-msgstr ""
-
-msgid "Equilateral Triangle"
-msgstr ""
-
-msgid "Isosceles Triangle"
-msgstr ""
-
-msgid "Obtuse Triangle"
-msgstr ""
-
-msgid "Right Triangle"
-msgstr ""
-
-msgid "Acute Triangle"
-msgstr ""
-
-msgid "Square"
-msgstr ""
-
-msgid "Rectangle"
-msgstr ""
-
-msgid "Right Trapezium"
-msgstr ""
-
-msgid "Isosceles Trapezium"
-msgstr ""
-
-msgid "Rhombus"
-msgstr ""
-
-msgid "Parallelogram"
-msgstr ""
-
-msgid "Pentagon"
-msgstr ""
-
-msgid "Hexagon"
-msgstr ""
-
-msgid "Circle"
-msgstr ""
-
-msgid "Ellipse"
-msgstr ""
-
-msgid "Heptagon"
-msgstr ""
-
-msgid "Octagon"
-msgstr ""
-
-msgid "trapezium"
-msgstr ""
-
 # animals
+# ""
 msgid "cow"
 msgstr ""
 
@@ -667,6 +385,7 @@ msgid "anteater"
 msgstr ""
 
 # sport
+# ""
 msgid "judo"
 msgstr ""
 
@@ -686,6 +405,9 @@ msgid "ice skating"
 msgstr ""
 
 msgid "walk"
+msgstr ""
+
+msgid "run"
 msgstr ""
 
 msgid "run"
@@ -755,6 +477,7 @@ msgid "rope"
 msgstr ""
 
 # body
+# ""
 msgid "teeth"
 msgstr ""
 
@@ -870,6 +593,7 @@ msgid "belly"
 msgstr ""
 
 # people
+# ""
 msgid "girl"
 msgstr ""
 
@@ -958,6 +682,7 @@ msgid "lady"
 msgstr ""
 
 # food
+# ""
 msgid "candy"
 msgstr ""
 
@@ -1130,6 +855,7 @@ msgid "ham"
 msgstr ""
 
 # clothes
+# ""
 msgid "jewellery"
 msgstr ""
 
@@ -1266,6 +992,7 @@ msgid "overalls"
 msgstr ""
 
 # actions
+# ""
 msgid "lick"
 msgstr ""
 
@@ -1467,6 +1194,9 @@ msgstr ""
 msgid "drive"
 msgstr ""
 
+msgid "drink"
+msgstr ""
+
 msgid "fly"
 msgstr ""
 
@@ -1504,6 +1234,7 @@ msgid "eat"
 msgstr ""
 
 # construction
+# ""
 msgid "lighthouse"
 msgstr ""
 
@@ -1616,6 +1347,7 @@ msgid "hut"
 msgstr ""
 
 # nature
+# ""
 msgid "land"
 msgstr ""
 
@@ -1674,6 +1406,7 @@ msgid "iceberg"
 msgstr ""
 
 # jobs
+# ""
 msgid "clown"
 msgstr ""
 
@@ -1701,7 +1434,7 @@ msgstr ""
 msgid "juggler"
 msgstr ""
 
-msgid "police officer"
+msgid "policeman"
 msgstr ""
 
 msgid "plumber"
@@ -1752,7 +1485,7 @@ msgstr ""
 msgid "princess"
 msgstr ""
 
-msgid "firefighter"
+msgid "fireman"
 msgstr ""
 
 msgid "nun"
@@ -1840,6 +1573,8 @@ msgid "scientist"
 msgstr ""
 
 # fruits and vegetables
+# ""
+
 msgid "carrot"
 msgstr ""
 
@@ -1985,6 +1720,7 @@ msgid "papaya"
 msgstr ""
 
 # transport
+# ""
 msgid "sail"
 msgstr ""
 

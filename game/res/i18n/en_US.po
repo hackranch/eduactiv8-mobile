@@ -18,6 +18,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 2.2.4\n"
 
+msgid "green apple"
+msgid_plural "green apples"
+msgstr[0] "green apple"
+msgstr[1] "green apples"
+
+msgid "red apple"
+msgid_plural "red apples"
+msgstr[0] "red apple"
+msgstr[1] "red apples"
+
+msgid "strawberry"
+msgid_plural "strawberries"
+msgstr[0] "strawberry"
+msgstr[1] "strawberries"
+
+msgid "pear"
+msgid_plural "pears"
+msgstr[0] "pear"
+msgstr[1] "pears"
+
+msgid "orange [fruit]"
+msgid_plural "oranges"
+msgstr[0] "orange"
+msgstr[1] "oranges"
+
+msgid "onion"
+msgid_plural "onions"
+msgstr[0] "onion"
+msgstr[1] "onions"
+
+msgid "tomato"
+msgid_plural "tomatoes"
+msgstr[0] "tomato"
+msgstr[1] "tomatoes"
+
+msgid "lemon"
+msgid_plural "lemons"
+msgstr[0] "lemon"
+msgstr[1] "lemons"
+
+msgid "cherry"
+msgid_plural "cherries"
+msgstr[0] "cherry"
+msgstr[1] "cherries"
+
+msgid "pepper"
+msgid_plural "peppers"
+msgstr[0] "pepper"
+msgstr[1] "peppers"
+
+msgid "carrot"
+msgid_plural "carrots"
+msgstr[0] "carrot"
+msgstr[1] "carrots"
+
+msgid "banana"
+msgid_plural "bananas"
+msgstr[0] "banana"
+msgstr[1] "bananas"
+
+msgid "watermelon"
+msgid_plural "watermelons"
+msgstr[0] "watermelon"
+msgstr[1] "watermelons"
+
 msgid "English"
 msgstr "English"
 
@@ -298,7 +363,6 @@ msgstr "shrimp"
 msgid "wolf"
 msgstr "wolf"
 
-#| msgid "Other"
 msgid "panther"
 msgstr "panther"
 
@@ -335,7 +399,6 @@ msgstr "gorilla"
 msgid "llama"
 msgstr "llama"
 
-#| msgid "Nature"
 msgid "vulture"
 msgstr "vulture"
 
@@ -373,7 +436,7 @@ msgid "scorpion"
 msgstr "scorpion"
 
 msgid "fo"
-msgstr "fo"
+msgstr "fox"
 
 msgid "leopard"
 msgstr "leopard"
@@ -438,7 +501,6 @@ msgstr "horse"
 msgid "penguin"
 msgstr "penguin"
 
-#| msgid "Letters"
 msgid "otter"
 msgstr "otter"
 
@@ -508,8 +570,6 @@ msgstr "oyster"
 msgid "beaver"
 msgstr "beaver"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "sparrow"
 msgstr "sparrow"
 
@@ -531,7 +591,6 @@ msgstr "owl"
 msgid "cobra"
 msgstr "cobra"
 
-#| msgid "remainder"
 msgid "salamander"
 msgstr "salamander"
 
@@ -572,24 +631,20 @@ msgid "hyena"
 msgstr "hyena"
 
 msgid "o"
-msgstr "o"
+msgstr "ox"
 
 msgid "peacock"
 msgstr "peacock"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "parrot"
 msgstr "parrot"
 
 msgid "elk"
 msgstr "elk"
 
-#| msgid "Translators"
 msgid "alligator"
 msgstr "alligator"
 
-#| msgid "Paint"
 msgid "ant"
 msgstr "ant"
 
@@ -614,7 +669,6 @@ msgstr "chimp"
 msgid "doe"
 msgstr "doe"
 
-#| msgid "Sphere"
 msgid "gopher"
 msgstr "gopher"
 
@@ -645,8 +699,6 @@ msgstr "turtle"
 msgid "bull"
 msgstr "bull"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "cat"
 msgstr "cat"
 
@@ -659,7 +711,6 @@ msgstr "slug"
 msgid "buffalo"
 msgstr "buffalo"
 
-#| msgid "black"
 msgid "blackbird"
 msgstr "blackbird"
 
@@ -705,6 +756,9 @@ msgstr "ice skating"
 
 msgid "walk"
 msgstr "walk"
+
+msgid "run"
+msgstr "run"
 
 msgid "run"
 msgstr "run"
@@ -833,7 +887,6 @@ msgstr "hip"
 msgid "arm"
 msgstr "arm"
 
-#| msgid "brown"
 msgid "eyebrow"
 msgstr "eyebrow"
 
@@ -858,8 +911,6 @@ msgstr "leg"
 msgid "spine"
 msgstr "spine"
 
-#| msgid "pear"
-#| msgid_plural "pears"
 msgid "ear"
 msgstr "ear"
 
@@ -897,7 +948,6 @@ msgstr "girl"
 msgid "male"
 msgstr "male"
 
-#| msgid "Won"
 msgid "son"
 msgstr "son"
 
@@ -913,7 +963,6 @@ msgstr "baby"
 msgid "child"
 msgstr "child"
 
-#| msgid "Odd"
 msgid "dad"
 msgstr "dad"
 
@@ -923,15 +972,12 @@ msgstr "mom"
 msgid "twin boys"
 msgstr "twin boys"
 
-#| msgid "Other"
 msgid "brothers"
 msgstr "brothers"
 
-#| msgid "maroon"
 msgid "man"
 msgstr "man"
 
-#| msgid "Other"
 msgid "mother"
 msgstr "mother"
 
@@ -1047,8 +1093,6 @@ msgstr "coffee"
 msgid "pie"
 msgstr "pie"
 
-#| msgid "lemon"
-#| msgid_plural "lemons"
 msgid "lemonade"
 msgstr "lemonade"
 
@@ -1061,7 +1105,6 @@ msgstr "water bottle"
 msgid "lunch"
 msgstr "lunch"
 
-#| msgid "Circle"
 msgid "ice"
 msgstr "ice"
 
@@ -1086,7 +1129,6 @@ msgstr "cake"
 msgid "mashed potatoes"
 msgstr "mashed potatoes"
 
-#| msgid "teal"
 msgid "tea"
 msgstr "tea"
 
@@ -1175,7 +1217,6 @@ msgstr "heel"
 msgid "smock"
 msgstr "smock"
 
-#| msgid "Sports"
 msgid "shorts"
 msgstr "shorts"
 
@@ -1195,7 +1236,7 @@ msgid "raincoat"
 msgstr "raincoat"
 
 msgid "trousers"
-msgstr "pants"
+msgstr "trousers"
 
 msgid "sunglasses"
 msgstr "sunglasses"
@@ -1230,7 +1271,6 @@ msgstr "shoes"
 msgid "jewel"
 msgstr "jewel"
 
-#| msgid "times"
 msgid "tie"
 msgstr "tie"
 
@@ -1289,7 +1329,7 @@ msgid "robe"
 msgstr "robe"
 
 msgid "pants"
-msgstr "underwear"
+msgstr "pants"
 
 msgid "kimono"
 msgstr "kimono"
@@ -1325,7 +1365,6 @@ msgstr "see"
 msgid "climb"
 msgstr "climb"
 
-#| msgid "indigo"
 msgid "dig"
 msgstr "dig"
 
@@ -1359,7 +1398,6 @@ msgstr "catch"
 msgid "clap"
 msgstr "clap"
 
-#| msgid "carry"
 msgid "cry"
 msgstr "cry"
 
@@ -1384,7 +1422,6 @@ msgstr "kneel"
 msgid "find"
 msgstr "find"
 
-#| msgid "Cancel"
 msgid "dance"
 msgstr "dance"
 
@@ -1409,7 +1446,6 @@ msgstr "cheer"
 msgid "bake"
 msgstr "bake"
 
-#| msgid "write "
 msgid "write"
 msgstr "write"
 
@@ -1470,7 +1506,6 @@ msgstr "float"
 msgid "pull"
 msgstr "pull"
 
-#| msgid "Nature"
 msgid "ate"
 msgstr "ate"
 
@@ -1504,6 +1539,9 @@ msgstr "chat"
 msgid "drive"
 msgstr "drive"
 
+msgid "drink"
+msgstr "drink"
+
 msgid "fly"
 msgstr "fly"
 
@@ -1534,7 +1572,6 @@ msgstr "read"
 msgid "croak"
 msgstr "croak"
 
-#| msgid "start time"
 msgid "stare"
 msgstr "stare"
 
@@ -1584,7 +1621,6 @@ msgstr "store"
 msgid "staircase"
 msgstr "staircase"
 
-#| msgid "preschool"
 msgid "school"
 msgstr "school"
 
@@ -1722,7 +1758,6 @@ msgstr "engineer"
 msgid "priest"
 msgstr "priest"
 
-#| msgid "violet"
 msgid "vet"
 msgstr "vet"
 
@@ -1732,7 +1767,6 @@ msgstr "judge"
 msgid "chef"
 msgstr "chef"
 
-#| msgid "Delete"
 msgid "athlete"
 msgstr "athlete"
 
@@ -1742,10 +1776,9 @@ msgstr "librarian"
 msgid "juggler"
 msgstr "juggler"
 
-msgid "policeman"
-msgstr "policeman"
+msgid "police officer"
+msgstr "police officer"
 
-#| msgid "Numbers"
 msgid "plumber"
 msgstr "plumber"
 
@@ -1767,15 +1800,12 @@ msgstr "knight"
 msgid "doctor"
 msgstr "doctor"
 
-#| msgid "Player"
 msgid "bricklayer"
 msgstr "bricklayer"
 
 msgid "cleaner"
 msgstr "cleaner"
 
-#| msgid "cherry"
-#| msgid_plural "cherries"
 msgid "teacher"
 msgstr "teacher"
 
@@ -1797,9 +1827,8 @@ msgstr "fisherman"
 msgid "princess"
 msgstr "princess"
 
-#| msgid "remainder"
-msgid "fireman"
-msgstr "fireman"
+msgid "firefighter"
+msgstr "firefighter"
 
 msgid "nun"
 msgstr "nun"
@@ -1849,8 +1878,6 @@ msgstr "cook"
 msgid "student"
 msgstr "student"
 
-#| msgid "cherry"
-#| msgid_plural "cherries"
 msgid "butcher"
 msgstr "butcher"
 
@@ -1878,7 +1905,6 @@ msgstr "coach"
 msgid "astronaut"
 msgstr "astronaut"
 
-#| msgid "Paint"
 msgid "painter"
 msgstr "painter"
 
@@ -1888,8 +1914,6 @@ msgstr "anaesthesiologist"
 msgid "scientist"
 msgstr "scientist"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "carrot"
 msgstr "carrot"
 
@@ -1908,20 +1932,15 @@ msgstr "cacao"
 msgid "peach"
 msgstr "peach"
 
-#| msgid "watermelon"
-#| msgid_plural "watermelons"
 msgid "melon"
 msgstr "melon"
 
-#| msgid "orange [fruit]"
-#| msgid_plural "oranges"
 msgid "grapefruit"
 msgstr "grapefruit"
 
 msgid "broccoli"
 msgstr "broccoli"
 
-#| msgid "Shapes"
 msgid "grapes"
 msgstr "grapes"
 
@@ -1937,8 +1956,6 @@ msgstr "kernel"
 msgid "radish"
 msgstr "radish"
 
-#| msgid "tomato"
-#| msgid_plural "tomatoes"
 msgid "tomato"
 msgstr "tomato"
 
@@ -1948,29 +1965,21 @@ msgstr "kiwi"
 msgid "asparagus"
 msgstr "asparagus"
 
-#| msgid "olive"
 msgid "olives"
 msgstr "olives"
 
-#| msgid "Numbers"
 msgid "cucumbers"
 msgstr "cucumbers"
 
 msgid "beans"
 msgstr "beans"
 
-#| msgid "strawberry"
-#| msgid_plural "strawberries"
 msgid "strawberry"
 msgstr "strawberry"
 
-#| msgid "pepper"
-#| msgid_plural "peppers"
 msgid "peppers"
 msgstr "peppers"
 
-#| msgid "strawberry"
-#| msgid_plural "strawberries"
 msgid "raspberry"
 msgstr "raspberry"
 
@@ -1986,8 +1995,6 @@ msgstr "peas"
 msgid "cabbage"
 msgstr "cabbage"
 
-#| msgid "cherry"
-#| msgid_plural "cherries"
 msgid "cherries"
 msgstr "cherries"
 
@@ -1997,13 +2004,9 @@ msgstr "squash"
 msgid "blueberries"
 msgstr "blueberries"
 
-#| msgid "pear"
-#| msgid_plural "pears"
 msgid "pear"
 msgstr "pear"
 
-#| msgid "orange [fruit]"
-#| msgid_plural "oranges"
 msgid "orange"
 msgstr "orange"
 
@@ -2016,13 +2019,9 @@ msgstr "avocado"
 msgid "garlic"
 msgstr "garlic"
 
-#| msgid "onion"
-#| msgid_plural "onions"
 msgid "onion"
 msgstr "onion"
 
-#| msgid "red apple"
-#| msgid_plural "red apples"
 msgid "apple"
 msgstr "apple"
 
@@ -2038,13 +2037,11 @@ msgstr "mango"
 msgid "lettuce"
 msgstr "lettuce"
 
-#| msgid "lemon"
-#| msgid_plural "lemons"
 msgid "lemon"
 msgstr "lemon"
 
 msgid "aubergine"
-msgstr "eggplant"
+msgstr "aubergine"
 
 msgid "artichokes"
 msgstr "artichokes"
@@ -2055,8 +2052,6 @@ msgstr "plums"
 msgid "leek"
 msgstr "leek"
 
-#| msgid "banana"
-#| msgid_plural "bananas"
 msgid "bananas"
 msgstr "bananas"
 
@@ -2070,7 +2065,6 @@ msgstr "sail"
 msgid "taxi"
 msgstr "taxi"
 
-#| msgid "carry"
 msgid "car"
 msgstr "car"
 
@@ -2083,7 +2077,6 @@ msgstr "raft"
 msgid "pedal"
 msgstr "pedal"
 
-#| msgid "Rhombus"
 msgid "bus"
 msgstr "bus"
 
@@ -2105,7 +2098,6 @@ msgstr "carpet"
 msgid "motorcycle"
 msgstr "motorcycle"
 
-#| msgid "Training"
 msgid "train"
 msgstr "train"
 
@@ -2129,6 +2121,7 @@ msgstr "sledge"
 
 msgid "bicycle"
 msgstr "bicycle"
+
 
 #~ msgid "green apple"
 #~ msgid_plural "green apples"

@@ -19,6 +19,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 2.2.4\n"
 
+msgid "green apple"
+msgid_plural "green apples"
+msgstr[0] "mela verde"
+msgstr[1] "mele verdi"
+
+msgid "red apple"
+msgid_plural "red apples"
+msgstr[0] "mela rossa"
+msgstr[1] "mele rosse"
+
+msgid "strawberry"
+msgid_plural "strawberries"
+msgstr[0] "fragola"
+msgstr[1] "fragole"
+
+msgid "pear"
+msgid_plural "pears"
+msgstr[0] "pera"
+msgstr[1] "pere"
+
+msgid "orange [fruit]"
+msgid_plural "oranges"
+msgstr[0] "arancia"
+msgstr[1] "arance"
+
+msgid "onion"
+msgid_plural "onions"
+msgstr[0] "cipolla"
+msgstr[1] "cipolle"
+
+msgid "tomato"
+msgid_plural "tomatoes"
+msgstr[0] "pomodoro"
+msgstr[1] "pomodori"
+
+msgid "lemon"
+msgid_plural "lemons"
+msgstr[0] "limone"
+msgstr[1] "limoni"
+
+msgid "cherry"
+msgid_plural "cherries"
+msgstr[0] "ciliegia"
+msgstr[1] "ciliegie"
+
+msgid "pepper"
+msgid_plural "peppers"
+msgstr[0] "pepeone"
+msgstr[1] "peperoni"
+
+msgid "carrot"
+msgid_plural "carrots"
+msgstr[0] "carota"
+msgstr[1] "carote"
+
+msgid "banana"
+msgid_plural "bananas"
+msgstr[0] "banana "
+msgstr[1] "banane "
+
+msgid "watermelon"
+msgid_plural "watermelons"
+msgstr[0] "anguria"
+msgstr[1] "angurie"
+
 msgid "English"
 msgstr "Inglese"
 
@@ -289,1847 +354,1775 @@ msgstr ""
 
 # animals
 msgid "cow"
-msgstr ""
+msgstr "cow"
 
 msgid "turkey"
-msgstr ""
+msgstr "turkey"
 
 msgid "shrimp"
-msgstr ""
+msgstr "shrimp"
 
 msgid "wolf"
-msgstr ""
+msgstr "wolf"
 
-#| msgid "Other"
 msgid "panther"
-msgstr ""
+msgstr "panther"
 
 msgid "panda"
-msgstr ""
+msgstr "panda"
 
 msgid "magpie"
-msgstr ""
+msgstr "magpie"
 
 msgid "clam"
-msgstr ""
+msgstr "clam"
 
 msgid "pony"
-msgstr ""
+msgstr "pony"
 
 msgid "mouse"
-msgstr ""
+msgstr "mouse"
 
 msgid "pug"
-msgstr ""
+msgstr "pug"
 
 msgid "koala"
-msgstr ""
+msgstr "koala"
 
 msgid "frog"
-msgstr ""
+msgstr "frog"
 
 msgid "ladybug"
-msgstr ""
+msgstr "ladybug"
 
 msgid "gorilla"
-msgstr ""
+msgstr "gorilla"
 
 msgid "llama"
-msgstr ""
+msgstr "llama"
 
-#| msgid "Nature"
 msgid "vulture"
-msgstr ""
+msgstr "vulture"
 
 msgid "hamster"
-msgstr ""
+msgstr "hamster"
 
 msgid "bird"
-msgstr ""
+msgstr "bird"
 
 msgid "starfish"
-msgstr ""
+msgstr "starfish"
 
 msgid "crow"
-msgstr ""
+msgstr "crow"
 
 msgid "parakeet"
-msgstr ""
+msgstr "parakeet"
 
 msgid "caterpillar"
-msgstr ""
+msgstr "caterpillar"
 
 msgid "tiger"
-msgstr ""
+msgstr "tiger"
 
 msgid "hummingbird"
-msgstr ""
+msgstr "hummingbird"
 
 msgid "piranha"
-msgstr ""
+msgstr "piranha"
 
 msgid "pig"
-msgstr ""
+msgstr "pig"
 
 msgid "scorpion"
-msgstr ""
+msgstr "scorpion"
 
 msgid "fo"
-msgstr ""
+msgstr "fox"
 
 msgid "leopard"
-msgstr ""
+msgstr "leopard"
 
 msgid "iguana"
-msgstr ""
+msgstr "iguana"
 
 msgid "dolphin"
-msgstr ""
+msgstr "dolphin"
 
 msgid "bat"
-msgstr ""
+msgstr "bat"
 
 msgid "chick"
-msgstr ""
+msgstr "chick"
 
 msgid "crab"
-msgstr ""
+msgstr "crab"
 
 msgid "hen"
-msgstr ""
+msgstr "hen"
 
 msgid "wasp"
-msgstr ""
+msgstr "wasp"
 
 msgid "chameleon"
-msgstr ""
+msgstr "chameleon"
 
 msgid "whale"
-msgstr ""
+msgstr "whale"
 
 msgid "hedgehog"
-msgstr ""
+msgstr "hedgehog"
 
 msgid "fawn"
-msgstr ""
+msgstr "fawn"
 
 msgid "moose"
-msgstr ""
+msgstr "moose"
 
 msgid "bee"
-msgstr ""
+msgstr "bee"
 
 msgid "viper"
-msgstr ""
+msgstr "viper"
 
 msgid "shrike"
-msgstr ""
+msgstr "shrike"
 
 msgid "donkey"
-msgstr ""
+msgstr "donkey"
 
 msgid "guinea pig"
-msgstr ""
+msgstr "guinea pig"
 
 msgid "sloth"
-msgstr ""
+msgstr "sloth"
 
 msgid "horse"
-msgstr ""
+msgstr "horse"
 
 msgid "penguin"
-msgstr ""
+msgstr "penguin"
 
-#| msgid "Letters"
 msgid "otter"
-msgstr ""
+msgstr "otter"
 
 msgid "bear"
-msgstr ""
+msgstr "bear"
 
 msgid "zebra"
-msgstr ""
+msgstr "zebra"
 
 msgid "ostrich"
-msgstr ""
+msgstr "ostrich"
 
 msgid "camel"
-msgstr ""
+msgstr "camel"
 
 msgid "antelope"
-msgstr ""
+msgstr "antelope"
 
 msgid "lemur"
-msgstr ""
+msgstr "lemur"
 
 msgid "pigeon"
-msgstr ""
+msgstr "pigeon"
 
 msgid "lama"
-msgstr ""
+msgstr "lama"
 
 msgid "mole"
-msgstr ""
+msgstr "mole"
 
 msgid "ray"
-msgstr ""
+msgstr "ray"
 
 msgid "ram"
-msgstr ""
+msgstr "ram"
 
 msgid "skunk"
-msgstr ""
+msgstr "skunk"
 
 msgid "jellyfish"
-msgstr ""
+msgstr "jellyfish"
 
 msgid "sheep"
-msgstr ""
+msgstr "sheep"
 
 msgid "shark"
-msgstr ""
+msgstr "shark"
 
 msgid "kitten"
-msgstr ""
+msgstr "kitten"
 
 msgid "deer"
-msgstr ""
+msgstr "deer"
 
 msgid "snail"
-msgstr ""
+msgstr "snail"
 
 msgid "flamingo"
-msgstr ""
+msgstr "flamingo"
 
 msgid "rabbit"
-msgstr ""
+msgstr "rabbit"
 
 msgid "oyster"
-msgstr ""
+msgstr "oyster"
 
 msgid "beaver"
-msgstr ""
+msgstr "beaver"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "sparrow"
-msgstr ""
+msgstr "sparrow"
 
 msgid "dove"
-msgstr ""
+msgstr "dove"
 
 msgid "eagle"
-msgstr ""
+msgstr "eagle"
 
 msgid "beetle"
-msgstr ""
+msgstr "beetle"
 
 msgid "hippopotamus"
-msgstr ""
+msgstr "hippopotamus"
 
 msgid "owl"
-msgstr ""
+msgstr "owl"
 
 msgid "cobra"
-msgstr ""
+msgstr "cobra"
 
-#| msgid "remainder"
 msgid "salamander"
-msgstr ""
+msgstr "salamander"
 
 msgid "goose"
-msgstr ""
+msgstr "goose"
 
 msgid "kangaroo"
-msgstr ""
+msgstr "kangaroo"
 
 msgid "dragonfly"
-msgstr ""
+msgstr "dragonfly"
 
 msgid "toad"
-msgstr ""
+msgstr "toad"
 
 msgid "pelican"
-msgstr ""
+msgstr "pelican"
 
 msgid "squid"
-msgstr ""
+msgstr "squid"
 
 msgid "lion cub"
-msgstr ""
+msgstr "lion cub"
 
 msgid "jaguar"
-msgstr ""
+msgstr "jaguar"
 
 msgid "duck"
-msgstr ""
+msgstr "duck"
 
 msgid "lizard"
-msgstr ""
+msgstr "lizard"
 
 msgid "rhinoceros"
-msgstr ""
+msgstr "rhinoceros"
 
 msgid "hyena"
-msgstr ""
+msgstr "hyena"
 
 msgid "o"
-msgstr ""
+msgstr "ox"
 
 msgid "peacock"
-msgstr ""
+msgstr "peacock"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "parrot"
-msgstr ""
+msgstr "parrot"
 
 msgid "elk"
-msgstr ""
+msgstr "elk"
 
-#| msgid "Translators"
 msgid "alligator"
-msgstr ""
+msgstr "alligator"
 
-#| msgid "Paint"
 msgid "ant"
-msgstr ""
+msgstr "ant"
 
 msgid "goat"
-msgstr ""
+msgstr "goat"
 
 msgid "baby rabbit"
-msgstr ""
+msgstr "baby rabbit"
 
 msgid "lion"
-msgstr ""
+msgstr "lion"
 
 msgid "squirrel"
-msgstr ""
+msgstr "squirrel"
 
 msgid "opossum"
-msgstr ""
+msgstr "opossum"
 
 msgid "chimp"
-msgstr ""
+msgstr "chimp"
 
 msgid "doe"
-msgstr ""
+msgstr "doe"
 
-#| msgid "Sphere"
 msgid "gopher"
-msgstr ""
+msgstr "gopher"
 
 msgid "elephant"
-msgstr ""
+msgstr "elephant"
 
 msgid "giraffe"
-msgstr ""
+msgstr "giraffe"
 
 msgid "spider"
-msgstr ""
+msgstr "spider"
 
 msgid "puppy"
-msgstr ""
+msgstr "puppy"
 
 msgid "jay"
-msgstr ""
+msgstr "jay"
 
 msgid "seal"
-msgstr ""
+msgstr "seal"
 
 msgid "rooster"
-msgstr ""
+msgstr "rooster"
 
 msgid "turtle"
-msgstr ""
+msgstr "turtle"
 
 msgid "bull"
-msgstr ""
+msgstr "bull"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "cat"
-msgstr ""
+msgstr "cat"
 
 msgid "rat"
-msgstr ""
+msgstr "rat"
 
 msgid "slug"
-msgstr ""
+msgstr "slug"
 
 msgid "buffalo"
-msgstr ""
+msgstr "buffalo"
 
-#| msgid "black"
 msgid "blackbird"
-msgstr ""
+msgstr "blackbird"
 
 msgid "swan"
-msgstr ""
+msgstr "swan"
 
 msgid "lobster"
-msgstr ""
+msgstr "lobster"
 
 msgid "dog"
-msgstr ""
+msgstr "dog"
 
 msgid "mosquito"
-msgstr ""
+msgstr "mosquito"
 
 msgid "snake"
-msgstr ""
+msgstr "snake"
 
 msgid "chicken"
-msgstr ""
+msgstr "chicken"
 
 msgid "anteater"
-msgstr ""
+msgstr "anteater"
 
 # sport
 msgid "judo"
-msgstr ""
+msgstr "judo"
 
 msgid "pool"
-msgstr ""
+msgstr "pool"
 
 msgid "ride"
-msgstr ""
+msgstr "ride"
 
 msgid "stretch"
-msgstr ""
+msgstr "stretch"
 
 msgid "helmet"
-msgstr ""
+msgstr "helmet"
 
 msgid "ice skating"
-msgstr ""
+msgstr "ice skating"
 
 msgid "walk"
-msgstr ""
+msgstr "walk"
 
 msgid "run"
-msgstr ""
+msgstr "run"
+
+msgid "run"
+msgstr "run"
 
 msgid "swim"
-msgstr ""
+msgstr "swim"
 
 msgid "hop"
-msgstr ""
+msgstr "hop"
 
 msgid "hike"
-msgstr ""
+msgstr "hike"
 
 msgid "boxing"
-msgstr ""
+msgstr "boxing"
 
 msgid "hockey"
-msgstr ""
+msgstr "hockey"
 
 msgid "race"
-msgstr ""
+msgstr "race"
 
 msgid "throw"
-msgstr ""
+msgstr "throw"
 
 msgid "skate"
-msgstr ""
+msgstr "skate"
 
 msgid "win"
-msgstr ""
+msgstr "win"
 
 msgid "squat"
-msgstr ""
+msgstr "squat"
 
 msgid "ski"
-msgstr ""
+msgstr "ski"
 
 msgid "golf"
-msgstr ""
+msgstr "golf"
 
 msgid "whistle"
-msgstr ""
+msgstr "whistle"
 
 msgid "torch"
-msgstr ""
+msgstr "torch"
 
 msgid "sailing"
-msgstr ""
+msgstr "sailing"
 
 msgid "stand"
-msgstr ""
+msgstr "stand"
 
 msgid "tennis"
-msgstr ""
+msgstr "tennis"
 
 msgid "jump"
-msgstr ""
+msgstr "jump"
 
 msgid "rowing"
-msgstr ""
+msgstr "rowing"
 
 msgid "jog"
-msgstr ""
+msgstr "jog"
 
 msgid "rope"
-msgstr ""
+msgstr "rope"
 
 # body
 msgid "teeth"
-msgstr ""
+msgstr "teeth"
 
 msgid "cheek"
-msgstr ""
+msgstr "cheek"
 
 msgid "ankle"
-msgstr ""
+msgstr "ankle"
 
 msgid "knee"
-msgstr ""
+msgstr "knee"
 
 msgid "toe"
-msgstr ""
+msgstr "toe"
 
 msgid "muscle"
-msgstr ""
+msgstr "muscle"
 
 msgid "mouth"
-msgstr ""
+msgstr "mouth"
 
 msgid "feet"
-msgstr ""
+msgstr "feet"
 
 msgid "hand"
-msgstr ""
+msgstr "hand"
 
 msgid "elbow"
-msgstr ""
+msgstr "elbow"
 
 msgid "hair"
-msgstr ""
+msgstr "hair"
 
 msgid "eyelash"
-msgstr ""
+msgstr "eyelash"
 
 msgid "beard"
-msgstr ""
+msgstr "beard"
 
 msgid "belly button"
-msgstr ""
+msgstr "belly button"
 
 msgid "thumb"
-msgstr ""
+msgstr "thumb"
 
 msgid "breast"
-msgstr ""
+msgstr "breast"
 
 msgid "nostril"
-msgstr ""
+msgstr "nostril"
 
 msgid "nose"
-msgstr ""
+msgstr "nose"
 
 msgid "hip"
-msgstr ""
+msgstr "hip"
 
 msgid "arm"
-msgstr ""
+msgstr "arm"
 
-#| msgid "brown"
 msgid "eyebrow"
-msgstr ""
+msgstr "eyebrow"
 
 msgid "fist"
-msgstr ""
+msgstr "fist"
 
 msgid "neck"
-msgstr ""
+msgstr "neck"
 
 msgid "wrist"
-msgstr ""
+msgstr "wrist"
 
 msgid "throat"
-msgstr ""
+msgstr "throat"
 
 msgid "eye"
-msgstr ""
+msgstr "eye"
 
 msgid "leg"
-msgstr ""
+msgstr "leg"
 
 msgid "spine"
-msgstr ""
+msgstr "spine"
 
-#| msgid "pear"
-#| msgid_plural "pears"
 msgid "ear"
-msgstr ""
+msgstr "ear"
 
 msgid "finger"
-msgstr ""
+msgstr "finger"
 
 msgid "foot"
-msgstr ""
+msgstr "foot"
 
 msgid "braid"
-msgstr ""
+msgstr "braid"
 
 msgid "face"
-msgstr ""
+msgstr "face"
 
 msgid "back"
-msgstr ""
+msgstr "back"
 
 msgid "chin"
-msgstr ""
+msgstr "chin"
 
 msgid "bottom"
-msgstr ""
+msgstr "bottom"
 
 msgid "thigh"
-msgstr ""
+msgstr "thigh"
 
 msgid "belly"
-msgstr ""
+msgstr "belly"
 
 # people
 msgid "girl"
-msgstr ""
+msgstr "girl"
 
 msgid "male"
-msgstr ""
+msgstr "male"
 
-#| msgid "Won"
 msgid "son"
-msgstr ""
+msgstr "son"
 
 msgid "mates"
-msgstr ""
+msgstr "mates"
 
 msgid "friends"
-msgstr ""
+msgstr "friends"
 
 msgid "baby"
-msgstr ""
+msgstr "baby"
 
 msgid "child"
-msgstr ""
+msgstr "child"
 
-#| msgid "Odd"
 msgid "dad"
-msgstr ""
+msgstr "dad"
 
 msgid "mom"
-msgstr ""
+msgstr "mom"
 
 msgid "twin boys"
-msgstr ""
+msgstr "twin boys"
 
-#| msgid "Other"
 msgid "brothers"
-msgstr ""
+msgstr "brothers"
 
-#| msgid "maroon"
 msgid "man"
-msgstr ""
+msgstr "man"
 
-#| msgid "Other"
 msgid "mother"
-msgstr ""
+msgstr "mother"
 
 msgid "grandfather"
-msgstr ""
+msgstr "grandfather"
 
 msgid "family"
-msgstr ""
+msgstr "family"
 
 msgid "female"
-msgstr ""
+msgstr "female"
 
 msgid "wife"
-msgstr ""
+msgstr "wife"
 
 msgid "husband"
-msgstr ""
+msgstr "husband"
 
 msgid "bride"
-msgstr ""
+msgstr "bride"
 
 msgid "madam"
-msgstr ""
+msgstr "madam"
 
 msgid "grandmother"
-msgstr ""
+msgstr "grandmother"
 
 msgid "couple"
-msgstr ""
+msgstr "couple"
 
 msgid "lad"
-msgstr ""
+msgstr "lad"
 
 msgid "twin girls"
-msgstr ""
+msgstr "twin girls"
 
 msgid "tribe"
-msgstr ""
+msgstr "tribe"
 
 msgid "boy"
-msgstr ""
+msgstr "boy"
 
 msgid "sisters"
-msgstr ""
+msgstr "sisters"
 
 msgid "woman"
-msgstr ""
+msgstr "woman"
 
 msgid "lady"
-msgstr ""
+msgstr "lady"
 
 # food
 msgid "candy"
-msgstr ""
+msgstr "candy"
 
 msgid "sausage"
-msgstr ""
+msgstr "sausage"
 
 msgid "hamburger"
-msgstr ""
+msgstr "hamburger"
 
 msgid "steak"
-msgstr ""
+msgstr "steak"
 
 msgid "fudge"
-msgstr ""
+msgstr "fudge"
 
 msgid "doughnut"
-msgstr ""
+msgstr "doughnut"
 
 msgid "coconut"
-msgstr ""
+msgstr "coconut"
 
 msgid "rice"
-msgstr ""
+msgstr "rice"
 
 msgid "ice cream"
-msgstr ""
+msgstr "ice cream"
 
 msgid "jelly"
-msgstr ""
+msgstr "jelly"
 
 msgid "yoghurt"
-msgstr ""
+msgstr "yoghurt"
 
 msgid "dessert"
-msgstr ""
+msgstr "dessert"
 
 msgid "pretzel"
-msgstr ""
+msgstr "pretzel"
 
 msgid "peanut"
-msgstr ""
+msgstr "peanut"
 
 msgid "jam"
-msgstr ""
+msgstr "jam"
 
 msgid "feast"
-msgstr ""
+msgstr "feast"
 
 msgid "cookie"
-msgstr ""
+msgstr "cookie"
 
 msgid "bacon"
-msgstr ""
+msgstr "bacon"
 
 msgid "spice"
-msgstr ""
+msgstr "spice"
 
 msgid "coffee"
-msgstr ""
+msgstr "coffee"
 
 msgid "pie"
-msgstr ""
+msgstr "pie"
 
-#| msgid "lemon"
-#| msgid_plural "lemons"
 msgid "lemonade"
-msgstr ""
+msgstr "lemonade"
 
 msgid "chocolate"
-msgstr ""
+msgstr "chocolate"
 
 msgid "water bottle"
-msgstr ""
+msgstr "water bottle"
 
 msgid "lunch"
-msgstr ""
+msgstr "lunch"
 
-#| msgid "Circle"
 msgid "ice"
-msgstr ""
+msgstr "ice"
 
 msgid "sugar"
-msgstr ""
+msgstr "sugar"
 
 msgid "sauce"
-msgstr ""
+msgstr "sauce"
 
 msgid "soup"
-msgstr ""
+msgstr "soup"
 
 msgid "juice"
-msgstr ""
+msgstr "juice"
 
 msgid "fries"
-msgstr ""
+msgstr "fries"
 
 msgid "cake"
-msgstr ""
+msgstr "cake"
 
 msgid "mashed potatoes"
-msgstr ""
+msgstr "mashed potatoes"
 
-#| msgid "teal"
 msgid "tea"
-msgstr ""
+msgstr "tea"
 
 msgid "bun"
-msgstr ""
+msgstr "bun"
 
 msgid "cheese"
-msgstr ""
+msgstr "cheese"
 
 msgid "beef"
-msgstr ""
+msgstr "beef"
 
 msgid "sandwich"
-msgstr ""
+msgstr "sandwich"
 
 msgid "slice"
-msgstr ""
+msgstr "slice"
 
 msgid "sprinkle"
-msgstr ""
+msgstr "sprinkle"
 
 msgid "pizza"
-msgstr ""
+msgstr "pizza"
 
 msgid "flour"
-msgstr ""
+msgstr "flour"
 
 msgid "gum"
-msgstr ""
+msgstr "gum"
 
 msgid "spaghetti"
-msgstr ""
+msgstr "spaghetti"
 
 msgid "roast"
-msgstr ""
+msgstr "roast"
 
 msgid "drink"
-msgstr ""
+msgstr "drink"
 
 msgid "stew"
-msgstr ""
+msgstr "stew"
 
 msgid "spread"
-msgstr ""
+msgstr "spread"
 
 msgid "meat"
-msgstr ""
+msgstr "meat"
 
 msgid "milk"
-msgstr ""
+msgstr "milk"
 
 msgid "meal"
-msgstr ""
+msgstr "meal"
 
 msgid "corn"
-msgstr ""
+msgstr "corn"
 
 msgid "bread"
-msgstr ""
+msgstr "bread"
 
 msgid "walnut"
-msgstr ""
+msgstr "walnut"
 
 msgid "egg"
-msgstr ""
+msgstr "egg"
 
 msgid "hot dog"
-msgstr ""
+msgstr "hot dog"
 
 msgid "ham"
-msgstr ""
+msgstr "ham"
 
 # clothes
 msgid "jewellery"
-msgstr ""
+msgstr "jewellery"
 
 msgid "sock"
-msgstr ""
+msgstr "sock"
 
 msgid "jacket"
-msgstr ""
+msgstr "jacket"
 
 msgid "heel"
-msgstr ""
+msgstr "heel"
 
 msgid "smock"
-msgstr ""
+msgstr "smock"
 
-#| msgid "Sports"
 msgid "shorts"
-msgstr ""
+msgstr "shorts"
 
 msgid "pocket"
-msgstr ""
+msgstr "pocket"
 
 msgid "necklace"
-msgstr ""
+msgstr "necklace"
 
 msgid "sweatshirt"
-msgstr ""
+msgstr "sweatshirt"
 
 msgid "uniform"
-msgstr ""
+msgstr "uniform"
 
 msgid "raincoat"
-msgstr ""
+msgstr "raincoat"
 
 msgid "trousers"
-msgstr ""
+msgstr "trousers"
 
 msgid "sunglasses"
-msgstr ""
+msgstr "sunglasses"
 
 msgid "coat"
-msgstr ""
+msgstr "coat"
 
 msgid "pullover"
-msgstr ""
+msgstr "pullover"
 
 msgid "shirt"
-msgstr ""
+msgstr "shirt"
 
 msgid "sandals"
-msgstr ""
+msgstr "sandals"
 
 msgid "suit"
-msgstr ""
+msgstr "suit"
 
 msgid "pyjamas"
-msgstr ""
+msgstr "pyjamas"
 
 msgid "skirt"
-msgstr ""
+msgstr "skirt"
 
 msgid "zip"
-msgstr ""
+msgstr "zip"
 
 msgid "shoes"
-msgstr ""
+msgstr "shoes"
 
 msgid "jewel"
-msgstr ""
+msgstr "jewel"
 
-#| msgid "times"
 msgid "tie"
-msgstr ""
+msgstr "tie"
 
 msgid "slippers"
-msgstr ""
+msgstr "slippers"
 
 msgid "gloves"
-msgstr ""
+msgstr "gloves"
 
 msgid "hat"
-msgstr ""
+msgstr "hat"
 
 msgid "sleeve"
-msgstr ""
+msgstr "sleeve"
 
 msgid "cap"
-msgstr ""
+msgstr "cap"
 
 msgid "swimming suit"
-msgstr ""
+msgstr "swimming suit"
 
 msgid "trainer"
-msgstr ""
+msgstr "trainer"
 
 msgid "vest"
-msgstr ""
+msgstr "vest"
 
 msgid "glasses"
-msgstr ""
+msgstr "glasses"
 
 msgid "shoelace"
-msgstr ""
+msgstr "shoelace"
 
 msgid "patch"
-msgstr ""
+msgstr "patch"
 
 msgid "scarf"
-msgstr ""
+msgstr "scarf"
 
 msgid "shoe"
-msgstr ""
+msgstr "shoe"
 
 msgid "button"
-msgstr ""
+msgstr "button"
 
 msgid "dress"
-msgstr ""
+msgstr "dress"
 
 msgid "sash"
-msgstr ""
+msgstr "sash"
 
 msgid "shoe sole"
-msgstr ""
+msgstr "shoe sole"
 
 msgid "robe"
-msgstr ""
+msgstr "robe"
 
 msgid "pants"
-msgstr ""
+msgstr "pants"
 
 msgid "kimono"
-msgstr ""
+msgstr "kimono"
 
 msgid "overalls"
-msgstr ""
+msgstr "overalls"
 
 # actions
 msgid "lick"
-msgstr ""
+msgstr "lick"
 
 msgid "slam"
-msgstr ""
+msgstr "slam"
 
 msgid "beg"
-msgstr ""
+msgstr "beg"
 
 msgid "fell"
-msgstr ""
+msgstr "fell"
 
 msgid "scratch"
-msgstr ""
+msgstr "scratch"
 
 msgid "touch"
-msgstr ""
+msgstr "touch"
 
 msgid "sniff"
-msgstr ""
+msgstr "sniff"
 
 msgid "see"
-msgstr ""
+msgstr "see"
 
 msgid "climb"
-msgstr ""
+msgstr "climb"
 
-#| msgid "indigo"
 msgid "dig"
-msgstr ""
+msgstr "dig"
 
 msgid "howl"
-msgstr ""
+msgstr "howl"
 
 msgid "sleep"
-msgstr ""
+msgstr "sleep"
 
 msgid "explore"
-msgstr ""
+msgstr "explore"
 
 msgid "draw"
-msgstr ""
+msgstr "draw"
 
 msgid "hug"
-msgstr ""
+msgstr "hug"
 
 msgid "teach"
-msgstr ""
+msgstr "teach"
 
 msgid "nap"
-msgstr ""
+msgstr "nap"
 
 msgid "clay"
-msgstr ""
+msgstr "clay"
 
 msgid "catch"
-msgstr ""
+msgstr "catch"
 
 msgid "clap"
-msgstr ""
+msgstr "clap"
 
-#| msgid "carry"
 msgid "cry"
-msgstr ""
+msgstr "cry"
 
 msgid "sing"
-msgstr ""
+msgstr "sing"
 
 msgid "meet"
-msgstr ""
+msgstr "meet"
 
 msgid "sell"
-msgstr ""
+msgstr "sell"
 
 msgid "peck"
-msgstr ""
+msgstr "peck"
 
 msgid "beat"
-msgstr ""
+msgstr "beat"
 
 msgid "kneel"
-msgstr ""
+msgstr "kneel"
 
 msgid "find"
-msgstr ""
+msgstr "find"
 
-#| msgid "Cancel"
 msgid "dance"
-msgstr ""
+msgstr "dance"
 
 msgid "cough"
-msgstr ""
+msgstr "cough"
 
 msgid "cut"
-msgstr ""
+msgstr "cut"
 
 msgid "think"
-msgstr ""
+msgstr "think"
 
 msgid "bark"
-msgstr ""
+msgstr "bark"
 
 msgid "speak"
-msgstr ""
+msgstr "speak"
 
 msgid "cheer"
-msgstr ""
+msgstr "cheer"
 
 msgid "bake"
-msgstr ""
+msgstr "bake"
 
-#| msgid "write "
 msgid "write"
-msgstr ""
+msgstr "write"
 
 msgid "punch"
-msgstr ""
+msgstr "punch"
 
 msgid "strum"
-msgstr ""
+msgstr "strum"
 
 msgid "study"
-msgstr ""
+msgstr "study"
 
 msgid "plow"
-msgstr ""
+msgstr "plow"
 
 msgid "dream"
-msgstr ""
+msgstr "dream"
 
 msgid "post"
-msgstr ""
+msgstr "post"
 
 msgid "dive"
-msgstr ""
+msgstr "dive"
 
 msgid "whisper"
-msgstr ""
+msgstr "whisper"
 
 msgid "sob"
-msgstr ""
+msgstr "sob"
 
 msgid "shake"
-msgstr ""
+msgstr "shake"
 
 msgid "feed"
-msgstr ""
+msgstr "feed"
 
 msgid "crawl"
-msgstr ""
+msgstr "crawl"
 
 msgid "camp"
-msgstr ""
+msgstr "camp"
 
 msgid "spill"
-msgstr ""
+msgstr "spill"
 
 msgid "clean"
-msgstr ""
+msgstr "clean"
 
 msgid "scream"
-msgstr ""
+msgstr "scream"
 
 msgid "tear"
-msgstr ""
+msgstr "tear"
 
 msgid "float"
-msgstr ""
+msgstr "float"
 
 msgid "pull"
-msgstr ""
+msgstr "pull"
 
-#| msgid "Nature"
 msgid "ate"
-msgstr ""
+msgstr "ate"
 
 msgid "kiss"
-msgstr ""
+msgstr "kiss"
 
 msgid "sit"
-msgstr ""
+msgstr "sit"
 
 msgid "hatch"
-msgstr ""
+msgstr "hatch"
 
 msgid "blink"
-msgstr ""
+msgstr "blink"
 
 msgid "hear"
-msgstr ""
+msgstr "hear"
 
 msgid "smooch"
-msgstr ""
+msgstr "smooch"
 
 msgid "play"
-msgstr ""
+msgstr "play"
 
 msgid "wash"
-msgstr ""
+msgstr "wash"
 
 msgid "chat"
-msgstr ""
+msgstr "chat"
 
 msgid "drive"
-msgstr ""
+msgstr "drive"
+
+msgid "drink"
+msgstr "drink"
 
 msgid "fly"
-msgstr ""
+msgstr "fly"
 
 msgid "juggle"
-msgstr ""
+msgstr "juggle"
 
 msgid "bit"
-msgstr ""
+msgstr "bit"
 
 msgid "sweep"
-msgstr ""
+msgstr "sweep"
 
 msgid "look"
-msgstr ""
+msgstr "look"
 
 msgid "knit"
-msgstr ""
+msgstr "knit"
 
 msgid "lift"
-msgstr ""
+msgstr "lift"
 
 msgid "fetch"
-msgstr ""
+msgstr "fetch"
 
 msgid "read"
-msgstr ""
+msgstr "read"
 
 msgid "croak"
-msgstr ""
+msgstr "croak"
 
 msgid "stare"
-msgstr ""
+msgstr "stare"
 
 msgid "eat"
-msgstr ""
+msgstr "eat"
 
 # construction
 msgid "lighthouse"
-msgstr ""
+msgstr "lighthouse"
 
 msgid "door"
-msgstr ""
+msgstr "door"
 
 msgid "circus"
-msgstr ""
+msgstr "circus"
 
 msgid "church"
-msgstr ""
+msgstr "church"
 
 msgid "kennel"
-msgstr ""
+msgstr "kennel"
 
 msgid "temple"
-msgstr ""
+msgstr "temple"
 
 msgid "smoke"
-msgstr ""
+msgstr "smoke"
 
 msgid "chimney"
-msgstr ""
+msgstr "chimney"
 
 msgid "brick"
-msgstr ""
+msgstr "brick"
 
 msgid "well"
-msgstr ""
+msgstr "well"
 
 msgid "street"
-msgstr ""
+msgstr "street"
 
 msgid "castle"
-msgstr ""
+msgstr "castle"
 
 msgid "store"
-msgstr ""
+msgstr "store"
 
 msgid "staircase"
-msgstr ""
+msgstr "staircase"
 
-#| msgid "preschool"
 msgid "school"
-msgstr ""
+msgstr "school"
 
 msgid "farm"
-msgstr ""
+msgstr "farm"
 
 msgid "bridge"
-msgstr ""
+msgstr "bridge"
 
 msgid "dam"
-msgstr ""
+msgstr "dam"
 
 msgid "pyramid"
-msgstr ""
+msgstr "pyramid"
 
 msgid "barn"
-msgstr ""
+msgstr "barn"
 
 msgid "mill"
-msgstr ""
+msgstr "mill"
 
 msgid "window"
-msgstr ""
+msgstr "window"
 
 msgid "cabin"
-msgstr ""
+msgstr "cabin"
 
 msgid "step"
-msgstr ""
+msgstr "step"
 
 msgid "shop"
-msgstr ""
+msgstr "shop"
 
 msgid "shed"
-msgstr ""
+msgstr "shed"
 
 msgid "roof"
-msgstr ""
+msgstr "roof"
 
 msgid "steeple"
-msgstr ""
+msgstr "steeple"
 
 msgid "garage"
-msgstr ""
+msgstr "garage"
 
 msgid "mosque"
-msgstr ""
+msgstr "mosque"
 
 msgid "hospital"
-msgstr ""
+msgstr "hospital"
 
 msgid "tent"
-msgstr ""
+msgstr "tent"
 
 msgid "house"
-msgstr ""
+msgstr "house"
 
 msgid "wall"
-msgstr ""
+msgstr "wall"
 
 msgid "bank"
-msgstr ""
+msgstr "bank"
 
 msgid "shutter"
-msgstr ""
+msgstr "shutter"
 
 msgid "hut"
-msgstr ""
+msgstr "hut"
 
 # nature
 msgid "land"
-msgstr ""
+msgstr "land"
 
 msgid "cliff"
-msgstr ""
+msgstr "cliff"
 
 msgid "hill"
-msgstr ""
+msgstr "hill"
 
 msgid "canyon"
-msgstr ""
+msgstr "canyon"
 
 msgid "rock"
-msgstr ""
+msgstr "rock"
 
 msgid "sea"
-msgstr ""
+msgstr "sea"
 
 msgid "lake"
-msgstr ""
+msgstr "lake"
 
 msgid "coast"
-msgstr ""
+msgstr "coast"
 
 msgid "shore"
-msgstr ""
+msgstr "shore"
 
 msgid "mountain"
-msgstr ""
+msgstr "mountain"
 
 msgid "pond"
-msgstr ""
+msgstr "pond"
 
 msgid "peak"
-msgstr ""
+msgstr "peak"
 
 msgid "lava"
-msgstr ""
+msgstr "lava"
 
 msgid "cave"
-msgstr ""
+msgstr "cave"
 
 msgid "dune"
-msgstr ""
+msgstr "dune"
 
 msgid "island"
-msgstr ""
+msgstr "island"
 
 msgid "forest"
-msgstr ""
+msgstr "forest"
 
 msgid "desert"
-msgstr ""
+msgstr "desert"
 
 msgid "iceberg"
-msgstr ""
+msgstr "iceberg"
 
 # jobs
 msgid "clown"
-msgstr ""
+msgstr "clown"
 
 msgid "engineer"
-msgstr ""
+msgstr "engineer"
 
 msgid "priest"
-msgstr ""
+msgstr "priest"
 
-#| msgid "violet"
 msgid "vet"
-msgstr ""
+msgstr "vet"
 
 msgid "judge"
-msgstr ""
+msgstr "judge"
 
 msgid "chef"
-msgstr ""
+msgstr "chef"
 
-#| msgid "Delete"
 msgid "athlete"
-msgstr ""
+msgstr "athlete"
 
 msgid "librarian"
-msgstr ""
+msgstr "librarian"
 
 msgid "juggler"
-msgstr ""
+msgstr "juggler"
 
-msgid "policeman"
-msgstr ""
+msgid "police officer"
+msgstr "police officer"
 
-#| msgid "Numbers"
 msgid "plumber"
-msgstr ""
+msgstr "plumber"
 
 msgid "badge"
-msgstr ""
+msgstr "badge"
 
 msgid "queen"
-msgstr ""
+msgstr "queen"
 
 msgid "farmer"
-msgstr ""
+msgstr "farmer"
 
 msgid "magician"
-msgstr ""
+msgstr "magician"
 
 msgid "knight"
-msgstr ""
+msgstr "knight"
 
 msgid "doctor"
-msgstr ""
+msgstr "doctor"
 
-#| msgid "Player"
 msgid "bricklayer"
-msgstr ""
+msgstr "bricklayer"
 
 msgid "cleaner"
-msgstr ""
+msgstr "cleaner"
 
-#| msgid "cherry"
-#| msgid_plural "cherries"
 msgid "teacher"
-msgstr ""
+msgstr "teacher"
 
 msgid "hunter"
-msgstr ""
+msgstr "hunter"
 
 msgid "soldier"
-msgstr ""
+msgstr "soldier"
 
 msgid "musician"
-msgstr ""
+msgstr "musician"
 
 msgid "lawyer"
-msgstr ""
+msgstr "lawyer"
 
 msgid "fisherman"
-msgstr ""
+msgstr "fisherman"
 
 msgid "princess"
-msgstr ""
+msgstr "princess"
 
-#| msgid "remainder"
-msgid "fireman"
-msgstr ""
+msgid "firefighter"
+msgstr "firefighter"
 
 msgid "nun"
-msgstr ""
+msgstr "nun"
 
 msgid "pirate"
-msgstr ""
+msgstr "pirate"
 
 msgid "cowboy"
-msgstr ""
+msgstr "cowboy"
 
 msgid "electrician"
-msgstr ""
+msgstr "electrician"
 
 msgid "nurse"
-msgstr ""
+msgstr "nurse"
 
 msgid "king"
-msgstr ""
+msgstr "king"
 
 msgid "president"
-msgstr ""
+msgstr "president"
 
 msgid "office worker"
-msgstr ""
+msgstr "office worker"
 
 msgid "carpenter"
-msgstr ""
+msgstr "carpenter"
 
 msgid "jockey"
-msgstr ""
+msgstr "jockey"
 
 msgid "worker"
-msgstr ""
+msgstr "worker"
 
 msgid "mechanic"
-msgstr ""
+msgstr "mechanic"
 
 msgid "pilot"
-msgstr ""
+msgstr "pilot"
 
 msgid "actor"
-msgstr ""
+msgstr "actor"
 
 msgid "cook"
-msgstr ""
+msgstr "cook"
 
 msgid "student"
-msgstr ""
+msgstr "student"
 
-#| msgid "cherry"
-#| msgid_plural "cherries"
 msgid "butcher"
-msgstr ""
+msgstr "butcher"
 
 msgid "accountant"
-msgstr ""
+msgstr "accountant"
 
 msgid "prince"
-msgstr ""
+msgstr "prince"
 
 msgid "pope"
-msgstr ""
+msgstr "pope"
 
 msgid "sailor"
-msgstr ""
+msgstr "sailor"
 
 msgid "boxer"
-msgstr ""
+msgstr "boxer"
 
 msgid "ballet dancer"
-msgstr ""
+msgstr "ballet dancer"
 
 msgid "coach"
-msgstr ""
+msgstr "coach"
 
 msgid "astronaut"
-msgstr ""
+msgstr "astronaut"
 
-#| msgid "Paint"
 msgid "painter"
-msgstr ""
+msgstr "painter"
 
 msgid "anaesthesiologist"
-msgstr ""
+msgstr "anaesthesiologist"
 
 msgid "scientist"
-msgstr ""
+msgstr "scientist"
 
-#| msgid "carrot"
-#| msgid_plural "carrots"
 msgid "carrot"
-msgstr ""
+msgstr "carrot"
 
 msgid "blackberries"
-msgstr ""
+msgstr "blackberries"
 
 msgid "celery"
-msgstr ""
+msgstr "celery"
 
 msgid "turnip"
-msgstr ""
+msgstr "turnip"
 
 msgid "cacao"
-msgstr ""
+msgstr "cacao"
 
 msgid "peach"
-msgstr ""
+msgstr "peach"
 
-#| msgid "watermelon"
-#| msgid_plural "watermelons"
 msgid "melon"
-msgstr ""
+msgstr "melon"
 
-#| msgid "orange [fruit]"
-#| msgid_plural "oranges"
 msgid "grapefruit"
-msgstr ""
+msgstr "grapefruit"
 
 msgid "broccoli"
-msgstr ""
+msgstr "broccoli"
 
-#| msgid "Shapes"
 msgid "grapes"
-msgstr ""
+msgstr "grapes"
 
 msgid "spinach"
-msgstr ""
+msgstr "spinach"
 
 msgid "fig"
-msgstr ""
+msgstr "fig"
 
 msgid "kernel"
-msgstr ""
+msgstr "kernel"
 
 msgid "radish"
-msgstr ""
+msgstr "radish"
 
-#| msgid "tomato"
-#| msgid_plural "tomatoes"
 msgid "tomato"
-msgstr ""
+msgstr "tomato"
 
 msgid "kiwi"
-msgstr ""
+msgstr "kiwi"
 
 msgid "asparagus"
-msgstr ""
+msgstr "asparagus"
 
-#| msgid "olive"
 msgid "olives"
-msgstr ""
+msgstr "olives"
 
-#| msgid "Numbers"
 msgid "cucumbers"
-msgstr ""
+msgstr "cucumbers"
 
 msgid "beans"
-msgstr ""
+msgstr "beans"
 
-#| msgid "strawberry"
-#| msgid_plural "strawberries"
 msgid "strawberry"
-msgstr ""
+msgstr "strawberry"
 
-#| msgid "pepper"
-#| msgid_plural "peppers"
 msgid "peppers"
-msgstr ""
+msgstr "peppers"
 
-#| msgid "strawberry"
-#| msgid_plural "strawberries"
 msgid "raspberry"
-msgstr ""
+msgstr "raspberry"
 
 msgid "apricot"
-msgstr ""
+msgstr "apricot"
 
 msgid "potatoes"
-msgstr ""
+msgstr "potatoes"
 
 msgid "peas"
-msgstr ""
+msgstr "peas"
 
 msgid "cabbage"
-msgstr ""
+msgstr "cabbage"
 
-#| msgid "cherry"
-#| msgid_plural "cherries"
 msgid "cherries"
-msgstr ""
+msgstr "cherries"
 
 msgid "squash"
-msgstr ""
+msgstr "squash"
 
 msgid "blueberries"
-msgstr ""
+msgstr "blueberries"
 
-#| msgid "pear"
-#| msgid_plural "pears"
 msgid "pear"
-msgstr ""
+msgstr "pear"
 
-#| msgid "orange [fruit]"
-#| msgid_plural "oranges"
 msgid "orange"
-msgstr ""
+msgstr "orange"
 
 msgid "pumpkin"
-msgstr ""
+msgstr "pumpkin"
 
 msgid "avocado"
-msgstr ""
+msgstr "avocado"
 
 msgid "garlic"
-msgstr ""
+msgstr "garlic"
 
-#| msgid "onion"
-#| msgid_plural "onions"
 msgid "onion"
-msgstr ""
+msgstr "onion"
 
-#| msgid "red apple"
-#| msgid_plural "red apples"
 msgid "apple"
-msgstr ""
+msgstr "apple"
 
 msgid "lime"
-msgstr "giallo verde"
+msgstr "lime"
 
 msgid "cauliflower"
-msgstr ""
+msgstr "cauliflower"
 
 msgid "mango"
-msgstr ""
+msgstr "mango"
 
 msgid "lettuce"
-msgstr ""
+msgstr "lettuce"
 
-#| msgid "lemon"
-#| msgid_plural "lemons"
 msgid "lemon"
-msgstr ""
+msgstr "lemon"
 
 msgid "aubergine"
-msgstr ""
+msgstr "aubergine"
 
 msgid "artichokes"
-msgstr ""
+msgstr "artichokes"
 
 msgid "plums"
-msgstr ""
+msgstr "plums"
 
 msgid "leek"
-msgstr ""
+msgstr "leek"
 
-#| msgid "banana"
-#| msgid_plural "bananas"
 msgid "bananas"
-msgstr ""
+msgstr "bananas"
 
 msgid "papaya"
-msgstr ""
+msgstr "papaya"
 
 # transport
 msgid "sail"
-msgstr ""
+msgstr "sail"
 
 msgid "taxi"
-msgstr ""
+msgstr "taxi"
 
-#| msgid "carry"
 msgid "car"
-msgstr ""
+msgstr "car"
 
 msgid "bike"
-msgstr ""
+msgstr "bike"
 
 msgid "raft"
-msgstr ""
+msgstr "raft"
 
 msgid "pedal"
-msgstr ""
+msgstr "pedal"
 
-#| msgid "Rhombus"
 msgid "bus"
-msgstr ""
+msgstr "bus"
 
 msgid "handlebar"
-msgstr ""
+msgstr "handlebar"
 
 msgid "boat"
-msgstr ""
+msgstr "boat"
 
 msgid "truck"
-msgstr ""
+msgstr "truck"
 
 msgid "sleigh"
-msgstr ""
+msgstr "sleigh"
 
 msgid "carpet"
-msgstr ""
+msgstr "carpet"
 
 msgid "motorcycle"
-msgstr ""
+msgstr "motorcycle"
 
-#| msgid "Training"
 msgid "train"
-msgstr ""
+msgstr "train"
 
 msgid "ship"
-msgstr ""
+msgstr "ship"
 
 msgid "van"
-msgstr ""
+msgstr "van"
 
 msgid "canoe"
-msgstr ""
+msgstr "canoe"
 
 msgid "rocket"
-msgstr ""
+msgstr "rocket"
 
 msgid "mast"
-msgstr ""
+msgstr "mast"
 
 msgid "sledge"
-msgstr ""
+msgstr "sledge"
 
 msgid "bicycle"
-msgstr ""
+msgstr "bicycle"
 
 #~ msgid "green apple"
 #~ msgid_plural "green apples"

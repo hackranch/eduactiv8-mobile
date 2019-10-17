@@ -865,9 +865,9 @@ function build_form(index)
         end
       end
       if global_language ~= "hebrew" then
-        add_button(i, content, (column + 0.5) * 70, 200 + row * 70, 70 - 4, false, 'center', 70 - 4, 2, color["light_blue_50"], 1)
+        add_button(i, content, (column + 0.5) * 70, 200 + row * 70, 70 - 4, false, 'center', 70 - 4, 3, color["light_blue_50"], 1)
       else
-        add_button(i, content, ((7-column) + 0.5) * 70, 200 + row * 70, 70 - 4, false, 'center', 70 - 4, 2, color["light_blue_50"], 1)
+        add_button(i, content, ((7-column) + 0.5) * 70, 200 + row * 70, 70 - 4, false, 'center', 70 - 4, 3, color["light_blue_50"], 1)
       end
       column = column + 1
       if column == 8 then
@@ -888,6 +888,7 @@ function build_form(index)
     for i = 1, 6 do
       local transparency = 0.4
       if i == 1 then transparency = 1 else transparency = 0.4 end
+      if old_color_mode then transparency = transparency * 255 end
       add_button(200 + i, "", 1550, 100 + i * 100, 96, false, 'center', 96, 2,
       {color["s_" .. i][1],
        color["s_" .. i][2],
