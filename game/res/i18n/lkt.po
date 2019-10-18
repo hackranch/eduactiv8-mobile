@@ -246,7 +246,7 @@ msgstr "Oúŋčhaǧe Núŋmnuŋpa Égnakapi"
 msgid "Shape Maker"
 msgstr "Oúŋčhaǧe Okáǧe"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Mázaškaŋškaŋ kiŋ lé tóškhe yutȟókča-phiča he?"
 
 msgid "learn to set the clock"

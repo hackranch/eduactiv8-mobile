@@ -244,7 +244,7 @@ msgstr "Correspondência de Formas"
 msgid "Shape Maker"
 msgstr "Criador de Formas"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Como é que funciona o relógio?"
 
 msgid "learn to set the clock"

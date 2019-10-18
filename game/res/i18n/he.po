@@ -245,7 +245,7 @@ msgstr "צורת התאמה"
 msgid "Shape Maker"
 msgstr "להכנת צורה"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "איך שעון עובד"
 
 msgid "learn to set the clock"

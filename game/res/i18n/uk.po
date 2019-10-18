@@ -272,7 +272,7 @@ msgstr "Порівняння фігур"
 msgid "Shape Maker"
 msgstr "Створення фігур"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Як працює годинник?"
 
 msgid "learn to set the clock"

@@ -259,7 +259,7 @@ msgstr "Przeciągnij zwierzaki do ich cieni"
 msgid "Shape Maker"
 msgstr "Tworzenie figur geometrycznych"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Jak działa zegar?"
 
 msgid "learn to set the clock"

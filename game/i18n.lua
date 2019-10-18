@@ -170,7 +170,7 @@ function set_language(language)
     s_learn_shapes_with_flashcards = "Learn Shapes with Flashcards"
     s_shape_matching = "Shape Matching"
     s_shape_maker = "Shape Maker"
-    s_how_clock_works = "How clock works?"
+    s_how_clock_works = "How clock works"
     s_learn_to_set_the_clock = "learn to set the clock"
     s_set_the_clock_to = "Set the clock to:"
     s_time_matching = "Time Matching"

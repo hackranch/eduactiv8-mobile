@@ -247,7 +247,7 @@ msgstr ""
 msgid "Shape Maker"
 msgstr ""
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Com funciona un rellotge?"
 
 msgid "learn to set the clock"

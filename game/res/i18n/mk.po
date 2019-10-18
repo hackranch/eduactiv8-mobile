@@ -245,7 +245,7 @@ msgstr "Совпаѓање на форми со слики"
 msgid "Shape Maker"
 msgstr "Цртање на форми"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Како работи часовникот?"
 
 msgid "learn to set the clock"

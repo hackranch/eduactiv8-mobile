@@ -138,7 +138,7 @@ function love.load()
   set_language(game_initial_language)
   global_language = game_initial_language
   love.window.setTitle(s_title)
-  love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8})
+  love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8, fullscreen = true})
   get_screen_dimensions()
   love.graphics.setDefaultFilter("linear", "linear", 1)
   initialize_fonts()
@@ -255,7 +255,7 @@ function love.mousereleased(x, y, button)
   y = y / scale_factor_v
 
    mouse_released = true
-   if (current_window == 12 or (current_window >= 43 and current_window <= 53) or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and selected_tile ~= "" then --word builders animals    or   Shopping List    or......
+   if (current_window == 12 or (current_window >= 43 and current_window <= 53) or current_window == 15 or current_window == 17 or current_window == 29 or current_window == 30 or current_window == 31) and selected_tile ~= "" then --word builders   or   Shopping List    or......
      x = x + selected_tile_x_offset + game_screen_width / (t_x * 2)
      y = y + selected_tile_y_offset + game_screen_height / (t_y * 2)
      if math.ceil(x / (game_screen_width / t_x)) - 1 > t_x - 1 then
@@ -277,7 +277,7 @@ function love.mousereleased(x, y, button)
        tiles[selected_tile_y] = replace_char(selected_tile_x, tiles[selected_tile_y], selected_tile)
      end
      selected_tile = ""
-     if ((current_window == 12 or (current_window >= 43 and current_window <= 53)) and tiles[8] == correct_row) or
+     if ((current_window == 12 or (current_window >= 43 and current_window <= 53)) and tiles[7] == correct_row) or
         (current_window == 31 and tiles[pattern_y_pos] == correct_row) then
        message = "congrats"
      end
@@ -1126,14 +1126,14 @@ function love.draw()
   elseif current_window == 12 or (current_window >= 43 and current_window <= 53) then -- word builders - animals game, all other categories
     draw_header(s_word_builders, current_game_title)
     love.graphics.setColor(color["white"])
-    love.graphics.draw(animal_image, 800 - animal_image:getWidth() * 2 / 2, 380 - animal_image:getHeight() * 2 / 2, 0, 2, 2)
+    love.graphics.draw(animal_image, 800 - animal_image:getWidth() * 1.7 / 2, 360 - animal_image:getHeight() * 1.8 / 2, 0, 1.7, 1.7)
     --draw tiles+
     love.graphics.setFont(font_large_title)
     for x = 0, t_x - 1 do
       for y = 0, t_y - 1 do
         local byteoffset = utf8.offset(tiles[y + 1], x + 1)
         local byteoffset_b = utf8.offset(tiles[y + 1], x + 1 + 1)
-        if y == 7 and get_char(fixed_tiles, x + 1) == '@' then
+        if y == 6 and get_char(fixed_tiles, x + 1) == '@' then
           love.graphics.setColor(color["light_blue_50"])
           love.graphics.rectangle('fill', x * (game_screen_width/t_x), y * (game_screen_height / t_y), (game_screen_width/t_x)-2, (game_screen_height / t_y) - 2, 15, 15)
           love.graphics.setColor(color["white"])
@@ -1157,7 +1157,7 @@ function love.draw()
     end
     flag = true
     for i = 1, t_x do
-      if get_char(fixed_tiles, i) == '@' and (get_char(tiles[8], i) == '@' or get_char(tiles[8], i) == ' ') then
+      if get_char(fixed_tiles, i) == '@' and (get_char(tiles[7], i) == '@' or get_char(tiles[7], i) == ' ') then
         flag = false
       end
     end
@@ -1165,10 +1165,10 @@ function love.draw()
       love.graphics.setColor(color["white"])
       for i = 1, t_x do
         if get_char(correct_row, i) ~= ' ' then
-          if get_char(correct_row, i) == get_char(tiles[8], i) then
-            love.graphics.draw(image_correct, (i - 1) * (game_screen_width / t_x), 7 * (game_screen_height / t_y))
+          if get_char(correct_row, i) == get_char(tiles[7], i) then
+            love.graphics.draw(image_correct, (i - 1) * (game_screen_width / t_x), 6 * (game_screen_height / t_y))
           else
-            love.graphics.draw(image_wrong, (i - 1) * (game_screen_width / t_x), 7 * (game_screen_height / t_y))
+            love.graphics.draw(image_wrong, (i - 1) * (game_screen_width / t_x), 6 * (game_screen_height / t_y))
           end
         end
       end

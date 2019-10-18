@@ -246,7 +246,7 @@ msgstr "Ταίριαξε τα σχήματα"
 msgid "Shape Maker"
 msgstr "Δημιουργία Σχημάτων"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Πως δουλεύει η ώρα;"
 
 msgid "learn to set the clock"

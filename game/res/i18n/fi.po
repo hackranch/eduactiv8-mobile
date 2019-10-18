@@ -246,7 +246,7 @@ msgstr "Muotojen sovittaminen"
 msgid "Shape Maker"
 msgstr "Tee muotoja"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Kuinka kello toimii?"
 
 msgid "learn to set the clock"

@@ -246,7 +246,7 @@ msgstr "Trouve la forme"
 msgid "Shape Maker"
 msgstr "Faire une forme"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Comment fonctionne l'horloge ?"
 
 msgid "learn to set the clock"

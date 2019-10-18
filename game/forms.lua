@@ -82,11 +82,11 @@ function build_form(index)
     add_big_button(2, icon_m1_2, 800 - 300, 600, 120, 1, false, 0, 0, 16, s_addition)
     add_big_button(3, icon_m1_3, 800 + 300, 600, 120, 1, false, 0, 0, nil, s_subtraction)
     ---------
-  elseif index == 12 or (index >= 43 and index <= 53) then --game word builders Animals
+  elseif index == 12 or (index >= 43 and index <= 53) then --game word builders
     score_system = true
     --add_big_button(1, icon_l2_1, game_screen_width - screen_left + 80, screen_top + 110, 45, 0.3, false, get_max_score_for_game(12), get_score_for_game(12), 12)
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 40)
-    t_x = 21
+    t_x = 15
     t_y = 10
     flag_a = false
     try_counter = 1
@@ -129,7 +129,7 @@ function build_form(index)
       end
       previous_random_n = random_n
 
-    if utf8.len(animal_name) > 20 then
+    if utf8.len(animal_name) > 14 then
       t_x = utf8.len(animal_name) + 2
     end
 
@@ -139,16 +139,16 @@ function build_form(index)
     end
     starting_field = (t_x - utf8.len(animal_name)) / 2
     starting_field = math.floor(starting_field) + 1
-    tiles[8] = ""
+    tiles[7] = ""
 
     for i = 1, starting_field - 1 do
-      tiles[8] = tiles[8] .. " "
+      tiles[7] = tiles[7] .. " "
     end
-    tiles[8] = tiles[8] .. animal_name
+    tiles[7] = tiles[7] .. animal_name
     for i = starting_field - 1 + utf8.len(animal_name) + 1, t_x + 1 do
-      tiles[8] = tiles[8] .. " "
+      tiles[7] = tiles[7] .. " "
     end
-    correct_row = tiles[8]
+    correct_row = tiles[7]
     random_n = selected_level + 1--love.math.random(2, utf8.len(animal_name))
     if random_n > utf8.len(animal_name) then
       random_n = utf8.len(animal_name)
@@ -164,9 +164,9 @@ function build_form(index)
       local try_counter = 0
       while flag == false do
         random_nn = love.math.random(1, utf8.len(animal_name))
-        if get_char(tiles[8], random_nn + starting_field - 1) ~= "@" and get_char(tiles[8], random_nn + starting_field - 1) ~= " " then
-          available_letters = available_letters .. get_char(tiles[8], random_nn + starting_field - 1)
-          tiles[8] = replace_char(random_nn + starting_field - 1, tiles[8], '@')
+        if get_char(tiles[7], random_nn + starting_field - 1) ~= "@" and get_char(tiles[7], random_nn + starting_field - 1) ~= " " then
+          available_letters = available_letters .. get_char(tiles[7], random_nn + starting_field - 1)
+          tiles[7] = replace_char(random_nn + starting_field - 1, tiles[7], '@')
           flag = true
         end
         try_counter = try_counter + 1
@@ -178,8 +178,8 @@ function build_form(index)
     for i = utf8.len(available_letters) + 1, t_x do
       available_letters = available_letters .. " "
     end
-    tiles[10] = available_letters
-    fixed_tiles = tiles[8]
+    tiles[9] = available_letters
+    fixed_tiles = tiles[7]
     --tiles[7] = "слкахфасиоалсхфасхфлахслфхлсч"
     selected_tile = ""
     selected_tile_x = 1

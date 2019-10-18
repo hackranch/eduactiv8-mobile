@@ -260,7 +260,7 @@ msgstr "Сравнение фигур"
 msgid "Shape Maker"
 msgstr "Создание фигур"
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr "Как работают часы?"
 
 msgid "learn to set the clock"

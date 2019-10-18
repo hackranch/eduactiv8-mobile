@@ -176,7 +176,7 @@ msgstr ""
 msgid "Shape Maker"
 msgstr ""
 
-msgid "How clock works?"
+msgid "How clock works"
 msgstr ""
 
 msgid "learn to set the clock"
