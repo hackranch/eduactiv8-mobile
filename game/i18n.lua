@@ -153,6 +153,7 @@ function set_language(language)
     s_circumference = "circumference:"
     s_trapezium = "Trapezium"
     s_drag_clock_hands = "Drag the clock hands to set the time"
+    s_loading = "Loading..."
 
     s_discover_letters = "Discover Letters"
     s_word_matchers = "Word Matchers"

@@ -12,6 +12,7 @@ require 'decoration'
 require 'score_processing'
 require 'geometry'
 require 'clock_graphics'
+require 'game_config'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -125,9 +126,6 @@ function password_characters(p)
 end
 
 function love.load()
-  --game = "math"
-  game = "language"
-
   local major, minor, revision, codename = love.getVersion()
   if major < 11 then
     old_color_mode = true
@@ -137,8 +135,8 @@ function love.load()
   if old_color_mode == true then
     init_old_color_mode() -- for the older Löve2D versions
   end
-  set_language("english")
-  global_language = "english"
+  set_language(game_initial_language)
+  global_language = game_initial_language
   love.window.setTitle(s_title)
   love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8})
   get_screen_dimensions()
@@ -188,6 +186,7 @@ function love.load()
   load_user_data()
   mouse_released = true
   selected_level = 1
+  go_to_game = 0
   love.math.setRandomSeed(love.timer.getTime())
 
   score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65}
@@ -459,6 +458,10 @@ end -- mouse released function
 
 function love.update(dt)
   if sleep > 0 then
+    if message == "congrats" then
+      save_score()
+      message = ""
+    end
     love.timer.sleep(sleep)
     sleep = 0
     if current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65) then
@@ -516,8 +519,12 @@ function love.update(dt)
       for k, v in pairs(buttons) do
         if mouse_on_button(k) then
           if buttons[k].button_go_to_game ~= nil and buttons[k].button_go_to_game ~= 0 then
-            build_form(buttons[k].button_go_to_game)
-              registered_click = true
+            if buttons[k].button_caption ~= nil then buttons[k].button_caption = s_loading end
+            if buttons[k].button_text ~= nil then buttons[k].button_text = s_loading end
+            --build_form(buttons[k].button_go_to_game)
+            go_to_game = buttons[k].button_go_to_game
+            message = s_loading
+            registered_click = true
           end
         end
       end
@@ -1448,7 +1455,7 @@ function love.draw()
     love.graphics.setFont(font_interface_bold)
     love.graphics.setColor(color["interface_text"])
     --print_text("www.eduactiv8.com v0.0.0", 0, 860, 1595, 'right')
-    print_text("v0.0.0", screen_left, screen_top + screen_total_height - 40, screen_total_width - 5, 'right')
+    print_text("v" .. game_version, screen_left, screen_top + screen_total_height - 40, screen_total_width - 5, 'right')
     --if global_language ~= hebrew then
     --  print_text(s_funding .. "Thunder Valley CDC", 5, 860, 1595, 'left')
     --else
@@ -1824,10 +1831,16 @@ function love.draw()
     else
       love.graphics.setFont(font_small_title)
     end
-    print_text(time_to_string_short(show_h, show_m), 1155 - 400, 550, 800, 'center')
+    --print_text(time_to_string_short(show_h, show_m), 1155 - 400, 550, 800, 'center')
+    print_text(clock_string, 1155 - 400, 550, 800, 'center')
     if not mouse_released then
       if selected_hand == 2 then
-        local old_clock_min = clock_min
+        if old_clock_min ~= clock_min then
+          old_clock_min = clock_min
+          if current_window == 35 then
+            clock_string = time_to_string_short(show_h, show_m)
+          end
+        end
         clock_min = angle_clock(400, 0, 400, 525, mouse_x, mouse_y) / (360 / 60)
         if (old_clock_min > 45 and clock_min < 59.5) and (clock_min < 15 or clock_min >= 59.5) then
           clock_hour = clock_hour + 1
@@ -1843,9 +1856,12 @@ function love.draw()
           clock_changes = clock_changes + 1
         end
       elseif selected_hand == 1 then
-        clock_hour = math.floor(angle_clock(400, 0, 400, 525, x, y) / (360 / 12) + 0.5 - clock_min / 60)
+        clock_hour = math.floor(angle_clock(400, 0, 400, 525, mouse_x, mouse_y) / (360 / 12) + 0.5 - clock_min / 60)
         if clock_hour == 0 then clock_hour = 12
         elseif clock_hour == -1 then clock_hour = 11
+        end
+        if current_window == 35 then
+          clock_string = time_to_string_short(show_h, show_m)
         end
       end
       if current_window == 35 and clock_changes >= 5 and get_score_for_game(35) < 1 then
@@ -2015,12 +2031,16 @@ function love.draw()
           build_form(buttons[402].button_go_to_game)
         end
       end
+    elseif go_to_game ~= 0 then
+      --show_message(message)
+      build_form(go_to_game)
+      go_to_game = 0
+      message = ""
     else
       show_message(message)
       sleep = 1.5
+      message = ""
     end
-
-    message = ""
   end
   --love.window.setTitle('Memory actually used (in kB): ' .. collectgarbage('count'))
 end

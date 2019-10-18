@@ -53,5 +53,5 @@ function add_score_for_game(g_index)
       end
     end
   end
-  save_score()
+  --save_score()
 end

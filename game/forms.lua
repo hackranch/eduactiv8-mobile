@@ -723,6 +723,8 @@ function build_form(index)
     end
     clock_hour = 3
     clock_min = 0
+    old_clock_min = clock_min
+    clock_string = time_to_string_short(clock_hour, clock_min)
     if index == 36 then
       clock_hour = 6
     end
@@ -731,6 +733,7 @@ function build_form(index)
     if index == 36 then
       goal_hour = math.random(1, 12)
       goal_min = math.random(0, 59)
+      clock_string = time_to_string_short(goal_hour, goal_min)
     end
     add_big_button(4, nil, 1064, 455 - 70, 38, 1, true, 0, 0, nil, "▲")
     add_big_button(5, nil, 1064, 455 + 70, 38, 1, true, 0, 0, nil, "▼")
