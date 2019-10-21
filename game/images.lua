@@ -62,21 +62,23 @@ elseif game == "language" then
 end
 
 function init_shapes_images()
-  icon_shapes = {}
-  for i = 1, 15 do
-    icon_shapes[i] = love.graphics.newImage("res/icon_shapes/icon_shapes_" .. i .. ".png")
-  end
+  if icon_shapes == nil or icon_shapes[1] == nil then
+    icon_shapes = {}
+    for i = 1, 15 do
+      icon_shapes[i] = love.graphics.newImage("res/icon_shapes/icon_shapes_" .. i .. ".png")
+    end
 
-  icon_shapes_outline = {}
-  icon_shapes_fill = {}
-  for i = 1, 13 do
-    icon_shapes_outline[i] = love.graphics.newImage("res/icon_shapes/outlines/s" .. i .. ".png")
-    icon_shapes_fill[i] = love.graphics.newImage("res/icon_shapes/fill/s" .. i .. ".png")
-  end
+    icon_shapes_outline = {}
+    icon_shapes_fill = {}
+    for i = 1, 13 do
+      icon_shapes_outline[i] = love.graphics.newImage("res/icon_shapes/outlines/s" .. i .. ".png")
+      icon_shapes_fill[i] = love.graphics.newImage("res/icon_shapes/fill/s" .. i .. ".png")
+    end
 
-  flashcards_shapes = {}
-  for i = 1, 15 do
-    flashcards_shapes[i] = love.graphics.newImage("res/fc_shapes/fc_shapes_" .. i .. ".png")
+    flashcards_shapes = {}
+    for i = 1, 15 do
+      flashcards_shapes[i] = love.graphics.newImage("res/fc_shapes/fc_shapes_" .. i .. ".png")
+    end
   end
 end
 
@@ -173,12 +175,14 @@ function init_images(category)
 end
 
 function init_fish_images()
-  images_fish = {}
-  images_numbers = {}
-  images_numbers[0] = love.graphics.newImage("res/numbers/n_img1a.png" )
-  for i = 1, 20 do
-    images_fish[i] = love.graphics.newImage("res/fish/n" .. i .. ".png")
-    images_numbers[i] = love.graphics.newImage("res/numbers/n_img" .. (i + 1) .. "a.png" )
+  if images_fish == nil or images_fish[1] == nil then
+    images_fish = {}
+    images_numbers = {}
+    images_numbers[0] = love.graphics.newImage("res/numbers/n_img1a.png" )
+    for i = 1, 20 do
+      images_fish[i] = love.graphics.newImage("res/fish/n" .. i .. ".png")
+      images_numbers[i] = love.graphics.newImage("res/numbers/n_img" .. (i + 1) .. "a.png" )
+    end
   end
 end
 
@@ -191,12 +195,14 @@ end
 
 
 function init_fruits_vegs_images()
-  fruits_vegs_names = {}
-  fruits_vegs_images = {}
-  fruits_vegs_names = love.filesystem.getDirectoryItems("res/fruits_vegs_13")
+  if fruits_vegs_names == nil or table_length(fruits_vegs_names) == 0 then
+    fruits_vegs_names = {}
+    fruits_vegs_images = {}
+    fruits_vegs_names = love.filesystem.getDirectoryItems("res/fruits_vegs_13")
 
-  for k, v in pairs(fruits_vegs_names) do
-    fruits_vegs_images[k] = love.graphics.newImage("res/fruits_vegs_13/" .. v)
+    for k, v in pairs(fruits_vegs_names) do
+      fruits_vegs_images[k] = love.graphics.newImage("res/fruits_vegs_13/" .. v)
+    end
   end
 end
 
@@ -208,14 +214,16 @@ function erase_fruits_vegs_images()
 end
 
 function init_alphabet_flashcard_images()
-  images_flashcards_abc = {}
-  for k, v in pairs(abc_flashcards_frame_sequence) do
-    if v < 10 then
-      images_flashcards_abc[v] = love.graphics.newImage("res/fc/fc00" .. v .. ".jpg")
-    elseif v < 100 then
-      images_flashcards_abc[v] = love.graphics.newImage("res/fc/fc0" .. v .. ".jpg")
-    elseif v < 1000 then
-      images_flashcards_abc[v] = love.graphics.newImage("res/fc/fc" .. v .. ".jpg")
+  if images_flashcards_abc == nil or table_length(images_flashcards_abc) == 0 then
+    images_flashcards_abc = {}
+    for k, v in pairs(abc_flashcards_frame_sequence) do
+      if v < 10 then
+        images_flashcards_abc[v] = love.graphics.newImage("res/fc/fc00" .. v .. ".jpg")
+      elseif v < 100 then
+        images_flashcards_abc[v] = love.graphics.newImage("res/fc/fc0" .. v .. ".jpg")
+      elseif v < 1000 then
+        images_flashcards_abc[v] = love.graphics.newImage("res/fc/fc" .. v .. ".jpg")
+      end
     end
   end
 end

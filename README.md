@@ -18,16 +18,7 @@ Usage
 =====
 After installing LÖVE and cloning this repository, you can run the program by following the [relevant system instructions](https://love2d.org/wiki/Getting_Started).
 
-Notes
-=====
-Both the *eduActiv8: Language Arts* and *eduActiv8: Math & Science* apps are built from this source. To switch between these options, uncomment the appropriate option in
-
-```lua
-function love.load()
-```
-
-in main.lua.
-
+Both the *eduActiv8: Language Arts* and *eduActiv8: Math & Science* apps are built from this source. To switch between these modes, uncomment the appropriate option in game_config.lua.
 
 Contributing
 ============
