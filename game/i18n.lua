@@ -328,19 +328,16 @@ function init_language_files(language)
   end
 
   language_file_lines = {}
-  for k in pairs(language_file_lines) do
-    language_file_lines[k] = nil
-  end
+  erase_table(language_file_lines)
   for line in love.filesystem.lines("res/i18n/" .. language_filename) do
-    table.insert(language_file_lines, line)
+    if utf8len(line) > 1 and get_char(line, 1) ~= '#' then
+      table.insert(language_file_lines, line)
+    end
   end
 end
 
 
 numbers = {}
-numbers["english"] = {}
-numbers["lakota"] = {}
-numbers["serbian"] = {}
 numbers["english"] = {'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve',
            'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty', 'twenty one',
            'twenty two', 'twenty three', 'twenty four', 'twenty five', 'twenty six', 'twenty seven', 'twenty eight',
@@ -440,6 +437,7 @@ big_numbers["ukrainian"] = {"тридцять", "сорок", "п'ятдесят
 
 function init_word_sets()
   word_set = {}
+  erase_table(word_set)
   english_word_set = {}
 
   english_word_set["a4a_animals"] = {"cow", "turkey", "shrimp", "wolf", "panther", "panda", "magpie", "clam", "pony", "mouse", "pug",
@@ -470,7 +468,7 @@ function init_word_sets()
                "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",
                "lemonade", "chocolate", "water bottle", "lunch", "ice", "sugar", "sauce", "soup", "juice", "fries",
                "cake", "mashed potatoes", "tea", "bun", "cheese", "beef", "sandwich", "slice", "sprinkle", "pizza",
-               "flour", "gum", "spaghetti", "roast", "drink", "stew", "spread", "meat", "milk", "meal", "corn",
+               "flour", "gum", "spaghetti", "roast", "drink[n]", "stew", "spread", "meat", "milk", "meal", "corn",
                "bread", "walnut", "egg", "hot dog", "ham"}
   english_word_set["a4a_clothes_n_accessories"] = {"jewellery", "sock", "jacket", "heel", "smock", "shorts", "pocket", "necklace",
                                 "sweatshirt", "uniform", "raincoat", "trousers", "sunglasses", "coat", "pullover",
@@ -483,7 +481,7 @@ function init_word_sets()
                   "peck", "beat", "kneel", "find", "dance", "cough", "cut", "think", "bark", "speak", "cheer", "bake",
                   "write", "punch", "strum", "study", "plow", "dream", "post", "dive", "whisper", "sob", "shake",
                   "feed", "crawl", "camp", "spill", "clean", "scream", "tear", "float", "pull", "ate", "kiss", "sit",
-                  "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink", "fly", "juggle",
+                  "hatch", "blink", "hear", "smooch", "play", "wash", "chat", "drive", "drink[v]", "fly", "juggle",
                   "bit", "sweep", "look", "knit", "lift", "fetch", "read", "croak", "stare", "eat"}
   english_word_set["a4a_construction"] = {"lighthouse", "door", "circus", "church", "kennel", "temple", "smoke", "chimney", "brick",
                        "well", "street", "castle", "store", "staircase", "school", "farm", "bridge", "dam", "pyramid",

@@ -1,6 +1,7 @@
 
 
 function build_form(index)
+  collectgarbage()
   score_system = false
   scrollable = false
   maxscroll = 0
@@ -107,6 +108,7 @@ function build_form(index)
       elseif index == 52 then group_name = "a4a_transport" current_game_title = s_transport
       elseif index == 53 then group_name = "a4a_construction" current_game_title = s_constructions
       end
+      init_images(group_name)
       for k, v in pairs(english_word_set[group_name]) do
         a_names_sorted[counter_a] = {}
         a_names_sorted[counter_a].name = word_set[group_name][k]
@@ -186,12 +188,13 @@ function build_form(index)
     selected_tile_y = 1
     selected_tile_x_offset = 0
     selected_tile_y_offset = 0
-  elseif index == 13 or index == 33 or (index >= 54 and index <= 65) then -- numbers spelling game   or   shape matching   or   word matchers games
+  elseif index == 13 or index == 33 or (index >= 54 and index <= 65) then -- number spelling game   or   shape matching   or   word matchers games
     score_system = true
     if index == 13 then
       add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 20)
     elseif index == 33 then
       add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 23)
+      init_shapes_images()
     elseif index >= 54 and index <= 65 then
       add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 39)
     end
@@ -215,6 +218,9 @@ function build_form(index)
     elseif index == 63 then group_name = "a4a_food" current_game_title = s_food
     elseif index == 64 then group_name = "a4a_transport" current_game_title = s_transport
     elseif index == 65 then group_name = "a4a_construction" current_game_title = s_constructions
+    end
+    if index >= 54 and index <= 65 then
+      init_images(group_name)
     end
     if selected_level == 1 or selected_level == 2 then
       game_table_rows = 3
@@ -264,7 +270,7 @@ function build_form(index)
           game_table[y][x].selected = false
           for yy = 1, game_table_rows do
             for xx = 1, 2 do
-              if game_table[yy][xx].content ~= nil and word_images[group_name][english_word_set[group_name][game_table[yy][xx].content] .. ".jpg"] == nil then
+              if game_table[yy][xx].content ~= nil and (index >= 54 and index <= 65 and word_images[group_name][english_word_set[group_name][game_table[yy][xx].content] .. ".jpg"] == nil) then
                 flag = false
               end
               if (not (xx == x and yy == y)) and game_table[yy][xx] ~= nil and game_table[y][x].content == game_table[yy][xx].content then
@@ -297,6 +303,7 @@ function build_form(index)
     add_big_button(1, icon_m1_1_1_8, 800 + 300, 710, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
     add_big_button(2, icon_m1_1_1_3, 800 + 200, 310, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
   elseif index == 15 then -- Shopping List
+    init_fruits_vegs_images()
     score_system = true
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 20)
     t_x = 21
@@ -515,11 +522,17 @@ function build_form(index)
     end
 
     if game == "math" then
-      add_big_button(8, icon_m1,          760, 145, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
+      add_big_button(8, icon_m1,          760, 163, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
       add_big_button(9, icon_m4,          800, 295, 57, 0.5, false, 0, 0, 21, s_patterns, true)
       add_big_button(10,icon_ico_g_0303,  840, 445, 57, 0.5, false, 0, 0, 22,  s_basic_operations, true)
       add_big_button(11,icon_m2,          880, 595, 57, 0.5, false, 0, 0, 23, s_shapes_and_solids, true)
       add_big_button(12,icon_m5,          920, 745, 57, 0.5, false, 0, 0, 24, s_time, true)
+      --for user system
+      --add_big_button(8, icon_m1,          792, 283, 57, 0.5, false, 0, 0, 20,  s_numbers, true)
+      --add_big_button(9, icon_m4,          824, 403, 57, 0.5, false, 0, 0, 21, s_patterns, true)
+      --add_big_button(10,icon_ico_g_0303,  856, 523, 57, 0.5, false, 0, 0, 22,  s_basic_operations, true)
+      --add_big_button(11,icon_m2,          888, 643, 57, 0.5, false, 0, 0, 23, s_shapes_and_solids, true)
+      --add_big_button(12,icon_m5,          920, 763, 57, 0.5, false, 0, 0, 24, s_time, true)
     elseif game == "language" then
       add_big_button(13, icon_l1, 780, 220, 57, 0.5, false, 0, 0, 38,  s_discover_letters, true)
       add_big_button(14, icon_l3, 840, 445, 57, 0.5, false, 0, 0, 39,  s_word_matchers, true)
@@ -535,6 +548,8 @@ function build_form(index)
     add_big_button(2, icon_m1_1_1_8,   800      , 450, 90, 1, false, get_max_score_for_game(13), get_score_for_game(13), 13, s_numbers_spelling) --number spelling 6 parts
     add_big_button(3, icon_m1_1_1_3,   800 + 500, 450, 90, 1, false, get_max_score_for_game(15), get_score_for_game(15), 15, s_shopping_list) --shopping list 8 parts
     --add_big_button(3, icon_m1_1_2_3, 800 + 300, 450, 90, 1, false, get_max_score_for_game(17), get_score_for_game(17), 17, s_find_missing_number) --find missing number
+    erase_fish_images()
+    erase_fruits_vegs_images()
   elseif index == 21 then -- patterns
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
     add_big_button(1, icon_ico_g_2200, 800 - 200, 450, 90, 1, false, get_max_score_for_game(31), get_score_for_game(31), 31, s_image_patterns) --image patterns
@@ -548,6 +563,7 @@ function build_form(index)
     add_big_button(1, icon_ico_g_0500, 800 - 500, 450, 90, 1, false, get_max_score_for_game(32), get_score_for_game(32), 32, s_learn_shapes_with_flashcards) --learn shapes with flashcards
     add_big_button(2, icon_ico_g_0504, 800      , 450, 90, 1, false, get_max_score_for_game(33), get_score_for_game(33), 33, s_shape_matching) --shape matching
     add_big_button(3, icon_ico_g_0502, 800 + 500, 450, 90, 1, false, get_max_score_for_game(34), get_score_for_game(34), 34, s_shape_maker) --shape maker
+    erase_shapes_images()
   elseif index == 24 then -- time
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
     add_big_button(1, icon_m5, 800 - 500,       450, 90, 1, false, get_max_score_for_game(35), get_score_for_game(35), 35, s_how_clock_works) --how clock works
@@ -576,6 +592,7 @@ function build_form(index)
     for i = 2, 20 do
       flashcards_opened[i] = false
     end
+    init_fish_images()
   elseif index == 28 then --numbers spelling (table) (1 - 100)
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 20)
     number_start = 0
@@ -679,6 +696,7 @@ function build_form(index)
       else
         random_group = "a4a_clothes_n_accessories"
       end
+      init_images(random_group)
       image_array = word_images[random_group]
       rn = math.random(1, table_length(image_array) - 3)
       pattern_images = {}
@@ -692,6 +710,7 @@ function build_form(index)
     end
   elseif index == 32 then -- learn shapes with flashcards
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 23)
+    init_shapes_images()
     for i = 1, 15 do
       add_big_button(i, icon_shapes[i], 800 - (100 * 7.5) + (i - 1) * 100 + 50, 250, 50, 1, true)
     end
@@ -704,6 +723,7 @@ function build_form(index)
     add_big_button(17, nil, game_screen_width - 180, 510, 38, 1, true, 0, 0, nil, "⟩")
   elseif index == 33 then -- shape matching
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 23)
+    init_shapes_images()
   elseif index == 34 then --  shape maker
     score_system = true
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 23)
@@ -782,6 +802,7 @@ function build_form(index)
     add_big_button(1, icon_ico_g_0300_2, 800 - 300, 450, 90, 1, false, get_max_score_for_game(41), get_score_for_game(41), 41, s_your_alphabet) -- ___ alphabet   your alphabet
     add_big_button(2, icon_ico_g_0109,   800 + 300, 450, 90, 1, false, get_max_score_for_game(42), get_score_for_game(42), 42, s_trace_letters_and_numbers) --trace letters and numbers
     --add_big_button(3, icon_ico_g_1006, 800 + 300, 450, 90, 1, false, get_max_score_for_game(37), get_score_for_game(37), 37, s_time_matching) --time_matching
+    erase_alphabet_flashcard_images()
   elseif index == 39 then -- word matchers
     add_big_button(400, icon_back, screen_left + 80, screen_top + 110, 45, 0.3)
     add_big_button(1, icon_ico_g_0203, 800 - 300, 260, 54, 0.6, false, get_max_score_for_game(54), get_score_for_game(54), 54, s_animals) -- animals
@@ -816,6 +837,7 @@ function build_form(index)
     add_big_button(12, icon_ico_g_0210, 800 + 600, 700, 54, 0.6, false, get_max_score_for_game(53), get_score_for_game(53), 53, s_constructions) -- constructions
   elseif index == 41 then -- ___ alphabet   your alphabet
     add_big_button(402, icon_back, screen_left + 80, screen_top + 110, 45, 0.3, false, 0, 0, 38)
+    init_alphabet_flashcard_images()
     local row = 0
     local column = 0
     for i = 1, table_length(alphabet_lc) do
@@ -903,8 +925,8 @@ function build_form(index)
     selected_color = 1
   end--------------------------------------------------------
 
-
-  if index >= 3 then
-    add_big_button(401, icon_logout, screen_left + screen_total_width - 22, screen_top + 20, 25, 1, true)
-  end
+  --for user system (if status bar is shown)
+  --if index >= 3 then
+  --  add_big_button(401, icon_logout, screen_left + screen_total_width - 22, screen_top + 20, 25, 1, true)
+  --end
 end

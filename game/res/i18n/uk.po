@@ -1198,7 +1198,7 @@ msgstr "спагеті"
 msgid "roast"
 msgstr "печеня"
 
-msgid "drink"
+msgid "drink[n]"
 msgstr "напій"
 
 msgid "stew"
@@ -1574,7 +1574,7 @@ msgstr "балакати"
 msgid "drive"
 msgstr "вести"
 
-msgid "drink"
+msgid "drink[v]"
 msgstr "пити"
 
 msgid "fly"

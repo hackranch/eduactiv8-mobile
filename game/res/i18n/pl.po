@@ -1186,7 +1186,7 @@ msgstr "spaghetti"
 msgid "roast"
 msgstr "pieczeń"
 
-msgid "drink"
+msgid "drink[n]"
 msgstr "napój"
 
 msgid "stew"
@@ -1562,7 +1562,7 @@ msgstr "rozmawiać"
 msgid "drive"
 msgstr "jeździć"
 
-msgid "drink"
+msgid "drink[v]"
 msgstr "pić"
 
 msgid "fly"

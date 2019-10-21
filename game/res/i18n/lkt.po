@@ -1172,7 +1172,7 @@ msgstr "spakéli"
 msgid "roast"
 msgstr "khukhúše čhosyápi"
 
-msgid "drink"
+msgid "drink[n]"
 msgstr "waȟpékȟalyapi"
 
 msgid "stew"
@@ -1548,7 +1548,7 @@ msgstr "wóglakA"
 msgid "drive"
 msgstr "kaȟápA"
 
-msgid "drink"
+msgid "drink[v]"
 msgstr "yatkÁŋ"
 
 msgid "fly"

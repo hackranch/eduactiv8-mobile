@@ -109,7 +109,9 @@ function char(num)
 end
 
 function erase_table(T)
-  for k, v in pairs(T) do
-    T[k] = nil
+  if T ~= nil then
+    for k, v in pairs(T) do
+      T[k] = nil
+    end
   end
 end

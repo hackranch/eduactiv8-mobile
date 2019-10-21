@@ -1171,7 +1171,7 @@ msgstr "spaghetti"
 msgid "roast"
 msgstr "roast"
 
-msgid "drink"
+msgid "drink[n]"
 msgstr "drink"
 
 msgid "stew"
@@ -1545,7 +1545,7 @@ msgstr "chat"
 msgid "drive"
 msgstr "drive"
 
-msgid "drink"
+msgid "drink[v]"
 msgstr "drink"
 
 msgid "fly"

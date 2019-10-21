@@ -1172,7 +1172,7 @@ msgstr "σπαγγέτι"
 msgid "roast"
 msgstr "ψητό"
 
-msgid "drink"
+msgid "drink[n]"
 msgstr "ρόφημα"
 
 msgid "stew"
@@ -1548,7 +1548,7 @@ msgstr "συζητώ"
 msgid "drive"
 msgstr "οδηγώ"
 
-msgid "drink"
+msgid "drink[v]"
 msgstr "πίνω"
 
 msgid "fly"

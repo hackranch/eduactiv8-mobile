@@ -1,5 +1,6 @@
 --eduActiv8 (Löve2D)
 
+require 'game_config'
 require 'images'
 require 'buttons'
 require 'forms'
@@ -12,7 +13,6 @@ require 'decoration'
 require 'score_processing'
 require 'geometry'
 require 'clock_graphics'
-require 'game_config'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -138,10 +138,11 @@ function love.load()
   set_language(game_initial_language)
   global_language = game_initial_language
   love.window.setTitle(s_title)
-  love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8, fullscreen = true})
+  love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8})
   get_screen_dimensions()
-  love.graphics.setDefaultFilter("linear", "linear", 1)
+  --love.graphics.setDefaultFilter("linear", "linear", 1)
   initialize_fonts()
+  init_subtitle()
   sleep = 0
   scrollable = false
   max_scroll = 0
@@ -471,7 +472,6 @@ function love.update(dt)
       selected_b = ""
     elseif current_window == 1 then
       --build_form(2) -- login
-      init_images()
       build_form(19) -- main menu
     elseif current_window == 37 then
       for i = 1, 6 do
@@ -1467,10 +1467,16 @@ function love.draw()
     --love.graphics.draw(image_copyright, 33, 514)
     love.graphics.draw(image_logo_main_menu, 84, 90, 0, 0.83, 0.83)
     if game == "math" then
-      love.graphics.draw(images_logo_subtitle[global_language], 89, 470, 0, 0.83, 0.83)
+      love.graphics.draw(images_logo_subtitle, 89, 470, 0, 0.83, 0.83)
     elseif game == "language" then
-      love.graphics.draw(images_logo_subtitle_2[global_language], 89, 470, 0, 0.83, 0.83)
+      love.graphics.draw(images_logo_subtitle_2, 89, 470, 0, 0.83, 0.83)
     end
+    --for user system
+    --love.graphics.draw(image_user_button, 705, 82)
+    --love.graphics.setFont(font_button_text)
+    --print_text(username, 845, 81, 460 * 3, 'left', 0, 1, 1, 460)
+    --love.graphics.setFont(font_interface_bold)
+    --print_text(s_level .. ": " .. selected_level .. "   |   " .. s_score .. ": ", 845, 141, 460 * 3, 'left', 0, 1, 1, 460)
   elseif current_window == 20 then
     draw_header(s_numbers)
   elseif current_window == 21 then
@@ -1814,7 +1820,11 @@ function love.draw()
     else
       show_h = clock_hour + 1
     end
-    print_text(show_h, 1100 - 300, 400, 300, 'right')
+    if show_h < 10 then
+      print_text("0" .. show_h, 1100 - 300, 400, 300, 'right')
+    else
+      print_text(show_h, 1100 - 300, 400, 300, 'right')
+    end
 
     love.graphics.setColor(color["interface_text"])
     if current_window == 36 then
@@ -1824,7 +1834,12 @@ function love.draw()
     else
       show_m = 0
     end
-    print_text(":  " .. show_m, 1100 +  40, 400, 300, 'left')
+
+    if show_m < 10 then
+      print_text(":  0" .. show_m, 1100 +  40, 400, 300, 'left')
+    else
+      print_text(":  " .. show_m, 1100 +  40, 400, 300, 'left')
+    end
 
     if global_language ~= "lakota" then
       love.graphics.setFont(font_large_title)
@@ -1968,15 +1983,15 @@ function love.draw()
   end------------------------------
 
   if current_window >= 3 then
-    --main header
-    love.graphics.setColor(color["dark_cyan"])
-    love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, 40)
-    love.graphics.setColor(color["white"])
-    love.graphics.setFont(font_interface_bold)
-    print_text("eduActiv8", screen_left + 10, screen_top - 3, 500, 'left')
-    love.graphics.setFont(font_interface)
-    print_text(s_level .. ": " .. selected_level, screen_left, screen_top - 7, screen_total_width, 'center')
-    print_text(s_logged_user .. username, screen_left - 75, screen_top - 7, screen_total_width, 'right')
+    --the old status bar
+    --love.graphics.setColor(color["dark_cyan"])
+    --love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, 40)
+    --love.graphics.setColor(color["white"])
+    --love.graphics.setFont(font_interface_bold)
+    --print_text("eduActiv8", screen_left + 10, screen_top - 3, 500, 'left')
+    --love.graphics.setFont(font_interface)
+    --print_text(s_level .. ": " .. selected_level, screen_left, screen_top - 7, screen_total_width, 'center')
+    --print_text(s_logged_user .. username, screen_left - 75, screen_top - 7, screen_total_width, 'right')
 
     if get_score_for_game(current_window) ~= nil then
       love.graphics.setFont(font_small_title)

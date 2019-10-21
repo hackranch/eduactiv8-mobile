@@ -1093,7 +1093,7 @@ msgstr ""
 msgid "roast"
 msgstr ""
 
-msgid "drink"
+msgid "drink[n]"
 msgstr ""
 
 msgid "stew"
@@ -1170,7 +1170,7 @@ msgid "sunglasses"
 msgstr ""
 
 msgid "coat"
-msgstr ""
+msgid "drink[n]"
 
 msgid "pullover"
 msgstr ""
@@ -1465,6 +1465,9 @@ msgid "chat"
 msgstr ""
 
 msgid "drive"
+msgstr ""
+
+msgid "drink[v]"
 msgstr ""
 
 msgid "fly"

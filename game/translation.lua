@@ -5,6 +5,11 @@ function translate_i18n(word, index)
   local word_found = false
   local word_start = false
 
+  word = string.gsub(word, "%(", "%%%(")
+  word = string.gsub(word, "%)", "%%%)")
+  word = string.gsub(word, "%[", "%%%[")
+  word = string.gsub(word, "%]", "%%%]")
+
   for k, line in pairs(language_file_lines) do
     if word_found == true then
       if string.match(line, "msgstr") then

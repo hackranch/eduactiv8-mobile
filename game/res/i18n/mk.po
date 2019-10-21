@@ -1165,7 +1165,7 @@ msgstr "шпагети"
 msgid "roast"
 msgstr "печено месо"
 
-msgid "drink"
+msgid "drink[n]"
 msgstr "пијалок"
 
 msgid "stew"
@@ -1492,13 +1492,13 @@ msgid "spill"
 msgstr "истурање"
 
 msgid "clean"
-msgstr "чистење"
+msgstr "капење"
 
 msgid "scream"
 msgstr "врескање"
 
 msgid "tear"
-msgstr "солзење"
+msgstr "расцепување"
 
 msgid "float"
 msgstr "пловење"
@@ -1539,7 +1539,7 @@ msgstr "разговарање"
 msgid "drive"
 msgstr "возење"
 
-msgid "drink"
+msgid "drink[v]"
 msgstr "пиење"
 
 msgid "fly"
