@@ -28,9 +28,29 @@ function initialize_fonts()
   font_free_sans = love.graphics.newFont("res/fonts/FreeSans.ttf", 40)
 
   font_free_sans_100 = love.graphics.newFont("res/fonts/FreeSans.ttf", 100)
+
+  calculated_text = {}
+  calculated_text[font_interface] = {}
+  calculated_text[font_extra_large] = {}
+  calculated_text[font_interface_bold] = {}
+  calculated_text[font_large_title] = {}
+  calculated_text[font_small_title] = {}
+  calculated_text[font_handwritten_small] = {}
+  calculated_text[font_button_text] = {}
+  calculated_text[font_handwritten_extra_large] = {}
+  calculated_text[font_handwritten] = {}
+  calculated_text[font_free_sans] = {}
+  calculated_text[font_free_sans_100] = {}
 end
 
+--still in progress..
 function print_text(s, tx, ty, tw, al, r, sx, sy, max_width)
+  local s_wid = 0
+  if calculated_text[love.graphics.getFont()][s] == nil then
+    local s_type = love.graphics.newText(love.graphics.getFont(), s)
+    calculated_text[love.graphics.getFont()][s] = s_type:getWidth()
+  end
+  s_wid = calculated_text[love.graphics.getFont()][s]
   sx = sx or 1
   sy = sy or sx
   max_width = max_width or screen_total_width
@@ -38,10 +58,12 @@ function print_text(s, tx, ty, tw, al, r, sx, sy, max_width)
   if old_color_mode then
     ascent = love.graphics.getFont():getAscent() * sy
   end
-  local s_type = love.graphics.newText(love.graphics.getFont(), s)
-  if s_type:getWidth() / sx <= max_width then
+--  local s_type = love.graphics.newText(love.graphics.getFont(), s)
+--  if s_type:getWidth() / sx <= max_width then
+  if s_wid < max_width then
     love.graphics.printf(s, tx, ty - ascent / 5, tw, al, r, sx, sy)
   else
-    love.graphics.printf(s, tx, ty - ascent / 5, tw / (max_width / (s_type:getWidth() / sx)), al, r, sx * (max_width / (s_type:getWidth() / sx)), sy)
+    love.graphics.printf(s, tx, ty - ascent / 5, tw / (max_width / (s_wid / sx)), al, r, sx * (max_width / (s_wid / sx)), sy)
   end
+  --love.graphics.printf(s, tx, ty - ascent / 5, tw, al, r, sx, sy)
 end

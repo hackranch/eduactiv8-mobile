@@ -13,6 +13,7 @@ require 'decoration'
 require 'score_processing'
 require 'geometry'
 require 'clock_graphics'
+ProFi = require 'profi'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -126,6 +127,7 @@ function password_characters(p)
 end
 
 function love.load()
+  ProFi:start()
   local major, minor, revision, codename = love.getVersion()
   if major < 11 then
     old_color_mode = true
@@ -318,6 +320,8 @@ function love.mousereleased(x, y, button)
    elseif current_window == 19 then
      if mouse_on_button(20) then
        save_score()
+       ProFi:stop()
+       ProFi:writeReport( 'MyProfilingReport.txt' )
        love.event.quit()
      elseif mouse_on_button(21) then
        text[1] = username
