@@ -17,6 +17,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.4\n"
 
+msgid "green apple"
+msgid_plural "green apples"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "red apple"
+msgid_plural "red apples"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "strawberry"
+msgid_plural "strawberries"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "pear"
+msgid_plural "pears"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "orange [fruit]"
+msgid_plural "oranges"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "onion"
+msgid_plural "onions"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "tomato"
+msgid_plural "tomatoes"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "lemon"
+msgid_plural "lemons"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "cherry"
+msgid_plural "cherries"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "pepper"
+msgid_plural "peppers"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "carrot"
+msgid_plural "carrots"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "banana"
+msgid_plural "bananas"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "watermelon"
+msgid_plural "watermelons"
+msgstr[0] ""
+msgstr[1] ""
+
 msgid "English"
 msgstr ""
 
@@ -1170,7 +1235,7 @@ msgid "sunglasses"
 msgstr ""
 
 msgid "coat"
-msgid "drink[n]"
+msgid ""
 
 msgid "pullover"
 msgstr ""
