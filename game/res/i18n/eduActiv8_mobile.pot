@@ -944,9 +944,6 @@ msgstr ""
 msgid "son"
 msgstr ""
 
-msgid "mates"
-msgstr ""
-
 msgid "friends"
 msgstr ""
 
@@ -992,22 +989,13 @@ msgstr ""
 msgid "bride"
 msgstr ""
 
-msgid "madam"
-msgstr ""
-
 msgid "grandmother"
 msgstr ""
 
 msgid "couple"
 msgstr ""
 
-msgid "lad"
-msgstr ""
-
 msgid "twin girls"
-msgstr ""
-
-msgid "tribe"
 msgstr ""
 
 msgid "boy"
@@ -1235,7 +1223,7 @@ msgid "sunglasses"
 msgstr ""
 
 msgid "coat"
-msgid ""
+msgstr ""
 
 msgid "pullover"
 msgstr ""
@@ -1748,9 +1736,6 @@ msgstr ""
 msgid "engineer"
 msgstr ""
 
-msgid "priest"
-msgstr ""
-
 msgid "vet"
 msgstr ""
 
@@ -1880,9 +1865,6 @@ msgstr ""
 msgid "prince"
 msgstr ""
 
-msgid "pope"
-msgstr ""
-
 msgid "sailor"
 msgstr ""
 
@@ -1899,9 +1881,6 @@ msgid "astronaut"
 msgstr ""
 
 msgid "painter"
-msgstr ""
-
-msgid "anaesthesiologist"
 msgstr ""
 
 msgid "scientist"
