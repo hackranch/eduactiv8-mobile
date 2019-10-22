@@ -1542,7 +1542,10 @@ msgid "chat"
 msgstr "plaudern"
 
 msgid "drive"
-msgid "drink[n]"n"
+msgstr "fahren"
+
+msgid "drink[n]"
+msgstr "Gertränk"
 
 msgid "drink[v]"
 msgstr "trinken"
