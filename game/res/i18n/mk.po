@@ -1897,7 +1897,7 @@ msgid "boxer"
 msgstr "боксер"
 
 msgid "ballet dancer"
-msgstr "балетан"
+msgstr "балерина"
 
 msgid "coach"
 msgstr "тренер"

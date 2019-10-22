@@ -1,5 +1,5 @@
---game = "math"
-game = "language"
+game = "math"
+--game = "language"
 
 game_version = "0.0.0"
 

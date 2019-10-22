@@ -98,7 +98,7 @@ function set_language(language)
     s_translators_c[35] = "Matthew Rama"
     s_translators_c[36] = ""
     s_translators_c[37] = "Macedonian"
-    s_translators_c[38] = "Ilija Mihajlov"
+    s_translators_c[38] = "Ilija Mihajlov (Илија Михајлов)"
     s_translators_c[39] = ""
     s_translators_c[40] = "Polish"
     s_translators_c[41] = "Kamila Roszak-Imiolek"

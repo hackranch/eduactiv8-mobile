@@ -193,6 +193,10 @@ function love.load()
   score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65}
   max_scores =    { 5,  6,  8,  8,  1,  1,  8,  8,  8,  1,  3,  1,  1,  8, 16,  1,  1,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6,  6}
 
+  game_score_indexes = {}
+  game_score_indexes["math"] =     {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}
+  game_score_indexes["language"] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65}
+
   --score[user name][level][game index]
   initialize_score()
   initialize_activity_titles()
@@ -310,6 +314,14 @@ function love.mousereleased(x, y, button)
        if flag == true and total_items == total_items_needed then
          message = "congrats"
        end
+     end
+   elseif current_window == 19 then
+     if mouse_on_button(20) then
+       save_score()
+       love.event.quit()
+     elseif mouse_on_button(21) then
+       text[1] = username
+       build_form(26)
      end
    elseif current_window == 34 then
      if x > 4 * 47 and y > 4 * 47 then
@@ -460,7 +472,7 @@ end -- mouse released function
 function love.update(dt)
   if sleep > 0 then
     if message == "congrats" then
-      save_score()
+      --save_score()  -- if called, this function is causing small delay during the transitions from one to other screen
       message = ""
     end
     love.timer.sleep(sleep)
@@ -1543,7 +1555,7 @@ function love.draw()
       end
     end
   elseif current_window == 26 then --user scores
-    draw_header(s_score, text[1])
+    draw_header(s_score) --, text[1])
     local row = 0
     local column = 300
     local total = {0, 0, 0, 0, 0}
@@ -1552,29 +1564,31 @@ function love.draw()
     for i = 0, 4 do
       print_text(i + 1, column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
     end
-    for k, v in pairs(score_indexes) do
-      --if row == 11 then
-      --  --row = 0
-      --  --column = 800
-      --  love.graphics.setFont(font_interface_bold)
-      --  print_text(s_level, column + 1600 / 3, scroll + 160, 1600 / 6, 'center')
-      --  for i = 0, 4 do
-      --    print_text(i + 1,  column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
-      --  end
-      --  love.graphics.setFont(font_interface)
-      --end
-      love.graphics.setFont(font_interface_bold)
-      if (utf8len(activity_titles[v] or "x") <= 29) then
-        print_text(activity_titles[v] or "x", column, scroll + 250 + (row * 40), 1600 / 3 - 5, 'right')
-      else
-        print_text(activity_titles[v] or "x", column + (1600 / 3) - ((1600 / 3) * 2 * (29 / utf8len(activity_titles[v] or "x"))), scroll + 250 + (row * 40), (1600 / 3) * 2 - 5, 'right', 0, 29 / utf8len(activity_titles[v] or "x"), 1)
+    for k, v in pairs(game_score_indexes[game]) do
+      if v ~= -1 then
+        --if row == 11 then
+        --  --row = 0
+        --  --column = 800
+        --  love.graphics.setFont(font_interface_bold)
+        --  print_text(s_level, column + 1600 / 3, scroll + 160, 1600 / 6, 'center')
+        --  for i = 0, 4 do
+        --    print_text(i + 1,  column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
+        --  end
+        --  love.graphics.setFont(font_interface)
+        --end
+        love.graphics.setFont(font_interface_bold)
+        if (utf8len(activity_titles[v] or "x") <= 29) then
+          print_text(activity_titles[v] or "x", column, scroll + 250 + (row * 40), 1600 / 3 - 5, 'right')
+        else
+          print_text(activity_titles[v] or "x", column + (1600 / 3) - ((1600 / 3) * 2 * (29 / utf8len(activity_titles[v] or "x"))), scroll + 250 + (row * 40), (1600 / 3) * 2 - 5, 'right', 0, 29 / utf8len(activity_titles[v] or "x"), 1)
+        end
+        love.graphics.setFont(font_interface)
+        for i = 0, 4 do
+          print_text(score[text[1]][i + 1][k] or "x", column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
+          total[i+1] = total[i+1] + (score[text[1]][i + 1][k] or 0)
+        end
+        row = row + 1
       end
-      love.graphics.setFont(font_interface)
-      for i = 0, 4 do
-        print_text(score[text[1]][i + 1][k] or "x", column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
-        total[i+1] = total[i+1] + (score[text[1]][i + 1][k] or 0)
-      end
-      row = row + 1
     end
     love.graphics.line(column + 1600 / 3, scroll + 250 + (row * 40) + 2, column + 1600 / 2, scroll + 250 + (row * 40) + 2)
     for i = 0, 4 do

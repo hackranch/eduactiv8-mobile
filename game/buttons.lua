@@ -224,13 +224,13 @@ function draw_header(title, subtitle)
   if subtitle == nil then
     love.graphics.setFont(font_large_title)
     love.graphics.setColor(color["interface_text"])
-    print_text(title, screen_left + 180, screen_top + 60, 1580 + math.abs(translate_h), 'left')
+    print_text(title, screen_left + 180, screen_top + 55, 1580 + math.abs(translate_h), 'left')
   else
 
     love.graphics.setFont(font_small_title)
     love.graphics.setColor(color["interface_text"])
-    print_text(title, screen_left + 180, screen_top + 57, 1080 + math.abs(translate_h), 'left')
+    print_text(title, screen_left + 180, screen_top + 49, 1080 + math.abs(translate_h), 'left')
     love.graphics.setFont(font_interface)
-    print_text(subtitle, screen_left + 180, screen_top + 114, 1080 + math.abs(translate_h), 'left')
+    print_text(subtitle, screen_left + 180, screen_top + 105, 1080 + math.abs(translate_h), 'left')
   end
 end
