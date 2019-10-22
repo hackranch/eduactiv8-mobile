@@ -1,132 +1,138 @@
-# eduActiv8 Mobile - translation file.
-# Copyright (C) 2019 Hackranch
-# This file is distributed under the same license as eduActiv8 Mobile.
-# Initially translated by Anton Kayukov, 2012
-# Updated and retranslated by Алексей Логинов, 2013-2014
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
-"Report-Msgid-Bugs-To: Derek Lackaff <lackaff@hackranch.com>\n"
+"Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-15 16:09-0400\n"
-"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
-"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
-"Language: ru\n"
+"PO-Revision-Date: 2019-10-22 16:59\n"
+"Last-Translator: Derek Lackaff (lackaff)\n"
+"Language-Team: Russian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0: n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: crowdin.com\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: eduactiv8-mobile\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
+"Language: ru_RU\n"
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "зелёное яблоко"
-msgstr[1] "зелёных яблока"
-msgstr[2] "зелёных яблок"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "красное яблоко"
-msgstr[1] "красных яблока"
-msgstr[2] "красных яблок"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "клубника"
-msgstr[1] "клубники"
-msgstr[2] "клубник"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] "груша"
-msgstr[1] "груши"
-msgstr[2] "груш"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] "апельсин"
-msgstr[1] "апельсина"
-msgstr[2] "апельсинов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] "луковица"
-msgstr[1] "луковицы"
-msgstr[2] "луковиц"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] "томат"
-msgstr[1] "томата"
-msgstr[2] "томатов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] "лимон"
-msgstr[1] "лимона"
-msgstr[2] "лимонов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] "вишня"
-msgstr[1] "вишни"
-msgstr[2] "вишен"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] "перец"
-msgstr[1] "перца"
-msgstr[2] "перцев"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] "морковка"
-msgstr[1] "морковки"
-msgstr[2] "морковок"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] "банан"
-msgstr[1] "банана"
-msgstr[2] "бананов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] "арбуз"
-msgstr[1] "арбуза"
-msgstr[2] "арбузов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 msgid "English"
-msgstr "английский"
+msgstr ""
 
 msgid "Login"
-msgstr "Войти"
+msgstr ""
 
 msgid "Default Language:"
-msgstr "Язык по умолчанию:"
+msgstr ""
 
 msgid "User Management"
-msgstr "Управление пользователями:"
+msgstr ""
 
 msgid "Copyright & Credits"
-msgstr "Авторские права и титры"
+msgstr ""
 
 msgid "Licence"
-msgstr "Лицензия"
+msgstr ""
 
 msgid "Language arts"
-msgstr "Искусство языка"
+msgstr ""
 
 msgid "This username and password combination doesn't exist."
-msgstr "Такая комбинация имени пользователя и пароля не существует."
+msgstr ""
 
-#| msgid "user name:"
 msgid "user name: "
 msgstr ""
 
-#| msgid "password:"
 msgid "password: "
 msgstr ""
 
@@ -134,94 +140,94 @@ msgid "eduActiv8 Test Version"
 msgstr ""
 
 msgid "Save"
-msgstr "Сохранить"
+msgstr ""
 
 msgid "Delete user"
-msgstr "Удалить пользователя"
+msgstr ""
 
 msgid "Preferences saved..."
-msgstr "Предпочтения сохранены..."
+msgstr ""
 
 msgid "Logged in as: "
-msgstr "Вы вошли как: "
+msgstr ""
 
 msgid "Language"
-msgstr "Язык"
+msgstr ""
 
 msgid "Mathematics"
-msgstr "Математика"
+msgstr ""
 
 msgid "Games & Mazes"
-msgstr "Игры и лабиринты"
+msgstr ""
 
 msgid "Word Builders"
-msgstr "Словопостроитель"
+msgstr ""
 
 msgid "Animals"
-msgstr "животные"
+msgstr ""
 
 msgid "Complete the word"
-msgstr "Заполните слово"
+msgstr ""
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr "Напишите цифры словами"
+msgstr ""
 
 msgid "Shopping List"
-msgstr "Список покупок"
+msgstr ""
 
 msgid "Addition"
-msgstr "Сложение"
+msgstr ""
 
 msgid "Find missing number"
-msgstr "Найти отсутствующее число"
+msgstr ""
 
 msgid "Level"
-msgstr "Уровень"
+msgstr ""
 
 msgid "Translators"
-msgstr "Переводчики"
+msgstr ""
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr "Счёт: "
+msgstr ""
 
 msgid "Numbers & Basic Operations"
-msgstr "Числа и основные операции"
+msgstr ""
 
 msgid "Numbers"
-msgstr "Числа"
+msgstr ""
 
 msgid "Basic Operations"
-msgstr "Основные операции"
+msgstr ""
 
 msgid "area:"
-msgstr "площадь:"
+msgstr ""
 
 msgid "perimeter:"
-msgstr "периметр:"
+msgstr ""
 
 msgid "circumference:"
-msgstr "окружность:"
+msgstr ""
 
 msgid "Trapezium"
-msgstr "Трапеция"
+msgstr ""
 
 msgid "Drag the clock hands to set the time"
-msgstr "Перетащите стрелки часов чтобы установить время"
+msgstr ""
 
 msgid "Discover Letters"
-msgstr "Изучение букв"
+msgstr ""
 
 msgid "Word Matchers"
-msgstr "Сопоставьте изображения с словами"
+msgstr ""
 
 msgid "Shapes and Solids"
-msgstr "Фигуры и тела"
+msgstr ""
 
 msgid "Symmetry"
 msgstr ""
@@ -230,21 +236,20 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr "Время"
+msgstr ""
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr "Вычитание"
+msgstr ""
 
 msgid "Learn Numbers with Flashcards"
-msgstr "Учите числа по карточкам"
+msgstr ""
 
 msgid "Demonstration"
-msgstr "Демонстрация"
+msgstr ""
 
-#| msgid "Find solution"
 msgid "Find Solution"
 msgstr ""
 
@@ -252,109 +257,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr "Учите геометрические фигуры по карточкам"
+msgstr ""
 
 msgid "Shape Matching"
-msgstr "Сравнение фигур"
+msgstr ""
 
 msgid "Shape Maker"
-msgstr "Создание фигур"
+msgstr ""
 
 msgid "How clock works"
-msgstr "Как работают часы?"
+msgstr ""
 
 msgid "learn to set the clock"
-msgstr "научитесь устанавливать часы"
+msgstr ""
 
 msgid "Set the clock to:"
-msgstr "Установите часы на:"
+msgstr ""
 
 msgid "Time Matching"
-msgstr "Соответствие времени"
+msgstr ""
 
 msgid "Your Alphabet"
-msgstr "Русский алфавит"
+msgstr ""
 
 msgid "Trace Letters and Numbers"
-msgstr "Обведите буквы и цифры"
+msgstr ""
 
 msgid "People"
-msgstr "люди"
+msgstr ""
 
 msgid "Jobs"
-msgstr "работа и занятия"
+msgstr ""
 
 msgid "Body"
-msgstr "тело"
+msgstr ""
 
 msgid "Clothes and Accessories"
-msgstr "одежда и аксессуары"
+msgstr ""
 
 msgid "Sports"
-msgstr "спорт"
+msgstr ""
 
 msgid "Actions"
-msgstr "действия"
+msgstr ""
 
 msgid "Nature"
-msgstr "природа"
+msgstr ""
 
 msgid "Fruits and Vegetables"
-msgstr "фрукты и овощи"
+msgstr ""
 
 msgid "Food"
-msgstr "пища"
+msgstr ""
 
 msgid "Transport"
-msgstr "транспорт"
+msgstr ""
 
 msgid "Constructions"
-msgstr "конструкции"
+msgstr ""
 
 msgid "Equilateral Triangle"
-msgstr "Равносторонний треугольник"
+msgstr ""
 
 msgid "Isosceles Triangle"
-msgstr "Равнобедренный треугольник"
+msgstr ""
 
 msgid "Obtuse Triangle"
-msgstr "Тупоугольный треугольник"
+msgstr ""
 
 msgid "Right Triangle"
-msgstr "Прямоугольный треугольник"
+msgstr ""
 
 msgid "Acute Triangle"
-msgstr "Остроугольный треугольник"
+msgstr ""
 
 msgid "Square"
-msgstr "Квадрат"
+msgstr ""
 
 msgid "Rectangle"
-msgstr "Прямоугольник"
+msgstr ""
 
 msgid "Right Trapezium"
-msgstr "Правильная трапеция"
+msgstr ""
 
 msgid "Isosceles Trapezium"
-msgstr "Равнобедренная трапеция"
+msgstr ""
 
 msgid "Rhombus"
-msgstr "Ромб"
+msgstr ""
 
 msgid "Parallelogram"
-msgstr "Параллелограмм"
+msgstr ""
 
 msgid "Pentagon"
-msgstr "Пятиугольник"
+msgstr ""
 
 msgid "Hexagon"
-msgstr "Шестиугольник"
+msgstr ""
 
 msgid "Circle"
-msgstr "Круг"
+msgstr ""
 
 msgid "Ellipse"
-msgstr "Эллипс"
+msgstr ""
 
 msgid "Heptagon"
 msgstr ""
@@ -362,2708 +367,1755 @@ msgstr ""
 msgid "Octagon"
 msgstr ""
 
-#| msgid "Trapezium"
 msgid "trapezium"
 msgstr ""
 
 # animals
-# "a4a_animals"
 msgid "cow"
-msgstr "корова"
+msgstr ""
 
 msgid "turkey"
-msgstr "индейка"
+msgstr ""
 
 msgid "shrimp"
-msgstr "креветка"
+msgstr ""
 
 msgid "wolf"
-msgstr "волк"
+msgstr ""
 
 msgid "panther"
-msgstr "пантера"
+msgstr ""
 
 msgid "panda"
-msgstr "панда"
+msgstr ""
 
 msgid "magpie"
-msgstr "сорока"
+msgstr ""
 
 msgid "clam"
-msgstr "моллюск"
+msgstr ""
 
 msgid "pony"
-msgstr "пони"
+msgstr ""
 
 msgid "mouse"
-msgstr "мышь"
+msgstr ""
 
 msgid "pug"
-msgstr "мопс"
+msgstr ""
 
 msgid "koala"
-msgstr "коала"
+msgstr ""
 
 msgid "frog"
-msgstr "лягушка"
+msgstr ""
 
 msgid "ladybug"
-msgstr "божья коровка"
+msgstr ""
 
 msgid "gorilla"
-msgstr "горилла"
+msgstr ""
 
 msgid "llama"
-msgstr "лама"
+msgstr ""
 
 msgid "vulture"
-msgstr "стервятник"
+msgstr ""
 
 msgid "hamster"
-msgstr "хомяк"
+msgstr ""
 
 msgid "bird"
-msgstr "птица"
+msgstr ""
 
 msgid "starfish"
-msgstr "морская звезда"
+msgstr ""
 
 msgid "crow"
-msgstr "ворона"
+msgstr ""
 
 msgid "parakeet"
-msgstr "длиннохвостый попугай"
+msgstr ""
 
 msgid "caterpillar"
-msgstr "гусеница"
+msgstr ""
 
 msgid "tiger"
-msgstr "тигр"
+msgstr ""
 
 msgid "hummingbird"
-msgstr "колибри"
+msgstr ""
 
 msgid "piranha"
-msgstr "пиранья"
+msgstr ""
 
 msgid "pig"
-msgstr "свинья"
+msgstr ""
 
 msgid "scorpion"
-msgstr "скорпион"
+msgstr ""
 
 msgid "fo"
-msgstr "лиса"
+msgstr ""
 
 msgid "leopard"
-msgstr "леопард"
+msgstr ""
 
 msgid "iguana"
-msgstr "игуана"
+msgstr ""
 
 msgid "dolphin"
-msgstr "дельфин"
+msgstr ""
 
 msgid "bat"
-msgstr "летучая мышь"
+msgstr ""
 
 msgid "chick"
-msgstr "цыплёнок"
+msgstr ""
 
 msgid "crab"
-msgstr "краб"
+msgstr ""
 
 msgid "hen"
-msgstr "курица"
+msgstr ""
 
 msgid "wasp"
-msgstr "оса"
+msgstr ""
 
 msgid "chameleon"
-msgstr "хамелион"
+msgstr ""
 
 msgid "whale"
-msgstr "кит"
+msgstr ""
 
 msgid "hedgehog"
-msgstr "ёжик"
+msgstr ""
 
 msgid "fawn"
-msgstr "олень"
+msgstr ""
 
 msgid "moose"
-msgstr "лось"
+msgstr ""
 
 msgid "bee"
-msgstr "пчела"
+msgstr ""
 
 msgid "viper"
-msgstr "змея"
+msgstr ""
 
 msgid "shrike"
-msgstr "сорокопут"
+msgstr ""
 
 msgid "donkey"
-msgstr "осёл"
+msgstr ""
 
 msgid "guinea pig"
-msgstr "морская свинка"
+msgstr ""
 
 msgid "sloth"
-msgstr "ленивец"
+msgstr ""
 
 msgid "horse"
-msgstr "конь"
+msgstr ""
 
 msgid "penguin"
-msgstr "пингвин"
+msgstr ""
 
 msgid "otter"
-msgstr "выдра"
+msgstr ""
 
 msgid "bear"
-msgstr "медведь"
+msgstr ""
 
 msgid "zebra"
-msgstr "зебра"
+msgstr ""
 
 msgid "ostrich"
-msgstr "страус"
+msgstr ""
 
 msgid "camel"
-msgstr "верблюд"
+msgstr ""
 
 msgid "antelope"
-msgstr "антилопа"
+msgstr ""
 
 msgid "lemur"
-msgstr "лемур"
+msgstr ""
 
 msgid "pigeon"
-msgstr "голубь"
+msgstr ""
 
 msgid "lama"
-msgstr "лама"
+msgstr ""
 
 msgid "mole"
-msgstr "крот"
+msgstr ""
 
 msgid "ray"
-msgstr "скат"
+msgstr ""
 
 msgid "ram"
-msgstr "баран"
+msgstr ""
 
 msgid "skunk"
-msgstr "скунс"
+msgstr ""
 
 msgid "jellyfish"
-msgstr "медуза"
+msgstr ""
 
 msgid "sheep"
-msgstr "овца"
+msgstr ""
 
 msgid "shark"
-msgstr "акула"
+msgstr ""
 
 msgid "kitten"
-msgstr "котёнок"
+msgstr ""
 
 msgid "deer"
-msgstr "олень"
+msgstr ""
 
 msgid "snail"
-msgstr "улитка"
+msgstr ""
 
 msgid "flamingo"
-msgstr "фламинго"
+msgstr ""
 
 msgid "rabbit"
-msgstr "кролик"
+msgstr ""
 
 msgid "oyster"
-msgstr "устрица"
+msgstr ""
 
 msgid "beaver"
-msgstr "бобр"
+msgstr ""
 
 msgid "sparrow"
-msgstr "воробей"
+msgstr ""
 
 msgid "dove"
-msgstr "голубь"
+msgstr ""
 
 msgid "eagle"
-msgstr "орёл"
+msgstr ""
 
 msgid "beetle"
-msgstr "жук"
+msgstr ""
 
 msgid "hippopotamus"
-msgstr "бегемот"
+msgstr ""
 
 msgid "owl"
-msgstr "сова"
+msgstr ""
 
 msgid "cobra"
-msgstr "кобра"
+msgstr ""
 
 msgid "salamander"
-msgstr "саламандра"
+msgstr ""
 
 msgid "goose"
-msgstr "гусь"
+msgstr ""
 
 msgid "kangaroo"
-msgstr "кенгуру"
+msgstr ""
 
 msgid "dragonfly"
-msgstr "стрекоза"
+msgstr ""
 
 msgid "toad"
-msgstr "лягушка"
+msgstr ""
 
 msgid "pelican"
-msgstr "пеликан"
+msgstr ""
 
 msgid "squid"
-msgstr "кальмар"
+msgstr ""
 
 msgid "lion cub"
-msgstr "львёнок"
+msgstr ""
 
 msgid "jaguar"
-msgstr "ягуар"
+msgstr ""
 
 msgid "duck"
-msgstr "утка"
+msgstr ""
 
 msgid "lizard"
-msgstr "ящерица"
+msgstr ""
 
 msgid "rhinoceros"
-msgstr "носорог"
+msgstr ""
 
 msgid "hyena"
-msgstr "гиена"
+msgstr ""
 
 msgid "o"
-msgstr "бык"
+msgstr ""
 
 msgid "peacock"
-msgstr "павлин"
+msgstr ""
 
 msgid "parrot"
-msgstr "попугай"
+msgstr ""
 
 msgid "elk"
-msgstr "лось"
+msgstr ""
 
 msgid "alligator"
-msgstr "крокодил"
+msgstr ""
 
 msgid "ant"
-msgstr "муравей"
+msgstr ""
 
 msgid "goat"
-msgstr "козёл"
+msgstr ""
 
 msgid "baby rabbit"
-msgstr "крольчонок"
+msgstr ""
 
 msgid "lion"
-msgstr "лев"
+msgstr ""
 
 msgid "squirrel"
-msgstr "белка"
+msgstr ""
 
 msgid "opossum"
-msgstr "опоссум"
+msgstr ""
 
 msgid "chimp"
-msgstr "шимпанзе"
+msgstr ""
 
 msgid "doe"
-msgstr "оленёнок"
+msgstr ""
 
 msgid "gopher"
-msgstr "суслик"
+msgstr ""
 
 msgid "elephant"
-msgstr "слон"
+msgstr ""
 
 msgid "giraffe"
-msgstr "жираф"
+msgstr ""
 
 msgid "spider"
-msgstr "паук"
+msgstr ""
 
 msgid "puppy"
-msgstr "щенок"
+msgstr ""
 
 msgid "jay"
-msgstr "сойка"
+msgstr ""
 
 msgid "seal"
-msgstr "тюлень"
+msgstr ""
 
 msgid "rooster"
-msgstr "петух"
+msgstr ""
 
 msgid "turtle"
-msgstr "черепаха"
+msgstr ""
 
 msgid "bull"
-msgstr "бык"
+msgstr ""
 
 msgid "cat"
-msgstr "кошка"
+msgstr ""
 
 msgid "rat"
-msgstr "крыса"
+msgstr ""
 
 msgid "slug"
-msgstr "улитка"
+msgstr ""
 
 msgid "buffalo"
-msgstr "бизон"
+msgstr ""
 
 msgid "blackbird"
-msgstr "чёрный дрозд"
+msgstr ""
 
 msgid "swan"
-msgstr "лебедь"
+msgstr ""
 
 msgid "lobster"
-msgstr "омар"
+msgstr ""
 
 msgid "dog"
-msgstr "собака"
+msgstr ""
 
 msgid "mosquito"
-msgstr "комар"
+msgstr ""
 
 msgid "snake"
-msgstr "змея"
+msgstr ""
 
 msgid "chicken"
-msgstr "цыплёнок"
+msgstr ""
 
 msgid "anteater"
-msgstr "муравьед"
+msgstr ""
 
 # sport
-# "a4a_sport"
 msgid "judo"
-msgstr "дзюдо"
+msgstr ""
 
 msgid "pool"
-msgstr "плавание"
+msgstr ""
 
 msgid "ride"
-msgstr "велогонка"
+msgstr ""
 
 msgid "stretch"
-msgstr "растяжка"
+msgstr ""
 
 msgid "helmet"
-msgstr "шлем"
+msgstr ""
 
 msgid "ice skating"
-msgstr "коньки"
+msgstr ""
 
 msgid "walk"
-msgstr "ходьба"
+msgstr ""
 
 msgid "run"
-msgstr "бег"
-
-msgid "run"
-msgstr "бег"
+msgstr ""
 
 msgid "swim"
-msgstr "ныряние"
+msgstr ""
 
 msgid "hop"
-msgstr "батут"
+msgstr ""
 
 msgid "hike"
-msgstr "пеший туризм"
+msgstr ""
 
 msgid "boxing"
-msgstr "бокс"
+msgstr ""
 
 msgid "hockey"
-msgstr "хоккей"
+msgstr ""
 
 msgid "race"
-msgstr "забег"
+msgstr ""
 
 msgid "throw"
-msgstr "бросок"
+msgstr ""
 
 msgid "skate"
-msgstr "скейт"
+msgstr ""
 
 msgid "win"
-msgstr "победа"
+msgstr ""
 
 msgid "squat"
-msgstr "приседания"
+msgstr ""
 
 msgid "ski"
-msgstr "лыжи"
+msgstr ""
 
 msgid "golf"
-msgstr "гольф"
+msgstr ""
 
 msgid "whistle"
-msgstr "свисток"
+msgstr ""
 
 msgid "torch"
-msgstr "факел"
+msgstr ""
 
 msgid "sailing"
-msgstr "яхта"
+msgstr ""
 
 msgid "stand"
-msgstr "стойка"
+msgstr ""
 
 msgid "tennis"
-msgstr "теннис"
+msgstr ""
 
 msgid "jump"
-msgstr "скачок"
+msgstr ""
 
 msgid "rowing"
-msgstr "гребля"
+msgstr ""
 
 msgid "jog"
-msgstr "бег трусцой"
+msgstr ""
 
 msgid "rope"
-msgstr "скакалка"
+msgstr ""
 
 # body
-# "a4a_body"
 msgid "teeth"
-msgstr "зуб"
+msgstr ""
 
 msgid "cheek"
-msgstr "щека"
+msgstr ""
 
 msgid "ankle"
-msgstr "косточка"
+msgstr ""
 
 msgid "knee"
-msgstr "колено"
+msgstr ""
 
 msgid "toe"
-msgstr "пята"
+msgstr ""
 
 msgid "muscle"
-msgstr "мускул"
+msgstr ""
 
 msgid "mouth"
-msgstr "рот"
+msgstr ""
 
 msgid "feet"
-msgstr "ступня"
+msgstr ""
 
 msgid "hand"
-msgstr "рука"
+msgstr ""
 
 msgid "elbow"
-msgstr "локоть"
+msgstr ""
 
 msgid "hair"
-msgstr "волосы"
+msgstr ""
 
 msgid "eyelash"
-msgstr "ресничка"
+msgstr ""
 
 msgid "beard"
-msgstr "борода"
+msgstr ""
 
 msgid "belly button"
-msgstr "пупок"
+msgstr ""
 
 msgid "thumb"
-msgstr "большой палец"
+msgstr ""
 
 msgid "breast"
-msgstr "грудь"
+msgstr ""
 
 msgid "nostril"
-msgstr "ноздря"
+msgstr ""
 
 msgid "nose"
-msgstr "нос"
+msgstr ""
 
 msgid "hip"
-msgstr "поясница"
+msgstr ""
 
 msgid "arm"
-msgstr "рука"
+msgstr ""
 
 msgid "eyebrow"
-msgstr "бровь"
+msgstr ""
 
 msgid "fist"
-msgstr "кулак"
+msgstr ""
 
 msgid "neck"
-msgstr "шея"
+msgstr ""
 
 msgid "wrist"
-msgstr "запястье"
+msgstr ""
 
 msgid "throat"
-msgstr "горло"
+msgstr ""
 
 msgid "eye"
-msgstr "глаз"
+msgstr ""
 
 msgid "leg"
-msgstr "нога"
+msgstr ""
 
 msgid "spine"
-msgstr "спина"
+msgstr ""
 
 msgid "ear"
-msgstr "ухо"
+msgstr ""
 
 msgid "finger"
-msgstr "палец"
+msgstr ""
 
 msgid "foot"
-msgstr "ступня"
+msgstr ""
 
 msgid "braid"
-msgstr "борода"
+msgstr ""
 
 msgid "face"
-msgstr "лицо"
+msgstr ""
 
 msgid "back"
-msgstr "спина"
+msgstr ""
 
 msgid "chin"
-msgstr "подбородок"
+msgstr ""
 
 msgid "bottom"
-msgstr "ягодицы"
+msgstr ""
 
 msgid "thigh"
-msgstr "бедро"
+msgstr ""
 
 msgid "belly"
-msgstr "живот"
+msgstr ""
 
 # people
-# "a4a_people"
 msgid "girl"
-msgstr "девушка"
+msgstr ""
 
 msgid "male"
-msgstr "парень"
+msgstr ""
 
 msgid "son"
-msgstr "сын"
-
-msgid "mates"
-msgstr "одноклассники"
+msgstr ""
 
 msgid "friends"
-msgstr "друзья"
+msgstr ""
 
 msgid "baby"
-msgstr "малыш"
+msgstr ""
 
 msgid "child"
-msgstr "ребёнок"
+msgstr ""
 
 msgid "dad"
-msgstr "папа"
+msgstr ""
 
 msgid "mom"
-msgstr "мама"
+msgstr ""
 
 msgid "twin boys"
-msgstr "близнецы"
+msgstr ""
 
 msgid "brothers"
-msgstr "братья"
+msgstr ""
 
 msgid "man"
-msgstr "мужчина"
+msgstr ""
 
 msgid "mother"
-msgstr "мать"
+msgstr ""
 
 msgid "grandfather"
-msgstr "дедушка"
+msgstr ""
 
 msgid "family"
-msgstr "семья"
+msgstr ""
 
 msgid "female"
-msgstr "женщина"
+msgstr ""
 
 msgid "wife"
-msgstr "жена"
+msgstr ""
 
 msgid "husband"
-msgstr "муж"
+msgstr ""
 
 msgid "bride"
-msgstr "невеста"
-
-msgid "madam"
-msgstr "тётя"
+msgstr ""
 
 msgid "grandmother"
-msgstr "бабушка"
+msgstr ""
 
 msgid "couple"
-msgstr "влюблённые"
-
-msgid "lad"
-msgstr "мальчик"
+msgstr ""
 
 msgid "twin girls"
-msgstr "двойняшки"
-
-msgid "tribe"
-msgstr "дикари"
+msgstr ""
 
 msgid "boy"
-msgstr "мальчик"
+msgstr ""
 
 msgid "sisters"
-msgstr "сёстры"
+msgstr ""
 
 msgid "woman"
-msgstr "женщина"
+msgstr ""
 
 msgid "lady"
-msgstr "леди"
+msgstr ""
 
 # food
-# "a4a_food"
 msgid "candy"
-msgstr "конфета"
+msgstr ""
 
 msgid "sausage"
-msgstr "сосиска"
+msgstr ""
 
 msgid "hamburger"
-msgstr "гамбургер"
+msgstr ""
 
 msgid "steak"
-msgstr "бифштекс"
+msgstr ""
 
 msgid "fudge"
-msgstr "помадка"
+msgstr ""
 
 msgid "doughnut"
-msgstr "пончик"
+msgstr ""
 
 msgid "coconut"
-msgstr "кокос"
+msgstr ""
 
 msgid "rice"
-msgstr "рис"
+msgstr ""
 
 msgid "ice cream"
-msgstr "мороженое"
+msgstr ""
 
 msgid "jelly"
-msgstr "желе"
+msgstr ""
 
 msgid "yoghurt"
-msgstr "йогурт"
+msgstr ""
 
 msgid "dessert"
-msgstr "десерт"
+msgstr ""
 
 msgid "pretzel"
-msgstr "десерт"
+msgstr ""
 
 msgid "peanut"
-msgstr "крендель"
+msgstr ""
 
 msgid "jam"
-msgstr "арахис"
+msgstr ""
 
 msgid "feast"
-msgstr "варенье"
+msgstr ""
 
 msgid "cookie"
-msgstr "курица"
+msgstr ""
 
 msgid "bacon"
-msgstr "бекон"
+msgstr ""
 
 msgid "spice"
-msgstr "специи"
+msgstr ""
 
 msgid "coffee"
-msgstr "кофе"
+msgstr ""
 
 msgid "pie"
-msgstr "пирог"
+msgstr ""
 
 msgid "lemonade"
-msgstr "лимонад"
+msgstr ""
 
 msgid "chocolate"
-msgstr "шоколад"
+msgstr ""
 
 msgid "water bottle"
-msgstr "бутылка с водой"
+msgstr ""
 
 msgid "lunch"
-msgstr "обед"
+msgstr ""
 
 msgid "ice"
-msgstr "лёд"
+msgstr ""
 
 msgid "sugar"
-msgstr "сахар"
+msgstr ""
 
 msgid "sauce"
-msgstr "соус"
+msgstr ""
 
 msgid "soup"
-msgstr "суп"
+msgstr ""
 
 msgid "juice"
-msgstr "сок"
+msgstr ""
 
 msgid "fries"
-msgstr "чипсы"
+msgstr ""
 
 msgid "cake"
-msgstr "торт"
+msgstr ""
 
 msgid "mashed potatoes"
-msgstr "пюре"
+msgstr ""
 
 msgid "tea"
-msgstr "чай"
+msgstr ""
 
 msgid "bun"
-msgstr "булка"
+msgstr ""
 
 msgid "cheese"
-msgstr "сыр"
+msgstr ""
 
 msgid "beef"
-msgstr "отбивная"
+msgstr ""
 
 msgid "sandwich"
-msgstr "бутерброд"
+msgstr ""
 
 msgid "slice"
-msgstr "ломтик"
+msgstr ""
 
 msgid "sprinkle"
-msgstr "посыпка"
+msgstr ""
 
 msgid "pizza"
-msgstr "пицца"
+msgstr ""
 
 msgid "flour"
-msgstr "мука"
+msgstr ""
 
 msgid "gum"
-msgstr "жевательная резинка"
+msgstr ""
 
 msgid "spaghetti"
-msgstr "спагетти"
+msgstr ""
 
 msgid "roast"
-msgstr "жаркое"
+msgstr ""
 
 msgid "drink[n]"
-msgstr "напиток"
+msgstr ""
 
 msgid "stew"
-msgstr "тушёное мясо"
+msgstr ""
 
 msgid "spread"
-msgstr "намазанное"
+msgstr ""
 
 msgid "meat"
-msgstr "мясо"
+msgstr ""
 
 msgid "milk"
-msgstr "молоко"
+msgstr ""
 
 msgid "meal"
-msgstr "пища"
+msgstr ""
 
 msgid "corn"
-msgstr "кукуруза"
+msgstr ""
 
 msgid "bread"
-msgstr "хлеб"
+msgstr ""
 
 msgid "walnut"
-msgstr "орех"
+msgstr ""
 
 msgid "egg"
-msgstr "яйцо"
+msgstr ""
 
 msgid "hot dog"
-msgstr "хот-дог"
+msgstr ""
 
 msgid "ham"
-msgstr "ветчина"
+msgstr ""
 
 # clothes
-# "a4a_clothes_n_accessories"
 msgid "jewellery"
-msgstr "украшение"
+msgstr ""
 
 msgid "sock"
-msgstr "носок"
+msgstr ""
 
 msgid "jacket"
-msgstr "пиджак"
+msgstr ""
 
 msgid "heel"
-msgstr "шпилька"
+msgstr ""
 
 msgid "smock"
-msgstr "пятно"
+msgstr ""
 
 msgid "shorts"
-msgstr "шорты"
+msgstr ""
 
 msgid "pocket"
-msgstr "карман"
+msgstr ""
 
 msgid "necklace"
-msgstr "ожерелье"
+msgstr ""
 
 msgid "sweatshirt"
-msgstr "свитер"
+msgstr ""
 
 msgid "uniform"
-msgstr "униформа"
+msgstr ""
 
 msgid "raincoat"
-msgstr "плащ"
+msgstr ""
 
 msgid "trousers"
-msgstr "штаны"
+msgstr ""
 
 msgid "sunglasses"
-msgstr "солнечные очки"
+msgstr ""
 
 msgid "coat"
-msgstr "куртка"
+msgstr ""
 
 msgid "pullover"
-msgstr "пулловер"
+msgstr ""
 
 msgid "shirt"
-msgstr ",блузка"
+msgstr ""
 
 msgid "sandals"
-msgstr "сандалии"
+msgstr ""
 
 msgid "suit"
-msgstr "костюм"
+msgstr ""
 
 msgid "pyjamas"
-msgstr "пижама"
+msgstr ""
 
 msgid "skirt"
-msgstr "юбка"
+msgstr ""
 
 msgid "zip"
-msgstr "молния"
+msgstr ""
 
 msgid "shoes"
-msgstr "туфли"
+msgstr ""
 
 msgid "jewel"
-msgstr "камень"
+msgstr ""
 
 msgid "tie"
-msgstr "галстук"
+msgstr ""
 
 msgid "slippers"
-msgstr "шлёпанцы"
+msgstr ""
 
 msgid "gloves"
-msgstr "перчатки"
+msgstr ""
 
 msgid "hat"
-msgstr "шляпа"
+msgstr ""
 
 msgid "sleeve"
-msgstr "рукав"
+msgstr ""
 
 msgid "cap"
-msgstr "кепка"
+msgstr ""
 
 msgid "swimming suit"
-msgstr "купальник"
+msgstr ""
 
 msgid "trainer"
-msgstr "кроссовки"
+msgstr ""
 
 msgid "vest"
-msgstr "жилет"
+msgstr ""
 
 msgid "glasses"
-msgstr "перчатки"
+msgstr ""
 
 msgid "shoelace"
-msgstr "шнурок"
+msgstr ""
 
 msgid "patch"
-msgstr "заплатка"
+msgstr ""
 
 msgid "scarf"
-msgstr "шарф"
+msgstr ""
 
 msgid "shoe"
-msgstr "ботинок"
+msgstr ""
 
 msgid "button"
-msgstr "пуговица"
+msgstr ""
 
 msgid "dress"
-msgstr "платье"
+msgstr ""
 
 msgid "sash"
-msgstr "пояс"
+msgstr ""
 
 msgid "shoe sole"
-msgstr "подошва"
+msgstr ""
 
 msgid "robe"
-msgstr "мантия"
+msgstr ""
 
 msgid "pants"
-msgstr "трусы"
+msgstr ""
 
 msgid "kimono"
-msgstr "кимоно"
+msgstr ""
 
 msgid "overalls"
-msgstr "комбинезон"
+msgstr ""
 
 # actions
-# "a4a_actions"
 msgid "lick"
-msgstr "лизать"
+msgstr ""
 
 msgid "slam"
-msgstr "забрасывать"
+msgstr ""
 
 msgid "beg"
-msgstr "молиться"
+msgstr ""
 
 msgid "fell"
-msgstr "падать"
+msgstr ""
 
 msgid "scratch"
-msgstr "царапать"
+msgstr ""
 
 msgid "touch"
-msgstr "трогать"
+msgstr ""
 
 msgid "sniff"
-msgstr "нюхать"
+msgstr ""
 
 msgid "see"
-msgstr "смотреть"
+msgstr ""
 
 msgid "climb"
-msgstr "карабкаться"
+msgstr ""
 
 msgid "dig"
-msgstr "копать"
+msgstr ""
 
 msgid "howl"
-msgstr "выть"
+msgstr ""
 
 msgid "sleep"
-msgstr "спать"
+msgstr ""
 
 msgid "explore"
-msgstr "исследовать"
+msgstr ""
 
 msgid "draw"
-msgstr "рисовать"
+msgstr ""
 
 msgid "hug"
-msgstr "обнимать"
+msgstr ""
 
 msgid "teach"
-msgstr "учить"
+msgstr ""
 
 msgid "nap"
-msgstr "дремать"
+msgstr ""
 
 msgid "clay"
-msgstr "лепить"
+msgstr ""
 
 msgid "catch"
-msgstr "ловить"
+msgstr ""
 
 msgid "clap"
-msgstr "хлопать"
+msgstr ""
 
 msgid "cry"
-msgstr "плакать"
+msgstr ""
 
 msgid "sing"
-msgstr "петь"
+msgstr ""
 
 msgid "meet"
-msgstr "встречаться"
+msgstr ""
 
 msgid "sell"
-msgstr "продавать"
+msgstr ""
 
 msgid "peck"
-msgstr "клевать"
+msgstr ""
 
 msgid "beat"
-msgstr "ударить"
+msgstr ""
 
 msgid "kneel"
-msgstr "становиться на колени"
+msgstr ""
 
 msgid "find"
-msgstr "искать"
+msgstr ""
 
 msgid "dance"
-msgstr "танцевать"
+msgstr ""
 
 msgid "cough"
-msgstr "кашлять"
+msgstr ""
 
 msgid "cut"
-msgstr "резать"
+msgstr ""
 
 msgid "think"
-msgstr "думать"
+msgstr ""
 
 msgid "bark"
-msgstr "лаять"
+msgstr ""
 
 msgid "speak"
-msgstr "говорить"
+msgstr ""
 
 msgid "cheer"
-msgstr "веселить"
+msgstr ""
 
 msgid "bake"
-msgstr "стряпать"
+msgstr ""
 
 msgid "write"
-msgstr "писать"
+msgstr ""
 
 msgid "punch"
-msgstr "бить"
+msgstr ""
 
 msgid "strum"
-msgstr "бренчать"
+msgstr ""
 
 msgid "study"
-msgstr "учиться"
+msgstr ""
 
 msgid "plow"
-msgstr "пахать"
+msgstr ""
 
 msgid "dream"
-msgstr "мечтать"
+msgstr ""
 
 msgid "post"
-msgstr "отправлять"
+msgstr ""
 
 msgid "dive"
-msgstr "нырять"
+msgstr ""
 
 msgid "whisper"
-msgstr "шептать"
+msgstr ""
 
 msgid "sob"
-msgstr "рыдать"
+msgstr ""
 
 msgid "shake"
-msgstr "трясти"
+msgstr ""
 
 msgid "feed"
-msgstr "кормить"
+msgstr ""
 
 msgid "crawl"
-msgstr "ползти"
+msgstr ""
 
 msgid "camp"
-msgstr "обосноваться"
+msgstr ""
 
 msgid "spill"
-msgstr "разливать"
+msgstr ""
 
 msgid "clean"
-msgstr "мыть"
+msgstr ""
 
 msgid "scream"
-msgstr "кричать"
+msgstr ""
 
 msgid "tear"
-msgstr "рвать"
+msgstr ""
 
 msgid "float"
-msgstr "плавать"
+msgstr ""
 
 msgid "pull"
-msgstr "тянуть"
+msgstr ""
 
 msgid "ate"
-msgstr "поесть"
+msgstr ""
 
 msgid "kiss"
-msgstr "целовать"
+msgstr ""
 
 msgid "sit"
-msgstr "сидеть"
+msgstr ""
 
 msgid "hatch"
-msgstr "вылупляться"
+msgstr ""
 
 msgid "blink"
-msgstr "мигать"
+msgstr ""
 
 msgid "hear"
-msgstr "слушать"
+msgstr ""
 
 msgid "smooch"
-msgstr "целоваться"
+msgstr ""
 
 msgid "play"
-msgstr "играть"
+msgstr ""
 
 msgid "wash"
-msgstr "мыть"
+msgstr ""
 
 msgid "chat"
-msgstr "говорить"
+msgstr ""
 
 msgid "drive"
-msgstr "вести"
+msgstr ""
 
 msgid "drink[v]"
-msgstr "пить"
+msgstr ""
 
 msgid "fly"
-msgstr "летать"
+msgstr ""
 
 msgid "juggle"
-msgstr "жонглировать"
+msgstr ""
 
 msgid "bit"
-msgstr "кусать"
+msgstr ""
 
 msgid "sweep"
-msgstr "мести"
+msgstr ""
 
 msgid "look"
-msgstr "смотреть"
+msgstr ""
 
 msgid "knit"
-msgstr "вязать"
+msgstr ""
 
 msgid "lift"
-msgstr "поднимать"
+msgstr ""
 
 msgid "fetch"
-msgstr "держать"
+msgstr ""
 
 msgid "read"
-msgstr "читать"
+msgstr ""
 
 msgid "croak"
-msgstr "квакать"
+msgstr ""
 
 msgid "stare"
-msgstr "оставаться"
+msgstr ""
 
 msgid "eat"
-msgstr "есть"
+msgstr ""
 
 # construction
-# "a4a_construction"
 msgid "lighthouse"
-msgstr "маяк"
+msgstr ""
 
 msgid "door"
-msgstr "дверь"
+msgstr ""
 
 msgid "circus"
-msgstr "цирк"
+msgstr ""
 
 msgid "church"
-msgstr "церковь"
+msgstr ""
 
 msgid "kennel"
-msgstr "конура"
+msgstr ""
 
 msgid "temple"
-msgstr "храм"
+msgstr ""
 
 msgid "smoke"
-msgstr "дым"
+msgstr ""
 
 msgid "chimney"
-msgstr "дымоход"
+msgstr ""
 
 msgid "brick"
-msgstr "кирпич"
+msgstr ""
 
 msgid "well"
-msgstr "колодец"
+msgstr ""
 
 msgid "street"
-msgstr "улица"
+msgstr ""
 
 msgid "castle"
-msgstr "замок"
+msgstr ""
 
 msgid "store"
-msgstr "магазин"
+msgstr ""
 
 msgid "staircase"
-msgstr "лестница"
+msgstr ""
 
 msgid "school"
-msgstr "школа"
+msgstr ""
 
 msgid "farm"
-msgstr "ферма"
+msgstr ""
 
 msgid "bridge"
-msgstr "мост"
+msgstr ""
 
 msgid "dam"
-msgstr "плотина"
+msgstr ""
 
 msgid "pyramid"
-msgstr "пирамида"
+msgstr ""
 
 msgid "barn"
-msgstr "кладовая"
+msgstr ""
 
 msgid "mill"
-msgstr "мельница"
+msgstr ""
 
 msgid "window"
-msgstr "окно"
+msgstr ""
 
 msgid "cabin"
-msgstr "домик"
+msgstr ""
 
 msgid "step"
-msgstr "ступенька"
+msgstr ""
 
 msgid "shop"
-msgstr "магазин"
+msgstr ""
 
 msgid "shed"
-msgstr "сарай"
+msgstr ""
 
 msgid "roof"
-msgstr "крыша"
+msgstr ""
 
 msgid "steeple"
-msgstr "колокольня"
+msgstr ""
 
 msgid "garage"
-msgstr "гараж"
+msgstr ""
 
 msgid "mosque"
-msgstr "мечеть"
+msgstr ""
 
 msgid "hospital"
-msgstr "госпиталь"
+msgstr ""
 
 msgid "tent"
-msgstr "палатка"
+msgstr ""
 
 msgid "house"
-msgstr "дом"
+msgstr ""
 
 msgid "wall"
-msgstr "стена"
+msgstr ""
 
 msgid "bank"
-msgstr "банк"
+msgstr ""
 
 msgid "shutter"
-msgstr "ставень"
+msgstr ""
 
 msgid "hut"
-msgstr "хижина"
+msgstr ""
 
 # nature
-# "a4a_nature"
 msgid "land"
-msgstr "земля"
+msgstr ""
 
 msgid "cliff"
-msgstr "утёс"
+msgstr ""
 
 msgid "hill"
-msgstr "холм"
+msgstr ""
 
 msgid "canyon"
-msgstr "каньон"
+msgstr ""
 
 msgid "rock"
-msgstr "камень"
+msgstr ""
 
 msgid "sea"
-msgstr "море"
+msgstr ""
 
 msgid "lake"
-msgstr "озеро"
+msgstr ""
 
 msgid "coast"
-msgstr "пляж"
+msgstr ""
 
 msgid "shore"
-msgstr "побережье"
+msgstr ""
 
 msgid "mountain"
-msgstr "гора"
+msgstr ""
 
 msgid "pond"
-msgstr "пруд"
+msgstr ""
 
 msgid "peak"
-msgstr "вершина"
+msgstr ""
 
 msgid "lava"
-msgstr "лава"
+msgstr ""
 
 msgid "cave"
-msgstr "пещера"
+msgstr ""
 
 msgid "dune"
-msgstr "дюна"
+msgstr ""
 
 msgid "island"
-msgstr "остров"
+msgstr ""
 
 msgid "forest"
-msgstr "лес"
+msgstr ""
 
 msgid "desert"
-msgstr "пустыня"
+msgstr ""
 
 msgid "iceberg"
-msgstr "айсберг"
+msgstr ""
 
 # jobs
-# "a4a_jobs"
 msgid "clown"
-msgstr "клоун"
+msgstr ""
 
 msgid "engineer"
-msgstr "инженер"
-
-msgid "priest"
-msgstr "священник"
+msgstr ""
 
 msgid "vet"
-msgstr "ветеринар"
+msgstr ""
 
 msgid "judge"
-msgstr "судья"
+msgstr ""
 
 msgid "chef"
-msgstr "повар"
+msgstr ""
 
 msgid "athlete"
-msgstr "атлет"
+msgstr ""
 
 msgid "librarian"
-msgstr "библиотекарь"
+msgstr ""
 
 msgid "juggler"
-msgstr "жонглёр"
+msgstr ""
 
 msgid "police officer"
-msgstr "полицейский"
+msgstr ""
 
 msgid "plumber"
-msgstr "водопроводчик"
+msgstr ""
 
 msgid "badge"
-msgstr "жетонщик"
+msgstr ""
 
 msgid "queen"
-msgstr "королева"
+msgstr ""
 
 msgid "farmer"
-msgstr "фермер"
+msgstr ""
 
 msgid "magician"
-msgstr "фокусник"
+msgstr ""
 
 msgid "knight"
-msgstr "рыцарь"
+msgstr ""
 
 msgid "doctor"
-msgstr "доктор"
+msgstr ""
 
 msgid "bricklayer"
-msgstr "каменщик"
+msgstr ""
 
 msgid "cleaner"
-msgstr "уборщица"
+msgstr ""
 
 msgid "teacher"
-msgstr "учитель"
+msgstr ""
 
 msgid "hunter"
-msgstr "охотник"
+msgstr ""
 
 msgid "soldier"
-msgstr "солдат"
+msgstr ""
 
 msgid "musician"
-msgstr "музыкант"
+msgstr ""
 
 msgid "lawyer"
-msgstr "юрист"
+msgstr ""
 
 msgid "fisherman"
-msgstr "рыбак"
+msgstr ""
 
 msgid "princess"
-msgstr "принцесса"
+msgstr ""
 
 msgid "firefighter"
-msgstr "пожарник"
+msgstr ""
 
 msgid "nun"
-msgstr "монахиня"
+msgstr ""
 
 msgid "pirate"
-msgstr "пират"
+msgstr ""
 
 msgid "cowboy"
-msgstr "ковбой"
+msgstr ""
 
 msgid "electrician"
-msgstr "электрик"
+msgstr ""
 
 msgid "nurse"
-msgstr "няня"
+msgstr ""
 
 msgid "king"
-msgstr "король"
+msgstr ""
 
 msgid "president"
-msgstr "президент"
+msgstr ""
 
 msgid "office worker"
-msgstr "клерк"
+msgstr ""
 
 msgid "carpenter"
-msgstr "плотник"
+msgstr ""
 
 msgid "jockey"
-msgstr "жокей"
+msgstr ""
 
 msgid "worker"
-msgstr "рабочий"
+msgstr ""
 
 msgid "mechanic"
-msgstr "механик"
+msgstr ""
 
 msgid "pilot"
-msgstr "пилот"
+msgstr ""
 
 msgid "actor"
-msgstr "актёр"
+msgstr ""
 
 msgid "cook"
-msgstr "повар"
+msgstr ""
 
 msgid "student"
-msgstr "студент"
+msgstr ""
 
 msgid "butcher"
-msgstr "мясник"
+msgstr ""
 
 msgid "accountant"
-msgstr "бухгалтер"
+msgstr ""
 
 msgid "prince"
-msgstr "принц"
-
-msgid "pope"
-msgstr "поп"
+msgstr ""
 
 msgid "sailor"
-msgstr "моряк"
+msgstr ""
 
 msgid "boxer"
-msgstr "боксёр"
+msgstr ""
 
 msgid "ballet dancer"
-msgstr "балерина"
+msgstr ""
 
 msgid "coach"
-msgstr "тренер"
+msgstr ""
 
 msgid "astronaut"
-msgstr "астронавт"
+msgstr ""
 
 msgid "painter"
-msgstr "художник"
-
-msgid "anaesthesiologist"
-msgstr "анестезиолог"
+msgstr ""
 
 msgid "scientist"
-msgstr "учёный"
+msgstr ""
 
 # fruits and vegetables
-# "a4a_fruit_n_veg"
-
 msgid "carrot"
-msgstr "морковь"
+msgstr ""
 
 msgid "blackberries"
-msgstr "смородина"
+msgstr ""
 
 msgid "celery"
-msgstr "сельдерей"
+msgstr ""
 
 msgid "turnip"
-msgstr "редька"
+msgstr ""
 
 msgid "cacao"
-msgstr "какао"
+msgstr ""
 
 msgid "peach"
-msgstr "персик"
+msgstr ""
 
 msgid "melon"
-msgstr "дыня"
+msgstr ""
 
 msgid "grapefruit"
-msgstr "грейпфрут"
+msgstr ""
 
 msgid "broccoli"
-msgstr "брокколи"
+msgstr ""
 
 msgid "grapes"
-msgstr "виноград"
+msgstr ""
 
 msgid "spinach"
-msgstr "шпинат"
+msgstr ""
 
 msgid "fig"
-msgstr "инжир"
+msgstr ""
 
 msgid "kernel"
-msgstr "косточка"
+msgstr ""
 
 msgid "radish"
-msgstr "редис"
+msgstr ""
 
 msgid "tomato"
-msgstr "помидор"
+msgstr ""
 
 msgid "kiwi"
-msgstr "киви"
+msgstr ""
 
 msgid "asparagus"
-msgstr "спаржа"
+msgstr ""
 
 msgid "olives"
-msgstr "оливки"
+msgstr ""
 
 msgid "cucumbers"
-msgstr "огурцы"
+msgstr ""
 
 msgid "beans"
-msgstr "бобы"
+msgstr ""
 
 msgid "strawberry"
-msgstr "клубника"
+msgstr ""
 
 msgid "peppers"
-msgstr "перцы"
+msgstr ""
 
 msgid "raspberry"
-msgstr "малина"
+msgstr ""
 
 msgid "apricot"
-msgstr "абрикос"
+msgstr ""
 
 msgid "potatoes"
-msgstr "картофель"
+msgstr ""
 
 msgid "peas"
-msgstr "горох"
+msgstr ""
 
 msgid "cabbage"
-msgstr "капуста"
+msgstr ""
 
 msgid "cherries"
-msgstr "вишни"
+msgstr ""
 
 msgid "squash"
-msgstr "тыква"
+msgstr ""
 
 msgid "blueberries"
-msgstr "ежевика"
+msgstr ""
 
 msgid "pear"
-msgstr "груша"
+msgstr ""
 
 msgid "orange"
-msgstr "апельсин"
+msgstr ""
 
 msgid "pumpkin"
-msgstr "тыква"
+msgstr ""
 
 msgid "avocado"
-msgstr "авокадо"
+msgstr ""
 
 msgid "garlic"
-msgstr "чеснок"
+msgstr ""
 
 msgid "onion"
-msgstr "лук"
+msgstr ""
 
 msgid "apple"
-msgstr "яблоко"
+msgstr ""
 
 msgid "lime"
-msgstr "лайм"
+msgstr ""
 
 msgid "cauliflower"
-msgstr "цветная капуста"
+msgstr ""
 
 msgid "mango"
-msgstr "манго"
+msgstr ""
 
 msgid "lettuce"
-msgstr "салат"
+msgstr ""
 
 msgid "lemon"
-msgstr "лимон"
+msgstr ""
 
 msgid "aubergine"
-msgstr "баклажан"
+msgstr ""
 
 msgid "artichokes"
-msgstr "артишоки"
+msgstr ""
 
 msgid "plums"
-msgstr "сливы"
+msgstr ""
 
 msgid "leek"
-msgstr "лук"
+msgstr ""
 
 msgid "bananas"
-msgstr "бананы"
+msgstr ""
 
 msgid "papaya"
-msgstr "папайа"
+msgstr ""
 
 # transport
-# "a4a_transport"
 msgid "sail"
-msgstr "яхта"
+msgstr ""
 
 msgid "taxi"
-msgstr "такси"
+msgstr ""
 
 msgid "car"
-msgstr "автомобиль"
+msgstr ""
 
 msgid "bike"
-msgstr "велосипед"
+msgstr ""
 
 msgid "raft"
-msgstr "плот"
+msgstr ""
 
 msgid "pedal"
-msgstr "педаль"
+msgstr ""
 
 msgid "bus"
-msgstr "автобус"
+msgstr ""
 
 msgid "handlebar"
-msgstr "руль"
+msgstr ""
 
 msgid "boat"
-msgstr "лодка"
+msgstr ""
 
 msgid "truck"
-msgstr "пикап"
+msgstr ""
 
 msgid "sleigh"
-msgstr "сани"
+msgstr ""
 
 msgid "carpet"
-msgstr "ковёр"
+msgstr ""
 
 msgid "motorcycle"
-msgstr "мотоцикл"
+msgstr ""
 
 msgid "train"
-msgstr "поезд"
+msgstr ""
 
 msgid "ship"
-msgstr "корабль"
+msgstr ""
 
 msgid "van"
-msgstr "фургон"
+msgstr ""
 
 msgid "canoe"
-msgstr "каноэ"
+msgstr ""
 
 msgid "rocket"
-msgstr "ракета"
+msgstr ""
 
 msgid "mast"
-msgstr "мачта"
+msgstr ""
 
 msgid "sledge"
-msgstr "санки"
+msgstr ""
 
 msgid "bicycle"
-msgstr "велосипед"
+msgstr ""
 
-
-#~ msgid "green apple"
-#~ msgid_plural "green apples"
-#~ msgstr[0] "зелёное яблоко"
-#~ msgstr[1] "зелёных яблока"
-#~ msgstr[2] "зелёных яблок"
-
-#~ msgid "Cube"
-#~ msgstr "Куб"
-
-#~ msgid "Square Prism"
-#~ msgstr "Квадратная призма"
-
-#~ msgid "Triangular Prism"
-#~ msgstr "Треугольная призма"
-
-#~ msgid "Square Pyramid"
-#~ msgstr "Квадратная пирамида"
-
-#~ msgid "Triangular Pyramid"
-#~ msgstr "Треугольная пирамида"
-
-#~ msgid "Cylinder"
-#~ msgstr "Цилиндр"
-
-#~ msgid "Cone"
-#~ msgstr "Конус"
-
-#~ msgid "Torus"
-#~ msgstr "Тор"
-
-#~ msgid "Guest"
-#~ msgstr "Гость"
-
-#~ msgid "Log in:"
-#~ msgstr "Войти:"
-
-#~ msgid "remember me"
-#~ msgstr "запомнить"
-
-#~ msgid "Add new user:"
-#~ msgstr "Добавить нового пользователя:"
-
-#~ msgid "confirm password:"
-#~ msgstr "подтвердить пароль:"
-
-#~ msgid "Register new user"
-#~ msgstr "Зарегистрировать"
-
-#~ msgid "Administrator Login:"
-#~ msgstr "Войти под администратором:"
-
-#~ msgid "Please select a user from the list."
-#~ msgstr "Пожалуйста, выберите пользователя из списка."
-
-#, python-format
-#~ msgid "%s deleted from database."
-#~ msgstr "%s удалён из базы."
-
-#~ msgid "Failed to delete the user."
-#~ msgstr "Не удалось удалить пользователя."
-
-#~ msgid "Preferences"
-#~ msgstr "Предпочтения:"
-
-#~ msgid "switch to full screen after login"
-#~ msgstr "переключаться в полноэкранный режим после входа"
-
-#~ msgid "allow adding new users on login screen"
-#~ msgstr "позволить добавлять новых пользователей в экране входа"
-
-#~ msgid "display languages with uncompleted translations"
-#~ msgstr "отображать языки с незавершёнными переводами"
-
-#~ msgid "require password to log in"
-#~ msgstr "требовать пароль на вход"
-
-#~ msgid "require password to access admin area"
-#~ msgstr "требовать пароль для доступа к зоне администратора"
-
-#~ msgid "Update admin's password:"
-#~ msgstr "Обновить пароль администратора:"
-
-#~ msgid "previous password:"
-#~ msgstr "предыдущий пароль:"
-
-#~ msgid "new password:"
-#~ msgstr "новый пароль:"
-
-#~ msgid "confirm new password:"
-#~ msgstr "подтвердить новый пароль:"
-
-#~ msgid "Create admin's account:"
-#~ msgstr "Создать аккаунт администратора:"
-
-#~ msgid "admin's user name:"
-#~ msgstr "имя администратора:"
-
-#~ msgid "admin's password:"
-#~ msgstr "пароль администратора:"
-
-#~ msgid "confirm admin's password:"
-#~ msgstr "подтвердить пароль администратора:"
-
-#~ msgid "Please enter user name (at least 3 characters long)"
-#~ msgstr "Пожалуйста, введите имя пользователя (не менее 3 символов)"
-
-#~ msgid "Please enter password (at least 4 characters long)"
-#~ msgstr "Пожалуйста, введите пароль (не менее 4 символов)"
-
-#~ msgid "This username doesn't exist."
-#~ msgstr "Такой пользователь не существует"
-
-#~ msgid "Passwords don't match"
-#~ msgstr "Пароли не совпадают"
-
-#, python-format
-#~ msgid "%s added"
-#~ msgstr "%s добавлен"
-
-#~ msgid "This user name already exists, please choose a different one"
-#~ msgstr "Такое имя пользователя уже существует, пожалуйста, выберите другое"
-
-#~ msgid "Admin's password has been updated"
-#~ msgstr "Пароль администратора был обновлён"
-
-#~ msgid "ERROR: This operation is not allowed at this point"
-#~ msgstr "ОШИБКА: В этом месте такая операция не позволяется"
-
-#~ msgid "Please enter previous password (at least 4 characters long)"
-#~ msgstr "Пожалуйста, введите предыдущий пароль (не менее 4 символов)"
-
-#~ msgid "Please enter new password (at least 4 characters long)"
-#~ msgstr "Пожалуйста, введите новый пароль (не менее 4 символов)"
-
-#~ msgid "Previous password doesn't seem to be in the database"
-#~ msgstr "Кажется, предыдущего пароля нет в базе"
-
-#~ msgid "Registered:"
-#~ msgstr "Зарегистрирован:"
-
-#~ msgid "Last login:"
-#~ msgstr "Последний вход:"
-
-#~ msgid "(Log out)"
-#~ msgstr "(Выйти)"
-
-#~ msgid "Addition Table"
-#~ msgstr "Таблица сложения"
-
-#~ msgid "Hello"
-#~ msgstr "Привет"
-
-#~ msgid "Welcome back in the game."
-#~ msgstr "Добро пожаловать в игру."
-
-#~ msgid "Translations"
-#~ msgstr "Переводы"
-
-#~ msgid "Info & Settings"
-#~ msgstr "Информация и параметры"
-
-#~ msgid "Keyboard & Mouse"
-#~ msgstr "Клавиатура и мышь"
-
-#~ msgid "Learn New Words"
-#~ msgstr "Учите новые слова"
-
-#~ msgid "Basic Operations - Exercises"
-#~ msgstr "Основные операции - упражнения"
-
-#~ msgid "Sorting and Comparing"
-#~ msgstr "Сортировка и сравнение"
-
-#~ msgid "Geometry and Shape Recognition"
-#~ msgstr "Геометрия, сравнение фигур"
-
-#~ msgid "Art and Colour"
-#~ msgstr "Художество и цвет"
-
-#~ msgid "Memory"
-#~ msgstr "Память"
-
-#~ msgid "Multiplayer Games"
-#~ msgstr "Многопользовательские игры"
-
-#~ msgid "About."
-#~ msgstr "О программе."
-
-#~ msgid "Game info..."
-#~ msgstr "Информация об игре..."
-
-#~ msgid "Hit the Mole"
-#~ msgstr "Поймайте крота"
-
-#~ msgid "Learn Letters with Flashcards"
-#~ msgstr "Учите буквы по карточкам"
-
-#~ msgid "Learn to Write"
-#~ msgstr "Учитесь писать"
-
-#~ msgid "Complete the ABC"
-#~ msgstr "Заполните алфавит"
-
-#~ msgid "Your language"
-#~ msgstr "Русский"
-
-#~ msgid "Sorting Letters"
-#~ msgstr "Сортировка букв"
-
-#~ msgid "Lowercase Letters"
-#~ msgstr "Строчные буквы"
-
-#~ msgid "Uppercase Letters"
-#~ msgstr "Прописные буквы"
-
-#~ msgid "Word Builder"
-#~ msgstr "Словопостроитель"
-
-#~ msgid "Word Maze"
-#~ msgstr "Словесный лабиринт"
-
-#~ msgid "Collect all letters in the right order"
-#~ msgstr "Соберите все буквы в правильном порядке"
-
-#~ msgid "Word Maze + 4"
-#~ msgstr "Словесный лабиринт + 4"
-
-#~ msgid "Learn to Count"
-#~ msgstr "Учитесь считать"
-
-#~ msgid "Basic Addition"
-#~ msgstr "Сложение"
-
-#~ msgid "Basic Subtraction"
-#~ msgstr "Вычитание"
-
-#~ msgid "Plus or Minus"
-#~ msgstr "Плюс или минус"
-
-#~ msgid "Multiplication Table"
-#~ msgstr "Таблица умножения"
-
-#~ msgid "Find the product"
-#~ msgstr "Найдите произведение"
-
-#~ msgid "Find the multiplier"
-#~ msgstr "Найдите множитель"
-
-#~ msgid "Division"
-#~ msgstr "Деление"
-
-#~ msgid "Sorting Numbers"
-#~ msgstr "Сортировка чисел"
-
-#~ msgid "Number Comparison"
-#~ msgstr "Сравнение чисел"
-
-#~ msgid "Addition & Subtraction"
-#~ msgstr "Сложение и вычитание"
-
-#~ msgid "Comparison"
-#~ msgstr "Сравнение"
-
-#~ msgid "Fractions"
-#~ msgstr "Обыкновенные дроби"
-
-#~ msgid "Decimal Fractions"
-#~ msgstr "Десятичные дроби"
-
-#~ msgid "Even or Odd"
-#~ msgstr "Чётные или нечётные числа"
-
-#~ msgid "Solids"
-#~ msgstr "Геометрические телa"
-
-#~ msgid "Solid Geometry with Flashcards"
-#~ msgstr "Пространственная геометрия по карточкам"
-
-#~ msgid "help me find my shadow"
-#~ msgstr "Помогите мне найти мою тень"
-
-#~ msgid "Colour Matching"
-#~ msgstr "Соответствие цветов"
-
-#~ msgid "label the colours"
-#~ msgstr "Названия цветов"
-
-#~ msgid "Follow the Arrows"
-#~ msgstr "Следуйте по стрелкам"
-
-#~ msgid "remember the directions"
-#~ msgstr "Запоминайте направления"
-
-#~ msgid "Photographic Memory"
-#~ msgstr "Фотографическая память"
-
-#~ msgid "Automatic Levels"
-#~ msgstr "Автоматические уровни"
-
-#~ msgid "Mouse Maze"
-#~ msgstr "Мышиный лабиринт"
-
-#~ msgid "Let's have some cheese"
-#~ msgstr "Дайте мышке немного сыра"
-
-#~ msgid "Sheep Maze"
-#~ msgstr "Овечий лабиринт"
-
-#~ msgid "Find the rest of the herd"
-#~ msgstr "Найдите остальное стадо"
-
-#~ msgid "Connect"
-#~ msgstr "Соединить"
-
-#~ msgid "Balloons with threads"
-#~ msgstr "Воздушные шары с нитками"
-
-#~ msgid "Fifteen"
-#~ msgstr "Пятнашки"
-
-#~ msgid "With a Twist"
-#~ msgstr "С завихрением"
-
-#~ msgid ""
-#~ "Drag the slider up or down so that the right sign is in the red square."
-#~ msgstr ""
-#~ "Перетащите ползунок вверх или вниз так, чтобы правильный знак оказался в "
-#~ "красном квадрате."
-
-#~ msgid "Take your sheep to the rest of the herd."
-#~ msgstr "Приведите овцу к остальному стаду."
-
-#~ msgid "Check the shopping list and drag all needed items into the basket."
-#~ msgstr ""
-#~ "Проверьте список покупок и перетащите все необходимые предметы в корзину."
-
-#~ msgid ""
-#~ "Drag one of the <, > or = (lesser, greater or equal) to the red square."
-#~ msgstr ""
-#~ "Перетащите один из <, > или = (меньше, больше или равно) в красный "
-#~ "квадрат."
-
-#~ msgid "Drag one of the lesser, greater or equal to the red square."
-#~ msgstr "Перетащите один из меньше, больше или равно в красный квадрат."
-
-#~ msgid "Rearrange the numbers so they are in the right order"
-#~ msgstr "Переставьте цифры, чтобы они были в правильном порядке"
-
-#~ msgid "Complete the abc using the letters above."
-#~ msgstr "Заполните алфавит с помощью букв"
-
-#~ msgid "Write a word:"
-#~ msgstr "Напишите слово:"
-
-#~ msgid "Build the following word using the letters below."
-#~ msgstr "Постройте следующее слово, используя приведённые ниже буквы."
-
-#~ msgid "Find and separate even numbers from odd numbers."
-#~ msgstr ""
-#~ "Найдите и отделите чётные числа от нечётных чисел в указанной "
-#~ "последовательности."
-
-#~ msgid "Rearrange the letters so they are in the alphabetical order."
-#~ msgstr "Переставьте буквы, чтобы они были в алфавитном порядке."
-
-#~ msgid "Rearrange the numbers so they are in the ascending order."
-#~ msgstr "Переставьте цифры, чтобы они были в порядке возрастания."
-
-#~ msgid "Please try again."
-#~ msgstr "Пожалуйста, попробуйте ещё раз."
-
-#~ msgid "Sorry! It is wrong."
-#~ msgstr "Извините! Это неправильно."
-
-#~ msgid "Perfect! Task solved!"
-#~ msgstr "Великолепно! Задача решена!"
-
-#~ msgid "You need to work a little bit harder next time."
-#~ msgstr "В следующий раз постарайтесь работать лучше."
-
-#~ msgid "Game Over!"
-#~ msgstr "Игра проиграна!"
-
-#~ msgid "Congratulations! You have completed all tasks in this game."
-#~ msgstr "Поздравляем! Вы выполнили все задачи в этой игре."
-
-#~ msgid "Great job!"
-#~ msgstr "Отличная работа!"
-
-#~ msgid "Perfect!!!"
-#~ msgstr "Великолепно!"
-
-#~ msgid "Awesome!"
-#~ msgstr "Потрясающе!"
-
-#~ msgid "Fantastic job!"
-#~ msgstr "Фантастическая работа!"
-
-#~ msgid "Well done!"
-#~ msgstr "Молодец!"
-
-#~ msgid "Perfect! Level completed!"
-#~ msgstr "Великолепно! Уровень завершён!"
-
-#~ msgid "surface area:"
-#~ msgstr "площадь поверхности:"
-
-#~ msgid "volume:"
-#~ msgstr "объём"
-
-#~ msgid "Perfect!"
-#~ msgstr "Великолепно!"
-
-#~ msgid "divided by"
-#~ msgstr "делённое на"
-
-#~ msgid "equals"
-#~ msgstr "равно"
-
-#~ msgid "Even"
-#~ msgstr "Чётные"
-
-#~ msgid "white"
-#~ msgstr "Белый"
-
-#~ msgid "grey"
-#~ msgstr "Серый"
-
-#~ msgid "red"
-#~ msgstr "Красный"
-
-#~ msgid "orange [color]"
-#~ msgstr "Оранжевый"
-
-#~ msgid "yellow"
-#~ msgstr "Жёлтый"
-
-#~ msgid "green"
-#~ msgstr "Зелёный"
-
-#~ msgid "sea green"
-#~ msgstr "Морской волны"
-
-#~ msgid "blue"
-#~ msgstr "Синий"
-
-#~ msgid "navy"
-#~ msgstr "Тёмно-синий"
-
-#~ msgid "purple"
-#~ msgstr "Фиолетовый"
-
-# msgid "violet"
-# msgstr "Лиловый"
-#~ msgid "magenta"
-#~ msgstr "Пурпурный"
-
-#~ msgid "pink"
-#~ msgstr "Розовый"
-
-#~ msgid "aqua"
-#~ msgstr "Голубой"
-
-#~ msgid "Rainbow Keyboard"
-#~ msgstr "Радужная клавиатура"
-
-#~ msgid "Touch Typing Tutor"
-#~ msgstr "Обучение слепой печати"
-
-#~ msgid "English Alphabet"
-#~ msgstr "Английский алфавит"
-
-#~ msgid "Mixing Colours for Painting"
-#~ msgstr "Смешение цветов для рисования"
-
-#~ msgid "Mix red, yellow, blue, black and white paint"
-#~ msgstr "Смешайте красную, жёлтую, синюю, чёрную и белую краски"
-
-#~ msgid "Additive Colour Mixing - Light"
-#~ msgstr "Аддитивное смешение цветов - свет"
-
-#~ msgid "Mix red, green and blue light to get other colours"
-#~ msgstr "Смешайте красный, зелёный и синий свет, получив другие цвета"
-
-#~ msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
-#~ msgstr "Субтрактивное смешение цветов - краски, красители, чернила"
-
-#~ msgid "Mix cyan, magenta and yellow paint to get other colours"
-#~ msgstr "Смешайте голубую, пурпурную и жёлтую краску, получив другие цвета"
-
-#~ msgid "Find the colour of the circle in the middle"
-#~ msgstr "Найдите цвет круга"
-
-#~ msgid "Adjust the amount of cyan, magenta and yellow paint"
-#~ msgstr "Отрегулируйте количество голубой, пурпурной и жёлтой краски"
-
-#~ msgid "Adjust the intensity of red, green and blue light"
-#~ msgstr "Отрегулируйте интенсивность красного, зелёного и синего света"
-
-#~ msgid "brush size"
-#~ msgstr "размер кисти"
-
-#~ msgid "Noughts and Crosses 2"
-#~ msgstr "Крестики-нолики 2"
-
-#~ msgid "Noughts and Crosses 3"
-#~ msgstr "Крестики-нолики 3"
-
-#~ msgid "Get as many lines of 3 as possible to win"
-#~ msgstr ""
-#~ "Чтобы победить, сделайте тройные линии, насколько это будет возможно"
-
-#~ msgid "Draw"
-#~ msgstr "Ничья"
-
-#~ msgid "User Name"
-#~ msgstr "Имя пользователя"
-
-#~ msgid "Match Animals"
-#~ msgstr "Соответствие животных"
-
-#~ msgid "Match Animals - Memory Game"
-#~ msgstr "Соответствие животных"
-
-#~ msgid "Match Fruits - Memory Game"
-#~ msgstr "Соответствие фруктов"
-
-#~ msgid "Match Vegetables - Memory Game"
-#~ msgstr "Соответствие овощей"
-
-#~ msgid "Match Numbers - Memory Game"
-#~ msgstr "Соответствие цифр"
-
-#~ msgid "Find matching pairs of the same image"
-#~ msgstr "Найдите пары одинаковых изображений"
-
-#~ msgid "Image Slider"
-#~ msgstr "Разрезанные изображения"
-
-#~ msgid "Animal Slider"
-#~ msgstr "Животные"
-
-#~ msgid "Fruit Slider"
-#~ msgstr "Фрукты"
-
-#~ msgid "Number Slider"
-#~ msgstr "Цифры"
-
-#~ msgid "Fraction Groups"
-#~ msgstr "Обыкновенные дроби"
-
-#~ msgid "Percentages"
-#~ msgstr "Проценты"
-
-#~ msgid "Ratios"
-#~ msgstr "Отношения"
-
-#~ msgid "Match fraction charts on the right to the ones on the left"
-#~ msgstr "Установите соответствие дробей справа и дробей слева"
-
-#~ msgid ""
-#~ "Match fraction charts and fractions on the right to the fraction charts "
-#~ "on the left"
-#~ msgstr "Установите соответствие дробей справа дробям слева"
-
-#~ msgid "Match fraction charts to the fractions on the left"
-#~ msgstr "Установите соответствие дробей справа дробям слева"
-
-#~ msgid ""
-#~ "Match fraction charts, fractions and decimal fractions on the right to "
-#~ "their percentage representations"
-#~ msgstr ""
-#~ "Установите соответствие дробей и десятичных дробей справа их процентному "
-#~ "представлению слева"
-
-#~ msgid ""
-#~ "Match charts to the ratios on the left. Ratios are expressed as ratio of "
-#~ "coloured pieces to white pieces"
-#~ msgstr ""
-#~ "Установите соответствие отношений слева отношениям справа. Отношения "
-#~ "показаны как отношения цветных частей к белым частям"
-
-#~ msgid "Maths Matching Game"
-#~ msgstr "Математическая логическая игра"
-
-#~ msgid "Multiplication"
-#~ msgstr "Умножение"
-
-#~ msgid ""
-#~ "Check for newer version, report bugs, discuss, translate or review this "
-#~ "project at:"
-#~ msgstr ""
-#~ "Проверьте новую версию, сообщите о переводах, ошибках, идеях на сайте "
-#~ "проекта:"
-
-#~ msgid "Match numbers to their spelling"
-#~ msgstr "Сопоставьте цифры их написанию словами"
-
-#~ msgid "Find all matching animals"
-#~ msgstr "Найдите всех соответствующих животных"
-
-#~ msgid "Match animals to their shadows"
-#~ msgstr "Соответствие животных их теням"
-
-#, python-format
-#~ msgid "Shape to draw: %s"
-#~ msgstr "Нарисовать фигуру: %s"
-
-#, python-format
-#~ msgid ""
-#~ "such that lengths of its bases are equal to %d and %d and height to %d"
-#~ msgstr "так, чтобы длины оснований были равны %d и %d, а высота %d"
-
-#, python-format
-#~ msgid "such that lengths of its sides are equal to %d"
-#~ msgstr "так, чтобы длины сторон были равны %d"
-
-#, python-format
-#~ msgid "such that lengths of its sides are equal to %d and %d"
-#~ msgstr "так, чтобы длины сторон были равны %d и %d"
-
-#, python-format
-#~ msgid ""
-#~ "such that lengths of its 2 parallel bases are equal to %d and height to %d"
-#~ msgstr ""
-#~ "так, чтобы длины двух параллельных оснований были равны %d, а высота %d"
-
-#, python-format
-#~ msgid "such that length of its base is equal to %d and height to %d"
-#~ msgstr "так, чтобы длина основания была равна %d, а высота %d"
-
-#, python-format
-#~ msgid "such that lengths of its catheti are equal to %d and %d"
-#~ msgstr "так, чтобы длины катетов были равны %d и %d"
-
-#, python-format
-#~ msgid "such that lengths of both of its catheti are equal to %d"
-#~ msgstr "так, чтобы длины обоих катетов были равны %d"
-
-#, python-format
-#~ msgid "such that length of its hypotenuse is equal to %d"
-#~ msgstr "так, чтобы длина гипотенузы была равна %d"
-
-#, python-format
-#~ msgid "such that length of one of its sides is equal to %d and height to %d"
-#~ msgstr "так, чтобы длина одной из сторон была равна %d, а высота %d"
-
-#, python-format
-#~ msgid "such that length of its radius is equal to %d"
-#~ msgstr "так, чтобы длина радиуса была равна %d"
-
-#~ msgid "Quadrilateral"
-#~ msgstr "Четырёхугольник"
-
-#~ msgid "Trapezium "
-#~ msgstr "Трапеция "
-
-#~ msgid "Triangle"
-#~ msgstr "Треугольник"
-
-#~ msgid "Ouch... squished quadrilateral"
-#~ msgstr "Ой... Сплющенный четырехугольник"
-
-#~ msgid "Right isosceles triangle"
-#~ msgstr "Прямой равнобедренный треугольник"
-
-#~ msgid "Obtuse isosceles triangle"
-#~ msgstr "Тупой равнобедренный треугольник"
-
-#~ msgid "Acute isosceles triangle"
-#~ msgstr "Острый равнобедренный треугольник"
-
-#~ msgid "Ouch... squished triangle"
-#~ msgstr "Ой... Сплющенный треугольник"
-
-#~ msgid "Triangle? Well, not really..."
-#~ msgstr "Треугольник? Не очень похоже..."
-
-#~ msgid "Test yourself"
-#~ msgstr "Проверьте себя"
-
-#~ msgid "Clock"
-#~ msgstr "Часы"
-
-#~ msgid "learn to read the time"
-#~ msgstr "научитесь читать время"
-
-#~ msgid "What time is it?"
-#~ msgstr "Сколько времени?"
-
-#~ msgid "Click again to exit"
-#~ msgstr "Нажмите ещё раз для выхода"
-
-#~ msgid "Type your answer and hit enter"
-#~ msgstr "Введите Ваш ответ и нажмите Enter"
-
-#~ msgid "Turn the clock hands and see what happens."
-#~ msgstr "Поверните стрелки часов и посмотрите, что произойдёт."
-
-#~ msgid "Let's see what shapes you can draw"
-#~ msgstr "Давайте посмотрим, какие фигуры вы умеете рисовать"
-
-#~ msgid "Time in text version only"
-#~ msgstr "Время, написанное только словами"
-
-#~ msgid "Columnar addition"
-#~ msgstr "Сложение столбиком"
-
-#~ msgid "Columnar subtraction"
-#~ msgstr "Вычитание столбиком"
-
-#~ msgid "Long multiplication"
-#~ msgstr "Длинное умножение"
-
-#~ msgid "Long division"
-#~ msgstr "Длинное деление"
-
-#~ msgid "borrow 10"
-#~ msgstr "занять 10"
-
-#~ msgid "Start >>"
-#~ msgstr "Старт >>"
-
-#~ msgid "Next example >>"
-#~ msgstr "Следующий пример >>"
-
-#~ msgid "Next step >>"
-#~ msgstr "Следующий шаг >>"
-
-#~ msgid "Do it yourself"
-#~ msgstr "Сделайте это сами"
-
-#~ msgid "Ratio"
-#~ msgstr "Отношение"
-
-#~ msgid "Working with large numbers"
-#~ msgstr "Работа с большими цифрами"
-
-#~ msgid "rewrite "
-#~ msgstr "переписать "
-
-#~ msgid "result"
-#~ msgstr "результат"
-
-#~ msgid "Add some red"
-#~ msgstr "ещё красного"
-
-#~ msgid "Add some green"
-#~ msgstr "ещё зелёного"
-
-#~ msgid "Add some blue"
-#~ msgstr "ещё синего"
-
-#~ msgid "Add some cyan"
-#~ msgstr "ещё голубого"
-
-#~ msgid "Add some magenta"
-#~ msgstr "ещё пурпурного"
-
-#~ msgid "Add some yellow"
-#~ msgstr "ещё жёлтого"
-
-#~ msgid "Too much red"
-#~ msgstr "поменьше красного"
-
-#~ msgid "Too much green"
-#~ msgstr "поменьше зелёного"
-
-#~ msgid "Too much blue"
-#~ msgstr "поменьше синего"
-
-#~ msgid "Too much cyan"
-#~ msgstr "поменьше голубого"
-
-#~ msgid "Too much magenta"
-#~ msgstr "поменьше пурпурного"
-
-#~ msgid "Too much yellow"
-#~ msgstr "поменьше жёлтого"
-
-#~ msgid "red is spot on"
-#~ msgstr "красного нормально"
-
-#~ msgid "green is spot on"
-#~ msgstr "зелёного нормально"
-
-#~ msgid "blue is spot on"
-#~ msgstr "синего нормально"
-
-#~ msgid "cyan is spot on"
-#~ msgstr "голубого нормально"
-
-#~ msgid "magenta is spot on"
-#~ msgstr "пурпурного нормально"
-
-#~ msgid "yellow is spot on"
-#~ msgstr "жёлтого нормально"
-
-#~ msgid ""
-#~ "Laby, 2010 by Mehdi Cherti (mehdidc) \n"
-#~ " Sounds by various authors who contributed their works to freesound."
-#~ "org. \n"
-#~ " Images by various authors who contributed their works to openclipart.org "
-#~ "(Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - "
-#~ "under a Creative Commons License (CC BY-SA). \n"
-#~ " Please view credits.txt for more info about authors of media files used "
-#~ "in this project"
-#~ msgstr ""
-#~ "Laby, 2010 год, автор Mehdi Cherti (mehdidc) \n"
-#~ " Звуки от различных авторов, опубликовавших свои работы на freesound."
-#~ "org. \n"
-#~ " Изображения от различных авторов, опубликовавших свои работы на "
-#~ "openclipart.org (публичный домен) и на http://www.art4apps.org/ - "
-#~ "Art4Apps от Smart4Kids - под лицензией Creative Commons License (CC BY-"
-#~ "SA). \n"
-#~ " Пожалуйста, посмотрите credits.txt для более подробной информации об "
-#~ "авторах медиафайлов, использованных в этом проекте"
-
-#~ msgid ""
-#~ "This program is free software: you can redistribute it and/or modify it "
-#~ "under the terms of the GNU General Public License as published by the "
-#~ "Free Software Foundation, either version 3 of the License, or (at your "
-#~ "option) any later version. You should have received a copy of the GNU "
-#~ "General Public License along with this program. If not, see <http://www."
-#~ "gnu.org/licenses/>."
-#~ msgstr ""
-#~ "Эта программа является свободной: Вы можете распространять её и/или "
-#~ "изменять в соответствии с лицензией GNU General Public License, "
-#~ "опубликованной Free Software Foundation, или версией 3 лицензии, или (по "
-#~ "Вашему желанию) любой более поздней. Вы должны были получить копию GNU "
-#~ "General Public License вместе с этой программой.  Если нет, то смотрите "
-#~ "<http://www.gnu.org/licenses/>."
-
-#~ msgid "A collection of educational activities for kids"
-#~ msgstr "Небольшой набор образовательных программ для детей"
-
-#~ msgid ""
-#~ "Images from: http://www.art4apps.org/ - Art4Apps by Smart4Kids - Creative "
-#~ "Commons License (CC BY-SA)"
-#~ msgstr ""
-#~ "Изображения с сайта: http://www.art4apps.org/ - Art4Apps by Smart4Kids - "
-#~ "лицензия Creative Commons License (CC BY-SA)"
-
-#~ msgid "Decimals and Fractions"
-#~ msgstr "Десятичные и обычные дроби"
-
-#~ msgid "Decimals, fractions and percentages"
-#~ msgstr "Десятичные, обычные дроби и проценты"
-
-#~ msgid "Decimals, fractions, ratios and percentages"
-#~ msgstr "Десятичные, обычные дроби, соотношения и проценты"
-
-#~ msgid "Translation Credits"
-#~ msgstr "Переводчики"
-
-#~ msgid "Achievements"
-#~ msgstr "Достижения"
-
-#~ msgid "Select age group:"
-#~ msgstr "Выберите возрастную группу:"
-
-#~ msgid "show activities for:"
-#~ msgstr "Показать деятельность для:"
-
-#~ msgid "Year 1"
-#~ msgstr "1-ый класс"
-
-#~ msgid "Year 2"
-#~ msgstr "2-ой класс"
-
-#~ msgid "Year 3"
-#~ msgstr "3-ий класс"
-
-#~ msgid "Year 4"
-#~ msgstr "4-ый класс"
-
-#~ msgid "Year 5"
-#~ msgstr "5-ый класс"
-
-#~ msgid "Year 6"
-#~ msgstr "6-ой класс"
-
-#~ msgid "show all"
-#~ msgstr "Показать все"
-
-#~ msgid "Do you want to exit the game?"
-#~ msgstr "Вы уверены, что хотите выйти из программы?"
-
-#~ msgid "Do you want to log out of the game?"
-#~ msgstr "Вы уверены, что хотите покинуть игру?"
-
-#~ msgid "Ready to go to the next level?"
-#~ msgstr "Готовы перейти на новый уровень?"
-
-#~ msgid "short form"
-#~ msgstr " "
-
-#~ msgid "Educational Activities for Kids"
-#~ msgstr "Образовательный пакет для детей"
-
-#~ msgid "Decimals (Category)"
-#~ msgstr "Десятичные"
-
-#~ msgid "Fractions (Category)"
-#~ msgstr "Обычные дроби"
-
-#~ msgid "Ratios (Category)"
-#~ msgstr "Соотношения"
-
-#~ msgid "Percentages (Category)"
-#~ msgstr "Проценты"
-
-#~ msgid "Match images to words"
-#~ msgstr "Сопоставьте изображения с словами"
