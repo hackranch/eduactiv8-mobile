@@ -1,214 +1,207 @@
-# eduActiv8 Mobile - translation file.
-# Copyright (C) 2019 Hackranch
-# This file is distributed under the same license as eduActiv8 Mobile.
-# Derek Lackaff <lackaff@hackranch.com>, 2019.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: eduActiv8 Mobile 0.0.1\n"
-"Report-Msgid-Bugs-To: Derek Lackaff <lackaff@hackranch.com>\n"
+"Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-15 16:00-0400\n"
-"Last-Translator: Derek Lackaff <lackaff@hackranch.com>\n"
-"Language-Team: Derek Lackaff <lackaff@hackranch.com>\n"
-"Language: de\n"
+"PO-Revision-Date: 2019-10-22 16:58\n"
+"Last-Translator: Derek Lackaff (lackaff)\n"
+"Language-Team: German\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: crowdin.com\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: eduactiv8-mobile\n"
+"X-Crowdin-Language: de\n"
+"X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
+"Language: de_DE\n"
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "Grüner Apfel"
-msgstr[1] "Grüne Äpfel"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "Roter Apfel"
-msgstr[1] "Rote Äpfel"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "Erdbeere"
-msgstr[1] "Erdbeeren"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] "Birne"
-msgstr[1] "Birnen"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] "Orange"
-msgstr[1] "Orangen"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] "Zwiebel"
-msgstr[1] "Zwiebeln"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] "Tomate"
-msgstr[1] "Tomaten"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] "Zitrone"
-msgstr[1] "Zitronen"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] "Kirsche"
-msgstr[1] "Kirschen"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] "Pfeffer"
-msgstr[1] "Pfeffer"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] "Karotte"
-msgstr[1] "Karotten"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] "Banane"
-msgstr[1] "Bananen"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] "Wassermelone"
-msgstr[1] "Wassermelonen"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "English"
-msgstr "Englisch"
+msgstr ""
 
 msgid "Login"
-msgstr "Login"
+msgstr ""
 
 msgid "Default Language:"
-msgstr "Standardsprache:"
+msgstr ""
 
 msgid "User Management"
-msgstr "Nutzerverwaltung"
+msgstr ""
 
 msgid "Copyright & Credits"
-msgstr "Copyright & Credits"
+msgstr ""
 
 msgid "Licence"
-msgstr "Lizenz"
+msgstr ""
 
 msgid "Language arts"
-msgstr "Sprachen"
+msgstr ""
 
 msgid "This username and password combination doesn't exist."
-msgstr "Nutzername und Passwort nicht gefunden"
+msgstr ""
 
-#, fuzzy
-#| msgid "user name:"
 msgid "user name: "
-msgstr "Nutzername:"
+msgstr ""
 
-#, fuzzy
-#| msgid "password:"
 msgid "password: "
-msgstr "Passwort:"
+msgstr ""
 
 msgid "eduActiv8 Test Version"
 msgstr ""
 
 msgid "Save"
-msgstr "Speichern"
+msgstr ""
 
 msgid "Delete user"
-msgstr "Nutzer löschen"
+msgstr ""
 
 msgid "Preferences saved..."
-msgstr "Einstellungen gespeichert..."
+msgstr ""
 
 msgid "Logged in as: "
-msgstr "Eingeloggt als: "
+msgstr ""
 
 msgid "Language"
-msgstr "Sprache"
+msgstr ""
 
 msgid "Mathematics"
-msgstr "Mathematik"
+msgstr ""
 
 msgid "Games & Mazes"
-msgstr "Spiele & Labyrinth"
+msgstr ""
 
 msgid "Word Builders"
-msgstr "Wörter bauen"
+msgstr ""
 
 msgid "Animals"
-msgstr "Tiere"
+msgstr ""
 
 msgid "Complete the word"
-msgstr "Vervollständige das Wort"
+msgstr ""
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr "Zahlen Sagen"
+msgstr ""
 
 msgid "Shopping List"
-msgstr "Einkaufsliste"
+msgstr ""
 
 msgid "Addition"
-msgstr "Addition"
+msgstr ""
 
 msgid "Find missing number"
-msgstr "Finde die fehlende Zahl"
+msgstr ""
 
 msgid "Level"
-msgstr "Level"
+msgstr ""
 
 msgid "Translators"
-msgstr "Übersetzer"
+msgstr ""
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr "Spielstand: "
+msgstr ""
 
 msgid "Numbers & Basic Operations"
-msgstr "Zahlen & einfaches Rechnen"
+msgstr ""
 
 msgid "Numbers"
-msgstr "Zahlen"
+msgstr ""
 
 msgid "Basic Operations"
-msgstr "Einfaches Rechnen"
+msgstr ""
 
 msgid "area:"
-msgstr "Bereich:"
+msgstr ""
 
 msgid "perimeter:"
-msgstr "Perimeter:"
+msgstr ""
 
 msgid "circumference:"
-msgstr "Umfang"
+msgstr ""
 
 msgid "Trapezium"
-msgstr "Trapez"
+msgstr ""
 
 msgid "Drag the clock hands to set the time"
-msgstr "Ziehe die Zeiger um die Zeit zu setzen"
+msgstr ""
 
 msgid "Discover Letters"
-msgstr "Erkunde Buchstaben"
+msgstr ""
 
 msgid "Word Matchers"
-msgstr "Ordne die Bilder zu ihren Worten"
+msgstr ""
 
 msgid "Shapes and Solids"
-msgstr "Flächen und Körper"
+msgstr ""
 
 msgid "Symmetry"
 msgstr ""
@@ -217,132 +210,130 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr "Zeit"
+msgstr ""
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr "Subtraktion"
+msgstr ""
 
 msgid "Learn Numbers with Flashcards"
-msgstr "Lerne Zahlen mit Karten"
+msgstr ""
 
 msgid "Demonstration"
-msgstr "Demonstration"
+msgstr ""
 
-#, fuzzy
-#| msgid "Find solution"
 msgid "Find Solution"
-msgstr "Finde die Lösung"
+msgstr ""
 
 msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr "Lerne Formen mit Karten"
+msgstr ""
 
 msgid "Shape Matching"
-msgstr "Formen finden"
+msgstr ""
 
 msgid "Shape Maker"
-msgstr "Formen erstellen"
+msgstr ""
 
 msgid "How clock works"
-msgstr "Wie funktioniert die Uhr?"
+msgstr ""
 
 msgid "learn to set the clock"
-msgstr "Lerne die Uhr zu stellen"
+msgstr ""
 
 msgid "Set the clock to:"
-msgstr "Setze die Uhr auf:"
+msgstr ""
 
 msgid "Time Matching"
-msgstr "Zeit zuordnen"
+msgstr ""
 
 msgid "Your Alphabet"
-msgstr "Dein Alphabet"
+msgstr ""
 
 msgid "Trace Letters and Numbers"
-msgstr "Verfolge Buchstaben und Zahlen"
+msgstr ""
 
 msgid "People"
-msgstr "Leute"
+msgstr ""
 
 msgid "Jobs"
-msgstr "Berufe"
+msgstr ""
 
 msgid "Body"
-msgstr "Körper"
+msgstr ""
 
 msgid "Clothes and Accessories"
-msgstr "Kleidung"
+msgstr ""
 
 msgid "Sports"
-msgstr "Sport"
+msgstr ""
 
 msgid "Actions"
-msgstr "Aktivitäten"
+msgstr ""
 
 msgid "Nature"
-msgstr "Natur"
+msgstr ""
 
 msgid "Fruits and Vegetables"
-msgstr "Obst und Gemüse"
+msgstr ""
 
 msgid "Food"
-msgstr "Essen"
+msgstr ""
 
 msgid "Transport"
-msgstr "Transport"
+msgstr ""
 
 msgid "Constructions"
-msgstr "Konstruktionen"
+msgstr ""
 
 msgid "Equilateral Triangle"
-msgstr "Gleichseitiges Dreieck"
+msgstr ""
 
 msgid "Isosceles Triangle"
-msgstr "Gleichschenkliges Dreieck"
+msgstr ""
 
 msgid "Obtuse Triangle"
-msgstr "Stumpfwinkliges Dreieck"
+msgstr ""
 
 msgid "Right Triangle"
-msgstr "Rechtwinkliges Dreieck"
+msgstr ""
 
 msgid "Acute Triangle"
-msgstr "Spitzwinkliges Dreieck"
+msgstr ""
 
 msgid "Square"
-msgstr "Quadrat"
+msgstr ""
 
 msgid "Rectangle"
-msgstr "Rechteck"
+msgstr ""
 
 msgid "Right Trapezium"
-msgstr "Rechtwinkliges Trapez"
+msgstr ""
 
 msgid "Isosceles Trapezium"
-msgstr "Gleichschenkliges Trapez"
+msgstr ""
 
 msgid "Rhombus"
-msgstr "Rombus"
+msgstr ""
 
 msgid "Parallelogram"
-msgstr "Parallelogram"
+msgstr ""
 
 msgid "Pentagon"
-msgstr "Fünfeck"
+msgstr ""
 
 msgid "Hexagon"
-msgstr "Hexagon"
+msgstr ""
 
 msgid "Circle"
-msgstr "Kreis"
+msgstr ""
 
 msgid "Ellipse"
-msgstr "Ellipse"
+msgstr ""
 
 msgid "Heptagon"
 msgstr ""
@@ -350,2628 +341,1755 @@ msgstr ""
 msgid "Octagon"
 msgstr ""
 
-#, fuzzy
-#| msgid "Trapezium"
 msgid "trapezium"
-msgstr "Trapez"
+msgstr ""
 
 # animals
 msgid "cow"
-msgstr "Kuh"
+msgstr ""
 
 msgid "turkey"
-msgstr "Truthahn"
+msgstr ""
 
 msgid "shrimp"
-msgstr "Schrimps"
+msgstr ""
 
 msgid "wolf"
-msgstr "Wolf"
+msgstr ""
 
 msgid "panther"
-msgstr "Panther"
+msgstr ""
 
 msgid "panda"
-msgstr "Panda"
+msgstr ""
 
 msgid "magpie"
-msgstr "Elster"
+msgstr ""
 
 msgid "clam"
-msgstr "Muschel"
+msgstr ""
 
 msgid "pony"
-msgstr "Pony"
+msgstr ""
 
 msgid "mouse"
-msgstr "Maus"
+msgstr ""
 
 msgid "pug"
-msgstr "Mops"
+msgstr ""
 
 msgid "koala"
-msgstr "Koala"
+msgstr ""
 
 msgid "frog"
-msgstr "Frosch"
+msgstr ""
 
 msgid "ladybug"
-msgstr "Marienkäfer"
+msgstr ""
 
 msgid "gorilla"
-msgstr "Gorilla"
+msgstr ""
 
 msgid "llama"
-msgstr "Lama"
+msgstr ""
 
 msgid "vulture"
-msgstr "Geier"
+msgstr ""
 
 msgid "hamster"
-msgstr "Hamster"
+msgstr ""
 
 msgid "bird"
-msgstr "Vogel"
+msgstr ""
 
 msgid "starfish"
-msgstr "Seestern"
+msgstr ""
 
 msgid "crow"
-msgstr "Krähe"
+msgstr ""
 
 msgid "parakeet"
-msgstr "Sittich"
+msgstr ""
 
 msgid "caterpillar"
-msgstr "Raupe"
+msgstr ""
 
 msgid "tiger"
-msgstr "Tiger"
+msgstr ""
 
 msgid "hummingbird"
-msgstr "Kolibri"
+msgstr ""
 
 msgid "piranha"
-msgstr "Piranha"
+msgstr ""
 
 msgid "pig"
-msgstr "Schwein"
+msgstr ""
 
 msgid "scorpion"
-msgstr "Skorpion"
+msgstr ""
 
 msgid "fo"
-msgstr "Fuchs"
+msgstr ""
 
 msgid "leopard"
-msgstr "Leopard"
+msgstr ""
 
 msgid "iguana"
-msgstr "Leguan"
+msgstr ""
 
 msgid "dolphin"
-msgstr "Delfin"
+msgstr ""
 
 msgid "bat"
-msgstr "Fledermaus"
+msgstr ""
 
 msgid "chick"
-msgstr "Huhn"
+msgstr ""
 
 msgid "crab"
-msgstr "Krabbe"
+msgstr ""
 
 msgid "hen"
-msgstr "Henne"
+msgstr ""
 
 msgid "wasp"
-msgstr "Wespe"
+msgstr ""
 
 msgid "chameleon"
-msgstr "Chameleon"
+msgstr ""
 
 msgid "whale"
-msgstr "Wal"
+msgstr ""
 
 msgid "hedgehog"
-msgstr "Igel"
+msgstr ""
 
 msgid "fawn"
-msgstr "Rehkitz"
+msgstr ""
 
 msgid "moose"
-msgstr "Elch"
+msgstr ""
 
 msgid "bee"
-msgstr "Biene"
+msgstr ""
 
 msgid "viper"
-msgstr "Viper"
+msgstr ""
 
 msgid "shrike"
-msgstr "Würger"
+msgstr ""
 
 msgid "donkey"
-msgstr "Esel"
+msgstr ""
 
 msgid "guinea pig"
-msgstr "Guinea Schwein"
+msgstr ""
 
 msgid "sloth"
-msgstr "Faultier"
+msgstr ""
 
 msgid "horse"
-msgstr "Pferd"
+msgstr ""
 
 msgid "penguin"
-msgstr "Pinguin"
+msgstr ""
 
 msgid "otter"
-msgstr "Otter"
+msgstr ""
 
 msgid "bear"
-msgstr "Bär"
+msgstr ""
 
 msgid "zebra"
-msgstr "Zebra"
+msgstr ""
 
 msgid "ostrich"
-msgstr "Strauß"
+msgstr ""
 
 msgid "camel"
-msgstr "Kamel"
+msgstr ""
 
 msgid "antelope"
-msgstr "Antilope"
+msgstr ""
 
 msgid "lemur"
-msgstr "Lemur"
+msgstr ""
 
 msgid "pigeon"
-msgstr "Taube"
+msgstr ""
 
 msgid "lama"
-msgstr "Lama"
+msgstr ""
 
 msgid "mole"
-msgstr "Maulwurf"
+msgstr ""
 
 msgid "ray"
-msgstr "Rochen"
+msgstr ""
 
 msgid "ram"
-msgstr "Widder"
+msgstr ""
 
 msgid "skunk"
-msgstr "Stinktier"
+msgstr ""
 
 msgid "jellyfish"
-msgstr "Qualle"
+msgstr ""
 
 msgid "sheep"
-msgstr "Schaf"
+msgstr ""
 
 msgid "shark"
-msgstr "Hai"
+msgstr ""
 
 msgid "kitten"
-msgstr "Kätzchen"
+msgstr ""
 
 msgid "deer"
-msgstr "Hirsch"
+msgstr ""
 
 msgid "snail"
-msgstr "Schnecke"
+msgstr ""
 
 msgid "flamingo"
-msgstr "Flamingo"
+msgstr ""
 
 msgid "rabbit"
-msgstr "Hase"
+msgstr ""
 
 msgid "oyster"
-msgstr "Muschel"
+msgstr ""
 
 msgid "beaver"
-msgstr "Biber"
+msgstr ""
 
 msgid "sparrow"
-msgstr "Spatz"
+msgstr ""
 
 msgid "dove"
-msgstr "Taube"
+msgstr ""
 
 msgid "eagle"
-msgstr "Adler"
+msgstr ""
 
 msgid "beetle"
-msgstr "Käfer"
+msgstr ""
 
 msgid "hippopotamus"
-msgstr "Nilpferd"
+msgstr ""
 
 msgid "owl"
-msgstr "Eule"
+msgstr ""
 
 msgid "cobra"
-msgstr "Kobra"
+msgstr ""
 
 msgid "salamander"
-msgstr "Salamander"
+msgstr ""
 
 msgid "goose"
-msgstr "Gans"
+msgstr ""
 
 msgid "kangaroo"
-msgstr "Kängeruh"
+msgstr ""
 
 msgid "dragonfly"
-msgstr "Libelle"
+msgstr ""
 
 msgid "toad"
-msgstr "Kröte"
+msgstr ""
 
 msgid "pelican"
-msgstr "Pelikan"
+msgstr ""
 
 msgid "squid"
-msgstr "Tintenfisch"
+msgstr ""
 
 msgid "lion cub"
-msgstr "Löwenbaby"
+msgstr ""
 
 msgid "jaguar"
-msgstr "Jaguar"
+msgstr ""
 
 msgid "duck"
-msgstr "Ente"
+msgstr ""
 
 msgid "lizard"
-msgstr "Eidechse"
+msgstr ""
 
 msgid "rhinoceros"
-msgstr "Rhinozeros"
+msgstr ""
 
 msgid "hyena"
-msgstr "Hyäne"
+msgstr ""
 
 msgid "o"
-msgstr "Ochse"
+msgstr ""
 
 msgid "peacock"
-msgstr "Pfau"
+msgstr ""
 
 msgid "parrot"
-msgstr "Papagei"
+msgstr ""
 
 msgid "elk"
-msgstr "Elch"
+msgstr ""
 
 msgid "alligator"
-msgstr "Alligator"
+msgstr ""
 
 msgid "ant"
-msgstr "Ameise"
+msgstr ""
 
 msgid "goat"
-msgstr "Ziege"
+msgstr ""
 
 msgid "baby rabbit"
-msgstr "Baby Hase"
+msgstr ""
 
 msgid "lion"
-msgstr "Löwe"
+msgstr ""
 
 msgid "squirrel"
-msgstr "Eichhörnchen"
+msgstr ""
 
 msgid "opossum"
-msgstr "Opossum"
+msgstr ""
 
 msgid "chimp"
-msgstr "Schimpanse"
+msgstr ""
 
 msgid "doe"
-msgstr "Reh"
+msgstr ""
 
 msgid "gopher"
-msgstr "Erdhörnchen"
+msgstr ""
 
 msgid "elephant"
-msgstr "Elefant"
+msgstr ""
 
 msgid "giraffe"
-msgstr "Giraffe"
+msgstr ""
 
 msgid "spider"
-msgstr "Spinne"
+msgstr ""
 
 msgid "puppy"
-msgstr "Hundewelpe"
+msgstr ""
 
 msgid "jay"
-msgstr "Tölpel"
+msgstr ""
 
 msgid "seal"
-msgstr "Seelöwe"
+msgstr ""
 
 msgid "rooster"
-msgstr "Hahn"
+msgstr ""
 
 msgid "turtle"
-msgstr "Schildkröte"
+msgstr ""
 
 msgid "bull"
-msgstr "Bulle"
+msgstr ""
 
 msgid "cat"
-msgstr "Katze"
+msgstr ""
 
 msgid "rat"
-msgstr "Ratte"
+msgstr ""
 
 msgid "slug"
-msgstr "Schnecke"
+msgstr ""
 
 msgid "buffalo"
-msgstr "Büffel"
+msgstr ""
 
 msgid "blackbird"
-msgstr "Amsel"
+msgstr ""
 
 msgid "swan"
-msgstr "Schwan"
+msgstr ""
 
 msgid "lobster"
-msgstr "Hummer"
+msgstr ""
 
 msgid "dog"
-msgstr "Hund"
+msgstr ""
 
 msgid "mosquito"
-msgstr "Moskito"
+msgstr ""
 
 msgid "snake"
-msgstr "Schlange"
+msgstr ""
 
 msgid "chicken"
-msgstr "Hühnchen"
+msgstr ""
 
 msgid "anteater"
-msgstr "Ameisenbär"
+msgstr ""
 
 # sport
 msgid "judo"
-msgstr "Judo"
+msgstr ""
 
 msgid "pool"
-msgstr "Billard"
+msgstr ""
 
 msgid "ride"
-msgstr "Reiten"
+msgstr ""
 
 msgid "stretch"
-msgstr "Dehnen"
+msgstr ""
 
 msgid "helmet"
-msgstr "Helm"
+msgstr ""
 
 msgid "ice skating"
-msgstr "Schlittschuh Laufen"
+msgstr ""
 
 msgid "walk"
-msgstr "Gehen"
+msgstr ""
 
 msgid "run"
-msgstr "Rennen"
-
-msgid "run"
-msgstr "Laufen"
+msgstr ""
 
 msgid "swim"
-msgstr "Schwimmen"
+msgstr ""
 
 msgid "hop"
-msgstr "Springen"
+msgstr ""
 
 msgid "hike"
-msgstr "Wandern"
+msgstr ""
 
 msgid "boxing"
-msgstr "Boxen"
+msgstr ""
 
 msgid "hockey"
-msgstr "Hockey"
+msgstr ""
 
 msgid "race"
-msgstr "Rennen"
+msgstr ""
 
 msgid "throw"
-msgstr "Werfen"
+msgstr ""
 
 msgid "skate"
-msgstr "Skaten"
+msgstr ""
 
 msgid "win"
-msgstr "Gewinnen"
+msgstr ""
 
 msgid "squat"
-msgstr "Kniebeuge"
+msgstr ""
 
 msgid "ski"
-msgstr "Skifahren"
+msgstr ""
 
 msgid "golf"
-msgstr "Golf"
+msgstr ""
 
 msgid "whistle"
-msgstr "Pfeife"
+msgstr ""
 
 msgid "torch"
-msgstr "Fackel"
+msgstr ""
 
 msgid "sailing"
-msgstr "Segeln"
+msgstr ""
 
 msgid "stand"
-msgstr "Stehen"
+msgstr ""
 
 msgid "tennis"
-msgstr "Tennis"
+msgstr ""
 
 msgid "jump"
-msgstr "Hochsprung"
+msgstr ""
 
 msgid "rowing"
-msgstr "Rudern"
+msgstr ""
 
 msgid "jog"
-msgstr "Joggen"
+msgstr ""
 
 msgid "rope"
-msgstr "Seilspringen"
+msgstr ""
 
 # body
 msgid "teeth"
-msgstr "Zähne"
+msgstr ""
 
 msgid "cheek"
-msgstr "Backe"
+msgstr ""
 
 msgid "ankle"
-msgstr "Knöchel"
+msgstr ""
 
 msgid "knee"
-msgstr "Knie"
+msgstr ""
 
 msgid "toe"
-msgstr "Zeh"
+msgstr ""
 
 msgid "muscle"
-msgstr "Muskel"
+msgstr ""
 
 msgid "mouth"
-msgstr "Mund"
+msgstr ""
 
 msgid "feet"
-msgstr "Fuß"
+msgstr ""
 
 msgid "hand"
-msgstr "Hand"
+msgstr ""
 
 msgid "elbow"
-msgstr "Ellbogen"
+msgstr ""
 
 msgid "hair"
-msgstr "Haar"
+msgstr ""
 
 msgid "eyelash"
-msgstr "Wimper"
+msgstr ""
 
 msgid "beard"
-msgstr "Bart"
+msgstr ""
 
 msgid "belly button"
-msgstr "Bauchnabel"
+msgstr ""
 
 msgid "thumb"
-msgstr "Daumen"
+msgstr ""
 
 msgid "breast"
-msgstr "Brust"
+msgstr ""
 
 msgid "nostril"
-msgstr "Nasenloch"
+msgstr ""
 
 msgid "nose"
-msgstr "Nase"
+msgstr ""
 
 msgid "hip"
-msgstr "Hüfte"
+msgstr ""
 
 msgid "arm"
-msgstr "Arm"
+msgstr ""
 
 msgid "eyebrow"
-msgstr "Augenbraue"
+msgstr ""
 
 msgid "fist"
-msgstr "Faust"
+msgstr ""
 
 msgid "neck"
-msgstr "Nacken"
+msgstr ""
 
 msgid "wrist"
-msgstr "Handgelenk"
+msgstr ""
 
 msgid "throat"
-msgstr "Hals"
+msgstr ""
 
 msgid "eye"
-msgstr "Auge"
+msgstr ""
 
 msgid "leg"
-msgstr "Bein"
+msgstr ""
 
 msgid "spine"
-msgstr "Wirbelsäule"
+msgstr ""
 
 msgid "ear"
-msgstr "Ohr"
+msgstr ""
 
 msgid "finger"
-msgstr "Finger"
+msgstr ""
 
 msgid "foot"
-msgstr "Fuß"
+msgstr ""
 
 msgid "braid"
-msgstr "Zopf"
+msgstr ""
 
 msgid "face"
-msgstr "Gesicht"
+msgstr ""
 
 msgid "back"
-msgstr "Rücken"
+msgstr ""
 
 msgid "chin"
-msgstr "Kinn"
+msgstr ""
 
 msgid "bottom"
-msgstr "Po"
+msgstr ""
 
 msgid "thigh"
-msgstr "Oberschenkel"
+msgstr ""
 
 msgid "belly"
-msgstr "Bauch"
+msgstr ""
 
 # people
 msgid "girl"
-msgstr "Mädchen"
+msgstr ""
 
 msgid "male"
-msgstr "männlich"
+msgstr ""
 
 msgid "son"
-msgstr "Sohn"
-
-msgid "mates"
-msgstr "Kumpel"
+msgstr ""
 
 msgid "friends"
-msgstr "Freunde"
+msgstr ""
 
 msgid "baby"
-msgstr "Baby"
+msgstr ""
 
 msgid "child"
-msgstr "Kind"
+msgstr ""
 
 msgid "dad"
-msgstr "Vater"
+msgstr ""
 
 msgid "mom"
-msgstr "Mutter"
+msgstr ""
 
 msgid "twin boys"
-msgstr "Zwillinge"
+msgstr ""
 
 msgid "brothers"
-msgstr "Brüder"
+msgstr ""
 
 msgid "man"
-msgstr "Mann"
+msgstr ""
 
 msgid "mother"
-msgstr "Mutter"
+msgstr ""
 
 msgid "grandfather"
-msgstr "Großvater"
+msgstr ""
 
 msgid "family"
-msgstr "Familie"
+msgstr ""
 
 msgid "female"
-msgstr "weiblich"
+msgstr ""
 
 msgid "wife"
-msgstr "Ehefrau"
+msgstr ""
 
 msgid "husband"
-msgstr "Ehemann"
+msgstr ""
 
 msgid "bride"
-msgstr "Braut"
-
-msgid "madam"
-msgstr "Madame"
+msgstr ""
 
 msgid "grandmother"
-msgstr "Großmutter"
+msgstr ""
 
 msgid "couple"
-msgstr "Zusammen"
-
-msgid "lad"
-msgstr "Kerl"
+msgstr ""
 
 msgid "twin girls"
-msgstr "Zwillinge"
-
-msgid "tribe"
-msgstr "Stamm"
+msgstr ""
 
 msgid "boy"
-msgstr "Junge"
+msgstr ""
 
 msgid "sisters"
-msgstr "Schwestern"
+msgstr ""
 
 msgid "woman"
-msgstr "Frau"
+msgstr ""
 
 msgid "lady"
-msgstr "Lady"
+msgstr ""
 
 # food
 msgid "candy"
-msgstr "Süßigkeiten"
+msgstr ""
 
 msgid "sausage"
-msgstr "Wurst"
+msgstr ""
 
 msgid "hamburger"
-msgstr "Hamburger"
+msgstr ""
 
 msgid "steak"
-msgstr "Steak"
+msgstr ""
 
 msgid "fudge"
-msgstr "Fondant"
+msgstr ""
 
 msgid "doughnut"
-msgstr "Doughnut"
+msgstr ""
 
 msgid "coconut"
-msgstr "Kokosnuss"
+msgstr ""
 
 msgid "rice"
-msgstr "Reis"
+msgstr ""
 
 msgid "ice cream"
-msgstr "Eiscreme"
+msgstr ""
 
 msgid "jelly"
-msgstr "Gelee"
+msgstr ""
 
 msgid "yoghurt"
-msgstr "Joghurt"
+msgstr ""
 
 msgid "dessert"
-msgstr "Nachtisch"
+msgstr ""
 
 msgid "pretzel"
-msgstr "Brezel"
+msgstr ""
 
 msgid "peanut"
-msgstr "Erdnuss"
+msgstr ""
 
 msgid "jam"
-msgstr "Marmelade"
+msgstr ""
 
 msgid "feast"
-msgstr "Festmahl"
+msgstr ""
 
 msgid "cookie"
-msgstr "Keks"
+msgstr ""
 
 msgid "bacon"
-msgstr "Speck"
+msgstr ""
 
 msgid "spice"
-msgstr "Gewürz"
+msgstr ""
 
 msgid "coffee"
-msgstr "Kaffee"
+msgstr ""
 
 msgid "pie"
-msgstr "Torte"
+msgstr ""
 
 msgid "lemonade"
-msgstr "Limonade"
+msgstr ""
 
 msgid "chocolate"
-msgstr "Schokolade"
+msgstr ""
 
 msgid "water bottle"
-msgstr "Wasserflasche"
+msgstr ""
 
 msgid "lunch"
-msgstr "Mittagessen"
+msgstr ""
 
 msgid "ice"
-msgstr "Eis"
+msgstr ""
 
 msgid "sugar"
-msgstr "Zucker"
+msgstr ""
 
 msgid "sauce"
-msgstr "Soße"
+msgstr ""
 
 msgid "soup"
-msgstr "Suppe"
+msgstr ""
 
 msgid "juice"
-msgstr "Saft"
+msgstr ""
 
 msgid "fries"
-msgstr "Fritten"
+msgstr ""
 
 msgid "cake"
-msgstr "Kuchen"
+msgstr ""
 
 msgid "mashed potatoes"
-msgstr "Stampfkartoffeln"
+msgstr ""
 
 msgid "tea"
-msgstr "Tee"
+msgstr ""
 
 msgid "bun"
-msgstr "Brötchen"
+msgstr ""
 
 msgid "cheese"
-msgstr "Käse"
+msgstr ""
 
 msgid "beef"
-msgstr "Rindfleisch"
+msgstr ""
 
 msgid "sandwich"
-msgstr "Sandwich"
+msgstr ""
 
 msgid "slice"
-msgstr "Brotscheibe"
+msgstr ""
 
 msgid "sprinkle"
-msgstr "Spritzgebäck"
+msgstr ""
 
 msgid "pizza"
-msgstr "Pizza"
+msgstr ""
 
 msgid "flour"
-msgstr "Mehl"
+msgstr ""
 
 msgid "gum"
-msgstr "Kaugummi"
+msgstr ""
 
 msgid "spaghetti"
-msgstr "Spaghetti"
+msgstr ""
 
 msgid "roast"
-msgstr "Braten"
+msgstr ""
 
 msgid "drink[n]"
-msgstr "Getränk"
+msgstr ""
 
 msgid "stew"
-msgstr "Eintopf"
+msgstr ""
 
 msgid "spread"
-msgstr "Aufstrich"
+msgstr ""
 
 msgid "meat"
-msgstr "Fleisch"
+msgstr ""
 
 msgid "milk"
-msgstr "Milch"
+msgstr ""
 
 msgid "meal"
-msgstr "Mahlzeit"
+msgstr ""
 
 msgid "corn"
-msgstr "Mais"
+msgstr ""
 
 msgid "bread"
-msgstr "Brot"
+msgstr ""
 
 msgid "walnut"
-msgstr "Walnuss"
+msgstr ""
 
 msgid "egg"
-msgstr "Ei"
+msgstr ""
 
 msgid "hot dog"
-msgstr "Hot Dog"
+msgstr ""
 
 msgid "ham"
-msgstr "Schinken"
+msgstr ""
 
 # clothes
 msgid "jewellery"
-msgstr "Schmuck"
+msgstr ""
 
 msgid "sock"
-msgstr "Socken"
+msgstr ""
 
 msgid "jacket"
-msgstr "Jacket"
+msgstr ""
 
 msgid "heel"
-msgstr "Hacke"
+msgstr ""
 
 msgid "smock"
-msgstr "Kittel"
+msgstr ""
 
 msgid "shorts"
-msgstr "Shorts"
+msgstr ""
 
 msgid "pocket"
-msgstr "Tasche"
+msgstr ""
 
 msgid "necklace"
-msgstr "Halskette"
+msgstr ""
 
 msgid "sweatshirt"
-msgstr "Sweatshirt"
+msgstr ""
 
 msgid "uniform"
-msgstr "Uniform"
+msgstr ""
 
 msgid "raincoat"
-msgstr "Regenjacke"
+msgstr ""
 
 msgid "trousers"
-msgstr "Hose"
+msgstr ""
 
 msgid "sunglasses"
-msgstr "Sonnenbrille"
+msgstr ""
 
 msgid "coat"
-msgstr "Jacke"
+msgstr ""
 
 msgid "pullover"
-msgstr "Pullover"
+msgstr ""
 
 msgid "shirt"
-msgstr "Shirt"
+msgstr ""
 
 msgid "sandals"
-msgstr "Sandalen"
+msgstr ""
 
 msgid "suit"
-msgstr "Anzug"
+msgstr ""
 
 msgid "pyjamas"
-msgstr "Pyjama"
+msgstr ""
 
 msgid "skirt"
-msgstr "Rock"
+msgstr ""
 
 msgid "zip"
-msgstr "Reißverschluss"
+msgstr ""
 
 msgid "shoes"
-msgstr "Schuhe"
+msgstr ""
 
 msgid "jewel"
-msgstr "Juwel"
+msgstr ""
 
 msgid "tie"
-msgstr "Krawatte"
+msgstr ""
 
 msgid "slippers"
-msgstr "Pantoffel"
+msgstr ""
 
 msgid "gloves"
-msgstr "Handschuhe"
+msgstr ""
 
 msgid "hat"
-msgstr "Hut"
+msgstr ""
 
 msgid "sleeve"
-msgstr "Ärmel"
+msgstr ""
 
 msgid "cap"
-msgstr "Kappe"
+msgstr ""
 
 msgid "swimming suit"
-msgstr "Badeanzug"
+msgstr ""
 
 msgid "trainer"
-msgstr "Trainingsanzug"
+msgstr ""
 
 msgid "vest"
-msgstr "Weste"
+msgstr ""
 
 msgid "glasses"
-msgstr "Brille"
+msgstr ""
 
 msgid "shoelace"
-msgstr "Schnürsenkel"
+msgstr ""
 
 msgid "patch"
-msgstr "Flicken"
+msgstr ""
 
 msgid "scarf"
-msgstr "Halstuch"
+msgstr ""
 
 msgid "shoe"
-msgstr "Schuh"
+msgstr ""
 
 msgid "button"
-msgstr "Knopf"
+msgstr ""
 
 msgid "dress"
-msgstr "Dress"
+msgstr ""
 
 msgid "sash"
-msgstr "Schärpe"
+msgstr ""
 
 msgid "shoe sole"
-msgstr "Schuhsohle"
+msgstr ""
 
 msgid "robe"
-msgstr "Robe"
+msgstr ""
 
 msgid "pants"
-msgstr "Hose"
+msgstr ""
 
 msgid "kimono"
-msgstr "Kimono"
+msgstr ""
 
 msgid "overalls"
-msgstr "Overall"
+msgstr ""
 
 # actions
 msgid "lick"
-msgstr "lecken"
+msgstr ""
 
 msgid "slam"
-msgstr "zuschlagen"
+msgstr ""
 
 msgid "beg"
-msgstr "betteln"
+msgstr ""
 
 msgid "fell"
-msgstr "fallen"
+msgstr ""
 
 msgid "scratch"
-msgstr "kratzen"
+msgstr ""
 
 msgid "touch"
-msgstr "berühren"
+msgstr ""
 
 msgid "sniff"
-msgstr "schnüffeln"
+msgstr ""
 
 msgid "see"
-msgstr "sehen"
+msgstr ""
 
 msgid "climb"
-msgstr "klettern"
+msgstr ""
 
 msgid "dig"
-msgstr "graben"
+msgstr ""
 
 msgid "howl"
-msgstr "heulen"
+msgstr ""
 
 msgid "sleep"
-msgstr "schlafen"
+msgstr ""
 
 msgid "explore"
-msgstr "erkunden"
+msgstr ""
 
 msgid "draw"
-msgstr "zeichnen"
+msgstr ""
 
 msgid "hug"
-msgstr "umarmen"
+msgstr ""
 
 msgid "teach"
-msgstr "lehren"
+msgstr ""
 
 msgid "nap"
-msgstr "ausruhen"
+msgstr ""
 
 msgid "clay"
-msgstr "kneten"
+msgstr ""
 
 msgid "catch"
-msgstr "fangen"
+msgstr ""
 
 msgid "clap"
-msgstr "klatschen"
+msgstr ""
 
 msgid "cry"
-msgstr "weinen"
+msgstr ""
 
 msgid "sing"
-msgstr "singen"
+msgstr ""
 
 msgid "meet"
-msgstr "treffen"
+msgstr ""
 
 msgid "sell"
-msgstr "verkaufen"
+msgstr ""
 
 msgid "peck"
-msgstr "picken"
+msgstr ""
 
 msgid "beat"
-msgstr "schlagen"
+msgstr ""
 
 msgid "kneel"
-msgstr "knien"
+msgstr ""
 
 msgid "find"
-msgstr "finden"
+msgstr ""
 
 msgid "dance"
-msgstr "tanzen"
+msgstr ""
 
 msgid "cough"
-msgstr "husten"
+msgstr ""
 
 msgid "cut"
-msgstr "schneiden"
+msgstr ""
 
 msgid "think"
-msgstr "denken"
+msgstr ""
 
 msgid "bark"
-msgstr "bellen"
+msgstr ""
 
 msgid "speak"
-msgstr "sprechen"
+msgstr ""
 
 msgid "cheer"
-msgstr "applaudieren"
+msgstr ""
 
 msgid "bake"
-msgstr "backen"
+msgstr ""
 
 msgid "write"
-msgstr "schreiben"
+msgstr ""
 
 msgid "punch"
-msgstr "hauen"
+msgstr ""
 
 msgid "strum"
-msgstr "klimpern"
+msgstr ""
 
 msgid "study"
-msgstr "studieren"
+msgstr ""
 
 msgid "plow"
-msgstr "pflügen"
+msgstr ""
 
 msgid "dream"
-msgstr "träumen"
+msgstr ""
 
 msgid "post"
-msgstr "abschicken"
+msgstr ""
 
 msgid "dive"
-msgstr "tauchen"
+msgstr ""
 
 msgid "whisper"
-msgstr "flüstern"
+msgstr ""
 
 msgid "sob"
-msgstr "schluchzen"
+msgstr ""
 
 msgid "shake"
-msgstr "schütteln"
+msgstr ""
 
 msgid "feed"
-msgstr "füttern"
+msgstr ""
 
 msgid "crawl"
-msgstr "kriechen"
+msgstr ""
 
 msgid "camp"
-msgstr "zelten"
+msgstr ""
 
 msgid "spill"
-msgstr "kleckern"
+msgstr ""
 
 msgid "clean"
-msgstr "reinigen"
+msgstr ""
 
 msgid "scream"
-msgstr "schreien"
+msgstr ""
 
 msgid "tear"
-msgstr "reißen"
+msgstr ""
 
 msgid "float"
-msgstr "fließen"
+msgstr ""
 
 msgid "pull"
-msgstr "ziehen"
+msgstr ""
 
 msgid "ate"
-msgstr "aß"
+msgstr ""
 
 msgid "kiss"
-msgstr "küssen"
+msgstr ""
 
 msgid "sit"
-msgstr "sitzen"
+msgstr ""
 
 msgid "hatch"
-msgstr "ausbrüten"
+msgstr ""
 
 msgid "blink"
-msgstr "blinken"
+msgstr ""
 
 msgid "hear"
-msgstr "hören"
+msgstr ""
 
 msgid "smooch"
-msgstr "schmusen"
+msgstr ""
 
 msgid "play"
-msgstr "spielen"
+msgstr ""
 
 msgid "wash"
-msgstr "waschen"
+msgstr ""
 
 msgid "chat"
-msgstr "plaudern"
+msgstr ""
 
 msgid "drive"
-msgid "drink[n]"n"
+msgstr ""
 
 msgid "drink[v]"
-msgstr "trinken"
+msgstr ""
 
 msgid "fly"
-msgstr "fliegen"
+msgstr ""
 
 msgid "juggle"
-msgstr "jonglieren"
+msgstr ""
 
 msgid "bit"
-msgstr "beißen"
+msgstr ""
 
 msgid "sweep"
-msgstr "fegen"
+msgstr ""
 
 msgid "look"
-msgstr "schauen"
+msgstr ""
 
 msgid "knit"
-msgstr "stricken"
+msgstr ""
 
 msgid "lift"
-msgstr "heben"
+msgstr ""
 
 msgid "fetch"
-msgstr "fangen"
+msgstr ""
 
 msgid "read"
-msgstr "lesen"
+msgstr ""
 
 msgid "croak"
-msgstr "krächzen"
+msgstr ""
 
 msgid "stare"
-msgstr "starren"
+msgstr ""
 
 msgid "eat"
-msgstr "essen"
+msgstr ""
 
 # construction
 msgid "lighthouse"
-msgstr "Leuchtturm"
+msgstr ""
 
 msgid "door"
-msgstr "Tür"
+msgstr ""
 
 msgid "circus"
-msgstr "Zirkus"
+msgstr ""
 
 msgid "church"
-msgstr "Kirche"
+msgstr ""
 
 msgid "kennel"
-msgstr "kennel"
+msgstr ""
 
 msgid "temple"
-msgstr "Tempel"
+msgstr ""
 
 msgid "smoke"
-msgstr "Rauch"
+msgstr ""
 
 msgid "chimney"
-msgstr "Schornstein"
+msgstr ""
 
 msgid "brick"
-msgstr "Ziegel"
+msgstr ""
 
 msgid "well"
-msgstr "Brunnen"
+msgstr ""
 
 msgid "street"
-msgstr "Straße"
+msgstr ""
 
 msgid "castle"
-msgstr "Burg"
+msgstr ""
 
 msgid "store"
-msgstr "Speicher"
+msgstr ""
 
 msgid "staircase"
-msgstr "Treppenhaus"
+msgstr ""
 
 msgid "school"
-msgstr "Schule"
+msgstr ""
 
 msgid "farm"
-msgstr "Farm"
+msgstr ""
 
 msgid "bridge"
-msgstr "Brücke"
+msgstr ""
 
 msgid "dam"
-msgstr "Damm"
+msgstr ""
 
 msgid "pyramid"
-msgstr "Pyramide"
+msgstr ""
 
 msgid "barn"
-msgstr "Scheune"
+msgstr ""
 
 msgid "mill"
-msgstr "Windmühle"
+msgstr ""
 
 msgid "window"
-msgstr "Fenster"
+msgstr ""
 
 msgid "cabin"
-msgstr "Hütte"
+msgstr ""
 
 msgid "step"
-msgstr "Stufe"
+msgstr ""
 
 msgid "shop"
-msgstr "Laden"
+msgstr ""
 
 msgid "shed"
-msgstr "Schuppen"
+msgstr ""
 
 msgid "roof"
-msgstr "Dach"
+msgstr ""
 
 msgid "steeple"
-msgstr "Turm"
+msgstr ""
 
 msgid "garage"
-msgstr "Garage"
+msgstr ""
 
 msgid "mosque"
-msgstr "Moschee"
+msgstr ""
 
 msgid "hospital"
-msgstr "Hospital"
+msgstr ""
 
 msgid "tent"
-msgstr "Zelt"
+msgstr ""
 
 msgid "house"
-msgstr "Haus"
+msgstr ""
 
 msgid "wall"
-msgstr "Wand"
+msgstr ""
 
 msgid "bank"
-msgstr "Bank"
+msgstr ""
 
 msgid "shutter"
-msgstr "Schutt"
+msgstr ""
 
 msgid "hut"
-msgstr "Hütte"
+msgstr ""
 
 # nature
 msgid "land"
-msgstr "Land"
+msgstr ""
 
 msgid "cliff"
-msgstr "Klippe"
+msgstr ""
 
 msgid "hill"
-msgstr "Hügel"
+msgstr ""
 
 msgid "canyon"
-msgstr "Schlucht"
+msgstr ""
 
 msgid "rock"
-msgstr "Felsen"
+msgstr ""
 
 msgid "sea"
-msgstr "Meer"
+msgstr ""
 
 msgid "lake"
-msgstr "See"
+msgstr ""
 
 msgid "coast"
-msgstr "Küste"
+msgstr ""
 
 msgid "shore"
-msgstr "Land"
+msgstr ""
 
 msgid "mountain"
-msgstr "Berg"
+msgstr ""
 
 msgid "pond"
-msgstr "Teich"
+msgstr ""
 
 msgid "peak"
-msgstr "Gipfel"
+msgstr ""
 
 msgid "lava"
-msgstr "Lava"
+msgstr ""
 
 msgid "cave"
-msgstr "Höhle"
+msgstr ""
 
 msgid "dune"
-msgstr "Düne"
+msgstr ""
 
 msgid "island"
-msgstr "Insel"
+msgstr ""
 
 msgid "forest"
-msgstr "Wald"
+msgstr ""
 
 msgid "desert"
-msgstr "Wüste"
+msgstr ""
 
 msgid "iceberg"
-msgstr "Eisberg"
+msgstr ""
 
 # jobs
 msgid "clown"
-msgstr "Clown"
+msgstr ""
 
 msgid "engineer"
-msgstr "Ingenieur"
-
-msgid "priest"
-msgstr "Priester"
+msgstr ""
 
 msgid "vet"
-msgstr "Veterinär"
+msgstr ""
 
 msgid "judge"
-msgstr "Richter"
+msgstr ""
 
 msgid "chef"
-msgstr "Koch"
+msgstr ""
 
 msgid "athlete"
-msgstr "Athlet"
+msgstr ""
 
 msgid "librarian"
-msgstr "Bibliothekar"
+msgstr ""
 
 msgid "juggler"
-msgstr "juggler"
+msgstr ""
 
 msgid "police officer"
-msgstr "Polizei"
+msgstr ""
 
 msgid "plumber"
-msgstr "Klempner"
+msgstr ""
 
 msgid "badge"
-msgstr "Dienstmarke"
+msgstr ""
 
 msgid "queen"
-msgstr "Königin"
+msgstr ""
 
 msgid "farmer"
-msgstr "Farmer"
+msgstr ""
 
 msgid "magician"
-msgstr "Magier"
+msgstr ""
 
 msgid "knight"
-msgstr "Ritter"
+msgstr ""
 
 msgid "doctor"
-msgstr "Arzt"
+msgstr ""
 
 msgid "bricklayer"
-msgstr "Maurer"
+msgstr ""
 
 msgid "cleaner"
-msgstr "Reiniger"
+msgstr ""
 
 msgid "teacher"
-msgstr "Lehrer"
+msgstr ""
 
 msgid "hunter"
-msgstr "Jäger"
+msgstr ""
 
 msgid "soldier"
-msgstr "Soldat"
+msgstr ""
 
 msgid "musician"
-msgstr "Musiker"
+msgstr ""
 
 msgid "lawyer"
-msgstr "Anwalt"
+msgstr ""
 
 msgid "fisherman"
-msgstr "Fischer"
+msgstr ""
 
 msgid "princess"
-msgstr "Prinzessin"
+msgstr ""
 
 msgid "firefighter"
-msgstr "Feuerwehrmann"
+msgstr ""
 
 msgid "nun"
-msgstr "Nonne"
+msgstr ""
 
 msgid "pirate"
-msgstr "Pirat"
+msgstr ""
 
 msgid "cowboy"
-msgstr "Cowboy"
+msgstr ""
 
 msgid "electrician"
-msgstr "Elektriker"
+msgstr ""
 
 msgid "nurse"
-msgstr "Krankenschwester"
+msgstr ""
 
 msgid "king"
-msgstr "König"
+msgstr ""
 
 msgid "president"
-msgstr "Präsident"
+msgstr ""
 
 msgid "office worker"
-msgstr "Sekretär"
+msgstr ""
 
 msgid "carpenter"
-msgstr "Zimmermann"
+msgstr ""
 
 msgid "jockey"
-msgstr "Jockey"
+msgstr ""
 
 msgid "worker"
-msgstr "Arbeiter"
+msgstr ""
 
 msgid "mechanic"
-msgstr "Mechaniker"
+msgstr ""
 
 msgid "pilot"
-msgstr "Pilot"
+msgstr ""
 
 msgid "actor"
-msgstr "Schauspieler"
+msgstr ""
 
 msgid "cook"
-msgstr "Koch"
+msgstr ""
 
 msgid "student"
-msgstr "Student"
+msgstr ""
 
 msgid "butcher"
-msgstr "Schlachter"
+msgstr ""
 
 msgid "accountant"
-msgstr "Verkäufer"
+msgstr ""
 
 msgid "prince"
-msgstr "Prinz"
-
-msgid "pope"
-msgstr "Papst"
+msgstr ""
 
 msgid "sailor"
-msgstr "Matrose"
+msgstr ""
 
 msgid "boxer"
-msgstr "Boxer"
+msgstr ""
 
 msgid "ballet dancer"
-msgstr "Tänzer"
+msgstr ""
 
 msgid "coach"
-msgstr "Trainer"
+msgstr ""
 
 msgid "astronaut"
-msgstr "Astronaut"
+msgstr ""
 
 msgid "painter"
-msgstr "Maler"
-
-msgid "anaesthesiologist"
-msgstr "Anestesist"
+msgstr ""
 
 msgid "scientist"
-msgstr "Wissenschaftler"
+msgstr ""
 
+# fruits and vegetables
 msgid "carrot"
-msgstr "Karotte"
+msgstr ""
 
 msgid "blackberries"
-msgstr "Brombeeren"
+msgstr ""
 
 msgid "celery"
-msgstr "Sellerie"
+msgstr ""
 
 msgid "turnip"
-msgstr "Rübe"
+msgstr ""
 
 msgid "cacao"
-msgstr "Kakao"
+msgstr ""
 
 msgid "peach"
-msgstr "Pfirsisch"
+msgstr ""
 
 msgid "melon"
-msgstr "Melone"
+msgstr ""
 
 msgid "grapefruit"
-msgstr "Grapefruit"
+msgstr ""
 
 msgid "broccoli"
-msgstr "Broccoli"
+msgstr ""
 
 msgid "grapes"
-msgstr "Weintrauben"
+msgstr ""
 
 msgid "spinach"
-msgstr "Spinat"
+msgstr ""
 
 msgid "fig"
-msgstr "Feige"
+msgstr ""
 
 msgid "kernel"
-msgstr "Kern"
+msgstr ""
 
 msgid "radish"
-msgstr "Rettich"
+msgstr ""
 
 msgid "tomato"
-msgstr "Tomate"
+msgstr ""
 
 msgid "kiwi"
-msgstr "Kiwi"
+msgstr ""
 
 msgid "asparagus"
-msgstr "Spargel"
+msgstr ""
 
 msgid "olives"
-msgstr "Oliven"
+msgstr ""
 
 msgid "cucumbers"
-msgstr "Gurken"
+msgstr ""
 
 msgid "beans"
-msgstr "Bohnen"
+msgstr ""
 
 msgid "strawberry"
-msgstr "Erdbeere"
+msgstr ""
 
 msgid "peppers"
-msgstr "Pfeffer"
+msgstr ""
 
 msgid "raspberry"
-msgstr "raspberry"
+msgstr ""
 
 msgid "apricot"
-msgstr "Aprikose"
+msgstr ""
 
 msgid "potatoes"
-msgstr "Kartoffel"
+msgstr ""
 
 msgid "peas"
-msgstr "Erbse"
+msgstr ""
 
 msgid "cabbage"
-msgstr "Kohl"
+msgstr ""
 
 msgid "cherries"
-msgstr "Kirsche"
+msgstr ""
 
 msgid "squash"
-msgstr "squash"
+msgstr ""
 
 msgid "blueberries"
-msgstr "Blaubeeren"
+msgstr ""
 
 msgid "pear"
-msgstr "Birne"
+msgstr ""
 
 msgid "orange"
-msgstr "Orange"
+msgstr ""
 
 msgid "pumpkin"
-msgstr "Kürbis"
+msgstr ""
 
 msgid "avocado"
-msgstr "Avocado"
+msgstr ""
 
 msgid "garlic"
-msgstr "Knoblauch"
+msgstr ""
 
 msgid "onion"
-msgstr "Zwiebel"
+msgstr ""
 
 msgid "apple"
-msgstr "Apfel"
+msgstr ""
 
 msgid "lime"
-msgstr "Limette"
+msgstr ""
 
 msgid "cauliflower"
-msgstr "Blumenkohl"
+msgstr ""
 
 msgid "mango"
-msgstr "Mango"
+msgstr ""
 
 msgid "lettuce"
-msgstr "Kopfsalat"
+msgstr ""
 
 msgid "lemon"
-msgstr "Zitrone"
+msgstr ""
 
 msgid "aubergine"
-msgstr "Aubergine"
+msgstr ""
 
 msgid "artichokes"
-msgstr "Artischocke"
+msgstr ""
 
 msgid "plums"
-msgstr "Pflaumen"
+msgstr ""
 
 msgid "leek"
-msgstr "Lauch"
+msgstr ""
 
 msgid "bananas"
-msgstr "Banane"
+msgstr ""
 
 msgid "papaya"
-msgstr "Papaya"
+msgstr ""
 
 # transport
 msgid "sail"
-msgstr "Segel"
+msgstr ""
 
 msgid "taxi"
-msgstr "Taxi"
+msgstr ""
 
 msgid "car"
-msgstr "Auto"
+msgstr ""
 
 msgid "bike"
-msgstr "Rad"
+msgstr ""
 
 msgid "raft"
-msgstr "Floß"
+msgstr ""
 
 msgid "pedal"
-msgstr "Pedal"
+msgstr ""
 
 msgid "bus"
-msgstr "Bus"
+msgstr ""
 
 msgid "handlebar"
-msgstr "Lenker"
+msgstr ""
 
 msgid "boat"
-msgstr "Boot"
+msgstr ""
 
 msgid "truck"
-msgstr "Truck"
+msgstr ""
 
 msgid "sleigh"
-msgstr "Schlitten"
+msgstr ""
 
 msgid "carpet"
-msgstr "Teppich"
+msgstr ""
 
 msgid "motorcycle"
-msgstr "Motorrad"
+msgstr ""
 
 msgid "train"
-msgstr "Zug"
+msgstr ""
 
 msgid "ship"
-msgstr "Schiff"
+msgstr ""
 
 msgid "van"
-msgstr "Van"
+msgstr ""
 
 msgid "canoe"
-msgstr "Kanu"
+msgstr ""
 
 msgid "rocket"
-msgstr "Rakete"
+msgstr ""
 
 msgid "mast"
-msgstr "Mast"
+msgstr ""
 
 msgid "sledge"
-msgstr "Schlitten"
+msgstr ""
 
 msgid "bicycle"
-msgstr "Fahrrad"
+msgstr ""
 
-
-#~ msgid "green apple"
-#~ msgid_plural "green apples"
-#~ msgstr[0] "Grüner Apfel"
-#~ msgstr[1] "Grüne Äpfel"
-
-#~ msgid "Cube"
-#~ msgstr "Würfel"
-
-#~ msgid "Square Prism"
-#~ msgstr "Quadratisches Prisma"
-
-#~ msgid "Triangular Prism"
-#~ msgstr "Dreieckiges Prisma"
-
-#~ msgid "Square Pyramid"
-#~ msgstr "Quadratische Pyramide"
-
-#~ msgid "Triangular Pyramid"
-#~ msgstr "Dreieckige Pyramide"
-
-#~ msgid "Cylinder"
-#~ msgstr "Zylinder"
-
-#~ msgid "Cone"
-#~ msgstr "Kegel"
-
-#~ msgid "Torus"
-#~ msgstr "Torus"
-
-#~ msgid "Guest"
-#~ msgstr "Gast"
-
-#~ msgid "Log in:"
-#~ msgstr "Einloggen:"
-
-#~ msgid "Add new user:"
-#~ msgstr "Neuen Nutzer anlegen:"
-
-#~ msgid "confirm password:"
-#~ msgstr "Passwort bestätigen:"
-
-#~ msgid "Register new user"
-#~ msgstr "Neuen Nutzer registrieren"
-
-#~ msgid "Administrator Login:"
-#~ msgstr "Administrator Login:"
-
-#~ msgid "Please select a user from the list."
-#~ msgstr "Bitte wähle einen Nutzer von der Liste"
-
-#, python-format
-#~ msgid "%s deleted from database."
-#~ msgstr "%s wurde gelöscht"
-
-#~ msgid "Failed to delete the user."
-#~ msgstr "Konnte Nutzer nicht löschen"
-
-#~ msgid "Preferences"
-#~ msgstr "Einstellungen"
-
-#~ msgid "switch to full screen after login"
-#~ msgstr "Ganzen Bildschirm anzeigen"
-
-#~ msgid "allow adding new users on login screen"
-#~ msgstr "Nutzer im Homescreen registrieren"
-
-#~ msgid "display languages with uncompleted translations"
-#~ msgstr "Zeige Sprachen mit unvollständiger Übersetzung"
-
-#~ msgid "require password to log in"
-#~ msgstr "Loginpasswort benötigt"
-
-#~ msgid "require password to access admin area"
-#~ msgstr "Adminpasswort benötigt"
-
-#~ msgid "Update admin's password:"
-#~ msgstr "Adminpasswort ändern"
-
-#~ msgid "previous password:"
-#~ msgstr "Vorheriges Passwort"
-
-#~ msgid "new password:"
-#~ msgstr "Neues Passwort"
-
-#~ msgid "confirm new password:"
-#~ msgstr "Passwort bestätigen"
-
-#~ msgid "Create admin's account:"
-#~ msgstr "Erstelle Administrator Account"
-
-#~ msgid "admin's user name:"
-#~ msgstr "Administratorname"
-
-#~ msgid "admin's password:"
-#~ msgstr "Administratorpasswort"
-
-#~ msgid "confirm admin's password:"
-#~ msgstr "Administratorpasswort bestätigen"
-
-#~ msgid "Please enter user name (at least 3 characters long)"
-#~ msgstr "Bitte gebe einen Namen an (min. 3 Zeichen lang)"
-
-#~ msgid "Please enter password (at least 4 characters long)"
-#~ msgstr "Bitte gebe ein Passwort an(min. 4 Zeichen lang)"
-
-#~ msgid "This username doesn't exist."
-#~ msgstr "Nutzername nicht gefunden"
-
-#~ msgid "Passwords don't match"
-#~ msgstr "Passwörter ungleich"
-
-#, python-format
-#~ msgid "%s added"
-#~ msgstr "%s hinzugefügt"
-
-#~ msgid "This user name already exists, please choose a different one"
-#~ msgstr "Der Nutername existiert bereits. Bitte wähle einen anderen"
-
-#~ msgid "Admin's password has been updated"
-#~ msgstr "Administratorpasswort wurde geändert"
-
-#~ msgid "ERROR: This operation is not allowed at this point"
-#~ msgstr "FEHLER: Das ist hier nicht erlaubt"
-
-#~ msgid "Please enter previous password (at least 4 characters long)"
-#~ msgstr "Bitte gebe das vorherige Passwort an(min. 4 Zeichen lang)"
-
-#~ msgid "Please enter new password (at least 4 characters long)"
-#~ msgstr "Bitte gebe ein neues Passwort an (min. 4 Zeichen lang)"
-
-#~ msgid "Previous password doesn't seem to be in the database"
-#~ msgstr "Vorheriges Passwort nicht gefunden"
-
-#~ msgid "Registered:"
-#~ msgstr "Registriert"
-
-#~ msgid "Last login:"
-#~ msgstr "Letzer Besuch:"
-
-#~ msgid "(Log out)"
-#~ msgstr "(Ausloggen)"
-
-#~ msgid "Addition Table"
-#~ msgstr "Additions Tabelle"
-
-#~ msgid "Hello"
-#~ msgstr "Hallo"
-
-#~ msgid "Welcome back in the game."
-#~ msgstr "Willkommen zurück"
-
-#~ msgid "Translations"
-#~ msgstr "Übersetzungen"
-
-#~ msgid "Info & Settings"
-#~ msgstr "Info & Optionen"
-
-#~ msgid "Keyboard & Mouse"
-#~ msgstr "Tastatur & Maus"
-
-#~ msgid "Learn New Words"
-#~ msgstr "Lerne neue Wörter"
-
-#~ msgid "Basic Operations - Exercises"
-#~ msgstr "Einfaches Rechnen - Übungen"
-
-#~ msgid "Sorting and Comparing"
-#~ msgstr "Sortieren und Vergleichen"
-
-#~ msgid "Geometry and Shape Recognition"
-#~ msgstr "Geometrie und Formerkennung"
-
-#~ msgid "Art and Colour"
-#~ msgstr "Kunst und Farbe"
-
-#~ msgid "Memory"
-#~ msgstr "Memory"
-
-#~ msgid "Multiplayer Games"
-#~ msgstr "Multiplayer Spiele"
-
-#~ msgid "About."
-#~ msgstr "Über."
-
-#~ msgid "Game info..."
-#~ msgstr "Spielinformation..."
-
-#~ msgid "Hit the Mole"
-#~ msgstr "Treff den Maulwurf"
-
-#~ msgid "Learn Letters with Flashcards"
-#~ msgstr "Lerne Buchstaben mit Karten"
-
-#~ msgid "Learn to Write"
-#~ msgstr "Lerne zu schreiben"
-
-#~ msgid "Complete the ABC"
-#~ msgstr "Vervollständige das ABC"
-
-#~ msgid "Your language"
-#~ msgstr "Deine Sprache"
-
-#~ msgid "Sorting Letters"
-#~ msgstr "Buchstaben sortieren"
-
-#~ msgid "Lowercase Letters"
-#~ msgstr "Kleine Buchstaben"
-
-#~ msgid "Uppercase Letters"
-#~ msgstr "Große Buchstaben"
-
-#~ msgid "Word Builder"
-#~ msgstr "Wörter bauen"
-
-#~ msgid "Word Maze"
-#~ msgstr "Wortlabyrinth"
-
-#~ msgid "Collect all letters in the right order"
-#~ msgstr "Sammle alle Buchstaben in der richtigen Reihenfolge"
-
-#~ msgid "Word Maze + 4"
-#~ msgstr "Wortlabyrinth + 4"
-
-#~ msgid "Learn to Count"
-#~ msgstr "Lerne zu zählen"
-
-#~ msgid "Basic Addition"
-#~ msgstr "Einfache Addition"
-
-#~ msgid "Basic Subtraction"
-#~ msgstr "Einfache Subtraktion"
-
-#~ msgid "Plus or Minus"
-#~ msgstr "Plus oder Minus"
-
-#~ msgid "Multiplication Table"
-#~ msgstr "Multiplikationstabelle"
-
-#~ msgid "Find the product"
-#~ msgstr "Finde das Produkt"
-
-#~ msgid "Find the multiplier"
-#~ msgstr "Finde den Multiplikator"
-
-#~ msgid "Division"
-#~ msgstr "Division"
-
-#~ msgid "Sorting Numbers"
-#~ msgstr "Zahlen sortieren"
-
-#~ msgid "Number Comparison"
-#~ msgstr "Zahlen vergleichen"
-
-#~ msgid "Addition & Subtraction"
-#~ msgstr "Addition & Subtraktion"
-
-#~ msgid "Comparison"
-#~ msgstr "Vergleichen"
-
-#~ msgid "Fractions"
-#~ msgstr "Brüche"
-
-#~ msgid "Decimal Fractions"
-#~ msgstr "Dezimalbrüche"
-
-#~ msgid "Even or Odd"
-#~ msgstr "Grade oder Ungrade"
-
-#~ msgid "Solids"
-#~ msgstr "Körper"
-
-#~ msgid "Solid Geometry with Flashcards"
-#~ msgstr "Feste Geometrie mit Karten"
-
-#~ msgid "help me find my shadow"
-#~ msgstr "Helf mir meinen Schatten zu finden"
-
-#~ msgid "Colour Matching"
-#~ msgstr "Farben finden"
-
-#~ msgid "label the colours"
-#~ msgstr "Nenne die Farben"
-
-#~ msgid "Follow the Arrows"
-#~ msgstr "Folge den Pfeilen"
-
-#~ msgid "remember the directions"
-#~ msgstr "Erinner Dich an die Richtung"
-
-#~ msgid "Photographic Memory"
-#~ msgstr "Fotografisches Gedächtnis"
-
-#~ msgid "Automatic Levels"
-#~ msgstr "Automatische Level"
-
-#~ msgid "Mouse Maze"
-#~ msgstr "Maus Labyrinth"
-
-#~ msgid "Let's have some cheese"
-#~ msgstr "Lasst uns Käse essen"
-
-#~ msgid "Sheep Maze"
-#~ msgstr "Schafslabyrinth"
-
-#~ msgid "Find the rest of the herd"
-#~ msgstr "Finden den Rest der Herde"
-
-#~ msgid "Connect"
-#~ msgstr "Verbinden"
-
-#~ msgid "Balloons with threads"
-#~ msgstr "Ballons mit Fäden"
-
-#~ msgid "Fifteen"
-#~ msgstr "Fünfzehn"
-
-#~ msgid "With a Twist"
-#~ msgstr "Im Handumdrehen"
-
-#~ msgid "Drag the slider up or down so that the right sign is in the red square."
-#~ msgstr "Ziehe den Schlitten hoch oder runter, sodass das richtige Zeichen im Quadrat ist."
-
-#~ msgid "Take your sheep to the rest of the herd."
-#~ msgstr "Packe dein Schaf zum Rest der Herde."
-
-#~ msgid "Check the shopping list and drag all needed items into the basket."
-#~ msgstr "Schaue auf deine Einkaufsliste und fülle deinen Einkaufskorb."
-
-#~ msgid "Drag one of the <, > or = (lesser, greater or equal) to the red square."
-#~ msgstr "Ziehe einen der <, > oder = (kleiner, größer oder gleich) zum roten Quadrat."
-
-#~ msgid "Drag one of the lesser, greater or equal to the red square."
-#~ msgstr "Ziehe einen kleiner, größer oder gleich zum roten Quadrat."
-
-#~ msgid "Rearrange the numbers so they are in the right order"
-#~ msgstr "Setze die obrigen Zahlen in die richtige Reihenfolge."
-
-#~ msgid "Complete the abc using the letters above."
-#~ msgstr "Vervollständige das ABC mit den Buchstaben oben."
-
-#~ msgid "Build the following word using the letters below."
-#~ msgstr "Baue das folgende Wort mit den Buchstaben unten."
-
-#~ msgid "Find and separate even numbers from odd numbers."
-#~ msgstr "Finde und trenne die geraden von den ungeraden Zahlen."
-
-#~ msgid "Rearrange the letters so they are in the alphabetical order."
-#~ msgstr "Setze die Buchstaben in die richtige Reihenfolge."
-
-#~ msgid "Rearrange the numbers so they are in the ascending order."
-#~ msgstr "Sortiere die Zahlen in aufsteigender Reihenfolge."
-
-#~ msgid "Please try again."
-#~ msgstr "Bitte versuche es nochmal."
-
-#~ msgid "Sorry! It is wrong."
-#~ msgstr "Sorry! Das ist falsch."
-
-#~ msgid "Perfect! Task solved!"
-#~ msgstr "Perfekt! Aufgabe erfüllt!"
-
-#~ msgid "You need to work a little bit harder next time."
-#~ msgstr "Du musst Dich beim nächsten mal ein bisschen mehr anstrengen."
-
-#~ msgid "Game Over!"
-#~ msgstr "Game Over!"
-
-#~ msgid "Congratulations! You have completed all tasks in this game."
-#~ msgstr "Herzlichen Glückwunsch! Du hast alle Aufgaben im Spiel gelöst!"
-
-#~ msgid "Great job!"
-#~ msgstr "Toll gemacht!"
-
-#~ msgid "Perfect!!!"
-#~ msgstr "Perfekt!!!"
-
-#~ msgid "Awesome!"
-#~ msgstr "Unglaublich!"
-
-#~ msgid "Fantastic job!"
-#~ msgstr "Fantastisch gemacht!"
-
-#~ msgid "Well done!"
-#~ msgstr "Toll!"
-
-#~ msgid "Perfect! Level completed!"
-#~ msgstr "Perfekt! Level abgeschlossen!"
-
-#~ msgid "surface area:"
-#~ msgstr "Oberflächenbereich:"
-
-#~ msgid "volume:"
-#~ msgstr "Volumen:"
-
-#~ msgid "Perfect!"
-#~ msgstr "Perfekt!"
-
-#~ msgid "divided by"
-#~ msgstr "geteilt durch"
-
-#~ msgid "equals"
-#~ msgstr "gleich"
-
-#~ msgid "Even"
-#~ msgstr "Gerade"
-
-#~ msgid "white"
-#~ msgstr "Weiß"
-
-#~ msgid "grey"
-#~ msgstr "Grau"
-
-#~ msgid "red"
-#~ msgstr "Rot"
-
-#~ msgid "orange [color]"
-#~ msgstr "Orange"
-
-#~ msgid "yellow"
-#~ msgstr "Gelb"
-
-#~ msgid "green"
-#~ msgstr "Grün"
-
-#~ msgid "sea green"
-#~ msgstr "Meergrün"
-
-#~ msgid "blue"
-#~ msgstr "Blau"
-
-#~ msgid "navy"
-#~ msgstr "Navy"
-
-#~ msgid "purple"
-#~ msgstr "Lila"
-
-#~ msgid "magenta"
-#~ msgstr "Magenta"
-
-#~ msgid "pink"
-#~ msgstr "Pink"
-
-#~ msgid "aqua"
-#~ msgstr "Aquamarin"
-
-#~ msgid "Rainbow Keyboard"
-#~ msgstr "Regenbogentastatur"
-
-#~ msgid "Touch Typing Tutor"
-#~ msgstr "Tipp-Lehrer"
-
-#~ msgid "English Alphabet"
-#~ msgstr "Englisches Alphabet"
-
-#~ msgid "Mixing Colours for Painting"
-#~ msgstr "Vermische Farben zum Malen"
-
-#~ msgid "Mix red, yellow, blue, black and white paint"
-#~ msgstr "Mische Rot, Gelb, Blau, Schwarz und Weiß"
-
-#~ msgid "Additive Colour Mixing - Light"
-#~ msgstr "Additive Farbmischung - Leicht"
-
-#~ msgid "Mix red, green and blue light to get other colours"
-#~ msgstr "Mische Rot, Gelb und Hellblau um andere Farben zu erhalten"
-
-#~ msgid "Subtractive Colour Mixing - Paints, Dyes, Inks"
-#~ msgstr "Substraktive Farbmischung - Bilder, Farben und Tinte"
-
-#~ msgid "Mix cyan, magenta and yellow paint to get other colours"
-#~ msgstr "Vermische Cyan, Magenta und Gelb um andere Farben zu erhalten"
-
-#~ msgid "Find the colour of the circle in the middle"
-#~ msgstr "Finde die Farbe im Kreis"
-
-#~ msgid "Adjust the amount of cyan, magenta and yellow paint"
-#~ msgstr "Korrigiere die Stärke von Cyan, Magenta und Gelb."
-
-#~ msgid "Adjust the intensity of red, green and blue light"
-#~ msgstr "Korrigiere die Intensität von Rot, Grün und Hellblau."
-
-#~ msgid "brush size"
-#~ msgstr "Pinselgröße"
-
-#~ msgid "Noughts and Crosses 2"
-#~ msgstr "Tic Tac Toe 2"
-
-#~ msgid "Noughts and Crosses 3"
-#~ msgstr "Tic Tac Toe 3"
-
-#~ msgid "Get as many lines of 3 as possible to win"
-#~ msgstr "Hole soviele Linien von 3 wie möglich."
-
-#~ msgid "Draw"
-#~ msgstr "Unentschieden"
-
-#~ msgid "User Name"
-#~ msgstr "Nutzername"
-
-#~ msgid "Match Animals"
-#~ msgstr "Vergleiche Tiere"
-
-#~ msgid "Match Animals - Memory Game"
-#~ msgstr "Vergleiche Tiere - Memmory"
-
-#~ msgid "Match Fruits - Memory Game"
-#~ msgstr "Vergleiche Obst - Memmory"
-
-#~ msgid "Match Vegetables - Memory Game"
-#~ msgstr "Vergleiche Gemüse - Memory"
-
-#~ msgid "Match Numbers - Memory Game"
-#~ msgstr "Vergleiche Zahlen - Memory"
-
-#~ msgid "Find matching pairs of the same image"
-#~ msgstr "Finde gleiche Bilder"
-
-#~ msgid "Image Slider"
-#~ msgstr "Bildeschlitten"
-
-#~ msgid "Animal Slider"
-#~ msgstr "Tierschlitten"
-
-#~ msgid "Fruit Slider"
-#~ msgstr "Obstschlitten"
-
-#~ msgid "Number Slider"
-#~ msgstr "Zahlenschlitten"
-
-#~ msgid "Fraction Groups"
-#~ msgstr "Gruppen von Brüchen"
-
-#~ msgid "Percentages"
-#~ msgstr "Prozente"
-
-#~ msgid "Ratios"
-#~ msgstr "Verhältnisse"
-
-#~ msgid "Match fraction charts on the right to the ones on the left"
-#~ msgstr "Vergleiche die rechten Bruchformen mit den linken Bruchformen"
-
-#~ msgid "Match fraction charts and fractions on the right to the fraction charts on the left"
-#~ msgstr "Vergleiche die rechten Bruchformen und Brüche mit den linken Bruchformen undBrüchen"
-
-#~ msgid "Match fraction charts to the fractions on the left"
-#~ msgstr "Vergleiche die Bruchformen mit den Brüchen"
-
-#~ msgid "Match fraction charts, fractions and decimal fractions on the right to their percentage representations"
-#~ msgstr "Ordne die Elemente links zu ihren Prozenten rechts zu"
-
-#~ msgid "Match charts to the ratios on the left. Ratios are expressed as ratio of coloured pieces to white pieces"
-#~ msgstr "Ordne die Bilder zu den Verhältnissen links, welche das Verhältnis von farbigen zu weißen Stücken angeben"
-
-#~ msgid "Maths Matching Game"
-#~ msgstr "Mathevergleich Spiel"
-
-#~ msgid "Multiplication"
-#~ msgstr "Multiplikation"
-
-#~ msgid "Check for newer version, report bugs, discuss, translate or review this project at:"
-#~ msgstr "Schaue für eine neuere Version, Bugs, Diskussion, Übersetzungen oder Reviews auf: "
-
-#~ msgid "Match numbers to their spelling"
-#~ msgstr "Ordne die Zahlen zu ihren Wörtern"
-
-#~ msgid "Find all matching animals"
-#~ msgstr "Finde alle passenden Tiere"
-
-#~ msgid "Match animals to their shadows"
-#~ msgstr "Ordne die Tiere zu ihren Schatten zu"
-
-#, python-format
-#~ msgid "Shape to draw: %s"
-#~ msgstr "Zeiche Form ist: %s"
-
-#, python-format
-#~ msgid "such that lengths of its bases are equal to %d and %d and height to %d"
-#~ msgstr "sodass die Länge ihrer Basen gleich zu %d und %d und der Nenner zu %d"
-
-#, python-format
-#~ msgid "such that lengths of its sides are equal to %d"
-#~ msgstr "sodass die Länge ihrer Seiten gleich ist zu %d"
-
-#, python-format
-#~ msgid "such that lengths of its sides are equal to %d and %d"
-#~ msgstr "sodass die Länge ihrer Seiten gleich ist zu %d und %d"
-
-#, python-format
-#~ msgid "such that lengths of its 2 parallel bases are equal to %d and height to %d"
-#~ msgstr "sodass die Länge der 2 parallelen Basen gleich ist zu %d und der Nenner zu %d"
-
-#, python-format
-#~ msgid "such that length of its base is equal to %d and height to %d"
-#~ msgstr "sodass die Länge der Basen gleich ist zu %d und der Nenner zu %d"
-
-#, python-format
-#~ msgid "such that lengths of its catheti are equal to %d and %d"
-#~ msgstr "sodass die Länge der Katheten gleich ist zu %d und %d"
-
-#, python-format
-#~ msgid "such that lengths of both of its catheti are equal to %d"
-#~ msgstr "sodass die Länge beider Katheten gleich ist zu %d"
-
-#, python-format
-#~ msgid "such that length of its hypotenuse is equal to %d"
-#~ msgstr "sodass die Länge der Hypothenuse gleich ist zu %d"
-
-#, python-format
-#~ msgid "such that length of one of its sides is equal to %d and height to %d"
-#~ msgstr "sodass die Länge einer Seite gleich ist zu %d und die Höhe zu %d"
-
-#, python-format
-#~ msgid "such that length of its radius is equal to %d"
-#~ msgstr "sodass die Länge des Radius gleich ist zu %d"
-
-#~ msgid "Quadrilateral"
-#~ msgstr "Viereck"
-
-#~ msgid "Triangle"
-#~ msgstr "Dreieck"
-
-#~ msgid "Ouch... squished quadrilateral"
-#~ msgstr "Aua... gequetschtes Viereck"
-
-#~ msgid "Right isosceles triangle"
-#~ msgstr "Rechtwinkliges gleichschenkliges Dreieck"
-
-#~ msgid "Obtuse isosceles triangle"
-#~ msgstr "Stumpfes gleichschenkliges Dreieck"
-
-#~ msgid "Acute isosceles triangle"
-#~ msgstr "Spitzes gleichschenkliges Dreieck"
-
-#~ msgid "Ouch... squished triangle"
-#~ msgstr "Aua... gequetschtes Dreieck"
-
-#~ msgid "Triangle? Well, not really..."
-#~ msgstr "Dreieck? Naja, nicht wirklich..."
-
-#~ msgid "Test yourself"
-#~ msgstr "Teste Dich selber"
-
-#~ msgid "Clock"
-#~ msgstr "Uhr"
-
-#~ msgid "learn to read the time"
-#~ msgstr "Lerne die Uhr zu lesen"
-
-#~ msgid "What time is it?"
-#~ msgstr "Wieviel Uhr ist es?"
-
-#~ msgid "Click again to exit"
-#~ msgstr "Zum Schließen nochmal klicken"
-
-#~ msgid "Type your answer and hit enter"
-#~ msgstr "Schreibe deine Antwort und drücke Enter"
-
-#~ msgid "Turn the clock hands and see what happens."
-#~ msgstr "Drehe die Zeiger und schaue was passiert"
-
-#~ msgid "Let's see what shapes you can draw"
-#~ msgstr "Lass uns schauen, welche Fromen Du zeichnen kannst"
-
-#~ msgid "Time in text version only"
-#~ msgstr "Zeit schreiben"
-
-#~ msgid "Columnar addition"
-#~ msgstr "Spaltenaddition"
-
-#~ msgid "Columnar subtraction"
-#~ msgstr "Spaltensubstraktion"
-
-#~ msgid "Long multiplication"
-#~ msgstr "Lange Multiplikation"
-
-#~ msgid "Long division"
-#~ msgstr "Lange Division"
-
-#~ msgid "borrow 10"
-#~ msgstr "Borge 10"
-
-#~ msgid "Start >>"
-#~ msgstr "Start >>"
-
-#~ msgid "Next example >>"
-#~ msgstr "Nächstes Beispiel >>"
-
-#~ msgid "Next step >>"
-#~ msgstr "Nächster Schritt >>"
-
-#~ msgid "Do it yourself"
-#~ msgstr "Mach es selber"
-
-#~ msgid "Ratio"
-#~ msgstr "Verhältnis"
-
-#~ msgid "Working with large numbers"
-#~ msgstr "Arbeiten mit großen Zahlen"
-
-#~ msgid "rewrite "
-#~ msgstr "neuschreiben "
-
-#~ msgid "result"
-#~ msgstr "Ergebnis"
-
-#~ msgid "Add some red"
-#~ msgstr "Füge Rot hinzu"
-
-#~ msgid "Add some green"
-#~ msgstr "Füge Grün hinzu"
-
-#~ msgid "Add some blue"
-#~ msgstr "Füge Blau hinzu"
-
-#~ msgid "Add some cyan"
-#~ msgstr "Füge Cyan hinzu"
-
-#~ msgid "Add some magenta"
-#~ msgstr "Füge Magenta hinzu"
-
-#~ msgid "Add some yellow"
-#~ msgstr "Füge Gelb hinzu"
-
-#~ msgid "Too much red"
-#~ msgstr "Zuviel Rot"
-
-#~ msgid "Too much green"
-#~ msgstr "Zuviel Grün"
-
-#~ msgid "Too much blue"
-#~ msgstr "Zuviel Blau"
-
-#~ msgid "Too much cyan"
-#~ msgstr "Zuviel Cyan"
-
-#~ msgid "Too much magenta"
-#~ msgstr "Zuviel Magenta"
-
-#~ msgid "Too much yellow"
-#~ msgstr "Zuviel Gelb"
-
-#~ msgid "red is spot on"
-#~ msgstr "Rot ist gegeben"
-
-#~ msgid "green is spot on"
-#~ msgstr "Grün ist gegeben"
-
-#~ msgid "blue is spot on"
-#~ msgstr "Blau ist gegeben"
-
-#~ msgid "cyan is spot on"
-#~ msgstr "Cyan ist gegeben"
-
-#~ msgid "magenta is spot on"
-#~ msgstr "Magenta ist gegeben"
-
-#~ msgid "yellow is spot on"
-#~ msgstr "Gelb ist gegeben"
-
-#~ msgid "remember me"
-#~ msgstr "Erinnere mich"
-
-#~ msgid ""
-#~ "Laby, 2010 by Mehdi Cherti (mehdidc) \n"
-#~ " Sounds by various authors who contributed their works to freesound.org. \n"
-#~ " Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n"
-#~ " Please view credits.txt for more info about authors of media files used in this project"
-#~ msgstr ""
-#~ "Laby, 2010 by Mehdi Cherti (mehdidc) \n"
-#~ " Sounds by various authors who contributed their works to freesound.org. \n"
-#~ " Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n"
-#~ " Please view credits.txt for more info about authors of media files used in this project"
-
-#~ msgid "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-
-#~ msgid "A collection of educational activities for kids"
-#~ msgstr "Eine kleine Auswahl an Lernprogrammen für Kinder"
-
-#~ msgid "Decimals and Fractions"
-#~ msgstr "Dezimalzahlen und Brüche"
-
-#~ msgid "Decimals, fractions and percentages"
-#~ msgstr "Dezimalzahlen, Brüche und Prozente"
-
-#~ msgid "Decimals, fractions, ratios and percentages"
-#~ msgstr "Dezimalzahlen, Brüche, Verhältnisse und Prozente"
-
-#~ msgid "Translation Credits"
-#~ msgstr "Übersetzungen Credits"
-
-#~ msgid "Achievements"
-#~ msgstr "Auszeichnungen"
-
-#~ msgid "Select age group:"
-#~ msgstr "Wähle deine Altersgruppe:"
-
-#~ msgid "show activities for:"
-#~ msgstr "Zeige Aktivitäten von:"
-
-#~ msgid "Year 1"
-#~ msgstr "Klasse 1"
-
-#~ msgid "Year 2"
-#~ msgstr "Klasse 2"
-
-#~ msgid "Year 3"
-#~ msgstr "Klasse 3"
-
-#~ msgid "Year 4"
-#~ msgstr "Klasse 4"
-
-#~ msgid "Year 5"
-#~ msgstr "Klasse 5"
-
-#~ msgid "Year 6"
-#~ msgstr "Klasse 6"
-
-#~ msgid "show all"
-#~ msgstr "Zeige alles"
-
-#~ msgid "Do you want to exit the game?"
-#~ msgstr "Willst Du wirklich das Spiel verlassen?"
-
-#~ msgid "Do you want to log out of the game?"
-#~ msgstr "Willst Du Dich ausloggen?"
-
-#~ msgid "Ready to go to the next level?"
-#~ msgstr "Fertig für den nächsten Level?"
-
-#~ msgid "Educational Activities for Kids"
-#~ msgstr "Lernpaket für Kinder"
-
-#~ msgid "Decimals (Category)"
-#~ msgstr "Dezimalzahlen"
-
-#~ msgid "Fractions (Category)"
-#~ msgstr "Brüche"
-
-#~ msgid "Ratios (Category)"
-#~ msgstr "Verhältnisse"
-
-#~ msgid "Percentages (Category)"
-#~ msgstr "Prozente"
-
-#~ msgid "Match images to words"
-#~ msgstr "Ordne die Bilder zu ihren Worten"
