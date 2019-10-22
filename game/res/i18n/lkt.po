@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-22 17:12\n"
+"PO-Revision-Date: 2019-10-22 17:18\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Lakota\n"
 "MIME-Version: 1.0\n"
@@ -342,7 +342,7 @@ msgid "Octagon"
 msgstr ""
 
 msgid "trapezium"
-msgstr ""
+msgstr "oblótȟuŋ Oštéka"
 
 # animals
 msgid "cow"
