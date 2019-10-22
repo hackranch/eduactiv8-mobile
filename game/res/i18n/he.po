@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-22 16:59\n"
+"PO-Revision-Date: 2019-10-22 17:42\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
@@ -17,118 +17,118 @@ msgstr ""
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "תפוח ירוק"
+msgstr[1] "תפוחים ירוקים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "תפוח אדום"
+msgstr[1] "תפוחים אדומים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "תות"
+msgstr[1] "תותים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "אגס"
+msgstr[1] "אגסים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "תפוז"
+msgstr[1] "תפוזים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "בצל"
+msgstr[1] "בצלים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "עגבניה"
+msgstr[1] "עגבניות"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "לימון"
+msgstr[1] "לימונים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "דובדבן"
+msgstr[1] "דובדבנים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "פלפל"
+msgstr[1] "פלפלים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "גזר"
+msgstr[1] "גזרים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "בננה"
+msgstr[1] "בננות"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "מלון"
+msgstr[1] "מלונים"
 msgstr[2] ""
 msgstr[3] ""
 
 msgid "English"
-msgstr ""
+msgstr "אנגלית"
 
 msgid "Login"
-msgstr ""
+msgstr "כניסה"
 
 msgid "Default Language:"
-msgstr ""
+msgstr "שפה ברירת מחדל"
 
 msgid "User Management"
-msgstr ""
+msgstr "ניהול משתמשים"
 
 msgid "Copyright & Credits"
-msgstr ""
+msgstr "זכויות יוצרים וקרדיטים"
 
 msgid "Licence"
-msgstr ""
+msgstr "רשיון שימוש"
 
 msgid "Language arts"
-msgstr ""
+msgstr "שפה"
 
 msgid "This username and password combination doesn't exist."
-msgstr ""
+msgstr "השילוב של שם המשתמש והסיסמה לא קיים"
 
 msgid "user name: "
 msgstr ""
@@ -140,94 +140,94 @@ msgid "eduActiv8 Test Version"
 msgstr ""
 
 msgid "Save"
-msgstr ""
+msgstr "שמירה"
 
 msgid "Delete user"
-msgstr ""
+msgstr "מחיקת משתמש"
 
 msgid "Preferences saved..."
-msgstr ""
+msgstr "ההגדרות נשמרו"
 
 msgid "Logged in as: "
-msgstr ""
+msgstr "מחובר כ"
 
 msgid "Language"
-msgstr ""
+msgstr "שפה"
 
 msgid "Mathematics"
-msgstr ""
+msgstr "מתימטיקה"
 
 msgid "Games & Mazes"
-msgstr ""
+msgstr "משחקים ומבוכים"
 
 msgid "Word Builders"
-msgstr ""
+msgstr "בונה מילה"
 
 msgid "Animals"
-msgstr ""
+msgstr "בעלי חיים"
 
 msgid "Complete the word"
-msgstr ""
+msgstr "השלימו את המילה"
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr ""
+msgstr "איות מספר"
 
 msgid "Shopping List"
-msgstr ""
+msgstr "רשימת קניות"
 
 msgid "Addition"
-msgstr ""
+msgstr "תוספת"
 
 msgid "Find missing number"
-msgstr ""
+msgstr "מיצאו את המספר החסר"
 
 msgid "Level"
-msgstr ""
+msgstr "שלב"
 
 msgid "Translators"
-msgstr ""
+msgstr "מתרגמים"
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr ""
+msgstr "ניקוד "
 
 msgid "Numbers & Basic Operations"
-msgstr ""
+msgstr "מספרים ופעולות בסיסיות"
 
 msgid "Numbers"
-msgstr ""
+msgstr "מספרים"
 
 msgid "Basic Operations"
-msgstr ""
+msgstr "פעולות בסיסיות"
 
 msgid "area:"
-msgstr ""
+msgstr "שטח"
 
 msgid "perimeter:"
-msgstr ""
+msgstr "היקף"
 
 msgid "circumference:"
-msgstr ""
+msgstr "היקף"
 
 msgid "Trapezium"
-msgstr ""
+msgstr "טרפז"
 
 msgid "Drag the clock hands to set the time"
-msgstr ""
+msgstr "גרור את מחוגי שעון כדי להגדיר את הזמן"
 
 msgid "Discover Letters"
-msgstr ""
+msgstr "גלו אותיות"
 
 msgid "Word Matchers"
-msgstr ""
+msgstr "התאמת תמונות למילים"
 
 msgid "Shapes and Solids"
-msgstr ""
+msgstr "צורות"
 
 msgid "Symmetry"
 msgstr ""
@@ -236,19 +236,19 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr ""
+msgstr "זמן"
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr ""
+msgstr "חסור"
 
 msgid "Learn Numbers with Flashcards"
-msgstr ""
+msgstr "לימדו מספרים עם כרטיסיות"
 
 msgid "Demonstration"
-msgstr ""
+msgstr "תצוגת תכלית"
 
 msgid "Find Solution"
 msgstr ""
@@ -257,109 +257,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr ""
+msgstr "למד צורות עם כרטיסיות"
 
 msgid "Shape Matching"
-msgstr ""
+msgstr "צורת התאמה"
 
 msgid "Shape Maker"
-msgstr ""
+msgstr "להכנת צורה"
 
 msgid "How clock works"
-msgstr ""
+msgstr "איך שעון עובד"
 
 msgid "learn to set the clock"
-msgstr ""
+msgstr "ללמוד לכוון את השעון"
 
 msgid "Set the clock to:"
-msgstr ""
+msgstr "הגדר את השעון כדי"
 
 msgid "Time Matching"
-msgstr ""
+msgstr "התאמת זמן"
 
 msgid "Your Alphabet"
-msgstr ""
+msgstr "אלפבית עברי"
 
 msgid "Trace Letters and Numbers"
-msgstr ""
+msgstr "כתיבת אותיות ומספרים"
 
 msgid "People"
-msgstr ""
+msgstr "אנשים"
 
 msgid "Jobs"
-msgstr ""
+msgstr "משרות"
 
 msgid "Body"
-msgstr ""
+msgstr "גוף"
 
 msgid "Clothes and Accessories"
-msgstr ""
+msgstr "בגדים ואבזרים"
 
 msgid "Sports"
-msgstr ""
+msgstr "ספורט"
 
 msgid "Actions"
-msgstr ""
+msgstr "פעולות"
 
 msgid "Nature"
-msgstr ""
+msgstr "טבע"
 
 msgid "Fruits and Vegetables"
-msgstr ""
+msgstr "פירות וירקות"
 
 msgid "Food"
-msgstr ""
+msgstr "מזון"
 
 msgid "Transport"
-msgstr ""
+msgstr "תחבורה"
 
 msgid "Constructions"
-msgstr ""
+msgstr "קונסטרוקציות"
 
 msgid "Equilateral Triangle"
-msgstr ""
+msgstr "משולש שווה צלעות"
 
 msgid "Isosceles Triangle"
-msgstr ""
+msgstr "משולש שווה שוקיים"
 
 msgid "Obtuse Triangle"
-msgstr ""
+msgstr "משולש קהה"
 
 msgid "Right Triangle"
-msgstr ""
+msgstr "משולש ישר-זווית"
 
 msgid "Acute Triangle"
-msgstr ""
+msgstr "משולש אקוטי"
 
 msgid "Square"
-msgstr ""
+msgstr "ריבוע"
 
 msgid "Rectangle"
-msgstr ""
+msgstr "מלבן"
 
 msgid "Right Trapezium"
-msgstr ""
+msgstr "טרפז ישר-זווית"
 
 msgid "Isosceles Trapezium"
-msgstr ""
+msgstr "טרפז שווה שוקיים"
 
 msgid "Rhombus"
-msgstr ""
+msgstr "מעוין"
 
 msgid "Parallelogram"
-msgstr ""
+msgstr "מקבילית"
 
 msgid "Pentagon"
-msgstr ""
+msgstr "פנטגון"
 
 msgid "Hexagon"
-msgstr ""
+msgstr "משושה"
 
 msgid "Circle"
-msgstr ""
+msgstr "עיגול"
 
 msgid "Ellipse"
-msgstr ""
+msgstr "אליפסה"
 
 msgid "Heptagon"
 msgstr ""
@@ -456,7 +456,7 @@ msgid "scorpion"
 msgstr ""
 
 msgid "fo"
-msgstr ""
+msgstr "fox"
 
 msgid "leopard"
 msgstr ""
@@ -651,7 +651,7 @@ msgid "hyena"
 msgstr ""
 
 msgid "o"
-msgstr ""
+msgstr "ox"
 
 msgid "peacock"
 msgstr ""
@@ -1171,7 +1171,7 @@ msgid "roast"
 msgstr ""
 
 msgid "drink[n]"
-msgstr ""
+msgstr "drink"
 
 msgid "stew"
 msgstr ""
@@ -1545,7 +1545,7 @@ msgid "drive"
 msgstr ""
 
 msgid "drink[v]"
-msgstr ""
+msgstr "drink"
 
 msgid "fly"
 msgstr ""
