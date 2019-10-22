@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-22 16:59\n"
+"PO-Revision-Date: 2019-10-22 17:12\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Lakota\n"
 "MIME-Version: 1.0\n"
@@ -17,92 +17,92 @@ msgstr ""
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tȟaspáŋ tȟó"
+msgstr[1] "tȟaspáŋ tȟotȟó"
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tȟaspáŋ šá"
+msgstr[1] "tȟaspáŋ šašá"
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "wažúšteča"
+msgstr[1] "wažúšteča"
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tȟaspáŋpȟestola"
+msgstr[1] "tȟaspáŋpȟestola"
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tȟaspáŋzi"
+msgstr[1] "tȟaspáŋzi"
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "pšíŋ"
+msgstr[1] "pšíŋ"
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "uŋžíŋžiŋtka"
+msgstr[1] "uŋžíŋžiŋtka"
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tȟaspáŋpȟa"
+msgstr[1] "tȟaspáŋpȟa"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "čhaŋpȟá"
+msgstr[1] "čhaŋpȟá"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "ȟláȟla yútapi"
+msgstr[1] "ȟláȟla yútapi"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "pȟaŋǧí zizí"
+msgstr[1] "pȟaŋǧí zizí"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "zíškopela"
+msgstr[1] "zíškopela"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "wagmúšpaŋšni"
+msgstr[1] "wagmúšpaŋšni"
 
 msgid "English"
-msgstr ""
+msgstr "Wašíčuiyapi"
 
 msgid "Login"
-msgstr ""
+msgstr "Čhaž’óigwapi"
 
 msgid "Default Language:"
-msgstr ""
+msgstr "Iyápi Ikčéka:"
 
 msgid "User Management"
-msgstr ""
+msgstr "Waíŋyaŋgkhiyápi"
 
 msgid "Copyright & Credits"
-msgstr ""
+msgstr "Tuwáwa káǧe kiŋ hená"
 
 msgid "Licence"
-msgstr ""
+msgstr "Wóiyowiŋkhiye"
 
 msgid "Language arts"
-msgstr ""
+msgstr "Iyápi wóuŋspe"
 
 msgid "This username and password combination doesn't exist."
-msgstr ""
+msgstr "Ipáyeȟ oyáwa itéke."
 
 msgid "user name: "
 msgstr ""
@@ -114,94 +114,94 @@ msgid "eduActiv8 Test Version"
 msgstr ""
 
 msgid "Save"
-msgstr ""
+msgstr "Patáŋ yo/ye"
 
 msgid "Delete user"
-msgstr ""
+msgstr "Tuwá iȟpéya yo/ye"
 
 msgid "Preferences saved..."
-msgstr ""
+msgstr "Tȟokáhekhiyapi kiŋ patáŋpi..."
 
 msgid "Logged in as: "
-msgstr ""
+msgstr "Ničháže kiŋ: "
 
 msgid "Language"
-msgstr ""
+msgstr "Iyápi"
 
 msgid "Mathematics"
-msgstr ""
+msgstr "Wíyawapi"
 
 msgid "Games & Mazes"
-msgstr ""
+msgstr "Wóškate na Onúni"
 
 msgid "Word Builders"
-msgstr ""
+msgstr "Wičhóiye Káǧapi"
 
 msgid "Animals"
-msgstr ""
+msgstr "Wamákȟaškaŋ"
 
 msgid "Complete the word"
-msgstr ""
+msgstr "Wičhóiye kiŋ yuštáŋ yo/ye"
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr ""
+msgstr "Wóiyawa Čhažé Owápi"
 
 msgid "Shopping List"
-msgstr ""
+msgstr "Wópȟetȟuŋpi"
 
 msgid "Addition"
-msgstr ""
+msgstr "Wayúpȟaǧapi"
 
 msgid "Find missing number"
-msgstr ""
+msgstr "Wóiyawa waŋ tókȟaȟ’aŋ kiŋ iyéya yo/ye"
 
 msgid "Level"
-msgstr ""
+msgstr "Wóali"
 
 msgid "Translators"
-msgstr ""
+msgstr "Wayúiyeskapi"
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr ""
+msgstr "Wóiglamna: "
 
 msgid "Numbers & Basic Operations"
-msgstr ""
+msgstr "Wóiyawa na Wíyawapi Ikčéka"
 
 msgid "Numbers"
-msgstr ""
+msgstr "Wóiyawa"
 
 msgid "Basic Operations"
-msgstr ""
+msgstr "Wóečhuŋ Ikčéka"
 
 msgid "area:"
-msgstr ""
+msgstr "otíŋskoya:"
 
 msgid "perimeter:"
-msgstr ""
+msgstr "opápuŋ:"
 
 msgid "circumference:"
-msgstr ""
+msgstr "miméla opápuŋ:"
 
 msgid "Trapezium"
-msgstr ""
+msgstr "Oblótȟuŋ Oštéka"
 
 msgid "Drag the clock hands to set the time"
-msgstr ""
+msgstr "Mázaškaŋškaŋ kiŋ yuéčhel égle kta uŋ istó kiŋ yuslóhaŋ áya yo/ye"
 
 msgid "Discover Letters"
-msgstr ""
+msgstr "Oówa Oyúȟlokapi"
 
 msgid "Word Matchers"
-msgstr ""
+msgstr "Wičhóiye Káǧapi 2"
 
 msgid "Shapes and Solids"
-msgstr ""
+msgstr "Oúŋčhaǧe na Wasúta"
 
 msgid "Symmetry"
 msgstr ""
@@ -210,19 +210,19 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr ""
+msgstr "Mázaškaŋškaŋ"
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr ""
+msgstr "Wayúčonalapi"
 
 msgid "Learn Numbers with Flashcards"
-msgstr ""
+msgstr "Itówapi uŋ Wóiyawa Uŋspéič’ičhiyapi"
 
 msgid "Demonstration"
-msgstr ""
+msgstr "Wópazo"
 
 msgid "Find Solution"
 msgstr ""
@@ -231,109 +231,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr ""
+msgstr "Itówapi uŋ Oúŋčhaǧe Uŋspéič’ičhiyapi"
 
 msgid "Shape Matching"
-msgstr ""
+msgstr "Oúŋčhaǧe Núŋmnuŋpa Égnakapi"
 
 msgid "Shape Maker"
-msgstr ""
+msgstr "Oúŋčhaǧe Okáǧe"
 
 msgid "How clock works"
-msgstr ""
+msgstr "Mázaškaŋškaŋ kiŋ lé tóškhe yutȟókča-phiča he?"
 
 msgid "learn to set the clock"
-msgstr ""
+msgstr "Mázaškaŋškaŋ kiŋ yuéčhel églepi uŋspéič’ičhiya yo/ye"
 
 msgid "Set the clock to:"
-msgstr ""
+msgstr "Mázaškaŋškaŋ kiŋ léčheȟčiŋ égle yo/ye: "
 
 msgid "Time Matching"
-msgstr ""
+msgstr "Mázaškaŋškaŋ Istó Ečhékčhel Églepi"
 
 msgid "Your Alphabet"
-msgstr ""
+msgstr "Lakȟótiyapi Oówaptaya"
 
 msgid "Trace Letters and Numbers"
-msgstr ""
+msgstr "Oówa na Wóiyawa Taŋyéla Owápi"
 
 msgid "People"
-msgstr ""
+msgstr "Oyáte"
 
 msgid "Jobs"
-msgstr ""
+msgstr "Wówaši"
 
 msgid "Body"
-msgstr ""
+msgstr "Wičhátȟaŋčhaŋ"
 
 msgid "Clothes and Accessories"
-msgstr ""
+msgstr "Hayápi"
 
 msgid "Sports"
-msgstr ""
+msgstr "Škal’ákičhiyapi"
 
 msgid "Actions"
-msgstr ""
+msgstr "Wóečhuŋ"
 
 msgid "Nature"
-msgstr ""
+msgstr "Uŋčí Makȟá"
 
 msgid "Fruits and Vegetables"
-msgstr ""
+msgstr "Waskúyeča na Watȟótȟo"
 
 msgid "Food"
-msgstr ""
+msgstr "Wóyute"
 
 msgid "Transport"
-msgstr ""
+msgstr "Watȟókšupi"
 
 msgid "Constructions"
-msgstr ""
+msgstr "Wakáǧapi"
 
 msgid "Equilateral Triangle"
-msgstr ""
+msgstr "Oíseyamni Ótkuŋza"
 
 msgid "Isosceles Triangle"
-msgstr ""
+msgstr "Oíseyamni Háŋska"
 
 msgid "Obtuse Triangle"
-msgstr ""
+msgstr "Oíseyamni Ičápa"
 
 msgid "Right Triangle"
-msgstr ""
+msgstr "Oíseyamni Glakíŋyaŋ"
 
 msgid "Acute Triangle"
-msgstr ""
+msgstr "Oíseyamni Ziŋtkápȟa"
 
 msgid "Square"
-msgstr ""
+msgstr "Oblótȟuŋ"
 
 msgid "Rectangle"
-msgstr ""
+msgstr "Oblótȟuŋ Háŋska"
 
 msgid "Right Trapezium"
-msgstr ""
+msgstr "Oblótȟuŋ Oštéka Glakíŋyaŋ"
 
 msgid "Isosceles Trapezium"
-msgstr ""
+msgstr "Oblótȟuŋ Oštéka Ótkuŋza"
 
 msgid "Rhombus"
-msgstr ""
+msgstr "Ótkuŋzeȟča"
 
 msgid "Parallelogram"
-msgstr ""
+msgstr "Ótkuŋza"
 
 msgid "Pentagon"
-msgstr ""
+msgstr "Obló Záptaŋ"
 
 msgid "Hexagon"
-msgstr ""
+msgstr "Obló Šákpe"
 
 msgid "Circle"
-msgstr ""
+msgstr "Miméla"
 
 msgid "Ellipse"
-msgstr ""
+msgstr "Miméla Haŋska Ótkuŋza"
 
 msgid "Heptagon"
 msgstr ""
@@ -346,1750 +346,1750 @@ msgstr ""
 
 # animals
 msgid "cow"
-msgstr ""
+msgstr "ptegléška"
 
 msgid "turkey"
-msgstr ""
+msgstr "waglékšuŋ"
 
 msgid "shrimp"
-msgstr ""
+msgstr "hokáš’iŋla"
 
 msgid "wolf"
-msgstr ""
+msgstr "šuŋgmánitu tȟáŋka"
 
 msgid "panther"
-msgstr ""
+msgstr "igmútȟaŋka sápa"
 
 msgid "panda"
-msgstr ""
+msgstr "matȟówičhá"
 
 msgid "magpie"
-msgstr ""
+msgstr "halháta"
 
 msgid "clam"
-msgstr ""
+msgstr "thukí"
 
 msgid "pony"
-msgstr ""
+msgstr "šuŋkčík’ala"
 
 msgid "mouse"
-msgstr ""
+msgstr "itȟúŋkala"
 
 msgid "pug"
-msgstr ""
+msgstr "šuŋkíteblaska"
 
 msgid "koala"
-msgstr ""
+msgstr "matȟó itókaǧa"
 
 msgid "frog"
-msgstr ""
+msgstr "gnašká"
 
 msgid "ladybug"
-msgstr ""
+msgstr "wíŋyaŋ wablúška"
 
 msgid "gorilla"
-msgstr ""
+msgstr "makhúakipȟela"
 
 msgid "llama"
-msgstr ""
+msgstr "lamá"
 
 msgid "vulture"
-msgstr ""
+msgstr "hečá"
 
 msgid "hamster"
-msgstr ""
+msgstr "itȟúŋkčhepa"
 
 msgid "bird"
-msgstr ""
+msgstr "ziŋtkála"
 
 msgid "starfish"
-msgstr ""
+msgstr "wičháȟpi hoǧáŋ"
 
 msgid "crow"
-msgstr ""
+msgstr "kȟaŋǧí"
 
 msgid "parakeet"
-msgstr ""
+msgstr "ziŋtkála waúŋčhala"
 
 msgid "caterpillar"
-msgstr ""
+msgstr "waglúla"
 
 msgid "tiger"
-msgstr ""
+msgstr "igmúgleǧa"
 
 msgid "hummingbird"
-msgstr ""
+msgstr "tȟanáǧila"
 
 msgid "piranha"
-msgstr ""
+msgstr "hoǧáŋ wóhitika"
 
 msgid "pig"
-msgstr ""
+msgstr "khukhúše"
 
 msgid "scorpion"
-msgstr ""
+msgstr "siŋtíčhapȟe"
 
 msgid "fo"
-msgstr ""
+msgstr "šuŋǧíla"
 
 msgid "leopard"
-msgstr ""
+msgstr "igmúgleška"
 
 msgid "iguana"
-msgstr ""
+msgstr "agléškapȟéyohaŋ"
 
 msgid "dolphin"
-msgstr ""
+msgstr "hoškéhaŋ"
 
 msgid "bat"
-msgstr ""
+msgstr "ȟupákiglake"
 
 msgid "chick"
-msgstr ""
+msgstr "uŋžíŋčala"
 
 msgid "crab"
-msgstr ""
+msgstr "mniwáŋča matúgna"
 
 msgid "hen"
-msgstr ""
+msgstr "kȟokȟóyaȟ’aŋla bloká"
 
 msgid "wasp"
-msgstr ""
+msgstr "wičháyažipa"
 
 msgid "chameleon"
-msgstr ""
+msgstr "iglútȟokčala"
 
 msgid "whale"
-msgstr ""
+msgstr "mniwátu"
 
 msgid "hedgehog"
-msgstr ""
+msgstr "wapȟáhiŋka"
 
 msgid "fawn"
-msgstr ""
+msgstr "thíŋgleška"
 
 msgid "moose"
-msgstr ""
+msgstr "héblaska"
 
 msgid "bee"
-msgstr ""
+msgstr "wičháyažipa tȟáŋka"
 
 msgid "viper"
-msgstr ""
+msgstr "peháŋhaŋla"
 
 msgid "shrike"
-msgstr ""
+msgstr "čhetáŋ watȟápȟela"
 
 msgid "donkey"
-msgstr ""
+msgstr "šúŋšuŋla"
 
 msgid "guinea pig"
-msgstr ""
+msgstr "itȟúŋggleška"
 
 msgid "sloth"
-msgstr ""
+msgstr "waȟ’áŋhikela"
 
 msgid "horse"
-msgstr ""
+msgstr "šúŋkawakȟaŋ"
 
 msgid "penguin"
-msgstr ""
+msgstr "čháǧa ziŋtkála"
 
 msgid "otter"
-msgstr ""
+msgstr "ptáŋ"
 
 msgid "bear"
-msgstr ""
+msgstr "matȟó"
 
 msgid "zebra"
-msgstr ""
+msgstr "šuŋglézela"
 
 msgid "ostrich"
-msgstr ""
+msgstr "waȟúpakoza tȟáŋka"
 
 msgid "camel"
-msgstr ""
+msgstr "čhuwínuŋǧa"
 
 msgid "antelope"
-msgstr ""
+msgstr "niǧésaŋla"
 
 msgid "lemur"
-msgstr ""
+msgstr "siŋté glegléǧa"
 
 msgid "pigeon"
-msgstr ""
+msgstr "thiwákiŋyela"
 
 msgid "lama"
-msgstr ""
+msgstr "lamá"
 
 msgid "mole"
-msgstr ""
+msgstr "wahíŋheya"
 
 msgid "ray"
-msgstr ""
+msgstr "mniókiŋyela"
 
 msgid "ram"
-msgstr ""
+msgstr "hečhíŋškayapi"
 
 msgid "skunk"
-msgstr ""
+msgstr "maká"
 
 msgid "jellyfish"
-msgstr ""
+msgstr "hoštáka"
 
 msgid "sheep"
-msgstr ""
+msgstr "tȟáȟčašuŋkala"
 
 msgid "shark"
-msgstr ""
+msgstr "hoápepȟestola"
 
 msgid "kitten"
-msgstr ""
+msgstr "igmúla"
 
 msgid "deer"
-msgstr ""
+msgstr "tȟáȟča"
 
 msgid "snail"
-msgstr ""
+msgstr "waháčhaŋka kič’íŋ"
 
 msgid "flamingo"
-msgstr ""
+msgstr "pȟeháŋ šásaŋ"
 
 msgid "rabbit"
-msgstr ""
+msgstr "maštíŋčala"
 
 msgid "oyster"
-msgstr ""
+msgstr "thukíhasaŋ"
 
 msgid "beaver"
-msgstr ""
+msgstr "čhápa"
 
 msgid "sparrow"
-msgstr ""
+msgstr "ziŋtkísčila"
 
 msgid "dove"
-msgstr ""
+msgstr "wakíŋyela"
 
 msgid "eagle"
-msgstr ""
+msgstr "waŋblí"
 
 msgid "beetle"
-msgstr ""
+msgstr "wablúška"
 
 msgid "hippopotamus"
-msgstr ""
+msgstr "mnikhúkhuše"
 
 msgid "owl"
-msgstr ""
+msgstr "hiŋháŋ"
 
 msgid "cobra"
-msgstr ""
+msgstr "zuzéča pȟabláska"
 
 msgid "salamander"
-msgstr ""
+msgstr "asápazila"
 
 msgid "goose"
-msgstr ""
+msgstr "maǧá"
 
 msgid "kangaroo"
-msgstr ""
+msgstr "tȟáȟčapsiča"
 
 msgid "dragonfly"
-msgstr ""
+msgstr "thuswéčha"
 
 msgid "toad"
-msgstr ""
+msgstr "matȟápeȟ’a"
 
 msgid "pelican"
-msgstr ""
+msgstr "blóza"
 
 msgid "squid"
-msgstr ""
+msgstr "istó šaglóǧaŋ"
 
 msgid "lion cub"
-msgstr ""
+msgstr "igmú tȟáŋka čhiŋčála"
 
 msgid "jaguar"
-msgstr ""
+msgstr "igmú itókaǧa"
 
 msgid "duck"
-msgstr ""
+msgstr "maǧáksiča"
 
 msgid "lizard"
-msgstr ""
+msgstr "agléška"
 
 msgid "rhinoceros"
-msgstr ""
+msgstr "phuté hetȟúŋ"
 
 msgid "hyena"
-msgstr ""
+msgstr "šúŋka iȟáȟa"
 
 msgid "o"
-msgstr ""
+msgstr "ptewák'iŋ"
 
 msgid "peacock"
-msgstr ""
+msgstr "ziŋtkála siŋtúpi háŋska"
 
 msgid "parrot"
-msgstr ""
+msgstr "ziŋtkála waúŋčha"
 
 msgid "elk"
-msgstr ""
+msgstr "heȟáka"
 
 msgid "alligator"
-msgstr ""
+msgstr "agléška tȟáŋka"
 
 msgid "ant"
-msgstr ""
+msgstr "tȟažúška"
 
 msgid "goat"
-msgstr ""
+msgstr "tȟatȟókala"
 
 msgid "baby rabbit"
-msgstr ""
+msgstr "maštíŋčala čhiŋčála"
 
 msgid "lion"
-msgstr ""
+msgstr "igmú tȟáŋka"
 
 msgid "squirrel"
-msgstr ""
+msgstr "zičá"
 
 msgid "opossum"
-msgstr ""
+msgstr "siŋtéšla"
 
 msgid "chimp"
-msgstr ""
+msgstr "iȟála"
 
 msgid "doe"
-msgstr ""
+msgstr "tȟáȟča wíŋyela"
 
 msgid "gopher"
-msgstr ""
+msgstr "ithígnila"
 
 msgid "elephant"
-msgstr ""
+msgstr "phuté wókič’u"
 
 msgid "giraffe"
-msgstr ""
+msgstr "tȟahú háŋska"
 
 msgid "spider"
-msgstr ""
+msgstr "iktómi"
 
 msgid "puppy"
-msgstr ""
+msgstr "šuŋȟpála"
 
 msgid "jay"
-msgstr ""
+msgstr "ziŋtkátȟoglegleǧa"
 
 msgid "seal"
-msgstr ""
+msgstr "mniwáŋča šúŋka"
 
 msgid "rooster"
-msgstr ""
+msgstr "kȟokȟóyaȟ’aŋla wíŋyela"
 
 msgid "turtle"
-msgstr ""
+msgstr "khéya"
 
 msgid "bull"
-msgstr ""
+msgstr "tȟablóka"
 
 msgid "cat"
-msgstr ""
+msgstr "igmú"
 
 msgid "rat"
-msgstr ""
+msgstr "itȟúŋktȟaŋka"
 
 msgid "slug"
-msgstr ""
+msgstr "zugzúkela"
 
 msgid "buffalo"
-msgstr ""
+msgstr "tȟatȟáŋka"
 
 msgid "blackbird"
-msgstr ""
+msgstr "wábloša"
 
 msgid "swan"
-msgstr ""
+msgstr "maǧáska"
 
 msgid "lobster"
-msgstr ""
+msgstr "matúgna tȟáŋka"
 
 msgid "dog"
-msgstr ""
+msgstr "šúŋka"
 
 msgid "mosquito"
-msgstr ""
+msgstr "čhapȟúŋka"
 
 msgid "snake"
-msgstr ""
+msgstr "zuzéča"
 
 msgid "chicken"
-msgstr ""
+msgstr "kȟokȟóyaȟ’aŋla"
 
 msgid "anteater"
-msgstr ""
+msgstr "tȟažúška yúta"
 
 # sport
 msgid "judo"
-msgstr ""
+msgstr "ksabyá kichízapi"
 
 msgid "pool"
-msgstr ""
+msgstr "nuŋwÁŋ"
 
 msgid "ride"
-msgstr ""
+msgstr "hunáhomni akáŋyaŋkA"
 
 msgid "stretch"
-msgstr ""
+msgstr "iglúzičA"
 
 msgid "helmet"
-msgstr ""
+msgstr "wapȟóštaŋ sutá"
 
 msgid "ice skating"
-msgstr ""
+msgstr "čhaȟ’íčazo"
 
 msgid "walk"
-msgstr ""
+msgstr "máni"
 
 msgid "run"
-msgstr ""
+msgstr "napȟÁ"
 
 msgid "swim"
-msgstr ""
+msgstr "oyúso úŋ"
 
 msgid "hop"
-msgstr ""
+msgstr "psípsičA"
 
 msgid "hike"
-msgstr ""
+msgstr "imáǧaǧaya máni"
 
 msgid "boxing"
-msgstr ""
+msgstr "napé uŋ kičhízapi"
 
 msgid "hockey"
-msgstr ""
+msgstr "čháǧa tȟabkápsičapi"
 
 msgid "race"
-msgstr ""
+msgstr "khiíŋyaŋkapi"
 
 msgid "throw"
-msgstr ""
+msgstr "kaȟ’ól iyéyA"
 
 msgid "skate"
-msgstr ""
+msgstr "čhaŋbláska kič’úŋ"
 
 msgid "win"
-msgstr ""
+msgstr "ohíyA"
 
 msgid "squat"
-msgstr ""
+msgstr "pustág nážiŋ"
 
 msgid "ski"
-msgstr ""
+msgstr "waákaŋ čhaŋwóslohaŋ kič’úŋ"
 
 msgid "golf"
-msgstr ""
+msgstr "tȟab’ákozA"
 
 msgid "whistle"
-msgstr ""
+msgstr "wayázopi"
 
 msgid "torch"
-msgstr ""
+msgstr "pȟetížaŋžaŋye"
 
 msgid "sailing"
-msgstr ""
+msgstr "tȟatéwata"
 
 msgid "stand"
-msgstr ""
+msgstr "hóšnašna kič’úŋ"
 
 msgid "tennis"
-msgstr ""
+msgstr "tȟabhíŋšma škátapi"
 
 msgid "jump"
-msgstr ""
+msgstr "waŋkáyeič’iyA"
 
 msgid "rowing"
-msgstr ""
+msgstr "watópȟA"
 
 msgid "jog"
-msgstr ""
+msgstr "íŋyaŋkA"
 
 msgid "rope"
-msgstr ""
+msgstr "wíkȟaŋ uŋ psípsičA"
 
 # body
 msgid "teeth"
-msgstr ""
+msgstr "hí"
 
 msgid "cheek"
-msgstr ""
+msgstr "tȟapȟúŋ"
 
 msgid "ankle"
-msgstr ""
+msgstr "iškáhu"
 
 msgid "knee"
-msgstr ""
+msgstr "čhaŋkpé"
 
 msgid "toe"
-msgstr ""
+msgstr "sipȟá"
 
 msgid "muscle"
-msgstr ""
+msgstr "kȟaŋíyuwi"
 
 msgid "mouth"
-msgstr ""
+msgstr "í"
 
 msgid "feet"
-msgstr ""
+msgstr "sí"
 
 msgid "hand"
-msgstr ""
+msgstr "napé"
 
 msgid "elbow"
-msgstr ""
+msgstr "išpá"
 
 msgid "hair"
-msgstr ""
+msgstr "pȟehíŋ"
 
 msgid "eyelash"
-msgstr ""
+msgstr "úŋštiŋmapihíŋ"
 
 msgid "beard"
-msgstr ""
+msgstr "phuthíŋhiŋ"
 
 msgid "belly button"
-msgstr ""
+msgstr "čhekpá"
 
 msgid "thumb"
-msgstr ""
+msgstr "napȟáhuŋka"
 
 msgid "breast"
-msgstr ""
+msgstr "makhú"
 
 msgid "nostril"
-msgstr ""
+msgstr "pȟóǧe"
 
 msgid "nose"
-msgstr ""
+msgstr "pȟasú"
 
 msgid "hip"
-msgstr ""
+msgstr "niséhu"
 
 msgid "arm"
-msgstr ""
+msgstr "istó"
 
 msgid "eyebrow"
-msgstr ""
+msgstr "ištáȟehiŋ"
 
 msgid "fist"
-msgstr ""
+msgstr "napógmus glúza"
 
 msgid "neck"
-msgstr ""
+msgstr "tȟahú"
 
 msgid "wrist"
-msgstr ""
+msgstr "napókaške"
 
 msgid "throat"
-msgstr ""
+msgstr "loté"
 
 msgid "eye"
-msgstr ""
+msgstr "ištá"
 
 msgid "leg"
-msgstr ""
+msgstr "hú"
 
 msgid "spine"
-msgstr ""
+msgstr "čhaŋkȟáhu"
 
 msgid "ear"
-msgstr ""
+msgstr "núŋǧe"
 
 msgid "finger"
-msgstr ""
+msgstr "napsú"
 
 msgid "foot"
-msgstr ""
+msgstr "sí"
 
 msgid "braid"
-msgstr ""
+msgstr "osúŋ"
 
 msgid "face"
-msgstr ""
+msgstr "ité"
 
 msgid "back"
-msgstr ""
+msgstr "čhuwí"
 
 msgid "chin"
-msgstr ""
+msgstr "ikhú"
 
 msgid "bottom"
-msgstr ""
+msgstr "uŋzé"
 
 msgid "thigh"
-msgstr ""
+msgstr "čhečá"
 
 msgid "belly"
-msgstr ""
+msgstr "thezí"
 
 # people
 msgid "girl"
-msgstr ""
+msgstr "wičhíŋčala"
 
 msgid "male"
-msgstr ""
+msgstr "šič’éšitku"
 
 msgid "son"
-msgstr ""
+msgstr "čhiŋkšítku"
 
 msgid "friends"
-msgstr ""
+msgstr "wakȟáŋyeža"
 
 msgid "baby"
-msgstr ""
+msgstr "hokšíčala"
 
 msgid "child"
-msgstr ""
+msgstr "čhiŋkší"
 
 msgid "dad"
-msgstr ""
+msgstr "até"
 
 msgid "mom"
-msgstr ""
+msgstr "húŋku"
 
 msgid "twin boys"
-msgstr ""
+msgstr "čhekpápi (hokšíla)"
 
 msgid "brothers"
-msgstr ""
+msgstr "čhiyékičhiyapi"
 
 msgid "man"
-msgstr ""
+msgstr "wičháša"
 
 msgid "mother"
-msgstr ""
+msgstr "iná"
 
 msgid "grandfather"
-msgstr ""
+msgstr "kaká"
 
 msgid "family"
-msgstr ""
+msgstr "thiwáhe"
 
 msgid "female"
-msgstr ""
+msgstr "haŋkášitku"
 
 msgid "wife"
-msgstr ""
+msgstr "tȟawíču"
 
 msgid "husband"
-msgstr ""
+msgstr "hignáku"
 
 msgid "bride"
-msgstr ""
+msgstr "hiŋgnátȟuŋ"
 
 msgid "grandmother"
-msgstr ""
+msgstr "uŋčí"
 
 msgid "couple"
-msgstr ""
+msgstr "akíčhisčupi"
 
 msgid "twin girls"
-msgstr ""
+msgstr "čhekpápi (wičhíŋčala)"
 
 msgid "boy"
-msgstr ""
+msgstr "hokšíla"
 
 msgid "sisters"
-msgstr ""
+msgstr "čhuwékičhiyapi"
 
 msgid "woman"
-msgstr ""
+msgstr "tȟa-wíčhiŋčala"
 
 msgid "lady"
-msgstr ""
+msgstr "wikȟóškalaka"
 
 # food
 msgid "candy"
-msgstr ""
+msgstr "čhaŋmháŋska"
 
 msgid "sausage"
-msgstr ""
+msgstr "tȟašúptȟaŋka"
 
 msgid "hamburger"
-msgstr ""
+msgstr "tȟaló yukpáŋpi"
 
 msgid "steak"
-msgstr ""
+msgstr "tȟaló"
 
 msgid "fudge"
-msgstr ""
+msgstr "čhaŋmháŋska ǧíȟča"
 
 msgid "doughnut"
-msgstr ""
+msgstr "aǧúyabskuya gmigmá"
 
 msgid "coconut"
-msgstr ""
+msgstr "asáŋpi yaȟúǧapi"
 
 msgid "rice"
-msgstr ""
+msgstr "psíŋ"
 
 msgid "ice cream"
-msgstr ""
+msgstr "čhaȟsníyaŋ"
 
 msgid "jelly"
-msgstr ""
+msgstr "waštágyapi skúyeyapi"
 
 msgid "yoghurt"
-msgstr ""
+msgstr "asáŋpi niníyaŋpi"
 
 msgid "dessert"
-msgstr ""
+msgstr "waskúyeča"
 
 msgid "pretzel"
-msgstr ""
+msgstr "aǧúyapi opémnila"
 
 msgid "peanut"
-msgstr ""
+msgstr "yaȟúǧapi"
 
 msgid "jam"
-msgstr ""
+msgstr "waštágyapi"
 
 msgid "feast"
-msgstr ""
+msgstr "waglékšuŋ špaŋyáŋpi"
 
 msgid "cookie"
-msgstr ""
+msgstr "aǧúyapi ǧiǧíla"
 
 msgid "bacon"
-msgstr ""
+msgstr "wašíŋ"
 
 msgid "spice"
-msgstr ""
+msgstr "pȟáza"
 
 msgid "coffee"
-msgstr ""
+msgstr "wakȟályapi"
 
 msgid "pie"
-msgstr ""
+msgstr "tȟaspáŋ opémnipi"
 
 msgid "lemonade"
-msgstr ""
+msgstr "tȟaspáŋpȟa haŋpí"
 
 msgid "chocolate"
-msgstr ""
+msgstr "čhaŋmháŋska ǧí"
 
 msgid "water bottle"
-msgstr ""
+msgstr "mní"
 
 msgid "lunch"
-msgstr ""
+msgstr "wíčhokaŋ wótapi"
 
 msgid "ice"
-msgstr ""
+msgstr "čháǧa"
 
 msgid "sugar"
-msgstr ""
+msgstr "čhaŋháŋpi"
 
 msgid "sauce"
-msgstr ""
+msgstr "iyúltȟuŋ"
 
 msgid "soup"
-msgstr ""
+msgstr "waháŋpi"
 
 msgid "juice"
-msgstr ""
+msgstr "tȟaspáŋzi haŋpí"
 
 msgid "fries"
-msgstr ""
+msgstr "bločhéuŋpap waksáksapi"
 
 msgid "cake"
-msgstr ""
+msgstr "aǧúyapi skúyela"
 
 msgid "mashed potatoes"
-msgstr ""
+msgstr "blopátȟaŋpi"
 
 msgid "tea"
-msgstr ""
+msgstr "čheyáka"
 
 msgid "bun"
-msgstr ""
+msgstr "aǧúyapi pagmúpi"
 
 msgid "cheese"
-msgstr ""
+msgstr "asáŋpi sutá"
 
 msgid "beef"
-msgstr ""
+msgstr "tȟaló špaŋyáŋpi"
 
 msgid "sandwich"
-msgstr ""
+msgstr "čhoǧíŋkhiyapi"
 
 msgid "slice"
-msgstr ""
+msgstr "owáslesleče"
 
 msgid "sprinkle"
-msgstr ""
+msgstr "akálapila"
 
 msgid "pizza"
-msgstr ""
+msgstr "aǧúyapi zigzíča"
 
 msgid "flour"
-msgstr ""
+msgstr "aǧúyapiblu"
 
 msgid "gum"
-msgstr ""
+msgstr "čhaŋšíŋ"
 
 msgid "spaghetti"
-msgstr ""
+msgstr "spakéli"
 
 msgid "roast"
-msgstr ""
+msgstr "khukhúše čhosyápi"
 
 msgid "drink[n]"
-msgstr ""
+msgstr "waȟpékȟalyapi"
 
 msgid "stew"
-msgstr ""
+msgstr "čhéǧa"
 
 msgid "spread"
-msgstr ""
+msgstr "apášluta"
 
 msgid "meat"
-msgstr ""
+msgstr "khukhúše čhečá"
 
 msgid "milk"
-msgstr ""
+msgstr "asáŋpi"
 
 msgid "meal"
-msgstr ""
+msgstr "wóyute"
 
 msgid "corn"
-msgstr ""
+msgstr "wagmíza"
 
 msgid "bread"
-msgstr ""
+msgstr "aǧúyapi"
 
 msgid "walnut"
-msgstr ""
+msgstr "gmá"
 
 msgid "egg"
-msgstr ""
+msgstr "wítka"
 
 msgid "hot dog"
-msgstr ""
+msgstr "tȟašúpa"
 
 msgid "ham"
-msgstr ""
+msgstr "khukhúše tȟaló"
 
 # clothes
 msgid "jewellery"
-msgstr ""
+msgstr "íŋyaŋ othéȟika úŋpi"
 
 msgid "sock"
-msgstr ""
+msgstr "huŋyákȟuŋ"
 
 msgid "jacket"
-msgstr ""
+msgstr "ógle šóka"
 
 msgid "heel"
-msgstr ""
+msgstr "siyéte háŋska"
 
 msgid "smock"
-msgstr ""
+msgstr "wawíyuŋpi ógle"
 
 msgid "shorts"
-msgstr ""
+msgstr "uŋzóǧe ptéčela"
 
 msgid "pocket"
-msgstr ""
+msgstr "sičháŋophiye"
 
 msgid "necklace"
-msgstr ""
+msgstr "wanáp’iŋ"
 
 msgid "sweatshirt"
-msgstr ""
+msgstr "ógle wapȟóštaŋ yukȟé"
 
 msgid "uniform"
-msgstr ""
+msgstr "wówaši hayápi"
 
 msgid "raincoat"
-msgstr ""
+msgstr "maǧážu ógle"
 
 msgid "trousers"
-msgstr ""
+msgstr "uŋzóǧe"
 
 msgid "sunglasses"
-msgstr ""
+msgstr "ištámaza sápa"
 
 msgid "coat"
-msgstr ""
+msgstr "ógle hiŋšmá"
 
 msgid "pullover"
-msgstr ""
+msgstr "ógle zigzíča"
 
 msgid "shirt"
-msgstr ""
+msgstr "ógle"
 
 msgid "sandals"
-msgstr ""
+msgstr "maštéhaŋpa"
 
 msgid "suit"
-msgstr ""
+msgstr "wówaši hayápi čhó"
 
 msgid "pyjamas"
-msgstr ""
+msgstr "ištíŋma hayápi"
 
 msgid "skirt"
-msgstr ""
+msgstr "nitéhepi"
 
 msgid "zip"
-msgstr ""
+msgstr "hayápi hí"
 
 msgid "shoes"
-msgstr ""
+msgstr "maǧážu haŋpa"
 
 msgid "jewel"
-msgstr ""
+msgstr "íŋyaŋ othéȟika"
 
 msgid "tie"
-msgstr ""
+msgstr "tȟahú ičáške"
 
 msgid "slippers"
-msgstr ""
+msgstr "haŋpónašloke"
 
 msgid "gloves"
-msgstr ""
+msgstr "napíŋkpa"
 
 msgid "hat"
-msgstr ""
+msgstr "wapȟóštaŋ"
 
 msgid "sleeve"
-msgstr ""
+msgstr "´ógle aȟčó"
 
 msgid "cap"
-msgstr ""
+msgstr "wapȟóštaŋla"
 
 msgid "swimming suit"
-msgstr ""
+msgstr "nuŋwáŋ hayápi"
 
 msgid "trainer"
-msgstr ""
+msgstr "háŋpa"
 
 msgid "vest"
-msgstr ""
+msgstr "ógle čhuwíyuksa"
 
 msgid "glasses"
-msgstr ""
+msgstr "ištámaza"
 
 msgid "shoelace"
-msgstr ""
+msgstr "haŋpkȟáŋ"
 
 msgid "patch"
-msgstr ""
+msgstr "ayáskabtȟúŋpi"
 
 msgid "scarf"
-msgstr ""
+msgstr "tȟahú ičhósye"
 
 msgid "shoe"
-msgstr ""
+msgstr "akáŋhaŋpa"
 
 msgid "button"
-msgstr ""
+msgstr "čheškíkȟaŋ"
 
 msgid "dress"
-msgstr ""
+msgstr "čhuwígnaka"
 
 msgid "sash"
-msgstr ""
+msgstr "iphíyaka"
 
 msgid "shoe sole"
-msgstr ""
+msgstr "akíglake"
 
 msgid "robe"
-msgstr ""
+msgstr "šiná hiŋšmá"
 
 msgid "pants"
-msgstr ""
+msgstr "mahél úŋpi"
 
 msgid "kimono"
-msgstr ""
+msgstr "Kisúŋla šiná"
 
 msgid "overalls"
-msgstr ""
+msgstr "čheškíyutaŋ"
 
 # actions
 msgid "lick"
-msgstr ""
+msgstr "slípA"
 
 msgid "slam"
-msgstr ""
+msgstr "oíȟpeyA"
 
 msgid "beg"
-msgstr ""
+msgstr "wóla"
 
 msgid "fell"
-msgstr ""
+msgstr "gliȟpáyA"
 
 msgid "scratch"
-msgstr ""
+msgstr "yuȟlátA"
 
 msgid "touch"
-msgstr ""
+msgstr "épatȟaŋ"
 
 msgid "sniff"
-msgstr ""
+msgstr "ómna"
 
 msgid "see"
-msgstr ""
+msgstr "waŋyáŋkA"
 
 msgid "climb"
-msgstr ""
+msgstr "alí"
 
 msgid "dig"
-msgstr ""
+msgstr "ok’Á"
 
 msgid "howl"
-msgstr ""
+msgstr "hó"
 
 msgid "sleep"
-msgstr ""
+msgstr "ištíŋmA"
 
 msgid "explore"
-msgstr ""
+msgstr "waátuŋwAŋ"
 
 msgid "draw"
-msgstr ""
+msgstr "wičhítowa"
 
 msgid "hug"
-msgstr ""
+msgstr "pȟóskil yúzA"
 
 msgid "teach"
-msgstr ""
+msgstr "waúŋspewičhákhiyA"
 
 msgid "nap"
-msgstr ""
+msgstr "asníkiyA"
 
 msgid "clay"
-msgstr ""
+msgstr "wakáǧA"
 
 msgid "catch"
-msgstr ""
+msgstr "yukȟápA"
 
 msgid "clap"
-msgstr ""
+msgstr "napéglaskápA"
 
 msgid "cry"
-msgstr ""
+msgstr "čhéyA"
 
 msgid "sing"
-msgstr ""
+msgstr "lowáŋ"
 
 msgid "meet"
-msgstr ""
+msgstr "atáyA"
 
 msgid "sell"
-msgstr ""
+msgstr "wawíyopȟeyA"
 
 msgid "peck"
-msgstr ""
+msgstr "yakpí"
 
 msgid "beat"
-msgstr ""
+msgstr "iyápȟa"
 
 msgid "kneel"
-msgstr ""
+msgstr "čhaŋkpéška makȟágle"
 
 msgid "find"
-msgstr ""
+msgstr "iyéyA"
 
 msgid "dance"
-msgstr ""
+msgstr "wačhí"
 
 msgid "cough"
-msgstr ""
+msgstr "hoȟpÁ"
 
 msgid "cut"
-msgstr ""
+msgstr "yuksÁ"
 
 msgid "think"
-msgstr ""
+msgstr "wíyukčaŋ"
 
 msgid "bark"
-msgstr ""
+msgstr "wapȟápȟa"
 
 msgid "speak"
-msgstr ""
+msgstr "wóglakA"
 
 msgid "cheer"
-msgstr ""
+msgstr "waáš’a"
 
 msgid "bake"
-msgstr ""
+msgstr "lol’´íȟ’aŋ"
 
 msgid "write"
-msgstr ""
+msgstr "wówa"
 
 msgid "punch"
-msgstr ""
+msgstr "apȟÁ"
 
 msgid "strum"
-msgstr ""
+msgstr "čhaŋkáhotȟuŋ"
 
 msgid "study"
-msgstr ""
+msgstr "ablézA"
 
 msgid "plow"
-msgstr ""
+msgstr "makȟáyublu"
 
 msgid "dream"
-msgstr ""
+msgstr "wíhaŋblA"
 
 msgid "post"
-msgstr ""
+msgstr "iyáyeyA"
 
 msgid "dive"
-msgstr ""
+msgstr "nuŋwÁŋ"
 
 msgid "whisper"
-msgstr ""
+msgstr "ožíži"
 
 msgid "sob"
-msgstr ""
+msgstr "čhaókit’A"
 
 msgid "shake"
-msgstr ""
+msgstr "yuȟláȟla"
 
 msgid "feed"
-msgstr ""
+msgstr "wók’u"
 
 msgid "crawl"
-msgstr ""
+msgstr "slohÁŋ"
 
 msgid "camp"
-msgstr ""
+msgstr "éthi"
 
 msgid "spill"
-msgstr ""
+msgstr "papsúŋ"
 
 msgid "clean"
-msgstr ""
+msgstr "pȟehíŋ glužáža"
 
 msgid "scream"
-msgstr ""
+msgstr "šičáhowayA"
 
 msgid "tear"
-msgstr ""
+msgstr "yuȟléčA"
 
 msgid "float"
-msgstr ""
+msgstr "ókaǧA"
 
 msgid "pull"
-msgstr ""
+msgstr "yutítaŋ"
 
 msgid "ate"
-msgstr ""
+msgstr "ločhíŋ"
 
 msgid "kiss"
-msgstr ""
+msgstr "íputȟakA"
 
 msgid "sit"
-msgstr ""
+msgstr "yaŋkÁ"
 
 msgid "hatch"
-msgstr ""
+msgstr "ikpákpi"
 
 msgid "blink"
-msgstr ""
+msgstr "ištákakpaŋ"
 
 msgid "hear"
-msgstr ""
+msgstr "naȟ’úŋ"
 
 msgid "smooch"
-msgstr ""
+msgstr "theȟíla"
 
 msgid "play"
-msgstr ""
+msgstr "škátA"
 
 msgid "wash"
-msgstr ""
+msgstr "iglúžaža"
 
 msgid "chat"
-msgstr ""
+msgstr "wóglakA"
 
 msgid "drive"
-msgstr ""
+msgstr "kaȟápA"
 
 msgid "drink[v]"
-msgstr ""
+msgstr "yatkÁŋ"
 
 msgid "fly"
-msgstr ""
+msgstr "kiŋyÁŋ"
 
 msgid "juggle"
-msgstr ""
+msgstr "tȟápa oštéšteya waŋkáyeyA"
 
 msgid "bit"
-msgstr ""
+msgstr "yašpÁ"
 
 msgid "sweep"
-msgstr ""
+msgstr "wakáhiŋtA"
 
 msgid "look"
-msgstr ""
+msgstr "aígluta"
 
 msgid "knit"
 msgstr ""
 
 msgid "lift"
-msgstr ""
+msgstr "waš’ág’ič’iyA"
 
 msgid "fetch"
-msgstr ""
+msgstr "ičú"
 
 msgid "read"
-msgstr ""
+msgstr "wayáwa"
 
 msgid "croak"
-msgstr ""
+msgstr "hotȟúŋ"
 
 msgid "stare"
-msgstr ""
+msgstr "ayúta"
 
 msgid "eat"
-msgstr ""
+msgstr "wótA"
 
 # construction
 msgid "lighthouse"
-msgstr ""
+msgstr "thiyóžaŋžaŋ"
 
 msgid "door"
-msgstr ""
+msgstr "thiyópa"
 
 msgid "circus"
-msgstr ""
+msgstr "wópazo oštéšteka"
 
 msgid "church"
-msgstr ""
+msgstr "owáčhekiye"
 
 msgid "kennel"
-msgstr ""
+msgstr "šúŋka othí"
 
 msgid "temple"
-msgstr ""
+msgstr "eháŋni thihúȟaka"
 
 msgid "smoke"
-msgstr ""
+msgstr "šótA"
 
 msgid "chimney"
-msgstr ""
+msgstr "ošóta inápȟA"
 
 msgid "brick"
-msgstr ""
+msgstr "makȟá špáŋpi"
 
 msgid "well"
-msgstr ""
+msgstr "mnič’ápi"
 
 msgid "street"
-msgstr ""
+msgstr "čhaŋkú"
 
 msgid "castle"
-msgstr ""
+msgstr "íŋyaŋ thípi"
 
 msgid "store"
-msgstr ""
+msgstr "aǧúyapi okáǧe"
 
 msgid "staircase"
-msgstr ""
+msgstr "oíyahe"
 
 msgid "school"
-msgstr ""
+msgstr "owáyawa"
 
 msgid "farm"
-msgstr ""
+msgstr "wóžuthi"
 
 msgid "bridge"
-msgstr ""
+msgstr "čheyáktȟuŋpi"
 
 msgid "dam"
-msgstr ""
+msgstr "mninátȟakapi"
 
 msgid "pyramid"
-msgstr ""
+msgstr "íŋyaŋ thipȟéstola"
 
 msgid "barn"
-msgstr ""
+msgstr "waníyaŋpi othí"
 
 msgid "mill"
-msgstr ""
+msgstr "tȟaté ičáhomni"
 
 msgid "window"
-msgstr ""
+msgstr "ožáŋžaŋglepi"
 
 msgid "cabin"
-msgstr ""
+msgstr "čháŋthipi"
 
 msgid "step"
-msgstr ""
+msgstr "oáli"
 
 msgid "shop"
-msgstr ""
+msgstr "mas’óphiye"
 
 msgid "shed"
-msgstr ""
+msgstr "thikáitepa"
 
 msgid "roof"
-msgstr ""
+msgstr "thičhé"
 
 msgid "steeple"
-msgstr ""
+msgstr "owákaȟla"
 
 msgid "garage"
-msgstr ""
+msgstr "iyéčhiŋkíŋyaŋka onážiŋ"
 
 msgid "mosque"
-msgstr ""
+msgstr "wiyóhiyaŋpata thípi wakȟáŋ"
 
 msgid "hospital"
-msgstr ""
+msgstr "okhúže thípi"
 
 msgid "tent"
-msgstr ""
+msgstr "wakhéya"
 
 msgid "house"
-msgstr ""
+msgstr "thípi"
 
 msgid "wall"
-msgstr ""
+msgstr "thitȟáhepiya"
 
 msgid "bank"
-msgstr ""
+msgstr "mázaska thípi"
 
 msgid "shutter"
-msgstr ""
+msgstr "ožáŋžaŋglepi thiyópa"
 
 msgid "hut"
-msgstr ""
+msgstr "thigmígma"
 
 # nature
 msgid "land"
-msgstr ""
+msgstr "makȟóčhe"
 
 msgid "cliff"
-msgstr ""
+msgstr "mayá"
 
 msgid "hill"
-msgstr ""
+msgstr "pahá"
 
 msgid "canyon"
-msgstr ""
+msgstr "ósmaka"
 
 msgid "rock"
-msgstr ""
+msgstr "íŋyaŋ"
 
 msgid "sea"
-msgstr ""
+msgstr "mniwáŋča"
 
 msgid "lake"
-msgstr ""
+msgstr "blé"
 
 msgid "coast"
-msgstr ""
+msgstr "óhuta"
 
 msgid "shore"
-msgstr ""
+msgstr "mniwáŋča óhuta"
 
 msgid "mountain"
-msgstr ""
+msgstr "ȟé"
 
 msgid "pond"
-msgstr ""
+msgstr "bléla"
 
 msgid "peak"
-msgstr ""
+msgstr "ipȟá"
 
 msgid "lava"
-msgstr ""
+msgstr "íŋyaŋšlo"
 
 msgid "cave"
-msgstr ""
+msgstr "iǧúǧa oȟlóka"
 
 msgid "dune"
-msgstr ""
+msgstr "čhasmú pahá"
 
 msgid "island"
-msgstr ""
+msgstr "wíta"
 
 msgid "forest"
-msgstr ""
+msgstr "čhúŋšoke"
 
 msgid "desert"
-msgstr ""
+msgstr "čhasmú makȟóčhe"
 
 msgid "iceberg"
-msgstr ""
+msgstr "čháǧa wíta"
 
 # jobs
 msgid "clown"
-msgstr ""
+msgstr "heyókȟa"
 
 msgid "engineer"
-msgstr ""
+msgstr "thikáǧA"
 
 msgid "vet"
-msgstr ""
+msgstr "wamákȟaškaŋ aphíyA"
 
 msgid "judge"
-msgstr ""
+msgstr "wayásu"
 
 msgid "chef"
-msgstr ""
+msgstr "wóhela"
 
 msgid "athlete"
-msgstr ""
+msgstr "khiíŋyaŋke s’a"
 
 msgid "librarian"
-msgstr ""
+msgstr "wówapi awáŋyaŋkA"
 
 msgid "juggler"
-msgstr ""
+msgstr "tȟápa oštéšteya waŋkáyeyA"
 
 msgid "police officer"
-msgstr ""
+msgstr "čhaŋksáyuha"
 
 msgid "plumber"
-msgstr ""
+msgstr "mní oíŋyaŋka aphíyA"
 
 msgid "badge"
-msgstr ""
+msgstr "čhešká máza"
 
 msgid "queen"
-msgstr ""
+msgstr "wíŋyaŋyatápi"
 
 msgid "farmer"
-msgstr ""
+msgstr "wóžu wičháša"
 
 msgid "magician"
-msgstr ""
+msgstr "wakȟáŋȟ’aŋ wičháša"
 
 msgid "knight"
-msgstr ""
+msgstr "mas’ákičhita"
 
 msgid "doctor"
-msgstr ""
+msgstr "waákisniyA"
 
 msgid "bricklayer"
-msgstr ""
+msgstr "makȟá špáŋpi awáŋyaŋkA"
 
 msgid "cleaner"
-msgstr ""
+msgstr "thiyúžaža wíŋyaŋ"
 
 msgid "teacher"
-msgstr ""
+msgstr "waúŋspewičhákhiyA"
 
 msgid "hunter"
-msgstr ""
+msgstr "wakhúwa"
 
 msgid "soldier"
-msgstr ""
+msgstr "akíčhita"
 
 msgid "musician"
-msgstr ""
+msgstr "olówaŋ káǧA"
 
 msgid "lawyer"
-msgstr ""
+msgstr "waákhiya wičháša"
 
 msgid "fisherman"
-msgstr ""
+msgstr "hokhúwa s’a"
 
 msgid "princess"
-msgstr ""
+msgstr "wíŋyaŋyatápila"
 
 msgid "firefighter"
-msgstr ""
+msgstr "pȟelkásni wičháša"
 
 msgid "nun"
-msgstr ""
+msgstr "witȟáŋšna úŋ"
 
 msgid "pirate"
-msgstr ""
+msgstr "mniwáŋča wamánuŋ s’a"
 
 msgid "cowboy"
-msgstr ""
+msgstr "pteóle"
 
 msgid "electrician"
-msgstr ""
+msgstr "wakȟáŋgli awáŋyaŋkA"
 
 msgid "nurse"
-msgstr ""
+msgstr "wayázaŋ awáŋyaŋkA"
 
 msgid "king"
-msgstr ""
+msgstr "wičhášayatápi"
 
 msgid "president"
-msgstr ""
+msgstr "tȟuŋkášilayapi"
 
 msgid "office worker"
-msgstr ""
+msgstr "wówaši oyáŋke"
 
 msgid "carpenter"
-msgstr ""
+msgstr "čhaŋkážipA"
 
 msgid "jockey"
-msgstr ""
+msgstr "šuŋk’ákaŋyaŋkA"
 
 msgid "worker"
-msgstr ""
+msgstr "wówaši"
 
 msgid "mechanic"
-msgstr ""
+msgstr "iyéčhiŋkíŋyaŋka aphíyA"
 
 msgid "pilot"
-msgstr ""
+msgstr "kiŋyékhiyapi kaȟápA"
 
 msgid "actor"
-msgstr ""
+msgstr "škáte s’a"
 
 msgid "cook"
-msgstr ""
+msgstr "lol’íȟ’aŋ wičháša"
 
 msgid "student"
-msgstr ""
+msgstr "wayáwa"
 
 msgid "butcher"
-msgstr ""
+msgstr "wapȟáte s’a"
 
 msgid "accountant"
-msgstr ""
+msgstr "oíčazo owá"
 
 msgid "prince"
-msgstr ""
+msgstr "wičhášayatápila"
 
 msgid "sailor"
-msgstr ""
+msgstr "mniwáŋča akíčhita"
 
 msgid "boxer"
-msgstr ""
+msgstr "napé uŋ kičhízapi"
 
 msgid "ballet dancer"
-msgstr ""
+msgstr "wačhí wíŋyaŋ"
 
 msgid "coach"
-msgstr ""
+msgstr "škalwíčhakhiyA"
 
 msgid "astronaut"
-msgstr ""
+msgstr "wičháȟpi ománi"
 
 msgid "painter"
-msgstr ""
+msgstr "itówapi káǧA"
 
 msgid "scientist"
-msgstr ""
+msgstr "wapásikA"
 
 # fruits and vegetables
 msgid "carrot"
-msgstr ""
+msgstr "pȟaŋǧízizi"
 
 msgid "blackberries"
-msgstr ""
+msgstr "wažúštečasapa"
 
 msgid "celery"
-msgstr ""
+msgstr "hútȟotȟo"
 
 msgid "turnip"
-msgstr ""
+msgstr "thíŋpsiŋla skaská"
 
 msgid "cacao"
-msgstr ""
+msgstr "čhaŋmháŋskaǧi sú"
 
 msgid "peach"
-msgstr ""
+msgstr "tȟaspáŋ hiŋšmá"
 
 msgid "melon"
-msgstr ""
+msgstr "suótala"
 
 msgid "grapefruit"
-msgstr ""
+msgstr "tȟaspáŋzi tȟáŋka"
 
 msgid "broccoli"
-msgstr ""
+msgstr "waȟčáȟča watȟótȟo"
 
 msgid "grapes"
-msgstr ""
+msgstr "čhuŋwíyapahe"
 
 msgid "spinach"
-msgstr ""
+msgstr "waȟpé šokšóka"
 
 msgid "fig"
-msgstr ""
+msgstr "tȟamníoȟpi"
 
 msgid "kernel"
-msgstr ""
+msgstr "čhoǧíŋ"
 
 msgid "radish"
-msgstr ""
+msgstr "pȟaŋǧípȟepȟe"
 
 msgid "tomato"
-msgstr ""
+msgstr "uŋžíŋžiŋtka"
 
 msgid "kiwi"
-msgstr ""
+msgstr "khiwí"
 
 msgid "asparagus"
-msgstr ""
+msgstr "hustóla yútapi"
 
 msgid "olives"
-msgstr ""
+msgstr "slála"
 
 msgid "cucumbers"
-msgstr ""
+msgstr "kuŋkúŋ"
 
 msgid "beans"
-msgstr ""
+msgstr "omníča"
 
 msgid "strawberry"
-msgstr ""
+msgstr "wažúšteča"
 
 msgid "peppers"
-msgstr ""
+msgstr "pȟayá yútapi"
 
 msgid "raspberry"
-msgstr ""
+msgstr "tȟakȟáŋheča"
 
 msgid "apricot"
-msgstr ""
+msgstr "tȟaspáŋhiŋšma čík’ala"
 
 msgid "potatoes"
-msgstr ""
+msgstr "bló"
 
 msgid "peas"
-msgstr ""
+msgstr "omníča gmigmí"
 
 msgid "cabbage"
-msgstr ""
+msgstr "waȟpéyutapi"
 
 msgid "cherries"
-msgstr ""
+msgstr "čhaŋpȟá skúyeyapi"
 
 msgid "squash"
-msgstr ""
+msgstr "wagmú"
 
 msgid "blueberries"
-msgstr ""
+msgstr "watȟókča tȟóla"
 
 msgid "pear"
-msgstr ""
+msgstr "tȟaspáŋ pȟéstola"
 
 msgid "orange"
-msgstr ""
+msgstr "tȟaspáŋzi"
 
 msgid "pumpkin"
-msgstr ""
+msgstr "wagmúzi"
 
 msgid "avocado"
-msgstr ""
+msgstr "tȟaspáŋtȟo slá"
 
 msgid "garlic"
-msgstr ""
+msgstr "pšíŋkčeka"
 
 msgid "onion"
-msgstr ""
+msgstr "pšíŋ"
 
 msgid "apple"
-msgstr ""
+msgstr "tȟaspáŋ"
 
 msgid "lime"
-msgstr ""
+msgstr "tȟaspáŋtȟo pȟá"
 
 msgid "cauliflower"
-msgstr ""
+msgstr "waȟčálaska yútapi"
 
 msgid "mango"
-msgstr ""
+msgstr "subláska"
 
 msgid "lettuce"
-msgstr ""
+msgstr "maštíŋčatȟawóte"
 
 msgid "lemon"
-msgstr ""
+msgstr "tȟaspáŋpȟa"
 
 msgid "aubergine"
-msgstr ""
+msgstr "wagmúšatȟo"
 
 msgid "artichokes"
-msgstr ""
+msgstr "tȟókahu yútapi"
 
 msgid "plums"
-msgstr ""
+msgstr "kȟáŋta"
 
 msgid "leek"
-msgstr ""
+msgstr "pšiŋskúya"
 
 msgid "bananas"
-msgstr ""
+msgstr "zíškopela"
 
 msgid "papaya"
-msgstr ""
+msgstr "wagmúčhaŋ"
 
 # transport
 msgid "sail"
-msgstr ""
+msgstr "walšína"
 
 msgid "taxi"
-msgstr ""
+msgstr "wíši iwátȟokšu"
 
 msgid "car"
-msgstr ""
+msgstr "iyéčhiŋkíŋyaŋkA"
 
 msgid "bike"
-msgstr ""
+msgstr "hunáhomni"
 
 msgid "raft"
-msgstr ""
+msgstr "čhaŋyúwipi káǧapi"
 
 msgid "pedal"
-msgstr ""
+msgstr "ináhomni"
 
 msgid "bus"
-msgstr ""
+msgstr "oyáte itȟókšu"
 
 msgid "handlebar"
-msgstr ""
+msgstr "hunáhomni iyúhomni"
 
 msgid "boat"
-msgstr ""
+msgstr "watópȟapila"
 
 msgid "truck"
-msgstr ""
+msgstr "iwátȟokšu"
 
 msgid "sleigh"
-msgstr ""
+msgstr "čhaŋwóslohaŋ tȟáŋka"
 
 msgid "carpet"
-msgstr ""
+msgstr "čhúŋwiŋža akáȟpe"
 
 msgid "motorcycle"
-msgstr ""
+msgstr "napȟópȟopela"
 
 msgid "train"
-msgstr ""
+msgstr "mázačhaŋku"
 
 msgid "ship"
-msgstr ""
+msgstr "tȟatéwata"
 
 msgid "van"
-msgstr ""
+msgstr "thiwáhe itȟókšu"
 
 msgid "canoe"
-msgstr ""
+msgstr "čháŋwata"
 
 msgid "rocket"
-msgstr ""
+msgstr "wičháȟpi wáta"
 
 msgid "mast"
-msgstr ""
+msgstr "wápaha"
 
 msgid "sledge"
-msgstr ""
+msgstr "čhaŋwóslohaŋ"
 
 msgid "bicycle"
-msgstr ""
+msgstr "hunáhomnipi"
 
