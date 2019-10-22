@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-22 16:59\n"
+"PO-Revision-Date: 2019-10-22 17:36\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Serbian (Cyrillic)\n"
 "MIME-Version: 1.0\n"
@@ -17,105 +17,105 @@ msgstr ""
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "зелена јабука"
+msgstr[1] "зелене јабуке"
+msgstr[2] "зелених јабука"
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "црвена јабука"
+msgstr[1] "црвене јабуке"
+msgstr[2] "црвених јабука"
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "јагода"
+msgstr[1] "јагоде"
+msgstr[2] "јагода"
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "крушка"
+msgstr[1] "крушке"
+msgstr[2] "крушака"
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "поморанџа"
+msgstr[1] "поморанџе"
+msgstr[2] "поморанџи"
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "главица црног лука"
+msgstr[1] "главице црног лука"
+msgstr[2] "главица црног лука"
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "парадајз"
+msgstr[1] "парадајза"
+msgstr[2] "парадајза"
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "лимун"
+msgstr[1] "лимуна"
+msgstr[2] "лимуна"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "трешња"
+msgstr[1] "трешње"
+msgstr[2] "трешњи"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "паприка"
+msgstr[1] "паприке"
+msgstr[2] "паприка"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "шаргарепа"
+msgstr[1] "шаргарепе"
+msgstr[2] "шаргарепи"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "банана"
+msgstr[1] "банане"
+msgstr[2] "банана"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "лубеница"
+msgstr[1] "лубенице"
+msgstr[2] "лубеница"
 
 msgid "English"
-msgstr ""
+msgstr "Енглески"
 
 msgid "Login"
-msgstr ""
+msgstr "Пријави се"
 
 msgid "Default Language:"
-msgstr ""
+msgstr "Основни језик:"
 
 msgid "User Management"
-msgstr ""
+msgstr "Управљање корисником"
 
 msgid "Copyright & Credits"
-msgstr ""
+msgstr "Ауторска права и заслуге"
 
 msgid "Licence"
-msgstr ""
+msgstr "Дозвола"
 
 msgid "Language arts"
-msgstr ""
+msgstr "Језичка уметност"
 
 msgid "This username and password combination doesn't exist."
-msgstr ""
+msgstr "Ово корисничко име и лозинка не постоје."
 
 msgid "user name: "
 msgstr ""
@@ -127,94 +127,94 @@ msgid "eduActiv8 Test Version"
 msgstr ""
 
 msgid "Save"
-msgstr ""
+msgstr "Сачувај"
 
 msgid "Delete user"
-msgstr ""
+msgstr "Обриши корисника"
 
 msgid "Preferences saved..."
-msgstr ""
+msgstr "Поставке су сачуване..."
 
 msgid "Logged in as: "
-msgstr ""
+msgstr "Пријављен као: "
 
 msgid "Language"
-msgstr ""
+msgstr "Језик"
 
 msgid "Mathematics"
-msgstr ""
+msgstr "Математика"
 
 msgid "Games & Mazes"
-msgstr ""
+msgstr "Игре и лавиринти"
 
 msgid "Word Builders"
-msgstr ""
+msgstr "Градитељ речи"
 
 msgid "Animals"
-msgstr ""
+msgstr "животиње"
 
 msgid "Complete the word"
-msgstr ""
+msgstr "Доврши реч"
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr ""
+msgstr "Изговор бројева"
 
 msgid "Shopping List"
-msgstr ""
+msgstr "Списак за куповину"
 
 msgid "Addition"
-msgstr ""
+msgstr "Сабирање"
 
 msgid "Find missing number"
-msgstr ""
+msgstr "Нађи број који недостаје"
 
 msgid "Level"
-msgstr ""
+msgstr "Ниво"
 
 msgid "Translators"
-msgstr ""
+msgstr "Преводиоци"
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr ""
+msgstr "Резултат: "
 
 msgid "Numbers & Basic Operations"
-msgstr ""
+msgstr "Бројеви и основне радње"
 
 msgid "Numbers"
-msgstr ""
+msgstr "Бројеви"
 
 msgid "Basic Operations"
-msgstr ""
+msgstr "Основне радње"
 
 msgid "area:"
-msgstr ""
+msgstr "област:"
 
 msgid "perimeter:"
-msgstr ""
+msgstr "полупречник:"
 
 msgid "circumference:"
-msgstr ""
+msgstr "обим:"
 
 msgid "Trapezium"
-msgstr ""
+msgstr "Трапезоид"
 
 msgid "Drag the clock hands to set the time"
-msgstr ""
+msgstr "Помери сказаљке да подесиш време"
 
 msgid "Discover Letters"
-msgstr ""
+msgstr "Откриј слова"
 
 msgid "Word Matchers"
 msgstr ""
 
 msgid "Shapes and Solids"
-msgstr ""
+msgstr "Облици и чврста тела"
 
 msgid "Symmetry"
 msgstr ""
@@ -223,19 +223,19 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr ""
+msgstr "Време"
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr ""
+msgstr "Одузимање"
 
 msgid "Learn Numbers with Flashcards"
-msgstr ""
+msgstr "Научи бројеве са картицама"
 
 msgid "Demonstration"
-msgstr ""
+msgstr "Обучавање"
 
 msgid "Find Solution"
 msgstr ""
@@ -244,109 +244,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr ""
+msgstr "Научи облике са картицама"
 
 msgid "Shape Matching"
-msgstr ""
+msgstr "Поређење облика"
 
 msgid "Shape Maker"
-msgstr ""
+msgstr "Цртач облика"
 
 msgid "How clock works"
-msgstr ""
+msgstr "Како ради сат?"
 
 msgid "learn to set the clock"
-msgstr ""
+msgstr "научи да подесиш сат"
 
 msgid "Set the clock to:"
-msgstr ""
+msgstr "Постави сат на:"
 
 msgid "Time Matching"
-msgstr ""
+msgstr "Поређење времена"
 
 msgid "Your Alphabet"
-msgstr ""
+msgstr "Српска азбука"
 
 msgid "Trace Letters and Numbers"
-msgstr ""
+msgstr "Испиши слова и бројеве"
 
 msgid "People"
-msgstr ""
+msgstr "људи"
 
 msgid "Jobs"
-msgstr ""
+msgstr "послови"
 
 msgid "Body"
-msgstr ""
+msgstr "тело"
 
 msgid "Clothes and Accessories"
-msgstr ""
+msgstr "одећа и помагала"
 
 msgid "Sports"
-msgstr ""
+msgstr "спортови"
 
 msgid "Actions"
-msgstr ""
+msgstr "радње"
 
 msgid "Nature"
-msgstr ""
+msgstr "природа"
 
 msgid "Fruits and Vegetables"
-msgstr ""
+msgstr "воће и поврће"
 
 msgid "Food"
-msgstr ""
+msgstr "храна"
 
 msgid "Transport"
-msgstr ""
+msgstr "превоз"
 
 msgid "Constructions"
-msgstr ""
+msgstr "изградња"
 
 msgid "Equilateral Triangle"
-msgstr ""
+msgstr "Једнакостранични троугао"
 
 msgid "Isosceles Triangle"
-msgstr ""
+msgstr "Једнакокраки троугао"
 
 msgid "Obtuse Triangle"
-msgstr ""
+msgstr "Туп троугао"
 
 msgid "Right Triangle"
-msgstr ""
+msgstr "Правоугли троугао"
 
 msgid "Acute Triangle"
-msgstr ""
+msgstr "Неједнакостраничан троугао"
 
 msgid "Square"
-msgstr ""
+msgstr "Квадрат"
 
 msgid "Rectangle"
-msgstr ""
+msgstr "Правоугаоник"
 
 msgid "Right Trapezium"
-msgstr ""
+msgstr "Правоугли трапез"
 
 msgid "Isosceles Trapezium"
-msgstr ""
+msgstr "Једнакокраки трапез"
 
 msgid "Rhombus"
-msgstr ""
+msgstr "Ромб"
 
 msgid "Parallelogram"
-msgstr ""
+msgstr "Паралелограм"
 
 msgid "Pentagon"
-msgstr ""
+msgstr "Петоугаоник"
 
 msgid "Hexagon"
-msgstr ""
+msgstr "Шестоугаоник"
 
 msgid "Circle"
-msgstr ""
+msgstr "Круг"
 
 msgid "Ellipse"
-msgstr ""
+msgstr "Елипса"
 
 msgid "Heptagon"
 msgstr ""
@@ -443,7 +443,7 @@ msgid "scorpion"
 msgstr ""
 
 msgid "fo"
-msgstr ""
+msgstr "fox"
 
 msgid "leopard"
 msgstr ""
@@ -638,7 +638,7 @@ msgid "hyena"
 msgstr ""
 
 msgid "o"
-msgstr ""
+msgstr "ox"
 
 msgid "peacock"
 msgstr ""
@@ -1158,7 +1158,7 @@ msgid "roast"
 msgstr ""
 
 msgid "drink[n]"
-msgstr ""
+msgstr "drink"
 
 msgid "stew"
 msgstr ""
@@ -1532,7 +1532,7 @@ msgid "drive"
 msgstr ""
 
 msgid "drink[v]"
-msgstr ""
+msgstr "drink"
 
 msgid "fly"
 msgstr ""
