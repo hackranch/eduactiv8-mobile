@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-26 20:43\n"
+"PO-Revision-Date: 2019-10-26 20:53\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Lakota\n"
 "MIME-Version: 1.0\n"
@@ -105,10 +105,10 @@ msgid "This username and password combination doesn't exist."
 msgstr "Ipáyeȟ oyáwa itéke."
 
 msgid "user name: "
-msgstr ""
+msgstr "čhažé: "
 
 msgid "password: "
-msgstr ""
+msgstr "wičhóiye-wóanaȟma: "
 
 msgid "eduActiv8 Test Version"
 msgstr ""
@@ -144,7 +144,7 @@ msgid "Complete the word"
 msgstr "Wičhóiye kiŋ yuštáŋ yo/ye"
 
 msgid "Positive numbers"
-msgstr ""
+msgstr "Wóiyawa Tákuni Iwáŋkab"
 
 msgid "Number Spelling"
 msgstr "Wóiyawa Čhažé Owápi"
@@ -204,10 +204,10 @@ msgid "Shapes and Solids"
 msgstr "Oúŋčhaǧe na Wasúta"
 
 msgid "Symmetry"
-msgstr ""
+msgstr "Anúŋg Ákhilečheča"
 
 msgid "Patterns"
-msgstr ""
+msgstr "Wóiyawa Wógligleyapi"
 
 msgid "Time"
 msgstr "Mázaškaŋškaŋ"
@@ -225,10 +225,10 @@ msgid "Demonstration"
 msgstr "Wópazo"
 
 msgid "Find Solution"
-msgstr ""
+msgstr "Yuótkuŋza"
 
 msgid "Image Patterns"
-msgstr ""
+msgstr "Itówapi Wógligleyapi"
 
 msgid "Learn Shapes with Flashcards"
 msgstr "Itówapi uŋ Oúŋčhaǧe Uŋspéič’ičhiyapi"
@@ -336,10 +336,10 @@ msgid "Ellipse"
 msgstr "Miméla Haŋska Ótkuŋza"
 
 msgid "Heptagon"
-msgstr ""
+msgstr "Obló Šakówiŋ"
 
 msgid "Octagon"
-msgstr ""
+msgstr "Obló Šaglóǧaŋ"
 
 msgid "trapezium"
 msgstr "oblótȟuŋ Oštéka"
