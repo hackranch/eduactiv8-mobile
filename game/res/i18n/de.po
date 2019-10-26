@@ -1518,6 +1518,9 @@ msgstr "plaudern"
 msgid "drive"
 msgstr "fahren"
 
+msgid "drink[n]"
+msgstr "Gertränk"
+
 msgid "drink[v]"
 msgstr "trinken"
 
@@ -2092,4 +2095,3 @@ msgstr "Schlitten"
 
 msgid "bicycle"
 msgstr "Fahrrad"
-

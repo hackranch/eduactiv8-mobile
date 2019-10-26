@@ -244,7 +244,8 @@ function ProFi:sortReportsWithSortMethod( reports, sortMethod )
 end
 
 function ProFi:writeReportsToFilename( filename )
-	local file, err = io.open( filename, 'w' )
+	--local file, err = io.open( filename, 'w' )
+	local file, err = love.filesystem.newFile( filename, 'w' )
 	assert( file, err )
 	self:writeBannerToFile( file )
 	if #self.reports > 0 then

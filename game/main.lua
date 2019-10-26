@@ -5,6 +5,7 @@ require 'images'
 require 'buttons'
 require 'forms'
 utf8 = require("utf8")
+require 'dictionary'
 require 'i18n'
 require 'fonts'
 require 'tables'
@@ -13,6 +14,7 @@ require 'decoration'
 require 'score_processing'
 require 'geometry'
 require 'clock_graphics'
+ProFi = require 'profi'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -54,7 +56,7 @@ end
 
 function show_message(message_text)
     love.graphics.draw(image_dialog_bg, 800 - (image_dialog_bg:getWidth() * 1) / 2, 450 - (image_dialog_bg:getHeight() * 1) / 2, 0, 1, 1)
-    love.graphics.setFont(font_interface)
+    set_font("interface")
     love.graphics.setColor(color["interface_text"])
     print_text(message_text, 800 - 500 / 2, 450 - 50, 500, 'center')
     love.graphics.setColor(color["white"])
@@ -126,6 +128,15 @@ function password_characters(p)
 end
 
 function love.load()
+  ProFi:start()
+  if game_updating_translation == true then
+    for k, v in pairs(dictionary) do
+      set_language(k)
+    end
+    love.filesystem.write("dictionary.lua", table.show(dictionary, "dictionary"))
+    love.system.openURL("file://"..love.filesystem.getSaveDirectory())
+    love.event.quit()
+  end
   local major, minor, revision, codename = love.getVersion()
   if major < 11 then
     old_color_mode = true
@@ -135,9 +146,9 @@ function love.load()
   if old_color_mode == true then
     init_old_color_mode() -- for the older Löve2D versions
   end
-  set_language(game_initial_language)
   global_language = game_initial_language
-  love.window.setTitle(s_title)
+  set_language(game_initial_language)
+  --love.window.setTitle(s_title)
   love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8})
   get_screen_dimensions()
   --love.graphics.setDefaultFilter("linear", "linear", 1)
@@ -318,6 +329,8 @@ function love.mousereleased(x, y, button)
    elseif current_window == 19 then
      if mouse_on_button(20) then
        save_score()
+       ProFi:stop()
+       ProFi:writeReport( 'MyProfilingReport.txt' )
        love.event.quit()
      elseif mouse_on_button(21) then
        text[1] = username
@@ -1048,13 +1061,13 @@ function love.draw()
     love.graphics.setColor(color["white"])
     love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
     love.graphics.draw(image_icon, 800 - (image_icon:getWidth() * 0.6) / 2, 450 - 410 + (image_icon:getHeight() * 0.6) / 2, 0, 0.6, 0.6)
-    love.graphics.setFont(font_interface_bold)
+    set_font("interface_bold")
     love.graphics.setColor(color["interface_text"])
     --print_text(s_username, 800 - 500 / 2, 450, 500, 'center')
     print_text(s_username, 800 - 500 / 2, 450, 500, 'center')
     print_text(s_password, 800 - 500 / 2, 550, 500, 'center')
 
-    love.graphics.setFont(font_interface)
+    set_font("interface")
     print_text(text[1], 800 - 500 / 2, 490, 500, 'center')
     print_text(password_characters(text[2]), 800 - 500 / 2, 590, 500, 'center')
 
@@ -1073,17 +1086,17 @@ function love.draw()
     love.graphics.setColor(color["white"])
     love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
     love.graphics.draw(image_icon, 800 - (image_icon:getWidth() * 0.6) / 2, 450 - 410 + (image_icon:getHeight() * 0.6) / 2, 0, 0.6, 0.6)
-    love.graphics.setFont(font_interface_bold)
+    set_font("interface_bold")
     love.graphics.setColor(color["interface_text"])
     print_text(s_copyright_text, 790 - 1200 / 2, 750, 1200, 'center')
   elseif current_window == 4 then --change language
     draw_header(s_change_language)
   elseif current_window == 5 then --Copyright
     draw_header(s_copyright)
-    --love.graphics.setFont(font_interface_bold)
+    --set_font("interface_bold")
     --print_text("Copyright(c) 2012 - 2019 Ireneusz Imiolek", 50, 170, 1500, 'center')
     --print_text(s_licence_title, 50, 560, 1500, 'center')
-    --love.graphics.setFont(font_interface)
+    --set_font("interface")
     --print_text(s_copyright_content, 50, 240, 1500, 'center')
     --print_text(s_licence_content, 50, 630, 1500, 'center')
     local y = 220
@@ -1091,9 +1104,9 @@ function love.draw()
     for k = 1, 36 do
       if k == 19 then x = 800 y = 220 end
       if k == 1 or k == 4 or k == 7 or k == 15 or k == 19 or k == 23 or k == 25 or k == 30 then
-        love.graphics.setFont(font_interface_bold)
+        set_font("interface_bold")
       else
-        love.graphics.setFont(font_interface)
+        set_font("interface")
       end
       print_text(s_credits[k], x, y, 800, 'center', 0, 1, 1)
       if s_credits[k] ~= "" then
@@ -1106,13 +1119,13 @@ function love.draw()
     love.graphics.draw(image_credits_url, 921, 725, 0, 0.5, 0.5)
   elseif current_window == 7 then -- manage users
     draw_header(s_manage_users)
-    love.graphics.setFont(font_interface_bold)
+    set_font("interface_bold")
 
     love.graphics.setColor(color["interface_text"])
     print_text(s_username, 1100 - 500 / 2, 275, 500, 'center')
     print_text(s_password, 1100 - 500 / 2, 375, 500, 'center')
 
-    love.graphics.setFont(font_interface)
+    set_font("interface")
     print_text(text[1], 1100 - 500 / 2, 315, 500, 'center')
     print_text(password_characters(text[2]), 1100 - 500 / 2, 415, 500, 'center')
 
@@ -1140,7 +1153,7 @@ function love.draw()
     love.graphics.setColor(color["white"])
     love.graphics.draw(animal_image, 800 - animal_image:getWidth() * 1.7 / 2, 360 - animal_image:getHeight() * 1.8 / 2, 0, 1.7, 1.7)
     --draw tiles+
-    love.graphics.setFont(font_large_title)
+    set_font("large_title")
     for x = 0, t_x - 1 do
       for y = 0, t_y - 1 do
         local byteoffset = utf8.offset(tiles[y + 1], x + 1)
@@ -1194,7 +1207,7 @@ function love.draw()
       draw_header(s_word_matchers, current_game_title)
     end
     love.graphics.setColor(color["white"])
-    love.graphics.setFont(font_large_title)
+    set_font("large_title")
     local y_offset = 0
     local x_scale = 1
     for y = 1, game_table_rows do
@@ -1217,7 +1230,7 @@ function love.draw()
         x_scale = 1
         if current_window == 13 then
           love.graphics.setColor(color["blue"])
-          love.graphics.setFont(font_large_title)
+          set_font("large_title")
           print_text(game_table[y][x].content,  (x) * (game_screen_width/12) + (game_screen_width/24) - 450 * x_scale, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 900, 'center', 0, x_scale, 1)
         elseif current_window == 33 then
           love.graphics.setColor(color["white"])
@@ -1249,7 +1262,7 @@ function love.draw()
         end
         love.graphics.setColor(color["blue"])
         --if utf8.len(game_table[y][x+2].content) >= 14 then
-        --  love.graphics.setFont(font_small_title)
+        --  set_font("small_title")
         --  y_offset = 20
         --  if utf8.len(game_table[y][x+2].content) >= 22 then
         --    x_scale = 0.7
@@ -1257,11 +1270,11 @@ function love.draw()
         --    x_scale = 1
         --  end
         --else
-        --  love.graphics.setFont(font_large_title)
+        --  set_font("large_title")
         --  y_offset = 0
         --  x_scale = 1
         --end
-        love.graphics.setFont(font_large_title)
+        set_font("large_title")
         y_offset = 0
         --x_scale = 1
         --if utf8.len(game_table[y][x+2].content) >= 13 then
@@ -1280,7 +1293,7 @@ function love.draw()
     love.graphics.setColor(color["white"])
     love.graphics.draw(image_shopping_basket, game_screen_width - 195, game_screen_height - 172)
     --
-    love.graphics.setFont(font_small_title)
+    set_font("small_title")
     love.graphics.setColor(color["interface_text"])
     print_text(s_shopping_list, 800, (game_screen_height / 15) * 3, 1200, 'left')
     love.graphics.setColor(color["white"])
@@ -1291,9 +1304,9 @@ function love.draw()
       end
       love.graphics.setColor(color["interface_text"])
       if selected_level < 3 then
-        print_text(items_needed[k].quantity .. "       " .. items_needed[k].name, 840, y_position + 4, 1200, 'left', 0, 0.9)
+        print_text(items_needed[k].quantity .. "       " .. (items_needed[k].name or "?"), 840, y_position + 4, 1200, 'left', 0, 0.9)
       else
-        print_text(items_needed[k].quantity .. " " .. items_needed[k].name, 840, y_position + 4, 1200, 'left', 0, 0.9)
+        print_text(items_needed[k].quantity .. " " .. (items_needed[k].name or "?"), 840, y_position + 4, 1200, 'left', 0, 0.9)
       end
       love.graphics.setColor(color["white"])
       y_position = y_position + (game_screen_height / 15)
@@ -1322,7 +1335,7 @@ function love.draw()
       draw_header(s_basic_operations, s_find_solution .. " - " .. s_subtraction)
     end
     love.graphics.setColor(color["white"])
-    love.graphics.setFont(font_large_title)
+    set_font("large_title")
     local x_scale = 1
     for x = 0, t_x - 1 do
       for y = 0, t_y - 1 do
@@ -1444,11 +1457,11 @@ function love.draw()
     end
     love.graphics.setLineWidth(1)
     if game == "math" then
-      love.graphics.setFont(font_handwritten_small)
+      set_font("handwritten_small")
     elseif game == "language" then
-      love.graphics.setFont(font_handwritten)
+      set_font("handwritten")
       if global_language == "hebrew" then
-        love.graphics.setFont(font_large_title)
+        set_font("large_title")
       end
     end
     love.graphics.setColor(color["gray_60"])
@@ -1464,7 +1477,7 @@ function love.draw()
         end
       end
     end
-    love.graphics.setFont(font_interface_bold)
+    set_font("interface_bold")
     love.graphics.setColor(color["interface_text"])
     --print_text("www.eduactiv8.com v0.0.0", 0, 860, 1595, 'right')
     print_text("v" .. game_version, screen_left, screen_top + screen_total_height - 40, screen_total_width - 5, 'right')
@@ -1485,9 +1498,9 @@ function love.draw()
     end
     --for user system
     --love.graphics.draw(image_user_button, 705, 82)
-    --love.graphics.setFont(font_button_text)
+    --set_font("button_text")
     --print_text(username, 845, 81, 460 * 3, 'left', 0, 1, 1, 460)
-    --love.graphics.setFont(font_interface_bold)
+    --set_font("interface_bold")
     --print_text(s_level .. ": " .. selected_level .. "   |   " .. s_score .. ": ", 845, 141, 460 * 3, 'left', 0, 1, 1, 460)
   elseif current_window == 20 then
     draw_header(s_numbers)
@@ -1501,7 +1514,7 @@ function love.draw()
     draw_header(s_time)
   elseif current_window == 25 then
     draw_header(s_translators)
-    --love.graphics.setFont(font_interface)
+    --set_font("interface")
     --print_text("-Catalan / Català - Guillem Jover (www.hadrons.org/~guillem/), updated by Jordi Mallach\n"..
     --  "-English / English - Kamila Roszak-Imiolek, Ireneusz Imiolek\n"..
     --  "-Finnish / Suomalainen - Aapo Rantalainen\n"..
@@ -1520,7 +1533,7 @@ function love.draw()
     --  "-Greek / Ελληνικά - Στέλιος, versys650gr, sdim, lucinos and other members of The Official Greek Community of Linux Mint, updated by Alexandros Moskofidis (Αλέξανδρος Μοσκοφίδης)\n",
     --810, 200, 780, 'left')
 --
-    --love.graphics.setFont(font_interface)
+    --set_font("interface")
     --print_text("-Catalan / Català\n\n"..
     --  "-English / English\n"..
     --  "-Finnish / Suomalainen\n"..
@@ -1540,7 +1553,7 @@ function love.draw()
     --811, 200, 780, 'left')
     local x = 1600 / 6
     local y = 180
-    love.graphics.setFont(font_interface_bold)
+    set_font("interface_bold")
     for k, v in pairs(s_translators_c) do
       if k == 21 or k == 44 then
         x = x + 1600 / 3
@@ -1549,17 +1562,17 @@ function love.draw()
       print_text(v, x - 800, y, 1600, 'center')
       y = y + 30
       if v == "" then
-        love.graphics.setFont(font_interface_bold)
+        set_font("interface_bold")
       else
-        love.graphics.setFont(font_interface)
+        set_font("interface")
       end
     end
   elseif current_window == 26 then --user scores
-    draw_header(s_score) --, text[1])
+    love.graphics.setColor(color["interface_text"])
     local row = 0
     local column = 300
     local total = {0, 0, 0, 0, 0}
-    love.graphics.setFont(font_interface_bold)
+    set_font("interface_bold")
     print_text(s_level, column + 1600 / 3, scroll + 160, 1600 / 6, 'center')
     for i = 0, 4 do
       print_text(i + 1, column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
@@ -1569,20 +1582,20 @@ function love.draw()
         --if row == 11 then
         --  --row = 0
         --  --column = 800
-        --  love.graphics.setFont(font_interface_bold)
+        --  set_font("interface_bold")
         --  print_text(s_level, column + 1600 / 3, scroll + 160, 1600 / 6, 'center')
         --  for i = 0, 4 do
         --    print_text(i + 1,  column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 200, (1600 / 6) / 5, 'center')
         --  end
-        --  love.graphics.setFont(font_interface)
+        --  set_font("interface")
         --end
-        love.graphics.setFont(font_interface_bold)
-        if (utf8len(activity_titles[v] or "x") <= 29) then
-          print_text(activity_titles[v] or "x", column, scroll + 250 + (row * 40), 1600 / 3 - 5, 'right')
-        else
-          print_text(activity_titles[v] or "x", column + (1600 / 3) - ((1600 / 3) * 2 * (29 / utf8len(activity_titles[v] or "x"))), scroll + 250 + (row * 40), (1600 / 3) * 2 - 5, 'right', 0, 29 / utf8len(activity_titles[v] or "x"), 1)
-        end
-        love.graphics.setFont(font_interface)
+        set_font("interface_bold")
+        --if (utf8len(activity_titles[v] or "x") <= 29) then
+          print_text(activity_titles[v] or "x", column - 1066, scroll + 250 + (row * 40), 1600, 'right', 0, 1, 1, 800)
+        --else
+        --  print_text(activity_titles[v] or "x", column + (1600 / 3) - ((1600 / 3) * 2 * (29 / utf8len(activity_titles[v] or "x"))), scroll + 250 + (row * 40), (1600 / 3) * 2 - 5, 'right', 0, 29 / utf8len(activity_titles[v] or "x"), 1)
+        --end
+        set_font("interface")
         for i = 0, 4 do
           print_text(score[text[1]][i + 1][k] or "x", column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
           total[i+1] = total[i+1] + (score[text[1]][i + 1][k] or 0)
@@ -1594,6 +1607,9 @@ function love.draw()
     for i = 0, 4 do
       print_text(total[i+1], column + 1600 / 3 + ((1600 / 6) / 5) * i, scroll + 250 + (row * 40) - 4, (1600 / 6) / 5, 'center')
     end
+    love.graphics.setColor(color["white"])
+    love.graphics.rectangle("fill", 0, 0, 1140, 150)
+    draw_header(s_score) --, text[1])
   elseif current_window == 27 then --learn numbers with flashcards
     draw_header(s_numbers, s_learn_numbers_with_flashcard)
     love.graphics.setColor(color['white'])
@@ -1603,11 +1619,11 @@ function love.draw()
     love.graphics.setLineWidth(5)
     love.graphics.rectangle('line', 700, 265, 432, 288, 15, 15)
     love.graphics.setLineWidth(1)
-    love.graphics.setFont(font_handwritten)
+    set_font("handwritten")
     love.graphics.setColor(color["interface_text"])
     print_text(flashcards_number, 450, 300, 200, 'center')
     print_text(number_to_string(flashcards_number), 700 - 200, 600, (432 + 400) * 2, 'center', 0, 0.5)
-    love.graphics.setFont(font_small_title)
+    set_font("small_title")
     print_text(number_to_string(flashcards_number), 700 - 200, 560, 432 + 400, 'center')
   elseif current_window == 28 then --number spelling (demonstration)
     draw_header(s_numbers, s_numbers_spelling)
@@ -1620,7 +1636,7 @@ function love.draw()
       love.graphics.rectangle('fill', 800 - 350 + 120, 180 + 50 * (i + 2), 700 - 120, 50 - 4, 15, 15)
     end
     love.graphics.setColor(color["interface_text"])
-    love.graphics.setFont(font_small_title)
+    set_font("small_title")
     print_text(number_start .. " - " .. number_start + 10, 800 - 350, 177, 700, 'center')
     for i = 0, 10 do
       local n_s = number_to_string(number_start + i)
@@ -1637,7 +1653,7 @@ function love.draw()
   -- ^ defined above
   elseif current_window == 31 then -- image patterns
     draw_header(s_patterns, s_image_patterns)
-    love.graphics.setFont(font_large_title)
+    set_font("large_title")
     for x = 0, t_x - 1 do
       for y = 0, t_y - 1 do
         local byteoffset = utf8.offset(tiles[y + 1], x + 1)
@@ -1694,7 +1710,7 @@ function love.draw()
     --love.graphics.rectangle('fill', 200, 650 - 144 - 60, 400, 288 + 60, 15, 15)
     --love.graphics.setLineWidth(1)
     love.graphics.setColor(color['interface_text'])
-    love.graphics.setFont(font_small_title)
+    set_font("small_title")
     print_text(s_shape_names[selected_shape], 0, 340, 1600, 'center', 0, 1)
     print_text(s_area, 800, 440, 800, 'left', 0, 0.75)
     print_text(s_shape_areas[selected_shape], 800, 500, 800, 'left', 0, 1)
@@ -1813,14 +1829,14 @@ function love.draw()
     end
 
     draw_analog_clock(400, 525, 290, clock_hour, clock_min, 'arabic_digits', selected_level)
-    love.graphics.setFont(font_button_text)
+    set_font("button_text")
     love.graphics.setColor(color["interface_text"])
     if current_window == 35 then
       print_text(s_drag_clock_hands, 1155 - 400, 210, 800, 'center')
     elseif current_window == 36 then
       print_text(s_set_the_clock_to, 1155 - 400, 250, 800, 'center')
     end
-    love.graphics.setFont(font_large_title)
+    set_font("large_title")
     love.graphics.setColor(color["red"])
     local show_h = 0
     local show_m = 0
@@ -1856,9 +1872,9 @@ function love.draw()
     end
 
     if global_language ~= "lakota" then
-      love.graphics.setFont(font_large_title)
+      set_font("large_title")
     else
-      love.graphics.setFont(font_small_title)
+      set_font("small_title")
     end
     --print_text(time_to_string_short(show_h, show_m), 1155 - 400, 550, 800, 'center')
     print_text(clock_string, 1155 - 400, 550, 800, 'center')
@@ -1913,10 +1929,10 @@ function love.draw()
     draw_header(s_discover_letters)
     draw_all_buttons()
     love.graphics.setColor(color["white_70"])
-    love.graphics.setFont(font_large_title)
+    set_font("large_title")
     print_text(alphabet_uc[1] .. alphabet_lc[2] .. alphabet_lc[3], 200, 360, 600, 'center', 0, 1, 1, 128)
     if global_language ~= "hebrew" then
-      love.graphics.setFont(font_handwritten)
+      set_font("handwritten")
       print_text(alphabet_uc[1] .. alphabet_uc[2] .. alphabet_uc[3], 1083,     380, 600, 'left', 0, 0.4, 0.4, 470)
     else
       print_text(alphabet_lc[1] .. alphabet_lc[2] .. alphabet_lc[3], 1083,     370, 600, 'left', 0, 0.7, 0.7, 370)
@@ -1937,7 +1953,7 @@ function love.draw()
     love.graphics.line(800 - 300, 252, 800 + 300, 256)
 
     love.graphics.setColor(color["interface_text"])
-    love.graphics.setFont(font_free_sans_100)
+    set_font("free_sans_100")
     local y_offset = 0
     if old_color_mode == true then
       y_offset = 9
@@ -1947,9 +1963,9 @@ function love.draw()
     else
       print_text(alphabet_uc[selected_letter_index], 800 - 400, 153 + y_offset, 800, 'center', 0, 1, 1, 500)
     end
-    love.graphics.setFont(font_small_title)
+    set_font("small_title")
     print_text(abc_flashcards_word_sequence[selected_letter_index], 800 - 500, 490, 1000, 'center', 0, 1, 1, 700)
-    love.graphics.setFont(font_handwritten)
+    set_font("handwritten")
     if global_language ~= "hebrew" then
       print_text(alphabet_uc[selected_letter_index] .. "          " .. alphabet_lc[selected_letter_index], 800 - 400, 300, 800, 'center', 0, 1, 1, 800)
       print_text(abc_flashcards_word_sequence[selected_letter_index], 400, 545, 1600, 'center', 0, 0.5, 0.5)
@@ -1961,10 +1977,10 @@ function love.draw()
       y_offset = 70
     end
     if global_language == "hebrew" then
-      love.graphics.setFont(font_extra_large)
+      set_font("extra_large")
       y_offset = y_offset - 300
     else
-      love.graphics.setFont(font_handwritten_extra_large)
+      set_font("handwritten_extra_large")
     end
     love.graphics.setColor(color["light_gray"])
     if global_language == "greek" and selected_letter_index <= 24 then
@@ -2001,14 +2017,14 @@ function love.draw()
     --love.graphics.setColor(color["dark_cyan"])
     --love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, 40)
     --love.graphics.setColor(color["white"])
-    --love.graphics.setFont(font_interface_bold)
+    --set_font("interface_bold")
     --print_text("eduActiv8", screen_left + 10, screen_top - 3, 500, 'left')
-    --love.graphics.setFont(font_interface)
+    --set_font("interface")
     --print_text(s_level .. ": " .. selected_level, screen_left, screen_top - 7, screen_total_width, 'center')
     --print_text(s_logged_user .. username, screen_left - 75, screen_top - 7, screen_total_width, 'right')
 
     if get_score_for_game(current_window) ~= nil then
-      love.graphics.setFont(font_small_title)
+      set_font("small_title")
       love.graphics.setColor(color["interface_text"])
       print_text(get_score_for_game(current_window) .. "/" .. get_max_score_for_game(current_window), screen_left - 40, screen_top + 60, screen_total_width, 'right')
       love.graphics.setColor(color["light_blue"])
@@ -2035,7 +2051,7 @@ function love.draw()
   --      --love.graphics.rectangle('fill', v.button_x - v.button_r, v.button_y - v.button_r, v.button_r * 2, v.button_r * 2)
   --      love.graphics.circle('fill', v.button_x, v.button_y, v.button_r )
   --      love.graphics.setColor(color["orange"])
-  --      love.graphics.setFont(font_small_title)
+  --      set_font("small_title")
   --      print_text(v.button_caption, 0, game_screen_height - 100, game_screen_width, 'center')
   --    end
   --  end

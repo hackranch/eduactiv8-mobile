@@ -2,7 +2,9 @@ require 'translation'
 require 'utf8_functions'
 
 function set_language(language)
-  init_language_files(language)
+  if game_updating_translation == true then
+    init_language_files(language)
+  end
 --  if language == "english" then
 
 --    global_language = "english"
@@ -289,6 +291,16 @@ function set_language(language)
 
     for i = 1, 13 do
       s_shape_matching_names[i] = translate_i18n(s_shape_matching_names[i])
+    end
+
+    if game_updating_translation then
+      init_fruits_vegs_images()
+      for k, v in pairs(fruits_vegs_names) do
+        for i = 0, 5 do
+          translate_i18n(v:sub(1, utf8.len(v) - 4), i)
+        end
+      end
+      erase_fruits_vegs_images()
     end
 --  end
   init_alphabet()
