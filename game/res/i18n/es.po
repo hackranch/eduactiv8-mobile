@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-26 20:25\n"
+"PO-Revision-Date: 2019-10-26 20:43\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -1118,7 +1118,7 @@ msgid "cheese"
 msgstr "queso"
 
 msgid "beef"
-msgstr ""
+msgstr "carne de vacuno"
 
 msgid "sandwich"
 msgstr "sándwich"
@@ -1218,7 +1218,7 @@ msgid "trousers"
 msgstr "pantalones"
 
 msgid "sunglasses"
-msgstr ""
+msgstr "lentes de sol"
 
 msgid "coat"
 msgstr "abrigo"
@@ -1242,7 +1242,7 @@ msgid "skirt"
 msgstr "falda"
 
 msgid "zip"
-msgstr ""
+msgstr "cierre"
 
 msgid "shoes"
 msgstr "zapatos"
@@ -1251,7 +1251,7 @@ msgid "jewel"
 msgstr "joya"
 
 msgid "tie"
-msgstr ""
+msgstr "corbata"
 
 msgid "slippers"
 msgstr "zapatilla"
@@ -1269,10 +1269,10 @@ msgid "cap"
 msgstr "gorra"
 
 msgid "swimming suit"
-msgstr ""
+msgstr "traje de baño"
 
 msgid "trainer"
-msgstr ""
+msgstr "zapatillas de deportes"
 
 msgid "vest"
 msgstr "chaleco"
@@ -1834,7 +1834,7 @@ msgid "carpenter"
 msgstr "carpintero"
 
 msgid "jockey"
-msgstr ""
+msgstr "jockey"
 
 msgid "worker"
 msgstr "obrero"
@@ -1928,7 +1928,7 @@ msgid "radish"
 msgstr "rábano"
 
 msgid "tomato"
-msgstr ""
+msgstr "tomate"
 
 msgid "kiwi"
 msgstr "kiwi"
@@ -2034,7 +2034,7 @@ msgid "sail"
 msgstr "navegar"
 
 msgid "taxi"
-msgstr ""
+msgstr "taxi"
 
 msgid "car"
 msgstr "coche"
