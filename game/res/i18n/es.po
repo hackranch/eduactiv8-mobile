@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-26 19:58\n"
+"PO-Revision-Date: 2019-10-26 20:11\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -646,7 +646,7 @@ msgid "goat"
 msgstr "cabra"
 
 msgid "baby rabbit"
-msgstr ""
+msgstr "conejo de bebé"
 
 msgid "lion"
 msgstr "león"
@@ -1768,7 +1768,7 @@ msgid "farmer"
 msgstr "agricultor"
 
 msgid "magician"
-msgstr ""
+msgstr "mago"
 
 msgid "knight"
 msgstr "caballero"
@@ -1804,7 +1804,7 @@ msgid "princess"
 msgstr "princesa"
 
 msgid "firefighter"
-msgstr ""
+msgstr "bombero"
 
 msgid "nun"
 msgstr "monja"
@@ -1846,7 +1846,7 @@ msgid "pilot"
 msgstr "piloto"
 
 msgid "actor"
-msgstr ""
+msgstr "actor"
 
 msgid "cook"
 msgstr "cocinar"
@@ -1870,7 +1870,7 @@ msgid "boxer"
 msgstr "boxeador"
 
 msgid "ballet dancer"
-msgstr ""
+msgstr "bailarin ballet"
 
 msgid "coach"
 msgstr "entrenador"
@@ -1889,7 +1889,7 @@ msgid "carrot"
 msgstr "zanahoria"
 
 msgid "blackberries"
-msgstr ""
+msgstr "moras"
 
 msgid "celery"
 msgstr "apio"
@@ -1898,7 +1898,7 @@ msgid "turnip"
 msgstr "nabo"
 
 msgid "cacao"
-msgstr ""
+msgstr "cacao"
 
 msgid "peach"
 msgstr "melocotón"
@@ -1943,7 +1943,7 @@ msgid "cucumbers"
 msgstr ""
 
 msgid "beans"
-msgstr ""
+msgstr "frijoles"
 
 msgid "strawberry"
 msgstr "fresa"
@@ -1967,13 +1967,13 @@ msgid "cabbage"
 msgstr "repollo"
 
 msgid "cherries"
-msgstr ""
+msgstr "cerezas"
 
 msgid "squash"
 msgstr "calabacín"
 
 msgid "blueberries"
-msgstr ""
+msgstr "bayas"
 
 msgid "pear"
 msgstr "pera"
@@ -2003,7 +2003,7 @@ msgid "cauliflower"
 msgstr "coliflor"
 
 msgid "mango"
-msgstr ""
+msgstr "mango"
 
 msgid "lettuce"
 msgstr "lechuga"
@@ -2012,22 +2012,22 @@ msgid "lemon"
 msgstr "limón"
 
 msgid "aubergine"
-msgstr ""
+msgstr "berenjena"
 
 msgid "artichokes"
-msgstr ""
+msgstr "artilugios"
 
 msgid "plums"
-msgstr ""
+msgstr "plumas"
 
 msgid "leek"
 msgstr "puerro"
 
 msgid "bananas"
-msgstr ""
+msgstr "plátanos"
 
 msgid "papaya"
-msgstr ""
+msgstr "papaya"
 
 # transport
 msgid "sail"
@@ -2088,8 +2088,8 @@ msgid "mast"
 msgstr "mástil"
 
 msgid "sledge"
-msgstr ""
+msgstr "trineo"
 
 msgid "bicycle"
-msgstr ""
+msgstr "bicicleta"
 
