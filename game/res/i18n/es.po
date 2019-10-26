@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-26 20:16\n"
+"PO-Revision-Date: 2019-10-26 20:25\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -436,7 +436,7 @@ msgid "leopard"
 msgstr "leopardo"
 
 msgid "iguana"
-msgstr ""
+msgstr "iguana"
 
 msgid "dolphin"
 msgstr "delfín"
@@ -682,7 +682,7 @@ msgid "jay"
 msgstr "arrendajo"
 
 msgid "seal"
-msgstr ""
+msgstr "foca"
 
 msgid "rooster"
 msgstr "gallo"
@@ -1019,7 +1019,7 @@ msgid "hamburger"
 msgstr "hamburguesa"
 
 msgid "steak"
-msgstr ""
+msgstr "bistec"
 
 msgid "fudge"
 msgstr "dulce de chocolate"
@@ -1124,7 +1124,7 @@ msgid "sandwich"
 msgstr "sándwich"
 
 msgid "slice"
-msgstr ""
+msgstr "rebanada"
 
 msgid "sprinkle"
 msgstr "chispas"
@@ -1175,14 +1175,14 @@ msgid "egg"
 msgstr "huevo"
 
 msgid "hot dog"
-msgstr ""
+msgstr "hot dog"
 
 msgid "ham"
 msgstr "jamón"
 
 # clothes
 msgid "jewellery"
-msgstr ""
+msgstr "joyería"
 
 msgid "sock"
 msgstr "calcetín"
@@ -1197,7 +1197,7 @@ msgid "smock"
 msgstr "bata"
 
 msgid "shorts"
-msgstr ""
+msgstr "shorts"
 
 msgid "pocket"
 msgstr "bolsillo"
@@ -1236,7 +1236,7 @@ msgid "suit"
 msgstr "arreglada"
 
 msgid "pyjamas"
-msgstr ""
+msgstr "pirjamas"
 
 msgid "skirt"
 msgstr "falda"
@@ -1302,7 +1302,7 @@ msgid "sash"
 msgstr "faja"
 
 msgid "shoe sole"
-msgstr ""
+msgstr "suela"
 
 msgid "robe"
 msgstr "manto"
@@ -1314,7 +1314,7 @@ msgid "kimono"
 msgstr "quimono"
 
 msgid "overalls"
-msgstr ""
+msgstr "sobrecargados"
 
 # actions
 msgid "lick"
@@ -1707,7 +1707,7 @@ msgid "peak"
 msgstr "pico"
 
 msgid "lava"
-msgstr ""
+msgstr "lava"
 
 msgid "cave"
 msgstr "cueva"
@@ -1725,7 +1725,7 @@ msgid "desert"
 msgstr "desierto"
 
 msgid "iceberg"
-msgstr ""
+msgstr "iceberg"
 
 # jobs
 msgid "clown"
@@ -1753,7 +1753,7 @@ msgid "juggler"
 msgstr "malabarista"
 
 msgid "police officer"
-msgstr ""
+msgstr "policía"
 
 msgid "plumber"
 msgstr "fontanero"
@@ -1879,10 +1879,10 @@ msgid "astronaut"
 msgstr "astronauta"
 
 msgid "painter"
-msgstr ""
+msgstr "pintor"
 
 msgid "scientist"
-msgstr ""
+msgstr "científico"
 
 # fruits and vegetables
 msgid "carrot"
@@ -1931,13 +1931,13 @@ msgid "tomato"
 msgstr ""
 
 msgid "kiwi"
-msgstr ""
+msgstr "kiwi"
 
 msgid "asparagus"
 msgstr "espárragos"
 
 msgid "olives"
-msgstr ""
+msgstr "aceitunas"
 
 msgid "cucumbers"
 msgstr "pepinos"
@@ -1958,10 +1958,10 @@ msgid "apricot"
 msgstr "albaricoque"
 
 msgid "potatoes"
-msgstr ""
+msgstr "papas"
 
 msgid "peas"
-msgstr ""
+msgstr "melocotas"
 
 msgid "cabbage"
 msgstr "repollo"
@@ -2046,7 +2046,7 @@ msgid "raft"
 msgstr "balsa"
 
 msgid "pedal"
-msgstr ""
+msgstr "pedal"
 
 msgid "bus"
 msgstr "autobús"
