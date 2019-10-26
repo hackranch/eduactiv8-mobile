@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-22 17:12\n"
+"PO-Revision-Date: 2019-10-26 19:58\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -93,7 +93,7 @@ msgid "User Management"
 msgstr "Nutzerverwaltung"
 
 msgid "Copyright & Credits"
-msgstr ""
+msgstr "Impressum"
 
 msgid "Licence"
 msgstr "Lizenz"
@@ -108,10 +108,10 @@ msgid "user name: "
 msgstr "Benutzername: "
 
 msgid "password: "
-msgstr ""
+msgstr "Passwort: "
 
 msgid "eduActiv8 Test Version"
-msgstr ""
+msgstr "eduActiv8 Testversion"
 
 msgid "Save"
 msgstr "Speichern"
@@ -165,7 +165,7 @@ msgid "Translators"
 msgstr "Übersetzer"
 
 msgid "Funding: "
-msgstr ""
+msgstr "Finanzierung: "
 
 msgid "Score: "
 msgstr "Spielstand: "
@@ -207,7 +207,7 @@ msgid "Symmetry"
 msgstr "Symmetrie"
 
 msgid "Patterns"
-msgstr ""
+msgstr "Muster"
 
 msgid "Time"
 msgstr "Zeit"
@@ -228,7 +228,7 @@ msgid "Find Solution"
 msgstr "Lösung finden"
 
 msgid "Image Patterns"
-msgstr ""
+msgstr "Bildmuster"
 
 msgid "Learn Shapes with Flashcards"
 msgstr "Lerne Formen mit Karten"
@@ -342,7 +342,7 @@ msgid "Octagon"
 msgstr "Oktagon"
 
 msgid "trapezium"
-msgstr ""
+msgstr "trapez"
 
 # animals
 msgid "cow"
@@ -1571,7 +1571,7 @@ msgid "church"
 msgstr "Kirche"
 
 msgid "kennel"
-msgstr ""
+msgstr "Hundehütte"
 
 msgid "temple"
 msgstr "Tempel"
@@ -1750,7 +1750,7 @@ msgid "librarian"
 msgstr "Bibliothekar"
 
 msgid "juggler"
-msgstr ""
+msgstr "Jongleur"
 
 msgid "police officer"
 msgstr "Polizei"
@@ -1952,7 +1952,7 @@ msgid "peppers"
 msgstr "Pfeffer"
 
 msgid "raspberry"
-msgstr ""
+msgstr "Himbeere"
 
 msgid "apricot"
 msgstr "Aprikose"
@@ -1970,7 +1970,7 @@ msgid "cherries"
 msgstr "Kirsche"
 
 msgid "squash"
-msgstr ""
+msgstr "Kürbis"
 
 msgid "blueberries"
 msgstr "Blaubeeren"
