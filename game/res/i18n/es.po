@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-26 20:11\n"
+"PO-Revision-Date: 2019-10-26 20:16\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -1076,7 +1076,7 @@ msgid "lemonade"
 msgstr "limonada"
 
 msgid "chocolate"
-msgstr ""
+msgstr "chocolate"
 
 msgid "water bottle"
 msgstr "botella de agua"
@@ -1145,7 +1145,7 @@ msgid "roast"
 msgstr "asado"
 
 msgid "drink[n]"
-msgstr ""
+msgstr "bebida"
 
 msgid "stew"
 msgstr "guiso"
@@ -1327,7 +1327,7 @@ msgid "beg"
 msgstr "pedir"
 
 msgid "fell"
-msgstr ""
+msgstr "caída"
 
 msgid "scratch"
 msgstr "arañar"
@@ -1649,7 +1649,7 @@ msgid "mosque"
 msgstr "mezquita"
 
 msgid "hospital"
-msgstr ""
+msgstr "hospital"
 
 msgid "tent"
 msgstr "tienda"
@@ -1780,7 +1780,7 @@ msgid "bricklayer"
 msgstr "albañil"
 
 msgid "cleaner"
-msgstr ""
+msgstr "mujer de la limpieza"
 
 msgid "teacher"
 msgstr "maestro"
@@ -1913,7 +1913,7 @@ msgid "broccoli"
 msgstr "brócoli"
 
 msgid "grapes"
-msgstr ""
+msgstr "uvas"
 
 msgid "spinach"
 msgstr "espinacas"
@@ -1940,7 +1940,7 @@ msgid "olives"
 msgstr ""
 
 msgid "cucumbers"
-msgstr ""
+msgstr "pepinos"
 
 msgid "beans"
 msgstr "frijoles"
