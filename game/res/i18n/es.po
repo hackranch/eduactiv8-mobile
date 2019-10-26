@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-22 17:36\n"
+"PO-Revision-Date: 2019-10-26 19:58\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -111,7 +111,7 @@ msgid "password: "
 msgstr "contraseña: "
 
 msgid "eduActiv8 Test Version"
-msgstr ""
+msgstr "Versión de prueba eduActiv8"
 
 msgid "Save"
 msgstr "Guardar"
@@ -165,7 +165,7 @@ msgid "Translators"
 msgstr "Traducción"
 
 msgid "Funding: "
-msgstr ""
+msgstr "Financiación: "
 
 msgid "Score: "
 msgstr "Puntuación:"
@@ -1046,10 +1046,10 @@ msgid "dessert"
 msgstr "postre"
 
 msgid "pretzel"
-msgstr ""
+msgstr "no use"
 
 msgid "peanut"
-msgstr ""
+msgstr "cacahuete"
 
 msgid "jam"
 msgstr "mermelada"
@@ -1061,7 +1061,7 @@ msgid "cookie"
 msgstr "galleta"
 
 msgid "bacon"
-msgstr ""
+msgstr "bacón"
 
 msgid "spice"
 msgstr "especia"
@@ -1079,7 +1079,7 @@ msgid "chocolate"
 msgstr ""
 
 msgid "water bottle"
-msgstr ""
+msgstr "botella de agua"
 
 msgid "lunch"
 msgstr "almuerzo"
@@ -1109,7 +1109,7 @@ msgid "mashed potatoes"
 msgstr ""
 
 msgid "tea"
-msgstr ""
+msgstr "té"
 
 msgid "bun"
 msgstr "brioche"
@@ -1130,7 +1130,7 @@ msgid "sprinkle"
 msgstr "chispas"
 
 msgid "pizza"
-msgstr ""
+msgstr "pizza"
 
 msgid "flour"
 msgstr "harina"
@@ -1215,7 +1215,7 @@ msgid "raincoat"
 msgstr "impermeable"
 
 msgid "trousers"
-msgstr ""
+msgstr "pantalones"
 
 msgid "sunglasses"
 msgstr ""
@@ -1245,7 +1245,7 @@ msgid "zip"
 msgstr ""
 
 msgid "shoes"
-msgstr ""
+msgstr "zapatos"
 
 msgid "jewel"
 msgstr "joya"
@@ -1257,7 +1257,7 @@ msgid "slippers"
 msgstr "zapatilla"
 
 msgid "gloves"
-msgstr ""
+msgstr "guantes"
 
 msgid "hat"
 msgstr "sombrero"
@@ -1423,7 +1423,7 @@ msgid "cheer"
 msgstr "animar"
 
 msgid "bake"
-msgstr ""
+msgstr "hornear"
 
 msgid "write"
 msgstr "escribir"
@@ -1486,7 +1486,7 @@ msgid "pull"
 msgstr "estirar"
 
 msgid "ate"
-msgstr ""
+msgstr "comir"
 
 msgid "kiss"
 msgstr "beso"
@@ -1525,13 +1525,13 @@ msgid "fly"
 msgstr "volar"
 
 msgid "juggle"
-msgstr ""
+msgstr "juguete"
 
 msgid "bit"
 msgstr "poco"
 
 msgid "sweep"
-msgstr ""
+msgstr "barrer"
 
 msgid "look"
 msgstr "mirarse"
