@@ -429,7 +429,7 @@ msgstr "khukhúše"
 msgid "scorpion"
 msgstr "siŋtíčhapȟe"
 
-msgid "fo"
+msgid "fox"
 msgstr "šuŋǧíla"
 
 msgid "leopard"
@@ -2092,4 +2092,3 @@ msgstr "čhaŋwóslohaŋ"
 
 msgid "bicycle"
 msgstr "hunáhomnipi"
-

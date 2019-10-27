@@ -84,7 +84,7 @@ msgstr ""
 msgid "scorpion"
 msgstr ""
 
-msgid "fo"
+msgid "fox"
 msgstr ""
 
 msgid "leopard"

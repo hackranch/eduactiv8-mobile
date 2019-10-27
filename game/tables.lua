@@ -108,6 +108,20 @@ function char(num)
   return string.char(string.byte("a")+num-1)
 end
 
+function string_in_two_lines(some_string)
+  local a = math.ceil(utf8len(some_string) / 2)
+  local b = a
+  while get_char(some_string, a) ~= ' ' and get_char(some_string, b) ~= ' ' do
+    a = a + 1
+    b = b - 1
+  end
+  if get_char(some_string, a) == ' ' then
+    return replace_char(a, some_string, '\n')
+  else
+    return replace_char(b, some_string, '\n')
+  end
+end
+
 function erase_table(T)
   if T ~= nil then
     for k, v in pairs(T) do

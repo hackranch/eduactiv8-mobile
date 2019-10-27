@@ -429,7 +429,7 @@ msgstr "pig"
 msgid "scorpion"
 msgstr "scorpion"
 
-msgid "fo"
+msgid "fox"
 msgstr "fox"
 
 msgid "leopard"
@@ -2092,4 +2092,3 @@ msgstr "sledge"
 
 msgid "bicycle"
 msgstr "bicycle"
-

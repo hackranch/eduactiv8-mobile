@@ -429,7 +429,7 @@ msgstr "свиња"
 msgid "scorpion"
 msgstr "скорпија"
 
-msgid "fo"
+msgid "fox"
 msgstr "лисица"
 
 msgid "leopard"
@@ -2092,4 +2092,3 @@ msgstr "санка"
 
 msgid "bicycle"
 msgstr "велосипед"
-

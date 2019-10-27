@@ -455,7 +455,7 @@ msgstr "свиня"
 msgid "scorpion"
 msgstr "скорпіон"
 
-msgid "fo"
+msgid "fox"
 msgstr "лисиця"
 
 msgid "leopard"
@@ -2118,4 +2118,3 @@ msgstr "санчата"
 
 msgid "bicycle"
 msgstr "велосипед"
-

@@ -455,7 +455,7 @@ msgstr "świnia"
 msgid "scorpion"
 msgstr "skorpion"
 
-msgid "fo"
+msgid "fox"
 msgstr "lis"
 
 msgid "leopard"
@@ -2118,4 +2118,3 @@ msgstr "sanki"
 
 msgid "bicycle"
 msgstr "rower"
-

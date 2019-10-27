@@ -455,7 +455,7 @@ msgstr ""
 msgid "scorpion"
 msgstr ""
 
-msgid "fo"
+msgid "fox"
 msgstr "fox"
 
 msgid "leopard"
@@ -2118,4 +2118,3 @@ msgstr ""
 
 msgid "bicycle"
 msgstr ""
-

@@ -429,7 +429,7 @@ msgstr "Schwein"
 msgid "scorpion"
 msgstr "Skorpion"
 
-msgid "fo"
+msgid "fox"
 msgstr "Fuchs"
 
 msgid "leopard"

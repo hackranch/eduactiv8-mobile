@@ -438,7 +438,7 @@ msgstr "cochon"
 msgid "scorpion"
 msgstr "scorpion"
 
-msgid "fo"
+msgid "fox"
 msgstr "renard"
 
 msgid "leopard"

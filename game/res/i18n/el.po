@@ -429,7 +429,7 @@ msgstr "γουρούνι"
 msgid "scorpion"
 msgstr "σκορπιός"
 
-msgid "fo"
+msgid "fox"
 msgstr "αλεπού"
 
 msgid "leopard"
@@ -2092,4 +2092,3 @@ msgstr "έλκυθρο"
 
 msgid "bicycle"
 msgstr "ποδήλατο"
-
