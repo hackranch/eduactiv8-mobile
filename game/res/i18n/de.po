@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-26 19:58\n"
+"PO-Revision-Date: 2019-10-27 21:47\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: German\n"
 "MIME-Version: 1.0\n"
@@ -429,8 +429,8 @@ msgstr "Schwein"
 msgid "scorpion"
 msgstr "Skorpion"
 
-msgid "fo"
-msgstr "Fuchs"
+msgid "fox"
+msgstr ""
 
 msgid "leopard"
 msgstr "Leopard"
@@ -1518,9 +1518,6 @@ msgstr "plaudern"
 msgid "drive"
 msgstr "fahren"
 
-msgid "drink[n]"
-msgstr "Gertränk"
-
 msgid "drink[v]"
 msgstr "trinken"
 
@@ -2095,3 +2092,4 @@ msgstr "Schlitten"
 
 msgid "bicycle"
 msgstr "Fahrrad"
+
