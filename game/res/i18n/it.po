@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-27 21:47\n"
+"PO-Revision-Date: 2019-10-29 16:18\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +96,7 @@ msgid "Copyright & Credits"
 msgstr "Diritti e riconoscimenti"
 
 msgid "Licence"
-msgstr ""
+msgstr "Licenza"
 
 msgid "Language arts"
 msgstr "Arti del linguaggio"
@@ -105,13 +105,13 @@ msgid "This username and password combination doesn't exist."
 msgstr "Non esiste l'accoppiata di questo nome utente e questa password"
 
 msgid "user name: "
-msgstr ""
+msgstr "nome utente: "
 
 msgid "password: "
-msgstr ""
+msgstr "password: "
 
 msgid "eduActiv8 Test Version"
-msgstr ""
+msgstr "versione di prova eduActiv8"
 
 msgid "Save"
 msgstr "Salva"
@@ -144,7 +144,7 @@ msgid "Complete the word"
 msgstr "Completa la parola"
 
 msgid "Positive numbers"
-msgstr ""
+msgstr "Numeri positivi"
 
 msgid "Number Spelling"
 msgstr "Pronuncia dei numeri"
@@ -165,7 +165,7 @@ msgid "Translators"
 msgstr "Traduttori"
 
 msgid "Funding: "
-msgstr ""
+msgstr "Finanziamento: "
 
 msgid "Score: "
 msgstr "Punteggio:"
@@ -180,7 +180,7 @@ msgid "Basic Operations"
 msgstr "Operazioni di base"
 
 msgid "area:"
-msgstr ""
+msgstr "area:"
 
 msgid "perimeter:"
 msgstr "perimetro:"
@@ -204,16 +204,16 @@ msgid "Shapes and Solids"
 msgstr "Forme e Solidi"
 
 msgid "Symmetry"
-msgstr ""
+msgstr "Simmetria"
 
 msgid "Patterns"
-msgstr ""
+msgstr "Modelli"
 
 msgid "Time"
 msgstr "Ora"
 
 msgid "Basics"
-msgstr ""
+msgstr "Basi"
 
 msgid "Subtraction"
 msgstr "Sottrazione"
@@ -225,10 +225,10 @@ msgid "Demonstration"
 msgstr "Dimostrazione"
 
 msgid "Find Solution"
-msgstr ""
+msgstr "Trova soluzione"
 
 msgid "Image Patterns"
-msgstr ""
+msgstr "Modelli di immagine"
 
 msgid "Learn Shapes with Flashcards"
 msgstr "Impara le forme con le schede"
@@ -336,13 +336,13 @@ msgid "Ellipse"
 msgstr "Ellisse"
 
 msgid "Heptagon"
-msgstr ""
+msgstr "Etagono"
 
 msgid "Octagon"
-msgstr ""
+msgstr "Ottagone"
 
 msgid "trapezium"
-msgstr ""
+msgstr "trapezio"
 
 # animals
 msgid "cow"
@@ -361,7 +361,7 @@ msgid "panther"
 msgstr "pantera"
 
 msgid "panda"
-msgstr ""
+msgstr "panda"
 
 msgid "magpie"
 msgstr "gazza"
@@ -430,13 +430,13 @@ msgid "scorpion"
 msgstr "lo scoprione"
 
 msgid "fox"
-msgstr ""
+msgstr "volpe"
 
 msgid "leopard"
 msgstr "leopardo"
 
 msgid "iguana"
-msgstr ""
+msgstr "iguana"
 
 msgid "dolphin"
 msgstr "delfino"
@@ -1046,7 +1046,7 @@ msgid "dessert"
 msgstr "dolce"
 
 msgid "pretzel"
-msgstr ""
+msgstr "pallido"
 
 msgid "peanut"
 msgstr "nocciolina"
@@ -1061,7 +1061,7 @@ msgid "cookie"
 msgstr "biscotto"
 
 msgid "bacon"
-msgstr ""
+msgstr "bacone"
 
 msgid "spice"
 msgstr "spezia"
@@ -1130,7 +1130,7 @@ msgid "sprinkle"
 msgstr "spruzzo"
 
 msgid "pizza"
-msgstr ""
+msgstr "pizza"
 
 msgid "flour"
 msgstr "farina"
@@ -1224,7 +1224,7 @@ msgid "coat"
 msgstr "cappotto"
 
 msgid "pullover"
-msgstr ""
+msgstr "trascina"
 
 msgid "shirt"
 msgstr "camicia"
@@ -1311,7 +1311,7 @@ msgid "pants"
 msgstr "pantaloni"
 
 msgid "kimono"
-msgstr ""
+msgstr "kimono"
 
 msgid "overalls"
 msgstr "tuta"
@@ -1804,7 +1804,7 @@ msgid "princess"
 msgstr "principessa"
 
 msgid "firefighter"
-msgstr ""
+msgstr "pompiere"
 
 msgid "nun"
 msgstr "suora"
@@ -2003,7 +2003,7 @@ msgid "cauliflower"
 msgstr "cavolfiore"
 
 msgid "mango"
-msgstr ""
+msgstr "manzo"
 
 msgid "lettuce"
 msgstr "lattuga"
@@ -2049,7 +2049,7 @@ msgid "pedal"
 msgstr "pedale"
 
 msgid "bus"
-msgstr ""
+msgstr "autobus"
 
 msgid "handlebar"
 msgstr "manubrio"
