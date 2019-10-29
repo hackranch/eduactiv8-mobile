@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-28 16:23\n"
+"PO-Revision-Date: 2019-10-29 16:18\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Portuguese\n"
 "MIME-Version: 1.0\n"
@@ -105,10 +105,10 @@ msgid "This username and password combination doesn't exist."
 msgstr "Esta combinação de utilizador e palavra passe não existe."
 
 msgid "user name: "
-msgstr ""
+msgstr "nome do usuário: "
 
 msgid "password: "
-msgstr ""
+msgstr "senha: "
 
 msgid "eduActiv8 Test Version"
 msgstr ""
@@ -144,7 +144,7 @@ msgid "Complete the word"
 msgstr "Completa a palavra"
 
 msgid "Positive numbers"
-msgstr ""
+msgstr "Números positivos"
 
 msgid "Number Spelling"
 msgstr "Ortografia de Números"
@@ -165,7 +165,7 @@ msgid "Translators"
 msgstr "Tradutores"
 
 msgid "Funding: "
-msgstr ""
+msgstr "Financiamento: "
 
 msgid "Score: "
 msgstr "Pontuação: "
@@ -204,16 +204,16 @@ msgid "Shapes and Solids"
 msgstr "Formas e Sólidos"
 
 msgid "Symmetry"
-msgstr ""
+msgstr "Simmetria"
 
 msgid "Patterns"
-msgstr ""
+msgstr "Padrões"
 
 msgid "Time"
 msgstr "Horas"
 
 msgid "Basics"
-msgstr ""
+msgstr "Básico"
 
 msgid "Subtraction"
 msgstr "Subtração"
@@ -225,10 +225,10 @@ msgid "Demonstration"
 msgstr "Demonstração"
 
 msgid "Find Solution"
-msgstr ""
+msgstr "Encontrar Solução"
 
 msgid "Image Patterns"
-msgstr ""
+msgstr "Padrões de imagem"
 
 msgid "Learn Shapes with Flashcards"
 msgstr "Aprende Formas com Figuras"
@@ -336,13 +336,13 @@ msgid "Ellipse"
 msgstr "Elipse"
 
 msgid "Heptagon"
-msgstr ""
+msgstr "Heptágono"
 
 msgid "Octagon"
-msgstr ""
+msgstr "Octógono"
 
 msgid "trapezium"
-msgstr ""
+msgstr "trapézio"
 
 # animals
 msgid "cow"
@@ -391,13 +391,13 @@ msgid "gorilla"
 msgstr "gorila"
 
 msgid "llama"
-msgstr ""
+msgstr "lama"
 
 msgid "vulture"
 msgstr "vulto"
 
 msgid "hamster"
-msgstr ""
+msgstr "martelo"
 
 msgid "bird"
 msgstr "pássaro"
@@ -478,10 +478,10 @@ msgid "viper"
 msgstr "víbora"
 
 msgid "shrike"
-msgstr ""
+msgstr "estrito"
 
 msgid "donkey"
-msgstr ""
+msgstr "burro"
 
 msgid "guinea pig"
 msgstr ""
@@ -493,7 +493,7 @@ msgid "horse"
 msgstr "cavalo"
 
 msgid "penguin"
-msgstr ""
+msgstr "pinguim"
 
 msgid "otter"
 msgstr "lontra"
@@ -526,7 +526,7 @@ msgid "mole"
 msgstr "toupeira"
 
 msgid "ray"
-msgstr ""
+msgstr "raio"
 
 msgid "ram"
 msgstr ""
@@ -664,10 +664,10 @@ msgid "doe"
 msgstr "fêmea"
 
 msgid "gopher"
-msgstr ""
+msgstr "brilhante"
 
 msgid "elephant"
-msgstr ""
+msgstr "elefante"
 
 msgid "giraffe"
 msgstr "girafa"
@@ -682,10 +682,10 @@ msgid "jay"
 msgstr "gaio"
 
 msgid "seal"
-msgstr ""
+msgstr "foca"
 
 msgid "rooster"
-msgstr ""
+msgstr "galo"
 
 msgid "turtle"
 msgstr "tartaruga"
@@ -764,7 +764,7 @@ msgid "hike"
 msgstr "caminhar"
 
 msgid "boxing"
-msgstr ""
+msgstr "boletim"
 
 msgid "hockey"
 msgstr "hóquei"
@@ -791,13 +791,13 @@ msgid "golf"
 msgstr "golfe"
 
 msgid "whistle"
-msgstr ""
+msgstr "apito"
 
 msgid "torch"
 msgstr "tocha"
 
 msgid "sailing"
-msgstr ""
+msgstr "navega"
 
 msgid "stand"
 msgstr "garagem"
@@ -840,7 +840,7 @@ msgid "mouth"
 msgstr "boca"
 
 msgid "feet"
-msgstr ""
+msgstr "pés"
 
 msgid "hand"
 msgstr "mão"
@@ -894,7 +894,7 @@ msgid "throat"
 msgstr "garganta"
 
 msgid "eye"
-msgstr ""
+msgstr "olho"
 
 msgid "leg"
 msgstr "perna"
@@ -937,16 +937,16 @@ msgid "girl"
 msgstr "menina"
 
 msgid "male"
-msgstr ""
+msgstr "macho"
 
 msgid "son"
 msgstr "filho"
 
 msgid "friends"
-msgstr ""
+msgstr "amigos"
 
 msgid "baby"
-msgstr ""
+msgstr "bebê"
 
 msgid "child"
 msgstr "filho"
@@ -961,7 +961,7 @@ msgid "twin boys"
 msgstr ""
 
 msgid "brothers"
-msgstr ""
+msgstr "irmãos"
 
 msgid "man"
 msgstr "homem"
@@ -970,13 +970,13 @@ msgid "mother"
 msgstr "mãe"
 
 msgid "grandfather"
-msgstr ""
+msgstr "avô"
 
 msgid "family"
 msgstr "família"
 
 msgid "female"
-msgstr ""
+msgstr "mulher"
 
 msgid "wife"
 msgstr "esposa"
@@ -1000,7 +1000,7 @@ msgid "boy"
 msgstr "rapaz"
 
 msgid "sisters"
-msgstr ""
+msgstr "irmãs"
 
 msgid "woman"
 msgstr "mulher"
@@ -1019,7 +1019,7 @@ msgid "hamburger"
 msgstr "hambúrguer"
 
 msgid "steak"
-msgstr ""
+msgstr "bife"
 
 msgid "fudge"
 msgstr "doce de leite"
@@ -1034,22 +1034,22 @@ msgid "rice"
 msgstr "arroz"
 
 msgid "ice cream"
-msgstr ""
+msgstr "sorvete"
 
 msgid "jelly"
 msgstr "geleia"
 
 msgid "yoghurt"
-msgstr ""
+msgstr "iogurte"
 
 msgid "dessert"
 msgstr "sobremesa"
 
 msgid "pretzel"
-msgstr ""
+msgstr "pretzel"
 
 msgid "peanut"
-msgstr ""
+msgstr "piant"
 
 msgid "jam"
 msgstr "compota"
@@ -1079,7 +1079,7 @@ msgid "chocolate"
 msgstr "chocolate"
 
 msgid "water bottle"
-msgstr ""
+msgstr "garrafa de água"
 
 msgid "lunch"
 msgstr "almoço"
@@ -1109,7 +1109,7 @@ msgid "mashed potatoes"
 msgstr ""
 
 msgid "tea"
-msgstr ""
+msgstr "chá"
 
 msgid "bun"
 msgstr "brioche"
@@ -1118,13 +1118,13 @@ msgid "cheese"
 msgstr "queijo"
 
 msgid "beef"
-msgstr ""
+msgstr "carne"
 
 msgid "sandwich"
 msgstr "sanduíche"
 
 msgid "slice"
-msgstr ""
+msgstr "fatia"
 
 msgid "sprinkle"
 msgstr "pepitas"
@@ -1145,7 +1145,7 @@ msgid "roast"
 msgstr "assado"
 
 msgid "drink[n]"
-msgstr ""
+msgstr "bebida"
 
 msgid "stew"
 msgstr "estufado"
@@ -1182,7 +1182,7 @@ msgstr "fiambre"
 
 # clothes
 msgid "jewellery"
-msgstr ""
+msgstr "joalharia"
 
 msgid "sock"
 msgstr "meia"
@@ -1197,7 +1197,7 @@ msgid "smock"
 msgstr "bata"
 
 msgid "shorts"
-msgstr ""
+msgstr "curtos"
 
 msgid "pocket"
 msgstr "bolso"
@@ -1215,10 +1215,10 @@ msgid "raincoat"
 msgstr "impermeável"
 
 msgid "trousers"
-msgstr ""
+msgstr "calças"
 
 msgid "sunglasses"
-msgstr ""
+msgstr "óculos"
 
 msgid "coat"
 msgstr "casaco"
@@ -1236,7 +1236,7 @@ msgid "suit"
 msgstr "fato"
 
 msgid "pyjamas"
-msgstr ""
+msgstr "pijamas"
 
 msgid "skirt"
 msgstr "saia"
@@ -1245,19 +1245,19 @@ msgid "zip"
 msgstr ""
 
 msgid "shoes"
-msgstr ""
+msgstr "sapatos"
 
 msgid "jewel"
 msgstr "jóia"
 
 msgid "tie"
-msgstr ""
+msgstr "gravata"
 
 msgid "slippers"
 msgstr "chinelo"
 
 msgid "gloves"
-msgstr ""
+msgstr "luvas"
 
 msgid "hat"
 msgstr "chapéu"
@@ -1269,7 +1269,7 @@ msgid "cap"
 msgstr "boné"
 
 msgid "swimming suit"
-msgstr ""
+msgstr "traje de natação"
 
 msgid "trainer"
 msgstr ""
@@ -1314,7 +1314,7 @@ msgid "kimono"
 msgstr "quimono"
 
 msgid "overalls"
-msgstr ""
+msgstr "totais"
 
 # actions
 msgid "lick"
@@ -1387,7 +1387,7 @@ msgid "meet"
 msgstr "encontrar"
 
 msgid "sell"
-msgstr ""
+msgstr "vender"
 
 msgid "peck"
 msgstr "bicar"
@@ -1423,13 +1423,13 @@ msgid "cheer"
 msgstr "animar"
 
 msgid "bake"
-msgstr ""
+msgstr "assar"
 
 msgid "write"
 msgstr "escrever"
 
 msgid "punch"
-msgstr ""
+msgstr "soco"
 
 msgid "strum"
 msgstr ""
@@ -1486,7 +1486,7 @@ msgid "pull"
 msgstr "puxar"
 
 msgid "ate"
-msgstr ""
+msgstr "comeu"
 
 msgid "kiss"
 msgstr "beijar"
@@ -1531,7 +1531,7 @@ msgid "bit"
 msgstr "bit"
 
 msgid "sweep"
-msgstr ""
+msgstr "varrer"
 
 msgid "look"
 msgstr "olhar"
@@ -1568,7 +1568,7 @@ msgid "circus"
 msgstr "circo"
 
 msgid "church"
-msgstr ""
+msgstr "igreja"
 
 msgid "kennel"
 msgstr ""
@@ -1768,7 +1768,7 @@ msgid "farmer"
 msgstr "agricultor"
 
 msgid "magician"
-msgstr ""
+msgstr "mágico"
 
 msgid "knight"
 msgstr "cavaleiro"
@@ -1804,7 +1804,7 @@ msgid "princess"
 msgstr "princesa"
 
 msgid "firefighter"
-msgstr ""
+msgstr "bombeiro"
 
 msgid "nun"
 msgstr "freira"
@@ -1879,10 +1879,10 @@ msgid "astronaut"
 msgstr "astronauta"
 
 msgid "painter"
-msgstr ""
+msgstr "pintor"
 
 msgid "scientist"
-msgstr ""
+msgstr "cientista"
 
 # fruits and vegetables
 msgid "carrot"
@@ -1913,7 +1913,7 @@ msgid "broccoli"
 msgstr "brócolo"
 
 msgid "grapes"
-msgstr ""
+msgstr "uvas"
 
 msgid "spinach"
 msgstr "espinafre"
@@ -1928,7 +1928,7 @@ msgid "radish"
 msgstr "rabanete"
 
 msgid "tomato"
-msgstr ""
+msgstr "tomate"
 
 msgid "kiwi"
 msgstr "kiwi"
@@ -1937,13 +1937,13 @@ msgid "asparagus"
 msgstr "espargo"
 
 msgid "olives"
-msgstr ""
+msgstr "azeitona"
 
 msgid "cucumbers"
-msgstr ""
+msgstr "pepinos"
 
 msgid "beans"
-msgstr ""
+msgstr "feijões"
 
 msgid "strawberry"
 msgstr "morango"
@@ -1958,16 +1958,16 @@ msgid "apricot"
 msgstr "alperce"
 
 msgid "potatoes"
-msgstr ""
+msgstr "batatas"
 
 msgid "peas"
-msgstr ""
+msgstr "ervilhas"
 
 msgid "cabbage"
 msgstr "repolho"
 
 msgid "cherries"
-msgstr ""
+msgstr "cerejas"
 
 msgid "squash"
 msgstr "aboborinha"
@@ -2012,19 +2012,19 @@ msgid "lemon"
 msgstr "limão"
 
 msgid "aubergine"
-msgstr ""
+msgstr "aubergina"
 
 msgid "artichokes"
-msgstr ""
+msgstr "hoques de artigos"
 
 msgid "plums"
-msgstr ""
+msgstr "ameixas"
 
 msgid "leek"
 msgstr "alho-francês"
 
 msgid "bananas"
-msgstr ""
+msgstr "bananas"
 
 msgid "papaya"
 msgstr "papaia"
@@ -2088,8 +2088,8 @@ msgid "mast"
 msgstr "mastro"
 
 msgid "sledge"
-msgstr ""
+msgstr "conhecimento"
 
 msgid "bicycle"
-msgstr ""
+msgstr "biciclo"
 
