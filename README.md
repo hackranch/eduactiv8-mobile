@@ -1,6 +1,4 @@
-<h1 style="font-weight:normal">
-    <img src=https://user-images.githubusercontent.com/254471/67097412-0ef08200-f188-11e9-96a7-cbd69107d268.png alt="eduActiv8"> Mobile
-  </h1>
+![ea_mobile_logo](https://user-images.githubusercontent.com/254471/67891860-d490c880-fb29-11e9-9fb2-600bff7abc50.png)
 
 A free and open source mobile app containing early learning activities in many languages. This code builds to both **eduActiv8: Math & Science** and **eduActiv8: Language Arts** apps.
 
