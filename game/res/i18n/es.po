@@ -2092,4 +2092,3 @@ msgstr "trineo"
 
 msgid "bicycle"
 msgstr "bicicleta"
-

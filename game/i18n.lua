@@ -34,32 +34,37 @@ function set_language(language)
     s_credits[8] = "Ireneusz Imiolek"
     s_credits[9] = "Ilija Mihajlov"
     s_credits[10] = "Art4Apps"
-    s_credits[11] = "OpenClipArt"
-    s_credits[12] = "Tango Project"
-    s_credits[13] = "Wikimedia Commons"
-    s_credits[14] = ""
-    s_credits[15] = "Sounds:"
-    s_credits[16] = "Ireneusz Imiolek"
-    s_credits[17] = "FreeSound"
-    s_credits[18] = ""
-    s_credits[19] = "Fonts:"
-    s_credits[20] = "Ireneusz Imiolek"
-    s_credits[21] = "KACST"
+    --s_credits[11] = "OpenClipArt"
+    --s_credits[12] = "Tango Project"
+    --s_credits[13] = "Wikimedia Commons"
+    --s_credits[14] = ""
+    --s_credits[15] = "Sounds:"
+    --s_credits[16] = "Ireneusz Imiolek"
+    --s_credits[17] = "FreeSound"
+    --s_credits[18] = ""
+    s_credits[11] = ""
+    s_credits[12] = "Fonts:"
+    s_credits[13] = "Ireneusz Imiolek"
+    s_credits[14] = "KACST"
+    s_credits[15] = ""
+    s_credits[16] = "Translations (click here)"
+    s_credits[17] = ""
+    s_credits[18] = "Special Thanks:"
+    s_credits[19] = "Thunder Valley Community Development Corporation"
+    s_credits[20] = "Elon University"
+    s_credits[21] = "Kamila Roszak-Imiolek"
     s_credits[22] = ""
-    s_credits[23] = "Translations (click here)"
-    s_credits[24] = ""
-    s_credits[25] = "Special Thanks:"
-    s_credits[26] = "Thunder Valley Community Development Corporation"
-    s_credits[27] = "Elon University"
-    s_credits[28] = "Kamila Roszak-Imiolek"
-    s_credits[29] = ""
-    s_credits[30] = "Produced by:"
-    s_credits[31] = "Derek Lackaff"
-    s_credits[32] = ""
-    s_credits[33] = "eduActiv8 character and logo (c) Ireneusz Imiolek"
-    s_credits[34] = "eduActiv8: Math and Science (c) Hackranch, LLC"
-    s_credits[35] = "Some assets used under license and are (c) various authors."
-    s_credits[36] = "" --"See CREDITS for details. www.eduactiv8.org"
+    s_credits[23] = "Produced by:"
+    s_credits[24] = "Derek Lackaff"
+    s_credits[25] = ""
+    s_credits[26] = "eduActiv8 character and logo (c) Ireneusz Imiolek"
+    if game == "math" then
+      s_credits[27] = "eduActiv8: Math and Science (c) Hackranch, LLC"
+    elseif game == "language" then
+      s_credits[27] = "eduActiv8: Language Arts (c) Hackranch, LLC"
+    end
+    s_credits[28] = "Some assets used under license and are (c) various authors."
+    s_credits[29] = "" --"See CREDITS for details. www.eduactiv8.org"
 
     s_translators_c = {}
 
@@ -325,7 +330,7 @@ function init_language_files(language)
   elseif language == "greek" then language_filename = "el.po"
   elseif language == "english_gb" then language_filename = "en_GB.po"
   -- english default (en_US.po)
-  elseif language == "spanish" then language_filename = "es_ES.po"
+  elseif language == "spanish" then language_filename = "es.po"
   elseif language == "finnish" then language_filename = "fi.po"
   elseif language == "french" then language_filename = "fr.po"
   elseif language == "hebrew" then language_filename = "he.po"
@@ -457,7 +462,7 @@ function init_word_sets()
                   "parakeet", "caterpillar", "tiger", "hummingbird", "piranha", "pig", "scorpion", "fox", "leopard",
                   "iguana", "dolphin", "bat", "chick", "crab", "hen", "wasp", "chameleon", "whale", "hedgehog",
                   "fawn", "moose", "bee", "viper", "shrike", "donkey", "guinea pig", "sloth", "horse", "penguin",
-                  "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "lama", "mole", "ray",
+                  "otter", "bear", "zebra", "ostrich", "camel", "antelope", "lemur", "pigeon", "mole", "ray",
                   "ram", "skunk", "jellyfish", "sheep", "shark", "kitten", "deer", "snail", "flamingo", "rabbit",
                   "oyster", "beaver", "sparrow", "dove", "eagle", "beetle", "hippopotamus", "owl", "cobra",
                   "salamander", "goose", "kangaroo", "dragonfly", "toad", "pelican", "squid", "lion cub", "jaguar",
@@ -474,7 +479,7 @@ function init_word_sets()
                "fist", "neck", "wrist", "throat", "eye", "leg", "spine", "ear", "finger", "foot", "braid", "face",
                "back", "chin", "bottom", "thigh", "belly"}
   english_word_set["a4a_people"] = {"girl", "male", "son", "friends", "baby", "child", "dad", "mom", "twin boys", "brothers",
-                 "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride", "madam",
+                 "man", "mother", "grandfather", "family", "female", "wife", "husband", "bride",
                  "grandmother", "couple", "twin girls", "boy", "sisters", "woman", "lady"}
   english_word_set["a4a_food"] = {"candy", "sausage", "hamburger", "steak", "fudge", "doughnut", "coconut", "rice", "ice cream", "jelly",
                "yoghurt", "dessert", "pretzel", "peanut", "jam", "feast", "cookie", "bacon", "spice", "coffee", "pie",

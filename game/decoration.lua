@@ -15,8 +15,8 @@ end
 
 function move_decoration_elements()
   for k, v in pairs(decoration_elements) do
-    decoration_elements[k].x = decoration_elements[k].x + decoration_elements[k].x_speed
-    decoration_elements[k].y = decoration_elements[k].y + decoration_elements[k].y_speed
+    decoration_elements[k].x = decoration_elements[k].x + decoration_elements[k].x_speed * (30 * delta_time)
+    decoration_elements[k].y = decoration_elements[k].y + decoration_elements[k].y_speed * (30 * delta_time)
     if decoration_elements[k].x < screen_left - 35 then
       decoration_elements[k].x = screen_total_width + 30
       set_d_element_random_speed(k)
@@ -37,12 +37,12 @@ function move_decoration_elements()
 end
 
 function set_d_element_random_speed(index)
-  decoration_elements[index].x_speed = 0.5
+  decoration_elements[index].x_speed = 1
   if love.math.random(1, 2) == 2 then
-    decoration_elements[index].x_speed = -0.5
+    decoration_elements[index].x_speed = -1
   end
-  decoration_elements[index].y_speed = 0.5
+  decoration_elements[index].y_speed = 1
   if love.math.random(1, 2) == 2 then
-    decoration_elements[index].y_speed = -0.5
+    decoration_elements[index].y_speed = -1
   end
 end

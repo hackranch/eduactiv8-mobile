@@ -525,8 +525,8 @@ msgstr "lémur"
 msgid "pigeon"
 msgstr "paloma"
 
-msgid "lama"
-msgstr "lama"
+msgid "llama"
+msgstr "llama"
 
 msgid "mole"
 msgstr "topo"

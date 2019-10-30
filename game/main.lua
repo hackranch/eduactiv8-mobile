@@ -11,10 +11,11 @@ require 'fonts'
 require 'tables'
 require 'colors'
 require 'decoration'
+require 'transitions'
 require 'score_processing'
 require 'geometry'
 require 'clock_graphics'
-ProFi = require 'profi'
+--ProFi = require 'profi'
 
 function get_screen_dimensions()
   screen_width = love.graphics.getWidth()
@@ -128,7 +129,7 @@ function password_characters(p)
 end
 
 function love.load()
-  ProFi:start()
+  --ProFi:start()
   if game_updating_translation == true then
     for k, v in pairs(dictionary) do
       set_language(k)
@@ -137,39 +138,36 @@ function love.load()
     love.system.openURL("file://"..love.filesystem.getSaveDirectory())
     love.event.quit()
   end
-  local major, minor, revision, codename = love.getVersion()
-  if major < 11 then
-    old_color_mode = true
-  else
-    old_color_mode = false
-  end
   if old_color_mode == true then
     init_old_color_mode() -- for the older Löve2D versions
   end
   global_language = game_initial_language
   set_language(game_initial_language)
-  --love.window.setTitle(s_title)
+  love.window.setTitle(s_title)
   love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8})
   get_screen_dimensions()
   --love.graphics.setDefaultFilter("linear", "linear", 1)
   initialize_fonts()
   init_subtitle()
   sleep = 0
+  delta_time = 1/60
   scrollable = false
   max_scroll = 0
   scroll = 0
   scroll_reference = 0
   love.graphics.setBackgroundColor(color["white"])
+  fade_from_black()
   text = {}
   selected_textbox = 1
   text[1] = ""
   message = ""
   buttons = {}
   build_form(1) --1 = splash screen,  19 = main menu
+  current_window = 1
   usernames = {}
   passwords = {}
   username = "guest"
-  if not love.filesystem.exists("usn.lua") then
+  if game_init_user_data == true or (not love.filesystem.exists("usn.lua")) then
     usernames[1] = "guest"
     usernames[2] = "userA"
     usernames[3] = "userB"
@@ -182,7 +180,7 @@ function love.load()
     usernames[10] = "userI"
     love.filesystem.write("usn.lua", table.show(usernames, "usernames"))
   end
-  if not love.filesystem.exists("pas.lua") then
+  if game_init_user_data == true or (not love.filesystem.exists("pas.lua")) then
     passwords[1] = "guest"
     passwords[2] = "passwordA"
     passwords[3] = "passwordB"
@@ -329,9 +327,11 @@ function love.mousereleased(x, y, button)
    elseif current_window == 19 then
      if mouse_on_button(20) then
        save_score()
-       ProFi:stop()
-       ProFi:writeReport( 'MyProfilingReport.txt' )
-       love.event.quit()
+       --ProFi:stop()
+       --ProFi:writeReport( 'MyProfilingReport.txt' )
+       --love.event.quit()
+       fade_to_black()
+       build_form(5000) --quit exit
      elseif mouse_on_button(21) then
        text[1] = username
        build_form(26)
@@ -483,9 +483,12 @@ function love.mousereleased(x, y, button)
 end -- mouse released function
 
 function love.update(dt)
+  if dt < 0.5 then
+    delta_time = dt
+  end
   if sleep > 0 then
     if message == "congrats" then
-      --save_score()  -- if called, this function is causing small delay during the transitions from one to other screen
+      save_score()
       message = ""
     end
     love.timer.sleep(sleep)
@@ -496,6 +499,7 @@ function love.update(dt)
       selected_a = ""
       selected_b = ""
     elseif current_window == 1 then
+      fade_to_white()
       --build_form(2) -- login
       build_form(19) -- main menu
     elseif current_window == 37 then
@@ -544,10 +548,11 @@ function love.update(dt)
       for k, v in pairs(buttons) do
         if mouse_on_button(k) then
           if buttons[k].button_go_to_game ~= nil and buttons[k].button_go_to_game ~= 0 then
-            if buttons[k].button_caption ~= nil then buttons[k].button_caption = s_loading end
-            if buttons[k].button_text ~= nil then buttons[k].button_text = s_loading end
+            --if buttons[k].button_caption ~= nil then buttons[k].button_caption = s_loading end
+            --if buttons[k].button_text ~= nil then buttons[k].button_text = s_loading end
             --build_form(buttons[k].button_go_to_game)
             go_to_game = buttons[k].button_go_to_game
+            fade_to_white(0.05, k)
             message = s_loading
             registered_click = true
           end
@@ -575,6 +580,8 @@ function love.update(dt)
         build_form(8)
       elseif mouse_on_button(2) then
         build_form(10)
+      elseif mouse_on_button(3) then
+        build_form(18) -- Level...
       --elseif mouse_on_button(3) then
       --      build_form(8)
       elseif mouse_on_button(4) then --change language button
@@ -583,61 +590,59 @@ function love.update(dt)
         build_form(5)
       elseif mouse_on_button(6) then
         build_form(7) --s_manage_users
-      elseif mouse_on_button(7) then
-        build_form(18) -- Level...
       end
     elseif current_window == 4 then --change language window
       if mouse_on_button(1) then
         set_language("english_gb")
-        build_form(4)
+        --build_form(4)
       elseif mouse_on_button(2) then
         set_language("english")
-        build_form(4)
+        --build_form(4)
       elseif mouse_on_button(3) then
         set_language("catalan")
-        build_form(4)
+        --build_form(4)
       elseif mouse_on_button(4) then
         set_language("german")
-        build_form(4)
+        --build_form(4)
       elseif mouse_on_button(5) then
         set_language("spanish")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(6) then
         set_language("french")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(7) then
         set_language("italian")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(8) then
         set_language("lakota")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(9) then
         set_language("polish")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(10) then
         set_language("portuguese")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(11) then
         set_language("finnish")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(12) then
         set_language("greek")
-        build_form(4)
+        ---build_form(4)
       elseif mouse_on_button(13) then
-        set_language("russian")
-        build_form(4)
-      elseif mouse_on_button(14) then
-        set_language("serbian")
-        build_form(4)
-      elseif mouse_on_button(15) then
-        set_language("ukrainian")
-        build_form(4)
-      elseif mouse_on_button(16) then
-        set_language("hebrew")
-        build_form(4)
-      elseif mouse_on_button(17) then
         set_language("macedonian")
-        build_form(4)
+        ---build_form(4)
+      elseif mouse_on_button(14) then
+        set_language("russian")
+        ---build_form(4)
+      elseif mouse_on_button(15) then
+        set_language("serbian")
+        ---build_form(4)
+      elseif mouse_on_button(16) then
+        set_language("ukrainian")
+        ---build_form(4)
+      elseif mouse_on_button(17) then
+        set_language("hebrew")
+        ---build_form(4)
       end
       --love.window.setTitle(language_filename)
       initialize_activity_titles()
@@ -935,7 +940,7 @@ function love.update(dt)
           buttons[i + 16].button_state = 2
           if selected_words.index == 0 then
             selected_words.index = i + 16
-            selected_words.content = time_words[i]
+            selected_words.content = string.gsub(time_words[i], "\n", " ")
             if selected_clock.index ~= 0 then
               if time_to_string_short(selected_clock.hour, selected_clock.min) == selected_words.content then
                 buttons[i + 16].button_state = 3
@@ -1046,7 +1051,7 @@ function love.update(dt)
     end
   end --mouse down
 
-  if current_window >= 19 then --and current_window <=24 then
+  if current_window == 19 then --and current_window <=24 then
     move_decoration_elements()
   end
 end
@@ -1055,8 +1060,11 @@ function love.draw()
   get_screen_dimensions()
   scale_screen()
   if current_window == 1 then --splash screen
+    love.graphics.setColor(color["white"])
     love.graphics.draw(image_splash, 800 - image_splash:getWidth() / 2, 450 - image_splash:getHeight() / 2)
-    sleep = 1
+    if transition_done == true then
+      sleep = 1
+    end
   elseif current_window == 2 then --login form
     love.graphics.setColor(color["white"])
     love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
@@ -1101,9 +1109,9 @@ function love.draw()
     --print_text(s_licence_content, 50, 630, 1500, 'center')
     local y = 220
     local x = 0
-    for k = 1, 36 do
-      if k == 19 then x = 800 y = 220 end
-      if k == 1 or k == 4 or k == 7 or k == 15 or k == 19 or k == 23 or k == 25 or k == 30 then
+    for k = 1, table_length(s_credits) do
+      if k == 18 then x = 800 y = 220 end
+      if k == 1 or k == 4 or k == 7 or k == 12 or k == 16 or k == 18 or k == 23 then
         set_font("interface_bold")
       else
         set_font("interface")
@@ -1116,7 +1124,7 @@ function love.draw()
       end
     end
     love.graphics.setColor(color["white"])
-    love.graphics.draw(image_credits_url, 921, 725, 0, 0.5, 0.5)
+    love.graphics.draw(image_credits_url, 921, 555, 0, 0.5, 0.5)
   elseif current_window == 7 then -- manage users
     draw_header(s_manage_users)
     set_font("interface_bold")
@@ -1282,8 +1290,14 @@ function love.draw()
         --end
 
         if x == 1 then
+          if game_table[y][x + 2].two_liner ~= nil and game_table[y][x + 2].two_liner == true then
+            set_font("button_text")
+          end
           print_text(game_table[y][x+2].content,  (5) * (game_screen_width/12) - 800, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, 1, 1, 500)
         else
+          if game_table[y][x + 2].two_liner ~= nil and game_table[y][x + 2].two_liner == true then
+            set_font("button_text")
+          end
           print_text(game_table[y][x+2].content,  (9) * (game_screen_width/12) - 800, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, 1, 1, 500)
         end
       end
@@ -1451,9 +1465,13 @@ function love.draw()
       for i = screen_left, screen_total_width / 47 do
         love.graphics.line(i * 47, screen_top, i * 47, screen_total_height)
       end
-    end
-    for i = screen_top, screen_total_height / 67 do
-      love.graphics.line(screen_left, i * 67, screen_total_width, i * 67)
+      for i = screen_top, screen_total_height / 47 do
+        love.graphics.line(screen_left, i * 47, screen_total_width, i * 47)
+      end
+    else
+      for i = screen_top, screen_total_height / 67 do
+        love.graphics.line(screen_left, i * 67, screen_total_width, i * 67)
+      end
     end
     love.graphics.setLineWidth(1)
     if game == "math" then
@@ -1614,7 +1632,7 @@ function love.draw()
     draw_header(s_numbers, s_learn_numbers_with_flashcard)
     love.graphics.setColor(color['white'])
     love.graphics.draw(images_fish[flashcards_number], 700, 265)
-    love.graphics.draw(images_numbers[flashcards_number], 435, 500)
+    love.graphics.draw(images_numbers[flashcards_number], 435, 525)
     love.graphics.setColor(color["light_blue"])
     love.graphics.setLineWidth(5)
     love.graphics.rectangle('line', 700, 265, 432, 288, 15, 15)
@@ -1622,7 +1640,7 @@ function love.draw()
     set_font("handwritten")
     love.graphics.setColor(color["interface_text"])
     print_text(flashcards_number, 450, 300, 200, 'center')
-    print_text(number_to_string(flashcards_number), 700 - 200, 600, (432 + 400) * 2, 'center', 0, 0.5)
+    print_text(number_to_string(flashcards_number), 700 - 200, 630, (432 + 400) * 2, 'center', 0, 0.5)
     set_font("small_title")
     print_text(number_to_string(flashcards_number), 700 - 200, 560, 432 + 400, 'center')
   elseif current_window == 28 then --number spelling (demonstration)
@@ -1923,7 +1941,7 @@ function love.draw()
         y = 288
         x = -(288 * 3)
       end
-      draw_analog_clock(196 + (i - 1) * 288 + x, 376 + y, 100, time_clocks[i].hour, time_clocks[i].min, 'arabic_digits', selected_level)
+      draw_analog_clock(196 + (i - 1) * 288 + x, 376 + y, 100, time_clocks[i].hour, time_clocks[i].min, 'arabic_digits_small', selected_level)
     end
   elseif current_window == 38 then -- discover letters menu
     draw_header(s_discover_letters)
@@ -1974,7 +1992,7 @@ function love.draw()
     draw_header(s_discover_letters, s_trace_letters_and_numbers)
     local y_offset = 0
     if old_color_mode == true then
-      y_offset = 70
+      y_offset = 170
     end
     if global_language == "hebrew" then
       set_font("extra_large")
@@ -1983,8 +2001,8 @@ function love.draw()
       set_font("handwritten_extra_large")
     end
     love.graphics.setColor(color["light_gray"])
-    if global_language == "greek" and selected_letter_index <= 24 then
-      print_text(buttons[selected_letter_index].button_text, 345, 50 + y_offset, 1253 / 0.8, "center", 0, 0.8)
+    if global_language == "greek" and selected_letter_index <= 48 then
+      print_text(buttons[selected_letter_index].button_text, 345, 50 + y_offset, 1253 / 0.8, "center", 0, 0.73)
     else
       print_text(buttons[selected_letter_index].button_text, 345, -30 + y_offset, 1253, "center")
     end
@@ -2078,6 +2096,7 @@ function love.draw()
       end
     elseif go_to_game ~= 0 then
       --show_message(message)
+      --fade_to_white()
       build_form(go_to_game)
       go_to_game = 0
       message = ""
@@ -2088,4 +2107,9 @@ function love.draw()
     end
   end
   --love.window.setTitle('Memory actually used (in kB): ' .. collectgarbage('count'))
+  draw_effects()
+  update_transitions()
+  if form_after_transition > 0 and transition_done then
+    build_form(form_after_transition)
+  end
 end

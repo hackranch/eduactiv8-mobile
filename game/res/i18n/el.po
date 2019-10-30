@@ -430,7 +430,7 @@ msgid "scorpion"
 msgstr "σκορπιός"
 
 msgid "fox"
-msgstr ""
+msgstr "αλεπού"
 
 msgid "leopard"
 msgstr "λεοπάρδαλη"
@@ -520,7 +520,7 @@ msgid "pigeon"
 msgstr "περιστέρι"
 
 msgid "llama"
-msgstr ""
+msgstr "λάμα"
 
 msgid "mole"
 msgstr "τυφλοπόντικας"
@@ -625,7 +625,7 @@ msgid "hyena"
 msgstr "ύαινα"
 
 msgid "ox"
-msgstr ""
+msgstr "βόδι"
 
 msgid "peacock"
 msgstr "παγώνι"
@@ -2092,4 +2092,3 @@ msgstr "έλκυθρο"
 
 msgid "bicycle"
 msgstr "ποδήλατο"
-

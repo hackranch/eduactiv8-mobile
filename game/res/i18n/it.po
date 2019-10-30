@@ -2092,4 +2092,3 @@ msgstr "slitta"
 
 msgid "bicycle"
 msgstr "bicicletta"
-

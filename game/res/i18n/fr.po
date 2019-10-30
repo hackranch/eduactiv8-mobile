@@ -625,7 +625,8 @@ msgid "hyena"
 msgstr "hyène"
 
 msgid "ox"
-msgstr ""
+msgstr "boeuf"
+
 
 msgid "peacock"
 msgstr "paon"

@@ -170,7 +170,9 @@ function init_images(category)
     for k, v in pairs(word_names) do
       word_images[k] = {}
       for kk, vv in pairs(v) do
-        word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+        if love.filesystem.exists("res/" .. k .. "/" .. vv) then
+          word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+        end
       end
     end
   end
@@ -214,6 +216,24 @@ function erase_fruits_vegs_images()
     erase_table(fruits_vegs_images)
   end
 end
+
+
+function init_clock_images()
+  if clock_images == nil or clock_images[1] == nil then
+    clock_images = {}
+    for i = 1, 5 do
+      clock_images[i] = love.graphics.newImage("res/clocks/clock" .. i .. ".png")
+    end
+  end
+end
+
+function erase_clock_images()
+  if clock_images ~= nil and clock_images[1] ~= nil then
+    erase_table(clock_images)
+  end
+end
+
+
 
 function init_alphabet_flashcard_images()
   if images_flashcards_abc == nil or table_length(images_flashcards_abc) == 0 then

@@ -456,7 +456,7 @@ msgid "scorpion"
 msgstr "скорпіон"
 
 msgid "fox"
-msgstr ""
+msgstr "лисиця"
 
 msgid "leopard"
 msgstr "леопард"
@@ -546,7 +546,7 @@ msgid "pigeon"
 msgstr "голуб"
 
 msgid "llama"
-msgstr ""
+msgstr "лама"
 
 msgid "mole"
 msgstr "кріт"
@@ -651,7 +651,7 @@ msgid "hyena"
 msgstr "гієна"
 
 msgid "ox"
-msgstr ""
+msgstr "бик"
 
 msgid "peacock"
 msgstr "павич"
@@ -2118,4 +2118,3 @@ msgstr "санчата"
 
 msgid "bicycle"
 msgstr "велосипед"
-

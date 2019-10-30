@@ -651,7 +651,7 @@ msgid "hyena"
 msgstr "hiena"
 
 msgid "ox"
-msgstr ""
+msgstr "wół"
 
 msgid "peacock"
 msgstr "paw"
@@ -2118,4 +2118,3 @@ msgstr "sanki"
 
 msgid "bicycle"
 msgstr "rower"
-
