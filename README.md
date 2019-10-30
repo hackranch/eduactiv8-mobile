@@ -4,6 +4,8 @@
 
 A free and open source mobile app containing early learning activities in many languages. This code builds to both **eduActiv8: Math & Science** and **eduActiv8: Language Arts** apps.
 
+[![Crowdin](https://badges.crowdin.net/eduactiv8-mobile/localized.svg)](https://crowdin.com/project/eduactiv8-mobile)
+
 Features
 ========
 * Several short activities to allow children to learn and practice basic literacy and numeracy skills.
