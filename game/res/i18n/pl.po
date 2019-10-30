@@ -545,9 +545,6 @@ msgstr ""
 msgid "pigeon"
 msgstr "gołąb"
 
-msgid "lama"
-msgstr ""
-
 msgid "mole"
 msgstr "kret"
 
@@ -650,7 +647,7 @@ msgstr "nosorożec"
 msgid "hyena"
 msgstr "hiena"
 
-msgid "o"
+msgid "ox"
 msgstr "wół"
 
 msgid "peacock"

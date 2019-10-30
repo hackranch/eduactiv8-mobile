@@ -170,7 +170,9 @@ function init_images(category)
     for k, v in pairs(word_names) do
       word_images[k] = {}
       for kk, vv in pairs(v) do
-        word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+        if love.filesystem.exists("res/" .. k .. "/" .. vv) then
+          word_images[k][string.gsub(vv, '_', ' ')] = love.graphics.newImage("res/" .. k .. "/" .. vv)
+        end
       end
     end
   end

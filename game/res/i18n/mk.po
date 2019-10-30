@@ -519,7 +519,7 @@ msgstr "лемур"
 msgid "pigeon"
 msgstr "гулаб"
 
-msgid "lama"
+msgid "llama"
 msgstr "лама"
 
 msgid "mole"
@@ -624,7 +624,7 @@ msgstr "носорог"
 msgid "hyena"
 msgstr "хиена"
 
-msgid "o"
+msgid "ox"
 msgstr "вол"
 
 msgid "peacock"

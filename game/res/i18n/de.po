@@ -519,9 +519,6 @@ msgstr "Lemur"
 msgid "pigeon"
 msgstr "Taube"
 
-msgid "lama"
-msgstr "Lama"
-
 msgid "mole"
 msgstr "Maulwurf"
 
@@ -624,7 +621,7 @@ msgstr "Rhinozeros"
 msgid "hyena"
 msgstr "Hyäne"
 
-msgid "o"
+msgid "ox"
 msgstr "Ochse"
 
 msgid "peacock"

@@ -174,7 +174,7 @@ msgstr ""
 msgid "pigeon"
 msgstr ""
 
-msgid "lama"
+msgid "llama"
 msgstr ""
 
 msgid "mole"
@@ -279,7 +279,7 @@ msgstr ""
 msgid "hyena"
 msgstr ""
 
-msgid "o"
+msgid "ox"
 msgstr ""
 
 msgid "peacock"

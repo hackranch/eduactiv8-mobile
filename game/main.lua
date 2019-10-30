@@ -143,7 +143,7 @@ function love.load()
   end
   global_language = game_initial_language
   set_language(game_initial_language)
-  --love.window.setTitle(s_title)
+  love.window.setTitle(s_title)
   love.window.setMode(0, 0, {resizable=true, vsync=true, minwidth=400, minheight=300, highdpi=true, msaa = 8})
   get_screen_dimensions()
   --love.graphics.setDefaultFilter("linear", "linear", 1)
@@ -1109,9 +1109,9 @@ function love.draw()
     --print_text(s_licence_content, 50, 630, 1500, 'center')
     local y = 220
     local x = 0
-    for k = 1, 36 do
-      if k == 19 then x = 800 y = 220 end
-      if k == 1 or k == 4 or k == 7 or k == 15 or k == 19 or k == 23 or k == 25 or k == 30 then
+    for k = 1, table_length(s_credits) do
+      if k == 18 then x = 800 y = 220 end
+      if k == 1 or k == 4 or k == 7 or k == 12 or k == 16 or k == 18 or k == 23 then
         set_font("interface_bold")
       else
         set_font("interface")
@@ -1124,7 +1124,7 @@ function love.draw()
       end
     end
     love.graphics.setColor(color["white"])
-    love.graphics.draw(image_credits_url, 921, 725, 0, 0.5, 0.5)
+    love.graphics.draw(image_credits_url, 921, 555, 0, 0.5, 0.5)
   elseif current_window == 7 then -- manage users
     draw_header(s_manage_users)
     set_font("interface_bold")
@@ -1290,8 +1290,14 @@ function love.draw()
         --end
 
         if x == 1 then
+          if game_table[y][x + 2].two_liner ~= nil and game_table[y][x + 2].two_liner == true then
+            set_font("button_text")
+          end
           print_text(game_table[y][x+2].content,  (5) * (game_screen_width/12) - 800, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, 1, 1, 500)
         else
+          if game_table[y][x + 2].two_liner ~= nil and game_table[y][x + 2].two_liner == true then
+            set_font("button_text")
+          end
           print_text(game_table[y][x+2].content,  (9) * (game_screen_width/12) - 800, (y+1) * (game_screen_height / 6) + 15 + y_offset + game_table_y_offset, 1600, 'center', 0, 1, 1, 500)
         end
       end
@@ -1459,9 +1465,13 @@ function love.draw()
       for i = screen_left, screen_total_width / 47 do
         love.graphics.line(i * 47, screen_top, i * 47, screen_total_height)
       end
-    end
-    for i = screen_top, screen_total_height / 67 do
-      love.graphics.line(screen_left, i * 67, screen_total_width, i * 67)
+      for i = screen_top, screen_total_height / 47 do
+        love.graphics.line(screen_left, i * 47, screen_total_width, i * 47)
+      end
+    else
+      for i = screen_top, screen_total_height / 67 do
+        love.graphics.line(screen_left, i * 67, screen_total_width, i * 67)
+      end
     end
     love.graphics.setLineWidth(1)
     if game == "math" then
@@ -1982,7 +1992,7 @@ function love.draw()
     draw_header(s_discover_letters, s_trace_letters_and_numbers)
     local y_offset = 0
     if old_color_mode == true then
-      y_offset = 70
+      y_offset = 170
     end
     if global_language == "hebrew" then
       set_font("extra_large")
@@ -1991,8 +2001,8 @@ function love.draw()
       set_font("handwritten_extra_large")
     end
     love.graphics.setColor(color["light_gray"])
-    if global_language == "greek" and selected_letter_index <= 24 then
-      print_text(buttons[selected_letter_index].button_text, 345, 50 + y_offset, 1253 / 0.8, "center", 0, 0.8)
+    if global_language == "greek" and selected_letter_index <= 48 then
+      print_text(buttons[selected_letter_index].button_text, 345, 50 + y_offset, 1253 / 0.8, "center", 0, 0.73)
     else
       print_text(buttons[selected_letter_index].button_text, 345, -30 + y_offset, 1253, "center")
     end

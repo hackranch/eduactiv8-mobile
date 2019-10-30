@@ -519,7 +519,7 @@ msgstr "λεμούριος"
 msgid "pigeon"
 msgstr "περιστέρι"
 
-msgid "lama"
+msgid "llama"
 msgstr "λάμα"
 
 msgid "mole"
@@ -624,7 +624,7 @@ msgstr "ρινόκερος"
 msgid "hyena"
 msgstr "ύαινα"
 
-msgid "o"
+msgid "ox"
 msgstr "βόδι"
 
 msgid "peacock"

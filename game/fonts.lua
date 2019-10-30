@@ -16,6 +16,7 @@ function initialize_fonts()
   font["handwritten_small"] = love.graphics.newFont("res/fonts/eduactiv8LatinPrint.ttf", 90)
 
   font["button_text"] = love.graphics.newFont("res/fonts/LinBiolinum_RB_merged_with_Kacst.ttf", 40)
+  font["button_text"]:setLineHeight(0.7)
 
   font["handwritten_extra_large"] = love.graphics.newFont("res/fonts/eduactiv8Hand.ttf", 850)
 

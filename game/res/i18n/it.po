@@ -519,9 +519,6 @@ msgstr "lemure"
 msgid "pigeon"
 msgstr "piccione"
 
-msgid "lama"
-msgstr ""
-
 msgid "mole"
 msgstr "talpa"
 
@@ -624,7 +621,7 @@ msgstr "rinoceronte"
 msgid "hyena"
 msgstr "iena"
 
-msgid "o"
+msgid "ox"
 msgstr ""
 
 msgid "peacock"

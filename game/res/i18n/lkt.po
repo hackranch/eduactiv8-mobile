@@ -519,7 +519,7 @@ msgstr "siŋté glegléǧa"
 msgid "pigeon"
 msgstr "thiwákiŋyela"
 
-msgid "lama"
+msgid "llama"
 msgstr "lamá"
 
 msgid "mole"
@@ -624,7 +624,7 @@ msgstr "phuté hetȟúŋ"
 msgid "hyena"
 msgstr "šúŋka iȟáȟa"
 
-msgid "o"
+msgid "ox"
 msgstr "ptewák'iŋ"
 
 msgid "peacock"

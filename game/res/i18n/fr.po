@@ -528,9 +528,6 @@ msgstr "lémurien"
 msgid "pigeon"
 msgstr "pigeon"
 
-msgid "lama"
-msgstr "lama"
-
 msgid "mole"
 msgstr "taupe"
 
@@ -633,7 +630,7 @@ msgstr "rhinocéros"
 msgid "hyena"
 msgstr "hyène"
 
-msgid "o"
+msgid "ox"
 msgstr "boeuf"
 
 msgid "peacock"
