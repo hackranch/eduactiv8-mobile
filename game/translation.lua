@@ -91,8 +91,11 @@ function translate_i18n(word, quantity)
     end
   else----------------------------------------------------------------------------------
     if dictionary ~= nil then
-      --love.window.setTitle(word)
-      return dictionary[global_language][word][index]
+      if dictionary[global_language][word] ~= nil then
+        return dictionary[global_language][word][index]
+      else
+        return ""
+      end
     else
       return word
     end
