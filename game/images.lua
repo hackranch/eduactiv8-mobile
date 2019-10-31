@@ -205,7 +205,9 @@ function init_fruits_vegs_images()
     fruits_vegs_names = love.filesystem.getDirectoryItems("res/fruits_vegs_13")
 
     for k, v in pairs(fruits_vegs_names) do
-      fruits_vegs_images[k] = love.graphics.newImage("res/fruits_vegs_13/" .. v)
+      if love.filesystem.exists("res/fruits_vegs_13/" .. v) then
+        fruits_vegs_images[k] = love.graphics.newImage("res/fruits_vegs_13/" .. v)
+      end
     end
   end
 end

@@ -1314,7 +1314,7 @@ function love.draw()
     local y_position = (game_screen_height / 15) * 4
     for k, v in pairs(items_needed) do
       if selected_level < 3 then
-        love.graphics.draw(fruits_vegs_images[items_needed[k].item], 900, y_position, 0.75, 0.75)
+        love.graphics.draw(fruits_vegs_images[items_needed[k].item] or icon_score, 900, y_position, 0.75, 0.75)
       end
       love.graphics.setColor(color["interface_text"])
       if selected_level < 3 then

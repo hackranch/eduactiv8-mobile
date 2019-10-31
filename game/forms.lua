@@ -340,8 +340,13 @@ function build_form(index)
 
             while flag == false do
               flag = true
+              if fruits_vegs_images[rf] == nil then
+                flag = false
+              end
               for i = 0, y-1 do
-                if ord(tiles[i]) == rf then flag = false end
+                if ord(tiles[i]) == rf then
+                  flag = false
+                end
               end
               if flag == false then
                 rf = math.random(1, 13) --random fruit
