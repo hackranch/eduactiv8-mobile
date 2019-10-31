@@ -34,8 +34,9 @@ if game_updating_translation == true then
   dictionary["ukrainian"] = {}
 end
 
-function translate_i18n(word, index)
-    index = index or 0
+function translate_i18n(word, quantity)
+  quantity = quantity or 1
+  local index = get_plural_index(quantity)
   if game_updating_translation == true then
     local result = {}
     result[0] = "" --word
@@ -96,4 +97,40 @@ function translate_i18n(word, index)
       return word
     end
   end
+end
+
+function get_plural_index(quantity)
+  local result = 1
+  if quantity == 1 then
+    result = 0
+  end
+  if global_language == "hebrew" then
+    if math.fmod(quantity, 100) == 1 then result = 0
+    elseif math.fmod(quantity, 100) == 2 then result = 1
+    elseif math.fmod(quantity, 100) == 3 or math.fmod(quantity, 100) == 4 then result = 2
+    else result = 3
+    end
+  elseif global_language == "macedonian" then
+    if math.fmod(quantity, 10) == 1 and math.fmod(quantity, 100) ~= 11 then result = 0
+    else result = 1
+    end
+  elseif global_language == "polish" then
+    if quantity == 1 then result = 0
+    elseif (math.fmod(quantity, 10) >= 2 and math.fmod(quantity, 10) <= 4) and (math.fmod(quantity, 100) < 12 or math.fmod(quantity, 100) > 14) then result = 1
+    elseif quantity ~= 1 and (math.fmod(quantity, 10) >= 0 and math.fmod(quantity, 10) <= 1) or (math.fmod(quantity, 10) >= 5 and math.fmod(quantity, 10) <= 9) or (math.fmod(quantity, 100) >= 12 and math.fmod(quantity, 100) <= 14) then result = 2
+    else result = 3
+    end
+  elseif global_language == "russian" or global_language == "ukrainian" then
+    if (math.fmod(quantity, 10) == 1 and math.fmod(quantity, 100) ~= 11) then result = 0
+    elseif (math.fmod(quantity, 10) >= 2 and math.fmod(quantity, 10) <= 4 and (math.fmod(quantity, 100) < 12 or math.fmod(quantity, 100) > 14)) then result = 1
+    elseif (math.fmod(quantity, 10) == 0 or (math.fmod(quantity, 10) >= 5 and math.fmod(quantity, 10) <= 9)) or (math.fmod(quantity, 100) >= 11 and math.fmod(quantity, 100) <= 14) then result = 2
+    else result = 3
+    end
+  elseif global_language == "serbian" then
+    if math.fmod(quantity, 10) == 1 and math.fmod(quantity, 100) ~= 11 then result = 0
+    elseif math.fmod(quantity, 10) >= 2 and math.fmod(quantity, 10) <= 4 and (math.fmod(quantity, 100) < 10 or math.fmod(quantity, 100) >= 20) then result = 1
+    else result = 2
+    end
+  end
+  return result
 end

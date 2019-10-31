@@ -315,6 +315,7 @@ function love.mousereleased(x, y, button)
        local flag = true
        total_items_needed = 0
        for k, v in pairs(items_needed) do
+         --love.window.setTitle(v.item)
          if basket_content[items_needed[k].item].quantity ~= items_needed[k].quantity then
            flag = false
          end

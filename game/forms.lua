@@ -372,7 +372,7 @@ function build_form(index)
                 if items_needed[j].item == rf then flag = false end
               end
               if flag == false then
-                rf = ord(get_char(tiles[math.random(2, 9)], 1))
+                rf = ord(get_char(tiles[math.random(3, 10)], 1))
               end
             end
           end
@@ -390,13 +390,13 @@ function build_form(index)
               items_needed[i].quantity = math.random(1, 4)
             end
           end
-          local quant = 0
-          if items_needed[i].quantity > 1 then
-            quant = 1
-          end
+          --local quant = 0
+          --if items_needed[i].quantity > 1 then
+          --  quant = 1
+          --end
           items_needed[i].name = ""
           if fruits_vegs_names[rf] ~= nil then
-            items_needed[i].name = translate_i18n(fruits_vegs_names[rf]:sub(1, utf8.len(fruits_vegs_names[rf]) - 4), quant)
+            items_needed[i].name = translate_i18n(fruits_vegs_names[rf]:sub(1, utf8.len(fruits_vegs_names[rf]) - 4), items_needed[i].quantity)
           end
           if items_needed[i].name == "" then
             items_needed[i].name = "?"

@@ -10,17 +10,17 @@ function set_language(language)
 --    global_language = "english"
 
     s_english = "English"
-    s_lakota = "Lakota (Lakotiyapi)"
-    s_macedonian = "Macedonian (Македонски)"
+    --s_lakota = "Lakota (Lakotiyapi)"
+    --s_macedonian = "Macedonian (Македонски)"
     s_login = "Login"
     s_change_language = "Default Language:"
     s_manage_users = "User Management"
     s_copyright = "Copyright & Credits"
-    s_copyright_text = "www.eduactiv8.org  |  info@eduactiv8.org \n Copyright (C) 2012 - 2019 Ireneusz Imiolek"
-    s_copyright_content = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
-    s_licence_title = "Licence"
-    s_licence_content = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
-    s_copyright_text_big = "Copyright(C) 2012 - 2019 Ireneusz Imiolek \n \n Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributet their works to freesound.org. \n Images by various authors who contributet their works to openclipart.org (Public Domain) and http://art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
+    --s_copyright_text = "www.eduactiv8.org  |  info@eduactiv8.org \n Copyright (C) 2012 - 2019 Ireneusz Imiolek"
+    --s_copyright_content = "Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributed their works to freesound.org. \n Images by various authors who contributed their works to openclipart.org (Public Domain) and http://www.art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
+    --s_licence_title = "Licence"
+    --s_licence_content = "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>."
+    --s_copyright_text_big = "Copyright(C) 2012 - 2019 Ireneusz Imiolek \n \n Laby, 2010 by Mehdi Cherti (mehdidc) \n Sounds by various authors who contributet their works to freesound.org. \n Images by various authors who contributet their works to openclipart.org (Public Domain) and http://art4apps.org/ - Art4Apps by Smart4Kids - under a Creative Commons License (CC BY-SA). \n Please view credits.txt for more info about authors of media files used in this project"
     s_language_arts = "Language arts"
 
     s_credits = {}
@@ -132,7 +132,10 @@ function set_language(language)
     s_incorrect_login = "This username and password combination doesn't exist."
     s_username = "user name: "
     s_password = "password: "
-    s_title = "eduActiv8 Test Version"
+    s_title = "eduActiv8 Math and Science"
+    if game == "language" then
+      s_title = "eduActiv8 Language Arts"
+    end
     s_save = "Save"
     s_remove = "Delete user"
     s_saved_successfully = "Preferences saved..."
@@ -215,14 +218,14 @@ function set_language(language)
     global_language = language
 
     s_english = translate_i18n(s_english)
-    s_lakota = translate_i18n(s_lakota)
-    s_macedonian = translate_i18n(s_macedonian)
+    --s_lakota = translate_i18n(s_lakota)
+    --s_macedonian = translate_i18n(s_macedonian)
     s_login = translate_i18n(s_login)
     s_change_language = translate_i18n(s_change_language)
     s_manage_users = translate_i18n(s_manage_users)
     s_copyright = translate_i18n(s_copyright)
-    s_copyright_text = translate_i18n(s_copyright_text)
-    s_copyright_text_big = translate_i18n(s_copyright_text_big)
+    --s_copyright_text = translate_i18n(s_copyright_text)
+    --s_copyright_text_big = translate_i18n(s_copyright_text_big)
     s_incorrect_login = translate_i18n(s_incorrect_login)
     s_username = translate_i18n(s_username)
     s_password = translate_i18n(s_password)
@@ -251,9 +254,9 @@ function set_language(language)
     s_time = translate_i18n(s_time)
     s_basics = translate_i18n(s_basics)
     s_subtraction = translate_i18n(s_subtraction)
-    s_copyright_content = translate_i18n(s_copyright_content)
-    s_licence_title = translate_i18n(s_licence_title)
-    s_licence_content = translate_i18n(s_licence_content)
+    --s_copyright_content = translate_i18n(s_copyright_content)
+    --s_licence_title = translate_i18n(s_licence_title)
+    --s_licence_content = translate_i18n(s_licence_content)
     s_translators = translate_i18n(s_translators)
     s_funding = translate_i18n(s_funding)
     s_score = translate_i18n(s_score)
@@ -310,6 +313,7 @@ function set_language(language)
 --  end
   init_alphabet()
   init_word_sets()
+  init_subtitle()
 end
 
 

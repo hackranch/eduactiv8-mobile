@@ -104,8 +104,6 @@ image_menu_ring_demo_n = love.graphics.newImage("res/menu icons/menu_ring_demo_n
 image_menu_ring_demo_decor = love.graphics.newImage("res/menu icons/menu_ring_demo_decor.png")
 
 function init_subtitle()
-  -----images_logo_subtitle = {}
-  --images_logo_subtitle_2 = {}
   if game == "math" then
     if global_language == "english" then images_logo_subtitle = love.graphics.newImage("res/subtitles/en.png")
     elseif global_language == "catalan" then images_logo_subtitle = love.graphics.newImage("res/subtitles/ca.png")
