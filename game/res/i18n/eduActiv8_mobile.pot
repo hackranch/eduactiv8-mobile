@@ -112,9 +112,6 @@ msgstr ""
 msgid "password: "
 msgstr ""
 
-msgid "eduActiv8 Test Version"
-msgstr ""
-
 msgid "Save"
 msgstr ""
 
