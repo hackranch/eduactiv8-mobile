@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:06\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Hebrew\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
 "X-Crowdin-Project: eduactiv8-mobile\n"
 "X-Crowdin-Language: he\n"
-"X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
+"X-Crowdin-File: /0.0.1-2.0/game/res/i18n/eduActiv8_mobile.pot\n"
 "Language: he_IL\n"
 
 msgid "green apple"
@@ -457,7 +457,6 @@ msgstr ""
 
 msgid "fox"
 msgstr ""
-
 
 msgid "leopard"
 msgstr ""
@@ -2119,3 +2118,4 @@ msgstr ""
 
 msgid "bicycle"
 msgstr ""
+
