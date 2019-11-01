@@ -27,8 +27,8 @@ function build_form(index)
       text[2] = ""
       add_button(1, s_login, 800, 730, 230)
     elseif index == 4 then --change language
-      add_button(1, "English", 800 - 380, 200, 370)
-      add_button(2, "American English", 800 - 380, 280 , 370)
+      add_button(1, "English (UK)", 800 - 380, 200, 370)
+      add_button(2, "English (US)", 800 - 380, 280 , 370)
       add_button(3, "Català", 800 - 380, 360, 370)
       add_button(4, "Deutsch", 800 - 380, 440, 370)
       add_button(5, "Español", 800 - 380, 520, 370)
@@ -53,8 +53,8 @@ function build_form(index)
       add_big_button(400, icon_back, screen_left + 80, screen_top + 100, 55, 0.38)
       --add_button(1, s_translators, 1400, 863, 320)
       add_button(1, "", 390, 675, 450, true)
-      add_button(2, "", 1036, 567, 180, true)
-      add_button(3, "", 1355, 567, 280, true)
+      add_button(2, "", 1136, 567, 180, true)
+      --add_button(3, "", 1355, 567, 280, true)
       fade_from_white()
     elseif index == 7 then -- manage users
       text[1] = ""

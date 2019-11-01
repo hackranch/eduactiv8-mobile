@@ -1,6 +1,7 @@
 require 'utf8_functions'
 
-image_splash = love.graphics.newImage("res/home_logo.png")
+image_splash = love.graphics.newImage("res/splash_logo.png")
+image_logo = love.graphics.newImage("res/home_logo.png")
 image_icon = love.graphics.newImage("res/ico256.png")
 image_dialog_bg = love.graphics.newImage("res/dialog_bg.png")
 --icon_language_section = love.graphics.newImage("res/ico_tn_00.png")
