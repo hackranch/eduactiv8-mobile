@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:37\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Italian\n"
 "MIME-Version: 1.0\n"
@@ -109,9 +109,6 @@ msgstr "nome utente: "
 
 msgid "password: "
 msgstr "password: "
-
-msgid "eduActiv8 Test Version"
-msgstr "versione di prova eduActiv8"
 
 msgid "Save"
 msgstr "Salva"
@@ -370,7 +367,7 @@ msgid "clam"
 msgstr "conchiglia"
 
 msgid "pony"
-msgstr ""
+msgstr "pony"
 
 msgid "mouse"
 msgstr "topo"
@@ -379,7 +376,7 @@ msgid "pug"
 msgstr "carlino"
 
 msgid "koala"
-msgstr ""
+msgstr "koala"
 
 msgid "frog"
 msgstr "rana"
@@ -388,7 +385,7 @@ msgid "ladybug"
 msgstr "coccinella"
 
 msgid "gorilla"
-msgstr ""
+msgstr "gorilla"
 
 msgid "llama"
 msgstr "lama"
@@ -412,7 +409,7 @@ msgid "parakeet"
 msgstr "parrocchetto"
 
 msgid "caterpillar"
-msgstr ""
+msgstr "bruco"
 
 msgid "tiger"
 msgstr "tigre"
@@ -421,7 +418,7 @@ msgid "hummingbird"
 msgstr "colibrì"
 
 msgid "piranha"
-msgstr ""
+msgstr "piranha"
 
 msgid "pig"
 msgstr "maiale"
@@ -502,7 +499,7 @@ msgid "bear"
 msgstr "orso"
 
 msgid "zebra"
-msgstr ""
+msgstr "zebra"
 
 msgid "ostrich"
 msgstr "ostrica"
@@ -520,7 +517,7 @@ msgid "pigeon"
 msgstr "piccione"
 
 msgid "llama"
-msgstr ""
+msgstr "lama"
 
 msgid "mole"
 msgstr "talpa"
@@ -583,7 +580,7 @@ msgid "owl"
 msgstr "gufo"
 
 msgid "cobra"
-msgstr ""
+msgstr "cobra"
 
 msgid "salamander"
 msgstr "salamandra"
@@ -625,7 +622,7 @@ msgid "hyena"
 msgstr "iena"
 
 msgid "ox"
-msgstr ""
+msgstr "ox"
 
 msgid "peacock"
 msgstr "pavone"
@@ -655,7 +652,7 @@ msgid "squirrel"
 msgstr "lo scoiattolo"
 
 msgid "opossum"
-msgstr ""
+msgstr "opossum"
 
 msgid "chimp"
 msgstr "scimmia"
@@ -731,7 +728,7 @@ msgstr "formichiere"
 
 # sport
 msgid "judo"
-msgstr ""
+msgstr "judo"
 
 msgid "pool"
 msgstr "piscina"
@@ -767,7 +764,7 @@ msgid "boxing"
 msgstr "boxare"
 
 msgid "hockey"
-msgstr ""
+msgstr "hockey"
 
 msgid "race"
 msgstr "corsa"
@@ -782,13 +779,13 @@ msgid "win"
 msgstr "vincere"
 
 msgid "squat"
-msgstr ""
+msgstr "accovacciarsi"
 
 msgid "ski"
 msgstr "sciare"
 
 msgid "golf"
-msgstr ""
+msgstr "golf"
 
 msgid "whistle"
 msgstr "fischiare"
@@ -803,7 +800,7 @@ msgid "stand"
 msgstr "sostare"
 
 msgid "tennis"
-msgstr ""
+msgstr "tennis"
 
 msgid "jump"
 msgstr "saltare"
@@ -1016,7 +1013,7 @@ msgid "sausage"
 msgstr "salsiccia"
 
 msgid "hamburger"
-msgstr ""
+msgstr "hamburger"
 
 msgid "steak"
 msgstr "bistecca"
@@ -1145,7 +1142,7 @@ msgid "roast"
 msgstr "arrosto"
 
 msgid "drink[n]"
-msgstr ""
+msgstr "bevanda"
 
 msgid "stew"
 msgstr "stufato"
@@ -1175,7 +1172,7 @@ msgid "egg"
 msgstr "uovo"
 
 msgid "hot dog"
-msgstr ""
+msgstr "hot dog"
 
 msgid "ham"
 msgstr "prosciutto"
@@ -1643,7 +1640,7 @@ msgid "steeple"
 msgstr "campanile"
 
 msgid "garage"
-msgstr ""
+msgstr "garage"
 
 msgid "mosque"
 msgstr "moschea"
@@ -1680,7 +1677,7 @@ msgid "hill"
 msgstr "collina"
 
 msgid "canyon"
-msgstr ""
+msgstr "canyon"
 
 msgid "rock"
 msgstr "roccia"
@@ -1707,7 +1704,7 @@ msgid "peak"
 msgstr "picco"
 
 msgid "lava"
-msgstr ""
+msgstr "lava"
 
 msgid "cave"
 msgstr "grotta"
@@ -1725,7 +1722,7 @@ msgid "desert"
 msgstr "deserto"
 
 msgid "iceberg"
-msgstr ""
+msgstr "iceberg"
 
 # jobs
 msgid "clown"
@@ -1741,7 +1738,7 @@ msgid "judge"
 msgstr "giudice"
 
 msgid "chef"
-msgstr ""
+msgstr "chef"
 
 msgid "athlete"
 msgstr "atleta"
@@ -1753,7 +1750,7 @@ msgid "juggler"
 msgstr "giocoliere"
 
 msgid "police officer"
-msgstr ""
+msgstr "agente di polizia"
 
 msgid "plumber"
 msgstr "idraulico"
@@ -1813,7 +1810,7 @@ msgid "pirate"
 msgstr "pirata"
 
 msgid "cowboy"
-msgstr ""
+msgstr "cowboy"
 
 msgid "electrician"
 msgstr "elettricista"
@@ -1898,7 +1895,7 @@ msgid "turnip"
 msgstr "rapa"
 
 msgid "cacao"
-msgstr ""
+msgstr "cacao"
 
 msgid "peach"
 msgstr "pesca"
@@ -1910,7 +1907,7 @@ msgid "grapefruit"
 msgstr "pompelmo"
 
 msgid "broccoli"
-msgstr ""
+msgstr "broccoli"
 
 msgid "grapes"
 msgstr "acini"
@@ -1931,7 +1928,7 @@ msgid "tomato"
 msgstr "pomodoro"
 
 msgid "kiwi"
-msgstr ""
+msgstr "kiwi"
 
 msgid "asparagus"
 msgstr "asparago"
@@ -1985,7 +1982,7 @@ msgid "pumpkin"
 msgstr "zucca"
 
 msgid "avocado"
-msgstr ""
+msgstr "avocado"
 
 msgid "garlic"
 msgstr "aglio"
@@ -1997,7 +1994,7 @@ msgid "apple"
 msgstr "mela"
 
 msgid "lime"
-msgstr ""
+msgstr "lime"
 
 msgid "cauliflower"
 msgstr "cavolfiore"
@@ -2027,14 +2024,14 @@ msgid "bananas"
 msgstr "banane"
 
 msgid "papaya"
-msgstr ""
+msgstr "papaia"
 
 # transport
 msgid "sail"
 msgstr "vela"
 
 msgid "taxi"
-msgstr ""
+msgstr "taxi"
 
 msgid "car"
 msgstr "automobile"
@@ -2092,3 +2089,4 @@ msgstr "slitta"
 
 msgid "bicycle"
 msgstr "bicicletta"
+

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:38\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Polish\n"
 "MIME-Version: 1.0\n"
@@ -134,9 +134,6 @@ msgid "user name: "
 msgstr ""
 
 msgid "password: "
-msgstr ""
-
-msgid "eduActiv8 Test Version"
 msgstr ""
 
 msgid "Save"
@@ -546,7 +543,7 @@ msgid "pigeon"
 msgstr "gołąb"
 
 msgid "llama"
-msgstr ""
+msgstr "lama"
 
 msgid "mole"
 msgstr "kret"
@@ -2118,3 +2115,4 @@ msgstr "sanki"
 
 msgid "bicycle"
 msgstr "rower"
+

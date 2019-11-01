@@ -2,417 +2,414 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:37\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
-"Language-Team: Spanish\n"
+"Language-Team: Catalan\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.com\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: eduactiv8-mobile\n"
-"X-Crowdin-Language: es-ES\n"
+"X-Crowdin-Language: ca\n"
 "X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
-"Language: es_ES\n"
+"Language: ca_ES\n"
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "manzana verde"
-msgstr[1] "manzanas verdes"
+msgstr[0] "poma verda"
+msgstr[1] "pomes verdes"
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "manzana roja"
-msgstr[1] "manzanas rojas"
+msgstr[0] "poma vermella"
+msgstr[1] "pomes vermelles"
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "fresa"
-msgstr[1] "fresas"
+msgstr[0] "maduixa"
+msgstr[1] "maduixes"
 
 msgid "pear"
 msgid_plural "pears"
 msgstr[0] "pera"
-msgstr[1] "peras"
+msgstr[1] "peres"
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] "naranja"
-msgstr[1] "naranjas"
+msgstr[0] "taronja"
+msgstr[1] "taronges"
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] "cebolla"
-msgstr[1] "cebollas"
+msgstr[0] "ceba"
+msgstr[1] "cebes"
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] "tomate"
-msgstr[1] "tomates"
+msgstr[0] "tomàquet"
+msgstr[1] "tomàquets"
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] "limón"
-msgstr[1] "limones"
+msgstr[0] "llimona"
+msgstr[1] "llimones"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] "cereza"
-msgstr[1] "cerezas"
+msgstr[0] "cirera"
+msgstr[1] "cireres"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] "pimiento"
-msgstr[1] "pimientos"
+msgstr[0] "pebrot"
+msgstr[1] "pebrots"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] "zanahoria"
-msgstr[1] "zanahorias"
+msgstr[0] "pastanaga"
+msgstr[1] "pastanagues"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] "plátano"
-msgstr[1] "plátanos"
+msgstr[0] "plàtan"
+msgstr[1] "plàtans"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] "sandía"
-msgstr[1] "sandías"
+msgstr[0] "síndria"
+msgstr[1] "síndries"
 
 msgid "English"
-msgstr "Inglés"
+msgstr "Anglès"
 
 msgid "Login"
-msgstr "Entrar"
+msgstr "Inici de sessió"
 
 msgid "Default Language:"
-msgstr "Idioma por defecto:"
+msgstr ""
 
 msgid "User Management"
-msgstr "Usuario gestor"
+msgstr "Administració d'usuaris"
 
 msgid "Copyright & Credits"
-msgstr "Autoría y Créditos"
+msgstr "Drets de còpia i crèdits"
 
 msgid "Licence"
-msgstr "Licencia"
+msgstr "Llicència"
 
 msgid "Language arts"
-msgstr "Artes del lenguaje"
+msgstr "Arts del llenguatge"
 
 msgid "This username and password combination doesn't exist."
-msgstr "La combinación de usuario y contraseña no existe."
+msgstr "Aquesta combinació d'usuari i contrasenya no existeix."
 
 msgid "user name: "
-msgstr "nombre de usuario: "
+msgstr ""
 
 msgid "password: "
-msgstr "contraseña: "
-
-msgid "eduActiv8 Test Version"
-msgstr "Versión de prueba eduActiv8"
+msgstr ""
 
 msgid "Save"
-msgstr "Guardar"
+msgstr "Desa"
 
 msgid "Delete user"
-msgstr "Borrar usuario"
+msgstr "Esborra l'usuari"
 
 msgid "Preferences saved..."
-msgstr "Preferencias guardadas..."
+msgstr "S'han desat les preferències…"
 
 msgid "Logged in as: "
-msgstr "Accedido como: "
+msgstr "Sessió iniciada com: "
 
 msgid "Language"
-msgstr "Idioma"
+msgstr "Llengua"
 
 msgid "Mathematics"
-msgstr "Matemáticas"
+msgstr "Matemàtiques"
 
 msgid "Games & Mazes"
-msgstr "Juegos y Laberintos"
+msgstr "Jocs i laberints"
 
 msgid "Word Builders"
-msgstr "Constructor de palabras"
+msgstr ""
 
 msgid "Animals"
-msgstr "Animales"
+msgstr ""
 
 msgid "Complete the word"
-msgstr "Completar la palabra"
+msgstr "Completa la paraula"
 
 msgid "Positive numbers"
-msgstr "Números positivos"
+msgstr ""
 
 msgid "Number Spelling"
-msgstr "Escritura de números"
+msgstr ""
 
 msgid "Shopping List"
-msgstr "Lista de la compra"
+msgstr "Llista de la compra"
 
 msgid "Addition"
 msgstr "Suma"
 
 msgid "Find missing number"
-msgstr "Enconttrar número perdido"
+msgstr "Troba el número que falta"
 
 msgid "Level"
-msgstr "Nivel"
+msgstr "Nivell"
 
 msgid "Translators"
-msgstr "Traducción"
+msgstr "Traductors"
 
 msgid "Funding: "
-msgstr "Financiación: "
+msgstr ""
 
 msgid "Score: "
-msgstr "Puntuación:"
+msgstr "Puntuació: "
 
 msgid "Numbers & Basic Operations"
-msgstr "Números y operaciones básicas"
+msgstr "Números i operacions bàsiques"
 
 msgid "Numbers"
 msgstr "Números"
 
 msgid "Basic Operations"
-msgstr "Operaciones básicas"
+msgstr "Operacions bàsiques"
 
 msgid "area:"
-msgstr "área:"
+msgstr "àrea:"
 
 msgid "perimeter:"
-msgstr "perímetro:"
+msgstr "perímetre:"
 
 msgid "circumference:"
-msgstr "circunferencia:"
+msgstr "circumferència:"
 
 msgid "Trapezium"
-msgstr "Trapecio"
+msgstr "Trapezoide"
 
 msgid "Drag the clock hands to set the time"
-msgstr "Arrastra las manecillas para ajustar el reloj"
+msgstr ""
 
 msgid "Discover Letters"
-msgstr "Descubre las letras"
+msgstr "Descobreix lletres"
 
 msgid "Word Matchers"
-msgstr "El significado de las imágenes"
+msgstr ""
 
 msgid "Shapes and Solids"
-msgstr "Curvas y sólidos"
+msgstr "Formes i sòlids"
 
 msgid "Symmetry"
-msgstr "Simetría"
+msgstr ""
 
 msgid "Patterns"
-msgstr "Patrones"
+msgstr ""
 
 msgid "Time"
-msgstr "Tiempo"
+msgstr "Temps"
 
 msgid "Basics"
-msgstr "Básico"
+msgstr ""
 
 msgid "Subtraction"
 msgstr "Resta"
 
 msgid "Learn Numbers with Flashcards"
-msgstr "Aprende los números con tarjetas didácticas"
+msgstr ""
 
 msgid "Demonstration"
-msgstr "Demostración"
+msgstr "Demostració"
 
 msgid "Find Solution"
-msgstr "Buscar solución"
+msgstr ""
 
 msgid "Image Patterns"
-msgstr "Patrones de imagen"
+msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr "Aprende las formas con tarjetas didácticas"
+msgstr ""
 
 msgid "Shape Matching"
-msgstr "Empareja las formas"
+msgstr ""
 
 msgid "Shape Maker"
-msgstr "Creador de figuras"
+msgstr ""
 
 msgid "How clock works"
-msgstr "¿Cómo funciona un reloj?"
+msgstr "Com funciona un rellotge?"
 
 msgid "learn to set the clock"
-msgstr "Aprende a ajustar el reloj"
+msgstr "aprèn a posar el rellotge"
 
 msgid "Set the clock to:"
-msgstr "Ajustar el reloj a:"
+msgstr "Posa el rellotge a:"
 
 msgid "Time Matching"
-msgstr "Empareja los relojes"
+msgstr ""
 
 msgid "Your Alphabet"
-msgstr "Alfabeto español"
+msgstr "Alfabet català"
 
 msgid "Trace Letters and Numbers"
-msgstr "Dibuja las letras y los números"
+msgstr ""
 
 msgid "People"
-msgstr "Gente"
+msgstr ""
 
 msgid "Jobs"
-msgstr "Trabajos"
+msgstr ""
 
 msgid "Body"
-msgstr "El cuerpo"
+msgstr ""
 
 msgid "Clothes and Accessories"
-msgstr "Ropa y accesorios"
+msgstr ""
 
 msgid "Sports"
-msgstr "Deportes"
+msgstr ""
 
 msgid "Actions"
-msgstr "Acciones"
+msgstr ""
 
 msgid "Nature"
-msgstr "Naturaleza"
+msgstr ""
 
 msgid "Fruits and Vegetables"
-msgstr "Frutas y vegetales"
+msgstr ""
 
 msgid "Food"
-msgstr "Comida"
+msgstr ""
 
 msgid "Transport"
-msgstr "Transporte"
+msgstr ""
 
 msgid "Constructions"
-msgstr "Construcciones"
+msgstr ""
 
 msgid "Equilateral Triangle"
-msgstr "Triángulo equilátero"
+msgstr "Triangle equilàter"
 
 msgid "Isosceles Triangle"
-msgstr "Triángulo isósceles"
+msgstr "Triangle isòsceles"
 
 msgid "Obtuse Triangle"
-msgstr "Triángulo obtuso"
+msgstr "Triangle obtús"
 
 msgid "Right Triangle"
-msgstr "Triángulo rectángulo"
+msgstr "Triangle rectangle"
 
 msgid "Acute Triangle"
-msgstr "Triángulo agudo"
+msgstr "Triangle agut"
 
 msgid "Square"
-msgstr "Cuadrado"
+msgstr "Quadrat"
 
 msgid "Rectangle"
-msgstr "Rectángulo"
+msgstr ""
 
 msgid "Right Trapezium"
-msgstr "Trapecio rectángulo"
+msgstr "Trapezoide rectangle"
 
 msgid "Isosceles Trapezium"
-msgstr "Trapecio isósceles"
+msgstr "Trapezoide isòsceles"
 
 msgid "Rhombus"
-msgstr "Rombo"
+msgstr "Rombe"
 
 msgid "Parallelogram"
-msgstr "Paralelogramo"
+msgstr "Paral·lelogram"
 
 msgid "Pentagon"
-msgstr "Pentágono"
+msgstr "Pentàgon"
 
 msgid "Hexagon"
-msgstr "Hexágono"
+msgstr "Hexàgon"
 
 msgid "Circle"
-msgstr "Círculo"
+msgstr "Cercle"
 
 msgid "Ellipse"
-msgstr "Elipse"
+msgstr "El·lipse"
 
 msgid "Heptagon"
-msgstr "Heptágono"
+msgstr ""
 
 msgid "Octagon"
-msgstr "Octágono"
+msgstr ""
 
 msgid "trapezium"
-msgstr "trapecio"
+msgstr ""
 
 # animals
 msgid "cow"
 msgstr "vaca"
 
 msgid "turkey"
-msgstr "pavo"
+msgstr "gall dindi"
 
 msgid "shrimp"
-msgstr "camarón"
+msgstr "gamba"
 
 msgid "wolf"
-msgstr "lobo"
+msgstr "llop"
 
 msgid "panther"
 msgstr "pantera"
 
 msgid "panda"
-msgstr "panda"
+msgstr "ós panda"
 
 msgid "magpie"
-msgstr "garza"
+msgstr "garsa"
 
 msgid "clam"
-msgstr "almeja"
+msgstr "cloïssa"
 
 msgid "pony"
 msgstr "poni"
 
 msgid "mouse"
-msgstr "ratón"
+msgstr "ratolí"
 
 msgid "pug"
-msgstr "pug"
+msgstr "carlí"
 
 msgid "koala"
 msgstr "coala"
 
 msgid "frog"
-msgstr "rana"
+msgstr "granota"
 
 msgid "ladybug"
-msgstr "mariquita"
+msgstr "marieta"
 
 msgid "gorilla"
-msgstr "gorila"
+msgstr "goril·la"
 
 msgid "llama"
-msgstr "llama"
+msgstr ""
 
 msgid "vulture"
-msgstr "buitre"
+msgstr "voltor"
 
 msgid "hamster"
-msgstr "hámster"
+msgstr ""
 
 msgid "bird"
-msgstr "pájaro"
+msgstr "ocell"
 
 msgid "starfish"
 msgstr "estrella de mar"
 
 msgid "crow"
-msgstr "cuervo"
+msgstr "corb"
 
 msgid "parakeet"
 msgstr "periquito"
 
 msgid "caterpillar"
-msgstr "oruga"
+msgstr "eruga"
 
 msgid "tiger"
 msgstr "tigre"
@@ -421,115 +418,115 @@ msgid "hummingbird"
 msgstr "colibrí"
 
 msgid "piranha"
-msgstr "piraña"
+msgstr "piranya"
 
 msgid "pig"
-msgstr "cerdo"
+msgstr "porc"
 
 msgid "scorpion"
-msgstr "escorpión"
+msgstr "escorpí"
 
 msgid "fox"
-msgstr "zorro"
+msgstr ""
 
 msgid "leopard"
-msgstr "leopardo"
+msgstr "lleopard"
 
 msgid "iguana"
-msgstr "iguana"
+msgstr ""
 
 msgid "dolphin"
-msgstr "delfín"
+msgstr "dofí"
 
 msgid "bat"
-msgstr "murciélago"
+msgstr "ratpenat"
 
 msgid "chick"
-msgstr "pollito"
+msgstr "pollet"
 
 msgid "crab"
-msgstr "cangrejo"
+msgstr "cranc"
 
 msgid "hen"
 msgstr "gallina"
 
 msgid "wasp"
-msgstr "avispa"
+msgstr "vespa"
 
 msgid "chameleon"
-msgstr "camaleón"
+msgstr "camaleó"
 
 msgid "whale"
-msgstr "ballena"
+msgstr "balena"
 
 msgid "hedgehog"
-msgstr "erizo"
+msgstr "eriçó"
 
 msgid "fawn"
-msgstr "cervatillo"
+msgstr "cervatell"
 
 msgid "moose"
-msgstr "alce"
+msgstr "ant"
 
 msgid "bee"
-msgstr "abeja"
+msgstr "abella"
 
 msgid "viper"
-msgstr "víbora"
+msgstr "escurçó"
 
 msgid "shrike"
 msgstr ""
 
 msgid "donkey"
-msgstr "burro"
+msgstr ""
 
 msgid "guinea pig"
-msgstr "cobaya"
+msgstr ""
 
 msgid "sloth"
-msgstr "perezoso"
+msgstr "peresós"
 
 msgid "horse"
-msgstr "caballo"
+msgstr "cavall"
 
 msgid "penguin"
-msgstr "pingüino"
+msgstr ""
 
 msgid "otter"
-msgstr "nutria"
+msgstr "llúdriga"
 
 msgid "bear"
-msgstr "oso"
+msgstr "ós"
 
 msgid "zebra"
-msgstr "cebra"
+msgstr ""
 
 msgid "ostrich"
-msgstr "avestruz"
+msgstr "estruç"
 
 msgid "camel"
-msgstr "camello"
+msgstr "camell"
 
 msgid "antelope"
-msgstr "antílope"
+msgstr "antílop"
 
 msgid "lemur"
-msgstr "lémur"
+msgstr "lèmur"
 
 msgid "pigeon"
-msgstr "paloma"
+msgstr "tórtora"
 
 msgid "llama"
 msgstr ""
 
 msgid "mole"
-msgstr "topo"
+msgstr "talp"
 
 msgid "ray"
-msgstr "rayo"
+msgstr ""
 
 msgid "ram"
-msgstr "ram"
+msgstr ""
 
 msgid "skunk"
 msgstr "mofeta"
@@ -538,25 +535,25 @@ msgid "jellyfish"
 msgstr "medusa"
 
 msgid "sheep"
-msgstr "oveja"
+msgstr "ovella"
 
 msgid "shark"
-msgstr "tiburón"
+msgstr "tauró"
 
 msgid "kitten"
-msgstr "gatito"
+msgstr "gatet"
 
 msgid "deer"
-msgstr "ciervo"
+msgstr "cérvol"
 
 msgid "snail"
-msgstr "caracol"
+msgstr "cargol"
 
 msgid "flamingo"
-msgstr "flamenco"
+msgstr "flamenc"
 
 msgid "rabbit"
-msgstr "conejo"
+msgstr "conill"
 
 msgid "oyster"
 msgstr "ostra"
@@ -565,25 +562,25 @@ msgid "beaver"
 msgstr "castor"
 
 msgid "sparrow"
-msgstr "gorrión"
+msgstr "pardal"
 
 msgid "dove"
-msgstr "paloma"
+msgstr "colom"
 
 msgid "eagle"
-msgstr "águila"
+msgstr "àguila"
 
 msgid "beetle"
-msgstr "escarabajo"
+msgstr "escarabat"
 
 msgid "hippopotamus"
-msgstr "hipopótamo"
+msgstr "hipopòtam"
 
 msgid "owl"
-msgstr "búho"
+msgstr "òliba"
 
 msgid "cobra"
-msgstr "cobra"
+msgstr ""
 
 msgid "salamander"
 msgstr "salamandra"
@@ -592,34 +589,34 @@ msgid "goose"
 msgstr "oca"
 
 msgid "kangaroo"
-msgstr "canguro"
+msgstr "cangur"
 
 msgid "dragonfly"
-msgstr "libélula"
+msgstr "libèl·lula"
 
 msgid "toad"
-msgstr "sapo"
+msgstr "gripau"
 
 msgid "pelican"
-msgstr "pelícano"
+msgstr "pelicà"
 
 msgid "squid"
 msgstr "calamar"
 
 msgid "lion cub"
-msgstr "cubo de león"
+msgstr ""
 
 msgid "jaguar"
-msgstr "jaguar"
+msgstr ""
 
 msgid "duck"
-msgstr "pato"
+msgstr "ànec"
 
 msgid "lizard"
-msgstr "lagartija"
+msgstr "llangardaix"
 
 msgid "rhinoceros"
-msgstr "rinoceronte"
+msgstr "rinoceront"
 
 msgid "hyena"
 msgstr "hiena"
@@ -628,64 +625,64 @@ msgid "ox"
 msgstr ""
 
 msgid "peacock"
-msgstr "pavo real"
+msgstr "paó"
 
 msgid "parrot"
-msgstr "loro"
+msgstr "lloro"
 
 msgid "elk"
-msgstr "alce"
+msgstr "uapití"
 
 msgid "alligator"
-msgstr "caimán"
+msgstr "caiman"
 
 msgid "ant"
-msgstr "hormiga"
+msgstr "formiga"
 
 msgid "goat"
 msgstr "cabra"
 
 msgid "baby rabbit"
-msgstr "conejo de bebé"
+msgstr ""
 
 msgid "lion"
-msgstr "león"
+msgstr "lleó"
 
 msgid "squirrel"
-msgstr "ardilla"
+msgstr "esquirol"
 
 msgid "opossum"
-msgstr "zarigüeya"
+msgstr "opòssum"
 
 msgid "chimp"
-msgstr "chimpancé"
+msgstr "ximpanzé"
 
 msgid "doe"
-msgstr "ciervo"
+msgstr "cérvola"
 
 msgid "gopher"
-msgstr "gofer"
+msgstr ""
 
 msgid "elephant"
-msgstr "elefante"
+msgstr ""
 
 msgid "giraffe"
-msgstr "jirafa"
+msgstr "girafa"
 
 msgid "spider"
-msgstr "araña"
+msgstr "aranya"
 
 msgid "puppy"
-msgstr "cachorro"
+msgstr "cadell"
 
 msgid "jay"
-msgstr "arrendajo"
+msgstr "gaig"
 
 msgid "seal"
-msgstr "foca"
+msgstr ""
 
 msgid "rooster"
-msgstr "gallo"
+msgstr ""
 
 msgid "turtle"
 msgstr "tortuga"
@@ -694,44 +691,44 @@ msgid "bull"
 msgstr "toro"
 
 msgid "cat"
-msgstr "gato"
+msgstr "gat"
 
 msgid "rat"
 msgstr "rata"
 
 msgid "slug"
-msgstr "babosa"
+msgstr "llimac"
 
 msgid "buffalo"
-msgstr "búfalo"
+msgstr "búfal"
 
 msgid "blackbird"
-msgstr "mirlo"
+msgstr "merla"
 
 msgid "swan"
-msgstr "cisne"
+msgstr "cigne"
 
 msgid "lobster"
-msgstr "langosta"
+msgstr "llagosta"
 
 msgid "dog"
-msgstr "perro"
+msgstr "gos"
 
 msgid "mosquito"
-msgstr "mosquito"
+msgstr "mosquit"
 
 msgid "snake"
-msgstr "serpiente"
+msgstr "serp"
 
 msgid "chicken"
-msgstr "pollo"
+msgstr "pollastre"
 
 msgid "anteater"
-msgstr "oso hormiguero"
+msgstr "ós formiguer"
 
 # sport
 msgid "judo"
-msgstr "judo"
+msgstr ""
 
 msgid "pool"
 msgstr "piscina"
@@ -743,352 +740,352 @@ msgid "stretch"
 msgstr "estirar"
 
 msgid "helmet"
-msgstr "casco"
+msgstr "casc"
 
 msgid "ice skating"
-msgstr "patinaje de hielo"
+msgstr ""
 
 msgid "walk"
 msgstr "caminar"
 
 msgid "run"
-msgstr "correr"
+msgstr "córrer"
 
 msgid "swim"
-msgstr "nadar"
+msgstr "nedar"
 
 msgid "hop"
-msgstr "salto"
+msgstr "saltar"
 
 msgid "hike"
-msgstr "caminata"
+msgstr "caminar"
 
 msgid "boxing"
-msgstr "boxeo"
+msgstr ""
 
 msgid "hockey"
-msgstr "hockey"
+msgstr "hoquei"
 
 msgid "race"
-msgstr "carrera"
+msgstr "cursa"
 
 msgid "throw"
-msgstr "lanzar"
+msgstr "llançar"
 
 msgid "skate"
 msgstr "patinar"
 
 msgid "win"
-msgstr "ganar"
+msgstr "guanyar"
 
 msgid "squat"
-msgstr "agacharse"
+msgstr "ajupir"
 
 msgid "ski"
 msgstr "esquiar"
 
 msgid "golf"
-msgstr "golf"
+msgstr ""
 
 msgid "whistle"
-msgstr "susurro"
+msgstr ""
 
 msgid "torch"
-msgstr "antorcha"
+msgstr "torxa"
 
 msgid "sailing"
-msgstr "navegar"
+msgstr ""
 
 msgid "stand"
-msgstr "derecho"
+msgstr "dret"
 
 msgid "tennis"
-msgstr "tenis"
+msgstr ""
 
 msgid "jump"
 msgstr "saltar"
 
 msgid "rowing"
-msgstr "remo"
+msgstr "rem"
 
 msgid "jog"
-msgstr "footing"
+msgstr "fúting"
 
 msgid "rope"
-msgstr "cuerda"
+msgstr "corda"
 
 # body
 msgid "teeth"
 msgstr "dentadura"
 
 msgid "cheek"
-msgstr "mejilla"
+msgstr "galta"
 
 msgid "ankle"
-msgstr "tobillo"
+msgstr "turmell"
 
 msgid "knee"
-msgstr "rodilla"
+msgstr "genoll"
 
 msgid "toe"
-msgstr "dedo del pie"
+msgstr "dit del peu"
 
 msgid "muscle"
-msgstr "músculo"
+msgstr "múscul"
 
 msgid "mouth"
 msgstr "boca"
 
 msgid "feet"
-msgstr "pies"
+msgstr ""
 
 msgid "hand"
-msgstr "mano"
+msgstr "mà"
 
 msgid "elbow"
-msgstr "codo"
+msgstr "colze"
 
 msgid "hair"
-msgstr "cabello"
+msgstr "cabell"
 
 msgid "eyelash"
-msgstr "pestaña"
+msgstr "pestanya"
 
 msgid "beard"
 msgstr "barba"
 
 msgid "belly button"
-msgstr "botón de campana"
+msgstr ""
 
 msgid "thumb"
-msgstr "pulgar"
+msgstr "polze"
 
 msgid "breast"
-msgstr "pecho"
+msgstr "pit"
 
 msgid "nostril"
-msgstr "fosa nasal"
+msgstr "nariu"
 
 msgid "nose"
-msgstr "nariz"
+msgstr "nas"
 
 msgid "hip"
-msgstr "cadera"
+msgstr "maluc"
 
 msgid "arm"
-msgstr "brazo"
+msgstr "braç"
 
 msgid "eyebrow"
-msgstr "ceja"
+msgstr ""
 
 msgid "fist"
-msgstr "puño"
+msgstr "puny"
 
 msgid "neck"
-msgstr "cuello"
+msgstr "coll"
 
 msgid "wrist"
-msgstr "muñeca"
+msgstr "canell"
 
 msgid "throat"
-msgstr "garganta"
+msgstr "gola"
 
 msgid "eye"
-msgstr "ojo"
+msgstr ""
 
 msgid "leg"
-msgstr "pierna"
+msgstr "cama"
 
 msgid "spine"
 msgstr "espina"
 
 msgid "ear"
-msgstr "oreja"
+msgstr "orella"
 
 msgid "finger"
-msgstr "dedo"
+msgstr "dit"
 
 msgid "foot"
-msgstr "pie"
+msgstr "peu"
 
 msgid "braid"
-msgstr "trenza"
+msgstr "trena"
 
 msgid "face"
 msgstr "cara"
 
 msgid "back"
-msgstr "espalda"
+msgstr "esquena"
 
 msgid "chin"
-msgstr "mentón"
+msgstr "barbeta"
 
 msgid "bottom"
-msgstr "nalgas"
+msgstr "natges"
 
 msgid "thigh"
-msgstr "muslo"
+msgstr "cuixa"
 
 msgid "belly"
-msgstr "vientre"
+msgstr "panxa"
 
 # people
 msgid "girl"
-msgstr "chica"
+msgstr "noia"
 
 msgid "male"
-msgstr "masculino"
+msgstr ""
 
 msgid "son"
-msgstr "hijo"
+msgstr "fill"
 
 msgid "friends"
-msgstr "amigos"
+msgstr ""
 
 msgid "baby"
-msgstr "bebé"
+msgstr ""
 
 msgid "child"
-msgstr "niño"
+msgstr "nen"
 
 msgid "dad"
-msgstr "papá"
+msgstr "pare"
 
 msgid "mom"
 msgstr "mama"
 
 msgid "twin boys"
-msgstr "chicos gemelos"
+msgstr ""
 
 msgid "brothers"
-msgstr "hermanos"
+msgstr ""
 
 msgid "man"
-msgstr "hombre"
+msgstr "home"
 
 msgid "mother"
-msgstr "madre"
+msgstr "mare"
 
 msgid "grandfather"
-msgstr "abuelo"
+msgstr ""
 
 msgid "family"
-msgstr "familia"
+msgstr "família"
 
 msgid "female"
-msgstr "femenino"
+msgstr ""
 
 msgid "wife"
-msgstr "esposa"
+msgstr "muller"
 
 msgid "husband"
-msgstr "marido"
+msgstr "marit"
 
 msgid "bride"
-msgstr "novia"
+msgstr "núvia"
 
 msgid "grandmother"
-msgstr "abuela"
+msgstr "àvia"
 
 msgid "couple"
-msgstr "pareja"
+msgstr "parella"
 
 msgid "twin girls"
-msgstr "chicas gemelas"
+msgstr ""
 
 msgid "boy"
-msgstr "niño"
+msgstr "noi"
 
 msgid "sisters"
-msgstr "hermanas"
+msgstr ""
 
 msgid "woman"
-msgstr "mujer"
+msgstr "dona"
 
 msgid "lady"
 msgstr "dama"
 
 # food
 msgid "candy"
-msgstr "caramelo"
+msgstr "caramel"
 
 msgid "sausage"
-msgstr "salchicha"
+msgstr "salsitxa"
 
 msgid "hamburger"
 msgstr "hamburguesa"
 
 msgid "steak"
-msgstr "bistec"
+msgstr ""
 
 msgid "fudge"
-msgstr "dulce de chocolate"
+msgstr "dolç de xocolata"
 
 msgid "doughnut"
-msgstr "rosquilla"
+msgstr "bunyol"
 
 msgid "coconut"
 msgstr "coco"
 
 msgid "rice"
-msgstr "arroz"
+msgstr "arròs"
 
 msgid "ice cream"
-msgstr "helado"
+msgstr ""
 
 msgid "jelly"
-msgstr "jalea"
+msgstr "gelatina"
 
 msgid "yoghurt"
-msgstr "yogur"
+msgstr ""
 
 msgid "dessert"
 msgstr "postre"
 
 msgid "pretzel"
-msgstr "no use"
+msgstr ""
 
 msgid "peanut"
-msgstr "cacahuete"
+msgstr ""
 
 msgid "jam"
-msgstr "mermelada"
+msgstr "melmelada"
 
 msgid "feast"
-msgstr "banquete"
+msgstr "banquet"
 
 msgid "cookie"
-msgstr "galleta"
+msgstr "galeta"
 
 msgid "bacon"
-msgstr "bacón"
+msgstr ""
 
 msgid "spice"
-msgstr "especia"
+msgstr "espècia"
 
 msgid "coffee"
-msgstr "café"
+msgstr "cafè"
 
 msgid "pie"
-msgstr "pastel"
+msgstr "pastís"
 
 msgid "lemonade"
-msgstr "limonada"
+msgstr "llimonada"
 
 msgid "chocolate"
-msgstr "chocolate"
+msgstr "xocolata"
 
 msgid "water bottle"
-msgstr "botella de agua"
+msgstr ""
 
 msgid "lunch"
-msgstr "almuerzo"
+msgstr "dinar"
 
 msgid "ice"
-msgstr "hielo"
+msgstr "glaçó"
 
 msgid "sugar"
-msgstr "azúcar"
+msgstr "sucre"
 
 msgid "sauce"
 msgstr "salsa"
@@ -1097,116 +1094,116 @@ msgid "soup"
 msgstr "sopa"
 
 msgid "juice"
-msgstr "zumo"
+msgstr "suc"
 
 msgid "fries"
-msgstr "patata frita"
+msgstr "patata fregida"
 
 msgid "cake"
-msgstr "pastel"
+msgstr "pastís"
 
 msgid "mashed potatoes"
 msgstr ""
 
 msgid "tea"
-msgstr "té"
+msgstr ""
 
 msgid "bun"
-msgstr "brioche"
+msgstr "brioix"
 
 msgid "cheese"
-msgstr "queso"
+msgstr "formatge"
 
 msgid "beef"
-msgstr "carne de vacuno"
+msgstr ""
 
 msgid "sandwich"
-msgstr "sándwich"
+msgstr "sandvitx"
 
 msgid "slice"
-msgstr "rebanada"
+msgstr ""
 
 msgid "sprinkle"
-msgstr "chispas"
+msgstr "espurnes"
 
 msgid "pizza"
-msgstr "pizza"
+msgstr ""
 
 msgid "flour"
-msgstr "harina"
+msgstr "farina"
 
 msgid "gum"
-msgstr "chicle"
+msgstr "xiclet"
 
 msgid "spaghetti"
 msgstr "espagueti"
 
 msgid "roast"
-msgstr "asado"
+msgstr "rostit"
 
 msgid "drink[n]"
-msgstr "bebida"
+msgstr ""
 
 msgid "stew"
-msgstr "guiso"
+msgstr "guisat"
 
 msgid "spread"
 msgstr "untar"
 
 msgid "meat"
-msgstr "carne"
+msgstr "carn"
 
 msgid "milk"
-msgstr "leche"
+msgstr "llet"
 
 msgid "meal"
-msgstr "comida"
+msgstr "àpat"
 
 msgid "corn"
-msgstr "maíz"
+msgstr "blat de moro"
 
 msgid "bread"
-msgstr "pan"
+msgstr "pa"
 
 msgid "walnut"
-msgstr "nuez"
+msgstr "nou"
 
 msgid "egg"
-msgstr "huevo"
+msgstr "ou"
 
 msgid "hot dog"
-msgstr "hot dog"
+msgstr ""
 
 msgid "ham"
-msgstr "jamón"
+msgstr "pernil"
 
 # clothes
 msgid "jewellery"
-msgstr "joyería"
+msgstr ""
 
 msgid "sock"
-msgstr "calcetín"
+msgstr "mitjó"
 
 msgid "jacket"
-msgstr "chaqueta"
+msgstr "jaqueta"
 
 msgid "heel"
-msgstr "talón"
+msgstr "taló"
 
 msgid "smock"
 msgstr "bata"
 
 msgid "shorts"
-msgstr "shorts"
+msgstr ""
 
 msgid "pocket"
-msgstr "bolsillo"
+msgstr "butxaca"
 
 msgid "necklace"
-msgstr "collar"
+msgstr "collaret"
 
 msgid "sweatshirt"
-msgstr "sudadera"
+msgstr "dessuadora"
 
 msgid "uniform"
 msgstr "uniforme"
@@ -1215,131 +1212,131 @@ msgid "raincoat"
 msgstr "impermeable"
 
 msgid "trousers"
-msgstr "pantalones"
+msgstr ""
 
 msgid "sunglasses"
-msgstr "lentes de sol"
+msgstr ""
 
 msgid "coat"
-msgstr "abrigo"
+msgstr "abric"
 
 msgid "pullover"
-msgstr "jersey"
+msgstr "jersei"
 
 msgid "shirt"
 msgstr "camisa"
 
 msgid "sandals"
-msgstr "sandalia"
+msgstr "sandàlia"
 
 msgid "suit"
-msgstr "arreglada"
+msgstr "mudada"
 
 msgid "pyjamas"
-msgstr "pirjamas"
+msgstr ""
 
 msgid "skirt"
-msgstr "falda"
+msgstr "faldilla"
 
 msgid "zip"
-msgstr "cierre"
+msgstr ""
 
 msgid "shoes"
-msgstr "zapatos"
+msgstr ""
 
 msgid "jewel"
-msgstr "joya"
+msgstr "joia"
 
 msgid "tie"
-msgstr "corbata"
+msgstr ""
 
 msgid "slippers"
-msgstr "zapatilla"
+msgstr "sabatilla"
 
 msgid "gloves"
-msgstr "guantes"
+msgstr ""
 
 msgid "hat"
-msgstr "sombrero"
+msgstr "barret"
 
 msgid "sleeve"
-msgstr "manga"
+msgstr "màniga"
 
 msgid "cap"
 msgstr "gorra"
 
 msgid "swimming suit"
-msgstr "traje de baño"
+msgstr ""
 
 msgid "trainer"
-msgstr "zapatillas de deportes"
+msgstr ""
 
 msgid "vest"
-msgstr "chaleco"
+msgstr "armilla"
 
 msgid "glasses"
-msgstr "gafas"
+msgstr "ulleres"
 
 msgid "shoelace"
-msgstr "cordón"
+msgstr "cordó"
 
 msgid "patch"
-msgstr "parche"
+msgstr "pedaç"
 
 msgid "scarf"
 msgstr "bufanda"
 
 msgid "shoe"
-msgstr "zapato"
+msgstr "sabata"
 
 msgid "button"
-msgstr "botón"
+msgstr "botó"
 
 msgid "dress"
-msgstr "vestir"
+msgstr "vestit"
 
 msgid "sash"
-msgstr "faja"
+msgstr "faixa"
 
 msgid "shoe sole"
-msgstr "suela"
+msgstr ""
 
 msgid "robe"
-msgstr "manto"
+msgstr "mantell"
 
 msgid "pants"
-msgstr "pantalones"
+msgstr "pantalons"
 
 msgid "kimono"
 msgstr "quimono"
 
 msgid "overalls"
-msgstr "sobrecargados"
+msgstr ""
 
 # actions
 msgid "lick"
-msgstr "lamer"
+msgstr "llepar"
 
 msgid "slam"
-msgstr "mate"
+msgstr "esmaixada"
 
 msgid "beg"
-msgstr "pedir"
+msgstr "demanar"
 
 msgid "fell"
-msgstr "caída"
+msgstr ""
 
 msgid "scratch"
-msgstr "arañar"
+msgstr "esgarrapar"
 
 msgid "touch"
 msgstr "tocar"
 
 msgid "sniff"
-msgstr "olfatear"
+msgstr "ensumar"
 
 msgid "see"
-msgstr "ver"
+msgstr "mirar"
 
 msgid "climb"
 msgstr "escalada"
@@ -1348,7 +1345,7 @@ msgid "dig"
 msgstr "cavar"
 
 msgid "howl"
-msgstr "aullar"
+msgstr "udolar"
 
 msgid "sleep"
 msgstr "dormir"
@@ -1357,76 +1354,76 @@ msgid "explore"
 msgstr "explorar"
 
 msgid "draw"
-msgstr "dibujar"
+msgstr "dibuixar"
 
 msgid "hug"
-msgstr "abrazar"
+msgstr "abraçar"
 
 msgid "teach"
-msgstr "enseñar"
+msgstr "ensenyar"
 
 msgid "nap"
-msgstr "siesta"
+msgstr "migdiada"
 
 msgid "clay"
-msgstr "arcilla"
+msgstr "argila"
 
 msgid "catch"
 msgstr "pescar"
 
 msgid "clap"
-msgstr "palmear"
+msgstr "picar de mans"
 
 msgid "cry"
-msgstr "llorar"
+msgstr "plorar"
 
 msgid "sing"
 msgstr "cantar"
 
 msgid "meet"
-msgstr "encontrarse"
+msgstr "trobar-se"
 
 msgid "sell"
-msgstr "vender"
+msgstr ""
 
 msgid "peck"
-msgstr "picotear"
+msgstr "picotejar"
 
 msgid "beat"
-msgstr "batir"
+msgstr "batre"
 
 msgid "kneel"
-msgstr "arrodillarse"
+msgstr "agenollar"
 
 msgid "find"
-msgstr "encontrar"
+msgstr "trobar"
 
 msgid "dance"
-msgstr "bailar"
+msgstr "ballar"
 
 msgid "cough"
-msgstr "toser"
+msgstr "tossir"
 
 msgid "cut"
-msgstr "cortar"
+msgstr "tallar"
 
 msgid "think"
 msgstr "pensar"
 
 msgid "bark"
-msgstr "ladrido"
+msgstr "bordar"
 
 msgid "speak"
-msgstr "hablar"
+msgstr "parlar"
 
 msgid "cheer"
 msgstr "animar"
 
 msgid "bake"
-msgstr "hornear"
+msgstr ""
 
 msgid "write"
-msgstr "escribir"
+msgstr "escriure"
 
 msgid "punch"
 msgstr ""
@@ -1438,46 +1435,46 @@ msgid "study"
 msgstr "estudiar"
 
 msgid "plow"
-msgstr "arar"
+msgstr "llaurar"
 
 msgid "dream"
-msgstr "sueño"
+msgstr "somiar"
 
 msgid "post"
-msgstr "buzón"
+msgstr "bústia"
 
 msgid "dive"
-msgstr "inmersión"
+msgstr "immersió"
 
 msgid "whisper"
-msgstr "susurrar"
+msgstr "xiuxiuejar"
 
 msgid "sob"
-msgstr "sollozar"
+msgstr "sanglotar"
 
 msgid "shake"
-msgstr "sacudir"
+msgstr "sacsejar"
 
 msgid "feed"
-msgstr "dar de comer"
+msgstr "donar de menjar"
 
 msgid "crawl"
-msgstr "gatear"
+msgstr "gatejar"
 
 msgid "camp"
-msgstr "campamento"
+msgstr "acampar"
 
 msgid "spill"
-msgstr "derramar"
+msgstr "vessar"
 
 msgid "clean"
-msgstr "limpiar"
+msgstr "rentar"
 
 msgid "scream"
-msgstr "gritar"
+msgstr "cridar"
 
 msgid "tear"
-msgstr "rasgar"
+msgstr "esquinçar"
 
 msgid "float"
 msgstr "flotar"
@@ -1486,201 +1483,201 @@ msgid "pull"
 msgstr "estirar"
 
 msgid "ate"
-msgstr "comir"
+msgstr ""
 
 msgid "kiss"
-msgstr "beso"
+msgstr "petó"
 
 msgid "sit"
-msgstr "sentarse"
+msgstr "seure"
 
 msgid "hatch"
-msgstr "escotilla"
+msgstr "sortir de l'ou"
 
 msgid "blink"
-msgstr "guiño"
+msgstr "picada d'ullet"
 
 msgid "hear"
-msgstr "escuchar"
+msgstr "sentir"
 
 msgid "smooch"
-msgstr "besar"
+msgstr "bessar"
 
 msgid "play"
 msgstr "jugar"
 
 msgid "wash"
-msgstr "lavar"
+msgstr "banyar"
 
 msgid "chat"
-msgstr "charlar"
+msgstr "parlar"
 
 msgid "drive"
-msgstr "conducir"
+msgstr "conduir"
 
 msgid "drink[v]"
-msgstr "beber"
+msgstr "beguda"
 
 msgid "fly"
 msgstr "volar"
 
 msgid "juggle"
-msgstr "juguete"
+msgstr ""
 
 msgid "bit"
-msgstr "poco"
+msgstr "mica"
 
 msgid "sweep"
-msgstr "barrer"
+msgstr ""
 
 msgid "look"
-msgstr "mirarse"
+msgstr "mirar-se"
 
 msgid "knit"
-msgstr "tejer"
+msgstr "teixir"
 
 msgid "lift"
-msgstr "levantar"
+msgstr "aixecar"
 
 msgid "fetch"
-msgstr "traer"
+msgstr "informar"
 
 msgid "read"
-msgstr "leer"
+msgstr "llegir"
 
 msgid "croak"
-msgstr "croar"
+msgstr "raucar"
 
 msgid "stare"
-msgstr "mirar fijamente"
+msgstr "mirar fixament"
 
 msgid "eat"
-msgstr "comer"
+msgstr "menjar"
 
 # construction
 msgid "lighthouse"
-msgstr "faro"
+msgstr "far"
 
 msgid "door"
-msgstr "puerta"
+msgstr "porta"
 
 msgid "circus"
-msgstr "circo"
+msgstr "circ"
 
 msgid "church"
-msgstr "iglesia"
+msgstr ""
 
 msgid "kennel"
 msgstr ""
 
 msgid "temple"
-msgstr "templo"
+msgstr ""
 
 msgid "smoke"
-msgstr "humo"
+msgstr "fum"
 
 msgid "chimney"
-msgstr "chimenea"
+msgstr "xemeneia"
 
 msgid "brick"
-msgstr "ladrillo"
+msgstr "maó"
 
 msgid "well"
-msgstr "bien"
+msgstr ""
 
 msgid "street"
-msgstr "calle"
+msgstr "carrer"
 
 msgid "castle"
-msgstr "castillo"
+msgstr "castell"
 
 msgid "store"
-msgstr "almacenar"
+msgstr "botiga"
 
 msgid "staircase"
-msgstr "escalera"
+msgstr "escala"
 
 msgid "school"
-msgstr "escuela"
+msgstr "escola"
 
 msgid "farm"
 msgstr "granja"
 
 msgid "bridge"
-msgstr "puente"
+msgstr "pont"
 
 msgid "dam"
 msgstr "presa"
 
 msgid "pyramid"
-msgstr "pirámide"
+msgstr "piràmide"
 
 msgid "barn"
-msgstr "granero"
+msgstr "graner"
 
 msgid "mill"
-msgstr "molino"
+msgstr "molí"
 
 msgid "window"
-msgstr "ventana"
+msgstr "finestra"
 
 msgid "cabin"
-msgstr "cabaña"
+msgstr "cabana"
 
 msgid "step"
-msgstr "peldaño"
+msgstr "esglaó"
 
 msgid "shop"
-msgstr "tienda"
+msgstr "botiga"
 
 msgid "shed"
-msgstr "cobertizo"
+msgstr "cobert"
 
 msgid "roof"
-msgstr "techo"
+msgstr "teulada"
 
 msgid "steeple"
 msgstr "campanar"
 
 msgid "garage"
-msgstr "garaje"
+msgstr "garatge"
 
 msgid "mosque"
-msgstr "mezquita"
+msgstr "mesquita"
 
 msgid "hospital"
-msgstr "hospital"
+msgstr ""
 
 msgid "tent"
-msgstr "tienda"
+msgstr "tenda"
 
 msgid "house"
 msgstr "casa"
 
 msgid "wall"
-msgstr "pared"
+msgstr "mur"
 
 msgid "bank"
-msgstr "banco"
+msgstr "banc"
 
 msgid "shutter"
-msgstr "contraventana"
+msgstr "finestró"
 
 msgid "hut"
-msgstr "cabaña"
+msgstr "cabana"
 
 # nature
 msgid "land"
-msgstr "terreno"
+msgstr "terreny"
 
 msgid "cliff"
-msgstr "acantilado"
+msgstr "penya-segat"
 
 msgid "hill"
-msgstr "colina"
+msgstr "turó"
 
 msgid "canyon"
-msgstr "cañón"
+msgstr "canó"
 
 msgid "rock"
 msgstr "roca"
@@ -1689,113 +1686,113 @@ msgid "sea"
 msgstr "mar"
 
 msgid "lake"
-msgstr "lago"
+msgstr "llac"
 
 msgid "coast"
 msgstr "costa"
 
 msgid "shore"
-msgstr "orilla"
+msgstr "riba"
 
 msgid "mountain"
-msgstr "montaña"
+msgstr "muntanya"
 
 msgid "pond"
-msgstr "estanque"
+msgstr "estany"
 
 msgid "peak"
-msgstr "pico"
+msgstr "pic"
 
 msgid "lava"
-msgstr "lava"
+msgstr ""
 
 msgid "cave"
-msgstr "cueva"
+msgstr "cova"
 
 msgid "dune"
 msgstr "duna"
 
 msgid "island"
-msgstr "isla"
+msgstr "illa"
 
 msgid "forest"
-msgstr "bosque"
+msgstr "bosc"
 
 msgid "desert"
-msgstr "desierto"
+msgstr ""
 
 msgid "iceberg"
-msgstr "iceberg"
+msgstr ""
 
 # jobs
 msgid "clown"
-msgstr "payaso"
+msgstr "pallasso"
 
 msgid "engineer"
-msgstr "ingeniero"
+msgstr "enginyer"
 
 msgid "vet"
-msgstr "veterinario"
+msgstr "veterinari"
 
 msgid "judge"
-msgstr "juez"
+msgstr "jutge"
 
 msgid "chef"
-msgstr "cocinero"
+msgstr "cuiner"
 
 msgid "athlete"
 msgstr "atleta"
 
 msgid "librarian"
-msgstr "bibliotecaria"
+msgstr "bibliotecària"
 
 msgid "juggler"
 msgstr "malabarista"
 
 msgid "police officer"
-msgstr "policía"
+msgstr ""
 
 msgid "plumber"
-msgstr "fontanero"
+msgstr "fontaner"
 
 msgid "badge"
-msgstr "insignia"
+msgstr "insígnia"
 
 msgid "queen"
 msgstr "reina"
 
 msgid "farmer"
-msgstr "agricultor"
+msgstr "granger"
 
 msgid "magician"
-msgstr "mago"
+msgstr ""
 
 msgid "knight"
-msgstr "caballero"
+msgstr "cavaller"
 
 msgid "doctor"
-msgstr "médico"
+msgstr "metge"
 
 msgid "bricklayer"
-msgstr "albañil"
+msgstr "paleta"
 
 msgid "cleaner"
-msgstr "mujer de la limpieza"
+msgstr ""
 
 msgid "teacher"
-msgstr "maestro"
+msgstr "professora"
 
 msgid "hunter"
-msgstr "cazador"
+msgstr "caçador"
 
 msgid "soldier"
-msgstr "soldado"
+msgstr "soldat"
 
 msgid "musician"
-msgstr "músico"
+msgstr "músic"
 
 msgid "lawyer"
-msgstr "abogado"
+msgstr "advocat"
 
 msgid "fisherman"
 msgstr "pescador"
@@ -1804,7 +1801,7 @@ msgid "princess"
 msgstr "princesa"
 
 msgid "firefighter"
-msgstr "bombero"
+msgstr ""
 
 msgid "nun"
 msgstr "monja"
@@ -1813,64 +1810,64 @@ msgid "pirate"
 msgstr "pirata"
 
 msgid "cowboy"
-msgstr "vaquero"
+msgstr "vaquer"
 
 msgid "electrician"
 msgstr "electricista"
 
 msgid "nurse"
-msgstr "enfermera"
+msgstr "infermera"
 
 msgid "king"
-msgstr "rey"
+msgstr "rei"
 
 msgid "president"
-msgstr "presidente"
+msgstr ""
 
 msgid "office worker"
 msgstr ""
 
 msgid "carpenter"
-msgstr "carpintero"
+msgstr "fuster"
 
 msgid "jockey"
-msgstr "jockey"
+msgstr "joquei"
 
 msgid "worker"
-msgstr "obrero"
+msgstr "treballador"
 
 msgid "mechanic"
-msgstr "mecánico"
+msgstr "mecànic"
 
 msgid "pilot"
-msgstr "piloto"
+msgstr ""
 
 msgid "actor"
-msgstr "actor"
+msgstr ""
 
 msgid "cook"
-msgstr "cocinar"
+msgstr "cuinar"
 
 msgid "student"
-msgstr "estudiante"
+msgstr "estudiant"
 
 msgid "butcher"
-msgstr "carnicero"
+msgstr "carnisser"
 
 msgid "accountant"
-msgstr "contable"
+msgstr "comptable"
 
 msgid "prince"
-msgstr "príncipe"
+msgstr "princep"
 
 msgid "sailor"
-msgstr "marinero"
+msgstr "mariner"
 
 msgid "boxer"
-msgstr "boxeador"
+msgstr "boxejador"
 
 msgid "ballet dancer"
-msgstr "bailarin ballet"
+msgstr ""
 
 msgid "coach"
 msgstr "entrenador"
@@ -1879,174 +1876,174 @@ msgid "astronaut"
 msgstr "astronauta"
 
 msgid "painter"
-msgstr "pintor"
+msgstr ""
 
 msgid "scientist"
-msgstr "científico"
+msgstr ""
 
 # fruits and vegetables
 msgid "carrot"
-msgstr "zanahoria"
+msgstr "pastanaga"
 
 msgid "blackberries"
-msgstr "moras"
+msgstr ""
 
 msgid "celery"
-msgstr "apio"
+msgstr "api"
 
 msgid "turnip"
-msgstr "nabo"
+msgstr "nap"
 
 msgid "cacao"
-msgstr "cacao"
+msgstr "cacau"
 
 msgid "peach"
-msgstr "melocotón"
+msgstr "préssec"
 
 msgid "melon"
-msgstr "melón"
+msgstr "meló"
 
 msgid "grapefruit"
 msgstr "pomelo"
 
 msgid "broccoli"
-msgstr "brócoli"
+msgstr "bròquil"
 
 msgid "grapes"
-msgstr "uvas"
+msgstr ""
 
 msgid "spinach"
-msgstr "espinacas"
+msgstr "espinac"
 
 msgid "fig"
-msgstr "higo"
+msgstr "figa"
 
 msgid "kernel"
-msgstr "núcleo"
+msgstr "nucli"
 
 msgid "radish"
-msgstr "rábano"
+msgstr "rave"
 
 msgid "tomato"
-msgstr "tomate"
+msgstr ""
 
 msgid "kiwi"
-msgstr "kiwi"
+msgstr ""
 
 msgid "asparagus"
-msgstr "espárragos"
+msgstr "espàrrec"
 
 msgid "olives"
-msgstr "aceitunas"
+msgstr ""
 
 msgid "cucumbers"
-msgstr "pepinos"
+msgstr ""
 
 msgid "beans"
-msgstr "frijoles"
+msgstr ""
 
 msgid "strawberry"
-msgstr "fresa"
+msgstr "maduixa"
 
 msgid "peppers"
-msgstr "pimiento"
+msgstr "pebrot"
 
 msgid "raspberry"
-msgstr "frambuesa"
+msgstr "gerd"
 
 msgid "apricot"
-msgstr "albaricoque"
+msgstr "albercoc"
 
 msgid "potatoes"
-msgstr "papas"
+msgstr ""
 
 msgid "peas"
-msgstr "melocotas"
+msgstr ""
 
 msgid "cabbage"
-msgstr "repollo"
+msgstr "col"
 
 msgid "cherries"
-msgstr "cerezas"
+msgstr ""
 
 msgid "squash"
-msgstr "calabacín"
+msgstr "carbassó"
 
 msgid "blueberries"
-msgstr "bayas"
+msgstr ""
 
 msgid "pear"
 msgstr "pera"
 
 msgid "orange"
-msgstr "naranja"
+msgstr "taronja"
 
 msgid "pumpkin"
-msgstr "calabaza"
+msgstr "carbassa"
 
 msgid "avocado"
-msgstr "aguacate"
+msgstr "alvocat"
 
 msgid "garlic"
-msgstr "ajo"
+msgstr "all"
 
 msgid "onion"
-msgstr "cebolla"
+msgstr "ceba"
 
 msgid "apple"
-msgstr "manzana"
+msgstr "poma"
 
 msgid "lime"
-msgstr "lima"
+msgstr "llima"
 
 msgid "cauliflower"
 msgstr "coliflor"
 
 msgid "mango"
-msgstr "mango"
+msgstr ""
 
 msgid "lettuce"
-msgstr "lechuga"
+msgstr "enciam"
 
 msgid "lemon"
-msgstr "limón"
+msgstr "llimona"
 
 msgid "aubergine"
-msgstr "berenjena"
+msgstr ""
 
 msgid "artichokes"
-msgstr "artilugios"
+msgstr ""
 
 msgid "plums"
-msgstr "plumas"
+msgstr ""
 
 msgid "leek"
-msgstr "puerro"
+msgstr "porro"
 
 msgid "bananas"
-msgstr "plátanos"
+msgstr ""
 
 msgid "papaya"
-msgstr "papaya"
+msgstr "papaia"
 
 # transport
 msgid "sail"
-msgstr "navegar"
+msgstr "veler"
 
 msgid "taxi"
-msgstr "taxi"
+msgstr ""
 
 msgid "car"
-msgstr "coche"
+msgstr "cotxe"
 
 msgid "bike"
 msgstr "bicicleta"
 
 msgid "raft"
-msgstr "balsa"
+msgstr "barca solera"
 
 msgid "pedal"
-msgstr "pedal"
+msgstr ""
 
 msgid "bus"
 msgstr "autobús"
@@ -2055,25 +2052,25 @@ msgid "handlebar"
 msgstr "manillar"
 
 msgid "boat"
-msgstr "bote"
+msgstr "barca"
 
 msgid "truck"
-msgstr "camión"
+msgstr "camió"
 
 msgid "sleigh"
-msgstr "trineo"
+msgstr "trineu"
 
 msgid "carpet"
-msgstr "alfombra"
+msgstr "catifa"
 
 msgid "motorcycle"
-msgstr "motocicleta"
+msgstr "moto"
 
 msgid "train"
 msgstr "tren"
 
 msgid "ship"
-msgstr "barco"
+msgstr "vaixell"
 
 msgid "van"
 msgstr "furgoneta"
@@ -2082,13 +2079,14 @@ msgid "canoe"
 msgstr "canoa"
 
 msgid "rocket"
-msgstr "cohete"
+msgstr "coet"
 
 msgid "mast"
-msgstr "mástil"
+msgstr "màstil"
 
 msgid "sledge"
-msgstr "trineo"
+msgstr ""
 
 msgid "bicycle"
-msgstr "bicicleta"
+msgstr ""
+

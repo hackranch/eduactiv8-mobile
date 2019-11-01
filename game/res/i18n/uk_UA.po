@@ -2,133 +2,133 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:38\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
-"Language-Team: Russian\n"
+"Language-Team: Ukrainian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.com\n"
 "Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Crowdin-Project: eduactiv8-mobile\n"
-"X-Crowdin-Language: ru\n"
+"X-Crowdin-Language: uk\n"
 "X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
-"Language: ru_RU\n"
+"Language: uk_UA\n"
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "зелёное яблоко"
-msgstr[1] "зелёных яблока"
-msgstr[2] "зелёных яблок"
-msgstr[3] ""
+msgstr[0] "зелені яблука"
+msgstr[1] "зелені яблука"
+msgstr[2] "зелені яблука"
+msgstr[3] "зелене яблуко"
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "красное яблоко"
-msgstr[1] "красных яблока"
-msgstr[2] "красных яблок"
-msgstr[3] ""
+msgstr[0] "червоні яблука"
+msgstr[1] "червоні яблука"
+msgstr[2] "червоні яблука"
+msgstr[3] "червоне яблуко"
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "клубника"
-msgstr[1] "клубники"
-msgstr[2] "клубник"
-msgstr[3] ""
+msgstr[0] "суниці"
+msgstr[1] "суниці"
+msgstr[2] "суниці"
+msgstr[3] "суниця"
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] "груша"
-msgstr[1] "груши"
-msgstr[2] "груш"
-msgstr[3] ""
+msgstr[0] "груші"
+msgstr[1] "груші"
+msgstr[2] "груші"
+msgstr[3] "груша"
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] "апельсин"
-msgstr[1] "апельсина"
-msgstr[2] "апельсинов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] "луковица"
-msgstr[1] "луковицы"
-msgstr[2] "луковиц"
-msgstr[3] ""
+msgstr[0] "цибулини"
+msgstr[1] "цибулини"
+msgstr[2] "цибулини"
+msgstr[3] "цибулина"
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] "томат"
-msgstr[1] "томата"
-msgstr[2] "томатов"
-msgstr[3] ""
+msgstr[0] "помідори"
+msgstr[1] "помідори"
+msgstr[2] "помідори"
+msgstr[3] "помідор"
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] "лимон"
-msgstr[1] "лимона"
-msgstr[2] "лимонов"
-msgstr[3] ""
+msgstr[0] "лимони"
+msgstr[1] "лимони"
+msgstr[2] "лимони"
+msgstr[3] "лимон"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] "вишня"
-msgstr[1] "вишни"
-msgstr[2] "вишен"
-msgstr[3] ""
+msgstr[0] "вишні"
+msgstr[1] "вишні"
+msgstr[2] "вишні"
+msgstr[3] "вишня"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] "перец"
-msgstr[1] "перца"
-msgstr[2] "перцев"
-msgstr[3] ""
+msgstr[0] "перці"
+msgstr[1] "перці"
+msgstr[2] "перці"
+msgstr[3] "перець"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] "морковка"
-msgstr[1] "морковки"
-msgstr[2] "морковок"
-msgstr[3] ""
+msgstr[0] "морквини"
+msgstr[1] "морквини"
+msgstr[2] "морквини"
+msgstr[3] "морквина"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] "банан"
-msgstr[1] "банана"
-msgstr[2] "бананов"
-msgstr[3] ""
+msgstr[0] "банани"
+msgstr[1] "банани"
+msgstr[2] "банани"
+msgstr[3] "банан"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] "арбуз"
-msgstr[1] "арбуза"
-msgstr[2] "арбузов"
-msgstr[3] ""
+msgstr[0] "дині"
+msgstr[1] "дині"
+msgstr[2] "дині"
+msgstr[3] "диня"
 
 msgid "English"
-msgstr "английский"
+msgstr "англійська"
 
 msgid "Login"
-msgstr "Войти"
+msgstr "Увійти"
 
 msgid "Default Language:"
-msgstr "Язык по умолчанию:"
+msgstr "Типова мова:"
 
 msgid "User Management"
-msgstr "Управление пользователями:"
+msgstr "Керування користувачами"
 
 msgid "Copyright & Credits"
-msgstr "Авторские права и титры"
+msgstr "Авторські права та подяки"
 
 msgid "Licence"
-msgstr "Лицензия"
+msgstr "Умови ліцензування"
 
 msgid "Language arts"
-msgstr "Искусство языка"
+msgstr "Українська мова"
 
 msgid "This username and password combination doesn't exist."
-msgstr "Такая комбинация имени пользователя и пароля не существует."
+msgstr "Такої комбінації імені користувача та пароля не існує."
 
 msgid "user name: "
 msgstr ""
@@ -136,98 +136,95 @@ msgstr ""
 msgid "password: "
 msgstr ""
 
-msgid "eduActiv8 Test Version"
-msgstr ""
-
 msgid "Save"
-msgstr "Сохранить"
+msgstr "Зберегти"
 
 msgid "Delete user"
-msgstr "Удалить пользователя"
+msgstr "Вилучити користувача"
 
 msgid "Preferences saved..."
-msgstr "Предпочтения сохранены..."
+msgstr "Налаштування збережено…"
 
 msgid "Logged in as: "
-msgstr "Вы вошли как: "
+msgstr "Вхід до системи від імені: "
 
 msgid "Language"
-msgstr "Язык"
+msgstr "Мова"
 
 msgid "Mathematics"
 msgstr "Математика"
 
 msgid "Games & Mazes"
-msgstr "Игры и лабиринты"
+msgstr "Ігри та головоломки"
 
 msgid "Word Builders"
-msgstr "Словопостроитель"
+msgstr "Побудова слів"
 
 msgid "Animals"
-msgstr "животные"
+msgstr "тварини"
 
 msgid "Complete the word"
-msgstr "Заполните слово"
+msgstr "Завершіть слово"
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr "Напишите цифры словами"
+msgstr "Напишіть цифри словами"
 
 msgid "Shopping List"
-msgstr "Список покупок"
+msgstr "Список закупівель"
 
 msgid "Addition"
-msgstr "Сложение"
+msgstr "Додавання"
 
 msgid "Find missing number"
-msgstr "Найти отсутствующее число"
+msgstr "Знайдіть пропущене число"
 
 msgid "Level"
-msgstr "Уровень"
+msgstr "Рівень"
 
 msgid "Translators"
-msgstr "Переводчики"
+msgstr "Перекладачі"
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr "Счёт: "
+msgstr "Рахунок: "
 
 msgid "Numbers & Basic Operations"
-msgstr "Числа и основные операции"
+msgstr "Числа і основні дії з ними"
 
 msgid "Numbers"
 msgstr "Числа"
 
 msgid "Basic Operations"
-msgstr "Основные операции"
+msgstr "Основні дії"
 
 msgid "area:"
-msgstr "площадь:"
+msgstr "площа:"
 
 msgid "perimeter:"
 msgstr "периметр:"
 
 msgid "circumference:"
-msgstr "окружность:"
+msgstr "довжина кола:"
 
 msgid "Trapezium"
-msgstr "Трапеция"
+msgstr "Трапеція"
 
 msgid "Drag the clock hands to set the time"
-msgstr "Перетащите стрелки часов чтобы установить время"
+msgstr "Перетягніть стрілки годинника, щоб встановити час"
 
 msgid "Discover Letters"
-msgstr "Изучение букв"
+msgstr "Вивчення літер"
 
 msgid "Word Matchers"
-msgstr "Сопоставьте изображения с словами"
+msgstr ""
 
 msgid "Shapes and Solids"
-msgstr "Фигуры и тела"
+msgstr "Форми і тіла"
 
 msgid "Symmetry"
 msgstr ""
@@ -236,19 +233,19 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr "Время"
+msgstr "Час"
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr "Вычитание"
+msgstr "Віднімання"
 
 msgid "Learn Numbers with Flashcards"
-msgstr "Учите числа по карточкам"
+msgstr "Вивчіть числа за картками"
 
 msgid "Demonstration"
-msgstr "Демонстрация"
+msgstr "Демонстрація"
 
 msgid "Find Solution"
 msgstr ""
@@ -257,109 +254,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr "Учите геометрические фигуры по карточкам"
+msgstr "Вивчення геометричних фігур за картками"
 
 msgid "Shape Matching"
-msgstr "Сравнение фигур"
+msgstr "Порівняння фігур"
 
 msgid "Shape Maker"
-msgstr "Создание фигур"
+msgstr "Створення фігур"
 
 msgid "How clock works"
-msgstr "Как работают часы?"
+msgstr "Як працює годинник?"
 
 msgid "learn to set the clock"
-msgstr "научитесь устанавливать часы"
+msgstr "навчіться встановлювати час на годиннику"
 
 msgid "Set the clock to:"
-msgstr "Установите часы на:"
+msgstr "Установіть такий час:"
 
 msgid "Time Matching"
-msgstr "Соответствие времени"
+msgstr "Відповідність часу"
 
 msgid "Your Alphabet"
-msgstr "Русский алфавит"
+msgstr "Українська абетка"
 
 msgid "Trace Letters and Numbers"
-msgstr "Обведите буквы и цифры"
+msgstr "Обведіть літери та цифри"
 
 msgid "People"
 msgstr "люди"
 
 msgid "Jobs"
-msgstr "работа и занятия"
+msgstr "назви професій"
 
 msgid "Body"
-msgstr "тело"
+msgstr "тіло"
 
 msgid "Clothes and Accessories"
-msgstr "одежда и аксессуары"
+msgstr "одежа та аксесуари"
 
 msgid "Sports"
 msgstr "спорт"
 
 msgid "Actions"
-msgstr "действия"
+msgstr "дії"
 
 msgid "Nature"
 msgstr "природа"
 
 msgid "Fruits and Vegetables"
-msgstr "фрукты и овощи"
+msgstr "фрукти та овочі"
 
 msgid "Food"
-msgstr "пища"
+msgstr "їжа"
 
 msgid "Transport"
 msgstr "транспорт"
 
 msgid "Constructions"
-msgstr "конструкции"
+msgstr "будівництво"
 
 msgid "Equilateral Triangle"
-msgstr "Равносторонний треугольник"
+msgstr "Рівносторонній трикутник"
 
 msgid "Isosceles Triangle"
-msgstr "Равнобедренный треугольник"
+msgstr "Рівнобедрений трикутник"
 
 msgid "Obtuse Triangle"
-msgstr "Тупоугольный треугольник"
+msgstr "Тупокутний трикутник"
 
 msgid "Right Triangle"
-msgstr "Прямоугольный треугольник"
+msgstr "Прямокутний трикутник"
 
 msgid "Acute Triangle"
-msgstr "Остроугольный треугольник"
+msgstr "Гострокутний трикутник"
 
 msgid "Square"
 msgstr "Квадрат"
 
 msgid "Rectangle"
-msgstr "Прямоугольник"
+msgstr "Прямокутник"
 
 msgid "Right Trapezium"
-msgstr "Правильная трапеция"
+msgstr "Прямокутна трапеція"
 
 msgid "Isosceles Trapezium"
-msgstr "Равнобедренная трапеция"
+msgstr "Рівнобедрена трапеція"
 
 msgid "Rhombus"
 msgstr "Ромб"
 
 msgid "Parallelogram"
-msgstr "Параллелограмм"
+msgstr "Паралелограм"
 
 msgid "Pentagon"
-msgstr "Пятиугольник"
+msgstr "П’ятикутник"
 
 msgid "Hexagon"
-msgstr "Шестиугольник"
+msgstr "Шестикутник"
 
 msgid "Circle"
-msgstr "Круг"
+msgstr "Коло"
 
 msgid "Ellipse"
-msgstr "Эллипс"
+msgstr "Еліпс"
 
 msgid "Heptagon"
 msgstr ""
@@ -375,13 +372,13 @@ msgid "cow"
 msgstr "корова"
 
 msgid "turkey"
-msgstr "индейка"
+msgstr "індичка"
 
 msgid "shrimp"
 msgstr "креветка"
 
 msgid "wolf"
-msgstr "волк"
+msgstr "вовк"
 
 msgid "panther"
 msgstr "пантера"
@@ -393,13 +390,13 @@ msgid "magpie"
 msgstr "сорока"
 
 msgid "clam"
-msgstr "моллюск"
+msgstr "молюск"
 
 msgid "pony"
-msgstr "пони"
+msgstr "поні"
 
 msgid "mouse"
-msgstr "мышь"
+msgstr "миша"
 
 msgid "pug"
 msgstr "мопс"
@@ -408,124 +405,124 @@ msgid "koala"
 msgstr "коала"
 
 msgid "frog"
-msgstr "лягушка"
+msgstr "жаба"
 
 msgid "ladybug"
-msgstr "божья коровка"
+msgstr "сонечко"
 
 msgid "gorilla"
-msgstr "горилла"
+msgstr "горила"
 
 msgid "llama"
 msgstr "лама"
 
 msgid "vulture"
-msgstr "стервятник"
+msgstr "стерв’ятник"
 
 msgid "hamster"
-msgstr "хомяк"
+msgstr "хом’як"
 
 msgid "bird"
-msgstr "птица"
+msgstr "пташка"
 
 msgid "starfish"
-msgstr "морская звезда"
+msgstr "морська зірка"
 
 msgid "crow"
 msgstr "ворона"
 
 msgid "parakeet"
-msgstr "длиннохвостый попугай"
+msgstr "довгохвостий папуга"
 
 msgid "caterpillar"
-msgstr "гусеница"
+msgstr "гусінь"
 
 msgid "tiger"
 msgstr "тигр"
 
 msgid "hummingbird"
-msgstr "колибри"
+msgstr "колібрі"
 
 msgid "piranha"
-msgstr "пиранья"
+msgstr "піранья"
 
 msgid "pig"
-msgstr "свинья"
+msgstr "свиня"
 
 msgid "scorpion"
-msgstr "скорпион"
+msgstr "скорпіон"
 
 msgid "fox"
-msgstr "лиса"
+msgstr "лисиця"
 
 msgid "leopard"
 msgstr "леопард"
 
 msgid "iguana"
-msgstr "игуана"
+msgstr "ігуана"
 
 msgid "dolphin"
-msgstr "дельфин"
+msgstr "дельфін"
 
 msgid "bat"
-msgstr "летучая мышь"
+msgstr "летюча миша"
 
 msgid "chick"
-msgstr "цыплёнок"
+msgstr "курча"
 
 msgid "crab"
 msgstr "краб"
 
 msgid "hen"
-msgstr "курица"
+msgstr "курка"
 
 msgid "wasp"
 msgstr "оса"
 
 msgid "chameleon"
-msgstr "хамелион"
+msgstr "хамелеон"
 
 msgid "whale"
 msgstr "кит"
 
 msgid "hedgehog"
-msgstr "ёжик"
+msgstr "їжак"
 
 msgid "fawn"
-msgstr "олень"
+msgstr "оленятко"
 
 msgid "moose"
 msgstr "лось"
 
 msgid "bee"
-msgstr "пчела"
+msgstr "бджола"
 
 msgid "viper"
-msgstr "змея"
+msgstr "гадюка"
 
 msgid "shrike"
-msgstr "сорокопут"
+msgstr "сорокопуд"
 
 msgid "donkey"
-msgstr "осёл"
+msgstr "віслюк"
 
 msgid "guinea pig"
-msgstr "морская свинка"
+msgstr "морська свинка"
 
 msgid "sloth"
-msgstr "ленивец"
+msgstr "лінивець"
 
 msgid "horse"
-msgstr "конь"
+msgstr "кінь"
 
 msgid "penguin"
-msgstr "пингвин"
+msgstr "пінгвін"
 
 msgid "otter"
-msgstr "выдра"
+msgstr "видра"
 
 msgid "bear"
-msgstr "медведь"
+msgstr "ведмідь"
 
 msgid "zebra"
 msgstr "зебра"
@@ -543,13 +540,13 @@ msgid "lemur"
 msgstr "лемур"
 
 msgid "pigeon"
-msgstr "голубь"
+msgstr "голуб"
 
 msgid "llama"
 msgstr "лама"
 
 msgid "mole"
-msgstr "крот"
+msgstr "кріт"
 
 msgid "ray"
 msgstr "скат"
@@ -564,40 +561,40 @@ msgid "jellyfish"
 msgstr "медуза"
 
 msgid "sheep"
-msgstr "овца"
+msgstr "вівця"
 
 msgid "shark"
 msgstr "акула"
 
 msgid "kitten"
-msgstr "котёнок"
+msgstr "кошеня"
 
 msgid "deer"
 msgstr "олень"
 
 msgid "snail"
-msgstr "улитка"
+msgstr "равлик"
 
 msgid "flamingo"
-msgstr "фламинго"
+msgstr "фламінго"
 
 msgid "rabbit"
 msgstr "кролик"
 
 msgid "oyster"
-msgstr "устрица"
+msgstr "устриця"
 
 msgid "beaver"
-msgstr "бобр"
+msgstr "бобер"
 
 msgid "sparrow"
-msgstr "воробей"
+msgstr "горобець"
 
 msgid "dove"
-msgstr "голубь"
+msgstr "голубка"
 
 msgid "eagle"
-msgstr "орёл"
+msgstr "орел"
 
 msgid "beetle"
 msgstr "жук"
@@ -615,49 +612,49 @@ msgid "salamander"
 msgstr "саламандра"
 
 msgid "goose"
-msgstr "гусь"
+msgstr "гусак"
 
 msgid "kangaroo"
 msgstr "кенгуру"
 
 msgid "dragonfly"
-msgstr "стрекоза"
+msgstr "бабка"
 
 msgid "toad"
-msgstr "лягушка"
+msgstr "жабка"
 
 msgid "pelican"
-msgstr "пеликан"
+msgstr "пелікан"
 
 msgid "squid"
 msgstr "кальмар"
 
 msgid "lion cub"
-msgstr "львёнок"
+msgstr "левеня"
 
 msgid "jaguar"
 msgstr "ягуар"
 
 msgid "duck"
-msgstr "утка"
+msgstr "качка"
 
 msgid "lizard"
-msgstr "ящерица"
+msgstr "ящірка"
 
 msgid "rhinoceros"
-msgstr "носорог"
+msgstr "носоріг"
 
 msgid "hyena"
-msgstr "гиена"
+msgstr "гієна"
 
 msgid "ox"
-msgstr "бык"
+msgstr "бик"
 
 msgid "peacock"
-msgstr "павлин"
+msgstr "павич"
 
 msgid "parrot"
-msgstr "попугай"
+msgstr "папуга"
 
 msgid "elk"
 msgstr "лось"
@@ -666,43 +663,43 @@ msgid "alligator"
 msgstr "крокодил"
 
 msgid "ant"
-msgstr "муравей"
+msgstr "мураха"
 
 msgid "goat"
-msgstr "козёл"
+msgstr "козел"
 
 msgid "baby rabbit"
-msgstr "крольчонок"
+msgstr "кроленя"
 
 msgid "lion"
 msgstr "лев"
 
 msgid "squirrel"
-msgstr "белка"
+msgstr "білка"
 
 msgid "opossum"
-msgstr "опоссум"
+msgstr "опосум"
 
 msgid "chimp"
 msgstr "шимпанзе"
 
 msgid "doe"
-msgstr "оленёнок"
+msgstr "оленя"
 
 msgid "gopher"
-msgstr "суслик"
+msgstr "ховрах"
 
 msgid "elephant"
 msgstr "слон"
 
 msgid "giraffe"
-msgstr "жираф"
+msgstr "жирафа"
 
 msgid "spider"
-msgstr "паук"
+msgstr "павук"
 
 msgid "puppy"
-msgstr "щенок"
+msgstr "щеня"
 
 msgid "jay"
 msgstr "сойка"
@@ -711,31 +708,31 @@ msgid "seal"
 msgstr "тюлень"
 
 msgid "rooster"
-msgstr "петух"
+msgstr "півень"
 
 msgid "turtle"
 msgstr "черепаха"
 
 msgid "bull"
-msgstr "бык"
+msgstr "бик"
 
 msgid "cat"
-msgstr "кошка"
+msgstr "кіт"
 
 msgid "rat"
-msgstr "крыса"
+msgstr "щур"
 
 msgid "slug"
-msgstr "улитка"
+msgstr "слимак"
 
 msgid "buffalo"
-msgstr "бизон"
+msgstr "бізон"
 
 msgid "blackbird"
-msgstr "чёрный дрозд"
+msgstr "чорний дрізд"
 
 msgid "swan"
-msgstr "лебедь"
+msgstr "лебідь"
 
 msgid "lobster"
 msgstr "омар"
@@ -744,74 +741,74 @@ msgid "dog"
 msgstr "собака"
 
 msgid "mosquito"
-msgstr "комар"
+msgstr "москіт"
 
 msgid "snake"
-msgstr "змея"
+msgstr "змія"
 
 msgid "chicken"
-msgstr "цыплёнок"
+msgstr "круча"
 
 msgid "anteater"
-msgstr "муравьед"
+msgstr "мурахоїд"
 
 # sport
 msgid "judo"
 msgstr "дзюдо"
 
 msgid "pool"
-msgstr "плавание"
+msgstr "плавання"
 
 msgid "ride"
 msgstr "велогонка"
 
 msgid "stretch"
-msgstr "растяжка"
+msgstr "розтяжка"
 
 msgid "helmet"
-msgstr "шлем"
+msgstr "шолом"
 
 msgid "ice skating"
-msgstr "коньки"
+msgstr "ковзани"
 
 msgid "walk"
 msgstr "ходьба"
 
 msgid "run"
-msgstr "бег"
+msgstr "біг"
 
 msgid "swim"
-msgstr "ныряние"
+msgstr "пірнання"
 
 msgid "hop"
 msgstr "батут"
 
 msgid "hike"
-msgstr "пеший туризм"
+msgstr "піший туризм"
 
 msgid "boxing"
 msgstr "бокс"
 
 msgid "hockey"
-msgstr "хоккей"
+msgstr "хокей"
 
 msgid "race"
-msgstr "забег"
+msgstr "забіг"
 
 msgid "throw"
-msgstr "бросок"
+msgstr "кидок"
 
 msgid "skate"
 msgstr "скейт"
 
 msgid "win"
-msgstr "победа"
+msgstr "перемога"
 
 msgid "squat"
-msgstr "приседания"
+msgstr "присідання"
 
 msgid "ski"
-msgstr "лыжи"
+msgstr "лижі"
 
 msgid "golf"
 msgstr "гольф"
@@ -826,19 +823,19 @@ msgid "sailing"
 msgstr "яхта"
 
 msgid "stand"
-msgstr "стойка"
+msgstr "стійка"
 
 msgid "tennis"
-msgstr "теннис"
+msgstr "теніс"
 
 msgid "jump"
-msgstr "скачок"
+msgstr "стрибок"
 
 msgid "rowing"
-msgstr "гребля"
+msgstr "веслування"
 
 msgid "jog"
-msgstr "бег трусцой"
+msgstr "біг підтюпцем"
 
 msgid "rope"
 msgstr "скакалка"
@@ -848,16 +845,16 @@ msgid "teeth"
 msgstr "зуб"
 
 msgid "cheek"
-msgstr "щека"
+msgstr "щока"
 
 msgid "ankle"
-msgstr "косточка"
+msgstr "кісточка"
 
 msgid "knee"
-msgstr "колено"
+msgstr "коліно"
 
 msgid "toe"
-msgstr "пята"
+msgstr "п’ята"
 
 msgid "muscle"
 msgstr "мускул"
@@ -872,13 +869,13 @@ msgid "hand"
 msgstr "рука"
 
 msgid "elbow"
-msgstr "локоть"
+msgstr "лікоть"
 
 msgid "hair"
-msgstr "волосы"
+msgstr "волосся"
 
 msgid "eyelash"
-msgstr "ресничка"
+msgstr "вія"
 
 msgid "beard"
 msgstr "борода"
@@ -887,40 +884,40 @@ msgid "belly button"
 msgstr "пупок"
 
 msgid "thumb"
-msgstr "большой палец"
+msgstr "великий палець"
 
 msgid "breast"
-msgstr "грудь"
+msgstr "груди"
 
 msgid "nostril"
-msgstr "ноздря"
+msgstr "ніздря"
 
 msgid "nose"
-msgstr "нос"
+msgstr "ніс"
 
 msgid "hip"
-msgstr "поясница"
+msgstr "поперек"
 
 msgid "arm"
 msgstr "рука"
 
 msgid "eyebrow"
-msgstr "бровь"
+msgstr "брова"
 
 msgid "fist"
 msgstr "кулак"
 
 msgid "neck"
-msgstr "шея"
+msgstr "шия"
 
 msgid "wrist"
-msgstr "запястье"
+msgstr "зап’ясток"
 
 msgid "throat"
 msgstr "горло"
 
 msgid "eye"
-msgstr "глаз"
+msgstr "око"
 
 msgid "leg"
 msgstr "нога"
@@ -929,10 +926,10 @@ msgid "spine"
 msgstr "спина"
 
 msgid "ear"
-msgstr "ухо"
+msgstr "вухо"
 
 msgid "finger"
-msgstr "палец"
+msgstr "палець"
 
 msgid "foot"
 msgstr "ступня"
@@ -941,102 +938,102 @@ msgid "braid"
 msgstr "борода"
 
 msgid "face"
-msgstr "лицо"
+msgstr "лице"
 
 msgid "back"
 msgstr "спина"
 
 msgid "chin"
-msgstr "подбородок"
+msgstr "підборіддя"
 
 msgid "bottom"
-msgstr "ягодицы"
+msgstr "сідниці"
 
 msgid "thigh"
-msgstr "бедро"
+msgstr "стегно"
 
 msgid "belly"
-msgstr "живот"
+msgstr "живіт"
 
 # people
 msgid "girl"
-msgstr "девушка"
+msgstr "дівчина"
 
 msgid "male"
-msgstr "парень"
+msgstr "хлопець"
 
 msgid "son"
-msgstr "сын"
+msgstr "син"
 
 msgid "friends"
-msgstr "друзья"
+msgstr "друзі"
 
 msgid "baby"
-msgstr "малыш"
+msgstr "немовля"
 
 msgid "child"
-msgstr "ребёнок"
+msgstr "дитя"
 
 msgid "dad"
-msgstr "папа"
+msgstr "татусь"
 
 msgid "mom"
-msgstr "мама"
+msgstr "матуся"
 
 msgid "twin boys"
-msgstr "близнецы"
+msgstr "двійнята"
 
 msgid "brothers"
-msgstr "братья"
+msgstr "брати"
 
 msgid "man"
-msgstr "мужчина"
+msgstr "чоловік"
 
 msgid "mother"
-msgstr "мать"
+msgstr "мати"
 
 msgid "grandfather"
-msgstr "дедушка"
+msgstr "дідусь"
 
 msgid "family"
-msgstr "семья"
+msgstr "сім’я"
 
 msgid "female"
-msgstr "женщина"
+msgstr "дівчина"
 
 msgid "wife"
-msgstr "жена"
+msgstr "жінка"
 
 msgid "husband"
-msgstr "муж"
+msgstr "чоловік"
 
 msgid "bride"
-msgstr "невеста"
+msgstr "нареченна"
 
 msgid "grandmother"
-msgstr "бабушка"
+msgstr "бабуся"
 
 msgid "couple"
-msgstr "влюблённые"
+msgstr "закохані"
 
 msgid "twin girls"
-msgstr "двойняшки"
+msgstr "двійнята"
 
 msgid "boy"
-msgstr "мальчик"
+msgstr "хлопчик"
 
 msgid "sisters"
-msgstr "сёстры"
+msgstr "сестри"
 
 msgid "woman"
-msgstr "женщина"
+msgstr "жінка"
 
 msgid "lady"
-msgstr "леди"
+msgstr "леді"
 
 # food
 msgid "candy"
-msgstr "конфета"
+msgstr "цукерка"
 
 msgid "sausage"
 msgstr "сосиска"
@@ -1045,7 +1042,7 @@ msgid "hamburger"
 msgstr "гамбургер"
 
 msgid "steak"
-msgstr "бифштекс"
+msgstr "стейк"
 
 msgid "fudge"
 msgstr "помадка"
@@ -1060,7 +1057,7 @@ msgid "rice"
 msgstr "рис"
 
 msgid "ice cream"
-msgstr "мороженое"
+msgstr "морозиво"
 
 msgid "jelly"
 msgstr "желе"
@@ -1072,31 +1069,31 @@ msgid "dessert"
 msgstr "десерт"
 
 msgid "pretzel"
-msgstr "десерт"
-
-msgid "peanut"
 msgstr "крендель"
 
+msgid "peanut"
+msgstr "арахіс"
+
 msgid "jam"
-msgstr "арахис"
+msgstr "варення"
 
 msgid "feast"
-msgstr "варенье"
+msgstr "курка"
 
 msgid "cookie"
-msgstr "курица"
+msgstr "крекер"
 
 msgid "bacon"
 msgstr "бекон"
 
 msgid "spice"
-msgstr "специи"
+msgstr "спеції"
 
 msgid "coffee"
-msgstr "кофе"
+msgstr "кава"
 
 msgid "pie"
-msgstr "пирог"
+msgstr "пиріг"
 
 msgid "lemonade"
 msgstr "лимонад"
@@ -1105,28 +1102,28 @@ msgid "chocolate"
 msgstr "шоколад"
 
 msgid "water bottle"
-msgstr "бутылка с водой"
+msgstr "пляшка з водою"
 
 msgid "lunch"
-msgstr "обед"
+msgstr "обід"
 
 msgid "ice"
-msgstr "лёд"
+msgstr "лід"
 
 msgid "sugar"
-msgstr "сахар"
+msgstr "цукор"
 
 msgid "sauce"
-msgstr "соус"
+msgstr "кетчуп"
 
 msgid "soup"
 msgstr "суп"
 
 msgid "juice"
-msgstr "сок"
+msgstr "сік"
 
 msgid "fries"
-msgstr "чипсы"
+msgstr "чіпси"
 
 msgid "cake"
 msgstr "торт"
@@ -1141,152 +1138,152 @@ msgid "bun"
 msgstr "булка"
 
 msgid "cheese"
-msgstr "сыр"
+msgstr "сир"
 
 msgid "beef"
-msgstr "отбивная"
+msgstr "відбивна"
 
 msgid "sandwich"
 msgstr "бутерброд"
 
 msgid "slice"
-msgstr "ломтик"
+msgstr "шматочки"
 
 msgid "sprinkle"
-msgstr "посыпка"
+msgstr "присипка"
 
 msgid "pizza"
-msgstr "пицца"
+msgstr "піца"
 
 msgid "flour"
-msgstr "мука"
+msgstr "борошно"
 
 msgid "gum"
-msgstr "жевательная резинка"
+msgstr "жувальна різинка"
 
 msgid "spaghetti"
-msgstr "спагетти"
+msgstr "спагеті"
 
 msgid "roast"
-msgstr "жаркое"
+msgstr "печеня"
 
 msgid "drink[n]"
-msgstr "напиток"
+msgstr "напій"
 
 msgid "stew"
-msgstr "тушёное мясо"
+msgstr "тушковане м’ясо"
 
 msgid "spread"
-msgstr "намазанное"
+msgstr "намащування"
 
 msgid "meat"
-msgstr "мясо"
+msgstr "м’ясо"
 
 msgid "milk"
 msgstr "молоко"
 
 msgid "meal"
-msgstr "пища"
+msgstr "страва"
 
 msgid "corn"
-msgstr "кукуруза"
+msgstr "кукурудза"
 
 msgid "bread"
-msgstr "хлеб"
+msgstr "хліб"
 
 msgid "walnut"
-msgstr "орех"
+msgstr "горіх"
 
 msgid "egg"
-msgstr "яйцо"
+msgstr "яйце"
 
 msgid "hot dog"
-msgstr "хот-дог"
+msgstr "гот-доґ"
 
 msgid "ham"
-msgstr "ветчина"
+msgstr "шинка"
 
 # clothes
 msgid "jewellery"
-msgstr "украшение"
+msgstr "прикраси"
 
 msgid "sock"
-msgstr "носок"
+msgstr "шкарпетка"
 
 msgid "jacket"
-msgstr "пиджак"
+msgstr "піджак"
 
 msgid "heel"
 msgstr "шпилька"
 
 msgid "smock"
-msgstr "пятно"
+msgstr "пляма"
 
 msgid "shorts"
-msgstr "шорты"
+msgstr "шорти"
 
 msgid "pocket"
-msgstr "карман"
+msgstr "кишеня"
 
 msgid "necklace"
-msgstr "ожерелье"
+msgstr "намисто"
 
 msgid "sweatshirt"
-msgstr "свитер"
+msgstr "спортивний светр"
 
 msgid "uniform"
-msgstr "униформа"
+msgstr "уніформа"
 
 msgid "raincoat"
 msgstr "плащ"
 
 msgid "trousers"
-msgstr "штаны"
+msgstr "штани"
 
 msgid "sunglasses"
-msgstr "солнечные очки"
+msgstr "сонячні окуляри"
 
 msgid "coat"
 msgstr "куртка"
 
 msgid "pullover"
-msgstr "пулловер"
+msgstr "светр"
 
 msgid "shirt"
-msgstr ",блузка"
+msgstr "блузка"
 
 msgid "sandals"
-msgstr "сандалии"
+msgstr "сандалі"
 
 msgid "suit"
 msgstr "костюм"
 
 msgid "pyjamas"
-msgstr "пижама"
+msgstr "піжама"
 
 msgid "skirt"
-msgstr "юбка"
+msgstr "спідниця"
 
 msgid "zip"
-msgstr "молния"
+msgstr "блискавка"
 
 msgid "shoes"
-msgstr "туфли"
+msgstr "туфлі"
 
 msgid "jewel"
-msgstr "камень"
+msgstr "камінь"
 
 msgid "tie"
-msgstr "галстук"
+msgstr "краватка"
 
 msgid "slippers"
-msgstr "шлёпанцы"
+msgstr "шльопанці"
 
 msgid "gloves"
-msgstr "перчатки"
+msgstr "рукавички"
 
 msgid "hat"
-msgstr "шляпа"
+msgstr "капелюх"
 
 msgid "sleeve"
 msgstr "рукав"
@@ -1295,336 +1292,336 @@ msgid "cap"
 msgstr "кепка"
 
 msgid "swimming suit"
-msgstr "купальник"
+msgstr "купальний костюм"
 
 msgid "trainer"
-msgstr "кроссовки"
+msgstr "кросівок"
 
 msgid "vest"
 msgstr "жилет"
 
 msgid "glasses"
-msgstr "перчатки"
+msgstr "окуляри"
 
 msgid "shoelace"
 msgstr "шнурок"
 
 msgid "patch"
-msgstr "заплатка"
+msgstr "латка"
 
 msgid "scarf"
 msgstr "шарф"
 
 msgid "shoe"
-msgstr "ботинок"
+msgstr "черевик"
 
 msgid "button"
-msgstr "пуговица"
+msgstr "ґудзик"
 
 msgid "dress"
-msgstr "платье"
+msgstr "плаття"
 
 msgid "sash"
 msgstr "пояс"
 
 msgid "shoe sole"
-msgstr "подошва"
+msgstr "підошви"
 
 msgid "robe"
-msgstr "мантия"
+msgstr "мантія"
 
 msgid "pants"
-msgstr "трусы"
+msgstr "труси"
 
 msgid "kimono"
-msgstr "кимоно"
+msgstr "кімоно"
 
 msgid "overalls"
-msgstr "комбинезон"
+msgstr "комбінезон"
 
 # actions
 msgid "lick"
-msgstr "лизать"
+msgstr "лизати"
 
 msgid "slam"
-msgstr "забрасывать"
+msgstr "закидати"
 
 msgid "beg"
-msgstr "молиться"
+msgstr "молити"
 
 msgid "fell"
-msgstr "падать"
+msgstr "падати"
 
 msgid "scratch"
-msgstr "царапать"
+msgstr "дряпати"
 
 msgid "touch"
-msgstr "трогать"
+msgstr "торкати"
 
 msgid "sniff"
-msgstr "нюхать"
+msgstr "нюхати"
 
 msgid "see"
-msgstr "смотреть"
+msgstr "дивитися"
 
 msgid "climb"
-msgstr "карабкаться"
+msgstr "дертися"
 
 msgid "dig"
-msgstr "копать"
+msgstr "копати"
 
 msgid "howl"
-msgstr "выть"
+msgstr "вити"
 
 msgid "sleep"
-msgstr "спать"
+msgstr "спати"
 
 msgid "explore"
-msgstr "исследовать"
+msgstr "досліджувати"
 
 msgid "draw"
-msgstr "рисовать"
+msgstr "малювати"
 
 msgid "hug"
-msgstr "обнимать"
+msgstr "обнімати"
 
 msgid "teach"
-msgstr "учить"
+msgstr "навчати"
 
 msgid "nap"
-msgstr "дремать"
+msgstr "куняти"
 
 msgid "clay"
-msgstr "лепить"
+msgstr "ліпити"
 
 msgid "catch"
-msgstr "ловить"
+msgstr "ловити"
 
 msgid "clap"
-msgstr "хлопать"
+msgstr "плескати"
 
 msgid "cry"
-msgstr "плакать"
+msgstr "плакати"
 
 msgid "sing"
-msgstr "петь"
+msgstr "співати"
 
 msgid "meet"
-msgstr "встречаться"
+msgstr "зустрічатися"
 
 msgid "sell"
-msgstr "продавать"
+msgstr "продавати"
 
 msgid "peck"
-msgstr "клевать"
+msgstr "дзьобати"
 
 msgid "beat"
-msgstr "ударить"
+msgstr "вдарити"
 
 msgid "kneel"
-msgstr "становиться на колени"
+msgstr "ставати на коліна"
 
 msgid "find"
-msgstr "искать"
+msgstr "знайти"
 
 msgid "dance"
-msgstr "танцевать"
+msgstr "танцювати"
 
 msgid "cough"
-msgstr "кашлять"
+msgstr "кахикати"
 
 msgid "cut"
-msgstr "резать"
+msgstr "різати"
 
 msgid "think"
-msgstr "думать"
+msgstr "думати"
 
 msgid "bark"
-msgstr "лаять"
+msgstr "гавкати"
 
 msgid "speak"
-msgstr "говорить"
+msgstr "говорити"
 
 msgid "cheer"
-msgstr "веселить"
+msgstr "веселити"
 
 msgid "bake"
-msgstr "стряпать"
+msgstr "куховарити"
 
 msgid "write"
-msgstr "писать"
+msgstr "писати"
 
 msgid "punch"
-msgstr "бить"
+msgstr "бити"
 
 msgid "strum"
-msgstr "бренчать"
+msgstr "бренькати"
 
 msgid "study"
-msgstr "учиться"
+msgstr "навчатися"
 
 msgid "plow"
-msgstr "пахать"
+msgstr "орати"
 
 msgid "dream"
-msgstr "мечтать"
+msgstr "мріяти"
 
 msgid "post"
-msgstr "отправлять"
+msgstr "надсилати"
 
 msgid "dive"
-msgstr "нырять"
+msgstr "пірнати"
 
 msgid "whisper"
-msgstr "шептать"
+msgstr "шепотіти"
 
 msgid "sob"
-msgstr "рыдать"
+msgstr "ридати"
 
 msgid "shake"
 msgstr "трясти"
 
 msgid "feed"
-msgstr "кормить"
+msgstr "годувати"
 
 msgid "crawl"
-msgstr "ползти"
+msgstr "повзти"
 
 msgid "camp"
-msgstr "обосноваться"
+msgstr "отаборитися"
 
 msgid "spill"
-msgstr "разливать"
+msgstr "розливати"
 
 msgid "clean"
-msgstr "мыть"
+msgstr "митися"
 
 msgid "scream"
-msgstr "кричать"
+msgstr "кричати"
 
 msgid "tear"
-msgstr "рвать"
+msgstr "рвати"
 
 msgid "float"
-msgstr "плавать"
+msgstr "плавати"
 
 msgid "pull"
-msgstr "тянуть"
+msgstr "тягти"
 
 msgid "ate"
-msgstr "поесть"
+msgstr "поїсти"
 
 msgid "kiss"
-msgstr "целовать"
+msgstr "цілувати"
 
 msgid "sit"
-msgstr "сидеть"
+msgstr "сидіти"
 
 msgid "hatch"
-msgstr "вылупляться"
+msgstr "вилуплюватися"
 
 msgid "blink"
-msgstr "мигать"
+msgstr "блимати"
 
 msgid "hear"
-msgstr "слушать"
+msgstr "слухати"
 
 msgid "smooch"
-msgstr "целоваться"
+msgstr "цілуватися"
 
 msgid "play"
-msgstr "играть"
+msgstr "грати"
 
 msgid "wash"
-msgstr "мыть"
+msgstr "мити"
 
 msgid "chat"
-msgstr "говорить"
+msgstr "балакати"
 
 msgid "drive"
 msgstr "вести"
 
 msgid "drink[v]"
-msgstr "пить"
+msgstr "пити"
 
 msgid "fly"
-msgstr "летать"
+msgstr "літати"
 
 msgid "juggle"
-msgstr "жонглировать"
+msgstr "жонглювати"
 
 msgid "bit"
-msgstr "кусать"
+msgstr "кусати"
 
 msgid "sweep"
 msgstr "мести"
 
 msgid "look"
-msgstr "смотреть"
+msgstr "роздивлятися"
 
 msgid "knit"
-msgstr "вязать"
+msgstr "в’язати"
 
 msgid "lift"
-msgstr "поднимать"
+msgstr "піднімати"
 
 msgid "fetch"
-msgstr "держать"
+msgstr "тримати"
 
 msgid "read"
-msgstr "читать"
+msgstr "читати"
 
 msgid "croak"
-msgstr "квакать"
+msgstr "квакати"
 
 msgid "stare"
-msgstr "оставаться"
+msgstr "витріщитися"
 
 msgid "eat"
-msgstr "есть"
+msgstr "їсти"
 
 # construction
 msgid "lighthouse"
 msgstr "маяк"
 
 msgid "door"
-msgstr "дверь"
+msgstr "двері"
 
 msgid "circus"
 msgstr "цирк"
 
 msgid "church"
-msgstr "церковь"
+msgstr "церква"
 
 msgid "kennel"
-msgstr "конура"
+msgstr "буда"
 
 msgid "temple"
 msgstr "храм"
 
 msgid "smoke"
-msgstr "дым"
+msgstr "дим"
 
 msgid "chimney"
-msgstr "дымоход"
+msgstr "димар"
 
 msgid "brick"
-msgstr "кирпич"
+msgstr "цегла"
 
 msgid "well"
-msgstr "колодец"
+msgstr "колодязь"
 
 msgid "street"
-msgstr "улица"
+msgstr "вулиця"
 
 msgid "castle"
 msgstr "замок"
 
 msgid "store"
-msgstr "магазин"
+msgstr "крамниця"
 
 msgid "staircase"
-msgstr "лестница"
+msgstr "сходи"
 
 msgid "school"
 msgstr "школа"
@@ -1633,28 +1630,28 @@ msgid "farm"
 msgstr "ферма"
 
 msgid "bridge"
-msgstr "мост"
+msgstr "місток"
 
 msgid "dam"
-msgstr "плотина"
+msgstr "гребля"
 
 msgid "pyramid"
-msgstr "пирамида"
+msgstr "піраміда"
 
 msgid "barn"
-msgstr "кладовая"
+msgstr "комора"
 
 msgid "mill"
-msgstr "мельница"
+msgstr "млин"
 
 msgid "window"
-msgstr "окно"
+msgstr "вікно"
 
 msgid "cabin"
-msgstr "домик"
+msgstr "хатка"
 
 msgid "step"
-msgstr "ступенька"
+msgstr "сходинка"
 
 msgid "shop"
 msgstr "магазин"
@@ -1663,10 +1660,10 @@ msgid "shed"
 msgstr "сарай"
 
 msgid "roof"
-msgstr "крыша"
+msgstr "дах"
 
 msgid "steeple"
-msgstr "колокольня"
+msgstr "дзвіниця"
 
 msgid "garage"
 msgstr "гараж"
@@ -1675,41 +1672,41 @@ msgid "mosque"
 msgstr "мечеть"
 
 msgid "hospital"
-msgstr "госпиталь"
+msgstr "шпиталь"
 
 msgid "tent"
-msgstr "палатка"
+msgstr "намет"
 
 msgid "house"
-msgstr "дом"
+msgstr "будинок"
 
 msgid "wall"
-msgstr "стена"
+msgstr "стіна"
 
 msgid "bank"
 msgstr "банк"
 
 msgid "shutter"
-msgstr "ставень"
+msgstr "віконниця"
 
 msgid "hut"
-msgstr "хижина"
+msgstr "хижа"
 
 # nature
 msgid "land"
-msgstr "земля"
+msgstr "суходіл"
 
 msgid "cliff"
-msgstr "утёс"
+msgstr "круча"
 
 msgid "hill"
-msgstr "холм"
+msgstr "пагорб"
 
 msgid "canyon"
-msgstr "каньон"
+msgstr "каньйон"
 
 msgid "rock"
-msgstr "камень"
+msgstr "камінь"
 
 msgid "sea"
 msgstr "море"
@@ -1721,13 +1718,13 @@ msgid "coast"
 msgstr "пляж"
 
 msgid "shore"
-msgstr "побережье"
+msgstr "узбережжя"
 
 msgid "mountain"
 msgstr "гора"
 
 msgid "pond"
-msgstr "пруд"
+msgstr "ставок"
 
 msgid "peak"
 msgstr "вершина"
@@ -1736,19 +1733,19 @@ msgid "lava"
 msgstr "лава"
 
 msgid "cave"
-msgstr "пещера"
+msgstr "печера"
 
 msgid "dune"
 msgstr "дюна"
 
 msgid "island"
-msgstr "остров"
+msgstr "острів"
 
 msgid "forest"
-msgstr "лес"
+msgstr "ліс"
 
 msgid "desert"
-msgstr "пустыня"
+msgstr "пустеля"
 
 msgid "iceberg"
 msgstr "айсберг"
@@ -1758,13 +1755,13 @@ msgid "clown"
 msgstr "клоун"
 
 msgid "engineer"
-msgstr "инженер"
+msgstr "інженер"
 
 msgid "vet"
 msgstr "ветеринар"
 
 msgid "judge"
-msgstr "судья"
+msgstr "суддя"
 
 msgid "chef"
 msgstr "повар"
@@ -1773,19 +1770,19 @@ msgid "athlete"
 msgstr "атлет"
 
 msgid "librarian"
-msgstr "библиотекарь"
+msgstr "бібліотекарка"
 
 msgid "juggler"
-msgstr "жонглёр"
+msgstr "жонглер"
 
 msgid "police officer"
-msgstr "полицейский"
+msgstr "поліцейський"
 
 msgid "plumber"
-msgstr "водопроводчик"
+msgstr "водопровідник"
 
 msgid "badge"
-msgstr "жетонщик"
+msgstr "нагорода"
 
 msgid "queen"
 msgstr "королева"
@@ -1797,55 +1794,55 @@ msgid "magician"
 msgstr "фокусник"
 
 msgid "knight"
-msgstr "рыцарь"
+msgstr "рицар"
 
 msgid "doctor"
 msgstr "доктор"
 
 msgid "bricklayer"
-msgstr "каменщик"
+msgstr "муляр"
 
 msgid "cleaner"
-msgstr "уборщица"
+msgstr "прибиральниця"
 
 msgid "teacher"
-msgstr "учитель"
+msgstr "вчителька"
 
 msgid "hunter"
-msgstr "охотник"
+msgstr "мисливець"
 
 msgid "soldier"
 msgstr "солдат"
 
 msgid "musician"
-msgstr "музыкант"
+msgstr "музикант"
 
 msgid "lawyer"
 msgstr "юрист"
 
 msgid "fisherman"
-msgstr "рыбак"
+msgstr "рибалка"
 
 msgid "princess"
-msgstr "принцесса"
+msgstr "принцеса"
 
 msgid "firefighter"
-msgstr "пожарник"
+msgstr "пожежник"
 
 msgid "nun"
-msgstr "монахиня"
+msgstr "черниця"
 
 msgid "pirate"
-msgstr "пират"
+msgstr "пірат"
 
 msgid "cowboy"
 msgstr "ковбой"
 
 msgid "electrician"
-msgstr "электрик"
+msgstr "електрик"
 
 msgid "nurse"
-msgstr "няня"
+msgstr "нянька"
 
 msgid "king"
 msgstr "король"
@@ -1857,31 +1854,31 @@ msgid "office worker"
 msgstr "клерк"
 
 msgid "carpenter"
-msgstr "плотник"
+msgstr "тесляр"
 
 msgid "jockey"
 msgstr "жокей"
 
 msgid "worker"
-msgstr "рабочий"
+msgstr "робітник"
 
 msgid "mechanic"
-msgstr "механик"
+msgstr "механік"
 
 msgid "pilot"
-msgstr "пилот"
+msgstr "пілот"
 
 msgid "actor"
-msgstr "актёр"
+msgstr "актор"
 
 msgid "cook"
-msgstr "повар"
+msgstr "кухар"
 
 msgid "student"
 msgstr "студент"
 
 msgid "butcher"
-msgstr "мясник"
+msgstr "м’ясник"
 
 msgid "accountant"
 msgstr "бухгалтер"
@@ -1893,7 +1890,7 @@ msgid "sailor"
 msgstr "моряк"
 
 msgid "boxer"
-msgstr "боксёр"
+msgstr "боксер"
 
 msgid "ballet dancer"
 msgstr "балерина"
@@ -1908,17 +1905,17 @@ msgid "painter"
 msgstr "художник"
 
 msgid "scientist"
-msgstr "учёный"
+msgstr "учений"
 
 # fruits and vegetables
 msgid "carrot"
-msgstr "морковь"
+msgstr "морква"
 
 msgid "blackberries"
-msgstr "смородина"
+msgstr "ведмежина"
 
 msgid "celery"
-msgstr "сельдерей"
+msgstr "селера"
 
 msgid "turnip"
 msgstr "редька"
@@ -1930,13 +1927,13 @@ msgid "peach"
 msgstr "персик"
 
 msgid "melon"
-msgstr "дыня"
+msgstr "диня"
 
 msgid "grapefruit"
 msgstr "грейпфрут"
 
 msgid "broccoli"
-msgstr "брокколи"
+msgstr "броколі"
 
 msgid "grapes"
 msgstr "виноград"
@@ -1945,19 +1942,19 @@ msgid "spinach"
 msgstr "шпинат"
 
 msgid "fig"
-msgstr "инжир"
+msgstr "фіга"
 
 msgid "kernel"
-msgstr "косточка"
+msgstr "кісточка"
 
 msgid "radish"
-msgstr "редис"
+msgstr "редиска"
 
 msgid "tomato"
-msgstr "помидор"
+msgstr "помідор"
 
 msgid "kiwi"
-msgstr "киви"
+msgstr "ківі"
 
 msgid "asparagus"
 msgstr "спаржа"
@@ -1966,16 +1963,16 @@ msgid "olives"
 msgstr "оливки"
 
 msgid "cucumbers"
-msgstr "огурцы"
+msgstr "огірки"
 
 msgid "beans"
-msgstr "бобы"
+msgstr "боби"
 
 msgid "strawberry"
-msgstr "клубника"
+msgstr "полуниця"
 
 msgid "peppers"
-msgstr "перцы"
+msgstr "перці"
 
 msgid "raspberry"
 msgstr "малина"
@@ -1984,7 +1981,7 @@ msgid "apricot"
 msgstr "абрикос"
 
 msgid "potatoes"
-msgstr "картофель"
+msgstr "картопля"
 
 msgid "peas"
 msgstr "горох"
@@ -1993,13 +1990,13 @@ msgid "cabbage"
 msgstr "капуста"
 
 msgid "cherries"
-msgstr "вишни"
+msgstr "вишня"
 
 msgid "squash"
-msgstr "тыква"
+msgstr "гарбузи"
 
 msgid "blueberries"
-msgstr "ежевика"
+msgstr "ожина"
 
 msgid "pear"
 msgstr "груша"
@@ -2008,25 +2005,25 @@ msgid "orange"
 msgstr "апельсин"
 
 msgid "pumpkin"
-msgstr "тыква"
+msgstr "гарбуз"
 
 msgid "avocado"
 msgstr "авокадо"
 
 msgid "garlic"
-msgstr "чеснок"
+msgstr "часник"
 
 msgid "onion"
-msgstr "лук"
+msgstr "цибуля"
 
 msgid "apple"
-msgstr "яблоко"
+msgstr "яблуко"
 
 msgid "lime"
 msgstr "лайм"
 
 msgid "cauliflower"
-msgstr "цветная капуста"
+msgstr "цвітна капуста"
 
 msgid "mango"
 msgstr "манго"
@@ -2044,32 +2041,32 @@ msgid "artichokes"
 msgstr "артишоки"
 
 msgid "plums"
-msgstr "сливы"
+msgstr "сливи"
 
 msgid "leek"
-msgstr "лук"
+msgstr "цибуля"
 
 msgid "bananas"
-msgstr "бананы"
+msgstr "банани"
 
 msgid "papaya"
-msgstr "папайа"
+msgstr "папая"
 
 # transport
 msgid "sail"
 msgstr "яхта"
 
 msgid "taxi"
-msgstr "такси"
+msgstr "таксі"
 
 msgid "car"
-msgstr "автомобиль"
+msgstr "автомобіль"
 
 msgid "bike"
 msgstr "велосипед"
 
 msgid "raft"
-msgstr "плот"
+msgstr "пліт"
 
 msgid "pedal"
 msgstr "педаль"
@@ -2078,34 +2075,34 @@ msgid "bus"
 msgstr "автобус"
 
 msgid "handlebar"
-msgstr "руль"
+msgstr "кермо"
 
 msgid "boat"
-msgstr "лодка"
+msgstr "човен"
 
 msgid "truck"
-msgstr "пикап"
+msgstr "пікап"
 
 msgid "sleigh"
 msgstr "сани"
 
 msgid "carpet"
-msgstr "ковёр"
+msgstr "килим"
 
 msgid "motorcycle"
-msgstr "мотоцикл"
+msgstr "потоцикл"
 
 msgid "train"
-msgstr "поезд"
+msgstr "потяг"
 
 msgid "ship"
-msgstr "корабль"
+msgstr "корабель"
 
 msgid "van"
 msgstr "фургон"
 
 msgid "canoe"
-msgstr "каноэ"
+msgstr "каное"
 
 msgid "rocket"
 msgstr "ракета"
@@ -2114,7 +2111,8 @@ msgid "mast"
 msgstr "мачта"
 
 msgid "sledge"
-msgstr "санки"
+msgstr "санчата"
 
 msgid "bicycle"
 msgstr "велосипед"
+

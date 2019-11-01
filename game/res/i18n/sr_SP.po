@@ -2,107 +2,120 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:38\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
-"Language-Team: Finnish\n"
+"Language-Team: Serbian (Cyrillic)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.com\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Crowdin-Project: eduactiv8-mobile\n"
-"X-Crowdin-Language: fi\n"
+"X-Crowdin-Language: sr\n"
 "X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
-"Language: fi_FI\n"
+"Language: sr_SP\n"
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "vihreä omena"
-msgstr[1] "vihreää omenaa"
+msgstr[0] "зелена јабука"
+msgstr[1] "зелене јабуке"
+msgstr[2] "зелених јабука"
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "punainen omena"
-msgstr[1] "punaista omenaa"
+msgstr[0] "црвена јабука"
+msgstr[1] "црвене јабуке"
+msgstr[2] "црвених јабука"
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "mansikka"
-msgstr[1] "mansikkaa"
+msgstr[0] "јагода"
+msgstr[1] "јагоде"
+msgstr[2] "јагода"
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] "päärynä"
-msgstr[1] "päärynää"
+msgstr[0] "крушка"
+msgstr[1] "крушке"
+msgstr[2] "крушака"
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] "appelsiini"
-msgstr[1] "appelsiiniä"
+msgstr[0] "поморанџа"
+msgstr[1] "поморанџе"
+msgstr[2] "поморанџи"
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] "sipuli"
-msgstr[1] "sipulia"
+msgstr[0] "главица црног лука"
+msgstr[1] "главице црног лука"
+msgstr[2] "главица црног лука"
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] "tomaatti"
-msgstr[1] "tomaattia"
+msgstr[0] "парадајз"
+msgstr[1] "парадајза"
+msgstr[2] "парадајза"
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] "sitruuna"
-msgstr[1] "sitruunaa"
+msgstr[0] "лимун"
+msgstr[1] "лимуна"
+msgstr[2] "лимуна"
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] "kirsikka"
-msgstr[1] "kirsikkaa"
+msgstr[0] "трешња"
+msgstr[1] "трешње"
+msgstr[2] "трешњи"
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] "pippuri"
-msgstr[1] "pippuria"
+msgstr[0] "паприка"
+msgstr[1] "паприке"
+msgstr[2] "паприка"
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] "porkkana"
-msgstr[1] "porkkanaa"
+msgstr[0] "шаргарепа"
+msgstr[1] "шаргарепе"
+msgstr[2] "шаргарепи"
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] "banaani"
-msgstr[1] "banaania"
+msgstr[0] "банана"
+msgstr[1] "банане"
+msgstr[2] "банана"
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] "vesimeloni"
-msgstr[1] "vesimelonia"
+msgstr[0] "лубеница"
+msgstr[1] "лубенице"
+msgstr[2] "лубеница"
 
 msgid "English"
-msgstr "Englanti"
+msgstr "Енглески"
 
 msgid "Login"
-msgstr "Kirjaudu"
+msgstr "Пријави се"
 
 msgid "Default Language:"
-msgstr "Oletuskieli"
+msgstr "Основни језик:"
 
 msgid "User Management"
-msgstr "Käyttäjien hallinta"
+msgstr "Управљање корисником"
 
 msgid "Copyright & Credits"
-msgstr "Tekijänoikeustiedot"
+msgstr "Ауторска права и заслуге"
 
 msgid "Licence"
-msgstr ""
+msgstr "Дозвола"
 
 msgid "Language arts"
-msgstr "Kielipelit"
+msgstr "Језичка уметност"
 
 msgid "This username and password combination doesn't exist."
-msgstr "Käyttäjäni ja salasana eivät täsmää."
+msgstr "Ово корисничко име и лозинка не постоје."
 
 msgid "user name: "
 msgstr ""
@@ -110,98 +123,95 @@ msgstr ""
 msgid "password: "
 msgstr ""
 
-msgid "eduActiv8 Test Version"
-msgstr ""
-
 msgid "Save"
-msgstr "Tallenna"
+msgstr "Сачувај"
 
 msgid "Delete user"
-msgstr "Poista käyttäjä"
+msgstr "Обриши корисника"
 
 msgid "Preferences saved..."
-msgstr "Asetukset tallennettu..."
+msgstr "Поставке су сачуване..."
 
 msgid "Logged in as: "
-msgstr "Käyttäjä:"
+msgstr "Пријављен као: "
 
 msgid "Language"
-msgstr "Kieli"
+msgstr "Језик"
 
 msgid "Mathematics"
-msgstr "Matematiikka"
+msgstr "Математика"
 
 msgid "Games & Mazes"
-msgstr "Pelit & Labyrintit"
+msgstr "Игре и лавиринти"
 
 msgid "Word Builders"
-msgstr "Sananrakennus"
+msgstr "Градитељ речи"
 
 msgid "Animals"
-msgstr "Eläimet"
+msgstr "животиње"
 
 msgid "Complete the word"
-msgstr "Täydennä sana"
+msgstr "Доврши реч"
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr "Lukujen kirjoittaminen"
+msgstr "Изговор бројева"
 
 msgid "Shopping List"
-msgstr "Ostoslista"
+msgstr "Списак за куповину"
 
 msgid "Addition"
-msgstr "Yhteenlasku"
+msgstr "Сабирање"
 
 msgid "Find missing number"
-msgstr "Etsi puuttuva luku"
+msgstr "Нађи број који недостаје"
 
 msgid "Level"
-msgstr "Taso"
+msgstr "Ниво"
 
 msgid "Translators"
-msgstr "Kääntäjät"
+msgstr "Преводиоци"
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr "Pisteet:"
+msgstr "Резултат: "
 
 msgid "Numbers & Basic Operations"
-msgstr "Luvut & Peruslaskutoimitukset"
+msgstr "Бројеви и основне радње"
 
 msgid "Numbers"
-msgstr "Luvut"
+msgstr "Бројеви"
 
 msgid "Basic Operations"
-msgstr "Peruslaskutoimitukset"
+msgstr "Основне радње"
 
 msgid "area:"
-msgstr "pinta-ala:"
+msgstr "област:"
 
 msgid "perimeter:"
-msgstr "piiri:"
+msgstr "полупречник:"
 
 msgid "circumference:"
-msgstr "ympärysmitta:"
+msgstr "обим:"
 
 msgid "Trapezium"
-msgstr "Puolisuunnikas"
+msgstr "Трапезоид"
 
 msgid "Drag the clock hands to set the time"
-msgstr "Tartu viisareihin ja aseta aika"
+msgstr "Помери сказаљке да подесиш време"
 
 msgid "Discover Letters"
-msgstr "Tutki kirjaimia"
+msgstr "Откриј слова"
 
 msgid "Word Matchers"
 msgstr ""
 
 msgid "Shapes and Solids"
-msgstr "Muodot ja kappaleet"
+msgstr "Облици и чврста тела"
 
 msgid "Symmetry"
 msgstr ""
@@ -210,19 +220,19 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr "Kellonajat"
+msgstr "Време"
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr "Vähennyslasku"
+msgstr "Одузимање"
 
 msgid "Learn Numbers with Flashcards"
-msgstr "Opettele lukuja muistikorteilla"
+msgstr "Научи бројеве са картицама"
 
 msgid "Demonstration"
-msgstr "Havainnollistus"
+msgstr "Обучавање"
 
 msgid "Find Solution"
 msgstr ""
@@ -231,109 +241,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr "Opettele muotoja muistikorteilla"
+msgstr "Научи облике са картицама"
 
 msgid "Shape Matching"
-msgstr "Muotojen sovittaminen"
+msgstr "Поређење облика"
 
 msgid "Shape Maker"
-msgstr "Tee muotoja"
+msgstr "Цртач облика"
 
 msgid "How clock works"
-msgstr "Kuinka kello toimii?"
+msgstr "Како ради сат?"
 
 msgid "learn to set the clock"
-msgstr "Opettele asettamaan kello aikaan"
+msgstr "научи да подесиш сат"
 
 msgid "Set the clock to:"
-msgstr "Aseta kello aikaan:"
+msgstr "Постави сат на:"
 
 msgid "Time Matching"
-msgstr "Etsi kellonajat"
+msgstr "Поређење времена"
 
 msgid "Your Alphabet"
-msgstr "Suomalaiset aakkoset"
+msgstr "Српска азбука"
 
 msgid "Trace Letters and Numbers"
-msgstr "Jäljennä kirjaimia ja numeroita"
+msgstr "Испиши слова и бројеве"
 
 msgid "People"
-msgstr "Ihmiset"
+msgstr "људи"
 
 msgid "Jobs"
-msgstr "Ammatit"
+msgstr "послови"
 
 msgid "Body"
-msgstr "Keho"
+msgstr "тело"
 
 msgid "Clothes and Accessories"
-msgstr "Vaatetus"
+msgstr "одећа и помагала"
 
 msgid "Sports"
-msgstr "Urheilu"
+msgstr "спортови"
 
 msgid "Actions"
-msgstr "Toiminnat"
+msgstr "радње"
 
 msgid "Nature"
-msgstr "Luonto"
+msgstr "природа"
 
 msgid "Fruits and Vegetables"
-msgstr "Hedelmät ja vihannekset"
+msgstr "воће и поврће"
 
 msgid "Food"
-msgstr "Ruoka"
+msgstr "храна"
 
 msgid "Transport"
-msgstr "Matkustaminen"
+msgstr "превоз"
 
 msgid "Constructions"
-msgstr "Rakennukset"
+msgstr "изградња"
 
 msgid "Equilateral Triangle"
-msgstr "Tasasivuinen kolmio"
+msgstr "Једнакостранични троугао"
 
 msgid "Isosceles Triangle"
-msgstr "Tasakylkinen kolmio"
+msgstr "Једнакокраки троугао"
 
 msgid "Obtuse Triangle"
-msgstr "Tylppäkärkinen kolmio"
+msgstr "Туп троугао"
 
 msgid "Right Triangle"
-msgstr "Suorakulmainen kolmio"
+msgstr "Правоугли троугао"
 
 msgid "Acute Triangle"
-msgstr "Teräväkärkinen kolmio"
+msgstr "Неједнакостраничан троугао"
 
 msgid "Square"
-msgstr "Neliö"
+msgstr "Квадрат"
 
 msgid "Rectangle"
-msgstr "Suorakulmio"
+msgstr "Правоугаоник"
 
 msgid "Right Trapezium"
-msgstr "Suorakulmainen puolisuunnikas"
+msgstr "Правоугли трапез"
 
 msgid "Isosceles Trapezium"
-msgstr "Tasakylkinen puolisuunnikas"
+msgstr "Једнакокраки трапез"
 
 msgid "Rhombus"
-msgstr "Vinoneliö"
+msgstr "Ромб"
 
 msgid "Parallelogram"
-msgstr "Suunnikas"
+msgstr "Паралелограм"
 
 msgid "Pentagon"
-msgstr "Viisikulmio"
+msgstr "Петоугаоник"
 
 msgid "Hexagon"
-msgstr "Kuusikulmio"
+msgstr "Шестоугаоник"
 
 msgid "Circle"
-msgstr "Ympyrä"
+msgstr "Круг"
 
 msgid "Ellipse"
-msgstr "Ellipsi"
+msgstr "Елипса"
 
 msgid "Heptagon"
 msgstr ""
@@ -626,7 +636,6 @@ msgstr ""
 
 msgid "ox"
 msgstr ""
-
 
 msgid "peacock"
 msgstr ""
@@ -2093,3 +2102,4 @@ msgstr ""
 
 msgid "bicycle"
 msgstr ""
+

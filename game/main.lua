@@ -652,9 +652,9 @@ function love.update(dt)
       if mouse_on_button(1) then -- translation credits
         build_form(25)
       elseif mouse_on_button(2) then -- credits url
-        love.system.openURL("https://www.eduactiv8.org/contributors/")
-      elseif mouse_on_button(3) then -- official page url
-        love.system.openURL("https://www.eduactiv8.org")
+        love.system.openURL("https://github.com/hackranch/eduactiv8-mobile/blob/master/CREDITS.md")
+      --elseif mouse_on_button(3) then -- official page url
+      --  love.system.openURL("https://www.eduactiv8.org")
       end
     elseif current_window == 7 then --manage users
       if x > 600 then
@@ -1069,7 +1069,7 @@ function love.draw()
     end
   elseif current_window == 2 then --login form
     love.graphics.setColor(color["white"])
-    love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
+    love.graphics.draw(image_logo, 800 - (image_logo:getWidth() * 0.8) / 2, 450 - 250 + (image_logo:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
     love.graphics.draw(image_icon, 800 - (image_icon:getWidth() * 0.6) / 2, 450 - 410 + (image_icon:getHeight() * 0.6) / 2, 0, 0.6, 0.6)
     set_font("interface_bold")
     love.graphics.setColor(color["interface_text"])
@@ -1094,7 +1094,7 @@ function love.draw()
     love.graphics.setColor(color["white"])
   elseif current_window == 3 then --main menu
     love.graphics.setColor(color["white"])
-    love.graphics.draw(image_splash, 800 - (image_splash:getWidth() * 0.8) / 2, 450 - 250 + (image_splash:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
+    love.graphics.draw(image_logo, 800 - (image_logo:getWidth() * 0.8) / 2, 450 - 250 + (image_logo:getHeight() * 0.8) / 2, 0, 0.8, 0.8)
     love.graphics.draw(image_icon, 800 - (image_icon:getWidth() * 0.6) / 2, 450 - 410 + (image_icon:getHeight() * 0.6) / 2, 0, 0.6, 0.6)
     set_font("interface_bold")
     love.graphics.setColor(color["interface_text"])
@@ -1126,7 +1126,7 @@ function love.draw()
       end
     end
     love.graphics.setColor(color["white"])
-    love.graphics.draw(image_credits_url, 921, 555, 0, 0.5, 0.5)
+    love.graphics.draw(image_credits_url, 1051, 555, 0, 0.5, 0.5)
   elseif current_window == 7 then -- manage users
     draw_header(s_manage_users)
     set_font("interface_bold")

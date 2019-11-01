@@ -47,7 +47,7 @@ function set_language(language)
     s_credits[13] = "Ireneusz Imiolek"
     s_credits[14] = "KACST"
     s_credits[15] = ""
-    s_credits[16] = "Translations (click here)"
+    s_credits[16] = "Translations..."
     s_credits[17] = ""
     s_credits[18] = "Special Thanks:"
     s_credits[19] = "Thunder Valley Community Development Corporation"
@@ -64,7 +64,7 @@ function set_language(language)
       s_credits[27] = "eduActiv8: Language Arts (c) Hackranch, LLC"
     end
     s_credits[28] = "Some assets used under license and are (c) various authors."
-    s_credits[29] = "" --"See CREDITS for details. www.eduactiv8.org"
+    s_credits[29] = "" --"See CREDITS for details."
 
     s_translators_c = {}
 
@@ -329,23 +329,23 @@ end
 function init_language_files(language)
   language_filename = "en_US.po"
 
-  if language == "catalan" then language_filename = "ca.po"
-  elseif language == "german" then language_filename = "de.po"
-  elseif language == "greek" then language_filename = "el.po"
+  if language == "catalan" then language_filename = "ca_ES.po"
+  elseif language == "german" then language_filename = "de_DE.po"
+  elseif language == "greek" then language_filename = "el_GR.po"
   elseif language == "english_gb" then language_filename = "en_GB.po"
   -- english default (en_US.po)
-  elseif language == "spanish" then language_filename = "es.po"
-  elseif language == "finnish" then language_filename = "fi.po"
-  elseif language == "french" then language_filename = "fr.po"
-  elseif language == "hebrew" then language_filename = "he.po"
-  elseif language == "italian" then language_filename = "it.po"
+elseif language == "spanish" then language_filename = "es_ES.po"
+elseif language == "finnish" then language_filename = "fi_FI.po"
+elseif language == "french" then language_filename = "fr_FR.po"
+elseif language == "hebrew" then language_filename = "he_IL.po"
+elseif language == "italian" then language_filename = "it_IT.po"
   elseif language == "lakota" then language_filename = "lkt.po"
-  elseif language == "macedonian" then language_filename = "mk.po"
-  elseif language == "polish" then language_filename = "pl.po"
+  elseif language == "macedonian" then language_filename = "mk_MK.po"
+  elseif language == "polish" then language_filename = "pl_PL.po"
   elseif language == "portuguese" then language_filename = "pt_PT.po"
-  elseif language == "russian" then language_filename = "ru.po"
-  elseif language == "serbian" then language_filename = "sr.po"
-  elseif language == "ukrainian" then language_filename = "uk.po"
+  elseif language == "russian" then language_filename = "ru_RU.po"
+  elseif language == "serbian" then language_filename = "sr_SP.po"
+  elseif language == "ukrainian" then language_filename = "uk_UA.po"
   end
 
   language_file_lines = {}

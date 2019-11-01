@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:37\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Macedonian\n"
 "MIME-Version: 1.0\n"
@@ -109,9 +109,6 @@ msgstr "корисничко име: "
 
 msgid "password: "
 msgstr "лозинка: "
-
-msgid "eduActiv8 Test Version"
-msgstr "eduActiv8"
 
 msgid "Save"
 msgstr "Зачувај"
@@ -2092,3 +2089,4 @@ msgstr "санка"
 
 msgid "bicycle"
 msgstr "велосипед"
+

@@ -2,133 +2,107 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:38\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
-"Language-Team: Hebrew\n"
+"Language-Team: Cherokee\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: crowdin.com\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: eduactiv8-mobile\n"
-"X-Crowdin-Language: he\n"
+"X-Crowdin-Language: chr\n"
 "X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
-"Language: he_IL\n"
+"Language: chr_US\n"
 
 msgid "green apple"
 msgid_plural "green apples"
-msgstr[0] "תפוח ירוק"
-msgstr[1] "תפוחים ירוקים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "red apple"
 msgid_plural "red apples"
-msgstr[0] "תפוח אדום"
-msgstr[1] "תפוחים אדומים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "strawberry"
 msgid_plural "strawberries"
-msgstr[0] "תות"
-msgstr[1] "תותים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] "ᎠᏂ"
 
 msgid "pear"
 msgid_plural "pears"
-msgstr[0] "אגס"
-msgstr[1] "אגסים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "orange [fruit]"
 msgid_plural "oranges"
-msgstr[0] "תפוז"
-msgstr[1] "תפוזים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "onion"
 msgid_plural "onions"
-msgstr[0] "בצל"
-msgstr[1] "בצלים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "ᏒᎩ"
+msgstr[1] ""
 
 msgid "tomato"
 msgid_plural "tomatoes"
-msgstr[0] "עגבניה"
-msgstr[1] "עגבניות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "lemon"
 msgid_plural "lemons"
-msgstr[0] "לימון"
-msgstr[1] "לימונים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "cherry"
 msgid_plural "cherries"
-msgstr[0] "דובדבן"
-msgstr[1] "דובדבנים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "pepper"
 msgid_plural "peppers"
-msgstr[0] "פלפל"
-msgstr[1] "פלפלים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "carrot"
 msgid_plural "carrots"
-msgstr[0] "גזר"
-msgstr[1] "גזרים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "banana"
 msgid_plural "bananas"
-msgstr[0] "בננה"
-msgstr[1] "בננות"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "watermelon"
 msgid_plural "watermelons"
-msgstr[0] "מלון"
-msgstr[1] "מלונים"
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "English"
-msgstr "אנגלית"
+msgstr ""
 
 msgid "Login"
-msgstr "כניסה"
+msgstr ""
 
 msgid "Default Language:"
-msgstr "שפה ברירת מחדל"
+msgstr ""
 
 msgid "User Management"
-msgstr "ניהול משתמשים"
+msgstr ""
 
 msgid "Copyright & Credits"
-msgstr "זכויות יוצרים וקרדיטים"
+msgstr ""
 
 msgid "Licence"
-msgstr "רשיון שימוש"
+msgstr ""
 
 msgid "Language arts"
-msgstr "שפה"
+msgstr ""
 
 msgid "This username and password combination doesn't exist."
-msgstr "השילוב של שם המשתמש והסיסמה לא קיים"
+msgstr ""
 
 msgid "user name: "
 msgstr ""
@@ -136,98 +110,95 @@ msgstr ""
 msgid "password: "
 msgstr ""
 
-msgid "eduActiv8 Test Version"
+msgid "Save"
 msgstr ""
 
-msgid "Save"
-msgstr "שמירה"
-
 msgid "Delete user"
-msgstr "מחיקת משתמש"
+msgstr ""
 
 msgid "Preferences saved..."
-msgstr "ההגדרות נשמרו"
+msgstr ""
 
 msgid "Logged in as: "
-msgstr "מחובר כ"
+msgstr ""
 
 msgid "Language"
-msgstr "שפה"
+msgstr ""
 
 msgid "Mathematics"
-msgstr "מתימטיקה"
+msgstr ""
 
 msgid "Games & Mazes"
-msgstr "משחקים ומבוכים"
+msgstr ""
 
 msgid "Word Builders"
-msgstr "בונה מילה"
+msgstr ""
 
 msgid "Animals"
-msgstr "בעלי חיים"
+msgstr ""
 
 msgid "Complete the word"
-msgstr "השלימו את המילה"
+msgstr ""
 
 msgid "Positive numbers"
 msgstr ""
 
 msgid "Number Spelling"
-msgstr "איות מספר"
+msgstr ""
 
 msgid "Shopping List"
-msgstr "רשימת קניות"
+msgstr ""
 
 msgid "Addition"
-msgstr "תוספת"
+msgstr ""
 
 msgid "Find missing number"
-msgstr "מיצאו את המספר החסר"
+msgstr ""
 
 msgid "Level"
-msgstr "שלב"
+msgstr ""
 
 msgid "Translators"
-msgstr "מתרגמים"
+msgstr ""
 
 msgid "Funding: "
 msgstr ""
 
 msgid "Score: "
-msgstr "ניקוד "
+msgstr ""
 
 msgid "Numbers & Basic Operations"
-msgstr "מספרים ופעולות בסיסיות"
+msgstr ""
 
 msgid "Numbers"
-msgstr "מספרים"
+msgstr ""
 
 msgid "Basic Operations"
-msgstr "פעולות בסיסיות"
+msgstr ""
 
 msgid "area:"
-msgstr "שטח"
+msgstr ""
 
 msgid "perimeter:"
-msgstr "היקף"
+msgstr ""
 
 msgid "circumference:"
-msgstr "היקף"
+msgstr ""
 
 msgid "Trapezium"
-msgstr "טרפז"
+msgstr ""
 
 msgid "Drag the clock hands to set the time"
-msgstr "גרור את מחוגי שעון כדי להגדיר את הזמן"
+msgstr ""
 
 msgid "Discover Letters"
-msgstr "גלו אותיות"
+msgstr ""
 
 msgid "Word Matchers"
-msgstr "התאמת תמונות למילים"
+msgstr ""
 
 msgid "Shapes and Solids"
-msgstr "צורות"
+msgstr ""
 
 msgid "Symmetry"
 msgstr ""
@@ -236,19 +207,19 @@ msgid "Patterns"
 msgstr ""
 
 msgid "Time"
-msgstr "זמן"
+msgstr ""
 
 msgid "Basics"
 msgstr ""
 
 msgid "Subtraction"
-msgstr "חסור"
+msgstr ""
 
 msgid "Learn Numbers with Flashcards"
-msgstr "לימדו מספרים עם כרטיסיות"
+msgstr ""
 
 msgid "Demonstration"
-msgstr "תצוגת תכלית"
+msgstr ""
 
 msgid "Find Solution"
 msgstr ""
@@ -257,109 +228,109 @@ msgid "Image Patterns"
 msgstr ""
 
 msgid "Learn Shapes with Flashcards"
-msgstr "למד צורות עם כרטיסיות"
+msgstr ""
 
 msgid "Shape Matching"
-msgstr "צורת התאמה"
+msgstr ""
 
 msgid "Shape Maker"
-msgstr "להכנת צורה"
+msgstr ""
 
 msgid "How clock works"
-msgstr "איך שעון עובד"
+msgstr ""
 
 msgid "learn to set the clock"
-msgstr "ללמוד לכוון את השעון"
+msgstr ""
 
 msgid "Set the clock to:"
-msgstr "הגדר את השעון כדי"
+msgstr ""
 
 msgid "Time Matching"
-msgstr "התאמת זמן"
+msgstr ""
 
 msgid "Your Alphabet"
-msgstr "אלפבית עברי"
+msgstr ""
 
 msgid "Trace Letters and Numbers"
-msgstr "כתיבת אותיות ומספרים"
+msgstr ""
 
 msgid "People"
-msgstr "אנשים"
+msgstr ""
 
 msgid "Jobs"
-msgstr "משרות"
+msgstr ""
 
 msgid "Body"
-msgstr "גוף"
+msgstr ""
 
 msgid "Clothes and Accessories"
-msgstr "בגדים ואבזרים"
+msgstr ""
 
 msgid "Sports"
-msgstr "ספורט"
+msgstr ""
 
 msgid "Actions"
-msgstr "פעולות"
+msgstr ""
 
 msgid "Nature"
-msgstr "טבע"
+msgstr ""
 
 msgid "Fruits and Vegetables"
-msgstr "פירות וירקות"
+msgstr ""
 
 msgid "Food"
-msgstr "מזון"
+msgstr ""
 
 msgid "Transport"
-msgstr "תחבורה"
+msgstr ""
 
 msgid "Constructions"
-msgstr "קונסטרוקציות"
+msgstr ""
 
 msgid "Equilateral Triangle"
-msgstr "משולש שווה צלעות"
+msgstr ""
 
 msgid "Isosceles Triangle"
-msgstr "משולש שווה שוקיים"
+msgstr ""
 
 msgid "Obtuse Triangle"
-msgstr "משולש קהה"
+msgstr ""
 
 msgid "Right Triangle"
-msgstr "משולש ישר-זווית"
+msgstr ""
 
 msgid "Acute Triangle"
-msgstr "משולש אקוטי"
+msgstr ""
 
 msgid "Square"
-msgstr "ריבוע"
+msgstr ""
 
 msgid "Rectangle"
-msgstr "מלבן"
+msgstr ""
 
 msgid "Right Trapezium"
-msgstr "טרפז ישר-זווית"
+msgstr ""
 
 msgid "Isosceles Trapezium"
-msgstr "טרפז שווה שוקיים"
+msgstr ""
 
 msgid "Rhombus"
-msgstr "מעוין"
+msgstr ""
 
 msgid "Parallelogram"
-msgstr "מקבילית"
+msgstr ""
 
 msgid "Pentagon"
-msgstr "פנטגון"
+msgstr ""
 
 msgid "Hexagon"
-msgstr "משושה"
+msgstr ""
 
 msgid "Circle"
-msgstr "עיגול"
+msgstr ""
 
 msgid "Ellipse"
-msgstr "אליפסה"
+msgstr ""
 
 msgid "Heptagon"
 msgstr ""
@@ -458,7 +429,6 @@ msgstr ""
 msgid "fox"
 msgstr ""
 
-
 msgid "leopard"
 msgstr ""
 
@@ -499,7 +469,7 @@ msgid "moose"
 msgstr ""
 
 msgid "bee"
-msgstr ""
+msgstr "ᏩᏚᎵᏏ"
 
 msgid "viper"
 msgstr ""
@@ -526,7 +496,7 @@ msgid "otter"
 msgstr ""
 
 msgid "bear"
-msgstr ""
+msgstr "ᏲᎾ"
 
 msgid "zebra"
 msgstr ""
@@ -1130,7 +1100,7 @@ msgid "fries"
 msgstr ""
 
 msgid "cake"
-msgstr ""
+msgstr "ᎦᏚ ᎤᎦᎾᏍᏔ"
 
 msgid "mashed potatoes"
 msgstr ""
@@ -1145,7 +1115,7 @@ msgid "cheese"
 msgstr ""
 
 msgid "beef"
-msgstr ""
+msgstr "ᏩᎧ ᎭᏫᏯ"
 
 msgid "sandwich"
 msgstr ""
@@ -1172,7 +1142,7 @@ msgid "roast"
 msgstr ""
 
 msgid "drink[n]"
-msgstr "drink"
+msgstr ""
 
 msgid "stew"
 msgstr ""
@@ -1193,7 +1163,7 @@ msgid "corn"
 msgstr ""
 
 msgid "bread"
-msgstr ""
+msgstr "ᎦᏚ"
 
 msgid "walnut"
 msgstr ""
@@ -1546,7 +1516,7 @@ msgid "drive"
 msgstr ""
 
 msgid "drink[v]"
-msgstr "drink"
+msgstr ""
 
 msgid "fly"
 msgstr ""
@@ -1688,7 +1658,7 @@ msgid "wall"
 msgstr ""
 
 msgid "bank"
-msgstr ""
+msgstr "ᎠᏕᎳ ᏧᏂᏍᏆᏂᎪᏙᏗ ᎠᏓᏁᎸ"
 
 msgid "shutter"
 msgstr ""
@@ -1903,7 +1873,7 @@ msgid "coach"
 msgstr ""
 
 msgid "astronaut"
-msgstr ""
+msgstr "ᎦᎸᎶ ᏪᏙᎯ"
 
 msgid "painter"
 msgstr ""
@@ -2021,7 +1991,7 @@ msgid "onion"
 msgstr ""
 
 msgid "apple"
-msgstr ""
+msgstr "ᏒᎧᏔ"
 
 msgid "lime"
 msgstr ""
@@ -2076,7 +2046,7 @@ msgid "pedal"
 msgstr ""
 
 msgid "bus"
-msgstr ""
+msgstr "ᎬᎾᎯᏓ ᏓᏆᎴᎳ"
 
 msgid "handlebar"
 msgstr ""
@@ -2118,4 +2088,5 @@ msgid "sledge"
 msgstr ""
 
 msgid "bicycle"
-msgstr ""
+msgstr "ᏔᎵ ᏗᎦᏆᏗ"
+
