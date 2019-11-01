@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-10-30 16:17\n"
+"PO-Revision-Date: 2019-11-01 16:05\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Spanish\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: eduactiv8-mobile\n"
 "X-Crowdin-Language: es-ES\n"
-"X-Crowdin-File: /master/game/res/i18n/eduActiv8_mobile.pot\n"
+"X-Crowdin-File: /0.0.1-2.0/game/res/i18n/eduActiv8_mobile.pot\n"
 "Language: es_ES\n"
 
 msgid "green apple"
@@ -478,7 +478,7 @@ msgid "viper"
 msgstr "víbora"
 
 msgid "shrike"
-msgstr ""
+msgstr "alcaudón"
 
 msgid "donkey"
 msgstr "burro"
@@ -520,7 +520,7 @@ msgid "pigeon"
 msgstr "paloma"
 
 msgid "llama"
-msgstr ""
+msgstr "llama"
 
 msgid "mole"
 msgstr "topo"
@@ -625,7 +625,7 @@ msgid "hyena"
 msgstr "hiena"
 
 msgid "ox"
-msgstr ""
+msgstr "buey"
 
 msgid "peacock"
 msgstr "pavo real"
@@ -1106,7 +1106,7 @@ msgid "cake"
 msgstr "pastel"
 
 msgid "mashed potatoes"
-msgstr ""
+msgstr "puré de papa"
 
 msgid "tea"
 msgstr "té"
@@ -1429,10 +1429,10 @@ msgid "write"
 msgstr "escribir"
 
 msgid "punch"
-msgstr ""
+msgstr "golpe"
 
 msgid "strum"
-msgstr ""
+msgstr "rasguear"
 
 msgid "study"
 msgstr "estudiar"
@@ -1571,7 +1571,7 @@ msgid "church"
 msgstr "iglesia"
 
 msgid "kennel"
-msgstr ""
+msgstr "perrera"
 
 msgid "temple"
 msgstr "templo"
@@ -1828,7 +1828,7 @@ msgid "president"
 msgstr "presidente"
 
 msgid "office worker"
-msgstr ""
+msgstr "trabajador de oficina"
 
 msgid "carpenter"
 msgstr "carpintero"
@@ -2092,3 +2092,4 @@ msgstr "trineo"
 
 msgid "bicycle"
 msgstr "bicicleta"
+
