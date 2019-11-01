@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eduactiv8-mobile\n"
 "POT-Creation-Date: 2019-10-15 00:00+0000\n"
-"PO-Revision-Date: 2019-11-01 16:06\n"
+"PO-Revision-Date: 2019-11-01 16:29\n"
 "Last-Translator: Derek Lackaff (lackaff)\n"
 "Language-Team: Lakota\n"
 "MIME-Version: 1.0\n"
@@ -109,9 +109,6 @@ msgstr "čhažé: "
 
 msgid "password: "
 msgstr "wičhóiye-wóanaȟma: "
-
-msgid "eduActiv8 Test Version"
-msgstr ""
 
 msgid "Save"
 msgstr "Patáŋ yo/ye"
