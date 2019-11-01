@@ -749,7 +749,7 @@ function love.update(dt)
               selected_a = word_set[group_name][game_table[selected_y][selected_x].content]
             end
           else
-            selected_a = game_table[selected_y][selected_x].content
+            selected_a = string.gsub(game_table[selected_y][selected_x].content, "\n", " ")
           end
           selected_ax = selected_x
           selected_ay = selected_y
@@ -763,7 +763,7 @@ function love.update(dt)
               selected_b = word_set[group_name][game_table[selected_y][selected_x].content]
             end
           else
-            selected_b = game_table[selected_y][selected_x].content
+            selected_b = string.gsub(game_table[selected_y][selected_x].content, "\n", " ")
           end
           selected_bx = selected_x
           selected_by = selected_y

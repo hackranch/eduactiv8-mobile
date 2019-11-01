@@ -289,7 +289,7 @@ function build_form(index)
                   if (not (xx == x and yy == y)) and game_table[yy][xx] ~= nil and
                     (game_table[y][x].content == game_table[yy][xx].content or
                     --translate_i18n(english_word_set[group_name][game_table[y][x].content]) == "" or
-                    translate_i18n(english_word_set[group_name][game_table[y][x].content]) == "") then
+                    (index ~= 13 and translate_i18n(english_word_set[group_name][game_table[y][x].content]) == "")) then
                     flag = false
                   end
                 end
