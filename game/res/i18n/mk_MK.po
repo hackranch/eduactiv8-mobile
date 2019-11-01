@@ -1,0 +1,2092 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eduactiv8-mobile\n"
+"POT-Creation-Date: 2019-10-15 00:00+0000\n"
+"PO-Revision-Date: 2019-11-01 16:28\n"
+"Last-Translator: Derek Lackaff (lackaff)\n"
+"Language-Team: Macedonian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.com\n"
+"Plural-Forms: nplurals=2; plural=(n%10==1 && n%100 != 11 ? 0 : 1);\n"
+"X-Crowdin-Project: eduactiv8-mobile\n"
+"X-Crowdin-Language: mk\n"
+"X-Crowdin-File: /0.0.1-2.0/game/res/i18n/eduActiv8_mobile.pot\n"
+"Language: mk_MK\n"
+
+msgid "green apple"
+msgid_plural "green apples"
+msgstr[0] "зелено јаболко"
+msgstr[1] "зелени јаболки"
+
+msgid "red apple"
+msgid_plural "red apples"
+msgstr[0] "црвено јаболко"
+msgstr[1] "црвени јаболки"
+
+msgid "strawberry"
+msgid_plural "strawberries"
+msgstr[0] "јагода"
+msgstr[1] "јагоди"
+
+msgid "pear"
+msgid_plural "pears"
+msgstr[0] "круша"
+msgstr[1] "круши"
+
+msgid "orange [fruit]"
+msgid_plural "oranges"
+msgstr[0] "портокал"
+msgstr[1] "портокали"
+
+msgid "onion"
+msgid_plural "onions"
+msgstr[0] "кромид"
+msgstr[1] "главици кромид"
+
+msgid "tomato"
+msgid_plural "tomatoes"
+msgstr[0] "домат"
+msgstr[1] "домати"
+
+msgid "lemon"
+msgid_plural "lemons"
+msgstr[0] "лимон"
+msgstr[1] "лимони"
+
+msgid "cherry"
+msgid_plural "cherries"
+msgstr[0] "цреша"
+msgstr[1] "цреши"
+
+msgid "pepper"
+msgid_plural "peppers"
+msgstr[0] "пиперка"
+msgstr[1] "пиперки"
+
+msgid "carrot"
+msgid_plural "carrots"
+msgstr[0] "морков"
+msgstr[1] "моркови"
+
+msgid "banana"
+msgid_plural "bananas"
+msgstr[0] "банана"
+msgstr[1] "банани"
+
+msgid "watermelon"
+msgid_plural "watermelons"
+msgstr[0] "лубеница"
+msgstr[1] "лубеници"
+
+msgid "English"
+msgstr "Англиски"
+
+msgid "Login"
+msgstr "Најави се"
+
+msgid "Default Language:"
+msgstr "Одберете јазик"
+
+msgid "User Management"
+msgstr "Податоци за корисниците"
+
+msgid "Copyright & Credits"
+msgstr "Авторски права и заслуги"
+
+msgid "Licence"
+msgstr "Дозвола"
+
+msgid "Language arts"
+msgstr "Јазични вештини"
+
+msgid "This username and password combination doesn't exist."
+msgstr "Внесеното корисничкото име и лозинката не се во ред."
+
+msgid "user name: "
+msgstr "корисничко име: "
+
+msgid "password: "
+msgstr "лозинка: "
+
+msgid "Save"
+msgstr "Зачувај"
+
+msgid "Delete user"
+msgstr "Избриши го корисникот"
+
+msgid "Preferences saved..."
+msgstr "Промените се зачувани."
+
+msgid "Logged in as: "
+msgstr "Најавени сте како: "
+
+msgid "Language"
+msgstr "Јазик"
+
+msgid "Mathematics"
+msgstr "Математика"
+
+msgid "Games & Mazes"
+msgstr "Игри и лавиринти"
+
+msgid "Word Builders"
+msgstr "Составување на зборови"
+
+msgid "Animals"
+msgstr "Животни"
+
+msgid "Complete the word"
+msgstr "Завршете го зборот"
+
+msgid "Positive numbers"
+msgstr "Позитивни броеви"
+
+msgid "Number Spelling"
+msgstr "Правопис на броеви"
+
+msgid "Shopping List"
+msgstr "Список за купување"
+
+msgid "Addition"
+msgstr "Собирање"
+
+msgid "Find missing number"
+msgstr "Пронајдете го бројот што недостасува"
+
+msgid "Level"
+msgstr "Ниво"
+
+msgid "Translators"
+msgstr "Преведувачи"
+
+msgid "Funding: "
+msgstr "Финансирање:"
+
+msgid "Score: "
+msgstr "Поени: "
+
+msgid "Numbers & Basic Operations"
+msgstr "Броеви и основни операции"
+
+msgid "Numbers"
+msgstr "Броеви"
+
+msgid "Basic Operations"
+msgstr "Основни операции"
+
+msgid "area:"
+msgstr "плоштина:"
+
+msgid "perimeter:"
+msgstr "обиколка:"
+
+msgid "circumference:"
+msgstr "обиколка:"
+
+msgid "Trapezium"
+msgstr "Трапез"
+
+msgid "Drag the clock hands to set the time"
+msgstr "Повлечете ги стрелките на часовникот за да го поставите времето"
+
+msgid "Discover Letters"
+msgstr "Учење на букви"
+
+msgid "Word Matchers"
+msgstr "Совпаѓање на зборови и слики"
+
+msgid "Shapes and Solids"
+msgstr "Форми и геометриски тела"
+
+msgid "Symmetry"
+msgstr "Симетрија"
+
+msgid "Patterns"
+msgstr "Шеми"
+
+msgid "Time"
+msgstr "Време"
+
+msgid "Basics"
+msgstr "Основи"
+
+msgid "Subtraction"
+msgstr "Одземање"
+
+msgid "Learn Numbers with Flashcards"
+msgstr "Учење на броеви со слики"
+
+msgid "Demonstration"
+msgstr "Пример"
+
+msgid "Find Solution"
+msgstr "Најдете решение"
+
+msgid "Image Patterns"
+msgstr "Шеми од слики"
+
+msgid "Learn Shapes with Flashcards"
+msgstr "Учење на форми со слики"
+
+msgid "Shape Matching"
+msgstr "Совпаѓање на форми со слики"
+
+msgid "Shape Maker"
+msgstr "Цртање на форми"
+
+msgid "How clock works"
+msgstr "Како работи часовникот?"
+
+msgid "learn to set the clock"
+msgstr "научи да го поставиш часовникот"
+
+msgid "Set the clock to:"
+msgstr "Постави го часовникот на:"
+
+msgid "Time Matching"
+msgstr "Споредување на часовници"
+
+msgid "Your Alphabet"
+msgstr "Македонска азбука"
+
+msgid "Trace Letters and Numbers"
+msgstr "Цртање на букви и броеви"
+
+msgid "People"
+msgstr "Луѓе"
+
+msgid "Jobs"
+msgstr "Работни места"
+
+msgid "Body"
+msgstr "Делови на телото"
+
+msgid "Clothes and Accessories"
+msgstr "Облека и додатоци"
+
+msgid "Sports"
+msgstr "Физички активности"
+
+msgid "Actions"
+msgstr "Дејства"
+
+msgid "Nature"
+msgstr "Природа"
+
+msgid "Fruits and Vegetables"
+msgstr "Овошје и зеленчук"
+
+msgid "Food"
+msgstr "Храна"
+
+msgid "Transport"
+msgstr "Превоз"
+
+msgid "Constructions"
+msgstr "Градежништво"
+
+msgid "Equilateral Triangle"
+msgstr "Рамностран триаголник"
+
+msgid "Isosceles Triangle"
+msgstr "Рамнокрак триаголник"
+
+msgid "Obtuse Triangle"
+msgstr "Тапоаголен триаголник"
+
+msgid "Right Triangle"
+msgstr "Правоаголен триаголник"
+
+msgid "Acute Triangle"
+msgstr "Разностран триаголник"
+
+msgid "Square"
+msgstr "Квадрат"
+
+msgid "Rectangle"
+msgstr "Правоаголник"
+
+msgid "Right Trapezium"
+msgstr "Правоаголен трапез"
+
+msgid "Isosceles Trapezium"
+msgstr "Рамностран трапез"
+
+msgid "Rhombus"
+msgstr "Ромб"
+
+msgid "Parallelogram"
+msgstr "Паралелограм"
+
+msgid "Pentagon"
+msgstr "Петоаголник"
+
+msgid "Hexagon"
+msgstr "Шестоаголник"
+
+msgid "Circle"
+msgstr "Круг"
+
+msgid "Ellipse"
+msgstr "Елипса"
+
+msgid "Heptagon"
+msgstr "Седмоаголник"
+
+msgid "Octagon"
+msgstr "Осмоаголник"
+
+msgid "trapezium"
+msgstr "трапез"
+
+# animals
+msgid "cow"
+msgstr "крава"
+
+msgid "turkey"
+msgstr "мисирка"
+
+msgid "shrimp"
+msgstr "рак"
+
+msgid "wolf"
+msgstr "волк"
+
+msgid "panther"
+msgstr "пантер"
+
+msgid "panda"
+msgstr "панда"
+
+msgid "magpie"
+msgstr "страчка"
+
+msgid "clam"
+msgstr "школка"
+
+msgid "pony"
+msgstr "пони"
+
+msgid "mouse"
+msgstr "глушец"
+
+msgid "pug"
+msgstr "куче"
+
+msgid "koala"
+msgstr "коала"
+
+msgid "frog"
+msgstr "жаба"
+
+msgid "ladybug"
+msgstr "бубамара"
+
+msgid "gorilla"
+msgstr "горила"
+
+msgid "llama"
+msgstr "лама"
+
+msgid "vulture"
+msgstr "мршојадец"
+
+msgid "hamster"
+msgstr "хрчак"
+
+msgid "bird"
+msgstr "птица"
+
+msgid "starfish"
+msgstr "морска ѕвезда"
+
+msgid "crow"
+msgstr "врана"
+
+msgid "parakeet"
+msgstr "папагал"
+
+msgid "caterpillar"
+msgstr "гасеница"
+
+msgid "tiger"
+msgstr "тигар"
+
+msgid "hummingbird"
+msgstr "колибри"
+
+msgid "piranha"
+msgstr "пирана"
+
+msgid "pig"
+msgstr "свиња"
+
+msgid "scorpion"
+msgstr "скорпија"
+
+msgid "fox"
+msgstr "лисица"
+
+msgid "leopard"
+msgstr "леопард"
+
+msgid "iguana"
+msgstr "игуана"
+
+msgid "dolphin"
+msgstr "делфин"
+
+msgid "bat"
+msgstr "лилјак"
+
+msgid "chick"
+msgstr "пиле"
+
+msgid "crab"
+msgstr "рак"
+
+msgid "hen"
+msgstr "кокошка"
+
+msgid "wasp"
+msgstr "оса"
+
+msgid "chameleon"
+msgstr "камелеон"
+
+msgid "whale"
+msgstr "кит"
+
+msgid "hedgehog"
+msgstr "еж"
+
+msgid "fawn"
+msgstr "срна"
+
+msgid "moose"
+msgstr "лос"
+
+msgid "bee"
+msgstr "пчела"
+
+msgid "viper"
+msgstr "змија"
+
+msgid "shrike"
+msgstr "птица"
+
+msgid "donkey"
+msgstr "магаре"
+
+msgid "guinea pig"
+msgstr "морско прасе"
+
+msgid "sloth"
+msgstr "мрзливец"
+
+msgid "horse"
+msgstr "коњ"
+
+msgid "penguin"
+msgstr "пингвин"
+
+msgid "otter"
+msgstr "видра"
+
+msgid "bear"
+msgstr "мечка"
+
+msgid "zebra"
+msgstr "зебра"
+
+msgid "ostrich"
+msgstr "ној"
+
+msgid "camel"
+msgstr "камила"
+
+msgid "antelope"
+msgstr "антилопа"
+
+msgid "lemur"
+msgstr "лемур"
+
+msgid "pigeon"
+msgstr "гулаб"
+
+msgid "llama"
+msgstr "лама"
+
+msgid "mole"
+msgstr "крт"
+
+msgid "ray"
+msgstr "манта"
+
+msgid "ram"
+msgstr "овен"
+
+msgid "skunk"
+msgstr "смрдливец"
+
+msgid "jellyfish"
+msgstr "медуза"
+
+msgid "sheep"
+msgstr "овци"
+
+msgid "shark"
+msgstr "ајкула"
+
+msgid "kitten"
+msgstr "маче"
+
+msgid "deer"
+msgstr "елен"
+
+msgid "snail"
+msgstr "полжав"
+
+msgid "flamingo"
+msgstr "фламинго"
+
+msgid "rabbit"
+msgstr "зајак"
+
+msgid "oyster"
+msgstr "школка"
+
+msgid "beaver"
+msgstr "дабар"
+
+msgid "sparrow"
+msgstr "врапче"
+
+msgid "dove"
+msgstr "гулаб"
+
+msgid "eagle"
+msgstr "орел"
+
+msgid "beetle"
+msgstr "бумбар"
+
+msgid "hippopotamus"
+msgstr "нилски коњ"
+
+msgid "owl"
+msgstr "був"
+
+msgid "cobra"
+msgstr "змија"
+
+msgid "salamander"
+msgstr "гуштер"
+
+msgid "goose"
+msgstr "гуска"
+
+msgid "kangaroo"
+msgstr "кенгур"
+
+msgid "dragonfly"
+msgstr "мушичка"
+
+msgid "toad"
+msgstr "жаба"
+
+msgid "pelican"
+msgstr "пеликан"
+
+msgid "squid"
+msgstr "лигња"
+
+msgid "lion cub"
+msgstr "лавче"
+
+msgid "jaguar"
+msgstr "јагуар"
+
+msgid "duck"
+msgstr "патка"
+
+msgid "lizard"
+msgstr "гуштер"
+
+msgid "rhinoceros"
+msgstr "носорог"
+
+msgid "hyena"
+msgstr "хиена"
+
+msgid "ox"
+msgstr "вол"
+
+msgid "peacock"
+msgstr "паун"
+
+msgid "parrot"
+msgstr "папагал"
+
+msgid "elk"
+msgstr "елен"
+
+msgid "alligator"
+msgstr "алигатор"
+
+msgid "ant"
+msgstr "мравка"
+
+msgid "goat"
+msgstr "коза"
+
+msgid "baby rabbit"
+msgstr "зајаче"
+
+msgid "lion"
+msgstr "лав"
+
+msgid "squirrel"
+msgstr "верверица"
+
+msgid "opossum"
+msgstr "опосум"
+
+msgid "chimp"
+msgstr "шимпанзо"
+
+msgid "doe"
+msgstr "срна"
+
+msgid "gopher"
+msgstr "гофер"
+
+msgid "elephant"
+msgstr "слон"
+
+msgid "giraffe"
+msgstr "жирафа"
+
+msgid "spider"
+msgstr "пајак"
+
+msgid "puppy"
+msgstr "кученце"
+
+msgid "jay"
+msgstr "птица"
+
+msgid "seal"
+msgstr "фока"
+
+msgid "rooster"
+msgstr "петел"
+
+msgid "turtle"
+msgstr "желка"
+
+msgid "bull"
+msgstr "бик"
+
+msgid "cat"
+msgstr "мачка"
+
+msgid "rat"
+msgstr "стаорец"
+
+msgid "slug"
+msgstr "гол полжав"
+
+msgid "buffalo"
+msgstr "бивол"
+
+msgid "blackbird"
+msgstr "птица"
+
+msgid "swan"
+msgstr "лебед"
+
+msgid "lobster"
+msgstr "јастог"
+
+msgid "dog"
+msgstr "куче"
+
+msgid "mosquito"
+msgstr "комарец"
+
+msgid "snake"
+msgstr "змија"
+
+msgid "chicken"
+msgstr "пиле"
+
+msgid "anteater"
+msgstr "мравојад"
+
+# sport
+msgid "judo"
+msgstr "џудо"
+
+msgid "pool"
+msgstr "базен"
+
+msgid "ride"
+msgstr "возење"
+
+msgid "stretch"
+msgstr "растегање"
+
+msgid "helmet"
+msgstr "шлем"
+
+msgid "ice skating"
+msgstr "лизгање на мраз"
+
+msgid "walk"
+msgstr "одење"
+
+msgid "run"
+msgstr "трчање"
+
+msgid "swim"
+msgstr "пливање"
+
+msgid "hop"
+msgstr "скокање"
+
+msgid "hike"
+msgstr "планинарење"
+
+msgid "boxing"
+msgstr "бокс"
+
+msgid "hockey"
+msgstr "хокеј"
+
+msgid "race"
+msgstr "трка"
+
+msgid "throw"
+msgstr "фрлање"
+
+msgid "skate"
+msgstr "лизгач"
+
+msgid "win"
+msgstr "победа"
+
+msgid "squat"
+msgstr "клекнување"
+
+msgid "ski"
+msgstr "скијање"
+
+msgid "golf"
+msgstr "голф"
+
+msgid "whistle"
+msgstr "свирче"
+
+msgid "torch"
+msgstr "факел"
+
+msgid "sailing"
+msgstr "едрење"
+
+msgid "stand"
+msgstr "стоење"
+
+msgid "tennis"
+msgstr "тенис"
+
+msgid "jump"
+msgstr "скокање"
+
+msgid "rowing"
+msgstr "веслање"
+
+msgid "jog"
+msgstr "трчање"
+
+msgid "rope"
+msgstr "јаже"
+
+# body
+msgid "teeth"
+msgstr "заби"
+
+msgid "cheek"
+msgstr "образ"
+
+msgid "ankle"
+msgstr "глужд"
+
+msgid "knee"
+msgstr "колено"
+
+msgid "toe"
+msgstr "пета"
+
+msgid "muscle"
+msgstr "мускул"
+
+msgid "mouth"
+msgstr "уста"
+
+msgid "feet"
+msgstr "стапало"
+
+msgid "hand"
+msgstr "рака"
+
+msgid "elbow"
+msgstr "лакт"
+
+msgid "hair"
+msgstr "коса"
+
+msgid "eyelash"
+msgstr "трепки"
+
+msgid "beard"
+msgstr "брада"
+
+msgid "belly button"
+msgstr "папок"
+
+msgid "thumb"
+msgstr "палец"
+
+msgid "breast"
+msgstr "гради"
+
+msgid "nostril"
+msgstr "ноздра"
+
+msgid "nose"
+msgstr "нос"
+
+msgid "hip"
+msgstr "колк"
+
+msgid "arm"
+msgstr "рака"
+
+msgid "eyebrow"
+msgstr "веѓа"
+
+msgid "fist"
+msgstr "тупаница"
+
+msgid "neck"
+msgstr "врат"
+
+msgid "wrist"
+msgstr "зглоб"
+
+msgid "throat"
+msgstr "грло"
+
+msgid "eye"
+msgstr "око"
+
+msgid "leg"
+msgstr "нога"
+
+msgid "spine"
+msgstr "'рбет"
+
+msgid "ear"
+msgstr "уво"
+
+msgid "finger"
+msgstr "прст"
+
+msgid "foot"
+msgstr "стапало"
+
+msgid "braid"
+msgstr "плетенка"
+
+msgid "face"
+msgstr "лице"
+
+msgid "back"
+msgstr "грб"
+
+msgid "chin"
+msgstr "брада"
+
+msgid "bottom"
+msgstr "задник"
+
+msgid "thigh"
+msgstr "бедро"
+
+msgid "belly"
+msgstr "стомак"
+
+# people
+msgid "girl"
+msgstr "девојче"
+
+msgid "male"
+msgstr "машко"
+
+msgid "son"
+msgstr "син"
+
+msgid "friends"
+msgstr "пријатели"
+
+msgid "baby"
+msgstr "бебе"
+
+msgid "child"
+msgstr "дете"
+
+msgid "dad"
+msgstr "татко"
+
+msgid "mom"
+msgstr "мајка"
+
+msgid "twin boys"
+msgstr "близнаци"
+
+msgid "brothers"
+msgstr "браќа"
+
+msgid "man"
+msgstr "маж"
+
+msgid "mother"
+msgstr "мајка"
+
+msgid "grandfather"
+msgstr "дедо"
+
+msgid "family"
+msgstr "семејство"
+
+msgid "female"
+msgstr "женско"
+
+msgid "wife"
+msgstr "сопруга"
+
+msgid "husband"
+msgstr "сопруг"
+
+msgid "bride"
+msgstr "невеста"
+
+msgid "grandmother"
+msgstr "баба"
+
+msgid "couple"
+msgstr "пар"
+
+msgid "twin girls"
+msgstr "близначки"
+
+msgid "boy"
+msgstr "момче"
+
+msgid "sisters"
+msgstr "сестри"
+
+msgid "woman"
+msgstr "жена"
+
+msgid "lady"
+msgstr "жена"
+
+# food
+msgid "candy"
+msgstr "бонбона"
+
+msgid "sausage"
+msgstr "колбас"
+
+msgid "hamburger"
+msgstr "хамбургер"
+
+msgid "steak"
+msgstr "бифтек"
+
+msgid "fudge"
+msgstr "чоколаден колач"
+
+msgid "doughnut"
+msgstr "крофна"
+
+msgid "coconut"
+msgstr "кокос"
+
+msgid "rice"
+msgstr "ориз"
+
+msgid "ice cream"
+msgstr "сладолед"
+
+msgid "jelly"
+msgstr "желе"
+
+msgid "yoghurt"
+msgstr "јогурт"
+
+msgid "dessert"
+msgstr "десерт"
+
+msgid "pretzel"
+msgstr "перек"
+
+msgid "peanut"
+msgstr "кикирики"
+
+msgid "jam"
+msgstr "слатко"
+
+msgid "feast"
+msgstr "голем оброк"
+
+msgid "cookie"
+msgstr "колач"
+
+msgid "bacon"
+msgstr "сланина"
+
+msgid "spice"
+msgstr "зачин"
+
+msgid "coffee"
+msgstr "кафе"
+
+msgid "pie"
+msgstr "пита"
+
+msgid "lemonade"
+msgstr "лимонада"
+
+msgid "chocolate"
+msgstr "чоколадо"
+
+msgid "water bottle"
+msgstr "шише со вода"
+
+msgid "lunch"
+msgstr "ручек"
+
+msgid "ice"
+msgstr "мраз"
+
+msgid "sugar"
+msgstr "шеќер"
+
+msgid "sauce"
+msgstr "сос"
+
+msgid "soup"
+msgstr "супа"
+
+msgid "juice"
+msgstr "сок"
+
+msgid "fries"
+msgstr "пржени компирчиња"
+
+msgid "cake"
+msgstr "торта"
+
+msgid "mashed potatoes"
+msgstr "пире"
+
+msgid "tea"
+msgstr "чај"
+
+msgid "bun"
+msgstr "лебна погача"
+
+msgid "cheese"
+msgstr "сирење"
+
+msgid "beef"
+msgstr "говедско месо"
+
+msgid "sandwich"
+msgstr "сендвич"
+
+msgid "slice"
+msgstr "парче"
+
+msgid "sprinkle"
+msgstr "украсни трошки"
+
+msgid "pizza"
+msgstr "пица"
+
+msgid "flour"
+msgstr "брашно"
+
+msgid "gum"
+msgstr "гума за џвакање"
+
+msgid "spaghetti"
+msgstr "шпагети"
+
+msgid "roast"
+msgstr "печено месо"
+
+msgid "drink[n]"
+msgstr "пијалок"
+
+msgid "stew"
+msgstr "манџа"
+
+msgid "spread"
+msgstr "намачкано на леб"
+
+msgid "meat"
+msgstr "месо"
+
+msgid "milk"
+msgstr "млеко"
+
+msgid "meal"
+msgstr "оброк"
+
+msgid "corn"
+msgstr "пченка"
+
+msgid "bread"
+msgstr "леб"
+
+msgid "walnut"
+msgstr "орев"
+
+msgid "egg"
+msgstr "јајце"
+
+msgid "hot dog"
+msgstr "виршла"
+
+msgid "ham"
+msgstr "шунка"
+
+# clothes
+msgid "jewellery"
+msgstr "накит"
+
+msgid "sock"
+msgstr "чорап"
+
+msgid "jacket"
+msgstr "јакна"
+
+msgid "heel"
+msgstr "пета"
+
+msgid "smock"
+msgstr "дамки"
+
+msgid "shorts"
+msgstr "кратки панталони"
+
+msgid "pocket"
+msgstr "џеб"
+
+msgid "necklace"
+msgstr "ѓердан"
+
+msgid "sweatshirt"
+msgstr "џемпер"
+
+msgid "uniform"
+msgstr "униформа"
+
+msgid "raincoat"
+msgstr "водоотпорен мантил"
+
+msgid "trousers"
+msgstr "панталони"
+
+msgid "sunglasses"
+msgstr "очила за сонце"
+
+msgid "coat"
+msgstr "палто"
+
+msgid "pullover"
+msgstr "пуловер"
+
+msgid "shirt"
+msgstr "кошула"
+
+msgid "sandals"
+msgstr "сандали"
+
+msgid "suit"
+msgstr "костум"
+
+msgid "pyjamas"
+msgstr "пижами"
+
+msgid "skirt"
+msgstr "здолниште"
+
+msgid "zip"
+msgstr "патент"
+
+msgid "shoes"
+msgstr "чевли"
+
+msgid "jewel"
+msgstr "скапоцен камен"
+
+msgid "tie"
+msgstr "вратоврска"
+
+msgid "slippers"
+msgstr "папучи"
+
+msgid "gloves"
+msgstr "ракавици"
+
+msgid "hat"
+msgstr "капа"
+
+msgid "sleeve"
+msgstr "ракав"
+
+msgid "cap"
+msgstr "капа"
+
+msgid "swimming suit"
+msgstr "костум за капење"
+
+msgid "trainer"
+msgstr "тренер"
+
+msgid "vest"
+msgstr "елек"
+
+msgid "glasses"
+msgstr "очила"
+
+msgid "shoelace"
+msgstr "врзалки за чевли"
+
+msgid "patch"
+msgstr "крпеница"
+
+msgid "scarf"
+msgstr "шал"
+
+msgid "shoe"
+msgstr "чевел"
+
+msgid "button"
+msgstr "копче"
+
+msgid "dress"
+msgstr "фустан"
+
+msgid "sash"
+msgstr "појас"
+
+msgid "shoe sole"
+msgstr "ѓон"
+
+msgid "robe"
+msgstr "наметка"
+
+msgid "pants"
+msgstr "панталони"
+
+msgid "kimono"
+msgstr "кимоно"
+
+msgid "overalls"
+msgstr "комбинезони"
+
+# actions
+msgid "lick"
+msgstr "лижење"
+
+msgid "slam"
+msgstr "силен удар"
+
+msgid "beg"
+msgstr "молење"
+
+msgid "fell"
+msgstr "паѓање"
+
+msgid "scratch"
+msgstr "гребење"
+
+msgid "touch"
+msgstr "допирање"
+
+msgid "sniff"
+msgstr "мирисање"
+
+msgid "see"
+msgstr "гледање"
+
+msgid "climb"
+msgstr "качување"
+
+msgid "dig"
+msgstr "ископување"
+
+msgid "howl"
+msgstr "завивање"
+
+msgid "sleep"
+msgstr "спиење"
+
+msgid "explore"
+msgstr "истражување"
+
+msgid "draw"
+msgstr "цртање"
+
+msgid "hug"
+msgstr "прегрнување"
+
+msgid "teach"
+msgstr "учење"
+
+msgid "nap"
+msgstr "дремка"
+
+msgid "clay"
+msgstr "правење грнци"
+
+msgid "catch"
+msgstr "дофатување"
+
+msgid "clap"
+msgstr "поздравување"
+
+msgid "cry"
+msgstr "плачење"
+
+msgid "sing"
+msgstr "пеење"
+
+msgid "meet"
+msgstr "запознавање"
+
+msgid "sell"
+msgstr "продавање"
+
+msgid "peck"
+msgstr "клукање"
+
+msgid "beat"
+msgstr "удирање"
+
+msgid "kneel"
+msgstr "клечење"
+
+msgid "find"
+msgstr "наоѓање"
+
+msgid "dance"
+msgstr "танцување"
+
+msgid "cough"
+msgstr "кашлање"
+
+msgid "cut"
+msgstr "сечење"
+
+msgid "think"
+msgstr "размислување"
+
+msgid "bark"
+msgstr "лаење"
+
+msgid "speak"
+msgstr "зборување"
+
+msgid "cheer"
+msgstr "кликање"
+
+msgid "bake"
+msgstr "месење"
+
+msgid "write"
+msgstr "пишување"
+
+msgid "punch"
+msgstr "удирање"
+
+msgid "strum"
+msgstr "свирење"
+
+msgid "study"
+msgstr "учење"
+
+msgid "plow"
+msgstr "орање"
+
+msgid "dream"
+msgstr "спиење"
+
+msgid "post"
+msgstr "испраќање пошта"
+
+msgid "dive"
+msgstr "нуркање"
+
+msgid "whisper"
+msgstr "шепотење"
+
+msgid "sob"
+msgstr "липање"
+
+msgid "shake"
+msgstr "тресење"
+
+msgid "feed"
+msgstr "хранење"
+
+msgid "crawl"
+msgstr "ползење"
+
+msgid "camp"
+msgstr "кампување"
+
+msgid "spill"
+msgstr "истурање"
+
+msgid "clean"
+msgstr "капење"
+
+msgid "scream"
+msgstr "врескање"
+
+msgid "tear"
+msgstr "расцепување"
+
+msgid "float"
+msgstr "пловење"
+
+msgid "pull"
+msgstr "повлекување"
+
+msgid "ate"
+msgstr "јадење"
+
+msgid "kiss"
+msgstr "бакнување"
+
+msgid "sit"
+msgstr "седење"
+
+msgid "hatch"
+msgstr "изведување"
+
+msgid "blink"
+msgstr "трепкање"
+
+msgid "hear"
+msgstr "слушање"
+
+msgid "smooch"
+msgstr "бакнување"
+
+msgid "play"
+msgstr "играње"
+
+msgid "wash"
+msgstr "миење"
+
+msgid "chat"
+msgstr "разговарање"
+
+msgid "drive"
+msgstr "возење"
+
+msgid "drink[v]"
+msgstr "пиење"
+
+msgid "fly"
+msgstr "летање"
+
+msgid "juggle"
+msgstr "жонглирање"
+
+msgid "bit"
+msgstr "каснување"
+
+msgid "sweep"
+msgstr "замавнување"
+
+msgid "look"
+msgstr "погледнување"
+
+msgid "knit"
+msgstr "плетење"
+
+msgid "lift"
+msgstr "подигнување"
+
+msgid "fetch"
+msgstr "пренесување"
+
+msgid "read"
+msgstr "читање"
+
+msgid "croak"
+msgstr "крикање"
+
+msgid "stare"
+msgstr "зјапање"
+
+msgid "eat"
+msgstr "јадење"
+
+# construction
+msgid "lighthouse"
+msgstr "светилник"
+
+msgid "door"
+msgstr "врата"
+
+msgid "circus"
+msgstr "циркус"
+
+msgid "church"
+msgstr "црква"
+
+msgid "kennel"
+msgstr "кучешка куќичка"
+
+msgid "temple"
+msgstr "храм"
+
+msgid "smoke"
+msgstr "чад"
+
+msgid "chimney"
+msgstr "оџак"
+
+msgid "brick"
+msgstr "тула"
+
+msgid "well"
+msgstr "бунар"
+
+msgid "street"
+msgstr "улица"
+
+msgid "castle"
+msgstr "замок"
+
+msgid "store"
+msgstr "продавница"
+
+msgid "staircase"
+msgstr "скалила"
+
+msgid "school"
+msgstr "училиште"
+
+msgid "farm"
+msgstr "фарма"
+
+msgid "bridge"
+msgstr "мост"
+
+msgid "dam"
+msgstr "брана"
+
+msgid "pyramid"
+msgstr "пирамида"
+
+msgid "barn"
+msgstr "штала"
+
+msgid "mill"
+msgstr "мелница"
+
+msgid "window"
+msgstr "прозорец"
+
+msgid "cabin"
+msgstr "колиба"
+
+msgid "step"
+msgstr "скалило"
+
+msgid "shop"
+msgstr "дуќан"
+
+msgid "shed"
+msgstr "шупа"
+
+msgid "roof"
+msgstr "покрив"
+
+msgid "steeple"
+msgstr "камбана"
+
+msgid "garage"
+msgstr "гаража"
+
+msgid "mosque"
+msgstr "џамија"
+
+msgid "hospital"
+msgstr "болница"
+
+msgid "tent"
+msgstr "шатор"
+
+msgid "house"
+msgstr "куќа"
+
+msgid "wall"
+msgstr "ѕид"
+
+msgid "bank"
+msgstr "банка"
+
+msgid "shutter"
+msgstr "капак"
+
+msgid "hut"
+msgstr "колиба"
+
+# nature
+msgid "land"
+msgstr "земјиште"
+
+msgid "cliff"
+msgstr "карпа"
+
+msgid "hill"
+msgstr "рид"
+
+msgid "canyon"
+msgstr "кањон"
+
+msgid "rock"
+msgstr "камен"
+
+msgid "sea"
+msgstr "море"
+
+msgid "lake"
+msgstr "езеро"
+
+msgid "coast"
+msgstr "крајморје"
+
+msgid "shore"
+msgstr "брег"
+
+msgid "mountain"
+msgstr "планина"
+
+msgid "pond"
+msgstr "езерце"
+
+msgid "peak"
+msgstr "врв"
+
+msgid "lava"
+msgstr "лава"
+
+msgid "cave"
+msgstr "пештера"
+
+msgid "dune"
+msgstr "дина"
+
+msgid "island"
+msgstr "остров"
+
+msgid "forest"
+msgstr "шума"
+
+msgid "desert"
+msgstr "пустината"
+
+msgid "iceberg"
+msgstr "санта"
+
+# jobs
+msgid "clown"
+msgstr "кловн"
+
+msgid "engineer"
+msgstr "инженер"
+
+msgid "vet"
+msgstr "ветеринар"
+
+msgid "judge"
+msgstr "судија"
+
+msgid "chef"
+msgstr "готвач"
+
+msgid "athlete"
+msgstr "атлетичар"
+
+msgid "librarian"
+msgstr "библиотекар"
+
+msgid "juggler"
+msgstr "жонглер"
+
+msgid "police officer"
+msgstr "полицаец"
+
+msgid "plumber"
+msgstr "водоводџија"
+
+msgid "badge"
+msgstr "значка"
+
+msgid "queen"
+msgstr "кралица"
+
+msgid "farmer"
+msgstr "земјоделец"
+
+msgid "magician"
+msgstr "магионичар"
+
+msgid "knight"
+msgstr "витез"
+
+msgid "doctor"
+msgstr "доктор"
+
+msgid "bricklayer"
+msgstr "ѕидар"
+
+msgid "cleaner"
+msgstr "чистачка"
+
+msgid "teacher"
+msgstr "учителка"
+
+msgid "hunter"
+msgstr "ловец"
+
+msgid "soldier"
+msgstr "војник"
+
+msgid "musician"
+msgstr "музичар"
+
+msgid "lawyer"
+msgstr "адвокат"
+
+msgid "fisherman"
+msgstr "рибар"
+
+msgid "princess"
+msgstr "принцеза"
+
+msgid "firefighter"
+msgstr "пожарникар"
+
+msgid "nun"
+msgstr "калуѓерка"
+
+msgid "pirate"
+msgstr "пират"
+
+msgid "cowboy"
+msgstr "каубоец"
+
+msgid "electrician"
+msgstr "електричар"
+
+msgid "nurse"
+msgstr "медицинска сестра"
+
+msgid "king"
+msgstr "крал"
+
+msgid "president"
+msgstr "претседател"
+
+msgid "office worker"
+msgstr "канцелариски работник"
+
+msgid "carpenter"
+msgstr "столар"
+
+msgid "jockey"
+msgstr "јавач"
+
+msgid "worker"
+msgstr "работник"
+
+msgid "mechanic"
+msgstr "механичар"
+
+msgid "pilot"
+msgstr "пилот"
+
+msgid "actor"
+msgstr "глумец"
+
+msgid "cook"
+msgstr "готвач"
+
+msgid "student"
+msgstr "ученик"
+
+msgid "butcher"
+msgstr "месар"
+
+msgid "accountant"
+msgstr "сметководител"
+
+msgid "prince"
+msgstr "принц"
+
+msgid "sailor"
+msgstr "морнар"
+
+msgid "boxer"
+msgstr "боксер"
+
+msgid "ballet dancer"
+msgstr "балерина"
+
+msgid "coach"
+msgstr "тренер"
+
+msgid "astronaut"
+msgstr "астронаут"
+
+msgid "painter"
+msgstr "сликар"
+
+msgid "scientist"
+msgstr "научник"
+
+# fruits and vegetables
+msgid "carrot"
+msgstr "морков"
+
+msgid "blackberries"
+msgstr "капини"
+
+msgid "celery"
+msgstr "целер"
+
+msgid "turnip"
+msgstr "репка"
+
+msgid "cacao"
+msgstr "какао"
+
+msgid "peach"
+msgstr "праска"
+
+msgid "melon"
+msgstr "диња"
+
+msgid "grapefruit"
+msgstr "цитрон"
+
+msgid "broccoli"
+msgstr "брокула"
+
+msgid "grapes"
+msgstr "грозје"
+
+msgid "spinach"
+msgstr "спанаќ"
+
+msgid "fig"
+msgstr "смоква"
+
+msgid "kernel"
+msgstr "јатки"
+
+msgid "radish"
+msgstr "ротквица"
+
+msgid "tomato"
+msgstr "домат"
+
+msgid "kiwi"
+msgstr "киви"
+
+msgid "asparagus"
+msgstr "шпаргла"
+
+msgid "olives"
+msgstr "маслинки"
+
+msgid "cucumbers"
+msgstr "краставици"
+
+msgid "beans"
+msgstr "грав"
+
+msgid "strawberry"
+msgstr "јагода"
+
+msgid "peppers"
+msgstr "пиперки"
+
+msgid "raspberry"
+msgstr "малина"
+
+msgid "apricot"
+msgstr "кајсија"
+
+msgid "potatoes"
+msgstr "компири"
+
+msgid "peas"
+msgstr "грашок"
+
+msgid "cabbage"
+msgstr "зелка"
+
+msgid "cherries"
+msgstr "цреши"
+
+msgid "squash"
+msgstr "тикви"
+
+msgid "blueberries"
+msgstr "боровинки"
+
+msgid "pear"
+msgstr "круша"
+
+msgid "orange"
+msgstr "портокал"
+
+msgid "pumpkin"
+msgstr "тиква"
+
+msgid "avocado"
+msgstr "авокадо"
+
+msgid "garlic"
+msgstr "лук"
+
+msgid "onion"
+msgstr "кромид"
+
+msgid "apple"
+msgstr "јаболко"
+
+msgid "lime"
+msgstr "лимета"
+
+msgid "cauliflower"
+msgstr "карфиол"
+
+msgid "mango"
+msgstr "манго"
+
+msgid "lettuce"
+msgstr "зелена салата"
+
+msgid "lemon"
+msgstr "лимон"
+
+msgid "aubergine"
+msgstr "модар патлиџан"
+
+msgid "artichokes"
+msgstr "артичока"
+
+msgid "plums"
+msgstr "сливи"
+
+msgid "leek"
+msgstr "праз"
+
+msgid "bananas"
+msgstr "банани"
+
+msgid "papaya"
+msgstr "папаја"
+
+# transport
+msgid "sail"
+msgstr "едра"
+
+msgid "taxi"
+msgstr "такси"
+
+msgid "car"
+msgstr "автомобил"
+
+msgid "bike"
+msgstr "велосипед"
+
+msgid "raft"
+msgstr "сплав"
+
+msgid "pedal"
+msgstr "педал"
+
+msgid "bus"
+msgstr "автобус"
+
+msgid "handlebar"
+msgstr "кормило"
+
+msgid "boat"
+msgstr "брод"
+
+msgid "truck"
+msgstr "камион"
+
+msgid "sleigh"
+msgstr "санка"
+
+msgid "carpet"
+msgstr "тепих"
+
+msgid "motorcycle"
+msgstr "мотоцикл"
+
+msgid "train"
+msgstr "воз"
+
+msgid "ship"
+msgstr "брод"
+
+msgid "van"
+msgstr "комбе"
+
+msgid "canoe"
+msgstr "кану"
+
+msgid "rocket"
+msgstr "ракета"
+
+msgid "mast"
+msgstr "јарбол"
+
+msgid "sledge"
+msgstr "санка"
+
+msgid "bicycle"
+msgstr "велосипед"
+
