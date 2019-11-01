@@ -1,0 +1,2118 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eduactiv8-mobile\n"
+"POT-Creation-Date: 2019-10-15 00:00+0000\n"
+"PO-Revision-Date: 2019-11-01 16:29\n"
+"Last-Translator: Derek Lackaff (lackaff)\n"
+"Language-Team: Russian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: crowdin.com\n"
+"Plural-Forms: nplurals=4; plural=((n%10==1 && n%100!=11) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 11 && n%100 <= 14)) ? 2 : 3));\n"
+"X-Crowdin-Project: eduactiv8-mobile\n"
+"X-Crowdin-Language: ru\n"
+"X-Crowdin-File: /0.0.1-2.0/game/res/i18n/eduActiv8_mobile.pot\n"
+"Language: ru_RU\n"
+
+msgid "green apple"
+msgid_plural "green apples"
+msgstr[0] "зелёное яблоко"
+msgstr[1] "зелёных яблока"
+msgstr[2] "зелёных яблок"
+msgstr[3] ""
+
+msgid "red apple"
+msgid_plural "red apples"
+msgstr[0] "красное яблоко"
+msgstr[1] "красных яблока"
+msgstr[2] "красных яблок"
+msgstr[3] ""
+
+msgid "strawberry"
+msgid_plural "strawberries"
+msgstr[0] "клубника"
+msgstr[1] "клубники"
+msgstr[2] "клубник"
+msgstr[3] ""
+
+msgid "pear"
+msgid_plural "pears"
+msgstr[0] "груша"
+msgstr[1] "груши"
+msgstr[2] "груш"
+msgstr[3] ""
+
+msgid "orange [fruit]"
+msgid_plural "oranges"
+msgstr[0] "апельсин"
+msgstr[1] "апельсина"
+msgstr[2] "апельсинов"
+msgstr[3] ""
+
+msgid "onion"
+msgid_plural "onions"
+msgstr[0] "луковица"
+msgstr[1] "луковицы"
+msgstr[2] "луковиц"
+msgstr[3] ""
+
+msgid "tomato"
+msgid_plural "tomatoes"
+msgstr[0] "томат"
+msgstr[1] "томата"
+msgstr[2] "томатов"
+msgstr[3] ""
+
+msgid "lemon"
+msgid_plural "lemons"
+msgstr[0] "лимон"
+msgstr[1] "лимона"
+msgstr[2] "лимонов"
+msgstr[3] ""
+
+msgid "cherry"
+msgid_plural "cherries"
+msgstr[0] "вишня"
+msgstr[1] "вишни"
+msgstr[2] "вишен"
+msgstr[3] ""
+
+msgid "pepper"
+msgid_plural "peppers"
+msgstr[0] "перец"
+msgstr[1] "перца"
+msgstr[2] "перцев"
+msgstr[3] ""
+
+msgid "carrot"
+msgid_plural "carrots"
+msgstr[0] "морковка"
+msgstr[1] "морковки"
+msgstr[2] "морковок"
+msgstr[3] ""
+
+msgid "banana"
+msgid_plural "bananas"
+msgstr[0] "банан"
+msgstr[1] "банана"
+msgstr[2] "бананов"
+msgstr[3] ""
+
+msgid "watermelon"
+msgid_plural "watermelons"
+msgstr[0] "арбуз"
+msgstr[1] "арбуза"
+msgstr[2] "арбузов"
+msgstr[3] ""
+
+msgid "English"
+msgstr "английский"
+
+msgid "Login"
+msgstr "Войти"
+
+msgid "Default Language:"
+msgstr "Язык по умолчанию:"
+
+msgid "User Management"
+msgstr "Управление пользователями:"
+
+msgid "Copyright & Credits"
+msgstr "Авторские права и титры"
+
+msgid "Licence"
+msgstr "Лицензия"
+
+msgid "Language arts"
+msgstr "Искусство языка"
+
+msgid "This username and password combination doesn't exist."
+msgstr "Такая комбинация имени пользователя и пароля не существует."
+
+msgid "user name: "
+msgstr ""
+
+msgid "password: "
+msgstr ""
+
+msgid "Save"
+msgstr "Сохранить"
+
+msgid "Delete user"
+msgstr "Удалить пользователя"
+
+msgid "Preferences saved..."
+msgstr "Предпочтения сохранены..."
+
+msgid "Logged in as: "
+msgstr "Вы вошли как: "
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "Mathematics"
+msgstr "Математика"
+
+msgid "Games & Mazes"
+msgstr "Игры и лабиринты"
+
+msgid "Word Builders"
+msgstr "Словопостроитель"
+
+msgid "Animals"
+msgstr "животные"
+
+msgid "Complete the word"
+msgstr "Заполните слово"
+
+msgid "Positive numbers"
+msgstr ""
+
+msgid "Number Spelling"
+msgstr "Напишите цифры словами"
+
+msgid "Shopping List"
+msgstr "Список покупок"
+
+msgid "Addition"
+msgstr "Сложение"
+
+msgid "Find missing number"
+msgstr "Найти отсутствующее число"
+
+msgid "Level"
+msgstr "Уровень"
+
+msgid "Translators"
+msgstr "Переводчики"
+
+msgid "Funding: "
+msgstr ""
+
+msgid "Score: "
+msgstr "Счёт: "
+
+msgid "Numbers & Basic Operations"
+msgstr "Числа и основные операции"
+
+msgid "Numbers"
+msgstr "Числа"
+
+msgid "Basic Operations"
+msgstr "Основные операции"
+
+msgid "area:"
+msgstr "площадь:"
+
+msgid "perimeter:"
+msgstr "периметр:"
+
+msgid "circumference:"
+msgstr "окружность:"
+
+msgid "Trapezium"
+msgstr "Трапеция"
+
+msgid "Drag the clock hands to set the time"
+msgstr "Перетащите стрелки часов чтобы установить время"
+
+msgid "Discover Letters"
+msgstr "Изучение букв"
+
+msgid "Word Matchers"
+msgstr "Сопоставьте изображения с словами"
+
+msgid "Shapes and Solids"
+msgstr "Фигуры и тела"
+
+msgid "Symmetry"
+msgstr ""
+
+msgid "Patterns"
+msgstr ""
+
+msgid "Time"
+msgstr "Время"
+
+msgid "Basics"
+msgstr ""
+
+msgid "Subtraction"
+msgstr "Вычитание"
+
+msgid "Learn Numbers with Flashcards"
+msgstr "Учите числа по карточкам"
+
+msgid "Demonstration"
+msgstr "Демонстрация"
+
+msgid "Find Solution"
+msgstr ""
+
+msgid "Image Patterns"
+msgstr ""
+
+msgid "Learn Shapes with Flashcards"
+msgstr "Учите геометрические фигуры по карточкам"
+
+msgid "Shape Matching"
+msgstr "Сравнение фигур"
+
+msgid "Shape Maker"
+msgstr "Создание фигур"
+
+msgid "How clock works"
+msgstr "Как работают часы?"
+
+msgid "learn to set the clock"
+msgstr "научитесь устанавливать часы"
+
+msgid "Set the clock to:"
+msgstr "Установите часы на:"
+
+msgid "Time Matching"
+msgstr "Соответствие времени"
+
+msgid "Your Alphabet"
+msgstr "Русский алфавит"
+
+msgid "Trace Letters and Numbers"
+msgstr "Обведите буквы и цифры"
+
+msgid "People"
+msgstr "люди"
+
+msgid "Jobs"
+msgstr "работа и занятия"
+
+msgid "Body"
+msgstr "тело"
+
+msgid "Clothes and Accessories"
+msgstr "одежда и аксессуары"
+
+msgid "Sports"
+msgstr "спорт"
+
+msgid "Actions"
+msgstr "действия"
+
+msgid "Nature"
+msgstr "природа"
+
+msgid "Fruits and Vegetables"
+msgstr "фрукты и овощи"
+
+msgid "Food"
+msgstr "пища"
+
+msgid "Transport"
+msgstr "транспорт"
+
+msgid "Constructions"
+msgstr "конструкции"
+
+msgid "Equilateral Triangle"
+msgstr "Равносторонний треугольник"
+
+msgid "Isosceles Triangle"
+msgstr "Равнобедренный треугольник"
+
+msgid "Obtuse Triangle"
+msgstr "Тупоугольный треугольник"
+
+msgid "Right Triangle"
+msgstr "Прямоугольный треугольник"
+
+msgid "Acute Triangle"
+msgstr "Остроугольный треугольник"
+
+msgid "Square"
+msgstr "Квадрат"
+
+msgid "Rectangle"
+msgstr "Прямоугольник"
+
+msgid "Right Trapezium"
+msgstr "Правильная трапеция"
+
+msgid "Isosceles Trapezium"
+msgstr "Равнобедренная трапеция"
+
+msgid "Rhombus"
+msgstr "Ромб"
+
+msgid "Parallelogram"
+msgstr "Параллелограмм"
+
+msgid "Pentagon"
+msgstr "Пятиугольник"
+
+msgid "Hexagon"
+msgstr "Шестиугольник"
+
+msgid "Circle"
+msgstr "Круг"
+
+msgid "Ellipse"
+msgstr "Эллипс"
+
+msgid "Heptagon"
+msgstr ""
+
+msgid "Octagon"
+msgstr ""
+
+msgid "trapezium"
+msgstr ""
+
+# animals
+msgid "cow"
+msgstr "корова"
+
+msgid "turkey"
+msgstr "индейка"
+
+msgid "shrimp"
+msgstr "креветка"
+
+msgid "wolf"
+msgstr "волк"
+
+msgid "panther"
+msgstr "пантера"
+
+msgid "panda"
+msgstr "панда"
+
+msgid "magpie"
+msgstr "сорока"
+
+msgid "clam"
+msgstr "моллюск"
+
+msgid "pony"
+msgstr "пони"
+
+msgid "mouse"
+msgstr "мышь"
+
+msgid "pug"
+msgstr "мопс"
+
+msgid "koala"
+msgstr "коала"
+
+msgid "frog"
+msgstr "лягушка"
+
+msgid "ladybug"
+msgstr "божья коровка"
+
+msgid "gorilla"
+msgstr "горилла"
+
+msgid "llama"
+msgstr "лама"
+
+msgid "vulture"
+msgstr "стервятник"
+
+msgid "hamster"
+msgstr "хомяк"
+
+msgid "bird"
+msgstr "птица"
+
+msgid "starfish"
+msgstr "морская звезда"
+
+msgid "crow"
+msgstr "ворона"
+
+msgid "parakeet"
+msgstr "длиннохвостый попугай"
+
+msgid "caterpillar"
+msgstr "гусеница"
+
+msgid "tiger"
+msgstr "тигр"
+
+msgid "hummingbird"
+msgstr "колибри"
+
+msgid "piranha"
+msgstr "пиранья"
+
+msgid "pig"
+msgstr "свинья"
+
+msgid "scorpion"
+msgstr "скорпион"
+
+msgid "fox"
+msgstr "лиса"
+
+msgid "leopard"
+msgstr "леопард"
+
+msgid "iguana"
+msgstr "игуана"
+
+msgid "dolphin"
+msgstr "дельфин"
+
+msgid "bat"
+msgstr "летучая мышь"
+
+msgid "chick"
+msgstr "цыплёнок"
+
+msgid "crab"
+msgstr "краб"
+
+msgid "hen"
+msgstr "курица"
+
+msgid "wasp"
+msgstr "оса"
+
+msgid "chameleon"
+msgstr "хамелион"
+
+msgid "whale"
+msgstr "кит"
+
+msgid "hedgehog"
+msgstr "ёжик"
+
+msgid "fawn"
+msgstr "олень"
+
+msgid "moose"
+msgstr "лось"
+
+msgid "bee"
+msgstr "пчела"
+
+msgid "viper"
+msgstr "змея"
+
+msgid "shrike"
+msgstr "сорокопут"
+
+msgid "donkey"
+msgstr "осёл"
+
+msgid "guinea pig"
+msgstr "морская свинка"
+
+msgid "sloth"
+msgstr "ленивец"
+
+msgid "horse"
+msgstr "конь"
+
+msgid "penguin"
+msgstr "пингвин"
+
+msgid "otter"
+msgstr "выдра"
+
+msgid "bear"
+msgstr "медведь"
+
+msgid "zebra"
+msgstr "зебра"
+
+msgid "ostrich"
+msgstr "страус"
+
+msgid "camel"
+msgstr "верблюд"
+
+msgid "antelope"
+msgstr "антилопа"
+
+msgid "lemur"
+msgstr "лемур"
+
+msgid "pigeon"
+msgstr "голубь"
+
+msgid "llama"
+msgstr "лама"
+
+msgid "mole"
+msgstr "крот"
+
+msgid "ray"
+msgstr "скат"
+
+msgid "ram"
+msgstr "баран"
+
+msgid "skunk"
+msgstr "скунс"
+
+msgid "jellyfish"
+msgstr "медуза"
+
+msgid "sheep"
+msgstr "овца"
+
+msgid "shark"
+msgstr "акула"
+
+msgid "kitten"
+msgstr "котёнок"
+
+msgid "deer"
+msgstr "олень"
+
+msgid "snail"
+msgstr "улитка"
+
+msgid "flamingo"
+msgstr "фламинго"
+
+msgid "rabbit"
+msgstr "кролик"
+
+msgid "oyster"
+msgstr "устрица"
+
+msgid "beaver"
+msgstr "бобр"
+
+msgid "sparrow"
+msgstr "воробей"
+
+msgid "dove"
+msgstr "голубь"
+
+msgid "eagle"
+msgstr "орёл"
+
+msgid "beetle"
+msgstr "жук"
+
+msgid "hippopotamus"
+msgstr "бегемот"
+
+msgid "owl"
+msgstr "сова"
+
+msgid "cobra"
+msgstr "кобра"
+
+msgid "salamander"
+msgstr "саламандра"
+
+msgid "goose"
+msgstr "гусь"
+
+msgid "kangaroo"
+msgstr "кенгуру"
+
+msgid "dragonfly"
+msgstr "стрекоза"
+
+msgid "toad"
+msgstr "лягушка"
+
+msgid "pelican"
+msgstr "пеликан"
+
+msgid "squid"
+msgstr "кальмар"
+
+msgid "lion cub"
+msgstr "львёнок"
+
+msgid "jaguar"
+msgstr "ягуар"
+
+msgid "duck"
+msgstr "утка"
+
+msgid "lizard"
+msgstr "ящерица"
+
+msgid "rhinoceros"
+msgstr "носорог"
+
+msgid "hyena"
+msgstr "гиена"
+
+msgid "ox"
+msgstr "бык"
+
+msgid "peacock"
+msgstr "павлин"
+
+msgid "parrot"
+msgstr "попугай"
+
+msgid "elk"
+msgstr "лось"
+
+msgid "alligator"
+msgstr "крокодил"
+
+msgid "ant"
+msgstr "муравей"
+
+msgid "goat"
+msgstr "козёл"
+
+msgid "baby rabbit"
+msgstr "крольчонок"
+
+msgid "lion"
+msgstr "лев"
+
+msgid "squirrel"
+msgstr "белка"
+
+msgid "opossum"
+msgstr "опоссум"
+
+msgid "chimp"
+msgstr "шимпанзе"
+
+msgid "doe"
+msgstr "оленёнок"
+
+msgid "gopher"
+msgstr "суслик"
+
+msgid "elephant"
+msgstr "слон"
+
+msgid "giraffe"
+msgstr "жираф"
+
+msgid "spider"
+msgstr "паук"
+
+msgid "puppy"
+msgstr "щенок"
+
+msgid "jay"
+msgstr "сойка"
+
+msgid "seal"
+msgstr "тюлень"
+
+msgid "rooster"
+msgstr "петух"
+
+msgid "turtle"
+msgstr "черепаха"
+
+msgid "bull"
+msgstr "бык"
+
+msgid "cat"
+msgstr "кошка"
+
+msgid "rat"
+msgstr "крыса"
+
+msgid "slug"
+msgstr "улитка"
+
+msgid "buffalo"
+msgstr "бизон"
+
+msgid "blackbird"
+msgstr "чёрный дрозд"
+
+msgid "swan"
+msgstr "лебедь"
+
+msgid "lobster"
+msgstr "омар"
+
+msgid "dog"
+msgstr "собака"
+
+msgid "mosquito"
+msgstr "комар"
+
+msgid "snake"
+msgstr "змея"
+
+msgid "chicken"
+msgstr "цыплёнок"
+
+msgid "anteater"
+msgstr "муравьед"
+
+# sport
+msgid "judo"
+msgstr "дзюдо"
+
+msgid "pool"
+msgstr "плавание"
+
+msgid "ride"
+msgstr "велогонка"
+
+msgid "stretch"
+msgstr "растяжка"
+
+msgid "helmet"
+msgstr "шлем"
+
+msgid "ice skating"
+msgstr "коньки"
+
+msgid "walk"
+msgstr "ходьба"
+
+msgid "run"
+msgstr "бег"
+
+msgid "swim"
+msgstr "ныряние"
+
+msgid "hop"
+msgstr "батут"
+
+msgid "hike"
+msgstr "пеший туризм"
+
+msgid "boxing"
+msgstr "бокс"
+
+msgid "hockey"
+msgstr "хоккей"
+
+msgid "race"
+msgstr "забег"
+
+msgid "throw"
+msgstr "бросок"
+
+msgid "skate"
+msgstr "скейт"
+
+msgid "win"
+msgstr "победа"
+
+msgid "squat"
+msgstr "приседания"
+
+msgid "ski"
+msgstr "лыжи"
+
+msgid "golf"
+msgstr "гольф"
+
+msgid "whistle"
+msgstr "свисток"
+
+msgid "torch"
+msgstr "факел"
+
+msgid "sailing"
+msgstr "яхта"
+
+msgid "stand"
+msgstr "стойка"
+
+msgid "tennis"
+msgstr "теннис"
+
+msgid "jump"
+msgstr "скачок"
+
+msgid "rowing"
+msgstr "гребля"
+
+msgid "jog"
+msgstr "бег трусцой"
+
+msgid "rope"
+msgstr "скакалка"
+
+# body
+msgid "teeth"
+msgstr "зуб"
+
+msgid "cheek"
+msgstr "щека"
+
+msgid "ankle"
+msgstr "косточка"
+
+msgid "knee"
+msgstr "колено"
+
+msgid "toe"
+msgstr "пята"
+
+msgid "muscle"
+msgstr "мускул"
+
+msgid "mouth"
+msgstr "рот"
+
+msgid "feet"
+msgstr "ступня"
+
+msgid "hand"
+msgstr "рука"
+
+msgid "elbow"
+msgstr "локоть"
+
+msgid "hair"
+msgstr "волосы"
+
+msgid "eyelash"
+msgstr "ресничка"
+
+msgid "beard"
+msgstr "борода"
+
+msgid "belly button"
+msgstr "пупок"
+
+msgid "thumb"
+msgstr "большой палец"
+
+msgid "breast"
+msgstr "грудь"
+
+msgid "nostril"
+msgstr "ноздря"
+
+msgid "nose"
+msgstr "нос"
+
+msgid "hip"
+msgstr "поясница"
+
+msgid "arm"
+msgstr "рука"
+
+msgid "eyebrow"
+msgstr "бровь"
+
+msgid "fist"
+msgstr "кулак"
+
+msgid "neck"
+msgstr "шея"
+
+msgid "wrist"
+msgstr "запястье"
+
+msgid "throat"
+msgstr "горло"
+
+msgid "eye"
+msgstr "глаз"
+
+msgid "leg"
+msgstr "нога"
+
+msgid "spine"
+msgstr "спина"
+
+msgid "ear"
+msgstr "ухо"
+
+msgid "finger"
+msgstr "палец"
+
+msgid "foot"
+msgstr "ступня"
+
+msgid "braid"
+msgstr "борода"
+
+msgid "face"
+msgstr "лицо"
+
+msgid "back"
+msgstr "спина"
+
+msgid "chin"
+msgstr "подбородок"
+
+msgid "bottom"
+msgstr "ягодицы"
+
+msgid "thigh"
+msgstr "бедро"
+
+msgid "belly"
+msgstr "живот"
+
+# people
+msgid "girl"
+msgstr "девушка"
+
+msgid "male"
+msgstr "парень"
+
+msgid "son"
+msgstr "сын"
+
+msgid "friends"
+msgstr "друзья"
+
+msgid "baby"
+msgstr "малыш"
+
+msgid "child"
+msgstr "ребёнок"
+
+msgid "dad"
+msgstr "папа"
+
+msgid "mom"
+msgstr "мама"
+
+msgid "twin boys"
+msgstr "близнецы"
+
+msgid "brothers"
+msgstr "братья"
+
+msgid "man"
+msgstr "мужчина"
+
+msgid "mother"
+msgstr "мать"
+
+msgid "grandfather"
+msgstr "дедушка"
+
+msgid "family"
+msgstr "семья"
+
+msgid "female"
+msgstr "женщина"
+
+msgid "wife"
+msgstr "жена"
+
+msgid "husband"
+msgstr "муж"
+
+msgid "bride"
+msgstr "невеста"
+
+msgid "grandmother"
+msgstr "бабушка"
+
+msgid "couple"
+msgstr "влюблённые"
+
+msgid "twin girls"
+msgstr "двойняшки"
+
+msgid "boy"
+msgstr "мальчик"
+
+msgid "sisters"
+msgstr "сёстры"
+
+msgid "woman"
+msgstr "женщина"
+
+msgid "lady"
+msgstr "леди"
+
+# food
+msgid "candy"
+msgstr "конфета"
+
+msgid "sausage"
+msgstr "сосиска"
+
+msgid "hamburger"
+msgstr "гамбургер"
+
+msgid "steak"
+msgstr "бифштекс"
+
+msgid "fudge"
+msgstr "помадка"
+
+msgid "doughnut"
+msgstr "пончик"
+
+msgid "coconut"
+msgstr "кокос"
+
+msgid "rice"
+msgstr "рис"
+
+msgid "ice cream"
+msgstr "мороженое"
+
+msgid "jelly"
+msgstr "желе"
+
+msgid "yoghurt"
+msgstr "йогурт"
+
+msgid "dessert"
+msgstr "десерт"
+
+msgid "pretzel"
+msgstr "десерт"
+
+msgid "peanut"
+msgstr "крендель"
+
+msgid "jam"
+msgstr "арахис"
+
+msgid "feast"
+msgstr "варенье"
+
+msgid "cookie"
+msgstr "курица"
+
+msgid "bacon"
+msgstr "бекон"
+
+msgid "spice"
+msgstr "специи"
+
+msgid "coffee"
+msgstr "кофе"
+
+msgid "pie"
+msgstr "пирог"
+
+msgid "lemonade"
+msgstr "лимонад"
+
+msgid "chocolate"
+msgstr "шоколад"
+
+msgid "water bottle"
+msgstr "бутылка с водой"
+
+msgid "lunch"
+msgstr "обед"
+
+msgid "ice"
+msgstr "лёд"
+
+msgid "sugar"
+msgstr "сахар"
+
+msgid "sauce"
+msgstr "соус"
+
+msgid "soup"
+msgstr "суп"
+
+msgid "juice"
+msgstr "сок"
+
+msgid "fries"
+msgstr "чипсы"
+
+msgid "cake"
+msgstr "торт"
+
+msgid "mashed potatoes"
+msgstr "пюре"
+
+msgid "tea"
+msgstr "чай"
+
+msgid "bun"
+msgstr "булка"
+
+msgid "cheese"
+msgstr "сыр"
+
+msgid "beef"
+msgstr "отбивная"
+
+msgid "sandwich"
+msgstr "бутерброд"
+
+msgid "slice"
+msgstr "ломтик"
+
+msgid "sprinkle"
+msgstr "посыпка"
+
+msgid "pizza"
+msgstr "пицца"
+
+msgid "flour"
+msgstr "мука"
+
+msgid "gum"
+msgstr "жевательная резинка"
+
+msgid "spaghetti"
+msgstr "спагетти"
+
+msgid "roast"
+msgstr "жаркое"
+
+msgid "drink[n]"
+msgstr "напиток"
+
+msgid "stew"
+msgstr "тушёное мясо"
+
+msgid "spread"
+msgstr "намазанное"
+
+msgid "meat"
+msgstr "мясо"
+
+msgid "milk"
+msgstr "молоко"
+
+msgid "meal"
+msgstr "пища"
+
+msgid "corn"
+msgstr "кукуруза"
+
+msgid "bread"
+msgstr "хлеб"
+
+msgid "walnut"
+msgstr "орех"
+
+msgid "egg"
+msgstr "яйцо"
+
+msgid "hot dog"
+msgstr "хот-дог"
+
+msgid "ham"
+msgstr "ветчина"
+
+# clothes
+msgid "jewellery"
+msgstr "украшение"
+
+msgid "sock"
+msgstr "носок"
+
+msgid "jacket"
+msgstr "пиджак"
+
+msgid "heel"
+msgstr "шпилька"
+
+msgid "smock"
+msgstr "пятно"
+
+msgid "shorts"
+msgstr "шорты"
+
+msgid "pocket"
+msgstr "карман"
+
+msgid "necklace"
+msgstr "ожерелье"
+
+msgid "sweatshirt"
+msgstr "свитер"
+
+msgid "uniform"
+msgstr "униформа"
+
+msgid "raincoat"
+msgstr "плащ"
+
+msgid "trousers"
+msgstr "штаны"
+
+msgid "sunglasses"
+msgstr "солнечные очки"
+
+msgid "coat"
+msgstr "куртка"
+
+msgid "pullover"
+msgstr "пулловер"
+
+msgid "shirt"
+msgstr ",блузка"
+
+msgid "sandals"
+msgstr "сандалии"
+
+msgid "suit"
+msgstr "костюм"
+
+msgid "pyjamas"
+msgstr "пижама"
+
+msgid "skirt"
+msgstr "юбка"
+
+msgid "zip"
+msgstr "молния"
+
+msgid "shoes"
+msgstr "туфли"
+
+msgid "jewel"
+msgstr "камень"
+
+msgid "tie"
+msgstr "галстук"
+
+msgid "slippers"
+msgstr "шлёпанцы"
+
+msgid "gloves"
+msgstr "перчатки"
+
+msgid "hat"
+msgstr "шляпа"
+
+msgid "sleeve"
+msgstr "рукав"
+
+msgid "cap"
+msgstr "кепка"
+
+msgid "swimming suit"
+msgstr "купальник"
+
+msgid "trainer"
+msgstr "кроссовки"
+
+msgid "vest"
+msgstr "жилет"
+
+msgid "glasses"
+msgstr "перчатки"
+
+msgid "shoelace"
+msgstr "шнурок"
+
+msgid "patch"
+msgstr "заплатка"
+
+msgid "scarf"
+msgstr "шарф"
+
+msgid "shoe"
+msgstr "ботинок"
+
+msgid "button"
+msgstr "пуговица"
+
+msgid "dress"
+msgstr "платье"
+
+msgid "sash"
+msgstr "пояс"
+
+msgid "shoe sole"
+msgstr "подошва"
+
+msgid "robe"
+msgstr "мантия"
+
+msgid "pants"
+msgstr "трусы"
+
+msgid "kimono"
+msgstr "кимоно"
+
+msgid "overalls"
+msgstr "комбинезон"
+
+# actions
+msgid "lick"
+msgstr "лизать"
+
+msgid "slam"
+msgstr "забрасывать"
+
+msgid "beg"
+msgstr "молиться"
+
+msgid "fell"
+msgstr "падать"
+
+msgid "scratch"
+msgstr "царапать"
+
+msgid "touch"
+msgstr "трогать"
+
+msgid "sniff"
+msgstr "нюхать"
+
+msgid "see"
+msgstr "смотреть"
+
+msgid "climb"
+msgstr "карабкаться"
+
+msgid "dig"
+msgstr "копать"
+
+msgid "howl"
+msgstr "выть"
+
+msgid "sleep"
+msgstr "спать"
+
+msgid "explore"
+msgstr "исследовать"
+
+msgid "draw"
+msgstr "рисовать"
+
+msgid "hug"
+msgstr "обнимать"
+
+msgid "teach"
+msgstr "учить"
+
+msgid "nap"
+msgstr "дремать"
+
+msgid "clay"
+msgstr "лепить"
+
+msgid "catch"
+msgstr "ловить"
+
+msgid "clap"
+msgstr "хлопать"
+
+msgid "cry"
+msgstr "плакать"
+
+msgid "sing"
+msgstr "петь"
+
+msgid "meet"
+msgstr "встречаться"
+
+msgid "sell"
+msgstr "продавать"
+
+msgid "peck"
+msgstr "клевать"
+
+msgid "beat"
+msgstr "ударить"
+
+msgid "kneel"
+msgstr "становиться на колени"
+
+msgid "find"
+msgstr "искать"
+
+msgid "dance"
+msgstr "танцевать"
+
+msgid "cough"
+msgstr "кашлять"
+
+msgid "cut"
+msgstr "резать"
+
+msgid "think"
+msgstr "думать"
+
+msgid "bark"
+msgstr "лаять"
+
+msgid "speak"
+msgstr "говорить"
+
+msgid "cheer"
+msgstr "веселить"
+
+msgid "bake"
+msgstr "стряпать"
+
+msgid "write"
+msgstr "писать"
+
+msgid "punch"
+msgstr "бить"
+
+msgid "strum"
+msgstr "бренчать"
+
+msgid "study"
+msgstr "учиться"
+
+msgid "plow"
+msgstr "пахать"
+
+msgid "dream"
+msgstr "мечтать"
+
+msgid "post"
+msgstr "отправлять"
+
+msgid "dive"
+msgstr "нырять"
+
+msgid "whisper"
+msgstr "шептать"
+
+msgid "sob"
+msgstr "рыдать"
+
+msgid "shake"
+msgstr "трясти"
+
+msgid "feed"
+msgstr "кормить"
+
+msgid "crawl"
+msgstr "ползти"
+
+msgid "camp"
+msgstr "обосноваться"
+
+msgid "spill"
+msgstr "разливать"
+
+msgid "clean"
+msgstr "мыть"
+
+msgid "scream"
+msgstr "кричать"
+
+msgid "tear"
+msgstr "рвать"
+
+msgid "float"
+msgstr "плавать"
+
+msgid "pull"
+msgstr "тянуть"
+
+msgid "ate"
+msgstr "поесть"
+
+msgid "kiss"
+msgstr "целовать"
+
+msgid "sit"
+msgstr "сидеть"
+
+msgid "hatch"
+msgstr "вылупляться"
+
+msgid "blink"
+msgstr "мигать"
+
+msgid "hear"
+msgstr "слушать"
+
+msgid "smooch"
+msgstr "целоваться"
+
+msgid "play"
+msgstr "играть"
+
+msgid "wash"
+msgstr "мыть"
+
+msgid "chat"
+msgstr "говорить"
+
+msgid "drive"
+msgstr "вести"
+
+msgid "drink[v]"
+msgstr "пить"
+
+msgid "fly"
+msgstr "летать"
+
+msgid "juggle"
+msgstr "жонглировать"
+
+msgid "bit"
+msgstr "кусать"
+
+msgid "sweep"
+msgstr "мести"
+
+msgid "look"
+msgstr "смотреть"
+
+msgid "knit"
+msgstr "вязать"
+
+msgid "lift"
+msgstr "поднимать"
+
+msgid "fetch"
+msgstr "держать"
+
+msgid "read"
+msgstr "читать"
+
+msgid "croak"
+msgstr "квакать"
+
+msgid "stare"
+msgstr "оставаться"
+
+msgid "eat"
+msgstr "есть"
+
+# construction
+msgid "lighthouse"
+msgstr "маяк"
+
+msgid "door"
+msgstr "дверь"
+
+msgid "circus"
+msgstr "цирк"
+
+msgid "church"
+msgstr "церковь"
+
+msgid "kennel"
+msgstr "конура"
+
+msgid "temple"
+msgstr "храм"
+
+msgid "smoke"
+msgstr "дым"
+
+msgid "chimney"
+msgstr "дымоход"
+
+msgid "brick"
+msgstr "кирпич"
+
+msgid "well"
+msgstr "колодец"
+
+msgid "street"
+msgstr "улица"
+
+msgid "castle"
+msgstr "замок"
+
+msgid "store"
+msgstr "магазин"
+
+msgid "staircase"
+msgstr "лестница"
+
+msgid "school"
+msgstr "школа"
+
+msgid "farm"
+msgstr "ферма"
+
+msgid "bridge"
+msgstr "мост"
+
+msgid "dam"
+msgstr "плотина"
+
+msgid "pyramid"
+msgstr "пирамида"
+
+msgid "barn"
+msgstr "кладовая"
+
+msgid "mill"
+msgstr "мельница"
+
+msgid "window"
+msgstr "окно"
+
+msgid "cabin"
+msgstr "домик"
+
+msgid "step"
+msgstr "ступенька"
+
+msgid "shop"
+msgstr "магазин"
+
+msgid "shed"
+msgstr "сарай"
+
+msgid "roof"
+msgstr "крыша"
+
+msgid "steeple"
+msgstr "колокольня"
+
+msgid "garage"
+msgstr "гараж"
+
+msgid "mosque"
+msgstr "мечеть"
+
+msgid "hospital"
+msgstr "госпиталь"
+
+msgid "tent"
+msgstr "палатка"
+
+msgid "house"
+msgstr "дом"
+
+msgid "wall"
+msgstr "стена"
+
+msgid "bank"
+msgstr "банк"
+
+msgid "shutter"
+msgstr "ставень"
+
+msgid "hut"
+msgstr "хижина"
+
+# nature
+msgid "land"
+msgstr "земля"
+
+msgid "cliff"
+msgstr "утёс"
+
+msgid "hill"
+msgstr "холм"
+
+msgid "canyon"
+msgstr "каньон"
+
+msgid "rock"
+msgstr "камень"
+
+msgid "sea"
+msgstr "море"
+
+msgid "lake"
+msgstr "озеро"
+
+msgid "coast"
+msgstr "пляж"
+
+msgid "shore"
+msgstr "побережье"
+
+msgid "mountain"
+msgstr "гора"
+
+msgid "pond"
+msgstr "пруд"
+
+msgid "peak"
+msgstr "вершина"
+
+msgid "lava"
+msgstr "лава"
+
+msgid "cave"
+msgstr "пещера"
+
+msgid "dune"
+msgstr "дюна"
+
+msgid "island"
+msgstr "остров"
+
+msgid "forest"
+msgstr "лес"
+
+msgid "desert"
+msgstr "пустыня"
+
+msgid "iceberg"
+msgstr "айсберг"
+
+# jobs
+msgid "clown"
+msgstr "клоун"
+
+msgid "engineer"
+msgstr "инженер"
+
+msgid "vet"
+msgstr "ветеринар"
+
+msgid "judge"
+msgstr "судья"
+
+msgid "chef"
+msgstr "повар"
+
+msgid "athlete"
+msgstr "атлет"
+
+msgid "librarian"
+msgstr "библиотекарь"
+
+msgid "juggler"
+msgstr "жонглёр"
+
+msgid "police officer"
+msgstr "полицейский"
+
+msgid "plumber"
+msgstr "водопроводчик"
+
+msgid "badge"
+msgstr "жетонщик"
+
+msgid "queen"
+msgstr "королева"
+
+msgid "farmer"
+msgstr "фермер"
+
+msgid "magician"
+msgstr "фокусник"
+
+msgid "knight"
+msgstr "рыцарь"
+
+msgid "doctor"
+msgstr "доктор"
+
+msgid "bricklayer"
+msgstr "каменщик"
+
+msgid "cleaner"
+msgstr "уборщица"
+
+msgid "teacher"
+msgstr "учитель"
+
+msgid "hunter"
+msgstr "охотник"
+
+msgid "soldier"
+msgstr "солдат"
+
+msgid "musician"
+msgstr "музыкант"
+
+msgid "lawyer"
+msgstr "юрист"
+
+msgid "fisherman"
+msgstr "рыбак"
+
+msgid "princess"
+msgstr "принцесса"
+
+msgid "firefighter"
+msgstr "пожарник"
+
+msgid "nun"
+msgstr "монахиня"
+
+msgid "pirate"
+msgstr "пират"
+
+msgid "cowboy"
+msgstr "ковбой"
+
+msgid "electrician"
+msgstr "электрик"
+
+msgid "nurse"
+msgstr "няня"
+
+msgid "king"
+msgstr "король"
+
+msgid "president"
+msgstr "президент"
+
+msgid "office worker"
+msgstr "клерк"
+
+msgid "carpenter"
+msgstr "плотник"
+
+msgid "jockey"
+msgstr "жокей"
+
+msgid "worker"
+msgstr "рабочий"
+
+msgid "mechanic"
+msgstr "механик"
+
+msgid "pilot"
+msgstr "пилот"
+
+msgid "actor"
+msgstr "актёр"
+
+msgid "cook"
+msgstr "повар"
+
+msgid "student"
+msgstr "студент"
+
+msgid "butcher"
+msgstr "мясник"
+
+msgid "accountant"
+msgstr "бухгалтер"
+
+msgid "prince"
+msgstr "принц"
+
+msgid "sailor"
+msgstr "моряк"
+
+msgid "boxer"
+msgstr "боксёр"
+
+msgid "ballet dancer"
+msgstr "балерина"
+
+msgid "coach"
+msgstr "тренер"
+
+msgid "astronaut"
+msgstr "астронавт"
+
+msgid "painter"
+msgstr "художник"
+
+msgid "scientist"
+msgstr "учёный"
+
+# fruits and vegetables
+msgid "carrot"
+msgstr "морковь"
+
+msgid "blackberries"
+msgstr "смородина"
+
+msgid "celery"
+msgstr "сельдерей"
+
+msgid "turnip"
+msgstr "редька"
+
+msgid "cacao"
+msgstr "какао"
+
+msgid "peach"
+msgstr "персик"
+
+msgid "melon"
+msgstr "дыня"
+
+msgid "grapefruit"
+msgstr "грейпфрут"
+
+msgid "broccoli"
+msgstr "брокколи"
+
+msgid "grapes"
+msgstr "виноград"
+
+msgid "spinach"
+msgstr "шпинат"
+
+msgid "fig"
+msgstr "инжир"
+
+msgid "kernel"
+msgstr "косточка"
+
+msgid "radish"
+msgstr "редис"
+
+msgid "tomato"
+msgstr "помидор"
+
+msgid "kiwi"
+msgstr "киви"
+
+msgid "asparagus"
+msgstr "спаржа"
+
+msgid "olives"
+msgstr "оливки"
+
+msgid "cucumbers"
+msgstr "огурцы"
+
+msgid "beans"
+msgstr "бобы"
+
+msgid "strawberry"
+msgstr "клубника"
+
+msgid "peppers"
+msgstr "перцы"
+
+msgid "raspberry"
+msgstr "малина"
+
+msgid "apricot"
+msgstr "абрикос"
+
+msgid "potatoes"
+msgstr "картофель"
+
+msgid "peas"
+msgstr "горох"
+
+msgid "cabbage"
+msgstr "капуста"
+
+msgid "cherries"
+msgstr "вишни"
+
+msgid "squash"
+msgstr "тыква"
+
+msgid "blueberries"
+msgstr "ежевика"
+
+msgid "pear"
+msgstr "груша"
+
+msgid "orange"
+msgstr "апельсин"
+
+msgid "pumpkin"
+msgstr "тыква"
+
+msgid "avocado"
+msgstr "авокадо"
+
+msgid "garlic"
+msgstr "чеснок"
+
+msgid "onion"
+msgstr "лук"
+
+msgid "apple"
+msgstr "яблоко"
+
+msgid "lime"
+msgstr "лайм"
+
+msgid "cauliflower"
+msgstr "цветная капуста"
+
+msgid "mango"
+msgstr "манго"
+
+msgid "lettuce"
+msgstr "салат"
+
+msgid "lemon"
+msgstr "лимон"
+
+msgid "aubergine"
+msgstr "баклажан"
+
+msgid "artichokes"
+msgstr "артишоки"
+
+msgid "plums"
+msgstr "сливы"
+
+msgid "leek"
+msgstr "лук"
+
+msgid "bananas"
+msgstr "бананы"
+
+msgid "papaya"
+msgstr "папайа"
+
+# transport
+msgid "sail"
+msgstr "яхта"
+
+msgid "taxi"
+msgstr "такси"
+
+msgid "car"
+msgstr "автомобиль"
+
+msgid "bike"
+msgstr "велосипед"
+
+msgid "raft"
+msgstr "плот"
+
+msgid "pedal"
+msgstr "педаль"
+
+msgid "bus"
+msgstr "автобус"
+
+msgid "handlebar"
+msgstr "руль"
+
+msgid "boat"
+msgstr "лодка"
+
+msgid "truck"
+msgstr "пикап"
+
+msgid "sleigh"
+msgstr "сани"
+
+msgid "carpet"
+msgstr "ковёр"
+
+msgid "motorcycle"
+msgstr "мотоцикл"
+
+msgid "train"
+msgstr "поезд"
+
+msgid "ship"
+msgstr "корабль"
+
+msgid "van"
+msgstr "фургон"
+
+msgid "canoe"
+msgstr "каноэ"
+
+msgid "rocket"
+msgstr "ракета"
+
+msgid "mast"
+msgstr "мачта"
+
+msgid "sledge"
+msgstr "санки"
+
+msgid "bicycle"
+msgstr "велосипед"
+
