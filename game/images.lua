@@ -94,6 +94,8 @@ end
 
 image_button_ring = love.graphics.newImage("res/menu icons/menu_ring_03.png")
 image_congrats = love.graphics.newImage("res/congrats.png")
+image_congrats_stars = love.graphics.newImage("res/congrats_stars.png")
+image_congrats_blink = love.graphics.newImage("res/congrats_blink.png")
 image_correct = love.graphics.newImage("res/check_ok.png")
 image_wrong = love.graphics.newImage("res/check_wrong.png")
 image_shopping_basket = love.graphics.newImage("res/shopping_basket.png")
@@ -103,6 +105,7 @@ image_copyright = love.graphics.newImage("res/copyright.png")
 image_menu_blue_button = love.graphics.newImage("res/menu_blue_button.png")
 image_menu_ring_demo_n = love.graphics.newImage("res/menu icons/menu_ring_demo_n.png")
 image_menu_ring_demo_decor = love.graphics.newImage("res/menu icons/menu_ring_demo_decor.png")
+image_star = love.graphics.newImage("res/star.png")
 
 function init_subtitle()
   if game == "math" then

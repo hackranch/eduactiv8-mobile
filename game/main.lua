@@ -198,6 +198,7 @@ function love.load()
   mouse_released = true
   selected_level = 1
   go_to_game = 0
+  player_made_mistake = false
   love.math.setRandomSeed(love.timer.getTime())
 
   score_indexes = {12, 13, 15, 17, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65}
@@ -319,8 +320,22 @@ function love.mousereleased(x, y, button)
          --love.window.setTitle(v.item)
          if basket_content[items_needed[k].item].quantity ~= items_needed[k].quantity then
            flag = false
+           if basket_content[items_needed[k].item].quantity > items_needed[k].quantity then
+             player_made_mistake = true
+           end
          end
          total_items_needed = total_items_needed + items_needed[k].quantity
+       end
+       for k, v in pairs(basket_content) do
+         local flag_a = false
+         for kk, vv in pairs(items_needed) do
+           if v.quantity == 0 or items_needed[kk].item == v.item then
+             flag_a = true
+           end
+         end
+         if flag_a == false then
+           player_made_mistake = true
+         end
        end
        if flag == true and total_items == total_items_needed then
          message = "congrats"
@@ -489,10 +504,6 @@ function love.update(dt)
     delta_time = dt
   end
   if sleep > 0 then
-    if message == "congrats" then
-      save_score()
-      message = ""
-    end
     love.timer.sleep(sleep)
     sleep = 0
     if current_window == 13 or current_window == 33 or (current_window >= 54 and current_window <= 65) then
@@ -788,6 +799,7 @@ function love.update(dt)
             end
           else
             sleep = 1
+            player_made_mistake = true
           end
         end
       end
@@ -857,19 +869,21 @@ function love.update(dt)
         add_score_for_game(32)
       end
     elseif current_window == 34 then -- shape maker
-      if mouse_on_button(1) then selected_shape_icon = 1
-      elseif mouse_on_button(2) then selected_shape_icon = 2
-      elseif mouse_on_button(3) then selected_shape_icon = 3 end
-      if x > 4 * 47 and y > 4 * 47 then
-        if selected_shape_icon == 1 and math.fmod(table_length(coordinates_quads), 4) == 0 and
-           (table_length(coordinates_quads) == 0 or (coordinates_quads[table_length(coordinates_quads)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_quads[table_length(coordinates_quads)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
-          table.insert(coordinates_quads, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
-        elseif selected_shape_icon == 2 and math.fmod(table_length(coordinates_triangles), 3) == 0 and
-               (table_length(coordinates_triangles) == 0 or (coordinates_triangles[table_length(coordinates_triangles)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_triangles[table_length(coordinates_triangles)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
-          table.insert(coordinates_triangles, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
-        elseif selected_shape_icon == 3 and math.fmod(table_length(coordinates_circles), 2) == 0 and
-               (table_length(coordinates_circles) == 0 or (coordinates_circles[table_length(coordinates_circles)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_circles[table_length(coordinates_circles)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
-          table.insert(coordinates_circles, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+      if transition_done == true then
+        if mouse_on_button(1) then selected_shape_icon = 1
+        elseif mouse_on_button(2) then selected_shape_icon = 2
+        elseif mouse_on_button(3) then selected_shape_icon = 3 end
+        if x > 4 * 47 and y > 4 * 47 then
+          if selected_shape_icon == 1 and math.fmod(table_length(coordinates_quads), 4) == 0 and
+             (table_length(coordinates_quads) == 0 or (coordinates_quads[table_length(coordinates_quads)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_quads[table_length(coordinates_quads)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
+            table.insert(coordinates_quads, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+          elseif selected_shape_icon == 2 and math.fmod(table_length(coordinates_triangles), 3) == 0 and
+                 (table_length(coordinates_triangles) == 0 or (coordinates_triangles[table_length(coordinates_triangles)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_triangles[table_length(coordinates_triangles)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
+            table.insert(coordinates_triangles, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+          elseif selected_shape_icon == 3 and math.fmod(table_length(coordinates_circles), 2) == 0 and
+                 (table_length(coordinates_circles) == 0 or (coordinates_circles[table_length(coordinates_circles)][1] ~= math.floor((x / 47) + 0.5) * 47 or coordinates_circles[table_length(coordinates_circles)][2] ~= math.floor((y / 47) + 0.5) * 47)) then
+            table.insert(coordinates_circles, {math.floor((x / 47) + 0.5) * 47, math.floor((y / 47) + 0.5) * 47})
+          end
         end
       end
     elseif current_window == 35 or current_window == 36 then -- how clock works, learn to set the clock
@@ -932,10 +946,12 @@ function love.update(dt)
                 selected_clock.index = 0
               else
                 sleep = 1
+                player_made_mistake = true
               end
             end
           else
             sleep = 1
+            player_made_mistake = true
           end
         elseif mouse_on_button(i + 16) == true and buttons[i + 16].button_state == 1 then
           buttons[i + 16].button_color = color["light_blue_80"]
@@ -953,10 +969,12 @@ function love.update(dt)
                 selected_clock.index = 0
               else
                 sleep = 1
+                player_made_mistake = true
               end
             end
           else
             sleep = 1
+            player_made_mistake = true
           end
         end
       end
@@ -1204,6 +1222,7 @@ function love.draw()
             love.graphics.draw(image_correct, (i - 1) * (game_screen_width / t_x), 6 * (game_screen_height / t_y))
           else
             love.graphics.draw(image_wrong, (i - 1) * (game_screen_width / t_x), 6 * (game_screen_height / t_y))
+            player_made_mistake = true
           end
         end
       end
@@ -1416,45 +1435,50 @@ function love.draw()
             love.graphics.draw(image_correct, (game_screen_width / t_x) * 6 + 20, (game_screen_height / 10) * (i - 1))
           else
             love.graphics.draw(image_wrong, (game_screen_width / t_x) * 6 + 20, (game_screen_height / 10) * (i - 1))
+            player_made_mistake = true
           end
         elseif current_window == 29 then
           if tile_numbers[get_char(tiles[i], 9)] == tile_numbers[char(ord("c") + ((i-4) * 3))] then
             love.graphics.draw(image_correct, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
           else
             love.graphics.draw(image_wrong, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
+            player_made_mistake = true
           end
         elseif current_window == 30 then
           if tile_numbers[get_char(tiles[i], 9)] == tile_numbers[char(ord("a") + ((i-4) * 3))] then
             love.graphics.draw(image_correct, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
           else
             love.graphics.draw(image_wrong, (game_screen_width / t_x) * 8 + 20, (game_screen_height / 10) * (i - 1))
+            player_made_mistake = true
           end
         end
       end
     end
-    if current_window == 17 then
-      if (tile_numbers[get_char(tiles[4], 7)] == tile_numbers["b"]) and
-         (tile_numbers[get_char(tiles[5], 7)] == tile_numbers["e"]) and
-         (tile_numbers[get_char(tiles[6], 7)] == tile_numbers["h"]) and
-         (tile_numbers[get_char(tiles[7], 7)] == tile_numbers["k"]) and
-         (tile_numbers[get_char(tiles[8], 7)] == tile_numbers["n"]) then
-           message = "congrats"
-      end
-    elseif current_window == 29 then
-      if (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["c"]) and
-         (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["f"]) and
-         (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["i"]) and
-         (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["l"]) and
-         (tile_numbers[get_char(tiles[8], 9)] == tile_numbers["o"]) then
-           message = "congrats"
-      end
-    elseif current_window == 30 then
-      if (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["a"]) and
-         (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["d"]) and
-         (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["g"]) and
-         (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["j"]) and
-         (tile_numbers[get_char(tiles[8], 9)] == tile_numbers["m"]) then
-           message = "congrats"
+    if transition_done == true then
+      if current_window == 17 then
+        if (tile_numbers[get_char(tiles[4], 7)] == tile_numbers["b"]) and
+           (tile_numbers[get_char(tiles[5], 7)] == tile_numbers["e"]) and
+           (tile_numbers[get_char(tiles[6], 7)] == tile_numbers["h"]) and
+           (tile_numbers[get_char(tiles[7], 7)] == tile_numbers["k"]) and
+           (tile_numbers[get_char(tiles[8], 7)] == tile_numbers["n"]) then
+             message = "congrats"
+        end
+      elseif current_window == 29 then
+        if (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["c"]) and
+           (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["f"]) and
+           (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["i"]) and
+           (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["l"]) and
+           (tile_numbers[get_char(tiles[8], 9)] == tile_numbers["o"]) then
+             message = "congrats"
+        end
+      elseif current_window == 30 then
+        if (tile_numbers[get_char(tiles[4], 9)] == tile_numbers["a"]) and
+           (tile_numbers[get_char(tiles[5], 9)] == tile_numbers["d"]) and
+           (tile_numbers[get_char(tiles[6], 9)] == tile_numbers["g"]) and
+           (tile_numbers[get_char(tiles[7], 9)] == tile_numbers["j"]) and
+           (tile_numbers[get_char(tiles[8], 9)] == tile_numbers["m"]) then
+             message = "congrats"
+        end
       end
     end
   elseif current_window == 18 then -- Level select
@@ -1717,6 +1741,7 @@ function love.draw()
             love.graphics.draw(image_correct, (i) * (game_screen_width / t_x) - image_correct:getWidth(), (pattern_y_pos) * (game_screen_height / t_y) - image_correct:getHeight())
           else
             love.graphics.draw(image_wrong, (i) * (game_screen_width / t_x) - image_wrong:getWidth(), (pattern_y_pos) * (game_screen_height / t_y) - image_wrong:getHeight())
+            player_made_mistake = true
           end
         end
       end
@@ -2083,8 +2108,9 @@ function love.draw()
       --love.graphics.setColor(color["white_70"])
       --love.graphics.rectangle('fill', screen_left, screen_top, screen_total_width, screen_total_height)
       love.graphics.setColor(color["white"])
-      love.graphics.draw(image_congrats, 800 - image_congrats:getWidth() / 2, 450 - image_congrats:getHeight() / 2)
-      sleep = 1.5
+      --love.graphics.draw(image_congrats, 800 - image_congrats:getWidth() / 2, 450 - image_congrats:getHeight() / 2)
+      --sleep = 0.01
+      fade_to_white(0.01, -1, true)
       build_form(current_window)
       if score_system == true then
         if get_score_for_game(current_window) ~= get_max_score_for_game(current_window) - 1 then
@@ -2096,6 +2122,8 @@ function love.draw()
           build_form(buttons[402].button_go_to_game)
         end
       end
+      save_score()
+      message = ""
     elseif go_to_game ~= 0 then
       --show_message(message)
       --fade_to_white()

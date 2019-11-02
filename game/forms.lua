@@ -8,6 +8,7 @@ function build_form(index)
     scrollable = false
     maxscroll = 0
     scroll = 0
+    player_made_mistake = false
     --for k in pairs(buttons) do buttons[k] = nil end
     buttons = {}
     erase_table(buttons)
@@ -982,6 +983,9 @@ function build_form(index)
       --if index >= 3 then
       --  add_big_button(401, icon_logout, screen_left + screen_total_width - 22, screen_top + 20, 25, 1, true)
       --end
+      if effect_white_opacity > 0 then
+        fade_from_white()
+      end
   else --(if transition not done)----------------------------------------------------------------------------------------------------
     form_after_transition = index
   end

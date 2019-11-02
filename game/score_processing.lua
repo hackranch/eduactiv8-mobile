@@ -1,5 +1,5 @@
 function initialize_score()
-  if not love.filesystem.exists("score.lua") then
+  if game_init_user_data or not love.filesystem.exists("score.lua") then
     score = {}
     for k, v in pairs(usernames) do
       score[usernames[k]] = {}
