@@ -164,6 +164,7 @@ function set_language(language)
     s_trapezium = "Trapezium"
     s_drag_clock_hands = "Drag the clock hands to set the time"
     s_loading = "Loading..."
+    s_reset_score = "Reset Score"
 
     s_discover_letters = "Discover Letters"
     s_word_matchers = "Word Matchers"
@@ -292,6 +293,8 @@ function set_language(language)
     s_food = translate_i18n(s_food)
     s_transport = translate_i18n(s_transport)
     s_constructions = translate_i18n(s_constructions)
+    --after translation in other languages will be available, these two lines can be uncommented
+    --s_reset_score = translate_i18n(s_reset_score)
 
     for i = 1, 15 do
       s_shape_names[i] = translate_i18n(s_shape_names[i])

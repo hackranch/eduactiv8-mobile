@@ -809,6 +809,15 @@ function love.update(dt)
           selected_level = i
         end
       end
+    elseif current_window == 26 then -- user score
+      if mouse_on_button(1) then
+        for i = 1, 5 do
+          for k, v in pairs(score[username or "guest"][i]) do
+            score[username or "guest"][i][k] = 0
+          end
+        end
+        save_score()
+      end
     elseif current_window == 27 then -- learn numbers with flashcards
       for i = 1, 20 do
         if mouse_on_button(i) then

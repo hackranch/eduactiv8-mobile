@@ -619,6 +619,7 @@ function build_form(index)
         elseif game == "language" then
           max_scroll = 800
         end
+        add_button(1, s_reset_score, 1600 - 280, 850, 350)
         fade_from_white()
       elseif index == 27 then --learn numbers with flashcards game
         add_big_button(402, icon_back, screen_left + 80, screen_top + 100, 55, 0.38, false, 0, 0, 20)
