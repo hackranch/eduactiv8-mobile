@@ -2,9 +2,9 @@
 
 A free and open source mobile app containing early learning activities in many languages. This code builds to both **eduActiv8: Math & Science** and **eduActiv8: Language Arts** apps.
 
-<img src="https://raw.githubusercontent.com/hackranch/eduactiv8-mobile/master/logos/ea_math_logo_low_res.png" alt="eduActiv8: Math and Science logo" height="75"/><a href="https://apps.apple.com/us/app/eduactiv8-math-science/id1483829227#?platform=ipad"><img src="https://user-images.githubusercontent.com/663460/26986739-23bffc6e-4d49-11e7-92a2-cdba1b517a08.png" alt="App Store button" height="75"/></a><img src="https://user-images.githubusercontent.com/254471/70868051-6160db80-1f4a-11ea-96c3-cc0decc7d064.png" alt="Play Store coming soon button" height=55>
+<img src="https://raw.githubusercontent.com/hackranch/eduactiv8-mobile/master/logos/ea_math_logo_low_res.png" alt="eduActiv8: Math and Science logo" height="75"/><a href="https://apps.apple.com/us/app/eduactiv8-math-science/id1483829227#?platform=ipad"><img src="https://user-images.githubusercontent.com/663460/26986739-23bffc6e-4d49-11e7-92a2-cdba1b517a08.png" alt="App Store button" height="75"/></a>
 
-<img src="https://raw.githubusercontent.com/hackranch/eduactiv8-mobile/master/logos/ea_language_logo_low_res.png" alt="eduActiv8: Language Arts logo" height="75"/><a href="https://apps.apple.com/us/app/eduactiv8-language-arts/id1483817192#?platform=ipad"><img src="https://user-images.githubusercontent.com/663460/26986739-23bffc6e-4d49-11e7-92a2-cdba1b517a08.png" alt="App Store button" height="75"/></a><img src="https://user-images.githubusercontent.com/254471/70868051-6160db80-1f4a-11ea-96c3-cc0decc7d064.png" alt="Play Store coming soon button" height=55>
+<img src="https://raw.githubusercontent.com/hackranch/eduactiv8-mobile/master/logos/ea_language_logo_low_res.png" alt="eduActiv8: Language Arts logo" height="75"/><a href="https://apps.apple.com/us/app/eduactiv8-language-arts/id1483817192#?platform=ipad"><img src="https://user-images.githubusercontent.com/663460/26986739-23bffc6e-4d49-11e7-92a2-cdba1b517a08.png" alt="App Store button" height="75"/></a>
 
 [![Crowdin](https://badges.crowdin.net/eduactiv8-mobile/localized.svg)](https://crowdin.com/project/eduactiv8-mobile)
 
