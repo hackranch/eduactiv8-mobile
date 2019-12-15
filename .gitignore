@@ -1,7 +1,7 @@
 #eduactiv8-mobile
 game/game_config.lua
-game/dictionary.lua
-game/*.love
+#game/dictionary.lua
+*.love
 
 # Compiled Lua sources
 luac.out

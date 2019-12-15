@@ -1153,7 +1153,8 @@ function love.draw()
       end
     end
     love.graphics.setColor(color["white"])
-    love.graphics.draw(image_credits_url, 1051, 555, 0, 0.5, 0.5)
+  -- Direct hyperlinks not allowed in App Store kids category
+  --  love.graphics.draw(image_credits_url, 1051, 555, 0, 0.5, 0.5)
   elseif current_window == 7 then -- manage users
     draw_header(s_manage_users)
     set_font("interface_bold")
